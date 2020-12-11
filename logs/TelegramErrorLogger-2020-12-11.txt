@@ -40,3 +40,23 @@ ref.text= kayaknya kamu ngga masukkin apa apa deh
 #3 C:\bot telegram\index_local.php(46): Telegram->sendMessage(Array)
 #4 {main}
 
+============[Date]============
+[ 2020-12-11 14:32:28  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.text= kayaknya kamu ngga masukkin apa apa deh
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index_local.php(46): Telegram->sendMessage(Array)
+#4 {main}
+
