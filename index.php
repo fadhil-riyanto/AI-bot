@@ -15,7 +15,14 @@ if ($text == '/start') {
 	$reply = 'Hai, ada apa .... hihi';
 	$content = array('chat_id' => $chat_id, 'text' => $reply);
 	$telegram->sendMessage($content);
-} elseif ($text === 'ini jam berapa?' || $text === '/waktu' || $text === 'ini jam berapa ya?' || $text === 'jam sekarang!' || $text === 'lihat jam' || $text === 'waktu' || $text === 'sekarang jam berapa?' || $text === 'sekarang jam berapa') {
+} elseif($text == '/berhenti'){
+	exit;
+} elseif($text == '/mention'){
+	$reply = 'Hai...kenapa memanggil saya?' . PHP_EOL;
+	$content = array('chat_id' => $chat_id, 'text' => $reply);
+	$telegram->sendMessage($content);
+}
+elseif ($text === 'ini jam berapa?' || $text === '/waktu' || $text === 'ini jam berapa ya?' || $text === 'jam sekarang!' || $text === 'lihat jam' || $text === 'waktu' || $text === 'sekarang jam berapa?' || $text === 'sekarang jam berapa') {
 	$reply = 'Sekarang jam ' . date('h:i:s a') . ', dihape kamu apa tidak cocok jamnya?' . PHP_EOL;
 	$content = array('chat_id' => $chat_id, 'text' => $reply);
 	$telegram->sendMessage($content);
