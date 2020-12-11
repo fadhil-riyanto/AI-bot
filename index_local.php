@@ -19,30 +19,24 @@ if ($text == '/start') {
 	$reply = 'Sekarang jam ' . date('h:i:s a') . ', dihape kamu apa tidak cocok jamnya?' . PHP_EOL;
 	$content = array('chat_id' => $chat_id, 'text' => $reply);
 	$telegram->sendMessage($content);
-} elseif ($text === '/wiki' || $text === 'cari informasi' || $text === 'buka wikipedia' || $text === 'cari informasi' || $text === 'carikan' || $text === 'cari') {
-	$reply = 'ingin cari apa?';
+} elseif ($text === '/info') {
+	$reply = 'Hi....' . PHP_EOL . PHP_EOL . 'Saya bot Fadhil Riyanto. Hobi saya bermain komputer dan membuat program'. PHP_EOL . PHP_EOL . 'Teknologi yang saya gunakan ialah. '. PHP_EOL . 'Server: nginx' . PHP_EOL . 'Database: Mysql'. PHP_EOL . 'Forward: ngrok' .PHP_EOL . 'PHP: 8.0 ts' .PHP_EOL . 'Versi: 8.3.3' .PHP_EOL . PHP_EOL . ' Dibuat dengan Cinta oleh @fadhil_riyanto'. PHP_EOL .PHP_EOL .  'Semoga bot ini mebantu';
 	$content = array('chat_id' => $chat_id, 'text' => $reply);
 	$telegram->sendMessage($content);
-	exit;
-	$wiki_matang = $text;
-	if ($text != null) {
-		$hapus_wiki = str_replace('/wiki', '', $text);
-		$no_underskor = str_replace(' ', '_', $hapus_wiki);
-		//get data
-		$wiki_get_datanya = file_get_contents('https://id.wikipedia.org/w/api.php?action=query&prop=extracts&format=xml&exintro=&titles=' . $no_underskor);
-		$wiki_get_datanya_ubahKeXML = simplexml_load_string($wiki_get_datanya);
-		$wiki_matang = $wiki_get_datanya_ubahKeXML->query->pages->page->extract;
-		$wiki_escape = strip_tags($wiki_matang);
-		if ($wiki_escape != NULL) {
-			$reply = $wiki_hitung;
-			$content = array('chat_id' => $chat_id, 'text' => $reply);
-			$telegram->sendMessage($content);
-		} else {
-			$reply = 'Maaf nih, Data tidak ditemukan';
-			$content = array('chat_id' => $chat_id, 'text' => $reply);
-			$telegram->sendMessage($content);
-		}
-	}
+} elseif ($text === '/corona') {
+  $file_korona = @file_get_contents('https://api.kawalcorona.com/indonesia/');
+  $file_korona_jsonParse = json_decode($file_korona, true);
+  if ($file_korona_jsonParse != NULL) {
+    foreach ($file_korona_jsonParse as $corona_jadi) {
+      $reply =  'positif   ' . $corona_jadi['positif'] . PHP_EOL . 'sembuh    ' . $corona_jadi['sembuh'] . PHP_EOL . 'meninggal ' . $corona_jadi['meninggal'] . PHP_EOL . 'dirawat   ' . $corona_jadi['dirawat'] . PHP_EOL;
+	  $content = array('chat_id' => $chat_id, 'text' => $reply);
+		$telegram->sendMessage($content);
+    }
+  } else {
+    $reply = 'server mati sepertinya, coba lagi nanti' . PHP_EOL;
+    $content = array('chat_id' => $chat_id, 'text' => $reply);
+		$telegram->sendMessage($content);
+  }
 } elseif ($tes_jumlah_row > 0) {
 	foreach ($q as $respon) {
 
