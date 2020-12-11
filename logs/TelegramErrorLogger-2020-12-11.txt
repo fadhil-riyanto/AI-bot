@@ -1,0 +1,42 @@
+============[Date]============
+[ 2020-12-11 12:18:13  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: bot was kicked from the supergroup chat
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804381848
+ref.message.message_id= 537
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= -1001306805193
+ref.message.chat.title= Web Programming Group
+ref.message.chat.username= web_programming_group
+ref.message.chat.type= supergroup
+ref.message.date= 1607663892
+ref.message.left_chat_participant.id= 1489990155
+ref.message.left_chat_participant.is_bot= true
+ref.message.left_chat_participant.first_name= Fadhil riyanto bot
+ref.message.left_chat_participant.username= Fadhil_riyanto_bot
+ref.message.left_chat_member.id= 1489990155
+ref.message.left_chat_member.is_bot= true
+ref.message.left_chat_member.first_name= Fadhil riyanto bot
+ref.message.left_chat_member.username= Fadhil_riyanto_bot
+
+
+[ref]
+ref.text= kayaknya kamu ngga masukkin apa apa deh
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index_local.php(46): Telegram->sendMessage(Array)
+#4 {main}
+

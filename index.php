@@ -15,15 +15,15 @@ if ($text == '/start') {
 	$reply = 'Hai, ada apa .... hihi';
 	$content = array('chat_id' => $chat_id, 'text' => $reply);
 	$telegram->sendMessage($content);
-} elseif ($text === 'ini jam berapa?' || $text === '/waktu' || $text === 'ini jam berapa ya?' || $text === 'jam sekarang!' || $text === 'lihat jam' || $text === 'waktu' || $text === 'sekarang jam berapa?' || $text === 'sekarang jam berapa' || $text === '/waktu@Fadhil_riyanto_bot') {
+} elseif ($text === 'ini jam berapa?' || $text === '/waktu' || $text === 'ini jam berapa ya?' || $text === 'jam sekarang!' || $text === 'lihat jam' || $text === 'waktu' || $text === 'sekarang jam berapa?' || $text === 'sekarang jam berapa') {
 	$reply = 'Sekarang jam ' . date('h:i:s a') . ', dihape kamu apa tidak cocok jamnya?' . PHP_EOL;
 	$content = array('chat_id' => $chat_id, 'text' => $reply);
 	$telegram->sendMessage($content);
-} elseif ($text === '/info' || $text === '/info@Fadhil_riyanto_bot') {
+} elseif ($text === '/info') {
 	$reply = 'Hi....' . PHP_EOL . PHP_EOL . 'Saya bot Fadhil Riyanto. Hobi saya bermain komputer dan membuat program'. PHP_EOL . PHP_EOL . 'Teknologi yang saya gunakan ialah. '. PHP_EOL . 'Server: nginx' . PHP_EOL . 'Database: Mysql'. PHP_EOL . 'Forward: ngrok' .PHP_EOL . 'PHP: 8.0 ts' .PHP_EOL . 'Versi: 8.3.3' .PHP_EOL . PHP_EOL . ' Dibuat dengan Cinta oleh @fadhil_riyanto'. PHP_EOL .PHP_EOL .  'Semoga bot ini mebantu';
 	$content = array('chat_id' => $chat_id, 'text' => $reply);
 	$telegram->sendMessage($content);
-} elseif ($text === '/corona' || $text === '/corona@Fadhil_riyanto_bot') {
+} elseif ($text === '/corona') {
   $file_korona = @file_get_contents('https://api.kawalcorona.com/indonesia/');
   $file_korona_jsonParse = json_decode($file_korona, true);
   if ($file_korona_jsonParse != NULL) {
