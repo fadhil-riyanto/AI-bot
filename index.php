@@ -38,12 +38,12 @@ if ($text == '/start') {
 		$telegram->sendMessage($content);
   }
 } elseif ($tes_jumlah_row > 0) {
-	foreach ($q as $respon) {
+	
 
-		$reply = $respon['data_res_ai'] . PHP_EOL;
+		$reply = $q['data_res_ai'] . PHP_EOL;
 		$content = array('chat_id' => $chat_id, 'text' => $reply);
 		$telegram->sendMessage($content);
-	}
+	
 } elseif ($tes_jumlah_row === 0) {
 
 	$reply = '... Percakapan ini saya simpan untuk pembendaharaan kata kata agar bot lebih pintar lagi '.PHP_EOL.'Balas oke';
