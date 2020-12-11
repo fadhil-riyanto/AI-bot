@@ -2,7 +2,7 @@
 echo 'working';
 include(__DIR__ . '/vendor/autoload.php');
 $telegram = new Telegram('1489990155:AAGb7YFsVA-G2Vs28R6fQQZ8uxMm3ouCFDg');
-$koneksi = @mysqli_connect('localhost', 'root', 'root', 'ai_data');
+$koneksi = @mysqli_connect('freedb.tech', 'freedbtech_ai_bot_fadhil_riyanto', 'R^&V*&(H7679U7TV6I987vt**(&^u^&*y^ct%yurtytTY&T%TY&YBTRHY&U7ytR', 'freedbtech_ai_bot_fadhil_riyanto');
 date_default_timezone_set('Asia/Jakarta');
 $text = strtolower(mysqli_real_escape_string($koneksi, $telegram->Text()));
 $chat_id = $telegram->ChatID();
