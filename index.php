@@ -8,7 +8,7 @@ $text = strtolower(mysqli_real_escape_string($koneksi, $telegram->Text()));
 $chat_id = $telegram->ChatID();
 
 //$q = mysqli_query($koneksi, "SELECT * FROM `data_ai` WHERE `data_key_ai` LIKE _utf8 '%".$text."' ");
-$q = mysqli_query($koneksi, "SELECT * FROM `data_ai` WHERE `data_key_ai` SOUNDS LIKE _utf8 '$text' ");
+$q = mysqli_query($koneksi, "SELECT * FROM `data_ai` WHERE `data_key_ai` LIKE _utf8 '$text' ");
 $tes_jumlah_row = @mysqli_affected_rows($koneksi);
 
 if ($text == '/start') {
@@ -38,12 +38,12 @@ if ($text == '/start') {
 		$telegram->sendMessage($content);
   }
 } elseif ($tes_jumlah_row > 0) {
-	
+	foreach ($q as $respon) {
 
-		$reply = $q['data_res_ai'] . PHP_EOL;
+		$reply = $respon['data_res_ai'] . PHP_EOL;
 		$content = array('chat_id' => $chat_id, 'text' => $reply);
 		$telegram->sendMessage($content);
-	
+	}
 } elseif ($tes_jumlah_row === 0) {
 
 	$reply = '... Percakapan ini saya simpan untuk pembendaharaan kata kata agar bot lebih pintar lagi '.PHP_EOL.'Balas oke';
