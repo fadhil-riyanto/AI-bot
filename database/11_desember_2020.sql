@@ -2,7 +2,7 @@
 -- Host:                         freedb.tech
 -- Server version:               5.7.32-0ubuntu0.18.04.1 - (Ubuntu)
 -- Server OS:                    Linux
--- HeidiSQL Version:             11.1.0.6116
+-- HeidiSQL Version:             10.2.0.5599
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -10,7 +10,6 @@
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
-/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 
 -- Dumping database structure for freedbtech_ai_bot_fadhil_riyanto
@@ -23,7 +22,7 @@ CREATE TABLE IF NOT EXISTS `data_ai` (
   `data_res_ai` longtext NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
--- Dumping data for table freedbtech_ai_bot_fadhil_riyanto.data_ai: ~299 rows (approximately)
+-- Dumping data for table freedbtech_ai_bot_fadhil_riyanto.data_ai: ~370 rows (approximately)
 /*!40000 ALTER TABLE `data_ai` DISABLE KEYS */;
 INSERT INTO `data_ai` (`data_key_ai`, `data_res_ai`) VALUES
 	('foo', 'bar'),
@@ -218,7 +217,6 @@ INSERT INTO `data_ai` (`data_key_ai`, `data_res_ai`) VALUES
 	('wkwkwk', 'wkwkwk'),
 	('j', 'maaf, saya tidak paham'),
 	('wjkwk', 'wkwkwk'),
-	('gakhheepnkenlaj', 'maaf, saya tidak paham'),
 	('wkwkwkkwkwkkwkkw', 'wkwkwk'),
 	('wkwkwkkwkkwkw', 'wkwkwkkwkwk'),
 	('whatsapp', 'maaf, saya tidak punya whatsapp'),
@@ -393,10 +391,16 @@ INSERT INTO `data_ai` (`data_key_ai`, `data_res_ai`) VALUES
 	('okeeee', 'sipp'),
 	('yowes', 'Oke'),
 	('thinking apaan?', 'Berpikir positif'),
-	('perbendaharaan maksudnya?', 'kita menyimpan kata kata agar bot lebih pintar. mirip otak pada manusia');
+	('perbendaharaan maksudnya?', 'kita menyimpan kata kata agar bot lebih pintar. mirip otak pada manusia'),
+	('Surya kenapa?', 'entah tu keyboardnya'),
+	('ngetes doang', 'oke....'),
+	('ngetes', 'oke'),
+	('surya kebapa?', 'entah tu'),
+	('null itu apa', 'null itu data yang kami simpan dan belum disetujui admin. jadi sementara akan bernilai null (kosong)'),
+	('null apaan', 'null itu data yang kami simpan dan belum disetujui admin. jadi sementara akan bernilai null (kosong)'),
+	('null itu apa', 'null itu data yang kami simpan dan belum disetujui admin. jadi sementara akan bernilai null (kosong)');
 /*!40000 ALTER TABLE `data_ai` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;

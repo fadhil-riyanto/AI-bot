@@ -11,26 +11,40 @@ $chat_id = $telegram->ChatID();
 $q = mysqli_query($koneksi, "SELECT * FROM `data_ai` WHERE `data_key_ai` SOUNDS LIKE _utf8 '$text' ");
 $tes_jumlah_row = @mysqli_affected_rows($koneksi);
 
-if ($text == '/start') {
+if ($text == '/start' ||
+	$text == '/start@fadhil_riyanto_bot') {
 	$reply = 'Hai, ada apa .... hihi';
 	$content = array('chat_id' => $chat_id, 'text' => $reply);
 	$telegram->sendMessage($content);
-} elseif($text == '/berhenti'){
+} elseif($text == '/berhenti' ||
+		$text == '/berhenti@fadhil_riyanto_bot'){
 	exit;
-} elseif($text == '/mention'){
+} elseif($text == '/mention'||
+		$text == '/mention@fadhil_riyanto_bot'){
 	$reply = 'Hai...kenapa memanggil saya?' . PHP_EOL;
 	$content = array('chat_id' => $chat_id, 'text' => $reply);
 	$telegram->sendMessage($content);
 }
-elseif ($text == 'ini jam berapa?' || $text === '/waktu' || $text === 'ini jam berapa ya?' || $text === 'jam sekarang!' || $text === 'lihat jam' || $text === 'waktu' || $text === 'sekarang jam berapa?' || $text === 'sekarang jam berapa') {
+elseif ($text == 'ini jam berapa?' || 
+		$text === '/waktu' ||
+		$text === 'ini jam berapa ya?' ||
+		$text === 'jam sekarang!' || 
+		$text === 'lihat jam' || 
+		$text === 'waktu' || 
+		$text == '/waktu@fadhil_riyanto_bot' ||
+		$text === 'sekarang jam berapa?' || 
+		$text === 'sekarang jam berapa') {
 	$reply = 'Sekarang jam ' . date('h:i:s a') . ', dihape kamu apa tidak cocok jamnya?' . PHP_EOL;
 	$content = array('chat_id' => $chat_id, 'text' => $reply);
 	$telegram->sendMessage($content);
-} elseif ($text == '/info') {
+} elseif ($text == '/info' || 
+		  $text == '/info@fadhil_riyanto_bot'||
+		  $text == 'info bot fadhil riyanto') {
 	$reply = 'Hi....' . PHP_EOL . PHP_EOL . 'Saya bot Fadhil Riyanto. Hobi saya bermain komputer dan membuat program'. PHP_EOL . PHP_EOL . 'Teknologi yang saya gunakan ialah. '. PHP_EOL . 'Server: nginx' . PHP_EOL . 'Database: Mysql'. PHP_EOL . 'Forward: ngrok' .PHP_EOL . 'PHP: 8.0 ts' .PHP_EOL . 'Versi: 8.3.3' .PHP_EOL . PHP_EOL . ' Dibuat dengan Cinta oleh @fadhil_riyanto'. PHP_EOL .PHP_EOL .  'Semoga bot ini mebantu';
 	$content = array('chat_id' => $chat_id, 'text' => $reply);
 	$telegram->sendMessage($content);
-} elseif ($text === '/corona') {
+} elseif ($text === '/corona' ||
+		  $text == '/corona@fadhil_riyanto_bot') {
   $file_korona = @file_get_contents('https://api.kawalcorona.com/indonesia/');
   $file_korona_jsonParse = json_decode($file_korona, true);
   if ($file_korona_jsonParse != NULL) {
