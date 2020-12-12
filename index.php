@@ -67,6 +67,7 @@ elseif($text == '/mention'||
 	'/start - memulai bot' .PHP_EOL . 
 	'/berhenti - hentikan bot paksa' .PHP_EOL .
 	'/tanggal - lihat tanggal' .PHP_EOL .
+	'/bug - laporkan bug' .PHP_EOL .
 	'/help - melihat semua command'. PHP_EOL .PHP_EOL .  
 	'Semoga bot ini membantu';
 	$content = array('chat_id' => $chat_id, 'text' => $reply);
