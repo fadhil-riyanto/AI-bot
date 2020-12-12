@@ -14,7 +14,7 @@ $tes_jumlah_row = @mysqli_affected_rows($koneksi);
 
 if ($text == '/start' ||
 	$text == '/start@fadhil_riyanto_bot') {
-	$reply = 'Hai, ada apa .... hihi';
+	$reply = 'Hai, Apa kabar?';
 	$content = array('chat_id' => $chat_id, 'text' => $reply);
 	$telegram->sendMessage($content);
 } elseif($text == '/berhenti' ||
@@ -59,31 +59,36 @@ elseif($text == '/mention'||
 } elseif ($text == '/help' || $text == '/help@fadhil_riyanto_bot'){
 	$reply = 'Hi....' . PHP_EOL . PHP_EOL . 
 	'Saya punya beberapa command untuk membantu kamu. Diantaranya adalah'. PHP_EOL . PHP_EOL . 
-	'/corona - stats corona'. PHP_EOL . 
+	'/corona - status corona'. PHP_EOL . 
 	'/userid - melihat id user' . PHP_EOL . 
 	'/waktu - cek waktu terkini'. PHP_EOL . 
 	'/info - info bot ini' .PHP_EOL . 
-	'/mention - untuk memanggi saya' .PHP_EOL . 
+	'/mention - untuk memanggil saya' .PHP_EOL . 
 	'/start - memulai bot' .PHP_EOL . 
 	'/berhenti - hentikan bot paksa' .PHP_EOL .
 	'/tanggal - lihat tanggal' .PHP_EOL .
 	'/help - melihat semua command'. PHP_EOL .PHP_EOL .  
-	'Semoga bot ini mebantu';
+	'Semoga bot ini membantu';
 	$content = array('chat_id' => $chat_id, 'text' => $reply);
 	$telegram->sendMessage($content);
 } elseif($text == '/tanggal' || $text == '/tanggal@fadhil_riyanto_bot'){
 	$reply = 'sekarang '.date('l, d F Y');
 	$content = array('chat_id' => $chat_id, 'text' => $reply);
 	$telegram->sendMessage($content);
+}elseif($text == '/bug' || $text == '/bug@fadhil_riyanto_bot'){
+	$reply = 'Silahkan PM @fadhil_riyanto'. PHP_EOL . PHP_EOL . 'Jangan lupa sertakan Screenshot dan letak bug nya. yaaaa' . PHP_EOL . PHP_EOL . 'Dengan kamu melaporkan bug, kamu telah membantu saya untuk membuat bot lebih baik lagi';
+	$content = array('chat_id' => $chat_id, 'text' => $reply);
+	$telegram->sendMessage($content);
+}elseif($text == null){
+	
 }
-
 elseif ($text === '/corona' ||
 		  $text == '/corona@fadhil_riyanto_bot') {
   $file_korona = @file_get_contents('https://api.kawalcorona.com/indonesia/');
   $file_korona_jsonParse = json_decode($file_korona, true);
   if ($file_korona_jsonParse != NULL) {
     foreach ($file_korona_jsonParse as $corona_jadi) {
-      $reply =  'positif   ' . $corona_jadi['positif'] . PHP_EOL . 'sembuh    ' . $corona_jadi['sembuh'] . PHP_EOL . 'meninggal ' . $corona_jadi['meninggal'] . PHP_EOL . 'dirawat   ' . $corona_jadi['dirawat'] . PHP_EOL;
+      $reply =  'Sepertinya jumlah kasus Corona adalah' .PHP_EOL . PHP_EOL . 'positif   ' . $corona_jadi['positif'] . PHP_EOL . 'sembuh    ' . $corona_jadi['sembuh'] . PHP_EOL . 'meninggal ' . $corona_jadi['meninggal'] . PHP_EOL . 'dirawat   ' . $corona_jadi['dirawat'] . PHP_EOL . PHP_EOL . 'Jangan lupa pakai masker dan jaga kesehatan';
 	  $content = array('chat_id' => $chat_id, 'text' => $reply);
 		$telegram->sendMessage($content);
     }
