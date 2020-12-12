@@ -8,6 +8,8 @@ $text = strtolower(mysqli_real_escape_string($koneksi, $telegram->Text()));
 $chat_id = $telegram->ChatID();
 $userID = $telegram->UserID();
 
+$adanParse = explode(' ', $text);
+
 //$q = mysqli_query($koneksi, "SELECT * FROM `data_ai` WHERE `data_key_ai` LIKE _utf8 '%".$text."' ");
 $q = mysqli_query($koneksi, "SELECT * FROM `data_ai` WHERE `data_key_ai` LIKE _utf8 '$text' ");
 $tes_jumlah_row = @mysqli_affected_rows($koneksi);
@@ -17,7 +19,40 @@ if ($text == '/start' ||
 	$reply = 'Hai, Apa kabar?';
 	$content = array('chat_id' => $chat_id, 'text' => $reply);
 	$telegram->sendMessage($content);
-} elseif($text == '/berhenti' ||
+} elseif('/azan' == $adanParse[0] || '/azan@fadhil_riyanto_bot' == $adanParse[0]){
+	$adanKota = $adanParse[1];
+	$tanggal = date("Y-m-d");
+	$adanCurl = file_get_contents('https://api.pray.zone/v2/times/day.json?city='.$adanKota.'&date='.$tanggal);
+	$json_adan = json_decode($adanCurl, true);
+	
+	if($adanParse[1] == null){
+		$reply = 'maaf, anda salah. gunakan syntax'. PHP_EOL .
+					'/azan {kota}'. PHP_EOL .PHP_EOL .
+					'Contoh /azan jakarta';
+		$content = array('chat_id' => $chat_id, 'text' => $reply);
+		$telegram->sendMessage($content);
+	}elseif($json_adan != null){
+		$reply = 'Jadwal azan di'.$adanParse[1]. PHP_EOL .PHP_EOL .
+				'Imsak '.$json_adan['results']['datetime'][0]['times']['Imsak']. PHP_EOL .
+				'Terbit '.$json_adan['results']['datetime'][0]['times']['Sunrise']. PHP_EOL .
+				'Fajar '.$json_adan['results']['datetime'][0]['times']['Fajr']. PHP_EOL .
+				'Dzuhur '.$json_adan['results']['datetime'][0]['times']['Dhuhr']. PHP_EOL .
+				'Ashar '.$json_adan['results']['datetime'][0]['times']['Asr']. PHP_EOL .
+				'Terbenam '.$json_adan['results']['datetime'][0]['times']['Sunset']. PHP_EOL .
+				'Maghrib '.$json_adan['results']['datetime'][0]['times']['Maghrib']. PHP_EOL .
+				'Isya '.$json_adan['results']['datetime'][0]['times']['Isha']. PHP_EOL .
+				'Tengah malam '.$json_adan['results']['datetime'][0]['times']['Midnight']. PHP_EOL . PHP_EOL .
+				'Sumber : api.pray.zone';
+		$content = array('chat_id' => $chat_id, 'text' => $reply);
+		$telegram->sendMessage($content);
+	}else{
+		$reply = 'maaf, tidak tersedia';
+		$content = array('chat_id' => $chat_id, 'text' => $reply);
+		$telegram->sendMessage($content);
+	}
+	
+		
+}elseif($text == '/berhenti' ||
 		$text == '/berhenti@fadhil_riyanto_bot'){
 		$reply = 'bot ter-stop!!';
 	$content = array('chat_id' => $chat_id, 'text' => $reply);
@@ -67,6 +102,8 @@ elseif($text == '/mention'||
 	'/start - memulai bot' .PHP_EOL . 
 	'/berhenti - hentikan bot paksa' .PHP_EOL .
 	'/tanggal - lihat tanggal' .PHP_EOL .
+	'/bug - laporkan bug' .PHP_EOL .
+	'/azan - Jadwal azan' .PHP_EOL .
 	'/help - melihat semua command'. PHP_EOL .PHP_EOL .  
 	'Semoga bot ini membantu';
 	$content = array('chat_id' => $chat_id, 'text' => $reply);
@@ -111,7 +148,4 @@ elseif ($text === '/corona' ||
 	mysqli_query($koneksi, "INSERT INTO `data_ai` (`data_key_ai`, `data_res_ai`) VALUES ('$text', 'null')");
 	$content = array('chat_id' => $chat_id, 'text' => $reply);
 	$telegram->sendMessage($content);
-	//$reply_1 = 'Ga jelas skip?!!!';
-	//$konten = array('chat_id' => $chat_id, 'text' => $reply_1);
-	//$telegram->sendMessage($konten);
 }

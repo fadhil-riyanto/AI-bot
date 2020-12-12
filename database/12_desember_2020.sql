@@ -22,7 +22,7 @@ CREATE TABLE IF NOT EXISTS `data_ai` (
   `data_res_ai` longtext NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
--- Dumping data for table freedbtech_ai_bot_fadhil_riyanto.data_ai: ~370 rows (approximately)
+-- Dumping data for table freedbtech_ai_bot_fadhil_riyanto.data_ai: ~371 rows (approximately)
 /*!40000 ALTER TABLE `data_ai` DISABLE KEYS */;
 INSERT INTO `data_ai` (`data_key_ai`, `data_res_ai`) VALUES
 	('foo', 'bar'),
@@ -426,7 +426,19 @@ INSERT INTO `data_ai` (`data_key_ai`, `data_res_ai`) VALUES
 	('kamu kenapa????', 'ga pa pa'),
 	('kamu kenapa.', 'ga pa pa'),
 	('kamu kenapa..', 'ga pa pa'),
-	('kamu kenapa...', 'ga pa pa');
+	('kamu kenapa...', 'ga pa pa'),
+	('hmmmm', 'hmmmmmmm'),
+	('hmm', 'hem'),
+	('maksudnya', 'hm'),
+	('mmmmmmm', 'kenapa?'),
+	('apa kamu benci kpop', 'iyaa'),
+	('apa kamu benci kpop?', 'iya'),
+	('apakah kamu benci kpop?', 'iya....'),
+	('info admin', 'buka command /info'),
+	('apakah kamu benci kpop', 'iya'),
+	('kamu benci kpop', 'iya'),
+	('saya benci kpop', 'saya juga'),
+	('yah', 'hehe');
 /*!40000 ALTER TABLE `data_ai` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
