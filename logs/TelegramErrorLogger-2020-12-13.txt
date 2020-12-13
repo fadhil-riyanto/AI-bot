@@ -676,3 +676,140 @@ ref.text= Hai, saya Bot Fadhil Riyanto. kamu bisa tanya apa aja. karena apa? kar
 #3 C:\bot telegram\test.php(217): Telegram->sendMessage(Array)
 #4 {main}
 
+============[Date]============
+[ 2020-12-13 13:33:57  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.text= Hai, saya Bot Fadhil Riyanto. kamu bisa tanya apa aja. karena apa? karena aku dibuat menggunakan AI
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\test.php(217): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2020-12-13 13:33:59  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.text= Hai, saya Bot Fadhil Riyanto. kamu bisa tanya apa aja. karena apa? karena aku dibuat menggunakan AI
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\test.php(217): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2020-12-13 19:34:21  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.text= Hai, saya Bot Fadhil Riyanto. kamu bisa tanya apa aja. karena apa? karena aku dibuat menggunakan AI
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\test.php(290): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2020-12-13 19:34:25  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.text= Hai, saya Bot Fadhil Riyanto. kamu bisa tanya apa aja. karena apa? karena aku dibuat menggunakan AI
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\test.php(290): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2020-12-13 19:41:43  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804382749
+ref.message.message_id= 1197
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1607863302
+ref.message.text= /help
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.reply_markup= Hi....
+
+Saya punya beberapa command untuk membantu kamu. Diantaranya adalah
+
+/corona - info status corona
+/userid - melihat ID user
+/waktu - cek waktu terkini
+/info - info bot ini
+/mention - untuk memanggil saya
+/start - memulai bot
+/short - pendekkan link
+/berhenti - hentikan thread bot
+/tanggal - lihat tanggal
+/bug - laporkan bug
+/azan - Jadwal azan
+/donate - Donasi ke developer
+/gempa - Melihat info gempa terkini
+/help - melihat semua command
+
+Apakah anda paham?
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\test.php(256): Telegram->sendMessage(Array)
+#4 {main}
+

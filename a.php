@@ -1,17 +1,35 @@
-<?php
-elseif('/short' == $dns_parse[0] || '/short@fadhil_riyanto_bot' == $dns_parse[0]){
-	if(filter_var($dns_parse[1], FILTER_VALIDATE_URL)){
-		$ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, "https://chogoon.com/srt/api/?url=".$dns_parse[1]);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-        $output = curl_exec($ch);
-        curl_close($ch);
-		$json_shorturl = json_decode($output);
-		$reply = 'maaf, anda salah. gunakan syntax'. PHP_EOL .
-					'/azan {kota}'. PHP_EOL .PHP_EOL .
-					'Contoh /azan jakarta';
-		$content = array('chat_id' => $chat_id, 'text' => $json_shorturl);
-		$telegram->sendMessage($content);
-	}
-	exit;
-}
+$json_pendekurl = file_get_contents('https://cutt.ly/api/api.php?key=' . $api_key_cuttly . '&short=' . $adanParse[1]);
+				$json_shorturl = json_decode($json_pendekurl, true);
+				if ($json_pendekurl == null) {
+					$reply = 'server down';
+					$content = array('chat_id' => $chat_id, 'text' => $reply);
+					$telegram->sendMessage($content);
+				} elseif ($json_shorturl["url"]["status"] == 1) {
+					$reply = 'Maaf, link telah dipersingkat';
+					$content = array('chat_id' => $chat_id, 'text' => $reply);
+					$telegram->sendMessage($content);
+				} elseif ($json_shorturl["url"]["status"] == 2) {
+					$reply = 'Maaf, itu bukan tautan';
+					$content = array('chat_id' => $chat_id, 'text' => $reply);
+					$telegram->sendMessage($content);
+				} elseif ($json_shorturl["url"]["status"] == 3) {
+					$reply = 'nama link yang diinginkan sudah digunakan';
+					$content = array('chat_id' => $chat_id, 'text' => $reply);
+					$telegram->sendMessage($content);
+				} elseif ($json_shorturl["url"]["status"] == 4) {
+					$reply = 'API key error';
+					$content = array('chat_id' => $chat_id, 'text' => $reply);
+					$telegram->sendMessage($content);
+				} elseif ($json_shorturl["url"]["status"] == 5) {
+					$reply = 'tidak valid : link tidak lolos validasi. Termasuk karakter yang tidak valid';
+					$content = array('chat_id' => $chat_id, 'text' => $reply);
+					$telegram->sendMessage($content);
+				} elseif ($json_shorturl["url"]["status"] == 6) {
+					$reply = 'Tautan yang diberikan berasal dari domain yang diblokir';
+					$content = array('chat_id' => $chat_id, 'text' => $reply);
+					$telegram->sendMessage($content);
+				} elseif ($json_shorturl["url"]["status"] == 7) {
+					$reply = 'Shortlink berhasil. Link anda ' . $json_shorturl["url"]["shortLink"];
+					$content = array('chat_id' => $chat_id, 'text' => $reply);
+					$telegram->sendMessage($content);
+				}
