@@ -167,6 +167,7 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 		'/info - info bot ini' . PHP_EOL .
 		'/mention - untuk memanggil saya' . PHP_EOL .
 		'/start - memulai bot' . PHP_EOL .
+		'/short - pendekkan link' . PHP_EOL .
 		'/berhenti - hentikan bot paksa' . PHP_EOL .
 		'/tanggal - lihat tanggal' . PHP_EOL .
 		'/bug - laporkan bug' . PHP_EOL .
