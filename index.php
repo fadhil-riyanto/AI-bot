@@ -17,11 +17,35 @@ if ($hit == 0) {
 	$hilangAzan = str_replace('/azan@fadhil_riyanto_bot ', '', $text);
 }
 
+function is_valid_domain_name($domain_name)
+{
+	return (preg_match("/^([a-z\d](-*[a-z\d])*)(\.([a-z\d](-*[a-z\d])*))*$/i", $domain_name) //valid chars check
+		&& preg_match("/^.{1,253}$/", $domain_name) //overall length check
+		&& preg_match("/^[^\.]{1,63}(\.[^\.]{1,63})*$/", $domain_name)); //length of each label
+}
 
 if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	$reply = 'Hai, Apa kabar?';
 	$content = array('chat_id' => $chat_id, 'text' => $reply);
 	$telegram->sendMessage($content);
+	exit;
+} elseif ('/get_hostname' == $adanParse[0] || '/get_hostname@fadhil_riyanto_bot' == $adanParse[0]) {
+	if ($adanParse[1] != null) {
+		if (is_valid_domain_name($adanParse[1])) {
+			$ipHOST = gethostbyname($adanParse[1]);
+			$reply = 'IP dari host ' . $adanParse[1] . ' adalah ' . $ipHOST;
+			$content = array('chat_id' => $chat_id, 'text' => $reply);
+			$telegram->sendMessage($content);
+		} else {
+			$reply = 'Maaf, Harus Tanpa HTTP://';
+			$content = array('chat_id' => $chat_id, 'text' => $reply);
+			$telegram->sendMessage($content);
+		}
+	} else {
+		$reply = 'Maaf, gunakan format' . PHP_EOL . '/get_hostname {domain}' . PHP_EOL . PHP_EOL . 'Note: Tanpa HTTP://';
+		$content = array('chat_id' => $chat_id, 'text' => $reply);
+		$telegram->sendMessage($content);
+	}
 	exit;
 } elseif ($text == '/donate' || $text == '/donate@fadhil_riyanto_bot') {
 	$reply = 'Hai, Saya senang mendengar anda mau donasi' . PHP_EOL . PHP_EOL .
