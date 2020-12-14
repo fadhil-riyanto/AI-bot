@@ -247,11 +247,7 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 		'/help - melihat semua command' . PHP_EOL . PHP_EOL .
 		'Semoga bot ini membantu' . PHP_EOL;
 
-	$option = array(
-		//First row
-		array($telegram->buildKeyboardButton("Button 1"), $telegram->buildKeyboardButton("Button 2"))
-	);
-	$keyb = $telegram->buildKeyBoard($option, $onetime = false);
+
 	$content = array('chat_id' => $chat_id, 'text' => $reply);
 	$telegram->sendMessage($content);
 	exit;
