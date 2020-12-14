@@ -29,7 +29,7 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	$content = array('chat_id' => $chat_id, 'text' => $reply);
 	$telegram->sendMessage($content);
 	exit;
-} elseif ('/get_hostname' == $adanParse[0] || '/get_hostname@fadhil_riyanto_bot' == $adanParse[0]) {
+} elseif ('/get_ip' == $adanParse[0] || '/get_ip@fadhil_riyanto_bot' == $adanParse[0]) {
 	if ($adanParse[1] != null) {
 		if (is_valid_domain_name($adanParse[1])) {
 			$ipHOST = gethostbyname($adanParse[1]);
@@ -42,7 +42,7 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 			$telegram->sendMessage($content);
 		}
 	} else {
-		$reply = 'Maaf, gunakan format' . PHP_EOL . '/get_hostname {domain}' . PHP_EOL . PHP_EOL . 'Note: Tanpa HTTP://';
+		$reply = 'Maaf, gunakan format' . PHP_EOL . '/get_ip {domain}' . PHP_EOL . PHP_EOL . 'Note: Tanpa HTTP://';
 		$content = array('chat_id' => $chat_id, 'text' => $reply);
 		$telegram->sendMessage($content);
 	}
