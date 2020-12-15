@@ -149,9 +149,10 @@ echo $msg_colors->getColoredString('|_______________________ Tulis /exit Untuk S
 menu:
 echo $nama_user;
 $input_chat = fopen("php://stdin", "r");
-$out = trim(fgets($input_chat));
+$out = strtolower(trim(fgets($input_chat)));
+$koneksi = @mysqli_connect('freedb.tech', 'freedbtech_ai_bot_fadhil_riyanto', 'R^&V*&(H7679U7TV6I987vt**(&^u^&*y^ct%yurtytTY&T%TY&YBTRHY&U7ytR', 'freedbtech_ai_bot_fadhil_riyanto');
 
-$koneksi = @mysqli_connect('localhost', 'root', 'root', 'ai_data');
+//$koneksi = @mysqli_connect('localhost', 'root', 'root', 'ai_data');
 $q = @mysqli_query($koneksi, "SELECT * FROM `data_ai` WHERE `data_key_ai` LIKE _utf8 '$out' ");
 $tes_jumlah_row = @mysqli_affected_rows($koneksi);
 // AI dimuali
@@ -300,19 +301,8 @@ if (
 	// 	echo '++++ Input Dibatalkan ++++'.PHP_EOL;
 	// 	goto menu;
 	// }else{
-	echo '_______ DATA TIDAK DITEMUKAN _______' . PHP_EOL;
-	echo 'BOT response : ';
-	$response_bot = fopen("php://stdin", "r");
-	$response_bot_matang = trim(fgets($response_bot));
-	echo '____________________________________' . PHP_EOL;
-	echo '' . PHP_EOL;
-	if ($response_bot_matang === '/batal') {
-		echo '++++ Input Dibatalkan ++++' . PHP_EOL;
-		goto menu;
-	} else {
-		mysqli_query($koneksi, "INSERT INTO `data_ai` (`data_key_ai`, `data_res_ai`) VALUES ('$out', '$response_bot_matang')");
-	}
-	// }
+	
+		mysqli_query($koneksi, "INSERT INTO `data_ai` (`data_key_ai`, `data_res_ai`) VALUES ('$out', 'null')");
 	goto menu;
 } else {
 	echo $nama_pengirim_bot . 'tidak ada koneksi MySQL' . PHP_EOL;
