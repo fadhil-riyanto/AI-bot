@@ -17,6 +17,8 @@ if ($hit == 0) {
 	$hilangAzan = str_replace('/azan@fadhil_riyanto_bot ', '', $text);
 }
 
+
+
 function is_valid_domain_name($domain_name)
 {
 	return (preg_match("/^([a-z\d](-*[a-z\d])*)(\.([a-z\d](-*[a-z\d])*))*$/i", $domain_name) //valid chars check
@@ -28,6 +30,23 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	$reply = 'Hai, Apa kabar?';
 	$content = array('chat_id' => $chat_id, 'text' => $reply);
 	$telegram->sendMessage($content);
+	exit;
+} elseif ('/nulis' == $adanParse[0] || '/nulis@fadhil_riyanto' == $adanParse[0]) {
+	if ($nulis_bot == '/nulis' || $nulis_bot == '/nulis@fadhil_riyanto') {
+		$reply = 'Maaf, Data kosong';
+		$content = array('chat_id' => $chat_id, 'text' => $reply);
+		$telegram->sendMessage($content);
+	} else {
+
+		$nulis_bot = trim('/nulis ', $text);
+
+		$json =  file_get_contents('https://tools.zone-xsec.com/api/nulis.php?q=' . $nulis_bot);
+		$hasil = json_decode($json, true);
+
+		$reply = 'hasil ' . $nulis_bot;
+		$content = array('chat_id' => $chat_id, 'text' => $reply);
+		$telegram->sendMessage($content);
+	}
 	exit;
 } elseif ('/get_ip' == $adanParse[0] || '/get_ip@fadhil_riyanto_bot' == $adanParse[0]) {
 	if ($adanParse[1] != null) {

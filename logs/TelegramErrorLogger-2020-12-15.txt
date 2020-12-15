@@ -38,3 +38,208 @@ ref.text= Hai, saya Bot Fadhil Riyanto. kamu bisa tanya apa aja. karena apa? kar
 #3 C:\bot telegram\test.php(320): Telegram->sendMessage(Array)
 #4 {main}
 
+============[Date]============
+[ 2020-12-15 11:06:34  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804383469
+ref.message.message_id= 2504
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1608005191
+ref.message.text= /nulis ujung high iii
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\test.php(46): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2020-12-15 11:45:39  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.text= Hai, saya Bot Fadhil Riyanto. kamu bisa tanya apa aja. karena apa? karena aku dibuat menggunakan AI
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\test.php(483): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2020-12-15 11:50:49  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804383495
+ref.message.message_id= 2551
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1608007843
+ref.message.text= /nulis hans bahan hshsh
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\test.php(48): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2020-12-15 11:51:00  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804383496
+ref.message.message_id= 2552
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1608007856
+ref.message.text= /nulis hans bahan hshsh
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\test.php(48): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2020-12-15 11:51:51  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804383497
+ref.message.message_id= 2553
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1608007885
+ref.message.text= /nulis hans bahan hshsh
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\test.php(48): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2020-12-15 11:51:54  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804383498
+ref.message.message_id= 2554
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1608007898
+ref.message.text= /nulis hans bahan hshsh
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\test.php(48): Telegram->sendMessage(Array)
+#4 {main}
+

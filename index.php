@@ -466,7 +466,7 @@ if ($tes_jumlah_row > 0) {
 	}
 } elseif ($tes_jumlah_row === 0) {
 
-	$reply = '... Percakapan ini saya simpan untuk pembendaharaan kata kata agar bot lebih pintar lagi ' . PHP_EOL . 'Balas oke';
+	$reply = 'Mohon maaf saya belum mengerti. saya akan mempelajarinya lagi' . PHP_EOL . 'Balas oke';
 	mysqli_query($koneksi, "INSERT INTO `data_ai` (`data_key_ai`, `data_res_ai`) VALUES ('$text', 'null')");
 	$content = array('chat_id' => $chat_id, 'text' => $reply);
 	$telegram->sendMessage($content);
