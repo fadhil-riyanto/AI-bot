@@ -50,7 +50,7 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 } elseif ('/get_mx' == $adanParse[0] || '/get_mx@fadhil_riyanto_bot' == $adanParse[0]) {
 	if ($adanParse[1] != null) {
 		if (is_valid_domain_name($adanParse[1])) {
-			$ipHOST = file_get_contents('http://localhost:81/?method=mx&dns=' . $adanParse[1]);
+			$ipHOST = file_get_contents('https://fadhilriyanto-telegram-bot.herokuapp.com/APIs.php?method=mx&dns=' . $adanParse[1]);
 			if ($ipHOST != null) {
 				$reply = 'mx dari host ' . $adanParse[1] . ' adalah ' . PHP_EOL . PHP_EOL . $ipHOST;
 				$content = array('chat_id' => $chat_id, 'text' => $reply);
@@ -74,7 +74,7 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 } elseif ('/get_ns' == $adanParse[0] || '/get_ns@fadhil_riyanto_bot' == $adanParse[0]) {
 	if ($adanParse[1] != null) {
 		if (is_valid_domain_name($adanParse[1])) {
-			$ipHOST = file_get_contents('http://localhost:81/?method=ns&dns=' . $adanParse[1]);
+			$ipHOST = file_get_contents('https://fadhilriyanto-telegram-bot.herokuapp.com/APIs.php?method=ns&dns=' . $adanParse[1]);
 			if ($ipHOST != null) {
 				$reply = 'ns dari host ' . $adanParse[1] . ' adalah ' . PHP_EOL . PHP_EOL . $ipHOST;
 				$content = array('chat_id' => $chat_id, 'text' => $reply);
@@ -98,7 +98,7 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 } elseif ('/get_a' == $adanParse[0] || '/get_a@fadhil_riyanto_bot' == $adanParse[0]) {
 	if ($adanParse[1] != null) {
 		if (is_valid_domain_name($adanParse[1])) {
-			$ipHOST = file_get_contents('http://localhost:81/?method=a&dns=' . $adanParse[1]);
+			$ipHOST = file_get_contents('https://fadhilriyanto-telegram-bot.herokuapp.com/APIs.php?method=a&dns=' . $adanParse[1]);
 			if ($ipHOST != null) {
 				$reply = 'A dari host ' . $adanParse[1] . ' adalah ' . PHP_EOL . PHP_EOL . $ipHOST;
 				$content = array('chat_id' => $chat_id, 'text' => $reply);
@@ -122,7 +122,7 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 } elseif ('/get_aaaa' == $adanParse[0] || '/get_aaaa@fadhil_riyanto_bot' == $adanParse[0]) {
 	if ($adanParse[1] != null) {
 		if (is_valid_domain_name($adanParse[1])) {
-			$ipHOST = file_get_contents('http://localhost:81/?method=aaaa&dns=' . $adanParse[1]);
+			$ipHOST = file_get_contents('https://fadhilriyanto-telegram-bot.herokuapp.com/APIs.php?method=aaaa&dns=' . $adanParse[1]);
 			if ($ipHOST != null) {
 				$reply = 'AAAA dari host ' . $adanParse[1] . ' adalah ' . PHP_EOL . PHP_EOL . $ipHOST;
 				$content = array('chat_id' => $chat_id, 'text' => $reply);
@@ -146,7 +146,7 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 } elseif ('/get_txt' == $adanParse[0] || '/get_txt@fadhil_riyanto_bot' == $adanParse[0]) {
 	if ($adanParse[1] != null) {
 		if (is_valid_domain_name($adanParse[1])) {
-			$ipHOST = file_get_contents('http://localhost:81/?method=txt&dns=' . $adanParse[1]);
+			$ipHOST = file_get_contents('https://fadhilriyanto-telegram-bot.herokuapp.com/APIs.php?method=txt&dns=' . $adanParse[1]);
 			if ($ipHOST != null) {
 				$reply = 'TXT dari host ' . $adanParse[1] . ' adalah ' . PHP_EOL . PHP_EOL . $ipHOST;
 				$content = array('chat_id' => $chat_id, 'text' => $reply);
@@ -170,7 +170,7 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 } elseif ('/get_cname' == $adanParse[0] || '/get_cname@fadhil_riyanto_bot' == $adanParse[0]) {
 	if ($adanParse[1] != null) {
 		if (is_valid_domain_name($adanParse[1])) {
-			$ipHOST = file_get_contents('http://localhost:81/?method=cname&dns=' . $adanParse[1]);
+			$ipHOST = file_get_contents('https://fadhilriyanto-telegram-bot.herokuapp.com/APIs.php?method=cname&dns=' . $adanParse[1]);
 			if ($ipHOST != null) {
 				$reply = 'CNAME dari host ' . $adanParse[1] . ' adalah ' . PHP_EOL . PHP_EOL . $ipHOST;
 				$content = array('chat_id' => $chat_id, 'text' => $reply);
