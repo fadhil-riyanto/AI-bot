@@ -1,0 +1,40 @@
+============[Date]============
+[ 2020-12-15 10:00:00  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.text= Hai, saya Bot Fadhil Riyanto. kamu bisa tanya apa aja. karena apa? karena aku dibuat menggunakan AI
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\test.php(320): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2020-12-15 10:00:11  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.text= Hai, saya Bot Fadhil Riyanto. kamu bisa tanya apa aja. karena apa? karena aku dibuat menggunakan AI
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\test.php(320): Telegram->sendMessage(Array)
+#4 {main}
+
