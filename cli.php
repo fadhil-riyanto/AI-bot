@@ -155,153 +155,15 @@ $koneksi = @mysqli_connect('freedb.tech', 'freedbtech_ai_bot_fadhil_riyanto', 'R
 //$koneksi = @mysqli_connect('localhost', 'root', 'root', 'ai_data');
 $q = @mysqli_query($koneksi, "SELECT * FROM `data_ai` WHERE `data_key_ai` LIKE _utf8 '$out' ");
 $tes_jumlah_row = @mysqli_affected_rows($koneksi);
+$query_hasil = mysqli_fetch_assoc($q);
 // AI dimuali
-if (
-	$out === 'info' || $out === 'tampilkan info' || $out === 'info saya' || $out === 'info bot ini'
-	|| $out === 'informasi bot' || $out === 'infonya' || $out === 'tolong saya' || $out === '/info' || $out === 'tolong'
-) {
-	echo $nama_pengirim_bot . '/info untuk mengetahui info tentang asisten ini' . PHP_EOL;
-	echo $nama_pengirim_bot . '/waktu untuk melihat info waktu sekarang' . PHP_EOL;
-	echo $nama_pengirim_bot . '/hitung untuk membuka dan menghitung aritmetika sederhana' . PHP_EOL;
-	echo $nama_pengirim_bot . '/delete untuk menghapus beberapa kosakata dari index' . PHP_EOL;
-	echo $nama_pengirim_bot . '/algorithm untuk melihat daftar algoritma di artimetika sederhana, lihat poin tentang /hitung' . PHP_EOL;
-	echo $nama_pengirim_bot . '/exit untuk keluar dari program ini' . PHP_EOL;
-	goto menu;
-} elseif ($out === 'ini jam berapa?' || $out === '/waktu' || $out === 'ini jam berapa ya?' || $out === 'jam sekarang!' || $out === 'lihat jam' || $out === 'waktu') {
-	echo $nama_pengirim_bot . 'Sekarang waktu ' . date('h:i:s a') . ' di timezone jakarta/indonesia' . PHP_EOL;
-	goto menu;
-} elseif ($out === '/info') {
-	echo $nama_pengirim_bot . 'Ini adalah BOT dengan kemampuan AI yang di program oleh Fadhil Riyanto' . PHP_EOL;
-	echo $nama_pengirim_bot . 'Kenapa ini bot saya buat? Yaitu untuk menjadi asisten pribadi saya' . PHP_EOL;
-	echo $nama_pengirim_bot . 'Dikarnakan saya tidak mempunyai teman chatting, makanya saya membuat bot saja' . PHP_EOL;
-	echo $nama_pengirim_bot . 'Bot ini sudah dilengkapi dengan kosakata kosakata pintar agar bisa berbicara dengan manusia' . PHP_EOL;
-	echo $nama_pengirim_bot . 'Dibuat di semarang dengan cinta, email saya id.fadhil.riyanto[at]gmail.com' . PHP_EOL;
-	goto menu;
-} elseif ($out === 'info corona' || $out === 'corona' || $out === 'infonya korona' || $out === 'info korona' || $out === 'korona indo' || $out === 'korona statistik') {
-	$file_korona = @file_get_contents('https://api.kawalcorona.com/indonesia/');
-	$file_korona_jsonParse = json_decode($file_korona, true);
-	if ($file_korona_jsonParse != NULL) {
-		foreach ($file_korona_jsonParse as $corona_jadi) {
-			echo $nama_pengirim_bot . 'positif   ' . $corona_jadi['positif'] . PHP_EOL;
-			echo $nama_pengirim_bot . 'sembuh    ' . $corona_jadi['sembuh'] . PHP_EOL;
-			echo $nama_pengirim_bot . 'meninggal ' . $corona_jadi['meninggal'] . PHP_EOL;
-			echo $nama_pengirim_bot . 'dirawat   ' . $corona_jadi['dirawat'] . PHP_EOL;
-		}
-		goto menu;
-	} else {
-		echo $nama_pengirim_bot . 'api error atau mungkin tidak ada internet' . PHP_EOL;
-		goto menu;
-	}
-} elseif ($out === '/exit') {
-	echo $nama_pengirim_bot . 'Bay Bay....' . PHP_EOL;
-	echo $nama_pengirim_bot . 'Terimakasih udah gunain ini bot....hehe' . PHP_EOL;
-	exit;
-} elseif ($out == '/set') {
-	echo $nama_pengirim_bot . 'masukkan url hook anda ';
-	$curl_mentah = fopen("php://stdin", "r");
-	$curl_matang = trim(fgets($curl_mentah));
-	$ch = curl_init();
-	curl_setopt($ch, CURLOPT_URL, "https://api.telegram.org/bot1489990155:AAGb7YFsVA-G2Vs28R6fQQZ8uxMm3ouCFDg/setWebhook?url=" . $curl_matang);
-	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-	$output = curl_exec($ch);
-	curl_close($ch);
-	goto menu;
-} elseif ($out === '/wiki' || $out === 'cari informasi' || $out === 'buka wikipedia' || $out === 'cari informasi' || $out === 'carikan' || $out === 'cari') {
-	echo $nama_pengirim_bot . 'Hai, saya wiki. tugas saya mencari informasi' . PHP_EOL;
-	echo $nama_pengirim_bot . 'Apa yang ingin di cari? ';
-	$wiki_mentah = fopen("php://stdin", "r");
-	$wiki_matang = trim(fgets($wiki_mentah));
-	echo $nama_pengirim_bot . 'Oke, tunggu bentar' . PHP_EOL;
-	sleep(2);
-	$no_underskor = str_replace(' ', '_', $wiki_matang);
-	//get data
-	$wiki_get_datanya = file_get_contents('https://id.wikipedia.org/w/api.php?action=query&prop=extracts&format=xml&exintro=&titles=' . $no_underskor);
-	$wiki_get_datanya_ubahKeXML = simplexml_load_string($wiki_get_datanya);
-	$wiki_matang = $wiki_get_datanya_ubahKeXML->query->pages->page->extract;
-	$wiki_escape = strip_tags($wiki_matang);
-	$wiki_hitung = wordwrap($wiki_escape, 77);
-	if ($wiki_escape != NULL) {
-		echo $nama_pengirim_bot . PHP_EOL;
-		echo '=================== HASIL ===============' . PHP_EOL;
-		echo $wiki_hitung . PHP_EOL;
-	} else {
-		echo $nama_pengirim_bot . 'Maaf nih, Data tidak ditemukan' . PHP_EOL;
-	}
-	goto menu;
-} elseif ($out === '/algorithm') {
-	echo $nama_pengirim_bot . 'Ada beberapa algoritma, diantaranya' . PHP_EOL;
-	echo $nama_pengirim_bot . 'tambah ( + ) digunakan untuk menambah suatu angka.   Key : ditambah' . PHP_EOL;
-	echo $nama_pengirim_bot . 'kali   ( - ) digunakan untuk mengalikan suatu angka. Key : dikali' . PHP_EOL;
-	echo $nama_pengirim_bot . 'kurang ( - ) digunakan untuk mengurangi suatu angka. Key : dikurangi' . PHP_EOL;
-	echo $nama_pengirim_bot . 'bagi   ( / ) di gunakan untuk membagi angka          Key : dibagi' . PHP_EOL;
-	echo $nama_pengirim_bot . 'modulo ( % ) di gunakan untuk mencari sisa bagi      Key : modulo' . PHP_EOL;
-	goto menu;
-} elseif ($out === '/hitung' || $out === 'hitungkan' || $out === 'buka kalkulator' || $out === 'calc' || $out === 'hitungin' || $out === 'hitung nomer' || $out === 'kalkulator') {
-	echo $nama_pengirim_bot . 'Angka pertamannya? ';
-	$tambah_calc_Num1 = fopen("php://stdin", "r");
-	$tambah_calc_Num1_matang = trim(fgets($tambah_calc_Num1));
+//var_dump($query_hasil);
 
-	echo $nama_pengirim_bot . 'Angka keduannya? ';
-	$tambah_calc_Num2 = fopen("php://stdin", "r");
-	$tambah_calc_Num2_matang = trim(fgets($tambah_calc_Num2));
 
-	echo $nama_pengirim_bot . 'Mau diapakan? ';
-	$parameters_cals = fopen("php://stdin", "r");
-	$parameters_cals_matang = trim(fgets($parameters_cals));
-
-	switch ($parameters_cals_matang) {
-		case 'ditambah':
-			$hasil_hitung = $tambah_calc_Num1_matang + $tambah_calc_Num2_matang;
-			echo $nama_pengirim_bot . $hasil_hitung . PHP_EOL;
-			break;
-		case 'dikali':
-			$hasil_hitung = $tambah_calc_Num1_matang * $tambah_calc_Num2_matang;
-			echo $nama_pengirim_bot . $hasil_hitung . PHP_EOL;
-			break;
-		case 'dikurangi':
-			$hasil_hitung = $tambah_calc_Num1_matang - $tambah_calc_Num2_matang;
-			echo $nama_pengirim_bot . $hasil_hitung . PHP_EOL;
-			break;
-		case 'dibagi':
-			$hasil_hitung = $tambah_calc_Num1_matang / $tambah_calc_Num2_matang;
-			echo $nama_pengirim_bot . $hasil_hitung . PHP_EOL;
-			break;
-		case 'modulo':
-			$hasil_hitung = $tambah_calc_Num1_matang % $tambah_calc_Num2_matang;
-			echo $nama_pengirim_bot . $hasil_hitung . PHP_EOL;
-			break;
-		default:
-			echo $nama_pengirim_bot . 'Maaf, algoritma tidak tersedia. silahkan ketik /algorithm untuk melihat daftarnya' . PHP_EOL;
-	}
-	goto menu;
-} elseif ($out === '/delete') {
-	echo 'BOT Anti Bugs: ';
-	$insert_bugs = fopen("php://stdin", "r");
-	$insert_bugs_matang = trim(fgets($insert_bugs));
-	mysqli_query($koneksi, "DELETE FROM `data_ai` WHERE  `data_key_ai`='$insert_bugs_matang'");
-	$rows_bugs = mysqli_affected_rows($koneksi);
-	if ($rows_bugs > 0) {
-		echo $nama_pengirim_bot . 'Data dihapus dari index' . PHP_EOL;
-	} else {
-		echo $nama_pengirim_bot . 'Data gagal di hapus. Data sudah tidak ada di database' . PHP_EOL;
-	}
-	goto menu;
-} elseif ($tes_jumlah_row > 0) {
-	foreach ($q as $respon) {
-		echo $nama_pengirim_bot . $respon['data_res_ai'] . PHP_EOL;
-	}
+if ($tes_jumlah_row > 0) {
+		echo $nama_pengirim_bot . $query_hasil['data_res_ai'] . PHP_EOL;
 	goto menu;
 } elseif ($tes_jumlah_row === 0) {
-	// echo ''.PHP_EOL;
-	// echo ' _______ Kata Tidak Ditemukan _______'.PHP_EOL;
-	// echo 'BOT key      : ';
-	// $insert = fopen("php://stdin","r");
-	// $insert_matang = trim(fgets($insert));
-	// if($insert_matang === '/batal'){
-	// 	echo '++++ Input Dibatalkan ++++'.PHP_EOL;
-	// 	goto menu;
-	// }else{
-	
 		mysqli_query($koneksi, "INSERT INTO `data_ai` (`data_key_ai`, `data_res_ai`) VALUES ('$out', 'null')");
 	goto menu;
 } else {

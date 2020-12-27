@@ -1,6 +1,14 @@
 <?php
 error_reporting(0);
 // function
+function gempa($domain)
+{
+    $mxzone = dns_get_record($domain, DNS_MX);
+    foreach ($mxzone as $data_mx) {
+        header('type: text/plain');
+        print $data_mx['target'] . PHP_EOL;
+    }
+}
 function dapatkan_mx($domain)
 {
     $mxzone = dns_get_record($domain, DNS_MX);

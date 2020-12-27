@@ -1,12 +1,19 @@
 <?php
+set_time_limit(-1);
+//aktifkan saat mode debug. jika ngga ya jangan diaktifkan ;v
 error_reporting(0);
 echo 'Hello world';
+
 include(__DIR__ . '/vendor/autoload.php');
+//wajib diisi
 $userid_pemilik = '1393342467';
-$telegram = new Telegram('1489990155:AAGb7YFsVA-G2Vs28R6fQQZ8uxMm3ouCFDg');
+$telegram = new Telegram('1489990155:AAE8JG68gf968NWYwvW5ymEYlPMnggfPfHA');
 $api_key_cuttly = 'fa1d93ba90dedd2ceb7d01e9bade271653373';
 $koneksi = @mysqli_connect('freedb.tech', 'freedbtech_ai_bot_fadhil_riyanto', 'R^&V*&(H7679U7TV6I987vt**(&^u^&*y^ct%yurtytTY&T%TY&YBTRHY&U7ytR', 'freedbtech_ai_bot_fadhil_riyanto');
 date_default_timezone_set('Asia/Jakarta');
+//use http!!!!
+$host_server = 'https://d58641e22f30337ec3071538a1a9e565.loophole.host';
+//akhir wajib diisi
 $text = strtolower(mysqli_real_escape_string($koneksi, $telegram->Text()));
 $chat_id = $telegram->ChatID();
 $userID = $telegram->UserID();
@@ -29,6 +36,57 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	$content = array('chat_id' => $chat_id, 'text' => $reply);
 	$telegram->sendMessage($content);
 	exit;
+} elseif ($text == '/berhenti' || $text == '/berhenti@fadhil_riyanto_bot') {
+	if ($userID == $userid_pemilik) {
+		$reply = 'bot ter-stop!!';
+		$content = array('chat_id' => $chat_id, 'text' => $reply);
+		$telegram->sendMessage($content);
+		exit;
+	} else {
+		$reply = '';
+		$content = array('chat_id' => $chat_id, 'text' => $reply);
+		$telegram->sendMessage($content);
+	}
+	
+}elseif ('/spam' == $adanParse[0] || '/spam@fadhil_riyanto_bot' == $adanParse[0]) {
+	if ($userID == $userid_pemilik) {
+		if($adanParse[1] == null){
+			$reply = 'Kosong!! Masukkan username yang ingin diSpam';
+			$content = array('chat_id' => $chat_id, 'text' => $reply);
+			$telegram->sendMessage($content);
+			exit;
+		}else{
+			if($adanParse[2] < 100){
+				if($adanParse[2] == null){
+					$reply = 'Isikan jumlah spam!!';
+				$content = array('chat_id' => $chat_id, 'text' => $reply);
+				$telegram->sendMessage($content);
+				}else{
+					for($spam = 1; $spam <= $adanParse[2]; $spam++){
+					$reply = 'Spam '.$spam. ' '. $adanParse[1];
+					$content = array('chat_id' => $chat_id, 'text' => $reply);
+					$telegram->sendMessage($content);
+					//exit;
+					}
+					$reply = 'Spam selesai bos!!';
+					$content = array('chat_id' => $chat_id, 'text' => $reply);
+					$telegram->sendMessage($content);
+					exit;
+				}
+			}else{
+			$reply = 'Pesan Harus dibawah 100!!';
+			$content = array('chat_id' => $chat_id, 'text' => $reply);
+			$telegram->sendMessage($content);
+			}
+		}
+		
+	} else {
+		$reply = 'Maaf, hanya @fadhil_riyanto yang bisa melakukanya';
+		$content = array('chat_id' => $chat_id, 'text' => $reply);
+		$telegram->sendMessage($content);
+		exit;
+	}
+	
 } elseif ('/get_ip' == $adanParse[0] || '/get_ip@fadhil_riyanto_bot' == $adanParse[0]) {
 	if ($adanParse[1] != null) {
 		if (is_valid_domain_name($adanParse[1])) {
@@ -50,7 +108,7 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 } elseif ('/get_mx' == $adanParse[0] || '/get_mx@fadhil_riyanto_bot' == $adanParse[0]) {
 	if ($adanParse[1] != null) {
 		if (is_valid_domain_name($adanParse[1])) {
-			$ipHOST = file_get_contents('https://fadhilriyanto-telegram-bot.herokuapp.com/APIs.php?method=mx&dns=' . $adanParse[1]);
+			$ipHOST = file_get_contents($host_server . '/APIs.php?method=mx&dns=' . $adanParse[1]);
 			if ($ipHOST != null) {
 				$reply = 'mx dari host ' . $adanParse[1] . ' adalah ' . PHP_EOL . PHP_EOL . $ipHOST;
 				$content = array('chat_id' => $chat_id, 'text' => $reply);
@@ -74,7 +132,7 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 } elseif ('/get_ns' == $adanParse[0] || '/get_ns@fadhil_riyanto_bot' == $adanParse[0]) {
 	if ($adanParse[1] != null) {
 		if (is_valid_domain_name($adanParse[1])) {
-			$ipHOST = file_get_contents('https://fadhilriyanto-telegram-bot.herokuapp.com/APIs.php?method=ns&dns=' . $adanParse[1]);
+			$ipHOST = file_get_contents($host_server . '/APIs.php?method=ns&dns='. $adanParse[1]);
 			if ($ipHOST != null) {
 				$reply = 'ns dari host ' . $adanParse[1] . ' adalah ' . PHP_EOL . PHP_EOL . $ipHOST;
 				$content = array('chat_id' => $chat_id, 'text' => $reply);
@@ -98,7 +156,7 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 } elseif ('/get_a' == $adanParse[0] || '/get_a@fadhil_riyanto_bot' == $adanParse[0]) {
 	if ($adanParse[1] != null) {
 		if (is_valid_domain_name($adanParse[1])) {
-			$ipHOST = file_get_contents('https://fadhilriyanto-telegram-bot.herokuapp.com/APIs.php?method=a&dns=' . $adanParse[1]);
+			$ipHOST = file_get_contents($host_server . '/APIs.php?method=a&dns='. $adanParse[1]);
 			if ($ipHOST != null) {
 				$reply = 'A dari host ' . $adanParse[1] . ' adalah ' . PHP_EOL . PHP_EOL . $ipHOST;
 				$content = array('chat_id' => $chat_id, 'text' => $reply);
@@ -122,7 +180,7 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 } elseif ('/get_aaaa' == $adanParse[0] || '/get_aaaa@fadhil_riyanto_bot' == $adanParse[0]) {
 	if ($adanParse[1] != null) {
 		if (is_valid_domain_name($adanParse[1])) {
-			$ipHOST = file_get_contents('https://fadhilriyanto-telegram-bot.herokuapp.com/APIs.php?method=aaaa&dns=' . $adanParse[1]);
+			$ipHOST = file_get_contents($host_server . '/APIs.php?method=aaaa&dns='. $adanParse[1]);
 			if ($ipHOST != null) {
 				$reply = 'AAAA dari host ' . $adanParse[1] . ' adalah ' . PHP_EOL . PHP_EOL . $ipHOST;
 				$content = array('chat_id' => $chat_id, 'text' => $reply);
@@ -146,7 +204,7 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 } elseif ('/get_txt' == $adanParse[0] || '/get_txt@fadhil_riyanto_bot' == $adanParse[0]) {
 	if ($adanParse[1] != null) {
 		if (is_valid_domain_name($adanParse[1])) {
-			$ipHOST = file_get_contents('https://fadhilriyanto-telegram-bot.herokuapp.com/APIs.php?method=txt&dns=' . $adanParse[1]);
+			$ipHOST = file_get_contents($host_server . '/APIs.php?method=txt&dns='. $adanParse[1]);
 			if ($ipHOST != null) {
 				$reply = 'TXT dari host ' . $adanParse[1] . ' adalah ' . PHP_EOL . PHP_EOL . $ipHOST;
 				$content = array('chat_id' => $chat_id, 'text' => $reply);
@@ -170,7 +228,7 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 } elseif ('/get_cname' == $adanParse[0] || '/get_cname@fadhil_riyanto_bot' == $adanParse[0]) {
 	if ($adanParse[1] != null) {
 		if (is_valid_domain_name($adanParse[1])) {
-			$ipHOST = file_get_contents('https://fadhilriyanto-telegram-bot.herokuapp.com/APIs.php?method=cname&dns=' . $adanParse[1]);
+			$ipHOST = file_get_contents($host_server . '/APIs.php?method=cname&dns='. $adanParse[1]);
 			if ($ipHOST != null) {
 				$reply = 'CNAME dari host ' . $adanParse[1] . ' adalah ' . PHP_EOL . PHP_EOL . $ipHOST;
 				$content = array('chat_id' => $chat_id, 'text' => $reply);
@@ -330,11 +388,6 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 		$telegram->sendMessage($content);
 	}
 	exit;
-} elseif ($text == '/berhenti' || $text == '/berhenti@fadhil_riyanto_bot') {
-	$reply = 'bot ter-stop!!';
-	$content = array('chat_id' => $chat_id, 'text' => $reply);
-	$telegram->sendMessage($content);
-	exit;
 } elseif ($text == '/gempa' || $text == '/gempa@fadhil_riyanto_bot') {
 	$data_gempanya = @simplexml_load_file('https://data.bmkg.go.id/autogempa.xml');
 	if ($data_gempanya != null) {
@@ -345,12 +398,16 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 			'Bujur :' . $data_gempanya->gempa->Bujur . PHP_EOL .
 			'Magnitude :' . $data_gempanya->gempa->Magnitude . PHP_EOL .
 			'Kedalaman :' . $data_gempanya->gempa->Kedalaman . PHP_EOL .
-			'Wilayah :' . $data_gempanya->gempa->Wilayah . PHP_EOL .
-			'Potensi :' . $data_gempanya->gempa->Potensi . PHP_EOL . PHP_EOL . PHP_EOL . 'Sumber : BMKG';
+			'Wilayah1 :' . $data_gempanya->gempa->Wilayah1 . PHP_EOL .
+			'Wilayah2 :' . $data_gempanya->gempa->Wilayah2 . PHP_EOL .
+			'Wilayah3 :' . $data_gempanya->gempa->Wilayah3 . PHP_EOL .
+			'Wilayah4 :' . $data_gempanya->gempa->Wilayah4 . PHP_EOL .
+			'Wilayah5 :' . $data_gempanya->gempa->Wilayah5 . PHP_EOL .
+			'Potensi :' . $data_gempanya->gempa->Potensi . PHP_EOL . PHP_EOL . PHP_EOL . 'Sumber : data.bmkg.go.id';
 		$content = array('chat_id' => $chat_id, 'text' => $reply);
 		$telegram->sendMessage($content);
 	} elseif ($data_gempanya == null) {
-		$reply = 'Maaf, server BMKG tidak aktif. silahkan coba lagi';
+		$reply = 'Maaf, server data.bmkg.go.id tidak aktif. silahkan coba lagi';
 		$content = array('chat_id' => $chat_id, 'text' => $reply);
 		$telegram->sendMessage($content);
 	}
@@ -466,8 +523,8 @@ if ($tes_jumlah_row > 0) {
 	}
 } elseif ($tes_jumlah_row === 0) {
 
-	$reply = 'Mohon maaf saya belum mengerti. saya akan mempelajarinya lagi' . PHP_EOL . 'Balas oke';
-	mysqli_query($koneksi, "INSERT INTO `data_ai` (`data_key_ai`, `data_res_ai`) VALUES ('$text', 'null')");
+	$reply = '' . PHP_EOL . '';
+	mysqli_query($koneksi, "INSERT INTO `data_ai` (`data_key_ai`, `data_res_ai`) VALUES ('$text', '|')");
 	$content = array('chat_id' => $chat_id, 'text' => $reply);
 	$telegram->sendMessage($content);
 }
