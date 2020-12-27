@@ -524,7 +524,7 @@ if ($tes_jumlah_row > 0) {
 } elseif ($tes_jumlah_row === 0) {
 
 	$reply = '' . PHP_EOL . '';
-	mysqli_query($koneksi, "INSERT INTO `data_ai` (`data_key_ai`, `data_res_ai`) VALUES ('$text', '|')");
+	mysqli_query($koneksi, "INSERT INTO `data_ai` (`data_key_ai`, `data_res_ai`) VALUES ('$text', 'hmhm')");
 	$content = array('chat_id' => $chat_id, 'text' => $reply);
 	$telegram->sendMessage($content);
 }
