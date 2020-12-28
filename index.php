@@ -12,7 +12,7 @@ $api_key_cuttly = 'fa1d93ba90dedd2ceb7d01e9bade271653373';
 $koneksi = @mysqli_connect('freedb.tech', 'freedbtech_ai_bot_fadhil_riyanto', 'R^&V*&(H7679U7TV6I987vt**(&^u^&*y^ct%yurtytTY&T%TY&YBTRHY&U7ytR', 'freedbtech_ai_bot_fadhil_riyanto');
 date_default_timezone_set('Asia/Jakarta');
 //use http!!!!
-$host_server = 'https://d58641e22f30337ec3071538a1a9e565.loophole.host';
+$host_server = 'https://cd5bf62044371454c8fa9b32f358c670.loophole.host';
 //akhir wajib diisi
 $text = strtolower(mysqli_real_escape_string($koneksi, $telegram->Text()));
 $chat_id = $telegram->ChatID();
@@ -36,7 +36,31 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	$content = array('chat_id' => $chat_id, 'text' => $reply);
 	$telegram->sendMessage($content);
 	exit;
-} elseif ('/get_github_user' == $adanParse[0] || '/get_github_user@fadhil_riyanto_bot' == $adanParse[0]) {
+} elseif('/tulis' == $adanParse[0] || '/tulis@fadhil_riyanto_bot' == $adanParse[0]){
+	//$hapusTulis = 
+	$udahDiparse = str_replace($adanParse[0].' ', '', $text);
+	$curlImage = file_get_contents('https://tools.zone-xsec.com/api/nulis.php?q='.urlencode($udahDiparse));
+	$parsecJsons = json_decode($curlImage);
+	if($adanParse[1] == null){
+		$reply = 'Pattern kosong, gunakan format' . PHP_EOL . '/tulis {your text}';
+		$content = array('chat_id' => $chat_id, 'text' => $reply);
+		$telegram->sendMessage($content);
+		exit;
+	}elseif($parsecJsons->status == "OK"){
+		$konten = array('chat_id' => $chat_id, 'photo' => $parsecJsons->image);
+		$telegram->sendPhoto($konten);
+		$reply = 'Gambar berhasil dibuat!';
+		$content = array('chat_id' => $chat_id, 'text' => $reply);
+		$telegram->sendMessage($content);
+		exit;
+	}else{
+		$reply = 'Maaf, sepertinya ada yang error di sistem kami';
+		$content = array('chat_id' => $chat_id, 'text' => $reply);
+		$telegram->sendMessage($content);
+		exit;
+	}
+	
+}elseif ('/get_github_user' == $adanParse[0] || '/get_github_user@fadhil_riyanto_bot' == $adanParse[0]) {
 	//$githubApis = file_get_contents('https://api.github.com/users/'. $adanParse[1]);
 	$ch = curl_init(); 
     curl_setopt($ch, CURLOPT_URL, "https://api.github.com/users/" . $adanParse[1]);
