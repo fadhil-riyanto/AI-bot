@@ -36,6 +36,51 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	$content = array('chat_id' => $chat_id, 'text' => $reply);
 	$telegram->sendMessage($content);
 	exit;
+} elseif ('/get_github_user' == $adanParse[0] || '/get_github_user@fadhil_riyanto_bot' == $adanParse[0]) {
+	//$githubApis = file_get_contents('https://api.github.com/users/'. $adanParse[1]);
+	$ch = curl_init(); 
+    curl_setopt($ch, CURLOPT_URL, "https://api.github.com/users/" . $adanParse[1]);
+	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
+	curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+    'User-Agent: request'
+	));
+    $output = curl_exec($ch); 
+    curl_close($ch);
+	$githubAPIS = json_decode($output);
+	if($adanParse[1] == null){
+		$reply = 'Maaf, Gunakan pattern' . PHP_EOL . PHP_EOL . '/get_github_user {username github';
+		$content = array('chat_id' => $chat_id, 'text' => $reply);
+		$telegram->sendMessage($content);
+		exit;
+	}elseif($githubAPIS->message == "Not Found"){
+		$reply = 'Maaf, tidak ditemukan';
+		$content = array('chat_id' => $chat_id, 'text' => $reply);
+		$telegram->sendMessage($content);
+		exit;
+	}else{
+		$reply = 'Info user github' . PHP_EOL . PHP_EOL .
+				'ID :' . $githubAPIS->id . PHP_EOL . 
+				'Username : ' . $githubAPIS->login . PHP_EOL . 
+				'Akun : ' . $githubAPIS->html_url . PHP_EOL . PHP_EOL . 
+				'Tipe : ' . $githubAPIS->type . PHP_EOL . 
+				'Nama : ' . $githubAPIS->name . PHP_EOL . 
+				'Perusahaan : ' . $githubAPIS->company . PHP_EOL . 
+				'Web : ' . $githubAPIS->blog . PHP_EOL . 
+				'Lokasi : ' . $githubAPIS->location . PHP_EOL . 
+				'email : ' . $githubAPIS->email . PHP_EOL . 
+				'bio : ' . $githubAPIS->bio . PHP_EOL . PHP_EOL . 
+				'Twitter : ' . $githubAPIS->twitter_username . PHP_EOL . 
+				'Reposito : ' . $githubAPIS->public_repos . PHP_EOL . 
+				'Gist : ' . $githubAPIS->public_gists . PHP_EOL . 
+				'Pengikut : ' . $githubAPIS->followers . PHP_EOL . 
+				'Mengikuti : ' . $githubAPIS->following . PHP_EOL . PHP_EOL . PHP_EOL . 
+				'updated_at : ' . $githubAPIS->updated_at . PHP_EOL  ;
+		$konten = array('chat_id' => $chat_id, 'photo' => $githubAPIS->avatar_url );
+		$telegram->sendPhoto($konten);
+		$content = array('chat_id' => $chat_id, 'text' => $reply);
+		$telegram->sendMessage($content);	
+	exit;
+	}
 } elseif ($text == '/berhenti' || $text == '/berhenti@fadhil_riyanto_bot') {
 	if ($userID == $userid_pemilik) {
 		$reply = 'bot ter-stop!!';
