@@ -1,25 +1,30 @@
 <?php
-set_time_limit(-1);
+ ini_set('max_execution_time', 20);
 //aktifkan saat mode debug. jika ngga ya jangan diaktifkan ;v
 error_reporting(0);
 echo 'Hello world';
 
 include(__DIR__ . '/vendor/autoload.php');
 //wajib diisi
+// ______________________________
 $userid_pemilik = '1393342467';
-$keyTelegramBot = '1489990155:AAE8JG68gf968NWYwvW5ymEYlPMnggfPfHA';
-$telegram = new Telegram($keyTelegramBot);
+$telegramAPIs   = '1489990155:AAE8JG68gf968NWYwvW5ymEYlPMnggfPfHA';
 $api_key_cuttly = 'fa1d93ba90dedd2ceb7d01e9bade271653373';
-$koneksi = @mysqli_connect('freedb.tech', 'freedbtech_ai_bot_fadhil_riyanto', 'R^&V*&(H7679U7TV6I987vt**(&^u^&*y^ct%yurtytTY&T%TY&YBTRHY&U7ytR', 'freedbtech_ai_bot_fadhil_riyanto');
+$host_server   = 'https://server-data.000webhostapp.com';
 date_default_timezone_set('Asia/Jakarta');
+// ________________________________
+$telegram = new Telegram($telegramAPIs);
+
+$koneksi = @mysqli_connect('freedb.tech', 'freedbtech_ai_bot_fadhil_riyanto', 'R^&V*&(H7679U7TV6I987vt**(&^u^&*y^ct%yurtytTY&T%TY&YBTRHY&U7ytR', 'freedbtech_ai_bot_fadhil_riyanto');
+
 //use http!!!!
-$host_server = ' https://7de0a6a44b37152d78980dcbdcd93b5c.loophole.host';
 //akhir wajib diisi
 $text = strtolower(mysqli_real_escape_string($koneksi, $telegram->Text()));
 $chat_id = $telegram->ChatID();
 $userID = $telegram->UserID();
-$usernameID = $telegram->Username();
-$usernameUdahDIparse = 'Hai @'.$usernameID.  PHP_EOL ;
+$usernameBelumdiparse = $telegram->Username();
+
+$username = ' @'.$usernameBelumdiparse;
 
 $adanParse = explode(' ', $text);
 $hilangAzan = str_replace('/azan ', '', $text, $hit);
@@ -35,29 +40,29 @@ function is_valid_domain_name($domain_name)
 }
 
 if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
-	$reply = 'Hai, Apa kabar @'.$usernameID.' ?';
+	$reply = 'Hai '.$username.', Apa kabar?';
 	$content = array('chat_id' => $chat_id, 'text' => $reply);
 	$telegram->sendMessage($content);
 	exit;
-}  elseif('/tulis' == $adanParse[0] || '/tulis@fadhil_riyanto_bot' == $adanParse[0]){
+} elseif('/tulis' == $adanParse[0] || '/tulis@fadhil_riyanto_bot' == $adanParse[0]){
 	//$hapusTulis = 
 	$udahDiparse = str_replace($adanParse[0].' ', '', $text);
 	$curlImage = file_get_contents('https://tools.zone-xsec.com/api/nulis.php?q='.urlencode($udahDiparse));
 	$parsecJsons = json_decode($curlImage);
 	if($adanParse[1] == null){
-		$reply = 'Hai '.'@'.$usernameID.' ' .  PHP_EOL .'Pattern kosong, gunakan format' . PHP_EOL . '/tulis {your text}';
+		$reply = 'Hai '.$username. PHP_EOL . 'Maaf, Pattern kosong, gunakan format' . PHP_EOL . '/tulis {your text}';
 		$content = array('chat_id' => $chat_id, 'text' => $reply);
 		$telegram->sendMessage($content);
 		exit;
 	}elseif($parsecJsons->status == "OK"){
 		$konten = array('chat_id' => $chat_id, 'photo' => $parsecJsons->image);
 		$telegram->sendPhoto($konten);
-		$reply = $usernameUdahDIparse.'Gambar berhasil dibuat!';
+		$reply = 'Hai '.$username. PHP_EOL .'Gambar berhasil dibuat!';
 		$content = array('chat_id' => $chat_id, 'text' => $reply);
 		$telegram->sendMessage($content);
 		exit;
 	}else{
-		$reply = $usernameUdahDIparse.'Maaf, sepertinya ada yang error di sistem kami';
+		$reply = 'Hai '.$username. PHP_EOL .'Maaf, sepertinya ada yang error di sistem kami';
 		$content = array('chat_id' => $chat_id, 'text' => $reply);
 		$telegram->sendMessage($content);
 		exit;
@@ -75,17 +80,17 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
     curl_close($ch);
 	$githubAPIS = json_decode($output);
 	if($adanParse[1] == null){
-		$reply = $usernameUdahDIparse.'Maaf, Gunakan pattern' . PHP_EOL . PHP_EOL . '/get_github_user {username github';
+		$reply = 'Hai '.$username. PHP_EOL .'Maaf, Gunakan pattern' . PHP_EOL . PHP_EOL . '/get_github_user {username github'. PHP_EOL . PHP_EOL . 'Contoh : /get_github_user torvalds';
 		$content = array('chat_id' => $chat_id, 'text' => $reply);
 		$telegram->sendMessage($content);
 		exit;
 	}elseif($githubAPIS->message == "Not Found"){
-		$reply = $usernameUdahDIparse.'Maaf, tidak ditemukan';
+		$reply = 'Hai '.$username. PHP_EOL .'Maaf, tidak ditemukan, Mungkin kamu salah ketik atau mungkin akun yang kamu cari sudah dihapus sama Github';
 		$content = array('chat_id' => $chat_id, 'text' => $reply);
 		$telegram->sendMessage($content);
 		exit;
 	}else{
-		$reply = 'Info user github' . PHP_EOL . PHP_EOL .
+		$reply = 'Hai '.$username. PHP_EOL .'Info user github' . PHP_EOL . PHP_EOL .
 				'ID :' . $githubAPIS->id . PHP_EOL . 
 				'Username : ' . $githubAPIS->login . PHP_EOL . 
 				'Akun : ' . $githubAPIS->html_url . PHP_EOL . PHP_EOL . 
@@ -110,27 +115,28 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	}
 } elseif ($text == '/berhenti' || $text == '/berhenti@fadhil_riyanto_bot') {
 	if ($userID == $userid_pemilik) {
-		$reply = 'bot ter-stop!!';
+		$reply = 'Hai '.$username. PHP_EOL .'bot ter-stop!!';
 		$content = array('chat_id' => $chat_id, 'text' => $reply);
 		$telegram->sendMessage($content);
 		exit;
 	} else {
-		$reply = '';
+		$reply = 'Maaf '.$username. PHP_EOL . PHP_EOL . 'hanya @fadhil_riyanto yang bisa menjalankan command ini';
 		$content = array('chat_id' => $chat_id, 'text' => $reply);
 		$telegram->sendMessage($content);
+		exit;
 	}
 	
 }elseif ('/spam' == $adanParse[0] || '/spam@fadhil_riyanto_bot' == $adanParse[0]) {
 	if ($userID == $userid_pemilik) {
 		if($adanParse[1] == null){
-			$reply = $usernameUdahDIparse.'Kosong!! Masukkan username yang ingin diSpam';
+			$reply = 'Hai '.$username. PHP_EOL . PHP_EOL .'Mohon Masukkan username yang ingin dispam';
 			$content = array('chat_id' => $chat_id, 'text' => $reply);
 			$telegram->sendMessage($content);
 			exit;
 		}else{
-			if($adanParse[2] < 100){
+			if($adanParse[2] < 15){
 				if($adanParse[2] == null){
-					$reply = $usernameUdahDIparse.'Isikan jumlah spam!!';
+					$reply = 'Hai '.$username. PHP_EOL . PHP_EOL .'Mohon isikan jumlah spam!!';
 				$content = array('chat_id' => $chat_id, 'text' => $reply);
 				$telegram->sendMessage($content);
 				}else{
@@ -140,20 +146,20 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 					$telegram->sendMessage($content);
 					//exit;
 					}
-					$reply = 'Spam selesai bos!!';
+					$reply = 'Hai '.$username. PHP_EOL .'Spam selesai bos!!';
 					$content = array('chat_id' => $chat_id, 'text' => $reply);
 					$telegram->sendMessage($content);
 					exit;
 				}
 			}else{
-			$reply = 'Pesan Harus dibawah 100!!';
+			$reply = 'Hai '.$username. PHP_EOL . PHP_EOL .'Jumlah spam Harus dibawah 15 untuk melindungi user!!';
 			$content = array('chat_id' => $chat_id, 'text' => $reply);
 			$telegram->sendMessage($content);
 			}
 		}
 		
 	} else {
-		$reply = $usernameUdahDIparse.'Maaf, hanya @fadhil_riyanto yang bisa melakukanya';
+		$reply = 'Maaf, hanya @fadhil_riyanto yang bisa melakukanya';
 		$content = array('chat_id' => $chat_id, 'text' => $reply);
 		$telegram->sendMessage($content);
 		exit;
@@ -163,16 +169,16 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	if ($adanParse[1] != null) {
 		if (is_valid_domain_name($adanParse[1])) {
 			$ipHOST = gethostbyname($adanParse[1]);
-			$reply = $usernameUdahDIparse.'IP dari ' . $adanParse[1] . ' adalah ' . $ipHOST;
+			$reply = 'Hai '.$username. PHP_EOL . PHP_EOL .'IP dari host ' . $adanParse[1] . PHP_EOL . 'adalah ' . $ipHOST;
 			$content = array('chat_id' => $chat_id, 'text' => $reply);
 			$telegram->sendMessage($content);
 		} else {
-			$reply = $usernameUdahDIparse.'Maaf, Harus Tanpa HTTP://';
+			$reply = 'Hai '.$username. PHP_EOL . PHP_EOL .'Maaf, Harus Tanpa HTTP://';
 			$content = array('chat_id' => $chat_id, 'text' => $reply);
 			$telegram->sendMessage($content);
 		}
 	} else {
-		$reply = $usernameUdahDIparse.'Maaf, gunakan format' . PHP_EOL . '/get_ip {domain}' . PHP_EOL . PHP_EOL . 'Note: Tanpa HTTP://';
+		$reply = 'Hai '.$username. PHP_EOL . PHP_EOL .'Maaf, gunakan format' . PHP_EOL . '/get_ip {domain}' . PHP_EOL . PHP_EOL . 'Note: Tanpa HTTP://';
 		$content = array('chat_id' => $chat_id, 'text' => $reply);
 		$telegram->sendMessage($content);
 	}
@@ -182,21 +188,21 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 		if (is_valid_domain_name($adanParse[1])) {
 			$ipHOST = file_get_contents($host_server . '/APIs.php?method=mx&dns=' . $adanParse[1]);
 			if ($ipHOST != null) {
-				$reply = $usernameUdahDIparse.'MX dari ' . $adanParse[1] . ' adalah ' . PHP_EOL . PHP_EOL . $ipHOST;
+				$reply = 'Hai '.$username. PHP_EOL . PHP_EOL .'MX dari host ' . $adanParse[1] . PHP_EOL .  'adalah ' . PHP_EOL . '------------------' . PHP_EOL . $ipHOST;
 				$content = array('chat_id' => $chat_id, 'text' => $reply);
 				$telegram->sendMessage($content);
 			} else {
-				$reply = $usernameUdahDIparse.'Query DNS gagal';
+				$reply = 'Hai '.$username. PHP_EOL . PHP_EOL .'Query DNS gagal';
 				$content = array('chat_id' => $chat_id, 'text' => $reply);
 				$telegram->sendMessage($content);
 			}
 		} else {
-			$reply = $usernameUdahDIparse.'Maaf, Harus Tanpa HTTP://';
+			$reply = 'Maaf, Harus Tanpa HTTP://';
 			$content = array('chat_id' => $chat_id, 'text' => $reply);
 			$telegram->sendMessage($content);
 		}
 	} else {
-		$reply = $usernameUdahDIparse.'Maaf, gunakan format' . PHP_EOL . '/get_mx {domain}' . PHP_EOL . PHP_EOL . 'Note: Tanpa HTTP://';
+		$reply = 'Maaf, gunakan format' . PHP_EOL . '/get_mx {domain}' . PHP_EOL . PHP_EOL . 'Note: Tanpa HTTP://';
 		$content = array('chat_id' => $chat_id, 'text' => $reply);
 		$telegram->sendMessage($content);
 	}
@@ -206,21 +212,21 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 		if (is_valid_domain_name($adanParse[1])) {
 			$ipHOST = file_get_contents($host_server . '/APIs.php?method=ns&dns='. $adanParse[1]);
 			if ($ipHOST != null) {
-				$reply = $usernameUdahDIparse.'Name Server dari ' . $adanParse[1] . ' adalah ' . PHP_EOL . PHP_EOL . $ipHOST;
+				$reply = 'Hai '.$username. PHP_EOL . PHP_EOL .'NS dari ' . $adanParse[1] . PHP_EOL . 'adalah ' . PHP_EOL . '------------------' . PHP_EOL . $ipHOST;
 				$content = array('chat_id' => $chat_id, 'text' => $reply);
 				$telegram->sendMessage($content);
 			} else {
-				$reply = $usernameUdahDIparse.'Query DNS gagal';
+				$reply = 'Hai '.$username. PHP_EOL . PHP_EOL .'Maaf, Query DNS gagal';
 				$content = array('chat_id' => $chat_id, 'text' => $reply);
 				$telegram->sendMessage($content);
 			}
 		} else {
-			$reply = $usernameUdahDIparse.'Maaf, Harus Tanpa HTTP://';
+			$reply = 'Hai '.$username. PHP_EOL . PHP_EOL .'Maaf, Harus Tanpa HTTP://';
 			$content = array('chat_id' => $chat_id, 'text' => $reply);
 			$telegram->sendMessage($content);
 		}
 	} else {
-		$reply = $usernameUdahDIparse.'Maaf, gunakan format' . PHP_EOL . '/get_ns {domain}' . PHP_EOL . PHP_EOL . 'Note: Tanpa HTTP://';
+		$reply = 'Hai '.$username. PHP_EOL . PHP_EOL .'Maaf, gunakan format' . PHP_EOL . '/get_ns {domain}' . PHP_EOL . PHP_EOL . 'Note: Tanpa HTTP://';
 		$content = array('chat_id' => $chat_id, 'text' => $reply);
 		$telegram->sendMessage($content);
 	}
@@ -230,21 +236,21 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 		if (is_valid_domain_name($adanParse[1])) {
 			$ipHOST = file_get_contents($host_server . '/APIs.php?method=a&dns='. $adanParse[1]);
 			if ($ipHOST != null) {
-				$reply = $usernameUdahDIparse.'Record A dari ' . $adanParse[1] . ' adalah ' . PHP_EOL . PHP_EOL . $ipHOST;
+				$reply = 'Hai '.$username. PHP_EOL . PHP_EOL .'A dari ' . $adanParse[1] . ' adalah '  . PHP_EOL . '------------------' . PHP_EOL . $ipHOST;
 				$content = array('chat_id' => $chat_id, 'text' => $reply);
 				$telegram->sendMessage($content);
 			} else {
-				$reply = $usernameUdahDIparse.'Query DNS gagal';
+				$reply = 'Hai '.$username. PHP_EOL . PHP_EOL .'Maaf, Query DNS gagal';
 				$content = array('chat_id' => $chat_id, 'text' => $reply);
 				$telegram->sendMessage($content);
 			}
 		} else {
-			$reply = $usernameUdahDIparse.'Maaf, Harus Tanpa HTTP://';
+			$reply = 'Hai '.$username. PHP_EOL . PHP_EOL .'Maaf, Harus Tanpa HTTP://';
 			$content = array('chat_id' => $chat_id, 'text' => $reply);
 			$telegram->sendMessage($content);
 		}
 	} else {
-		$reply = $usernameUdahDIparse.'Maaf, gunakan format' . PHP_EOL . '/get_a {domain}' . PHP_EOL . PHP_EOL . 'Note: Tanpa HTTP://';
+		$reply = 'Hai '.$username. PHP_EOL . PHP_EOL .'Maaf, gunakan format' . PHP_EOL . '/get_a {domain}' . PHP_EOL . PHP_EOL . 'Note: Tanpa HTTP://';
 		$content = array('chat_id' => $chat_id, 'text' => $reply);
 		$telegram->sendMessage($content);
 	}
@@ -254,21 +260,21 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 		if (is_valid_domain_name($adanParse[1])) {
 			$ipHOST = file_get_contents($host_server . '/APIs.php?method=aaaa&dns='. $adanParse[1]);
 			if ($ipHOST != null) {
-				$reply = $usernameUdahDIparse.'Record AAAA dari ' . $adanParse[1] . ' adalah ' . PHP_EOL . PHP_EOL . $ipHOST;
+				$reply = 'Hai '.$username. PHP_EOL . PHP_EOL .'AAAA dari ' . $adanParse[1] . ' adalah ' . PHP_EOL . '------------------' . PHP_EOL . $ipHOST;
 				$content = array('chat_id' => $chat_id, 'text' => $reply);
 				$telegram->sendMessage($content);
 			} else {
-				$reply = $usernameUdahDIparse.'Query DNS gagal';
+				$reply = 'Hai '.$username. PHP_EOL . PHP_EOL .'Maaf, Query DNS gagal';
 				$content = array('chat_id' => $chat_id, 'text' => $reply);
 				$telegram->sendMessage($content);
 			}
 		} else {
-			$reply = $usernameUdahDIparse.'Maaf, Harus Tanpa HTTP://';
+			$reply = 'Hai '.$username. PHP_EOL . PHP_EOL .'Maaf, Harus Tanpa HTTP://';
 			$content = array('chat_id' => $chat_id, 'text' => $reply);
 			$telegram->sendMessage($content);
 		}
 	} else {
-		$reply = $usernameUdahDIparse.'Maaf, gunakan format' . PHP_EOL . '/get_aaaa {domain}' . PHP_EOL . PHP_EOL . 'Note: Tanpa HTTP://';
+		$reply = 'Hai '.$username. PHP_EOL . PHP_EOL .'Maaf, gunakan format' . PHP_EOL . '/get_aaaa {domain}' . PHP_EOL . PHP_EOL . 'Note: Tanpa HTTP://';
 		$content = array('chat_id' => $chat_id, 'text' => $reply);
 		$telegram->sendMessage($content);
 	}
@@ -278,21 +284,21 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 		if (is_valid_domain_name($adanParse[1])) {
 			$ipHOST = file_get_contents($host_server . '/APIs.php?method=txt&dns='. $adanParse[1]);
 			if ($ipHOST != null) {
-				$reply = $usernameUdahDIparse.'Record TXT dari ' . $adanParse[1] . ' adalah ' . PHP_EOL . PHP_EOL . $ipHOST;
+				$reply = 'Hai '.$username. PHP_EOL . PHP_EOL .'TXT dari ' . $adanParse[1] . ' adalah '  . PHP_EOL . '------------------' . PHP_EOL . $ipHOST;
 				$content = array('chat_id' => $chat_id, 'text' => $reply);
 				$telegram->sendMessage($content);
 			} else {
-				$reply = $usernameUdahDIparse.'Query DNS gagal';
+				$reply = 'Hai '.$username. PHP_EOL . PHP_EOL .'Maaf, Query DNS gagal';
 				$content = array('chat_id' => $chat_id, 'text' => $reply);
 				$telegram->sendMessage($content);
 			}
 		} else {
-			$reply = $usernameUdahDIparse.'Maaf, Harus Tanpa HTTP://';
+			$reply = 'Hai '.$username. PHP_EOL . PHP_EOL .'Maaf, Harus Tanpa HTTP://';
 			$content = array('chat_id' => $chat_id, 'text' => $reply);
 			$telegram->sendMessage($content);
 		}
 	} else {
-		$reply = $usernameUdahDIparse.'Maaf, gunakan format' . PHP_EOL . '/get_txt {domain}' . PHP_EOL . PHP_EOL . 'Note: Tanpa HTTP://';
+		$reply = 'Hai '.$username. PHP_EOL . PHP_EOL .'Maaf, gunakan format' . PHP_EOL . '/get_txt {domain}' . PHP_EOL . PHP_EOL . 'Note: Tanpa HTTP://';
 		$content = array('chat_id' => $chat_id, 'text' => $reply);
 		$telegram->sendMessage($content);
 	}
@@ -302,27 +308,27 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 		if (is_valid_domain_name($adanParse[1])) {
 			$ipHOST = file_get_contents($host_server . '/APIs.php?method=cname&dns='. $adanParse[1]);
 			if ($ipHOST != null) {
-				$reply = $usernameUdahDIparse.'Record CNAME dari ' . $adanParse[1] . ' adalah ' . PHP_EOL . PHP_EOL . $ipHOST;
+				$reply = 'Hai '.$username. PHP_EOL . PHP_EOL .'CNAME dari ' . $adanParse[1] . ' adalah '  . PHP_EOL . '------------------' . PHP_EOL . $ipHOST;
 				$content = array('chat_id' => $chat_id, 'text' => $reply);
 				$telegram->sendMessage($content);
 			} else {
-				$reply = $usernameUdahDIparse.'Query DNS gagal';
+				$reply = 'Hai '.$username. PHP_EOL . PHP_EOL .'Maaf, Query DNS gagal';
 				$content = array('chat_id' => $chat_id, 'text' => $reply);
 				$telegram->sendMessage($content);
 			}
 		} else {
-			$reply = $usernameUdahDIparse.'Maaf, Harus Tanpa HTTP://';
+			$reply = 'Hai '.$username. PHP_EOL . PHP_EOL .'Maaf, Harus Tanpa HTTP://';
 			$content = array('chat_id' => $chat_id, 'text' => $reply);
 			$telegram->sendMessage($content);
 		}
 	} else {
-		$reply = $usernameUdahDIparse.'Maaf, gunakan format' . PHP_EOL . '/get_cname {domain}' . PHP_EOL . PHP_EOL . 'Note: Tanpa HTTP://';
+		$reply = 'Hai '.$username. PHP_EOL . PHP_EOL .'Maaf, gunakan format' . PHP_EOL . '/get_cname {domain}' . PHP_EOL . PHP_EOL . 'Note: Tanpa HTTP://';
 		$content = array('chat_id' => $chat_id, 'text' => $reply);
 		$telegram->sendMessage($content);
 	}
 	exit;
 } elseif ($text == '/donate' || $text == '/donate@fadhil_riyanto_bot') {
-	$reply = $usernameUdahDIparse.'Saya senang mendengar anda mau donasi' . PHP_EOL . PHP_EOL .
+	$reply = 'Hai '.$username.', Saya senang mendengar anda mau donasi' . PHP_EOL . PHP_EOL .
 		'Saya memiliki 2 cara untuk donasi' . PHP_EOL . PHP_EOL .
 		'Cara pertama kamu hanya perlu mengirimkan banyak pertanyaan ringan ke bot. Agar apa? agar dia pintar. karena semakin banyak kata maka semakin banyak jumlah kata yang tersimpan (Jangan spam yaa, kasihan CPU server-nya).' . PHP_EOL . PHP_EOL .
 		'Cara kedua kamu bisa mengirimkan uang ke saya, jumlah bebas dan seikhlasnya. uang akan digunakan untuk membeli dan memperpanjang hosting database server.' . PHP_EOL . PHP_EOL .
@@ -337,45 +343,45 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 				$json_pendekurl = file_get_contents('https://cutt.ly/api/api.php?key=' . $api_key_cuttly . '&short=' . $adanParse[1] . '&name=' . $adanParse[2]);
 				$json_shorturl = json_decode($json_pendekurl, true);
 				if ($json_pendekurl == null) {
-					$reply = $usernameUdahDIparse.'Server sepertinya down';
+					$reply = 'Hai '.$username. PHP_EOL . PHP_EOL .'Server sedang down';
 					$content = array('chat_id' => $chat_id, 'text' => $reply);
 					$telegram->sendMessage($content);
 				} elseif ($json_shorturl["url"]["status"] == 1) {
-					$reply = $usernameUdahDIparse.'Maaf, link telah dipersingkat';
+					$reply = 'Hai '.$username. PHP_EOL . PHP_EOL .'Maaf, link telah sebelumnya';
 					$content = array('chat_id' => $chat_id, 'text' => $reply);
 					$telegram->sendMessage($content);
 				} elseif ($json_shorturl["url"]["status"] == 2) {
-					$reply = $usernameUdahDIparse.'Maaf, itu bukan tautan';
+					$reply = 'Hai '.$username. PHP_EOL . PHP_EOL .'Maaf, itu bukanlah tautan';
 					$content = array('chat_id' => $chat_id, 'text' => $reply);
 					$telegram->sendMessage($content);
 				} elseif ($json_shorturl["url"]["status"] == 3) {
-					$reply = $usernameUdahDIparse.'nama link yang diinginkan sudah digunakan';
+					$reply = 'Hai '.$username. PHP_EOL . PHP_EOL .'Maaf, nama link yang diinginkan sudah digunakan';
 					$content = array('chat_id' => $chat_id, 'text' => $reply);
 					$telegram->sendMessage($content);
 				} elseif ($json_shorturl["url"]["status"] == 4) {
-					$reply = 'API key error';
+					$reply = 'Hai '.$username. PHP_EOL . PHP_EOL .'API key error, silahkan contact @fadhil_riyanto agar diperbarui olehnya. Mimin tipe orang humoris kok';
 					$content = array('chat_id' => $chat_id, 'text' => $reply);
 					$telegram->sendMessage($content);
 				} elseif ($json_shorturl["url"]["status"] == 5) {
-					$reply = 'tidak valid : link tidak lolos validasi. Termasuk karakter yang tidak valid';
+					$reply = 'Hai '.$username. PHP_EOL . PHP_EOL .'Maaf, LINK kamu tidak valid karena tidak lolos validasi. Termasuk karakter yang tidak valid';
 					$content = array('chat_id' => $chat_id, 'text' => $reply);
 					$telegram->sendMessage($content);
 				} elseif ($json_shorturl["url"]["status"] == 6) {
-					$reply = 'Tautan yang diberikan berasal dari domain yang diblokir';
+					$reply = 'Hai '.$username. PHP_EOL . PHP_EOL .'Tautan yang diberikan berasal dari domain yang diblokir. seperti mengandung porno, judi, pishing, dan lain lain';
 					$content = array('chat_id' => $chat_id, 'text' => $reply);
 					$telegram->sendMessage($content);
 				} elseif ($json_shorturl["url"]["status"] == 7) {
-					$reply = 'Shortlink berhasil. Link anda ' . $json_shorturl["url"]["shortLink"];
+					$reply = 'Hai '.$username. PHP_EOL . PHP_EOL .'Shortlink berhasil. Link anda ' . $json_shorturl["url"]["shortLink"];
 					$content = array('chat_id' => $chat_id, 'text' => $reply);
 					$telegram->sendMessage($content);
 				} else {
-					$reply = 'error';
+					$reply = 'error, contact @fadhil_riyanto okee';
 					$content = array('chat_id' => $chat_id, 'text' => $reply);
 					$telegram->sendMessage($content);
 				}
 			} elseif ($userID != $userid_pemilik) {
 				if (isset($adanParse[2])) {
-					$reply = 'error, hanya admin yang bisa melakukan custom alias';
+					$reply = 'error, hanya @fadhil_riyanto yang bisa melakukan custom alias';
 					$content = array('chat_id' => $chat_id, 'text' => $reply);
 					$telegram->sendMessage($content);
 					exit;
@@ -383,47 +389,51 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 					$json_pendekurl = file_get_contents('https://cutt.ly/api/api.php?key=' . $api_key_cuttly . '&short=' . $adanParse[1]);
 					$json_shorturl = json_decode($json_pendekurl, true);
 					if ($json_pendekurl == null) {
-						$reply = 'server down';
+						$reply = 'Hai '.$username. PHP_EOL . PHP_EOL .'Server sedang down';
 						$content = array('chat_id' => $chat_id, 'text' => $reply);
 						$telegram->sendMessage($content);
 					} elseif ($json_shorturl["url"]["status"] == 1) {
-						$reply = 'Maaf, link telah dipersingkat';
+						$reply = 'Hai '.$username. PHP_EOL . PHP_EOL .'Maaf, link telah sebelumnya';
 						$content = array('chat_id' => $chat_id, 'text' => $reply);
 						$telegram->sendMessage($content);
 					} elseif ($json_shorturl["url"]["status"] == 2) {
-						$reply = 'Maaf, itu bukan tautan';
+						$reply = 'Hai '.$username. PHP_EOL . PHP_EOL .'Maaf, itu bukanlah tautan';
 						$content = array('chat_id' => $chat_id, 'text' => $reply);
 						$telegram->sendMessage($content);
 					} elseif ($json_shorturl["url"]["status"] == 3) {
-						$reply = 'nama link yang diinginkan sudah digunakan';
+						$reply = 'Hai '.$username. PHP_EOL . PHP_EOL .'Maaf, nama link yang diinginkan sudah digunakan';
 						$content = array('chat_id' => $chat_id, 'text' => $reply);
 						$telegram->sendMessage($content);
 					} elseif ($json_shorturl["url"]["status"] == 4) {
-						$reply = 'API key error';
+						$reply = 'Hai '.$username. PHP_EOL . PHP_EOL .'API key error, silahkan contact @fadhil_riyanto agar diperbarui olehnya. Mimin tipe orang humoris kok';
 						$content = array('chat_id' => $chat_id, 'text' => $reply);
 						$telegram->sendMessage($content);
 					} elseif ($json_shorturl["url"]["status"] == 5) {
-						$reply = 'tidak valid : link tidak lolos validasi. Termasuk karakter yang tidak valid';
+						$reply = 'Hai '.$username. PHP_EOL . PHP_EOL .'Maaf, LINK kamu tidak valid karena tidak lolos validasi. Termasuk karakter yang tidak valid';
 						$content = array('chat_id' => $chat_id, 'text' => $reply);
 						$telegram->sendMessage($content);
 					} elseif ($json_shorturl["url"]["status"] == 6) {
-						$reply = 'Tautan yang diberikan berasal dari domain yang diblokir';
+						$reply = 'Hai '.$username. PHP_EOL . PHP_EOL .'Tautan yang diberikan berasal dari domain yang diblokir. seperti mengandung porno, judi, pishing, dan lain lain';
 						$content = array('chat_id' => $chat_id, 'text' => $reply);
 						$telegram->sendMessage($content);
 					} elseif ($json_shorturl["url"]["status"] == 7) {
-						$reply = 'Shortlink berhasil. Link anda ' . $json_shorturl["url"]["shortLink"];
+						$reply = 'Hai '.$username. PHP_EOL . PHP_EOL .'Shortlink berhasil. Link anda ' . $json_shorturl["url"]["shortLink"];
 						$content = array('chat_id' => $chat_id, 'text' => $reply);
 						$telegram->sendMessage($content);
+					} else {
+					$reply = 'error, contact @fadhil_riyanto okee';
+					$content = array('chat_id' => $chat_id, 'text' => $reply);
+					$telegram->sendMessage($content);
 					}
 				}
 			}
 		} else {
-			$reply = 'Maaf, ini bukan URL!' . PHP_EOL . 'Url harus diawali dengan http://';
+			$reply = 'Hai '.$username. PHP_EOL . PHP_EOL .'Maaf, ini bukan URL!' . PHP_EOL . 'Url harus diawali dengan http://';
 			$content = array('chat_id' => $chat_id, 'text' => $reply);
 			$telegram->sendMessage($content);
 		}
 	} else {
-		$reply = 'Gunakan parameter' . PHP_EOL . ' /short {link kamu}' . PHP_EOL . PHP_EOL . 'Contoh /short https://google.com';
+		$reply = 'Hai '.$username. PHP_EOL . PHP_EOL .'Gunakan parameter' . PHP_EOL . ' /short {link kamu}' . PHP_EOL . PHP_EOL . 'Contoh /short https://google.com';
 		$content = array('chat_id' => $chat_id, 'text' => $reply);
 		$telegram->sendMessage($content);
 	}
@@ -435,13 +445,13 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	$json_adan = json_decode($adanCurl, true);
 
 	if ($adanParse[1] == null) {
-		$reply = 'maaf, anda salah. gunakan syntax' . PHP_EOL .
+		$reply = 'Hai '.$username. PHP_EOL . PHP_EOL .'maaf, anda salah. gunakan pattern' . PHP_EOL .
 			'/azan {kota}' . PHP_EOL . PHP_EOL .
 			'Contoh /azan jakarta';
 		$content = array('chat_id' => $chat_id, 'text' => $reply);
 		$telegram->sendMessage($content);
 	} elseif ($json_adan != null) {
-		$reply = 'Jadwal azan di' . $adanParse[1] . PHP_EOL . PHP_EOL .
+		$reply = 'Hai '.$username. PHP_EOL . PHP_EOL .'Jadwal azan di' . $adanParse[1] . PHP_EOL . PHP_EOL .
 			'Imsak ' . $json_adan['results']['datetime'][0]['times']['Imsak'] . PHP_EOL .
 			'Terbit ' . $json_adan['results']['datetime'][0]['times']['Sunrise'] . PHP_EOL .
 			'Fajar ' . $json_adan['results']['datetime'][0]['times']['Fajr'] . PHP_EOL .
@@ -463,7 +473,7 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 } elseif ($text == '/gempa' || $text == '/gempa@fadhil_riyanto_bot') {
 	$data_gempanya = @simplexml_load_file('https://data.bmkg.go.id/autogempa.xml');
 	if ($data_gempanya != null) {
-		$reply = 'Data gempa terkini' . PHP_EOL . PHP_EOL .
+		$reply = 'Hai '.$username. PHP_EOL . PHP_EOL .'Data gempa terkini' . PHP_EOL . PHP_EOL .
 			'tanggal :' . $data_gempanya->gempa->Tanggal . PHP_EOL .
 			'jam :' . $data_gempanya->gempa->Jam . PHP_EOL .
 			'lintang :' . $data_gempanya->gempa->Lintang . PHP_EOL .
@@ -479,13 +489,13 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 		$content = array('chat_id' => $chat_id, 'text' => $reply);
 		$telegram->sendMessage($content);
 	} elseif ($data_gempanya == null) {
-		$reply = 'Maaf, server data.bmkg.go.id tidak aktif. silahkan coba lagi';
+		$reply = 'Hai '.$username. PHP_EOL . PHP_EOL .'Maaf, server data.bmkg.go.id tidak aktif. silahkan coba lagi nanti';
 		$content = array('chat_id' => $chat_id, 'text' => $reply);
 		$telegram->sendMessage($content);
 	}
 	exit;
 } elseif ($text == '/userid' || $text == '/userid@fadhil_riyanto_bot') {
-	$reply = 'Hai, id kamu adalah' . PHP_EOL . 'ID :' . $userID . PHP_EOL . 'Terimakasih.';
+	$reply = 'Hai '.$username. ', id kamu adalah' . PHP_EOL . 'ID :' . $userID . PHP_EOL . 'Terimakasih.';
 	$content = array('chat_id' => $chat_id, 'text' => $reply);
 	$telegram->sendMessage($content);
 	exit;
@@ -493,7 +503,7 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	$text == '/mention' ||
 	$text == '/mention@fadhil_riyanto_bot'
 ) {
-	$reply = 'Hai...ada apa memanggil saya?' . PHP_EOL;
+	$reply = 'Hai '.$username. ', ada apa memanggil saya?' . PHP_EOL;
 	$content = array('chat_id' => $chat_id, 'text' => $reply);
 	$telegram->sendMessage($content);
 	exit;
@@ -512,7 +522,7 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	$text == 'jam berapa' ||
 	$text == 'jam berapa?'
 ) {
-	$reply = 'Sekarang jam ' . date('h:i:s a') . ', dihape kamu apa tidak cocok jamnya?' . PHP_EOL;
+	$reply = 'Hai '.$username. PHP_EOL . PHP_EOL .'Sekarang jam ' . date('h:i:s a') . ', dihape kamu apa tidak cocok jamnya?' . PHP_EOL;
 	$content = array('chat_id' => $chat_id, 'text' => $reply);
 	$telegram->sendMessage($content);
 	exit;
@@ -521,28 +531,12 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	$text == '/info@fadhil_riyanto_bot' ||
 	$text == 'info bot fadhil riyanto'
 ) {
-	$reply = 'Hi....' . PHP_EOL . PHP_EOL . 'Saya bot Fadhil Riyanto. Hobi saya bermain komputer dan membuat program' . PHP_EOL . PHP_EOL . 'Teknologi yang saya gunakan ialah. ' . PHP_EOL . 'Server: nginx' . PHP_EOL . 'Database: Mysql' . PHP_EOL . 'Forward: ngrok' . PHP_EOL . 'PHP: 8.0 ts' . PHP_EOL . 'Versi: 8.3.3' . PHP_EOL . PHP_EOL . ' Dibuat dengan Cinta oleh @fadhil_riyanto' . PHP_EOL . PHP_EOL .  'Semoga bot ini membantu.';
+	$reply = 'Hai '.$username. PHP_EOL . PHP_EOL . 'Saya bot Fadhil Riyanto. Hobi saya bermain komputer dan membuat program' . PHP_EOL . PHP_EOL . 'Teknologi yang saya gunakan ialah. ' . PHP_EOL . 'Server: nginx' . PHP_EOL . 'Database: Mysql' . PHP_EOL . 'Forward: Heroku, ngrok, 000webhost' . PHP_EOL . 'PHP: 8.0.0 thread safe' . PHP_EOL . 'Versi bot: 8.3.3 alpha' . PHP_EOL . PHP_EOL . ' Dibuat dengan Cinta oleh @fadhil_riyanto' . PHP_EOL . PHP_EOL .  'Semoga bot ini membantu.';
 	$content = array('chat_id' => $chat_id, 'text' => $reply);
 	$telegram->sendMessage($content);
 	exit;
 } elseif ($text == '/help' || $text == '/help@fadhil_riyanto_bot') {
-	$reply = 'Hi....' . PHP_EOL . PHP_EOL .
-		'Saya punya beberapa command untuk membantu kamu. Diantaranya adalah' . PHP_EOL . PHP_EOL .
-		'/corona - info status corona' . PHP_EOL .
-		'/userid - melihat ID user' . PHP_EOL .
-		'/waktu - cek waktu terkini' . PHP_EOL .
-		'/info - info bot ini' . PHP_EOL .
-		'/mention - untuk memanggil saya' . PHP_EOL .
-		'/start - memulai bot' . PHP_EOL .
-		'/short - pendekkan link' . PHP_EOL .
-		'/berhenti - hentikan thread bot' . PHP_EOL .
-		'/tanggal - lihat tanggal' . PHP_EOL .
-		'/bug - laporkan bug' . PHP_EOL .
-		'/azan - Jadwal azan' . PHP_EOL .
-		'/donate - Donasi ke developer' . PHP_EOL .
-		'/gempa - Melihat info gempa terkini' . PHP_EOL .
-		'/help - melihat semua command' . PHP_EOL . PHP_EOL .
-		'Semoga bot ini membantu' . PHP_EOL;
+	$reply = 'Hai '.$username. PHP_EOL . PHP_EOL . 'Untuk melihat help, silahkan buka link ini https://telegra.ph/Panduan-bot-fadhil-riyanto-12-31-2';
 
 	$option = array(
 		//First row
@@ -553,12 +547,12 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	$telegram->sendMessage($content);
 	exit;
 } elseif ($text == '/tanggal' || $text == '/tanggal@fadhil_riyanto_bot') {
-	$reply = 'sekarang tanggal ' . date('l, d F Y');
+	$reply = 'Hai '.$username. PHP_EOL . PHP_EOL .'sekarang tanggal ' . date('l, d F Y');
 	$content = array('chat_id' => $chat_id, 'text' => $reply);
 	$telegram->sendMessage($content);
 	exit;
 } elseif ($text == '/bug' || $text == '/bug@fadhil_riyanto_bot') {
-	$reply = 'Silahkan PM @fadhil_riyanto' . PHP_EOL . PHP_EOL . 'Jangan lupa sertakan Screenshot dan letak bug nya. yaaaa' . PHP_EOL . PHP_EOL . 'Dengan kamu melaporkan bug, kamu telah membantu saya untuk membuat bot lebih baik lagi';
+	$reply = 'Hai '.$username. PHP_EOL . PHP_EOL .'Silahkan PM @fadhil_riyanto' . PHP_EOL . PHP_EOL . 'Jangan lupa sertakan Screenshot dan letak bug nya. yaaaa' . PHP_EOL . PHP_EOL . 'Dengan kamu melaporkan bug, kamu telah membantu saya untuk membuat bot lebih baik lagi';
 	$content = array('chat_id' => $chat_id, 'text' => $reply);
 	$telegram->sendMessage($content);
 	exit;
@@ -571,7 +565,7 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	$file_korona_jsonParse = json_decode($file_korona, true);
 	if ($file_korona_jsonParse != NULL) {
 		foreach ($file_korona_jsonParse as $corona_jadi) {
-			$reply =  'Sepertinya jumlah kasus Corona adalah' . PHP_EOL . PHP_EOL . 'positif   ' . $corona_jadi['positif'] . PHP_EOL . 'sembuh    ' . $corona_jadi['sembuh'] . PHP_EOL . 'meninggal ' . $corona_jadi['meninggal'] . PHP_EOL . 'dirawat   ' . $corona_jadi['dirawat'] . PHP_EOL . PHP_EOL . 'Jangan lupa pakai masker dan jaga kesehatan.';
+			$reply =  'Hai '.$username. PHP_EOL . PHP_EOL .'Sepertinya jumlah kasus Corona adalah' . PHP_EOL . PHP_EOL . 'positif   ' . $corona_jadi['positif'] . PHP_EOL . 'sembuh    ' . $corona_jadi['sembuh'] . PHP_EOL . 'meninggal ' . $corona_jadi['meninggal'] . PHP_EOL . 'dirawat   ' . $corona_jadi['dirawat'] . PHP_EOL . PHP_EOL . 'Jangan lupa pakai masker dan jaga kesehatan.';
 			$content = array('chat_id' => $chat_id, 'text' => $reply);
 			$telegram->sendMessage($content);
 		}

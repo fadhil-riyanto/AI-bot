@@ -1,0 +1,351 @@
+============[Date]============
+[ 2020-12-30 19:26:55  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804384814
+ref.message.message_id= 5150
+ref.message.from.id= 1414586857
+ref.message.from.is_bot= false
+ref.message.from.first_name= Dell
+ref.message.chat.id= -1001454367290
+ref.message.chat.title= Anonymous chat group 4
+ref.message.chat.username= Anonymous_Chats_group
+ref.message.chat.type= supergroup
+ref.message.date= 1609331215
+ref.message.new_chat_participant.id= 1414586857
+ref.message.new_chat_participant.is_bot= false
+ref.message.new_chat_participant.first_name= Dell
+ref.message.new_chat_member.id= 1414586857
+ref.message.new_chat_member.is_bot= false
+ref.message.new_chat_member.first_name= Dell
+ref.message.new_chat_members.0.id= 1414586857
+ref.message.new_chat_members.0.is_bot= false
+ref.message.new_chat_members.0.first_name= Dell
+
+
+[ref]
+ref.text= 
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(598): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2020-12-30 19:33:13  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804384815
+ref.message.message_id= 8771
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= Fadhil's bot Project
+ref.message.chat.username= fadhil_bot_project
+ref.message.chat.type= supergroup
+ref.message.date= 1609331593
+ref.message.photo.0.file_id= AgACAgUAAx0CVBmRHAACIkNf7HOIxhV0DzKDXE8ELS4n641cIwACwKoxG4JPaVeyjE8eupvdvHB_Ymx0AAMBAAMCAANtAAM73QYAAR4E
+ref.message.photo.0.file_unique_id= AQADcH9ibHQAAzvdBgAB
+ref.message.photo.0.file_size= 7688
+ref.message.photo.0.width= 180
+ref.message.photo.0.height= 320
+ref.message.photo.1.file_id= AgACAgUAAx0CVBmRHAACIkNf7HOIxhV0DzKDXE8ELS4n641cIwACwKoxG4JPaVeyjE8eupvdvHB_Ymx0AAMBAAMCAAN4AAM83QYAAR4E
+ref.message.photo.1.file_unique_id= AQADcH9ibHQAAzzdBgAB
+ref.message.photo.1.file_size= 31055
+ref.message.photo.1.width= 450
+ref.message.photo.1.height= 800
+ref.message.photo.2.file_id= AgACAgUAAx0CVBmRHAACIkNf7HOIxhV0DzKDXE8ELS4n641cIwACwKoxG4JPaVeyjE8eupvdvHB_Ymx0AAMBAAMCAAN5AAM53QYAAR4E
+ref.message.photo.2.file_unique_id= AQADcH9ibHQAAzndBgAB
+ref.message.photo.2.file_size= 44212
+ref.message.photo.2.width= 720
+ref.message.photo.2.height= 1280
+ref.message.caption= Eh elu kenapa chat gw. Gw udah banyak grup
+
+
+[ref]
+ref.text= 
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(598): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2020-12-30 19:33:52  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804384816
+ref.message.message_id= 8772
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= Fadhil's bot Project
+ref.message.chat.username= fadhil_bot_project
+ref.message.chat.type= supergroup
+ref.message.date= 1609331629
+ref.message.reply_to_message.message_id= 8771
+ref.message.reply_to_message.from.id= 1393342467
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Fadhil Riyanto
+ref.message.reply_to_message.from.username= fadhil_riyanto
+ref.message.reply_to_message.from.language_code= id
+ref.message.reply_to_message.chat.id= -1001410961692
+ref.message.reply_to_message.chat.title= Fadhil's bot Project
+ref.message.reply_to_message.chat.username= fadhil_bot_project
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1609331593
+ref.message.reply_to_message.photo.0.file_id= AgACAgUAAx0CVBmRHAACIkNf7HOIxhV0DzKDXE8ELS4n641cIwACwKoxG4JPaVeyjE8eupvdvHB_Ymx0AAMBAAMCAANtAAM73QYAAR4E
+ref.message.reply_to_message.photo.0.file_unique_id= AQADcH9ibHQAAzvdBgAB
+ref.message.reply_to_message.photo.0.file_size= 7688
+ref.message.reply_to_message.photo.0.width= 180
+ref.message.reply_to_message.photo.0.height= 320
+ref.message.reply_to_message.photo.1.file_id= AgACAgUAAx0CVBmRHAACIkNf7HOIxhV0DzKDXE8ELS4n641cIwACwKoxG4JPaVeyjE8eupvdvHB_Ymx0AAMBAAMCAAN4AAM83QYAAR4E
+ref.message.reply_to_message.photo.1.file_unique_id= AQADcH9ibHQAAzzdBgAB
+ref.message.reply_to_message.photo.1.file_size= 31055
+ref.message.reply_to_message.photo.1.width= 450
+ref.message.reply_to_message.photo.1.height= 800
+ref.message.reply_to_message.photo.2.file_id= AgACAgUAAx0CVBmRHAACIkNf7HOIxhV0DzKDXE8ELS4n641cIwACwKoxG4JPaVeyjE8eupvdvHB_Ymx0AAMBAAMCAAN5AAM53QYAAR4E
+ref.message.reply_to_message.photo.2.file_unique_id= AQADcH9ibHQAAzndBgAB
+ref.message.reply_to_message.photo.2.file_size= 44212
+ref.message.reply_to_message.photo.2.width= 720
+ref.message.reply_to_message.photo.2.height= 1280
+ref.message.reply_to_message.caption= Eh elu kenapa chat gw. Gw udah banyak grup
+ref.message.text= Aku aja Sampek bikin banyak nomor
+
+Btw bikin aku itu hobi. Aku aja punya 100 akun gugel.
+
+
+[ref]
+ref.text= 
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(606): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2020-12-30 19:34:09  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804384817
+ref.edited_message.message_id= 8772
+ref.edited_message.from.id= 1393342467
+ref.edited_message.from.is_bot= false
+ref.edited_message.from.first_name= Fadhil Riyanto
+ref.edited_message.from.username= fadhil_riyanto
+ref.edited_message.from.language_code= id
+ref.edited_message.chat.id= -1001410961692
+ref.edited_message.chat.title= Fadhil's bot Project
+ref.edited_message.chat.username= fadhil_bot_project
+ref.edited_message.chat.type= supergroup
+ref.edited_message.date= 1609331629
+ref.edited_message.edit_date= 1609331648
+ref.edited_message.reply_to_message.message_id= 8771
+ref.edited_message.reply_to_message.from.id= 1393342467
+ref.edited_message.reply_to_message.from.is_bot= false
+ref.edited_message.reply_to_message.from.first_name= Fadhil Riyanto
+ref.edited_message.reply_to_message.from.username= fadhil_riyanto
+ref.edited_message.reply_to_message.from.language_code= id
+ref.edited_message.reply_to_message.chat.id= -1001410961692
+ref.edited_message.reply_to_message.chat.title= Fadhil's bot Project
+ref.edited_message.reply_to_message.chat.username= fadhil_bot_project
+ref.edited_message.reply_to_message.chat.type= supergroup
+ref.edited_message.reply_to_message.date= 1609331593
+ref.edited_message.reply_to_message.photo.0.file_id= AgACAgUAAx0CVBmRHAACIkNf7HOIxhV0DzKDXE8ELS4n641cIwACwKoxG4JPaVeyjE8eupvdvHB_Ymx0AAMBAAMCAANtAAM73QYAAR4E
+ref.edited_message.reply_to_message.photo.0.file_unique_id= AQADcH9ibHQAAzvdBgAB
+ref.edited_message.reply_to_message.photo.0.file_size= 7688
+ref.edited_message.reply_to_message.photo.0.width= 180
+ref.edited_message.reply_to_message.photo.0.height= 320
+ref.edited_message.reply_to_message.photo.1.file_id= AgACAgUAAx0CVBmRHAACIkNf7HOIxhV0DzKDXE8ELS4n641cIwACwKoxG4JPaVeyjE8eupvdvHB_Ymx0AAMBAAMCAAN4AAM83QYAAR4E
+ref.edited_message.reply_to_message.photo.1.file_unique_id= AQADcH9ibHQAAzzdBgAB
+ref.edited_message.reply_to_message.photo.1.file_size= 31055
+ref.edited_message.reply_to_message.photo.1.width= 450
+ref.edited_message.reply_to_message.photo.1.height= 800
+ref.edited_message.reply_to_message.photo.2.file_id= AgACAgUAAx0CVBmRHAACIkNf7HOIxhV0DzKDXE8ELS4n641cIwACwKoxG4JPaVeyjE8eupvdvHB_Ymx0AAMBAAMCAAN5AAM53QYAAR4E
+ref.edited_message.reply_to_message.photo.2.file_unique_id= AQADcH9ibHQAAzndBgAB
+ref.edited_message.reply_to_message.photo.2.file_size= 44212
+ref.edited_message.reply_to_message.photo.2.width= 720
+ref.edited_message.reply_to_message.photo.2.height= 1280
+ref.edited_message.reply_to_message.caption= Eh elu kenapa chat gw. Gw udah banyak grup
+ref.edited_message.text= Aku aja Sampek bikin banyak nomor
+
+Btw bikin akun itu hobi saya. Aku aja punya 100 akun gugel.
+
+
+[ref]
+ref.text= 
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(606): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2020-12-30 19:39:35  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804384824
+ref.message.message_id= 5195
+ref.message.from.id= 1427506157
+ref.message.from.is_bot= false
+ref.message.from.first_name= Aa"
+ref.message.chat.id= -1001454367290
+ref.message.chat.title= Anonymous chat group 4
+ref.message.chat.username= Anonymous_Chats_group
+ref.message.chat.type= supergroup
+ref.message.date= 1609331974
+ref.message.new_chat_participant.id= 1427506157
+ref.message.new_chat_participant.is_bot= false
+ref.message.new_chat_participant.first_name= Aa"
+ref.message.new_chat_member.id= 1427506157
+ref.message.new_chat_member.is_bot= false
+ref.message.new_chat_member.first_name= Aa"
+ref.message.new_chat_members.0.id= 1427506157
+ref.message.new_chat_members.0.is_bot= false
+ref.message.new_chat_members.0.first_name= Aa"
+
+
+[ref]
+ref.text= 
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(599): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2020-12-30 19:39:48  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804384826
+ref.message.message_id= 5197
+ref.message.from.id= 1437036760
+ref.message.from.is_bot= false
+ref.message.from.first_name= pall
+ref.message.from.username= pall28
+ref.message.chat.id= -1001454367290
+ref.message.chat.title= Anonymous chat group 4
+ref.message.chat.username= Anonymous_Chats_group
+ref.message.chat.type= supergroup
+ref.message.date= 1609331988
+ref.message.new_chat_participant.id= 1437036760
+ref.message.new_chat_participant.is_bot= false
+ref.message.new_chat_participant.first_name= pall
+ref.message.new_chat_participant.username= pall28
+ref.message.new_chat_member.id= 1437036760
+ref.message.new_chat_member.is_bot= false
+ref.message.new_chat_member.first_name= pall
+ref.message.new_chat_member.username= pall28
+ref.message.new_chat_members.0.id= 1437036760
+ref.message.new_chat_members.0.is_bot= false
+ref.message.new_chat_members.0.first_name= pall
+ref.message.new_chat_members.0.username= pall28
+
+
+[ref]
+ref.text= 
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(599): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2020-12-30 19:44:30  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804384828
+ref.message.message_id= 5226
+ref.message.from.id= 1401386346
+ref.message.from.is_bot= false
+ref.message.from.first_name= tiara
+ref.message.from.username= Tiara_br
+ref.message.chat.id= -1001454367290
+ref.message.chat.title= Anonymous chat group 4
+ref.message.chat.username= Anonymous_Chats_group
+ref.message.chat.type= supergroup
+ref.message.date= 1609332270
+ref.message.new_chat_participant.id= 1401386346
+ref.message.new_chat_participant.is_bot= false
+ref.message.new_chat_participant.first_name= tiara
+ref.message.new_chat_participant.username= Tiara_br
+ref.message.new_chat_member.id= 1401386346
+ref.message.new_chat_member.is_bot= false
+ref.message.new_chat_member.first_name= tiara
+ref.message.new_chat_member.username= Tiara_br
+ref.message.new_chat_members.0.id= 1401386346
+ref.message.new_chat_members.0.is_bot= false
+ref.message.new_chat_members.0.first_name= tiara
+ref.message.new_chat_members.0.username= Tiara_br
+
+
+[ref]
+ref.text= 
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(599): Telegram->sendMessage(Array)
+#4 {main}
+
