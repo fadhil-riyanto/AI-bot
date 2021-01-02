@@ -789,3 +789,407 @@ ref.text=
 #3 C:\bot telegram\index.php(587): Telegram->sendMessage(Array)
 #4 {main}
 
+============[Date]============
+[ 2020-12-31 19:03:37  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.text= 
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(592): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2020-12-31 19:44:00  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804385090
+ref.message.message_id= 10078
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= Fadhil's bot Project
+ref.message.chat.type= supergroup
+ref.message.date= 1609418604
+ref.message.text= /azan@Fadhil_riyanto_bot
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 24
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(445): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2020-12-31 19:45:32  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.text= 
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(582): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2020-12-31 20:24:21  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804385097
+ref.message.message_id= 10089
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= Fadhil's bot Project
+ref.message.chat.type= supergroup
+ref.message.date= 1609421057
+ref.message.text= /azan@Fadhil_riyanto_bot
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 24
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(446): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2020-12-31 20:58:47  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804385098
+ref.message.message_id= 6865
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= -1001454367290
+ref.message.chat.title= Anonymous chat group 4
+ref.message.chat.username= Anonymous_Chats_group
+ref.message.chat.type= supergroup
+ref.message.date= 1609421531
+ref.message.pinned_message.message_id= 6864
+ref.message.pinned_message.from.id= 1140923097
+ref.message.pinned_message.from.is_bot= false
+ref.message.pinned_message.from.first_name= pandjoel
+ref.message.pinned_message.chat.id= -1001454367290
+ref.message.pinned_message.chat.title= Anonymous chat group 4
+ref.message.pinned_message.chat.username= Anonymous_Chats_group
+ref.message.pinned_message.chat.type= supergroup
+ref.message.pinned_message.date= 1609421519
+ref.message.pinned_message.text= Nyari cewek...
+
+
+Yang tingginya 150an ada? PC kuy :v
+
+
+[ref]
+ref.text= 
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(607): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2020-12-31 21:00:40  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.text= 
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(607): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2020-12-31 21:04:26  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804385105
+ref.message.message_id= 4057
+ref.message.from.id= 783030276
+ref.message.from.is_bot= false
+ref.message.from.first_name= trz
+ref.message.from.username= twaze
+ref.message.from.language_code= en
+ref.message.chat.id= 783030276
+ref.message.chat.first_name= trz
+ref.message.chat.username= twaze
+ref.message.chat.type= private
+ref.message.date= 1609423464
+ref.message.text= Then
+
+
+[ref]
+ref.text= 
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(622): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2020-12-31 21:07:52  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.text= 
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(614): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2020-12-31 21:07:58  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.text= 
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(614): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2020-12-31 21:14:26  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804385113
+ref.message.message_id= 10109
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= Fadhil's bot Project
+ref.message.chat.type= supergroup
+ref.message.date= 1609424063
+ref.message.text= Aduh
+
+
+[ref]
+ref.text= 
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(625): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2020-12-31 21:17:52  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804385116
+ref.message.message_id= 10113
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= Fadhil's bot Project
+ref.message.chat.type= supergroup
+ref.message.date= 1609424269
+ref.message.text= Sementara mode debug aku matikan dulu
+
+
+[ref]
+ref.text= 
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(622): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2020-12-31 21:18:06  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804385117
+ref.message.message_id= 10114
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= Fadhil's bot Project
+ref.message.chat.type= supergroup
+ref.message.date= 1609424283
+ref.message.text= /debug off --f
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(622): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2020-12-31 21:29:41  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804385126
+ref.message.message_id= 6879
+ref.message.from.id= 1426158703
+ref.message.from.is_bot= false
+ref.message.from.first_name= 𝐚𝐥𝐞𝐱𝐚𝐧𝐝𝐫𝐚𝐯𝐚𝐥𝐞𝐫𝐲𝐞||𝐬𝐥𝐫
+ref.message.from.username= lexaa_123
+ref.message.chat.id= -1001454367290
+ref.message.chat.title= Anonymous chat group 4
+ref.message.chat.username= Anonymous_Chats_group
+ref.message.chat.type= supergroup
+ref.message.date= 1609424978
+ref.message.new_chat_participant.id= 1426158703
+ref.message.new_chat_participant.is_bot= false
+ref.message.new_chat_participant.first_name= 𝐚𝐥𝐞𝐱𝐚𝐧𝐝𝐫𝐚𝐯𝐚𝐥𝐞𝐫𝐲𝐞||𝐬𝐥𝐫
+ref.message.new_chat_participant.username= lexaa_123
+ref.message.new_chat_member.id= 1426158703
+ref.message.new_chat_member.is_bot= false
+ref.message.new_chat_member.first_name= 𝐚𝐥𝐞𝐱𝐚𝐧𝐝𝐫𝐚𝐯𝐚𝐥𝐞𝐫𝐲𝐞||𝐬𝐥𝐫
+ref.message.new_chat_member.username= lexaa_123
+ref.message.new_chat_members.0.id= 1426158703
+ref.message.new_chat_members.0.is_bot= false
+ref.message.new_chat_members.0.first_name= 𝐚𝐥𝐞𝐱𝐚𝐧𝐝𝐫𝐚𝐯𝐚𝐥𝐞𝐫𝐲𝐞||𝐬𝐥𝐫
+ref.message.new_chat_members.0.username= lexaa_123
+
+
+[ref]
+ref.text= 
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(617): Telegram->sendMessage(Array)
+#4 {main}
+
