@@ -2,9 +2,9 @@
 ini_set('max_execution_time', 20);
 //aktifkan saat mode debug. jika ngga ya jangan diaktifkan ;v
 error_reporting(0);
-echo 'Suka website bersih';
+echo 'Ini server 1 bot telegram';
 
-include(__DIR__ . '/vendor/autoload.php');
+include('Telegram.php');
 //wajib diisi
 // ______________________________
 $userid_pemilik = '1393342467';
