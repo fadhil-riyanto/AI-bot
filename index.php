@@ -560,8 +560,7 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 						'ashar : ' . $jsonHasilazancurl->jadwal->data->ashar . PHP_EOL .
 						'maghrib : ' . $jsonHasilazancurl->jadwal->data->maghrib . PHP_EOL .
 						'isya : ' . $jsonHasilazancurl->jadwal->data->isya . PHP_EOL .
-						'tanggal : ' . $jsonHasilazancurl->jadwal->data->tanggal . PHP_EOL . PHP_EOL .
-						'Sumber : api.banghasan.com';
+						'tanggal : ' . $jsonHasilazancurl->jadwal->data->tanggal;
 					$content = array('chat_id' => $chat_id, 'text' => $reply);
 					$telegram->sendMessage($content);
 					exit;
