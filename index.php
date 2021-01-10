@@ -8,7 +8,7 @@ include('Telegram.php');
 //wajib diisi
 // ______________________________
 $userid_pemilik = '1393342467';
-$telegramAPIs   = '1489990155:AAE8JG68gf968NWYwvW5ymEYlPMnggfPfHA';
+$telegramAPIs   = '1489990155:AAGmAjOQD5D0Bmivo6KkagMG0JqUtxc1wnk';
 $api_key_cuttly = 'fa1d93ba90dedd2ceb7d01e9bade271653373';
 $host_server   = 'https://serv1-fadhil-riyanto-bot.herokuapp.com';
 date_default_timezone_set('Asia/Jakarta');
@@ -43,6 +43,41 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	$reply = 'Hai ' . $username . ', Apa kabar?';
 	$content = array('chat_id' => $chat_id, 'text' => $reply);
 	$telegram->sendMessage($content);
+	exit;
+} elseif ('/wiki' == $adanParse[0] || '/wiki@fadhil_riyanto_bot' == $adanParse[0]) {
+	$azanHilangcommand = str_replace($adanParse[0], '', $text);
+	$udahDiparse = str_replace($adanParse[0] . ' ', '', $text);
+
+	if ($azanHilangcommand == null) {
+		$reply = 'Hai ' . $username . PHP_EOL . 'Untuk menggunakan wiki, gunakan command /wiki {teks atau kata}.' . PHP_EOL . 'Contoh : /wiki indonesia';
+		$content = array('chat_id' => $chat_id, 'text' => $reply);
+		$telegram->sendMessage($content);
+	} else {
+
+		$ch = curl_init();
+		curl_setopt($ch, CURLOPT_URL, "https://id.wikipedia.org/w/api.php?action=query&prop=extracts&format=xml&exintro=&titles=" . urlencode($udahDiparse));
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+		curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+			'User-Agent: request'
+		));
+		$output_wiki = curl_exec($ch);
+		curl_close($ch);
+
+		$wiki_get_datanya_ubahKeXML = simplexml_load_string($output_wiki);
+		$wiki_matang = $wiki_get_datanya_ubahKeXML->query->pages->page->extract;
+		$wiki_escape = strip_tags($wiki_matang);
+
+		if ($wiki_escape == null) {
+			$reply = 'Hai ' . $username . PHP_EOL . 'Maaf, Kami tidak mendapatkan hasil wikipedia.';
+			$content = array('chat_id' => $chat_id, 'text' => $reply);
+			$telegram->sendMessage($content);
+		} else {
+			$reply = 'Hai ' . $username . PHP_EOL . 'Kami mendapatkan hasil di wikipedia. hasil : ' . PHP_EOL . PHP_EOL .
+				$wiki_escape;
+			$content = array('chat_id' => $chat_id, 'text' => $reply);
+			$telegram->sendMessage($content);
+		}
+	}
 	exit;
 } elseif ('/ch_serv' == $adanParse[0] || '/ch_serv@fadhil_riyanto_bot' == $adanParse[0]) {
 	if ($userID == $userid_pemilik) {
@@ -633,8 +668,8 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	$telegram->sendMessage($content);
 	exit;
 } elseif (
-	$text == '/mention' ||
-	$text == '/mention@fadhil_riyanto_bot'
+	$text == '/panggil' ||
+	$text == '/panggil@fadhil_riyanto_bot'
 ) {
 	$reply = 'Hai ' . $username . ', ada apa memanggil saya?' . PHP_EOL;
 	$content = array('chat_id' => $chat_id, 'text' => $reply);
@@ -668,7 +703,12 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	$content = array('chat_id' => $chat_id, 'text' => $reply);
 	$telegram->sendMessage($content);
 	exit;
-} elseif ($text == '/help' || $text == '/help@fadhil_riyanto_bot') {
+} elseif (
+	$text == '/help' || $text == '/help@fadhil_riyanto_bot' ||
+	$text == 'pertolongan bot ini' || $text == 'cara menggunakan bot ini gimana?' ||
+	$text == 'cara menggunakan bot @fadhil_riyanto_bot' || $text == 'cara gunainnya bgmn?' ||
+	$text == 'cara gunainnya bgmn' || $text == '/help@fadhil_riyanto_bot'
+) {
 	$reply = 'Hai ' . $username . PHP_EOL . PHP_EOL . 'Untuk melihat help, silahkan buka link ini https://telegra.ph/Panduan-bot-fadhil-riyanto-12-31-2';
 
 	$option = array(
@@ -685,20 +725,72 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	$telegram->sendMessage($content);
 	exit;
 } elseif ($text == '/bug' || $text == '/bug@fadhil_riyanto_bot') {
-	$reply = 'Hai ' . $username . PHP_EOL . PHP_EOL . 'Silahkan PM @fadhil_riyanto' . PHP_EOL . PHP_EOL . 'Jangan lupa sertakan Screenshot dan letak bug nya. yaaaa' . PHP_EOL . PHP_EOL . 'Dengan kamu melaporkan bug, kamu telah membantu saya untuk membuat bot lebih baik lagi';
+	$reply = 'Hai ' . $username . PHP_EOL . PHP_EOL . 'Silahkan PM @fadhil_riyanto' . PHP_EOL . PHP_EOL .
+		'Jangan lupa sertakan Screenshot dan letak bug nya. yaaaa' . PHP_EOL . PHP_EOL .
+		'Dengan kamu melaporkan bug, kamu telah membantu saya untuk membuat bot lebih baik lagi. Mimin orangnya tipe humoris kok';
 	$content = array('chat_id' => $chat_id, 'text' => $reply);
 	$telegram->sendMessage($content);
 	exit;
 } elseif ($text == null) {
+	exit;
 } elseif (
 	$text === '/corona' ||
+	$text === 'info corona' ||
+	$text === 'info corona terkini' ||
+	$text === 'info corona sekarang' ||
+	$text === 'info covid sekarang' ||
+	$text === 'info covid19 sekarang' ||
+	$text === 'info covid 19 sekarang' ||
+	$text === 'info covid19 terkini' ||
+	$text === 'info covid 19 terkini' ||
+	$text === 'info covid 19 diindonesia' ||
+	$text === 'info covid19 diindonesia' ||
+	$text === 'info covid 19 di indonesia' ||
+	$text === 'info covid19 di indonesia' ||
+	$text === 'update corona gimana?' ||
+	$text === 'update corona gimana' ||
+	$text === 'update covid gimana?' ||
+	$text === 'update covid19 gimana' ||
+	$text === 'update covid 19 gimana' ||
+	$text === 'info corona gimana?' ||
+	$text === 'info corona gimana' ||
+	$text === 'info corona bagaimana?' ||
+	$text === 'info corona bagaimana' ||
+	$text === 'info covid bagaimana?' ||
+	$text === 'info covid bagaimana' ||
+	$text === 'info covid 19 bagaimana?' ||
+	$text === 'info covid 19 bagaimana' ||
+	$text === 'info covid19 bagaimana?' ||
+	$text === 'info covid19 bagaimana' ||
+	$text === 'info covid19 gimana?' ||
+	$text === 'info covid 19 gimana?' ||
+	$text === 'update corona bagaimana?' ||
+	$text === 'corona gimana?' ||
+	$text === 'status corona' ||
+	$text === 'info covid' ||
+	$text === 'info covid 19' ||
+	$text === 'info covid19' ||
+	//slang teks disini
+	$text === 'corona bgmn?' ||
+	$text === 'corona bgmn' ||
+	$text === 'status corona' ||
+	$text === 'statiska corona' ||
+	$text === 'info covid' ||
+	$text === 'info covid 19' ||
+	$text === 'info covid19' ||
 	$text == '/corona@fadhil_riyanto_bot'
 ) {
 	$file_korona = @file_get_contents('https://api.kawalcorona.com/indonesia/');
 	$file_korona_jsonParse = json_decode($file_korona, true);
 	if ($file_korona_jsonParse != NULL) {
 		foreach ($file_korona_jsonParse as $corona_jadi) {
-			$reply =  'Hai ' . $username . PHP_EOL . PHP_EOL . 'Sepertinya jumlah kasus Corona adalah' . PHP_EOL . PHP_EOL . 'positif   ' . $corona_jadi['positif'] . PHP_EOL . 'sembuh    ' . $corona_jadi['sembuh'] . PHP_EOL . 'meninggal ' . $corona_jadi['meninggal'] . PHP_EOL . 'dirawat   ' . $corona_jadi['dirawat'] . PHP_EOL . PHP_EOL . 'Jangan lupa pakai masker dan jaga kesehatan.';
+			$reply =  'Hai ' . $username . PHP_EOL .
+				'jumlah kasus Corona sekarang adalah' . PHP_EOL . PHP_EOL .
+				'positif   ' . $corona_jadi['positif'] . PHP_EOL .
+				'sembuh    ' . $corona_jadi['sembuh'] . PHP_EOL .
+				'meninggal ' . $corona_jadi['meninggal'] . PHP_EOL .
+				'dirawat   ' . $corona_jadi['dirawat'] . PHP_EOL . PHP_EOL .
+				'Dan Jangan lupa selalu pakai masker dan jaga kesehatan yaaa';
 			$content = array('chat_id' => $chat_id, 'text' => $reply);
 			$telegram->sendMessage($content);
 		}
@@ -711,6 +803,7 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 }
 $q = mysqli_query($koneksi, "SELECT * FROM `data_ai` WHERE `data_key_ai` LIKE _utf8 '$text' ");
 $tes_jumlah_row = @mysqli_affected_rows($koneksi);
+//$dataAI = mysqli_fetch_assoc($q);
 
 if ($tes_jumlah_row > 0) {
 	foreach ($q as $respon) {

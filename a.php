@@ -52,22 +52,23 @@ foreach($h->kota as $azanKode){
     print "\n";
     print "Is goodbye empty? " . empty($decoded->{'kota'});
     print "\n";
-	*/
+	
 	 $input = 'https://www.google.com/';
 
-    // If URI is like, eg. www.way2tutorial.com/
     $input = trim($input, '/');
-
-    // If not have http:// or https:// then prepend it
     if (!preg_match('#^http(s)?://#', $input)) {
         $input = 'http://' . $input;
     }
-
     $urlParts = parse_url($input);
-
     // Remove www.
     $domain_name = preg_replace('/^www\./', '', $urlParts['host']);
 
-    // Output way2tutorial.com
     echo $domain_name;
+	*/
+	$kata = 'satu dua tiga empat lima enam tujuh lapan sembilan speuluh sebelah';
+	if (str_word_count($kata) > 4 ){
+	echo substr($kata,0,10)."[..]" ;
+	} else {
+	echo $kata;
+	}
 ?>

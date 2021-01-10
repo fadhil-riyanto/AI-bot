@@ -1,0 +1,965 @@
+============[Date]============
+[ 2021-01-09 20:31:11  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804385782
+ref.message.message_id= 4551
+ref.message.from.id= 1455250320
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhils
+ref.message.from.username= Fadhilsss
+ref.message.from.language_code= id
+ref.message.chat.id= 1455250320
+ref.message.chat.first_name= Fadhils
+ref.message.chat.username= Fadhilsss
+ref.message.chat.type= private
+ref.message.date= 1610199068
+ref.message.text= Info corona bagaimana?
+
+
+[ref]
+ref.text= 
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(751): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-09 21:02:42  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804385795
+ref.message.message_id= 4570
+ref.message.from.id= 1455250320
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhils
+ref.message.from.username= Fadhilsss
+ref.message.from.language_code= id
+ref.message.chat.id= 1455250320
+ref.message.chat.first_name= Fadhils
+ref.message.chat.username= Fadhilsss
+ref.message.chat.type= private
+ref.message.date= 1610200958
+ref.message.text= Ice apelin aku :(
+
+
+[ref]
+ref.text= 
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(776): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-09 21:03:26  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804385797
+ref.message.message_id= 4573
+ref.message.from.id= 1455250320
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhils
+ref.message.from.username= Fadhilsss
+ref.message.from.language_code= id
+ref.message.chat.id= 1455250320
+ref.message.chat.first_name= Fadhils
+ref.message.chat.username= Fadhilsss
+ref.message.chat.type= private
+ref.message.date= 1610201002
+ref.message.text= Gabutt nyaa krnaa ga pnyaa temen buat chtnn jhaha
+
+
+[ref]
+ref.text= 
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(776): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-09 21:05:53  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804385799
+ref.message.message_id= 10000
+ref.message.from.id= 1360355691
+ref.message.from.is_bot= false
+ref.message.from.first_name= Ice
+ref.message.from.username= Panggilakuice
+ref.message.chat.id= -1001454367290
+ref.message.chat.title= Gabut people group
+ref.message.chat.username= gabut_people_group
+ref.message.chat.type= supergroup
+ref.message.date= 1610201150
+ref.message.reply_to_message.message_id= 9995
+ref.message.reply_to_message.from.id= 1381537784
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= SUSU
+ref.message.reply_to_message.from.last_name= PUTIH
+ref.message.reply_to_message.chat.id= -1001454367290
+ref.message.reply_to_message.chat.title= Gabut people group
+ref.message.reply_to_message.chat.username= gabut_people_group
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1610201080
+ref.message.reply_to_message.text= Dr kemarin mau ke palembang keburu covid
+ref.message.text= Tunggu sampe covid hilang, dan itu ga tau kapan hohoho
+
+
+[ref]
+ref.text= 
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(776): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-09 21:06:20  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804385802
+ref.message.message_id= 10004
+ref.message.from.id= 1381537784
+ref.message.from.is_bot= false
+ref.message.from.first_name= SUSU
+ref.message.from.last_name= PUTIH
+ref.message.chat.id= -1001454367290
+ref.message.chat.title= Gabut people group
+ref.message.chat.username= gabut_people_group
+ref.message.chat.type= supergroup
+ref.message.date= 1610201175
+ref.message.reply_to_message.message_id= 9993
+ref.message.reply_to_message.from.id= 1382752978
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Anatasya
+ref.message.reply_to_message.from.username= zzzxxvv
+ref.message.reply_to_message.chat.id= -1001454367290
+ref.message.reply_to_message.chat.title= Gabut people group
+ref.message.reply_to_message.chat.username= gabut_people_group
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1610201068
+ref.message.reply_to_message.text= kok saia😂
+ref.message.text= Suka ghosting kan wkwk
+
+
+[ref]
+ref.text= 
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(776): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-09 21:06:33  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804385803
+ref.message.message_id= 10006
+ref.message.from.id= 1382752978
+ref.message.from.is_bot= false
+ref.message.from.first_name= Anatasya
+ref.message.from.username= zzzxxvv
+ref.message.chat.id= -1001454367290
+ref.message.chat.title= Gabut people group
+ref.message.chat.username= gabut_people_group
+ref.message.chat.type= supergroup
+ref.message.date= 1610201190
+ref.message.reply_to_message.message_id= 10004
+ref.message.reply_to_message.from.id= 1381537784
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= SUSU
+ref.message.reply_to_message.from.last_name= PUTIH
+ref.message.reply_to_message.chat.id= -1001454367290
+ref.message.reply_to_message.chat.title= Gabut people group
+ref.message.reply_to_message.chat.username= gabut_people_group
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1610201175
+ref.message.reply_to_message.text= Suka ghosting kan wkwk
+ref.message.text= hai susu putih kagak lah😂
+
+
+[ref]
+ref.text= 
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(776): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-09 21:07:19  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804385806
+ref.message.message_id= 10009
+ref.message.from.id= 1381537784
+ref.message.from.is_bot= false
+ref.message.from.first_name= SUSU
+ref.message.from.last_name= PUTIH
+ref.message.chat.id= -1001454367290
+ref.message.chat.title= Gabut people group
+ref.message.chat.username= gabut_people_group
+ref.message.chat.type= supergroup
+ref.message.date= 1610201236
+ref.message.reply_to_message.message_id= 10007
+ref.message.reply_to_message.from.id= 1360355691
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Ice
+ref.message.reply_to_message.from.username= Panggilakuice
+ref.message.reply_to_message.chat.id= -1001454367290
+ref.message.reply_to_message.chat.title= Gabut people group
+ref.message.reply_to_message.chat.username= gabut_people_group
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1610201231
+ref.message.reply_to_message.text= Susu putih
+ref.message.text= Mau anget atau dingin?
+
+
+[ref]
+ref.text= 
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(776): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-09 21:07:31  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804385807
+ref.message.message_id= 10010
+ref.message.from.id= 1360355691
+ref.message.from.is_bot= false
+ref.message.from.first_name= Ice
+ref.message.from.username= Panggilakuice
+ref.message.chat.id= -1001454367290
+ref.message.chat.title= Gabut people group
+ref.message.chat.username= gabut_people_group
+ref.message.chat.type= supergroup
+ref.message.date= 1610201249
+ref.message.reply_to_message.message_id= 10009
+ref.message.reply_to_message.from.id= 1381537784
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= SUSU
+ref.message.reply_to_message.from.last_name= PUTIH
+ref.message.reply_to_message.chat.id= -1001454367290
+ref.message.reply_to_message.chat.title= Gabut people group
+ref.message.reply_to_message.chat.username= gabut_people_group
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1610201236
+ref.message.reply_to_message.text= Mau anget atau dingin?
+ref.message.text= Anget
+
+
+[ref]
+ref.text= 
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(776): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-09 21:07:39  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804385808
+ref.message.message_id= 10011
+ref.message.from.id= 1360355691
+ref.message.from.is_bot= false
+ref.message.from.first_name= Ice
+ref.message.from.username= Panggilakuice
+ref.message.chat.id= -1001454367290
+ref.message.chat.title= Gabut people group
+ref.message.chat.username= gabut_people_group
+ref.message.chat.type= supergroup
+ref.message.date= 1610201257
+ref.message.text= Karena aku dah dingin
+
+
+[ref]
+ref.text= 
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(776): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-09 21:07:51  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804385809
+ref.message.message_id= 10012
+ref.message.from.id= 1381537784
+ref.message.from.is_bot= false
+ref.message.from.first_name= SUSU
+ref.message.from.last_name= PUTIH
+ref.message.chat.id= -1001454367290
+ref.message.chat.title= Gabut people group
+ref.message.chat.username= gabut_people_group
+ref.message.chat.type= supergroup
+ref.message.date= 1610201268
+ref.message.text= Iya kaya sikap kamu dingin :)
+
+
+[ref]
+ref.text= 
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(776): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-09 21:08:53  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804385811
+ref.message.message_id= 10013
+ref.message.from.id= 1455250320
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhils
+ref.message.from.username= Fadhilsss
+ref.message.from.language_code= id
+ref.message.chat.id= -1001454367290
+ref.message.chat.title= Gabut people group
+ref.message.chat.username= gabut_people_group
+ref.message.chat.type= supergroup
+ref.message.date= 1610201330
+ref.message.text= @fadhil_riyanto Perekam agak ngga bekerja 😊
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 15
+ref.message.entities.0.type= mention
+
+
+[ref]
+ref.text= 
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(776): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-09 21:09:18  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804385813
+ref.message.message_id= 10014
+ref.message.from.id= 1360355691
+ref.message.from.is_bot= false
+ref.message.from.first_name= Ice
+ref.message.from.username= Panggilakuice
+ref.message.chat.id= -1001454367290
+ref.message.chat.title= Gabut people group
+ref.message.chat.username= gabut_people_group
+ref.message.chat.type= supergroup
+ref.message.date= 1610201355
+ref.message.reply_to_message.message_id= 10012
+ref.message.reply_to_message.from.id= 1381537784
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= SUSU
+ref.message.reply_to_message.from.last_name= PUTIH
+ref.message.reply_to_message.chat.id= -1001454367290
+ref.message.reply_to_message.chat.title= Gabut people group
+ref.message.reply_to_message.chat.username= gabut_people_group
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1610201268
+ref.message.reply_to_message.text= Iya kaya sikap kamu dingin :)
+ref.message.text= Makany kamuny jgn lupa pake selimut
+
+
+[ref]
+ref.text= 
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(776): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-09 21:11:46  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804385818
+ref.message.message_id= 10023
+ref.message.from.id= 1381537784
+ref.message.from.is_bot= false
+ref.message.from.first_name= SUSU
+ref.message.from.last_name= PUTIH
+ref.message.chat.id= -1001454367290
+ref.message.chat.title= Gabut people group
+ref.message.chat.username= gabut_people_group
+ref.message.chat.type= supergroup
+ref.message.date= 1610201502
+ref.message.text= Berantem dah berdua
+
+
+[ref]
+ref.text= 
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(776): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-09 21:11:55  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804385819
+ref.message.message_id= 10024
+ref.message.from.id= 1455250320
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhils
+ref.message.from.username= Fadhilsss
+ref.message.from.language_code= id
+ref.message.chat.id= -1001454367290
+ref.message.chat.title= Gabut people group
+ref.message.chat.username= gabut_people_group
+ref.message.chat.type= supergroup
+ref.message.date= 1610201512
+ref.message.text= Gw cuma tes koneksi doang
+
+
+[ref]
+ref.text= 
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(776): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-09 21:12:01  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804385820
+ref.message.message_id= 10025
+ref.message.from.id= 1455250320
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhils
+ref.message.from.username= Fadhilsss
+ref.message.from.language_code= id
+ref.message.chat.id= -1001454367290
+ref.message.chat.title= Gabut people group
+ref.message.chat.username= gabut_people_group
+ref.message.chat.type= supergroup
+ref.message.date= 1610201519
+ref.message.text= Dia sewot ;v
+
+
+[ref]
+ref.text= 
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(776): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-09 21:12:39  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804385821
+ref.message.message_id= 10026
+ref.message.from.id= 1381537784
+ref.message.from.is_bot= false
+ref.message.from.first_name= SUSU
+ref.message.from.last_name= PUTIH
+ref.message.chat.id= -1001454367290
+ref.message.chat.title= Gabut people group
+ref.message.chat.username= gabut_people_group
+ref.message.chat.type= supergroup
+ref.message.date= 1610201556
+ref.message.text= Galakan dia
+
+
+[ref]
+ref.text= 
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(776): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-09 21:13:04  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804385822
+ref.message.message_id= 10027
+ref.message.from.id= 1455250320
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhils
+ref.message.from.username= Fadhilsss
+ref.message.from.language_code= id
+ref.message.chat.id= -1001454367290
+ref.message.chat.title= Gabut people group
+ref.message.chat.username= gabut_people_group
+ref.message.chat.type= supergroup
+ref.message.date= 1610201579
+ref.message.text= @Fadhil_riyanto bot kamu kenapa dah?
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 15
+ref.message.entities.0.type= mention
+
+
+[ref]
+ref.text= 
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(776): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-09 21:14:27  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804385823
+ref.message.message_id= 10028
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= -1001454367290
+ref.message.chat.title= Gabut people group
+ref.message.chat.username= gabut_people_group
+ref.message.chat.type= supergroup
+ref.message.date= 1610201663
+ref.message.reply_to_message.message_id= 10027
+ref.message.reply_to_message.from.id= 1455250320
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Fadhils
+ref.message.reply_to_message.from.username= Fadhilsss
+ref.message.reply_to_message.from.language_code= id
+ref.message.reply_to_message.chat.id= -1001454367290
+ref.message.reply_to_message.chat.title= Gabut people group
+ref.message.reply_to_message.chat.username= gabut_people_group
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1610201579
+ref.message.reply_to_message.text= @Fadhil_riyanto bot kamu kenapa dah?
+ref.message.reply_to_message.entities.0.offset= 0
+ref.message.reply_to_message.entities.0.length= 15
+ref.message.reply_to_message.entities.0.type= mention
+ref.message.text= Yaelah mas, nama nya juga update . Barusan update SQL raw data ambil pakai SOUNDS like UTF8. Makanya agak error. Ini lagi dibenerin.
+
+
+[ref]
+ref.text= 
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(776): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-09 21:17:32  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804385825
+ref.message.message_id= 10031
+ref.message.from.id= 1455250320
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhils
+ref.message.from.username= Fadhilsss
+ref.message.from.language_code= id
+ref.message.chat.id= -1001454367290
+ref.message.chat.title= Gabut people group
+ref.message.chat.username= gabut_people_group
+ref.message.chat.type= supergroup
+ref.message.date= 1610201849
+ref.message.reply_to_message.message_id= 10029
+ref.message.reply_to_message.from.id= 1393342467
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Fadhil Riyanto
+ref.message.reply_to_message.from.username= fadhil_riyanto
+ref.message.reply_to_message.from.language_code= id
+ref.message.reply_to_message.chat.id= -1001454367290
+ref.message.reply_to_message.chat.title= Gabut people group
+ref.message.reply_to_message.chat.username= gabut_people_group
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1610201810
+ref.message.reply_to_message.photo.0.file_id= AgACAgUAAx0CVq_iOgACJy1f-brS055a0CWIlVisDlTtJoXEoAACp6oxG9-4yVe8PNz4H09fa1YK7m50AAMBAAMCAANtAAPgJAEAAR4E
+ref.message.reply_to_message.photo.0.file_unique_id= AQADVgrubnQAA-AkAQAB
+ref.message.reply_to_message.photo.0.file_size= 18452
+ref.message.reply_to_message.photo.0.width= 320
+ref.message.reply_to_message.photo.0.height= 180
+ref.message.reply_to_message.photo.1.file_id= AgACAgUAAx0CVq_iOgACJy1f-brS055a0CWIlVisDlTtJoXEoAACp6oxG9-4yVe8PNz4H09fa1YK7m50AAMBAAMCAAN4AAPiJAEAAR4E
+ref.message.reply_to_message.photo.1.file_unique_id= AQADVgrubnQAA-IkAQAB
+ref.message.reply_to_message.photo.1.file_size= 82980
+ref.message.reply_to_message.photo.1.width= 800
+ref.message.reply_to_message.photo.1.height= 450
+ref.message.reply_to_message.photo.2.file_id= AgACAgUAAx0CVq_iOgACJy1f-brS055a0CWIlVisDlTtJoXEoAACp6oxG9-4yVe8PNz4H09fa1YK7m50AAMBAAMCAAN5AAPjJAEAAR4E
+ref.message.reply_to_message.photo.2.file_unique_id= AQADVgrubnQAA-MkAQAB
+ref.message.reply_to_message.photo.2.file_size= 143380
+ref.message.reply_to_message.photo.2.width= 1280
+ref.message.reply_to_message.photo.2.height= 720
+ref.message.reply_to_message.caption= @Fadhilsss Noh, lagi dibenerin bagian itu. Elu diam aja mendingan, lagi pusing ni
+ref.message.reply_to_message.caption_entities.0.offset= 0
+ref.message.reply_to_message.caption_entities.0.length= 10
+ref.message.reply_to_message.caption_entities.0.type= mention
+ref.message.text= Owlh, sori sori ngab....
+
+
+[ref]
+ref.text= 
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(776): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-09 21:18:54  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804385826
+ref.message.message_id= 10032
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= -1001454367290
+ref.message.chat.title= Gabut people group
+ref.message.chat.username= gabut_people_group
+ref.message.chat.type= supergroup
+ref.message.date= 1610201931
+ref.message.text= Gw hapus biar ga kotor
+
+
+[ref]
+ref.text= 
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(776): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-09 21:22:01  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804385829
+ref.message.message_id= 10037
+ref.message.from.id= 1455250320
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhils
+ref.message.from.username= Fadhilsss
+ref.message.from.language_code= id
+ref.message.chat.id= -1001454367290
+ref.message.chat.title= Gabut people group
+ref.message.chat.username= gabut_people_group
+ref.message.chat.type= supergroup
+ref.message.date= 1610202117
+ref.message.reply_to_message.message_id= 10023
+ref.message.reply_to_message.from.id= 1381537784
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= SUSU
+ref.message.reply_to_message.from.last_name= PUTIH
+ref.message.reply_to_message.chat.id= -1001454367290
+ref.message.reply_to_message.chat.title= Gabut people group
+ref.message.reply_to_message.chat.username= gabut_people_group
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1610201502
+ref.message.reply_to_message.text= Berantem dah berdua
+ref.message.text= Berantem sama robot
+
+
+[ref]
+ref.text= 
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(776): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-09 21:23:43  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: bot was kicked from the supergroup chat
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804385830
+ref.message.message_id= 10038
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= -1001454367290
+ref.message.chat.title= Gabut people group
+ref.message.chat.username= gabut_people_group
+ref.message.chat.type= supergroup
+ref.message.date= 1610202220
+ref.message.left_chat_participant.id= 1489990155
+ref.message.left_chat_participant.is_bot= true
+ref.message.left_chat_participant.first_name= Fadhil Riyanto Bot
+ref.message.left_chat_participant.username= Fadhil_riyanto_bot
+ref.message.left_chat_member.id= 1489990155
+ref.message.left_chat_member.is_bot= true
+ref.message.left_chat_member.first_name= Fadhil Riyanto Bot
+ref.message.left_chat_member.username= Fadhil_riyanto_bot
+
+
+[ref]
+ref.text= maaf, saya tidak paham
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(768): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-09 21:26:04  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804385835
+ref.message.message_id= 4584
+ref.message.from.id= 1455250320
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhils
+ref.message.from.username= Fadhilsss
+ref.message.from.language_code= id
+ref.message.chat.id= 1455250320
+ref.message.chat.first_name= Fadhils
+ref.message.chat.username= Fadhilsss
+ref.message.chat.type= private
+ref.message.date= 1610202360
+ref.message.text= Tes bot
+
+
+[ref]
+ref.text= 
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(776): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-09 21:29:52  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804385837
+ref.message.message_id= 4587
+ref.message.from.id= 1455250320
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhils
+ref.message.from.username= Fadhilsss
+ref.message.from.language_code= id
+ref.message.chat.id= 1455250320
+ref.message.chat.first_name= Fadhils
+ref.message.chat.username= Fadhilsss
+ref.message.chat.type= private
+ref.message.date= 1610202589
+ref.message.text= Kamu suka ditest ya
+
+
+[ref]
+ref.text= 
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(776): Telegram->sendMessage(Array)
+#4 {main}
+
