@@ -12,7 +12,7 @@ $telegramAPIs   = '1489990155:AAGmAjOQD5D0Bmivo6KkagMG0JqUtxc1wnk';
 $api_key_cuttly = 'fa1d93ba90dedd2ceb7d01e9bade271653373';
 //$host_server    = 'http://' . $_SERVER['HTTP_HOST'];
 //$host_server   = 'https://serv1-fadhil-riyanto-bot.herokuapp.com';
-$host_server   = 'https://server-data.000webhostapp.com';
+$host_server   = 'https://serv1-fadhil-riyanto-bot.herokuapp.com';
 
 date_default_timezone_set('Asia/Jakarta');
 // ________________________________
