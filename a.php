@@ -64,11 +64,31 @@ foreach($h->kota as $azanKode){
     $domain_name = preg_replace('/^www\./', '', $urlParts['host']);
 
     echo $domain_name;
-	*/
+	
 	$kata = 'satu dua tiga empat lima enam tujuh lapan sembilan speuluh sebelah';
+	$delimiter_kata = 
 	if (str_word_count($kata) > 4 ){
 	echo substr($kata,0,10)."[..]" ;
 	} else {
 	echo $kata;
 	}
+	
+	$ch = curl_init();
+		curl_setopt($ch, CURLOPT_URL, "https://fakerapi.it/api/v1/persons?_locale=id_ID&_quantity=1");
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+		curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+			'User-Agent: request'
+		));
+		$output_faker = curl_exec($ch);
+		curl_close($ch);
+		$json_tanpa_kodenegara  = json_decode($output_faker, true);
+		var_dump($json_tanpa_kodenegara['data'][0]['firstname']);
+		*/
+		//echo 'http://' . $_SERVER['HTTP_HOST'];
+		$data  = 'SGFpV0tXSyBoZSBqd2p3IGoga2pLSiBLSjg3IDApJigmKSgpKA==';
+		if ( base64_encode(base64_decode($data, true)) === $data){
+    echo '$data is valid';
+} else {
+    echo '$data is NOT valid';
+}
 ?>

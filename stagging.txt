@@ -10,10 +10,7 @@ include('Telegram.php');
 $userid_pemilik = '1393342467';
 $telegramAPIs   = '1489990155:AAGmAjOQD5D0Bmivo6KkagMG0JqUtxc1wnk';
 $api_key_cuttly = 'fa1d93ba90dedd2ceb7d01e9bade271653373';
-//$host_server    = 'http://' . $_SERVER['HTTP_HOST'];
-//$host_server   = 'https://serv1-fadhil-riyanto-bot.herokuapp.com';
 $host_server   = 'https://server-data.000webhostapp.com';
-
 date_default_timezone_set('Asia/Jakarta');
 // ________________________________
 $telegram = new Telegram($telegramAPIs);
@@ -23,7 +20,6 @@ $koneksi = @mysqli_connect('freedb.tech', 'freedbtech_ai_bot_fadhil_riyanto', 'R
 //use http!!!!
 //akhir wajib diisi
 $text = strtolower(mysqli_real_escape_string($koneksi, $telegram->Text()));
-$text_plain = $telegram->Text();
 $chat_id = $telegram->ChatID();
 $userID = $telegram->UserID();
 $usernameBelumdiparse = $telegram->Username();
@@ -31,7 +27,6 @@ $usernameBelumdiparse = $telegram->Username();
 $username = ' @' . $usernameBelumdiparse;
 
 $adanParse = explode(' ', $text);
-$adanParse_plain = explode(' ', $text_plain);
 $hilangAzan = str_replace('/azan ', '', $text, $hit);
 if ($hit == 0) {
 	$hilangAzan = str_replace('/azan@fadhil_riyanto_bot ', '', $text);
@@ -49,52 +44,12 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	$content = array('chat_id' => $chat_id, 'text' => $reply);
 	$telegram->sendMessage($content);
 	exit;
-} elseif ('/faker' == $adanParse[0] || '/faker@fadhil_riyanto_bot' == $adanParse[0]) {
-	// $azanHilangcommand = str_replace($adanParse[0], '', $text);
-	// $udahDiparse = str_replace($adanParse[0] . ' ', '', $text);
-	if (1) {
-		$ch = curl_init();
-		curl_setopt($ch, CURLOPT_URL, "https://fakerapi.it/api/v1/persons?_locale=id_ID&_quantity=1");
-		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-		curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-			'User-Agent: request'
-		));
-		$output_faker = curl_exec($ch);
-		curl_close($ch);
-		$json_tanpa_kodenegara  = json_decode($output_faker, true);
-
-		if ($json_tanpa_kodenegara['code'] == 200) {
-			$reply = 'Hai ' . $username . ', Faker data' . PHP_EOL . PHP_EOL .
-				'Nama depan : ' . $json_tanpa_kodenegara['data'][0]['firstname'] . PHP_EOL .
-				'Nama belakang : ' . $json_tanpa_kodenegara['data'][0]['lastname'] . PHP_EOL .
-				'Email : ' . $json_tanpa_kodenegara['data'][0]['email'] . PHP_EOL .
-				'No HP : ' . $json_tanpa_kodenegara['data'][0]['phone'] . PHP_EOL .
-				'Ulang tahun : ' . $json_tanpa_kodenegara['data'][0]['birthday'] . PHP_EOL .
-				'Gender : ' . $json_tanpa_kodenegara['data'][0]['gender'] . PHP_EOL .
-				// DATA ALAMAT
-				'Alamat Jalan : ' . $json_tanpa_kodenegara['data'][0]['address']['street'] . PHP_EOL .
-				'Nomor bangunan : ' . $json_tanpa_kodenegara['data'][0]['address']['buildingNumber'] . PHP_EOL .
-				'Kota : ' . $json_tanpa_kodenegara['data'][0]['address']['city'] . PHP_EOL .
-				'Zip : ' . $json_tanpa_kodenegara['data'][0]['address']['zipcode'] . PHP_EOL .
-				'Negara : ' . $json_tanpa_kodenegara['data'][0]['address']['country'] . PHP_EOL .
-				'latitude : ' . $json_tanpa_kodenegara['data'][0]['address']['latitude'] . PHP_EOL .
-				'longitude : ' . $json_tanpa_kodenegara['data'][0]['address']['longitude'] . PHP_EOL .
-				'website : ' . $json_tanpa_kodenegara['data'][0]['website'] . PHP_EOL;
-			$content = array('chat_id' => $chat_id, 'text' => $reply);
-			$telegram->sendMessage($content);
-		} else {
-			$reply = 'Hai ' . $username . ', Maaf, ada kesalahan di sistem kami.';
-			$content = array('chat_id' => $chat_id, 'text' => $reply);
-			$telegram->sendMessage($content);
-		}
-	}
-	exit;
 } elseif ('/wiki' == $adanParse[0] || '/wiki@fadhil_riyanto_bot' == $adanParse[0]) {
-	$azanHilangcommand = str_replace($adanParse[0], '', strtolower($text_plain));
-	$udahDiparse = str_replace($adanParse[0] . ' ', '', strtolower($text_plain));
+	$azanHilangcommand = str_replace($adanParse[0], '', $text);
+	$udahDiparse = str_replace($adanParse[0] . ' ', '', $text);
 
 	if ($azanHilangcommand == null) {
-		$reply = 'Hai ' . $username . PHP_EOL . 'Untuk menggunakan wiki, gunakan command /wiki {teks atau kata}.' . PHP_EOL . PHP_EOL .  'Contoh : /wiki indonesia';
+		$reply = 'Hai ' . $username . PHP_EOL . 'Untuk menggunakan wiki, gunakan command /wiki {teks atau kata}.' . PHP_EOL . 'Contoh : /wiki indonesia';
 		$content = array('chat_id' => $chat_id, 'text' => $reply);
 		$telegram->sendMessage($content);
 	} else {
@@ -231,7 +186,7 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	exit;
 } elseif ('/tulis' == $adanParse[0] || '/tulis@fadhil_riyanto_bot' == $adanParse[0]) {
 	//$hapusTulis = 
-	$udahDiparse = str_replace($adanParse[0] . ' ', '', $text_plain);
+	$udahDiparse = str_replace($adanParse[0] . ' ', '', $text);
 	$curlImage = file_get_contents('https://tools.zone-xsec.com/api/nulis.php?q=' . urlencode($udahDiparse));
 	$parsecJsons = json_decode($curlImage);
 	if ($adanParse[1] == null) {
@@ -744,7 +699,7 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	$text == '/info@fadhil_riyanto_bot' ||
 	$text == 'info bot fadhil riyanto'
 ) {
-	$reply = 'Hai ' . $username . PHP_EOL . PHP_EOL . 'Saya bot Fadhil Riyanto. Hobi saya bermain komputer dan membuat program' . PHP_EOL . PHP_EOL . 'Teknologi yang saya gunakan ialah. ' . PHP_EOL . 'Server: nginx' . PHP_EOL . 'Database: Mysql' . PHP_EOL . 'Cloud: Heroku, 000webhost' . PHP_EOL . 'PHP: 8.0.0 thread safe' . PHP_EOL . 'Versi bot: 9.7.3 alpha' . PHP_EOL . PHP_EOL . ' Dibuat dengan Cinta oleh @fadhil_riyanto' . PHP_EOL . PHP_EOL .  'Semoga bot ini membantu.';
+	$reply = 'Hai ' . $username . PHP_EOL . PHP_EOL . 'Saya bot Fadhil Riyanto. Hobi saya bermain komputer dan membuat program' . PHP_EOL . PHP_EOL . 'Teknologi yang saya gunakan ialah. ' . PHP_EOL . 'Server: nginx' . PHP_EOL . 'Database: Mysql' . PHP_EOL . 'Forward: Heroku, ngrok, 000webhost' . PHP_EOL . 'PHP: 8.0.0 thread safe' . PHP_EOL . 'Versi bot: 8.3.3 alpha' . PHP_EOL . PHP_EOL . ' Dibuat dengan Cinta oleh @fadhil_riyanto' . PHP_EOL . PHP_EOL .  'Semoga bot ini membantu.';
 	$content = array('chat_id' => $chat_id, 'text' => $reply);
 	$telegram->sendMessage($content);
 	exit;
@@ -846,237 +801,6 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	}
 	exit;
 }
-// ENCRYPT TOOLS DIMULAI DARI SINI WOYY
-// LICENSE BY FADHIL
-// PAHAM?
-elseif ('/sha256' == $adanParse[0] || '/sha256@fadhil_riyanto_bot' == $adanParse[0]) {
-	$azanHilangcommand = str_replace($adanParse_plain[0], '', $text_plain);
-	$udahDiparse = str_replace($adanParse_plain[0] . ' ', '', $text_plain);
-	if ($azanHilangcommand == null) {
-		$reply = 'Hai ' . $username . PHP_EOL . 'Untuk menggunakan encrypt SHA256, gunakan command /sha256 {teks atau kata}.' . PHP_EOL . PHP_EOL .
-			'Contoh : /sha256 indonesia';
-		$content = array('chat_id' => $chat_id, 'text' => $reply);
-		$telegram->sendMessage($content);
-	} else {
-		$reply = 'Hai ' . $username . ', Hasil convert text to hash dengan algoritma SHA256 adalah' . PHP_EOL . PHP_EOL .
-			'Teks : ' . $udahDiparse . PHP_EOL . '---------------' .  PHP_EOL .  'Hash : ' .  hash('sha256', $udahDiparse);
-		$content = array('chat_id' => $chat_id, 'text' => $reply);
-		$telegram->sendMessage($content);
-	}
-	exit;
-} elseif ('/sha1' == $adanParse[0] || '/sha1@fadhil_riyanto_bot' == $adanParse[0]) {
-	$azanHilangcommand = str_replace($adanParse_plain[0], '', $text_plain);
-	$udahDiparse = str_replace($adanParse_plain[0] . ' ', '', $text_plain);
-	if ($azanHilangcommand == null) {
-		$reply = 'Hai ' . $username . PHP_EOL . 'Untuk menggunakan encrypt SHA1, gunakan command /sha1 {teks atau kata}.' . PHP_EOL . PHP_EOL .
-			'Contoh : /sha1 indonesia';
-		$content = array('chat_id' => $chat_id, 'text' => $reply);
-		$telegram->sendMessage($content);
-	} else {
-		$reply = 'Hai ' . $username . ', Hasil convert text to hash dengan algoritma SHA1 adalah' . PHP_EOL . PHP_EOL .
-			'Teks : ' . $udahDiparse . PHP_EOL . '---------------' .  PHP_EOL .  'Hash : ' .  hash('sha1', $udahDiparse);
-		$content = array('chat_id' => $chat_id, 'text' => $reply);
-		$telegram->sendMessage($content);
-	}
-	exit;
-} elseif ('/sha512' == $adanParse[0] || '/sha512@fadhil_riyanto_bot' == $adanParse[0]) {
-	$azanHilangcommand = str_replace($adanParse_plain[0], '', $text_plain);
-	$udahDiparse = str_replace($adanParse_plain[0] . ' ', '', $text_plain);
-	if ($azanHilangcommand == null) {
-		$reply = 'Hai ' . $username . PHP_EOL . 'Untuk menggunakan encrypt SHA512, gunakan command /sha512 {teks atau kata}.' . PHP_EOL . PHP_EOL .
-			'Contoh : /sha512 indonesia';
-		$content = array('chat_id' => $chat_id, 'text' => $reply);
-		$telegram->sendMessage($content);
-	} else {
-		$reply = 'Hai ' . $username . ', Hasil convert text to hash dengan algoritma SHA512 adalah' . PHP_EOL . PHP_EOL .
-			'Teks : ' . $udahDiparse . PHP_EOL . '---------------' .  PHP_EOL .  'Hash : ' .  hash('sha512', $udahDiparse);
-		$content = array('chat_id' => $chat_id, 'text' => $reply);
-		$telegram->sendMessage($content);
-	}
-	exit;
-} elseif ('/sha384' == $adanParse[0] || '/sha384@fadhil_riyanto_bot' == $adanParse[0]) {
-	$azanHilangcommand = str_replace($adanParse_plain[0], '', $text_plain);
-	$udahDiparse = str_replace($adanParse_plain[0] . ' ', '', $text_plain);
-	if ($azanHilangcommand == null) {
-		$reply = 'Hai ' . $username . PHP_EOL . 'Untuk menggunakan encrypt SHA384, gunakan command /sha384 {teks atau kata}.' . PHP_EOL . PHP_EOL .
-			'Contoh : /sha384 indonesia';
-		$content = array('chat_id' => $chat_id, 'text' => $reply);
-		$telegram->sendMessage($content);
-	} else {
-		$reply = 'Hai ' . $username . ', Hasil convert text to hash dengan algoritma SHA384 adalah' . PHP_EOL . PHP_EOL .
-			'Teks : ' . $udahDiparse . PHP_EOL . '---------------' .  PHP_EOL .  'Hash : ' .  hash('sha384', $udahDiparse);
-		$content = array('chat_id' => $chat_id, 'text' => $reply);
-		$telegram->sendMessage($content);
-	}
-	exit;
-} elseif ('/md5' == $adanParse[0] || '/md5@fadhil_riyanto_bot' == $adanParse[0]) {
-	$azanHilangcommand = str_replace($adanParse_plain[0], '', $text_plain);
-	$udahDiparse = str_replace($adanParse_plain[0] . ' ', '', $text_plain);
-	if ($azanHilangcommand == null) {
-		$reply = 'Hai ' . $username . PHP_EOL . 'Untuk menggunakan encrypt md5, gunakan command /md5 {teks atau kata}.' . PHP_EOL . PHP_EOL .
-			'Contoh : /md5 indonesia';
-		$content = array('chat_id' => $chat_id, 'text' => $reply);
-		$telegram->sendMessage($content);
-	} else {
-		$reply = 'Hai ' . $username . ', Hasil convert text to hash dengan algoritma MD5 adalah' . PHP_EOL . PHP_EOL .
-			'Teks : ' . $udahDiparse . PHP_EOL . '---------------' .  PHP_EOL .  'Hash : ' .  hash('md5', $udahDiparse);
-		$content = array('chat_id' => $chat_id, 'text' => $reply);
-		$telegram->sendMessage($content);
-	}
-	exit;
-} elseif ('/md4' == $adanParse[0] || '/md4@fadhil_riyanto_bot' == $adanParse[0]) {
-	$azanHilangcommand = str_replace($adanParse_plain[0], '', $text_plain);
-	$udahDiparse = str_replace($adanParse_plain[0] . ' ', '', $text_plain);
-	if ($azanHilangcommand == null) {
-		$reply = 'Hai ' . $username . PHP_EOL . 'Untuk menggunakan encrypt md4, gunakan command /md4 {teks atau kata}.' . PHP_EOL . PHP_EOL .
-			'Contoh : /md4 indonesia';
-		$content = array('chat_id' => $chat_id, 'text' => $reply);
-		$telegram->sendMessage($content);
-	} else {
-		$reply = 'Hai ' . $username . ', Hasil convert text to hash dengan algoritma MD4 adalah' . PHP_EOL . PHP_EOL .
-			'Teks : ' . $udahDiparse . PHP_EOL . '---------------' .  PHP_EOL .  'Hash : ' .  hash('md4', $udahDiparse);
-		$content = array('chat_id' => $chat_id, 'text' => $reply);
-		$telegram->sendMessage($content);
-	}
-	exit;
-} elseif ('/md2' == $adanParse[0] || '/md2@fadhil_riyanto_bot' == $adanParse[0]) {
-	$azanHilangcommand = str_replace($adanParse_plain[0], '', $text_plain);
-	$udahDiparse = str_replace($adanParse_plain[0] . ' ', '', $text_plain);
-	if ($azanHilangcommand == null) {
-		$reply = 'Hai ' . $username . PHP_EOL . 'Untuk menggunakan encrypt md2, gunakan command /md2 {teks atau kata}.' . PHP_EOL . PHP_EOL .
-			'Contoh : /md2 indonesia';
-		$content = array('chat_id' => $chat_id, 'text' => $reply);
-		$telegram->sendMessage($content);
-	} else {
-		$reply = 'Hai ' . $username . ', Hasil convert text to hash dengan algoritma MD2 adalah' . PHP_EOL . PHP_EOL .
-			'Teks : ' . $udahDiparse . PHP_EOL . '---------------' .  PHP_EOL .  'Hash : ' .  hash('md2', $udahDiparse);
-		$content = array('chat_id' => $chat_id, 'text' => $reply);
-		$telegram->sendMessage($content);
-	}
-	exit;
-}
-//ALL HASH DISINI
-// DIMULAI
-elseif ('/ripemd128' == $adanParse[0] || '/ripemd128@fadhil_riyanto_bot' == $adanParse[0]) {
-	$azanHilangcommand = str_replace($adanParse_plain[0], '', $text_plain);
-	$udahDiparse = str_replace($adanParse_plain[0] . ' ', '', $text_plain);
-	if ($azanHilangcommand == null) {
-		$reply = 'Hai ' . $username . PHP_EOL . 'Untuk menggunakan encrypt ripemd128, gunakan command /ripemd128 {teks atau kata}.' . PHP_EOL . PHP_EOL .
-			'Contoh : /ripemd128 indonesia';
-		$content = array('chat_id' => $chat_id, 'text' => $reply);
-		$telegram->sendMessage($content);
-	} else {
-		$reply = 'Hai ' . $username . ', Hasil convert text to hash dengan algoritma ripemd128 adalah' . PHP_EOL . PHP_EOL .
-			'Teks : ' . $udahDiparse . PHP_EOL . '---------------' .  PHP_EOL .  'Hash : ' .  hash('ripemd128', $udahDiparse);
-		$content = array('chat_id' => $chat_id, 'text' => $reply);
-		$telegram->sendMessage($content);
-	}
-	exit;
-} elseif ('/ripemd160' == $adanParse[0] || '/ripemd160@fadhil_riyanto_bot' == $adanParse[0]) {
-	$azanHilangcommand = str_replace($adanParse_plain[0], '', $text_plain);
-	$udahDiparse = str_replace($adanParse_plain[0] . ' ', '', $text_plain);
-	if ($azanHilangcommand == null) {
-		$reply = 'Hai ' . $username . PHP_EOL . 'Untuk menggunakan encrypt ripemd160, gunakan command /ripemd160 {teks atau kata}.' . PHP_EOL . PHP_EOL .
-			'Contoh : /ripemd160 indonesia';
-		$content = array('chat_id' => $chat_id, 'text' => $reply);
-		$telegram->sendMessage($content);
-	} else {
-		$reply = 'Hai ' . $username . ', Hasil convert text to hash dengan algoritma ripemd160 adalah' . PHP_EOL . PHP_EOL .
-			'Teks : ' . $udahDiparse . PHP_EOL . '---------------' .  PHP_EOL .  'Hash : ' .  hash('ripemd160', $udahDiparse);
-		$content = array('chat_id' => $chat_id, 'text' => $reply);
-		$telegram->sendMessage($content);
-	}
-	exit;
-} elseif ('/ripemd256' == $adanParse[0] || '/ripemd256@fadhil_riyanto_bot' == $adanParse[0]) {
-	$azanHilangcommand = str_replace($adanParse_plain[0], '', $text_plain);
-	$udahDiparse = str_replace($adanParse_plain[0] . ' ', '', $text_plain);
-	if ($azanHilangcommand == null) {
-		$reply = 'Hai ' . $username . PHP_EOL . 'Untuk menggunakan encrypt ripemd256, gunakan command /ripemd256 {teks atau kata}.' . PHP_EOL . PHP_EOL .
-			'Contoh : /ripemd256 indonesia';
-		$content = array('chat_id' => $chat_id, 'text' => $reply);
-		$telegram->sendMessage($content);
-	} else {
-		$reply = 'Hai ' . $username . ', Hasil convert text to hash dengan algoritma ripemd256 adalah' . PHP_EOL . PHP_EOL .
-			'Teks : ' . $udahDiparse . PHP_EOL . '---------------' .  PHP_EOL .  'Hash : ' .  hash('ripemd256', $udahDiparse);
-		$content = array('chat_id' => $chat_id, 'text' => $reply);
-		$telegram->sendMessage($content);
-	}
-	exit;
-} elseif ('/ripemd320' == $adanParse[0] || '/ripemd320@fadhil_riyanto_bot' == $adanParse[0]) {
-	$azanHilangcommand = str_replace($adanParse_plain[0], '', $text_plain);
-	$udahDiparse = str_replace($adanParse_plain[0] . ' ', '', $text_plain);
-	if ($azanHilangcommand == null) {
-		$reply = 'Hai ' . $username . PHP_EOL . 'Untuk menggunakan encrypt ripemd320, gunakan command /ripemd320 {teks atau kata}.' . PHP_EOL . PHP_EOL .
-			'Contoh : /ripemd320 indonesia';
-		$content = array('chat_id' => $chat_id, 'text' => $reply);
-		$telegram->sendMessage($content);
-	} else {
-		$reply = 'Hai ' . $username . ', Hasil convert text to hash dengan algoritma ripemd320 adalah' . PHP_EOL . PHP_EOL .
-			'Teks : ' . $udahDiparse . PHP_EOL . '---------------' .  PHP_EOL .  'Hash : ' .  hash('ripemd320', $udahDiparse);
-		$content = array('chat_id' => $chat_id, 'text' => $reply);
-		$telegram->sendMessage($content);
-	}
-	exit;
-} elseif ('/whirlpool' == $adanParse[0] || '/whirlpool@fadhil_riyanto_bot' == $adanParse[0]) {
-	$azanHilangcommand = str_replace($adanParse_plain[0], '', $text_plain);
-	$udahDiparse = str_replace($adanParse_plain[0] . ' ', '', $text_plain);
-	if ($azanHilangcommand == null) {
-		$reply = 'Hai ' . $username . PHP_EOL . 'Untuk menggunakan encrypt whirlpool, gunakan command /whirlpool {teks atau kata}.' . PHP_EOL . PHP_EOL .
-			'Contoh : /whirlpool indonesia';
-		$content = array('chat_id' => $chat_id, 'text' => $reply);
-		$telegram->sendMessage($content);
-	} else {
-		$reply = 'Hai ' . $username . ', Hasil convert text to hash dengan algoritma whirlpool adalah' . PHP_EOL . PHP_EOL .
-			'Teks : ' . $udahDiparse . PHP_EOL . '---------------' .  PHP_EOL .  'Hash : ' .  hash('whirlpool', $udahDiparse);
-		$content = array('chat_id' => $chat_id, 'text' => $reply);
-		$telegram->sendMessage($content);
-	}
-	exit;
-}
-//BASE DECODE ENCODE WOYYY
-//BASE DECODE ENCODE WOYYY
-//BASE DECODE ENCODE WOYYY
-//BASE DECODE ENCODE WOYYY
-elseif ('/base64_encode' == $adanParse[0] || '/base64_encode@fadhil_riyanto_bot' == $adanParse[0]) {
-	$azanHilangcommand = str_replace($adanParse_plain[0], '', $text_plain);
-	$udahDiparse = str_replace($adanParse_plain[0] . ' ', '', $text_plain);
-	if ($azanHilangcommand == null) {
-		$reply = 'Hai ' . $username . PHP_EOL . 'Untuk menggunakan encode base64, gunakan command /base64_encode {teks atau kata}.' . PHP_EOL . PHP_EOL .
-			'Contoh : /base64_encode indonesia';
-		$content = array('chat_id' => $chat_id, 'text' => $reply);
-		$telegram->sendMessage($content);
-	} else {
-		$reply = 'Hai ' . $username . ', Hasil convert text to base64 encode adalah' . PHP_EOL . PHP_EOL .
-			'Teks : ' . $udahDiparse . PHP_EOL . '---------------' .  PHP_EOL .  'Encoded : ' .  base64_encode($udahDiparse);
-		$content = array('chat_id' => $chat_id, 'text' => $reply);
-		$telegram->sendMessage($content);
-	}
-	exit;
-} elseif ('/base64_decode' == $adanParse[0] || '/base64_decode@fadhil_riyanto_bot' == $adanParse[0]) {
-	$azanHilangcommand = str_replace($adanParse_plain[0], '', $text_plain);
-	$udahDiparse = str_replace($adanParse_plain[0] . ' ', '', $text_plain);
-	if ($azanHilangcommand == null) {
-		$reply = 'Hai ' . $username . PHP_EOL . 'Untuk menggunakan decode base64, gunakan command /base64_decode {base64 encoded teks}.' . PHP_EOL . PHP_EOL .
-			'Contoh : /base64_decode SGFsbw==';
-		$content = array('chat_id' => $chat_id, 'text' => $reply);
-		$telegram->sendMessage($content);
-	} else {
-		if (base64_encode(base64_decode($udahDiparse, true)) === $udahDiparse) {
-			$reply = 'Hai ' . $username . ', Hasil convert text to base64 decode adalah' . PHP_EOL . PHP_EOL .
-				'Encoded : ' . $udahDiparse . PHP_EOL . '---------------' .  PHP_EOL .  'Decoded : ' . base64_decode($udahDiparse);
-			$content = array('chat_id' => $chat_id, 'text' => $reply);
-			$telegram->sendMessage($content);
-		} else {
-			$reply = 'Hai ' . $username . ', Maaf, base64 yang akan didecode tidak valid';
-			$content = array('chat_id' => $chat_id, 'text' => $reply);
-			$telegram->sendMessage($content);
-		}
-	}
-	exit;
-}
-// ENCRYPT TOOLS DIAKHIRI
-// LICENSE BY FADHIL
-// PAHAM?
 $q = mysqli_query($koneksi, "SELECT * FROM `data_ai` WHERE `data_key_ai` LIKE _utf8 '$text' ");
 $tes_jumlah_row = @mysqli_affected_rows($koneksi);
 //$dataAI = mysqli_fetch_assoc($q);

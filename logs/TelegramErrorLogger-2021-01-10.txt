@@ -115,3 +115,194 @@ Indonesia merupakan anggota dari PBB dan satu-satunya anggota yang pernah keluar
 #3 C:\bot telegram\index.php(78): Telegram->sendMessage(Array)
 #4 {main}
 
+============[Date]============
+[ 2021-01-10 21:27:25  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: strings must be encoded in UTF-8
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804386090
+ref.message.message_id= 4834
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1610288843
+ref.message.text= /base64_decode yy6
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 14
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyantoHasil decode adalah
+
+Ë.
+
+
+============[Trace]===========
+#0 C:\bot telegram\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(947): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-10 21:59:01  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: strings must be encoded in UTF-8
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804386130
+ref.message.message_id= 10787
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= Fadhil's bot Project
+ref.message.chat.type= supergroup
+ref.message.date= 1610290740
+ref.message.text= /base64_decode@Fadhil_riyanto_bot aW5kZG9uZXNpYWE=
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 33
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyantoHasil decode adalah
+
+kdÎnÏéË
+
+
+============[Trace]===========
+#0 C:\bot telegram\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(948): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-10 21:59:43  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: strings must be encoded in UTF-8
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804386131
+ref.message.message_id= 10788
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= Fadhil's bot Project
+ref.message.chat.type= supergroup
+ref.message.date= 1610290781
+ref.message.text= /base64_decode@Fadhil_riyanto_bot aW5kZG9uZXNpYWE=
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 33
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyantoHasil decode adalah
+
+kdÎnÏéËaw5kzg9uzxnpywe=
+
+
+============[Trace]===========
+#0 C:\bot telegram\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(948): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-10 22:00:21  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: strings must be encoded in UTF-8
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804386133
+ref.message.message_id= 10791
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= Fadhil's bot Project
+ref.message.chat.type= supergroup
+ref.message.date= 1610290819
+ref.message.text= /base64_decode@Fadhil_riyanto_bot hi All wkwkA
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 33
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyantoHasil decode adalah
+
+†&¥—	0‘hi all wkwka
+
+
+============[Trace]===========
+#0 C:\bot telegram\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(948): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-10 22:09:35  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804386140
+ref.message.message_id= 10804
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= Fadhil's bot Project
+ref.message.chat.type= supergroup
+ref.message.date= 1610291373
+ref.message.text= @TheEthaners terkadang membuat banyak command sekaligus dalam 1 waktu membuat bingung ketika ada bugs .
+Contoh nya aja tadi. Bugs nya adalah dia tidak mau menerima teks. Dan hasil var_dump username bit ikutan. Udah aku debug dari jam 9 tadi
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 12
+ref.message.entities.0.type= mention
+
+
+[ref]
+ref.text= 
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(973): Telegram->sendMessage(Array)
+#4 {main}
+

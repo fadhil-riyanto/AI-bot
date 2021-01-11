@@ -1,0 +1,34 @@
+============[Date]============
+[ 2021-01-11 10:56:02  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804386213
+ref.message.message_id= 10926
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= Fadhil's bot Project
+ref.message.chat.type= supergroup
+ref.message.date= 1610337360
+ref.message.text= 256 hALo sayA HASh
+
+
+[ref]
+ref.text= 
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\Telegram.php(3201): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\Telegram.php(111): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\Telegram.php(196): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(974): Telegram->sendMessage(Array)
+#4 {main}
+
