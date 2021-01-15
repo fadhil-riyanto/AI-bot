@@ -1,0 +1,212 @@
+============[Date]============
+[ 2021-01-12 14:10:06  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+curl_error_code:		6
+curl_error:		Could not resolve host: api.telegram.org
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804386465
+ref.message.message_id= 11229
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= Fadhil's bot Project
+ref.message.chat.type= supergroup
+ref.message.date= 1610435393
+ref.message.text= /ip_geo bima.tri.co.id
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 7
+ref.message.entities.0.type= bot_command
+ref.message.entities.1.offset= 8
+ref.message.entities.1.length= 14
+ref.message.entities.1.type= url
+
+
+[ref]
+ref.text= Halo  @fadhil_riyanto Kami menemukan ip geolokasi dari bima.tri.co.id Berikut datanya
+
+Negara : Indonesia
+Kode negara : Indonesia
+region: JK
+regionName : Jakarta
+city : Jakarta
+zip : 
+lat : -6.1741
+lon : 106.8296
+Zona waktu : Asia/Jakarta
+isp : PT Hutchison CP Telecommunications
+org : 
+as : AS45727 Hutchison CP Telecommunications, PT
+maps: https://www.openstreetmap.org/?mlat=-6.1741&mlon=106.8296
+
+
+============[Trace]===========
+#0 C:\bot telegram\index.php(1737): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\index.php(1143): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\index.php(1160): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(226): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-12 14:15:20  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: latitude is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804386468
+ref.message.message_id= 11234
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= Fadhil's bot Project
+ref.message.chat.type= supergroup
+ref.message.date= 1610435717
+ref.message.text= /ip_geo bima.tri.co.id
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 7
+ref.message.entities.0.type= bot_command
+ref.message.entities.1.offset= 8
+ref.message.entities.1.length= 14
+ref.message.entities.1.type= url
+
+
+[ref]
+ref.text= Halo  @fadhil_riyanto Kami menemukan ip geolokasi dari bima.tri.co.id Berikut datanya
+
+Negara : Indonesia
+Kode negara : Indonesia
+region: JK
+regionName : Jakarta
+city : Jakarta
+zip : 
+lat : -6.1741
+lon : 106.8296
+Zona waktu : Asia/Jakarta
+isp : PT Hutchison CP Telecommunications
+org : 
+as : AS45727 Hutchison CP Telecommunications, PT
+maps: https://www.openstreetmap.org/?mlat=-6.1741&mlon=106.8296
+
+
+============[Trace]===========
+#0 C:\bot telegram\index.php(1739): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\index.php(1145): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\index.php(1198): Telegram->endpoint('sendLocation', Array)
+#3 C:\bot telegram\index.php(228): Telegram->sendLocation(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-12 14:20:44  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804386475
+ref.message.message_id= 5032
+ref.message.from.id= 1176743149
+ref.message.from.is_bot= false
+ref.message.from.first_name= JOJI Miller
+ref.message.from.username= sushitrush
+ref.message.from.language_code= id
+ref.message.chat.id= 1176743149
+ref.message.chat.first_name= JOJI Miller
+ref.message.chat.username= sushitrush
+ref.message.chat.type= private
+ref.message.date= 1610436042
+ref.message.text= Lu hebat daripada taelha
+
+
+[ref]
+ref.text= 
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\index.php(1742): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\index.php(1148): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\index.php(1165): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(1108): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-12 18:54:49  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804386523
+ref.message.message_id= 11292
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= Fadhil's bot Project
+ref.message.chat.type= supergroup
+ref.message.date= 1610452487
+ref.message.text= /debug
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\index.php(1771): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\index.php(1177): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\index.php(1194): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(1137): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-12 19:10:29  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804386527
+ref.message.message_id= 11303
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= Fadhil's bot Project
+ref.message.chat.type= supergroup
+ref.message.date= 1610453427
+ref.message.text= Wow, nice lah
+
+
+[ref]
+ref.text= 
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\index.php(1771): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\index.php(1177): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\index.php(1194): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(1137): Telegram->sendMessage(Array)
+#4 {main}
+

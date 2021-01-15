@@ -1,0 +1,248 @@
+============[Date]============
+[ 2021-01-15 12:06:42  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804386988
+ref.message.message_id= 5371
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1610687202
+ref.message.text= /command ngetes ajah....haha
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 8
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\index.php(1892): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\index.php(1298): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\index.php(1315): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(1241): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-15 12:09:32  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804386993
+ref.message.message_id= 5377
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1610687369
+ref.message.text= csc balance cusdt
+
+
+[ref]
+ref.text= 
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\index.php(1894): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\index.php(1300): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\index.php(1317): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(1243): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-15 13:26:09  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+curl_error_code:		6
+curl_error:		Could not resolve host: api.telegram.org
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804387010
+ref.message.message_id= 5402
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1610691958
+ref.message.text= /base64_encode
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 14
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto
+Untuk menggunakan encode BASE64, gunakan command <pre>/base64_encode {teks atau kata}</pre>
+
+Contoh : <pre>/base64_encode indonesia</pre>
+ref.reply_to_message_id= 5402
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\index.php(1895): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\index.php(1301): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\index.php(1318): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(1191): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-15 13:39:32  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Unsupported start tag "pre/" at byte offset 151
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804387031
+ref.message.message_id= 5439
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1610692772
+ref.message.text= /base64_decode PHByZS8+aW5kb25lc2lhPC9wcmU+
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 14
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Hasil convert text to encode dengan algoritma BASE46 adalah
+
+Teks : PHByZS8+aW5kb25lc2lhPC9wcmU+
+---------------
+Hash : <pre><pre/>indonesia</pre></pre>
+ref.reply_to_message_id= 5439
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\index.php(1897): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\index.php(1303): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\index.php(1320): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(1213): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-15 13:39:56  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Unsupported start tag "pre/" at byte offset 151
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804387033
+ref.message.message_id= 5442
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1610692796
+ref.message.text= /base64_decode PHByZS8+aW5kb25lc2lhPC9wcmU+
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 14
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Hasil convert text to encode dengan algoritma BASE46 adalah
+
+Teks : PHByZS8+aW5kb25lc2lhPC9wcmU+
+---------------
+Hash : <pre><pre/>indonesia</pre></pre>
+ref.reply_to_message_id= 5442
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\index.php(1897): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\index.php(1303): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\index.php(1320): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(1213): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-15 13:41:41  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Unsupported start tag "pre/" at byte offset 151
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804387034
+ref.message.message_id= 5443
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1610692900
+ref.message.text= /base64_decode PHByZS8+aW5kb25lc2lhPC9wcmU+
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 14
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Hasil convert text to encode dengan algoritma BASE46 adalah
+
+Teks : PHByZS8+aW5kb25lc2lhPC9wcmU+
+---------------
+Hash : <pre><pre/>indonesia</pre></pre>
+ref.reply_to_message_id= 5443
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\index.php(1897): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\index.php(1303): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\index.php(1320): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(1213): Telegram->sendMessage(Array)
+#4 {main}
+

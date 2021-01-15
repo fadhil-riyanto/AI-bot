@@ -1,0 +1,310 @@
+============[Date]============
+[ 2021-01-14 12:53:47  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804386846
+ref.message.message_id= 11728
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= Fadhil's bot Project
+ref.message.chat.type= supergroup
+ref.message.date= 1610603625
+ref.message.text= /IP_ggeo t.me
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 8
+ref.message.entities.0.type= bot_command
+ref.message.entities.1.offset= 9
+ref.message.entities.1.length= 4
+ref.message.entities.1.type= url
+
+
+[ref]
+ref.text= 
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\index.php(1846): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\index.php(1252): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\index.php(1269): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(1212): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-14 14:30:29  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804386870
+ref.message.message_id= 5261
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1610609428
+ref.message.text= Hai pak
+
+
+[ref]
+ref.text= 
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\index.php(1862): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\index.php(1268): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\index.php(1285): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(1228): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-14 14:31:01  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804386872
+ref.message.message_id= 5264
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1610609459
+ref.message.text= Haiiii
+
+
+[ref]
+ref.text= 
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\index.php(1862): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\index.php(1268): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\index.php(1285): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(1228): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-14 21:23:25  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		401
+description:		Unauthorized
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804386918
+ref.message.message_id= 5301
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1610634203
+ref.message.text= /start
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Apa kabar?
+ref.reply_to_message_id= 5301
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\index.php(1862): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\index.php(1268): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\index.php(1285): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(60): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-14 21:23:33  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		401
+description:		Unauthorized
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804386919
+ref.message.message_id= 5302
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1610634210
+ref.message.text= /start
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Apa kabar?
+ref.reply_to_message_id= 5302
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\index.php(1862): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\index.php(1268): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\index.php(1285): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(60): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-14 21:23:45  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		401
+description:		Unauthorized
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804386920
+ref.message.message_id= 5303
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1610634226
+ref.message.text= /start
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Apa kabar?
+ref.reply_to_message_id= 5303
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\index.php(1862): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\index.php(1268): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\index.php(1285): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(60): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-14 21:35:32  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		401
+description:		Unauthorized
+=========[Sent Data]==========
+[ref]
+ref.update_id= 243743939
+ref.message.message_id= 17
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1610634931
+ref.message.text= /start
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Apa kabar?
+ref.reply_to_message_id= 17
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\index.php(1862): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\index.php(1268): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\index.php(1285): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(60): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-14 21:35:38  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		401
+description:		Unauthorized
+=========[Sent Data]==========
+[ref]
+ref.update_id= 243743940
+ref.message.message_id= 18
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1610634939
+ref.message.text= /start
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Apa kabar?
+ref.reply_to_message_id= 18
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\index.php(1862): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\index.php(1268): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\index.php(1285): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(60): Telegram->sendMessage(Array)
+#4 {main}
+

@@ -5,11 +5,11 @@ error_reporting(0);
 //wajib diisi
 // ______________________________
 $userid_pemilik = '1393342467';
-$telegramAPIs   = '1489990155:AAEC3c6I-hmtDfbk9OojmlDjNFt1NeMEjfs';
+$telegramAPIs   = '1489990155:AAGmAjOQD5D0Bmivo6KkagMG0JqUtxc1wnk';
 $api_key_cuttly = 'fa1d93ba90dedd2ceb7d01e9bade271653373';
 // ________________________________
 echo 'Ini server 1 bot telegram';
-function SERVER_ALAMAT_addr()
+function siteURL()
 {
 	$protocol = ((!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') ||
 		$_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
@@ -17,33 +17,24 @@ function SERVER_ALAMAT_addr()
 	return $protocol . $domainName;
 }
 //include('Telegram.php');
-$host_server   = SERVER_ALAMAT_addr();
+$host_server   = siteURL();
 //$host_server   = 'http://server-data.000webhostapp.com';
 
 date_default_timezone_set('Asia/Jakarta');
+
 $telegram = new Telegram($telegramAPIs);
+
 $koneksi = @mysqli_connect('freedb.tech', 'freedbtech_ai_bot_fadhil_riyanto', 'R^&V*&(H7679U7TV6I987vt**(&^u^&*y^ct%yurtytTY&T%TY&YBTRHY&U7ytR', 'freedbtech_ai_bot_fadhil_riyanto');
 
 //use http!!!!
 //akhir wajib diisi
-if ($koneksi == 1) {
-	$text = htmlspecialchars(strtolower(mysqli_real_escape_string($koneksi, $telegram->Text())));
-	$text_plain = htmlspecialchars($telegram->Text());
-	$text_plain_nokarakter = $telegram->Text();
-	$chat_id = $telegram->ChatID();
-	$userID = $telegram->UserID();
-	$message_id = $telegram->MessageID();
-	$usernameBelumdiparse = $telegram->Username();
-} else {
-	$text = htmlspecialchars(strtolower($telegram->Text()));
-	$text_plain = htmlspecialchars($telegram->Text());
-	$text_plain_nokarakter = $telegram->Text();
-	$chat_id = $telegram->ChatID();
-	$userID = $telegram->UserID();
-	$message_id = $telegram->MessageID();
-	$usernameBelumdiparse = $telegram->Username();
-}
-
+$text = htmlspecialchars(strtolower(mysqli_real_escape_string($koneksi, $telegram->Text())));
+$text_plain = htmlspecialchars($telegram->Text());
+$text_plain_nokarakter = $telegram->Text();
+$chat_id = $telegram->ChatID();
+$userID = $telegram->UserID();
+$message_id = $telegram->MessageID();
+$usernameBelumdiparse = $telegram->Username();
 
 $username = ' @' . $usernameBelumdiparse;
 
@@ -62,9 +53,6 @@ function is_valid_domain_name($domain_name)
 		&& preg_match("/^.{1,253}$/", $domain_name) //overall length check
 		&& preg_match("/^[^\.]{1,63}(\.[^\.]{1,63})*$/", $domain_name)); //length of each label
 }
-
-$stringPertama = substr($text, 0, 1); //untuk command / !
-$stringKedua = substr($text, 0, 2); // untuk command dengan 2 karakter
 
 if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	$reply = 'Hai ' . $username . ', Apa kabar?';
@@ -1183,87 +1171,60 @@ elseif ('/ripemd128' == $adanParse[0] || '/ripemd128@fadhil_riyanto_bot' == $ada
 elseif ('/base64_encode' == $adanParse[0] || '/base64_encode@fadhil_riyanto_bot' == $adanParse[0]) {
 	$azanHilangcommand = str_replace($adanParse_plain[0], '', $text_plain);
 	$udahDiparse = str_replace($adanParse_plain[0] . ' ', '', $text_plain);
-	$udahDiparse_hash = str_replace($adanParse_plain[0] . ' ', '', $text_plain_nokarakter);
 	if ($azanHilangcommand == null) {
-		$reply = 'Hai ' . $username . PHP_EOL . 'Untuk menggunakan encode Base64, gunakan command <pre>/base64_encode {teks atau kata}</pre>' . PHP_EOL . PHP_EOL .
-			'Contoh : <pre>/base64_encode indonesia</pre>';
-		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+		$reply = 'Hai ' . $username . PHP_EOL . 'Untuk menggunakan encode base64, gunakan command /base64_encode {teks atau kata}.' . PHP_EOL . PHP_EOL .
+			'Contoh : /base64_encode indonesia';
+		$content = array('chat_id' => $chat_id, 'text' => $reply);
 		$telegram->sendMessage($content);
 	} else {
-		$reply = 'Hai ' . $username . ', Hasil convert text to encode dengan algoritma BASE46 adalah' . PHP_EOL . PHP_EOL .
-			'Teks : ' . $udahDiparse . PHP_EOL . '---------------' .  PHP_EOL .  'Hash : <pre>' .  base64_encode($udahDiparse_hash) . '</pre>';
-		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+		$reply = 'Hai ' . $username . ', Hasil convert text to base64 encode adalah' . PHP_EOL . PHP_EOL .
+			'Teks : ' . $udahDiparse . PHP_EOL . '---------------' .  PHP_EOL .  'Encoded : <pre>' .  base64_encode($udahDiparse) . '</pre>';
+		$content = array('chat_id' => $chat_id, 'text' => $reply, 'parse_mode' => 'html');
 		$telegram->sendMessage($content);
 	}
 	exit;
 } elseif ('/base64_decode' == $adanParse[0] || '/base64_decode@fadhil_riyanto_bot' == $adanParse[0]) {
 	$azanHilangcommand = str_replace($adanParse_plain[0], '', $text_plain);
 	$udahDiparse = str_replace($adanParse_plain[0] . ' ', '', $text_plain);
-	$udahDiparse_hash = str_replace($adanParse_plain[0] . ' ', '', $text_plain_nokarakter);
 	if ($azanHilangcommand == null) {
-		$reply = 'Hai ' . $username . PHP_EOL . 'Untuk menggunakan decode Base64, gunakan command <pre>/base64_decode {teks atau kata}</pre>' . PHP_EOL . PHP_EOL .
-			'Contoh : <pre>/base64_decode indonesia</pre>';
-		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+		$reply = 'Hai ' . $username . PHP_EOL . 'Untuk menggunakan decode base64, gunakan command /base64_decode {base64 encoded teks}.' . PHP_EOL . PHP_EOL .
+			'Contoh : /base64_decode SGFsbw==';
+		$content = array('chat_id' => $chat_id, 'text' => $reply);
 		$telegram->sendMessage($content);
 	} else {
 		if (base64_encode(base64_decode($udahDiparse, true)) === $udahDiparse) {
-			$reply = 'Hai ' . $username . ', Hasil convert text to encode dengan algoritma BASE46 adalah' . PHP_EOL . PHP_EOL .
-				'Encoded : ' . $udahDiparse . PHP_EOL . '---------------' .  PHP_EOL .  'Text : <pre>' .  base64_decode($udahDiparse_hash) . '</pre>';
-			$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+			$reply = 'Hai ' . $username . ', Hasil convert text to base64 decode adalah' . PHP_EOL . PHP_EOL .
+				'Encoded : ' . $udahDiparse . PHP_EOL . '---------------' .  PHP_EOL .  'Decoded : ' . base64_decode($udahDiparse);
+			$content = array('chat_id' => $chat_id, 'text' => $reply);
 			$telegram->sendMessage($content);
 		} else {
 			$reply = 'Hai ' . $username . ', Maaf, base64 yang akan didecode tidak valid';
-			$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+			$content = array('chat_id' => $chat_id, 'text' => $reply);
 			$telegram->sendMessage($content);
 		}
 	}
-	exit;
-
-
-
-
-	exit;
-} elseif ($stringPertama == '/' || $stringPertama == '!' || $stringKedua == 'cc') {
 	exit;
 }
 // ENCRYPT TOOLS DIAKHIRI
 // LICENSE BY FADHIL
 // PAHAM?
-if ($koneksi == 1) {
-	$q = mysqli_query($koneksi, "SELECT * FROM `data_ai` WHERE `data_key_ai` LIKE _utf8 '$text' ");
-	$tes_jumlah_row = @mysqli_affected_rows($koneksi);
-	$dataAI = mysqli_fetch_assoc($q);
+$q = mysqli_query($koneksi, "SELECT * FROM `data_ai` WHERE `data_key_ai` LIKE _utf8 '$text' ");
+$tes_jumlah_row = @mysqli_affected_rows($koneksi);
+$dataAI = mysqli_fetch_assoc($q);
 
-	if ($tes_jumlah_row > 0) {
-		//foreach ($q as $respon) {
+if ($tes_jumlah_row > 0) {
+	//foreach ($q as $respon) {
 
-		$reply = $dataAI['data_res_ai'] . PHP_EOL;
-		$content = array('chat_id' => $chat_id, 'text' => $reply);
-		$telegram->sendMessage($content);
-		exit;
-		//}
-	} elseif ($tes_jumlah_row === 0) {
+	$reply = $dataAI['data_res_ai'] . PHP_EOL;
+	$content = array('chat_id' => $chat_id, 'text' => $reply);
+	$telegram->sendMessage($content);
+	exit;
+	//}
+} elseif ($tes_jumlah_row === 0) {
 
-		$reply = '' . PHP_EOL . '';
-		mysqli_query($koneksi, "INSERT INTO `data_ai` (`data_key_ai`, `data_res_ai`) VALUES ('$text', 'hmhm')");
-		$content = array('chat_id' => $chat_id, 'text' => $reply);
-		$telegram->sendMessage($content);
-	}
-} elseif ($koneksi == 0) {
-	$reply = 'Maaf, saat ini kamu tidak bisa membalas pesan kamu dikarnakan database sedang error. Jadi kami hanya bisa menerima command saja untuk sementara waktu ini. Kamu bisa melaporkan ke @fadhil_riyanto selaku pembuatnya';
-	$option = array(
-		//First row
-		// array($telegram->buildInlineKeyBoardButton("Button 1", $url = "http://link1.com"), $telegram->buildInlineKeyBoardButton("Button 2", $url = "http://link2.com")),
-		// //Second row 
-		// array($telegram->buildInlineKeyBoardButton("Button 3", $url = "http://link3.com"), $telegram->buildInlineKeyBoardButton("Button 4", $url = "http://link4.com"), $telegram->buildInlineKeyBoardButton("Button 5", $url = "http://link5.com")),
-		// //Third row
-
-		array($telegram->buildInlineKeyBoardButton("Fadhil Riyanto", $url = 'https://t.me/fadhil_riyanto'))
-	);
-	$keyb = $telegram->buildInlineKeyBoard($option);
-
-
-	$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_markup' => $keyb,  'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+	$reply = '' . PHP_EOL . '';
+	mysqli_query($koneksi, "INSERT INTO `data_ai` (`data_key_ai`, `data_res_ai`) VALUES ('$text', 'hmhm')");
+	$content = array('chat_id' => $chat_id, 'text' => $reply);
 	$telegram->sendMessage($content);
 }
 // TELEGRAM KELAS

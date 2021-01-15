@@ -1,0 +1,289 @@
+============[Date]============
+[ 2021-01-13 21:15:43  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: reply message not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804386668
+ref.message.message_id= 11486
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= Fadhil's bot Project
+ref.message.chat.type= supergroup
+ref.message.date= 1610547319
+ref.message.text= /start@Fadhil_riyanto_bot
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 25
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Apa kabar?
+ref.reply_to_message_id= 11486
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\index.php(1834): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\index.php(1240): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\index.php(1257): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(56): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-13 21:24:22  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: wrong HTTP URL
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804386674
+ref.message.message_id= 11498
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= Fadhil's bot Project
+ref.message.chat.type= supergroup
+ref.message.date= 1610547860
+ref.message.text= /debug
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.reply_markup= {"inline_keyboard":[[{"text":"Button 1","url":"hm"},{"text":"Button 2","url":"http:\/\/link2.com"}],[{"text":"Button 3","url":"http:\/\/link3.com"},{"text":"Button 4","url":"http:\/\/link4.com"},{"text":"Button 5","url":"http:\/\/link5.com"}],[{"text":"Button 6","url":"http:\/\/link6.com"}]]}
+ref.text= This is a Keyboard Test
+
+
+============[Trace]===========
+#0 C:\bot telegram\index.php(1834): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\index.php(1240): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\index.php(1257): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(69): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-13 22:20:24  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Unexpected end tag at byte offset 119
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804386741
+ref.message.message_id= 11626
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= Fadhil's bot Project
+ref.message.chat.type= supergroup
+ref.message.date= 1610551222
+ref.message.text= /sha256@Fadhil_riyanto_bot hai
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 26
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Hasil convert text to hash dengan algoritma SHA256 adalah
+
+Teks : hai
+---------------
+Hash : </pre>739b9d664d77db3ee3cab40737c6386fb7b6ef9e00b31a434fd7680e69482ba0</pre>
+ref.reply_to_message_id= 11626
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\index.php(1846): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\index.php(1252): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\index.php(1269): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(979): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-13 22:20:41  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Unexpected end tag at byte offset 119
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804386742
+ref.message.message_id= 11627
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= Fadhil's bot Project
+ref.message.chat.type= supergroup
+ref.message.date= 1610551239
+ref.message.text= /sha256@Fadhil_riyanto_bot hai
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 26
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Hasil convert text to hash dengan algoritma SHA256 adalah
+
+Teks : hai
+---------------
+Hash : </pre>739b9d664d77db3ee3cab40737c6386fb7b6ef9e00b31a434fd7680e69482ba0</pre>
+ref.reply_to_message_id= 11627
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\index.php(1846): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\index.php(1252): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\index.php(1269): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(979): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-13 22:21:17  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Unexpected end tag at byte offset 119
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804386744
+ref.message.message_id= 11630
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= Fadhil's bot Project
+ref.message.chat.type= supergroup
+ref.message.date= 1610551276
+ref.message.text= /sha256@Fadhil_riyanto_bot hai
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 26
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Hasil convert text to hash dengan algoritma SHA256 adalah
+
+Teks : hai
+---------------
+Hash : </pre>739b9d664d77db3ee3cab40737c6386fb7b6ef9e00b31a434fd7680e69482ba0</pre>
+ref.reply_to_message_id= 11630
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\index.php(1846): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\index.php(1252): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\index.php(1269): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(979): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-13 22:25:07  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Can't find end tag corresponding to start tag b
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804386748
+ref.message.message_id= 11637
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= Fadhil's bot Project
+ref.message.chat.type= supergroup
+ref.message.date= 1610551505
+ref.message.text= /sha256@Fadhil_riyanto_bot <b>hai/b>
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 26
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Hasil convert text to hash dengan algoritma SHA256 adalah
+
+Teks : <b>hai/b>
+---------------
+Hash : <pre>b996b162381ee5d558ab600ff6627ac47dffa569d811f172305ffeb0dbff866c</pre>
+ref.reply_to_message_id= 11637
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\index.php(1846): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\index.php(1252): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\index.php(1269): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(979): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-13 22:30:20  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+curl_error_code:		6
+curl_error:		Could not resolve host: api.telegram.org
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804386757
+ref.message.message_id= 11654
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= Fadhil's bot Project
+ref.message.chat.type= supergroup
+ref.message.date= 1610551808
+ref.message.text= /base64_encode@Fadhil_riyanto_bot <b>hai</b>
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 33
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Hasil convert text to base64 encode adalah
+
+Teks : &lt;b&gt;hai&lt;/b&gt;
+---------------
+Encoded : <pre>Jmx0O2ImZ3Q7aGFpJmx0Oy9iJmd0Ow==</pre>
+ref.parse_mode= html
+
+
+============[Trace]===========
+#0 C:\bot telegram\index.php(1846): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\index.php(1252): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\index.php(1269): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(1167): Telegram->sendMessage(Array)
+#4 {main}
+
