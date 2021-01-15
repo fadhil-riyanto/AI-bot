@@ -66,6 +66,9 @@ function is_valid_domain_name($domain_name)
 $stringPertama = substr($text, 0, 1); //untuk command / !
 $stringKedua = substr($text, 0, 2); // untuk command dengan 2 karakter
 
+$stringTerakhir = substr($text, 0, -1);
+
+
 if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	$reply = 'Hai ' . $username . ', Apa kabar?';
 	$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
@@ -1224,28 +1227,33 @@ elseif ('/base64_encode' == $adanParse[0] || '/base64_encode@fadhil_riyanto_bot'
 
 	exit;
 } elseif ($stringPertama == '/' || $stringPertama == '!' || $stringKedua == 'cc') {
+	// Jika ditemukan data dengan awalan coommand telegram, maka dia ngga akan diinsert ke database
+	// kita menggunakan exit agar dia keluar dari konsol
 	exit;
 }
 // ENCRYPT TOOLS DIAKHIRI
 // LICENSE BY FADHIL
 // PAHAM?
+$filter_msg = new filter_pesan();
+$teksTerfilter = $filter_msg->hyphenize($text);
 if ($koneksi == 1) {
-	$q = mysqli_query($koneksi, "SELECT * FROM `data_ai` WHERE `data_key_ai` LIKE _utf8 '$text' ");
+	$q = mysqli_query($koneksi, "SELECT * FROM `data_ai` WHERE `data_key_ai` SOUNDS LIKE _utf8 '$teksTerfilter' ");
 	$tes_jumlah_row = @mysqli_affected_rows($koneksi);
 	$dataAI = mysqli_fetch_assoc($q);
 
 	if ($tes_jumlah_row > 0) {
 		//foreach ($q as $respon) {
 
+
 		$reply = $dataAI['data_res_ai'] . PHP_EOL;
-		$content = array('chat_id' => $chat_id, 'text' => $reply);
+		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
 		$telegram->sendMessage($content);
 		exit;
 		//}
 	} elseif ($tes_jumlah_row === 0) {
 
 		$reply = '' . PHP_EOL . '';
-		mysqli_query($koneksi, "INSERT INTO `data_ai` (`data_key_ai`, `data_res_ai`) VALUES ('$text', 'hmhm')");
+		mysqli_query($koneksi, "INSERT INTO `data_ai` (`data_key_ai`, `data_res_ai`) VALUES ('$teksTerfilter', 'hmhm')");
 		$content = array('chat_id' => $chat_id, 'text' => $reply);
 		$telegram->sendMessage($content);
 	}
@@ -1269,7 +1277,58 @@ if ($koneksi == 1) {
 // TELEGRAM KELAS
 // V 4
 // API CLASS DIMULAI DISINI WOYY
+class filter_pesan
+{
+	public function hyphenize($string)
+	{
+		$dict = array(
+			"km"      => "kamu",
+			"yoi"      => "ya",
+			"yg"      => "yang",
+			"gk"      => "gak",
+			"tg"    => "telegram"
+			// replace teks lainnya disini
+		);
+		return strtolower(
+			preg_replace(
+				array('#[\\s-]+#', '#[^A-Za-z0-9. -]+#'),
+				array(' ', ''),
 
+				$this->cleanString(
+					str_replace(
+						array_keys($dict),
+						array_values($dict),
+						urldecode($string)
+					)
+				)
+			)
+		);
+	}
+	public function cleanString($text)
+	{
+		$utf8 = array(
+			'/[áàâãªä]/u'   =>   'a',
+			'/[ÁÀÂÃÄ]/u'    =>   'A',
+			'/[ÍÌÎÏ]/u'     =>   'I',
+			'/[íìîï]/u'     =>   'i',
+			'/[éèêë]/u'     =>   'e',
+			'/[ÉÈÊË]/u'     =>   'E',
+			'/[óòôõºö]/u'   =>   'o',
+			'/[ÓÒÔÕÖ]/u'    =>   'O',
+			'/[úùûü]/u'     =>   'u',
+			'/[ÚÙÛÜ]/u'     =>   'U',
+			'/ç/'           =>   'c',
+			'/Ç/'           =>   'C',
+			'/ñ/'           =>   'n',
+			'/Ñ/'           =>   'N',
+			'/–/'           =>   '-',
+			'/[’‘‹›‚]/u'    =>   ' ',
+			'/[“”«»„]/u'    =>   ' ',
+			'/ /'           =>   ' ',
+		);
+		return preg_replace(array_keys($utf8), array_values($utf8), $text);
+	}
+}
 
 class Telegram
 {

@@ -246,3 +246,38 @@ ref.disable_web_page_preview= true
 #3 C:\bot telegram\index.php(1213): Telegram->sendMessage(Array)
 #4 {main}
 
+============[Date]============
+[ 2021-01-15 15:21:37  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804387057
+ref.message.message_id= 5487
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1610698896
+ref.message.text= km kenapa lagi kenapa kok gk jawab ngab?
+
+
+[ref]
+ref.text= 
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\index.php(1960): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\index.php(1366): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\index.php(1383): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(1258): Telegram->sendMessage(Array)
+#4 {main}
+
