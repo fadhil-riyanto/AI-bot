@@ -33,7 +33,7 @@ $host_server   = SERVER_ALAMAT_addr();
 
 date_default_timezone_set('Asia/Jakarta');
 $telegram = new Telegram($telegramAPIs);
-$koneksi = @mysqli_connect('freedb.tech', 'freedbtech_ai_bot_fadhil_riyanto', 'R^&V*&(H7679U7TV6I987vt**(&^u^&*y^ct%yurtytTY&T%TY&YBTRHY&U7ytR', 'freedbtech_ai_bot_fadhil_riyanto');
+$koneksi = @mysqli_connect('freedb.tech', 'freedbtech_ai_bot_fadhil_riyanto', '789b697698hyufijbbiub*&^BO&it87tbn7to&^7896', 'freedbtech_ai_bot_fadhil_riyanto');
 
 //use http!!!!
 //akhir wajib diisi
@@ -138,10 +138,15 @@ $stringPertama = substr($text, 0, 1); //untuk command / !
 $stringKedua = substr($text, 0, 2); // untuk command dengan 2 karakter
 
 $stringTerakhir = substr($text, 0, -1);
-
+$memberBaru = $telegram->member_baru();
 
 if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	$reply = 'Hai ' . $username . ', Apa kabar?';
+	$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+	$telegram->sendMessage($content);
+	exit;
+} elseif (isset($memberBaru)) {
+	$reply = 'Halo, apa kabar mu?';
 	$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
 	$telegram->sendMessage($content);
 	exit;
@@ -285,6 +290,8 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	}
 	exit;
 } elseif ('/capture_full' == $adanParse[0] || '/capture_full@fadhil_riyanto_bot' == $adanParse[0]) {
+	$status = array('chat_id' => $chat_id, 'action' => 'upload_photo');
+	$telegram->sendChatAction($status);
 	$azanHilangcommand = str_replace($adanParse[0], '', $text);
 	$udahDiparse = str_replace($adanParse[0] . ' ', '', $text);
 
@@ -1076,7 +1083,15 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	$text == 'info bot fadhil riyanto'
 ) {
 	$reply = 'Hai ' . $username . PHP_EOL . PHP_EOL . 'Saya bot Fadhil Riyanto. Hobi saya bermain komputer dan membuat program' . PHP_EOL . PHP_EOL . 'Teknologi yang saya gunakan ialah. ' . PHP_EOL . 'Server: nginx' . PHP_EOL . 'Database: Mysql' . PHP_EOL . 'Cloud: Heroku, 000webhost' . PHP_EOL . 'PHP: 8.0.0 thread safe' . PHP_EOL . 'Versi bot: 9.7.3 alpha' . PHP_EOL . PHP_EOL . ' Dibuat dengan Cinta oleh @fadhil_riyanto' . PHP_EOL . PHP_EOL .  'Semoga bot ini membantu.';
-	$content = array('chat_id' => $chat_id, 'text' => $reply,  'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+
+	$option = array(
+		//First row
+		array($telegram->buildInlineKeyBoardButton("👥 Support Group", $url = "https://t.me/fadhil_riyanto_project"), $telegram->buildInlineKeyBoardButton("❓ Help", $url = "", $callback_data = '/help@fadhil_riyanto_bot')),
+		//Second row 
+		array($telegram->buildInlineKeyBoardButton("🎉 Tambahkan saya ke group", $url = "https://t.me/fadhil_riyanto_bot?startgroup=new"))
+	);
+	$keyb = $telegram->buildInlineKeyBoard($option);
+	$content = array('chat_id' => $chat_id, 'text' => $reply,  'reply_to_message_id' => $message_id, 'reply_markup' => $keyb, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
 	$telegram->sendMessage($content);
 	exit;
 } elseif (
@@ -1101,7 +1116,7 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	$telegram->sendMessage($content);
 	exit;
 } elseif ($text == '/bug' || $text == '/bug@fadhil_riyanto_bot') {
-	$reply = 'Hai ' . $username . PHP_EOL . PHP_EOL . 'Silahkan PM <a href="https://t.me/fadhil_riyanto">fadhil riyanto</a>' . PHP_EOL . PHP_EOL .
+	$reply = 'Hai ' . $username . PHP_EOL . PHP_EOL . 'Silahkan kirim laporan ke  <a href="https://t.me/fadhil_riyanto_project">👥 Support Group</a>' . PHP_EOL . PHP_EOL .
 		'Jangan lupa sertakan Screenshot dan letak bug nya. yaaaa' . PHP_EOL . PHP_EOL .
 		'Dengan kamu melaporkan bug, kamu telah membantu saya untuk membuat bot lebih baik lagi. Mimin orangnya tipe humoris kok';
 	$option = array(
@@ -1111,7 +1126,7 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 		// array($telegram->buildInlineKeyBoardButton("Button 3", $url = "http://link3.com"), $telegram->buildInlineKeyBoardButton("Button 4", $url = "http://link4.com"), $telegram->buildInlineKeyBoardButton("Button 5", $url = "http://link5.com")),
 		// //Third row
 
-		array($telegram->buildInlineKeyBoardButton("PM Fadhil", $url = 'https://t.me/fadhil_riyanto'))
+		array($telegram->buildInlineKeyBoardButton("👥 Support Group", $url = 'https://t.me/fadhil_riyanto_project'))
 	);
 	$keyb = $telegram->buildInlineKeyBoard($option);
 
@@ -1495,7 +1510,7 @@ if ($koneksi == 1) {
 		// array($telegram->buildInlineKeyBoardButton("Button 3", $url = "http://link3.com"), $telegram->buildInlineKeyBoardButton("Button 4", $url = "http://link4.com"), $telegram->buildInlineKeyBoardButton("Button 5", $url = "http://link5.com")),
 		// //Third row
 
-		array($telegram->buildInlineKeyBoardButton("Fadhil Riyanto", $url = 'https://t.me/fadhil_riyanto'))
+		array($telegram->buildInlineKeyBoardButton("👥 Support Group", $url = 'https://t.me/fadhil_riyanto_project'))
 	);
 	$keyb = $telegram->buildInlineKeyBoard($option);
 
@@ -1941,6 +1956,12 @@ class Telegram
 			return @$this->data['inline_query']['from']['id'];
 		}
 		return $this->data['message']['chat']['id'];
+	}
+	public function member_baru()
+	{
+		$type = $this->getUpdateType();
+
+		return $this->data['message']['new_chat_member'];
 	}
 	public function MessageID()
 	{

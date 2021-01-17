@@ -1199,3 +1199,236 @@ ref.disable_web_page_preview= true
 #3 C:\bot telegram\index.php(184): Telegram->sendMessage(Array)
 #4 {main}
 
+============[Date]============
+[ 2021-01-17 18:41:35  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to pin not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804387631
+ref.message.message_id= 6365
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= -454479049
+ref.message.chat.title= Buat testing aja
+ref.message.chat.type= group
+ref.message.chat.all_members_are_administrators= true
+ref.message.date= 1610883694
+ref.message.text= /pin
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 4
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Apa kabar?
+ref.reply_to_message_id= 6365
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\index.php(2351): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\index.php(1726): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\index.php(2213): Telegram->endpoint('pinChatMessage', Array)
+#3 C:\bot telegram\index.php(151): Telegram->pinChatMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-17 18:42:23  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to pin not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804387632
+ref.message.message_id= 6366
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1610883740
+ref.message.text= /pin
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 4
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Apa kabar?
+ref.reply_to_message_id= 6366
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\index.php(2351): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\index.php(1726): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\index.php(2213): Telegram->endpoint('pinChatMessage', Array)
+#3 C:\bot telegram\index.php(151): Telegram->pinChatMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-17 18:47:27  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804387633
+ref.message.message_id= 6367
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= -454479049
+ref.message.chat.title= Buat testing aja
+ref.message.chat.type= group
+ref.message.chat.all_members_are_administrators= true
+ref.message.date= 1610884045
+ref.message.text= /pin@Fadhil_riyanto_bot
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 23
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.chat_id= 
+ref.message_id= 
+
+
+============[Trace]===========
+#0 C:\bot telegram\index.php(2351): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\index.php(1726): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\index.php(2213): Telegram->endpoint('pinChatMessage', Array)
+#3 C:\bot telegram\index.php(151): Telegram->pinChatMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-17 18:48:34  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to pin not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804387636
+ref.message.message_id= 6370
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= -454479049
+ref.message.chat.title= Buat testing aja
+ref.message.chat.type= group
+ref.message.chat.all_members_are_administrators= true
+ref.message.date= 1610884113
+ref.message.text= /pin@Fadhil_riyanto_bot
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 23
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.message_id= 
+
+
+============[Trace]===========
+#0 C:\bot telegram\index.php(2351): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\index.php(1726): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\index.php(2213): Telegram->endpoint('pinChatMessage', Array)
+#3 C:\bot telegram\index.php(151): Telegram->pinChatMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-17 18:48:51  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to pin not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804387637
+ref.message.message_id= 6371
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= -454479049
+ref.message.chat.title= Buat testing aja
+ref.message.chat.type= group
+ref.message.chat.all_members_are_administrators= true
+ref.message.date= 1610884130
+ref.message.text= /pin@Fadhil_riyanto_bot
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 23
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.message_id= 
+
+
+============[Trace]===========
+#0 C:\bot telegram\index.php(2351): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\index.php(1726): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\index.php(2213): Telegram->endpoint('pinChatMessage', Array)
+#3 C:\bot telegram\index.php(151): Telegram->pinChatMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-17 21:13:32  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804387682
+ref.message.message_id= 6432
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1610892810
+ref.message.text= /callback_q short
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 11
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 
+ref.reply_markup= {"inline_keyboard":[[{"text":"kembali","callback_data":"\/help@fadhil_riyanto_bot"}]]}
+ref.reply_to_message_id= 6432
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\index.php(2336): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\index.php(1736): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\index.php(1753): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(263): Telegram->sendMessage(Array)
+#4 {main}
+
