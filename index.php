@@ -1,14 +1,31 @@
 <?php
-ini_set('max_execution_time', 20);
-//aktifkan saat mode debug. jika ngga ya jangan diaktifkan ;v
+define('DB_HOST', 'freedb.tech');											//WAJIB
+define('DB_USERNAME', 'freedbtech_ai_bot_fadhil_riyanto');					//WAJIB
+define('DB_PASSWORD', '789b697698hyufijbbiub*&^BO&it87tbn7to&^7896');		//WAJIB
+define('DB_NAME', 'freedbtech_ai_bot_fadhil_riyanto');						//WAJIB
+define('TG_HTTP_API', '1489990155:AAEC3c6I-hmtDfbk9OojmlDjNFt1NeMEjfs');	//WAJIB
+define('USER_ID_TG_ME', '1393342467');										//WAJIB
+define('CUTLLY_API', 'fa1d93ba90dedd2ceb7d01e9bade271653373');				//WAJIB
+define('TIME_ZONE', 'Asia/Jakarta');										//WAJIB
+define('MAX_EXECUTE_SCRIPT', 20);											//SUNNAH_ROSUL
+
+// PENJELASAN SINGKAT
+
+// DB_HOST digunakan untuk login ke database, begitu juga username dan password_get_info
+// TG HTTP API digunakan untuk identifikasi API, bisa didapat di @botfather
+// USERid digunakan untuk identifikasi
+// Cutlly digunakan untuk fitur /SHORT
+// Time zone digunakan untuk fitur tanggal dan waktu
+
+// =============== BARIS SELANJUT NYA TIDAK USAH DIUBAH. KARENA KEMUNGKINAN KAMU TIDAL PAHAM ============
+
+ini_set('max_execution_time', MAX_EXECUTE_SCRIPT);
 error_reporting(0);
-//wajib diisi
-// ______________________________
-$userid_pemilik = '1393342467';
-$telegramAPIs   = '1489990155:AAEC3c6I-hmtDfbk9OojmlDjNFt1NeMEjfs';
-$api_key_cuttly = 'fa1d93ba90dedd2ceb7d01e9bade271653373';
-// ________________________________
-echo 'Ini server 1 bot telegram';
+$userid_pemilik = USER_ID_TG_ME;
+$telegramAPIs   = TG_HTTP_API;
+$api_key_cuttly = CUTLLY_API;
+
+echo 'Ini server 1 bot telegram' . PHP_EOL . '<hr>';
 function SERVER_ALAMAT_addr()
 {
 	$protocol = ((!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') ||
@@ -16,6 +33,23 @@ function SERVER_ALAMAT_addr()
 	$domainName = $_SERVER['HTTP_HOST'];
 	return $protocol . $domainName;
 }
+
+function _is_curl_installed()
+{
+	if (in_array('curl', get_loaded_extensions())) {
+		return true;
+	} else {
+		return false;
+	}
+}
+
+// Ouput text to user based on test
+if (_is_curl_installed()) {
+	echo "Bagus, cURL sudah <span style=\"color:blue\">TERPASANG</span> diserver ini" . PHP_EOL;
+} else {
+	echo "cURL belum <span style=\"color:red\">TERPASANG</span> diserver ini" . PHP_EOL;
+}
+echo '<br>Memory usage : ' . memory_get_usage();
 function waktu_aktif()
 {
 	$ut = strtok(exec("cat /proc/uptime"), ".");
@@ -31,9 +65,14 @@ function waktu_aktif()
 $host_server   = SERVER_ALAMAT_addr();
 //$host_server   = 'http://server-data.000webhostapp.com';
 
-date_default_timezone_set('Asia/Jakarta');
+date_default_timezone_set(TIME_ZONE);
 $telegram = new Telegram($telegramAPIs);
-$koneksi = @mysqli_connect('freedb.tech', 'freedbtech_ai_bot_fadhil_riyanto', '789b697698hyufijbbiub*&^BO&it87tbn7to&^7896', 'freedbtech_ai_bot_fadhil_riyanto');
+$koneksi = @mysqli_connect(
+	DB_HOST,
+	DB_USERNAME,
+	DB_PASSWORD,
+	DB_NAME
+);
 
 //use http!!!!
 //akhir wajib diisi
