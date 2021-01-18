@@ -1,2 +1,5 @@
 loophole.exe
 ngrok.exe
+config.php
+/database
+/logs
