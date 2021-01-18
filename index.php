@@ -280,7 +280,7 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 			// $reply = '1';
 			// $content = array('chat_id' => $chat_id, 'photo' => 'https://cdn.statically.io/screenshot/google.com');
 			// $telegram->sendPhoto($content);
-			$reply = 'Maaf, kami tidak bisa mendapatkan gambar nya. Mungkin url kamu salah atau mungkin server yang tidak aktif';
+			$reply = 'Maaf, kami tidak bisa mendapatkan gambar nya. Mungkin url kamu salah atau mungkin server yang tidak aktif. Kamu bisa coba mengeja kembali atau menambahkan WWW didepan nya';
 			$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
 			$telegram->sendMessage($content);
 		} else {
@@ -307,7 +307,7 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 			// $reply = '1';
 			// $content = array('chat_id' => $chat_id, 'photo' => 'https://cdn.statically.io/screenshot/google.com');
 			// $telegram->sendPhoto($content);
-			$reply = 'Maaf, kami tidak bisa mendapatkan gambar nya. Mungkin url kamu salah atau mungkin server yang tidak aktif';
+			$reply = 'Maaf, kami tidak bisa mendapatkan gambar nya. Mungkin url kamu salah atau mungkin server yang tidak aktif. Kamu bisa coba mengeja kembali atau menambahkan WWW didepan nya';
 			$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
 			$telegram->sendMessage($content);
 		} else {
