@@ -6,7 +6,7 @@ function gempa($domain)
     $mxzone = dns_get_record($domain, DNS_MX);
     foreach ($mxzone as $data_mx) {
         header('type: text/plain');
-        print $data_mx['target'] . PHP_EOL;
+        print '👉 ' . $data_mx['target'] . PHP_EOL;
     }
 }
 function dapatkan_mx($domain)
@@ -14,7 +14,7 @@ function dapatkan_mx($domain)
     $mxzone = dns_get_record($domain, DNS_MX);
     foreach ($mxzone as $data_mx) {
         header('type: text/plain');
-        print $data_mx['target'] . PHP_EOL;
+        print '👉 ' . $data_mx['target'] . PHP_EOL;
     }
 }
 function dapatkan_ns($domain)
@@ -22,7 +22,7 @@ function dapatkan_ns($domain)
     $mxzone = dns_get_record($domain, DNS_NS);
     foreach ($mxzone as $data_mx) {
         header('type: text/plain');
-        print $data_mx['target'] . PHP_EOL;
+        print '👉 ' . $data_mx['target'] . PHP_EOL;
     }
 }
 function dapatkan_a($domain)
@@ -30,7 +30,7 @@ function dapatkan_a($domain)
     $mxzone = dns_get_record($domain, DNS_A);
     foreach ($mxzone as $data_mx) {
         header('type: text/plain');
-        print $data_mx['ip'] . PHP_EOL;
+        print '👉 ' . $data_mx['ip'] . PHP_EOL;
     }
 }
 function dapatkan_aaaa($domain)
@@ -38,7 +38,7 @@ function dapatkan_aaaa($domain)
     $mxzone = dns_get_record($domain, DNS_AAAA);
     foreach ($mxzone as $data_mx) {
         header('type: text/plain');
-        print $data_mx['ipv6'] . PHP_EOL;
+        print '👉 ' . $data_mx['ipv6'] . PHP_EOL;
     }
 }
 
@@ -47,7 +47,7 @@ function dapatkan_txt($domain)
     $mxzone = dns_get_record($domain, DNS_TXT);
     foreach ($mxzone as $data_mx) {
         header('type: text/plain');
-        print $data_mx['txt'] . PHP_EOL;
+        print '👉 ' . $data_mx['txt'] . PHP_EOL;
     }
 }
 
@@ -56,7 +56,7 @@ function dapatkan_cname($domain)
     $mxzone = dns_get_record($domain, DNS_CNAME);
     foreach ($mxzone as $data_mx) {
         header('type: text/plain');
-        print $data_mx['target'] . PHP_EOL;
+        print '👉 ' . $data_mx['target'] . PHP_EOL;
     }
 }
 //URI
