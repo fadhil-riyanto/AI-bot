@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '13ab937a71dc510ecb5742268e80073326cf0f5a',
+    'reference' => '2722cac93102dcfeced5c08fddd007af9f4b17db',
     'name' => '__root__',
   ),
   'versions' => 
@@ -18,7 +18,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '13ab937a71dc510ecb5742268e80073326cf0f5a',
+      'reference' => '2722cac93102dcfeced5c08fddd007af9f4b17db',
     ),
     'container-interop/container-interop' => 
     array (
@@ -29,16 +29,6 @@
       ),
       'reference' => '79cbf1341c22ec75643d841642dd5d6acd83bdb8',
     ),
-    'cwin/cwin-app' => 
-    array (
-      'pretty_version' => 'dev-master',
-      'version' => 'dev-master',
-      'aliases' => 
-      array (
-        0 => '9999999-dev',
-      ),
-      'reference' => 'b22ce64a312c9242847b69fc0c499b80c8654e72',
-    ),
     'eleirbag89/telegrambotphp' => 
     array (
       'pretty_version' => '1.3.11',
@@ -48,15 +38,6 @@
       ),
       'reference' => 'd5464bc7356f6031991e636b6b1b2402cbae88ea',
     ),
-    'nlp-tools/nlp-tools' => 
-    array (
-      'pretty_version' => 'v0.1.3',
-      'version' => '0.1.3.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => 'bbccab0f3ca7277bdf7b292ba67ca644efd0cefe',
-    ),
     'psr/container' => 
     array (
       'pretty_version' => '1.0.0',
@@ -65,15 +46,6 @@
       array (
       ),
       'reference' => 'b7ce3b176482dbbc1245ebf52b181af44c2cf55f',
-    ),
-    'psr/log' => 
-    array (
-      'pretty_version' => '1.1.3',
-      'version' => '1.1.3.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '0f73288fd15629204f9d42b7055f72dacbe811fc',
     ),
     'sastrawi/sastrawi' => 
     array (
@@ -102,15 +74,6 @@
       ),
       'reference' => '8e927ea4bf94fcc2f678f31aa3d0a62c74b07fbe',
     ),
-    'sastrawi/tokenizer' => 
-    array (
-      'pretty_version' => 'v0.4.0',
-      'version' => '0.4.0.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '35c7c6f550e749468e0d445bf69eb019191f9415',
-    ),
     'sastrawi/trka' => 
     array (
       'pretty_version' => 'v0.2.0',
@@ -119,42 +82,6 @@
       array (
       ),
       'reference' => 'ff82616135204e2d29aca51c56def3330b994b1c',
-    ),
-    'symfony/console' => 
-    array (
-      'pretty_version' => 'v2.8.52',
-      'version' => '2.8.52.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => 'cbcf4b5e233af15cd2bbd50dee1ccc9b7927dc12',
-    ),
-    'symfony/debug' => 
-    array (
-      'pretty_version' => 'v3.0.9',
-      'version' => '3.0.9.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '697c527acd9ea1b2d3efac34d9806bf255278b0a',
-    ),
-    'symfony/polyfill-mbstring' => 
-    array (
-      'pretty_version' => 'v1.22.0',
-      'version' => '1.22.0.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => 'f377a3dd1fde44d37b9831d68dc8dea3ffd28e13',
-    ),
-    'web64/php-nlp-client' => 
-    array (
-      'pretty_version' => 'v0.40.5',
-      'version' => '0.40.5.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => 'b34658717a3b09dd5dcbae842e3227086a3970ba',
     ),
     'zendframework/zend-escaper' => 
     array (

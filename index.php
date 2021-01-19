@@ -21,6 +21,7 @@ define('MAX_EXECUTE_SCRIPT', 20);											//SUNNAH_ROSUL
 
 require_once __DIR__ . '/vendor/autoload.php';
 require_once __DIR__ . '/bad_word.php';
+require_once __DIR__ . '/ai_robot.php';
 
 
 ini_set('max_execution_time', MAX_EXECUTE_SCRIPT);
@@ -1514,34 +1515,26 @@ elseif ('/base64_encode' == $adanParse[0] || '/base64_encode@fadhil_riyanto_bot'
 // ENCRYPT TOOLS DIAKHIRI
 // LICENSE BY FADHIL
 // PAHAM?
-$filter_msg = new filter_pesan();
-$bad_words = new bad_word();
-if ($bad_words->kata_kata_jorok($text) == true) {
+$ai_chatting = robot_artificial_intelegence($text);
+$ai_chatting_decode = json_decode($ai_chatting);
+if ($ai_chatting_decode->bad_word == true) {
 	$reply = 'Aku ogah jawab ah, ada kata kata yg tidak sopan soalnya';
 	$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
 	$telegram->sendMessage($content);
 	exit;
 }
 
-$teksTerfilter = $filter_msg->hyphenize($text);
 if ($koneksi == 1) {
-	$q = mysqli_query($koneksi, "SELECT * FROM `data_ai` WHERE `data_key_ai` SOUNDS LIKE _utf8 '$teksTerfilter' ");
-	$tes_jumlah_row = @mysqli_affected_rows($koneksi);
-	$dataAI = mysqli_fetch_assoc($q);
-
-	if ($tes_jumlah_row > 0) {
-		//foreach ($q as $respon) {
-
-
-		$reply = Emoji::Decode($dataAI['data_res_ai']) . PHP_EOL;
+	if ($ai_chatting_decode->affected > 0) {
+		$reply = Emoji::Decode($ai_chatting_decode->respon) . PHP_EOL;
 		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
 		$telegram->sendMessage($content);
 		exit;
 		//}
-	} elseif ($tes_jumlah_row === 0) {
+	} elseif ($ai_chatting_decode->affected === 0) {
 
 		$reply = '' . PHP_EOL . '';
-		mysqli_query($koneksi, "INSERT INTO `data_ai` (`data_key_ai`, `data_res_ai`) VALUES ('$teksTerfilter', 'hmhm')");
+		//mysqli_query($koneksi, "INSERT INTO `data_ai` (`data_key_ai`, `data_res_ai`) VALUES ('$teksTerfilter', 'hmhm')");
 		$content = array('chat_id' => $chat_id, 'text' => $reply);
 		$telegram->sendMessage($content);
 	}

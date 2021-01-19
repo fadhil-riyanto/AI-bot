@@ -7,7 +7,6 @@ namespace Composer\Autoload;
 class ComposerStaticInit37458c04d77e08a184290ff46a23e733
 {
     public static $files = array (
-        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '547f39254e5312c66b30c9b6a7d3570f' => __DIR__ . '/..' . '/eleirbag89/telegrambotphp/Telegram.php',
         '221a7c0887f892e44dd08191321d3815' => __DIR__ . '/..' . '/eleirbag89/telegrambotphp/TelegramErrorLogger.php',
     );
@@ -20,19 +19,8 @@ class ComposerStaticInit37458c04d77e08a184290ff46a23e733
             'Zend\\Stdlib\\' => 12,
             'Zend\\Escaper\\' => 13,
         ),
-        'W' => 
-        array (
-            'Web64\\Nlp\\' => 10,
-        ),
-        'S' => 
-        array (
-            'Symfony\\Polyfill\\Mbstring\\' => 26,
-            'Symfony\\Component\\Debug\\' => 24,
-            'Symfony\\Component\\Console\\' => 26,
-        ),
         'P' => 
         array (
-            'Psr\\Log\\' => 8,
             'Psr\\Container\\' => 14,
         ),
         'I' => 
@@ -58,26 +46,6 @@ class ComposerStaticInit37458c04d77e08a184290ff46a23e733
         array (
             0 => __DIR__ . '/..' . '/zendframework/zend-escaper/src',
         ),
-        'Web64\\Nlp\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/web64/php-nlp-client/src',
-        ),
-        'Symfony\\Polyfill\\Mbstring\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
-        ),
-        'Symfony\\Component\\Debug\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/symfony/debug',
-        ),
-        'Symfony\\Component\\Console\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/symfony/console',
-        ),
-        'Psr\\Log\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
-        ),
         'Psr\\Container\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
@@ -95,10 +63,6 @@ class ComposerStaticInit37458c04d77e08a184290ff46a23e733
             array (
                 0 => __DIR__ . '/..' . '/sastrawi/trka/src',
             ),
-            'Sastrawi\\Tokenizer' => 
-            array (
-                0 => __DIR__ . '/..' . '/sastrawi/tokenizer/src',
-            ),
             'Sastrawi\\String\\Span' => 
             array (
                 0 => __DIR__ . '/..' . '/sastrawi/string-span/src',
@@ -110,20 +74,6 @@ class ComposerStaticInit37458c04d77e08a184290ff46a23e733
             'Sastrawi\\' => 
             array (
                 0 => __DIR__ . '/..' . '/sastrawi/sastrawi/src',
-            ),
-        ),
-        'N' => 
-        array (
-            'NlpTools\\' => 
-            array (
-                0 => __DIR__ . '/..' . '/nlp-tools/nlp-tools/src',
-            ),
-        ),
-        'C' => 
-        array (
-            'Cwin\\' => 
-            array (
-                0 => __DIR__ . '/..' . '/cwin/cwin-app/src',
             ),
         ),
     );

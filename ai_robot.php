@@ -1,5 +1,5 @@
 <?php
-echo robot_artificial_intelegence('km lagi apa?');
+echo robot_artificial_intelegence('hai');
 
 function robot_artificial_intelegence($teks)
 {
@@ -36,15 +36,15 @@ function robot_artificial_intelegence($teks)
 	$dataAI = mysqli_fetch_assoc($q);
 
 	if ($teksTerfilter_kata_jorok == true) {
-		$arrayres = array('respon' => @$dataAI['data_res_ai'], 'normalisasi_tulisan' => @$teksTerfilter, 'bad_word' => @$teksTerfilter_kata_jorok, 'stemmer' => $stemmer_hasil);
+		$arrayres = array('respon' => @$dataAI['data_res_ai'], 'normalisasi_tulisan' => @$teksTerfilter, 'bad_word' => @$teksTerfilter_kata_jorok, 'stemmer' => $stemmer_hasil, 'affected' => $tes_jumlah_row);
 		return json_encode($arrayres);
 	} elseif ($tes_jumlah_row > 0) {
 
-		$arrayres = array('respon' => @$dataAI['data_res_ai'], 'normalisasi_tulisan' => @$teksTerfilter, 'bad_word' => @$teksTerfilter_kata_jorok, 'stemmer' => $stemmer_hasil);
+		$arrayres = array('respon' => @$dataAI['data_res_ai'], 'normalisasi_tulisan' => @$teksTerfilter, 'bad_word' => @$teksTerfilter_kata_jorok, 'stemmer' => $stemmer_hasil, 'affected' => $tes_jumlah_row);
 		return json_encode($arrayres);
 	} else {
-		//mysqli_query($koneksi, "INSERT INTO `data_ai` (`data_key_ai`, `data_res_ai`) VALUES ('$teksTerfilter', 'hmhm')");
-		$arrayres = array('respon' => @$dataAI['data_res_ai'], 'normalisasi_tulisan' => @$teksTerfilter, 'bad_word' => @$teksTerfilter_kata_jorok, 'stemmer' => $stemmer_hasil);
+		mysqli_query($koneksi, "INSERT INTO `data_ai` (`data_key_ai`, `data_res_ai`) VALUES ('$teksTerfilter', 'hmhm')");
+		$arrayres = array('respon' => @$dataAI['data_res_ai'], 'normalisasi_tulisan' => @$teksTerfilter, 'bad_word' => @$teksTerfilter_kata_jorok, 'stemmer' => $stemmer_hasil, 'affected' => $tes_jumlah_row);
 		return json_encode($arrayres);
 		exit;
 	}
