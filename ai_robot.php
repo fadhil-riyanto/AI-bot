@@ -1,8 +1,9 @@
 <?php
-echo robot_artificial_intelegence('anjing kau');
+echo robot_artificial_intelegence('apakahkamu tg');
 
 function robot_artificial_intelegence($teks)
 {
+	require_once __DIR__ . '/vendor/autoload.php';
 	define('DB_HOST', 'freedb.tech');											//WAJIB
 	define('DB_USERNAME', 'freedbtech_ai_bot_fadhil_riyanto');					//WAJIB
 	define('DB_PASSWORD', '789b697698hyufijbbiub*&^BO&it87tbn7to&^7896');		//WAJIB
@@ -20,23 +21,29 @@ function robot_artificial_intelegence($teks)
 		DB_NAME
 	);
 
+	$stemmerFactory = new \Sastrawi\Stemmer\StemmerFactory();
+	$stemmer  = $stemmerFactory->createStemmer();
+
+
 	$teksTerfilter = hyphenize($teks);
 	$teksTerfilter_kata_jorok = kata_kata_jorok($teksTerfilter);
+
+	$stemmer_hasil   = $stemmer->stem($teks);
 
 	$q = mysqli_query($koneksi, "SELECT * FROM `data_ai` WHERE `data_key_ai` SOUNDS LIKE _utf8 '$teksTerfilter' ");
 	$tes_jumlah_row = @mysqli_affected_rows($koneksi);
 	$dataAI = mysqli_fetch_assoc($q);
 
 	if ($teksTerfilter_kata_jorok == true) {
-		$arrayres = array('respon' => @$dataAI['data_res_ai'], 'non_normalized' => @$teksTerfilter, 'bad_word' => @$teksTerfilter_kata_jorok);
+		$arrayres = array('respon' => @$dataAI['data_res_ai'], 'normalisasi_tulisan' => @$teksTerfilter, 'bad_word' => @$teksTerfilter_kata_jorok, 'stemmer' => $stemmer_hasil);
 		return json_encode($arrayres);
 	} elseif ($tes_jumlah_row > 0) {
 
-		$arrayres = array('respon' => @$dataAI['data_res_ai'], 'non_normalized' => @$teksTerfilter, 'bad_word' => @$teksTerfilter_kata_jorok);
+		$arrayres = array('respon' => @$dataAI['data_res_ai'], 'normalisasi_tulisan' => @$teksTerfilter, 'bad_word' => @$teksTerfilter_kata_jorok, 'stemmer' => $stemmer_hasil);
 		return json_encode($arrayres);
 	} else {
 		//mysqli_query($koneksi, "INSERT INTO `data_ai` (`data_key_ai`, `data_res_ai`) VALUES ('$teksTerfilter', 'hmhm')");
-		$arrayres = array('respon' => @$dataAI['data_res_ai'], 'non_normalized' => @$teksTerfilter, 'bad_word' => @$teksTerfilter_kata_jorok);
+		$arrayres = array('respon' => @$dataAI['data_res_ai'], 'normalisasi_tulisan' => @$teksTerfilter, 'bad_word' => @$teksTerfilter_kata_jorok, 'stemmer' => $stemmer_hasil);
 		return json_encode($arrayres);
 		exit;
 	}
@@ -113,18 +120,16 @@ function hyphenize($string)
 		// replace teks lainnya disini
 	);
 	return strtolower(
-		preg_replace(
-			array('#[\\s-]+#', '#[^A-Za-z0-9. -]+#'),
-			array(' ', ''),
 
-			cleanString(
-				str_replace(
-					array_keys($dict),
-					array_values($dict),
-					urldecode($string)
-				)
-			)
+
+		str_replace(
+			array_keys($dict),
+			array_values($dict),
+			$string
 		)
+
+
+
 	);
 }
 function cleanString($text)
