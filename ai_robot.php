@@ -1,5 +1,5 @@
 <?php
-echo robot_artificial_intelegence('apakahkamu tg');
+echo robot_artificial_intelegence('km lagi apa?');
 
 function robot_artificial_intelegence($teks)
 {
@@ -25,10 +25,11 @@ function robot_artificial_intelegence($teks)
 	$stemmer  = $stemmerFactory->createStemmer();
 
 
-	$teksTerfilter = hyphenize($teks);
-	$teksTerfilter_kata_jorok = kata_kata_jorok($teksTerfilter);
 
+	$teksTerfilter_kata_jorok = kata_kata_jorok($teks);
 	$stemmer_hasil   = $stemmer->stem($teks);
+	$teksTerfilter = hyphenize($stemmer_hasil);
+
 
 	$q = mysqli_query($koneksi, "SELECT * FROM `data_ai` WHERE `data_key_ai` SOUNDS LIKE _utf8 '$teksTerfilter' ");
 	$tes_jumlah_row = @mysqli_affected_rows($koneksi);
@@ -120,16 +121,18 @@ function hyphenize($string)
 		// replace teks lainnya disini
 	);
 	return strtolower(
+		preg_replace(
+			array('#[\\s-]+#', '#[^A-Za-z0-9. -]+#'),
+			array(' ', ''),
 
-
-		str_replace(
-			array_keys($dict),
-			array_values($dict),
-			$string
+			cleanString(
+				str_replace(
+					array_keys($dict),
+					array_values($dict),
+					urldecode($string)
+				)
+			)
 		)
-
-
-
 	);
 }
 function cleanString($text)
