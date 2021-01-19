@@ -1,69 +1,48 @@
 <?php
+
 // demo.php
 
 // include composer autoloader
+
+
+// create sentence detector
+define('DB_HOST', 'freedb.tech');											//WAJIB
+	define('DB_USERNAME', 'freedbtech_ai_bot_fadhil_riyanto');					//WAJIB
+	define('DB_PASSWORD', '789b697698hyufijbbiub*&^BO&it87tbn7to&^7896');		//WAJIB
+	define('DB_NAME', 'freedbtech_ai_bot_fadhil_riyanto');						//WAJIB
+	define('TG_HTTP_API', '1489990155:AAEC3c6I-hmtDfbk9OojmlDjNFt1NeMEjfs');	//WAJIB
+	define('USER_ID_TG_ME', '1393342467');										//WAJIB
+	define('CUTLLY_API', 'fa1d93ba90dedd2ceb7d01e9bade271653373');				//WAJIB
+	define('TIME_ZONE', 'Asia/Jakarta');										//WAJIB
+	define('MAX_EXECUTE_SCRIPT', 20);											//SUNNAH_ROSUL
+
+	$koneksi = @mysqli_connect(
+		DB_HOST,
+		DB_USERNAME,
+		DB_PASSWORD,
+		DB_NAME
+	);
+	
 require_once __DIR__ . '/vendor/autoload.php';
 
-// create stemmer
- 
-use NlpTools\Tokenizers\WhitespaceTokenizer;
-use NlpTools\Models\FeatureBasedNB;
-use NlpTools\Documents\TrainingSet;
-use NlpTools\Documents\TokensDocument;
-use NlpTools\FeatureFactories\DataAsFeatures;
-use NlpTools\Classifiers\MultinomialNBClassifier;
- 
-// ---------- Data ----------------
-// data is taken from http://archive.ics.uci.edu/ml/datasets/SMS+Spam+Collection
-// we use a part for training
-$training = array(
-    array('ham','Go until jurong point, crazy.. Available only in bugis n great world la e buffet... Cine there got amore wat...'),
-    ...
-    array('ham','Fine if that\'s the way u feel. That\'s the way its gota b'),
-    array('spam','England v Macedonia - dont miss the goals/team news. Txt ur national team to 87077 eg ENGLAND to 87077 Try:WALES, SCOTLAND 4txt/ú1.20 POBOXox36504W45WQ 16+')
-);
-// and another for evaluating
-$testing = array(
-    array('ham','I\'ve been searching for the right words to thank you for this breather. I promise i wont take your help for granted and will fulfil my promise. You have been wonderful and a blessing at all times.'),
-    ...
-    array('ham','I HAVE A DATE ON SUNDAY WITH WILL!!'),
-    array('ham','XXXMobileMovieClub: To use your credit, click the WAP link in the next txt message or click here>> http://wap. xxxmobilemovieclub.com?n=QJKGIGHJJGCBL')
-);
- 
-$tset = new TrainingSet(); // will hold the training documents
-$tok = new WhitespaceTokenizer(); // will split into tokens
-$ff = new DataAsFeatures(); // see features in documentation
- 
-// ---------- Training ----------------
-foreach ($training as $d)
-{
-    $tset->addDocument(
-        $d[0], // class
-        new TokensDocument(
-            $tok->tokenize($d[1]) // The actual document
-        )
-    );
+// create sentence detector
+$sentenceDetectorFactory = new \Sastrawi\SentenceDetector\SentenceDetectorFactory();
+$sentenceDetector = $sentenceDetectorFactory->createSentenceDetector();
+
+// detect sentence
+$text = 'Naufal mana? surya mana?';
+$sentences = $sentenceDetector->detect($text);
+
+foreach ($sentences as $i => $sentence) {
+    //echo "$i : $sentence<br />\n";
+	$query_sentece = mysqli_query($koneksi, "SELECT * FROM `data_ai` WHERE `data_key_ai` SOUNDS LIKE _utf8 '$sentence' ");
+	$data_sentece = mysqli_fetch_assoc($query_sentece);
+	echo $data_sentece['data_res_ai'] . ' ' ;
 }
- 
-$model = new FeatureBasedNB(); // train a Naive Bayes model
-$model->train($ff,$tset);
- 
- 
-// ---------- Classification ----------------
-$cls = new MultinomialNBClassifier($ff,$model);
-$correct = 0;
-foreach ($testing as $d)
-{
-    // predict if it is spam or ham
-    $prediction = $cls->classify(
-        array('ham','spam'), // all possible classes
-        new TokensDocument(
-            $tok->tokenize($d[1]) // The document
-        )
-    );
-    if ($prediction==$d[0])
-        $correct ++;
-}
- 
-printf("Accuracy: %.2f\n", 100*$correct / count($testing));
- 
+			/*$query_sentece = mysqli_query($koneksi, "SELECT * FROM `data_ai` WHERE `data_key_ai` SOUNDS LIKE _utf8 '$sentence' ");
+			$data_sentece = mysqli_fetch_assoc($query_sentece);*/
+			//var_dump($sentence);
+		
+		
+		
+		
