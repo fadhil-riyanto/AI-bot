@@ -103,7 +103,6 @@ if ($koneksi == 1) {
 	$namaTerakhir = $telegram->LastName();
 }
 
-
 if ($usernameBelumdiparse != null) {
 	$username = ' @' . $usernameBelumdiparse;
 } else {

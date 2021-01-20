@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '2722cac93102dcfeced5c08fddd007af9f4b17db',
+    'reference' => '412f6cf22f45f50e0b0e3e30ca65a3fb535398b8',
     'name' => '__root__',
   ),
   'versions' => 
@@ -18,7 +18,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '2722cac93102dcfeced5c08fddd007af9f4b17db',
+      'reference' => '412f6cf22f45f50e0b0e3e30ca65a3fb535398b8',
     ),
     'container-interop/container-interop' => 
     array (
@@ -46,6 +46,15 @@
       array (
       ),
       'reference' => 'b7ce3b176482dbbc1245ebf52b181af44c2cf55f',
+    ),
+    'rmccue/requests' => 
+    array (
+      'pretty_version' => 'v1.7.0',
+      'version' => '1.7.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '87932f52ffad70504d93f04f15690cf16a089546',
     ),
     'sastrawi/sastrawi' => 
     array (

@@ -10,4 +10,5 @@ return array(
     'Sastrawi\\String\\Span' => array($vendorDir . '/sastrawi/string-span/src'),
     'Sastrawi\\SentenceDetector' => array($vendorDir . '/sastrawi/sentence-detector/src'),
     'Sastrawi\\' => array($vendorDir . '/sastrawi/sastrawi/src'),
+    'Requests' => array($vendorDir . '/rmccue/requests/library'),
 );

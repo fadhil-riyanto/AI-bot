@@ -76,6 +76,13 @@ class ComposerStaticInit37458c04d77e08a184290ff46a23e733
                 0 => __DIR__ . '/..' . '/sastrawi/sastrawi/src',
             ),
         ),
+        'R' => 
+        array (
+            'Requests' => 
+            array (
+                0 => __DIR__ . '/..' . '/rmccue/requests/library',
+            ),
+        ),
     );
 
     public static $classMap = array (

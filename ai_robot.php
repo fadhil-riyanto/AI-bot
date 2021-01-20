@@ -50,11 +50,11 @@ function robot_artificial_intelegence($teks)
 
 	// Jika ternyata ada kata kata jorok 
 	if ($teksTerfilter_kata_jorok == true) {
-		$arrayres = array('respon' => @$dataAI['data_res_ai'], 'normalisasi_tulisan' => @$teksTerfilter, 'bad_word' => @$teksTerfilter_kata_jorok, 'stemmer' => $stemmer_hasil, 'affected' => $tes_jumlah_row);
+		$arrayres = array('respon' => @hyphenize($dataAI['data_res_ai']), 'normalisasi_tulisan' => @$teksTerfilter, 'bad_word' => @$teksTerfilter_kata_jorok, 'stemmer' => $stemmer_hasil, 'affected' => $tes_jumlah_row);
 		return json_encode($arrayres);
 	} elseif ($tes_jumlah_row > 0) {
 		// Jika ternyata kata ada di database (ditemukan)
-		$arrayres = array('respon' => @$dataAI['data_res_ai'], 'normalisasi_tulisan' => @$teksTerfilter, 'bad_word' => @$teksTerfilter_kata_jorok, 'stemmer' => $stemmer_hasil, 'affected' => $tes_jumlah_row);
+		$arrayres = array('respon' => @hyphenize($dataAI['data_res_ai']), 'normalisasi_tulisan' => @$teksTerfilter, 'bad_word' => @$teksTerfilter_kata_jorok, 'stemmer' => $stemmer_hasil, 'affected' => $tes_jumlah_row);
 		return json_encode($arrayres);
 	} else {
 		//kalau ngga nemu alternatif pakai API
@@ -86,9 +86,11 @@ function robot_artificial_intelegence($teks)
 function hyphenize($string)
 {
 	$dict = array(
-		'simi' => 'fadhil riyanto',
-		'simsimi' => 'fadhil riyanto',
+		'simi' => 'kamu',
+		'simsimi' => 'kamu',
 		'knp' => 'kenapa',
+		'bokep' => 'nonton drakor',
+		'bokepan' => 'nonton drakor',
 		'yg' => 'yang',
 		'?' => null,
 		'*' => null,
@@ -210,7 +212,7 @@ function kata_kata_jorok($text)
 		'skanck', 'skank', 'skankee', 'skankey', 'skanks', 'skanky', 'skribz', 'skurwysyn', 'slag', 'slut', 'sluts', 'slutty', 'slutty', 'slutz', 'smut',
 		'sodomi', 'sodomize', 'sodomy', 'softcore', 'son-of-a-bitch', 'spank', 'spanked', 'spanking', 'sperm', 'sphencter', 'spic', 'spierdalaj',
 		'splooge', 'squirt', 'squirted', 'squirting', 'strap-on', 'strapon', 'submissive', 'suck', 'suck-off', 'sucked', 'sucking', 'sucks', 'suicide',
-		'suka', 'taek', 'tai', 'tanpa busana', 'taptei', 'teets', 'teez', 'teho', 'telanjang', 'testical', 'testicle', 'testicle*', 'testicles', 'tetek',
+		'taek', 'tai', 'tanpa busana', 'taptei', 'teets', 'teez', 'teho', 'telanjang', 'testical', 'testicle', 'testicle*', 'testicles', 'tetek',
 		'tetek', 'threesome', 'tit', 'titit', 'tits', 'titt', 'titt*', 'titties', 'titty', 'tittys', 'togel', 'toket', 'tolol', 'topless', 'totong',
 		'tranny', 'transsexual', 'transvestite', 'tukar istri', 'tukar pasangan', 'turd', 'tusbol', 'twat', 'twats', 'twaty', 'twink', 'upskirt',
 		'urinated', 'urinating', 'urination', 'va1jina', 'vag1na', 'vagiina', 'vagina', 'vagina', 'vaginas', 'vaj1na', 'vajina', 'vibrator', 'vittu',

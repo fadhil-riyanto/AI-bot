@@ -1,34 +1,35 @@
 <?php
-$id = 75795;
-$username = 'irvan';
-$namaPertama = 'fales';
-$namaTerakhir = 'gonzales';
-function tracking_user($userID)
-{
-    $file = __DIR__ . "/json_data/user_client.json";
-    $anggota = file_get_contents($file);
-    $data = json_decode($anggota, true);
-    foreach ($data as $d) {
-        if ($d['userid'] == $userID) {
-            return true;
-        }
-    }
-}
+simi:
+echo "Kamu :  ";
+$input_nama = fopen("php://stdin", "r");
+$nama = trim(fgets($input_nama));
+// 65rRPWeiizNq8uNe-3hkyv7pPi.W58SUD8P5urK7
+// X9QTrw5PpgtPTFZwS1PgR95JbYUvSJqCh03nRHim
+// fAwvrgiIEL.F~k2~.-tXYQPtTgvA0JSqiWuFVbp9
+// LMDTrTgTgqN3U8uKWWRAToems3..2wAaSJCeXnKW
 
-$chek = tracking_user($id);
-if ($chek == true) {
-} elseif ($chek == null) {
-    $file = __DIR__ . "/json_data/user_client.json";
-    $anggota = file_get_contents($file);
-    $data = json_decode($anggota, true);
 
-    $data[] = array(
-        "userid" => $id,
-        "username" => $username,
-        "firstname" => $namaPertama,
-        "lastname" => $namaTerakhir
-    );
+$curl = curl_init();
+curl_setopt_array($curl, array(
+    CURLOPT_URL => "https://wsapi.simsimi.com/190410/talk/",
+    CURLOPT_RETURNTRANSFER => true,
+    CURLOPT_ENCODING => "",
+    CURLOPT_MAXREDIRS => 10,
+    CURLOPT_TIMEOUT => 30,
+    CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+    CURLOPT_CUSTOMREQUEST => "POST",
+    CURLOPT_POSTFIELDS => "{\n\t\"utext\": \". $nama .\", \n\t\"lang\": \"id\" \n}",
+    CURLOPT_HTTPHEADER => array(
+        "Content-Type: application/json",
+        "x-api-key: 65rRPWeiizNq8uNe-3hkyv7pPi.W58SUD8P5urK7"
+    ),
+));
 
-    $jsonfile = json_encode($data, JSON_PRETTY_PRINT);
-    $anggota = file_put_contents($file, $jsonfile);
-}
+$response = curl_exec($curl);
+$err = curl_error($curl);
+
+curl_close($curl);
+
+$simi = json_decode($response);
+echo 'simi :  ' . $simi->atext . PHP_EOL;
+goto simi;
