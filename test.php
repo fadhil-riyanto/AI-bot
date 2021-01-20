@@ -1,22 +1,57 @@
 <?php
 
-$mysqli = new mysqli("freedb.tech", "freedbtech_ai_bot_fadhil_riyanto", "789b697698hyufijbbiub*&^BO&it87tbn7to&^7896", "freedbtech_ai_bot_fadhil_riyanto");
+$teksTerfilter = 'yg mati apa nya?';
+$data_simsimi = file_get_contents('https://simsumi.herokuapp.com/api?text=' . urlencode($teksTerfilter) . '&lang=id');
+$sim_decode = json_decode($data_simsimi);
+$data_filetr_sim = hyphenize($sim_decode->success);
 
-// check connection
-if ($mysqli->connect_errno) {
-	die("Connect failed: " . $mysqli->connect_error);
+
+echo $data_filetr_sim;
+function hyphenize($string)
+{
+	$dict = array(
+		'simi' => 'fadhil riyanto',
+		'knp' => 'kenapa',
+		'yoi' => 'iya'
+
+		// replace teks lainnya disini
+	);
+	return strtolower(
+		preg_replace(
+			array('#[\\s-]+#', '#[^A-Za-z0-9. -]+#'),
+			array(' ', ''),
+
+			cleanString(
+				str_replace(
+					array_keys($dict),
+					array_values($dict),
+					urldecode($string)
+				)
+			)
+		)
+	);
 }
-$text = 'fia';
-$query = "SELECT * FROM `data_ai` WHERE `data_key_ai` SOUNDS LIKE _utf8 '$text' ";
-$result = $mysqli->query($query);
-
-while ($row = $result->fetch_array()) {
-	// echo 'key :' . $row['data_key_ai'] . PHP_EOL .  'res' . $row['data_res_ai'] . PHP_EOL;
-	if ($row['data_key_ai'] == $text) {
-		echo $row['data_res_ai'];
-		exit;
-	} elseif ($row['data_key_ai'] != $text) {
-		echo $row['data_res_ai'];
-		exit;
-	}
+function cleanString($text)
+{
+	$utf8 = array(
+		'/[áàâãªä]/u'   =>   'a',
+		'/[ÁÀÂÃÄ]/u'    =>   'A',
+		'/[ÍÌÎÏ]/u'     =>   'I',
+		'/[íìîï]/u'     =>   'i',
+		'/[éèêë]/u'     =>   'e',
+		'/[ÉÈÊË]/u'     =>   'E',
+		'/[óòôõºö]/u'   =>   'o',
+		'/[ÓÒÔÕÖ]/u'    =>   'O',
+		'/[úùûü]/u'     =>   'u',
+		'/[ÚÙÛÜ]/u'     =>   'U',
+		'/ç/'           =>   'c',
+		'/Ç/'           =>   'C',
+		'/ñ/'           =>   'n',
+		'/Ñ/'           =>   'N',
+		'/–/'           =>   '-',
+		'/[’‘‹›‚]/u'    =>   ' ',
+		'/[“”«»„]/u'    =>   ' ',
+		'/ /'           =>   ' ',
+	);
+	return preg_replace(array_keys($utf8), array_values($utf8), $text);
 }

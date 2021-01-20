@@ -5,23 +5,23 @@ function robot_artificial_intelegence($teks)
 	require_once __DIR__ . '/vendor/autoload.php';
 
 	global $koneksi;
-	define('DB_HOST', 'freedb.tech');											//WAJIB
-	define('DB_USERNAME', 'freedbtech_ai_bot_fadhil_riyanto');					//WAJIB
-	define('DB_PASSWORD', '789b697698hyufijbbiub*&^BO&it87tbn7to&^7896');		//WAJIB
-	define('DB_NAME', 'freedbtech_ai_bot_fadhil_riyanto');						//WAJIB
-	define('TG_HTTP_API', '1489990155:AAEC3c6I-hmtDfbk9OojmlDjNFt1NeMEjfs');	//WAJIB
-	define('USER_ID_TG_ME', '1393342467');										//WAJIB
-	define('CUTLLY_API', 'fa1d93ba90dedd2ceb7d01e9bade271653373');				//WAJIB
-	define('TIME_ZONE', 'Asia/Jakarta');										//WAJIB
-	define('MAX_EXECUTE_SCRIPT', 20);											//SUNNAH_ROSUL
+	// define('DB_HOST', 'freedb.tech');											//WAJIB
+	// define('DB_USERNAME', 'freedbtech_ai_bot_fadhil_riyanto');					//WAJIB
+	// define('DB_PASSWORD', '789b697698hyufijbbiub*&^BO&it87tbn7to&^7896');		//WAJIB
+	// define('DB_NAME', 'freedbtech_ai_bot_fadhil_riyanto');						//WAJIB
+	// define('TG_HTTP_API', '1489990155:AAEC3c6I-hmtDfbk9OojmlDjNFt1NeMEjfs');	//WAJIB
+	// define('USER_ID_TG_ME', '1393342467');										//WAJIB
+	// define('CUTLLY_API', 'fa1d93ba90dedd2ceb7d01e9bade271653373');				//WAJIB
+	// define('TIME_ZONE', 'Asia/Jakarta');										//WAJIB
+	// define('MAX_EXECUTE_SCRIPT', 20);											//SUNNAH_ROSUL
 
 
-	$koneksi = @mysqli_connect(
-		DB_HOST,
-		DB_USERNAME,
-		DB_PASSWORD,
-		DB_NAME
-	);
+	// $koneksi = @mysqli_connect(
+	// 	DB_HOST,
+	// 	DB_USERNAME,
+	// 	DB_PASSWORD,
+	// 	DB_NAME
+	// );
 
 	$stemmerFactory = new \Sastrawi\Stemmer\StemmerFactory();
 	$stemmer  = $stemmerFactory->createStemmer();
@@ -48,8 +48,12 @@ function robot_artificial_intelegence($teks)
 		$arrayres = array('respon' => @$dataAI['data_res_ai'], 'normalisasi_tulisan' => @$teksTerfilter, 'bad_word' => @$teksTerfilter_kata_jorok, 'stemmer' => $stemmer_hasil, 'affected' => $tes_jumlah_row);
 		return json_encode($arrayres);
 	} else {
-		mysqli_query($koneksi, "INSERT INTO `data_ai` (`data_key_ai`, `data_res_ai`) VALUES ('$teksTerfilter', 'hmhm')");
-		$arrayres = array('respon' => @$dataAI['data_res_ai'], 'normalisasi_tulisan' => @$teksTerfilter, 'bad_word' => @$teksTerfilter_kata_jorok, 'stemmer' => $stemmer_hasil, 'affected' => $tes_jumlah_row);
+		$data_simsimi = file_get_contents('https://simsumi.herokuapp.com/api?text=' . urlencode($teksTerfilter) . '&lang=id');
+		$sim_decode = json_decode($data_simsimi);
+		$data_filetr_sim = hyphenize($sim_decode->success);
+
+		mysqli_query($koneksi, "INSERT INTO `data_ai` (`data_key_ai`, `data_res_ai`) VALUES ('$teksTerfilter', '$data_filetr_sim')");
+		$arrayres = array('respon' => @$data_filetr_sim, 'normalisasi_tulisan' => @$teksTerfilter, 'bad_word' => @$teksTerfilter_kata_jorok, 'stemmer' => $stemmer_hasil, 'affected' => 'simsimi');
 		return json_encode($arrayres);
 		exit;
 	}
@@ -57,6 +61,16 @@ function robot_artificial_intelegence($teks)
 function hyphenize($string)
 {
 	$dict = array(
+		'simi' => 'fadhil riyanto',
+		'simsimi' => 'fadhil riyanto',
+		'knp' => 'kenapa',
+		'yg' => 'yang',
+		'?' => null,
+		'*' => null,
+		'@' => null,
+		'!' => null,
+		'-' => null,
+		'yoi' => 'iya'
 
 		// replace teks lainnya disini
 	);
