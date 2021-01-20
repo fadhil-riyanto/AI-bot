@@ -25,7 +25,7 @@ require_once __DIR__ . '/ai_robot.php';
 
 
 ini_set('max_execution_time', MAX_EXECUTE_SCRIPT);
-error_reporting(0);
+error_reporting(1);
 $userid_pemilik = USER_ID_TG_ME;
 $telegramAPIs   = TG_HTTP_API;
 $api_key_cuttly = CUTLLY_API;
@@ -178,20 +178,66 @@ function hapus_http($url)
 	return $url;
 }
 
-$stringPertama = substr($text, 0, 1); //untuk command  slash dan karakter seru
-$stringKedua = substr($text, 0, 2); // untuk command dengan 2 karakter, biasa di cctip
+$stringPertama = substr($text, 0, 1);
+$stringKedua = substr($text, 0, 2);
 
 $stringTerakhir = substr($text, 0, -1);
 $memberBaru = $telegram->member_baru();
 //sleep(10);
+//TRACK DATA
+// $q_track = mysqli_query($koneksi, "SELECT * FROM `client_user` WHERE `userid` LIKE '$userID' ");
+// $q_track_row = @mysqli_affected_rows($koneksi);
+// $q_track_user = mysqli_fetch_assoc($q_track);
+// if ($q_track_row > 0) {
+// } else {
+// 	mysqli_query($koneksi, "INSERT INTO `freedbtech_ai_bot_fadhil_riyanto`.`client_user` (`username`, `userid`, `firstname`, `lastname`) VALUES ('$usernameBelumdiparse', '$userID', '$namaPertama', '$namaTerakhir')");
+// }
+
+function tracking_user($userID)
+{
+	$file = __DIR__ . "/json_data/user_client.json";
+	$anggota = file_get_contents($file);
+	$data = json_decode($anggota, true);
+	foreach ($data as $d) {
+		if ($d['userid'] == $userID) {
+			return true;
+		}
+	}
+}
+
+$chek = tracking_user($userID);
+if ($chek == true) {
+} elseif ($chek == null) {
+	$file = __DIR__ . "/json_data/user_client.json";
+	$anggota = file_get_contents($file);
+	$data = json_decode($anggota, true);
+
+	$data[] = array(
+		"userid" => $userID,
+		"username" => $usernameBelumdiparse,
+		"firstname" => $namaPertama,
+		"lastname" => $namaTerakhir
+	);
+
+	$jsonfile = json_encode($data, JSON_PRETTY_PRINT);
+	$anggota = file_put_contents($file, $jsonfile);
+}
 
 
 if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
-	$reply = 'Hai ' . $username . ', Apa kabar? ' . $userID;
+	$reply = 'Hai ' . $username . ', Apa kabar? ';
 	$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
 	$telegram->sendMessage($content);
 	exit;
+} elseif ($text == '/leave' || $text == '/leave@fadhil_riyanto_bot') {
+	if ($userID == $userid_pemilik) {
+		$content = array('chat_id' => $chat_id);
+		$telegram->leaveChat($content);
+	}
 } elseif ('/db_add' == $adanParse[0] || '/db_add@fadhil_riyanto_bot' == $adanParse[0]) {
+	if ($userID != $userid_pemilik) {
+		exit;
+	}
 	$azanHilangcommand = str_replace($adanParse[0], '', $text);
 	$udahDiparse = str_replace($adanParse[0] . ' ', '', $text);
 
@@ -309,7 +355,7 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 } elseif ('/callback_q' == $adanParse[0] || '/callback_q@fadhil_riyanto_bot' == $adanParse[0]) {
 	$azanHilangcommand = str_replace($adanParse[0], '', $text);
 	$udahDiparse = str_replace($adanParse[0] . ' ', '', $text);
-	$get_help_files = file_get_contents('slangword.json');
+	$get_help_files = file_get_contents(__DIR__ . '/json_data/slangword.json');
 	$helper = json_decode($get_help_files, true);
 
 
@@ -1520,7 +1566,7 @@ elseif ('/base64_encode' == $adanParse[0] || '/base64_encode@fadhil_riyanto_bot'
 
 
 	exit;
-} elseif ($stringPertama == '/' || $stringPertama == '!' || $stringPertama == '@' || $stringKedua == 'cc') {
+} elseif ($stringPertama == '/') {
 	// Jika ditemukan data dengan awalan coommand telegram, maka dia ngga akan diinsert ke database
 	// kita menggunakan exit agar dia keluar dari konsol
 	exit;
