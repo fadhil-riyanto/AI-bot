@@ -1,57 +1,34 @@
 <?php
-
-$teksTerfilter = 'yg mati apa nya?';
-$data_simsimi = file_get_contents('https://simsumi.herokuapp.com/api?text=' . urlencode($teksTerfilter) . '&lang=id');
-$sim_decode = json_decode($data_simsimi);
-$data_filetr_sim = hyphenize($sim_decode->success);
-
-
-echo $data_filetr_sim;
-function hyphenize($string)
+$id = 75795;
+$username = 'irvan';
+$namaPertama = 'fales';
+$namaTerakhir = 'gonzales';
+function tracking_user($userID)
 {
-	$dict = array(
-		'simi' => 'fadhil riyanto',
-		'knp' => 'kenapa',
-		'yoi' => 'iya'
-
-		// replace teks lainnya disini
-	);
-	return strtolower(
-		preg_replace(
-			array('#[\\s-]+#', '#[^A-Za-z0-9. -]+#'),
-			array(' ', ''),
-
-			cleanString(
-				str_replace(
-					array_keys($dict),
-					array_values($dict),
-					urldecode($string)
-				)
-			)
-		)
-	);
+    $file = __DIR__ . "/json_data/user_client.json";
+    $anggota = file_get_contents($file);
+    $data = json_decode($anggota, true);
+    foreach ($data as $d) {
+        if ($d['userid'] == $userID) {
+            return true;
+        }
+    }
 }
-function cleanString($text)
-{
-	$utf8 = array(
-		'/[áàâãªä]/u'   =>   'a',
-		'/[ÁÀÂÃÄ]/u'    =>   'A',
-		'/[ÍÌÎÏ]/u'     =>   'I',
-		'/[íìîï]/u'     =>   'i',
-		'/[éèêë]/u'     =>   'e',
-		'/[ÉÈÊË]/u'     =>   'E',
-		'/[óòôõºö]/u'   =>   'o',
-		'/[ÓÒÔÕÖ]/u'    =>   'O',
-		'/[úùûü]/u'     =>   'u',
-		'/[ÚÙÛÜ]/u'     =>   'U',
-		'/ç/'           =>   'c',
-		'/Ç/'           =>   'C',
-		'/ñ/'           =>   'n',
-		'/Ñ/'           =>   'N',
-		'/–/'           =>   '-',
-		'/[’‘‹›‚]/u'    =>   ' ',
-		'/[“”«»„]/u'    =>   ' ',
-		'/ /'           =>   ' ',
-	);
-	return preg_replace(array_keys($utf8), array_values($utf8), $text);
+
+$chek = tracking_user($id);
+if ($chek == true) {
+} elseif ($chek == null) {
+    $file = __DIR__ . "/json_data/user_client.json";
+    $anggota = file_get_contents($file);
+    $data = json_decode($anggota, true);
+
+    $data[] = array(
+        "userid" => $id,
+        "username" => $username,
+        "firstname" => $namaPertama,
+        "lastname" => $namaTerakhir
+    );
+
+    $jsonfile = json_encode($data, JSON_PRETTY_PRINT);
+    $anggota = file_put_contents($file, $jsonfile);
 }
