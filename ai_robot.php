@@ -1,5 +1,5 @@
 <?php
-echo robot_artificial_intelegence('fia');
+// echo robot_artificial_intelegence('fia');
 function robot_artificial_intelegence($teks)
 {
 	require_once __DIR__ . '/vendor/autoload.php';
@@ -22,6 +22,14 @@ function robot_artificial_intelegence($teks)
 	// 	DB_PASSWORD,
 	// 	DB_NAME
 	// );
+	// $stringPertama = substr($text, 0, 1); //untuk command  slash dan karakter seru
+	// $stringKedua = substr($text, 0, 2); // untuk command dengan 2 karakter, biasa di cctip
+
+	// if ($stringPertama == '/') {
+	// 	// Jika ditemukan data dengan awalan coommand telegram, maka dia ngga akan diinsert ke database
+	// 	// kita menggunakan exit agar dia keluar dari konsol
+	// 	exit;
+	// }
 
 	$stemmerFactory = new \Sastrawi\Stemmer\StemmerFactory();
 	$stemmer  = $stemmerFactory->createStemmer();
@@ -40,22 +48,39 @@ function robot_artificial_intelegence($teks)
 		# code...
 	}
 
+	// Jika ternyata ada kata kata jorok 
 	if ($teksTerfilter_kata_jorok == true) {
 		$arrayres = array('respon' => @$dataAI['data_res_ai'], 'normalisasi_tulisan' => @$teksTerfilter, 'bad_word' => @$teksTerfilter_kata_jorok, 'stemmer' => $stemmer_hasil, 'affected' => $tes_jumlah_row);
 		return json_encode($arrayres);
 	} elseif ($tes_jumlah_row > 0) {
-
+		// Jika ternyata kata ada di database (ditemukan)
 		$arrayres = array('respon' => @$dataAI['data_res_ai'], 'normalisasi_tulisan' => @$teksTerfilter, 'bad_word' => @$teksTerfilter_kata_jorok, 'stemmer' => $stemmer_hasil, 'affected' => $tes_jumlah_row);
 		return json_encode($arrayres);
 	} else {
+		//kalau ngga nemu alternatif pakai API
+		//Yg ini
 		$data_simsimi = file_get_contents('https://simsumi.herokuapp.com/api?text=' . urlencode($teksTerfilter) . '&lang=id');
 		$sim_decode = json_decode($data_simsimi);
 		$data_filetr_sim = hyphenize($sim_decode->success);
+		//tapi kalau ternyta ip gw kena limit query maka
+		if ($data_filetr_sim == 'limit 50 queries per hour.') {
+			//kita pakai api yg ini lah bang
+			$data_simsimi = file_get_contents('https://chatbot-indo.herokuapp.com/get/' . urlencode($teksTerfilter));
+			$sim_decode = json_decode($data_simsimi);
+			$data_filetr_sim = hyphenize($sim_decode->msg);
+			// lalu dimasukkan ke sql, buat koleksi
 
-		mysqli_query($koneksi, "INSERT INTO `data_ai` (`data_key_ai`, `data_res_ai`) VALUES ('$teksTerfilter', '$data_filetr_sim')");
-		$arrayres = array('respon' => @$data_filetr_sim, 'normalisasi_tulisan' => @$teksTerfilter, 'bad_word' => @$teksTerfilter_kata_jorok, 'stemmer' => $stemmer_hasil, 'affected' => 'simsimi');
-		return json_encode($arrayres);
-		exit;
+			mysqli_query($koneksi, "INSERT INTO `data_ai` (`data_key_ai`, `data_res_ai`) VALUES ('$teksTerfilter', '$data_filetr_sim')");
+			$arrayres = array('respon' => @$data_filetr_sim, 'normalisasi_tulisan' => @$teksTerfilter, 'bad_word' => @$teksTerfilter_kata_jorok, 'stemmer' => $stemmer_hasil, 'affected' => 'simsimi');
+			return json_encode($arrayres);
+			exit;
+		} else {
+			//kalau ternyata belum kena limit, maka langsung aja insert
+			mysqli_query($koneksi, "INSERT INTO `data_ai` (`data_key_ai`, `data_res_ai`) VALUES ('$teksTerfilter', '$data_filetr_sim')");
+			$arrayres = array('respon' => @$data_filetr_sim, 'normalisasi_tulisan' => @$teksTerfilter, 'bad_word' => @$teksTerfilter_kata_jorok, 'stemmer' => $stemmer_hasil, 'affected' => 'simsimi');
+			return json_encode($arrayres);
+			exit;
+		}
 	}
 }
 function hyphenize($string)
