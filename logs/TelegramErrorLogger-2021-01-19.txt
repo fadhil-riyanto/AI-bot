@@ -44,3 +44,73 @@ ref.text=
 #3 C:\bot telegram\index.php(1539): Telegram->sendMessage(Array)
 #4 {main}
 
+============[Date]============
+[ 2021-01-19 18:49:20  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804388048
+ref.message.message_id= 6930
+ref.message.from.id= 1449698435
+ref.message.from.is_bot= false
+ref.message.from.first_name= revano🐨
+ref.message.from.language_code= id
+ref.message.chat.id= 1449698435
+ref.message.chat.first_name= revano🐨
+ref.message.chat.type= private
+ref.message.date= 1611056958
+ref.message.text= Main tebak-tebakan
+Atau
+Ngonten
+
+
+[ref]
+ref.text= 
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(646): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(1555): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-19 22:11:02  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804388166
+ref.message.message_id= 7169
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1611069058
+ref.message.text= {"respon":"hmhm","normalisasi_tulisan":"messageuinthahahahahah","bad_word":false,"stemmer":"messageuinthahahahahah","affected":2}
+
+
+[ref]
+ref.text= 
+
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(646): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(1552): Telegram->sendMessage(Array)
+#4 {main}
+
