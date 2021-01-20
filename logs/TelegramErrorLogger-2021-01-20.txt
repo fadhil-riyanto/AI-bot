@@ -33,3 +33,93 @@ ref.text=
 #3 C:\bot telegram\index.php(1552): Telegram->sendMessage(Array)
 #4 {main}
 
+============[Date]============
+[ 2021-01-20 10:21:20  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804388263
+ref.message.message_id= 7300
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1611112878
+ref.message.reply_to_message.message_id= 7299
+ref.message.reply_to_message.from.id= 1489990155
+ref.message.reply_to_message.from.is_bot= true
+ref.message.reply_to_message.from.first_name= Fadhil Riyanto Bot
+ref.message.reply_to_message.from.username= Fadhil_riyanto_bot
+ref.message.reply_to_message.chat.id= 1393342467
+ref.message.reply_to_message.chat.first_name= Fadhil Riyanto
+ref.message.reply_to_message.chat.username= fadhil_riyanto
+ref.message.reply_to_message.chat.type= private
+ref.message.reply_to_message.date= 1611112871
+ref.message.reply_to_message.text= mau
+ref.message.text= Mau apaan? Hehe
+
+
+[ref]
+ref.text= 
+
+ref.reply_to_message_id= 7300
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(646): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(1544): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-20 14:55:51  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: bot is not a member of the supergroup chat
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804388333
+ref.message.message_id= 12227
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= Fadhil's bot Project
+ref.message.chat.username= fadhil_riyanto_project
+ref.message.chat.type= supergroup
+ref.message.date= 1611129349
+ref.message.text= /leave
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= hmhm
+
+ref.reply_to_message_id= 12227
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(646): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(1590): Telegram->sendMessage(Array)
+#4 {main}
+
