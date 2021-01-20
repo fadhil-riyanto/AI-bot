@@ -1,11 +1,28 @@
 <?php
-echo robot_artificial_intelegence('hai');
-
+echo robot_artificial_intelegence('fia');
 function robot_artificial_intelegence($teks)
 {
 	require_once __DIR__ . '/vendor/autoload.php';
 
 	global $koneksi;
+	define('DB_HOST', 'freedb.tech');											//WAJIB
+	define('DB_USERNAME', 'freedbtech_ai_bot_fadhil_riyanto');					//WAJIB
+	define('DB_PASSWORD', '789b697698hyufijbbiub*&^BO&it87tbn7to&^7896');		//WAJIB
+	define('DB_NAME', 'freedbtech_ai_bot_fadhil_riyanto');						//WAJIB
+	define('TG_HTTP_API', '1489990155:AAEC3c6I-hmtDfbk9OojmlDjNFt1NeMEjfs');	//WAJIB
+	define('USER_ID_TG_ME', '1393342467');										//WAJIB
+	define('CUTLLY_API', 'fa1d93ba90dedd2ceb7d01e9bade271653373');				//WAJIB
+	define('TIME_ZONE', 'Asia/Jakarta');										//WAJIB
+	define('MAX_EXECUTE_SCRIPT', 20);											//SUNNAH_ROSUL
+
+
+	$koneksi = @mysqli_connect(
+		DB_HOST,
+		DB_USERNAME,
+		DB_PASSWORD,
+		DB_NAME
+	);
+
 	$stemmerFactory = new \Sastrawi\Stemmer\StemmerFactory();
 	$stemmer  = $stemmerFactory->createStemmer();
 
@@ -19,6 +36,9 @@ function robot_artificial_intelegence($teks)
 	$q = mysqli_query($koneksi, "SELECT * FROM `data_ai` WHERE `data_key_ai` SOUNDS LIKE _utf8 '$teksTerfilter' ");
 	$tes_jumlah_row = @mysqli_affected_rows($koneksi);
 	$dataAI = mysqli_fetch_assoc($q);
+	foreach ($dataAI as $data_res_ai_val) {
+		# code...
+	}
 
 	if ($teksTerfilter_kata_jorok == true) {
 		$arrayres = array('respon' => @$dataAI['data_res_ai'], 'normalisasi_tulisan' => @$teksTerfilter, 'bad_word' => @$teksTerfilter_kata_jorok, 'stemmer' => $stemmer_hasil, 'affected' => $tes_jumlah_row);
@@ -37,72 +57,7 @@ function robot_artificial_intelegence($teks)
 function hyphenize($string)
 {
 	$dict = array(
-		"km"      => "kamu",
-		"yoi"      => "ya",
-		"yg"      => "yang",
-		"gk"      => "tidak",
-		"gak"      => "tidak",
-		"kaga"      => "tidak",
-		"ogah"      => "tidak",
-		"males"      => "malas",
-		"mager"      => "malas gerak",
-		"&" => "dan",
-		"+" => "tambah",
-		"/" => "atau",
-		"=" => "sama dengan",
-		"ababil" => "anak ingusan",
-		"abal2" => "palsu",
-		"abal" => "palsu",
-		"ad" => "ada",
-		"akooh" => "aku",
-		"alay" => "norak",
-		"albm" => "album",
-		"ampe" => "sampai",
-		"anjir" => "waw",
-		"aq" => "aku",
-		"ato" => "atau",
-		"atw" => "atau",
-		"lg" => "lagi",
-		"nie" => "nih",
-		"baper" => "bawa perasaan",
-		"bapuk" => "rusak",
-		"bcra" => "bicara",
-		"bebeb" => "pacar",
-		"begin" => "awal",
-		"bejibun" => "bertumpuk banyak",
-		"bener" => "benar",
-		"ber2" => "berdua",
-		"ber3" => "bertiga",
-		"better" => "lebih baik",
-		"bf" => "pacar",
-		"bgt" => "banget",
-		"bhas" => "bahas",
-		"bhg" => "bahagia",
-		"bikin" => "buat",
-		"binggo" => "banget",
-		"bingit" => "banget",
-		"bklan" => "bakalan",
-		"bkn" => "bukan",
-		"blg" => "bilang",
-		"bnr" => "benar",
-		"bnyk" => "banyak",
-		"br" => "baru",
-		"ya" => "iya",
-		"yo" => "iya",
-		"yoi" => "iya",
-		"ok" => "oke",
-		"okeh" => "oke",
-		"okheh" => "oke",
-		"asiap" => "siap",
-		"asiapp" => "siap",
-		"asiappp" => "siap",
-		"asiapppp" => "siap",
-		"bosku" => "bos",
-		"bosqu" => "bos",
-		"bosque" => "bos",
-		"bg" => "bang",
-		"mn" => "mana",
-		"tg"    => "telegram"
+
 		// replace teks lainnya disini
 	);
 	return strtolower(
