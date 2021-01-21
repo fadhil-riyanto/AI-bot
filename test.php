@@ -40,9 +40,7 @@ $dataAI = mysqli_fetch_assoc($q);
 
 
 // Jika ternyata ada kata kata jorok 
-if ($teksTerfilter_kata_jorok == true) {
-    echo 'simi  :  Aku ngga mau jawab ah, ada kata kata jorok!';
-} elseif ($tes_jumlah_row > 0) {
+if ($tes_jumlah_row > 0) {
     // Jika ternyata kata ada di database (ditemukan)
     // $arrayres = array('respon' => @hyphenize($dataAI['data_res_ai']), 'normalisasi_tulisan' => @$teksTerfilter, 'bad_word' => @$teksTerfilter_kata_jorok, 'stemmer' => $stemmer_hasil, 'affected' => $tes_jumlah_row);
     // return json_encode($arrayres);
@@ -179,7 +177,7 @@ function kata_kata_jorok($text)
         'cunt', 'cunt*', 'cunts', 'cuntz', 'd4mn', 'damn', 'dancuk', 'daniel brou', 'david neil wallace', 'daygo', 'deepthroat', 'defecated',
         'defecating', 'defecation', 'dego', 'desnuda', 'dick', 'dick', 'dick*', 'dicks', 'dike', 'dike*', 'dild0', 'dild0s', 'dildo', 'dildoes',
         'dildos', 'dilld0', 'dilld0s', 'dirsa', 'dnwallace', 'doggystyle', 'dominatricks', 'dominatrics', 'dominatrix', 'douche', 'douches', 'douching',
-        'dupa', 'dyke', 'dykes', 'dziwka', 'ejackulate', 'ejakulate', 'ekrem', 'ekrem*', 'ekto', 'ekto', 'enculer', 'enema', 'enemas', 'erection',
+        'dupa', 'dyke', 'dykes', 'dziwka', 'ejackulate', 'ekrem', 'ekrem*', 'ekto', 'ekto', 'enculer', 'enema', 'enemas', 'erection',
         'erections', 'erotic', 'erotica', 'f u c k', 'f u c k e r', 'facesit', 'facesitting', 'facial', 'facials', 'faen', 'fag', 'fag1t', 'fag*',
         'faget', 'fagg0t', 'fagg1t', 'faggit', 'faggot', 'fagit', 'fags', 'fagz', 'faig', 'faigs', 'fanculo', 'fanny', 'fart', 'farted', 'farting',
         'fatass', 'fcuk', 'feces', 'feg', 'felch', 'felcher', 'felcher', 'felching', 'fellatio', 'fetish', 'fetishes', 'ficken', 'fisting', 'fitt*',
