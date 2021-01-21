@@ -86,8 +86,8 @@ function robot_artificial_intelegence($teks)
 function hyphenize($string)
 {
 	$dict = array(
-		'simi' => 'kamu',
-		'simsimi' => 'kamu',
+		'simi' => 'fadhil',
+		'simsimi' => 'fadhil',
 		'knp' => 'kenapa',
 		'bokep' => 'nonton drakor',
 		'bokepan' => 'nonton drakor',
