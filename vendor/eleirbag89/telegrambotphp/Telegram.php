@@ -1,7 +1,7 @@
 <?php
 
 if (file_exists('TelegramErrorLogger.php')) {
-    require_once 'TelegramErrorLogger.php';
+	require_once 'TelegramErrorLogger.php';
 }
 
 /**
@@ -287,9 +287,13 @@ class Telegram
 		}
 		return $this->data['message']['message_id'];
 	}
-	public function ReplyToMessageID()
+	public function ReplyToText()
 	{
-		return $this->data['message']['reply_to_message']['message_id'];
+		return $this->data['message']['reply_to_message']['text'];
+	}
+	public function ReplyToChatID()
+	{
+		return $this->data['message']['reply_to_message']['chat']['id'];
 	}
 	public function ReplyToMessageFromUserID()
 	{

@@ -22,6 +22,7 @@ define('MAX_EXECUTE_SCRIPT', 20);											//SUNNAH_ROSUL
 require_once __DIR__ . '/vendor/autoload.php';
 require_once __DIR__ . '/bad_word.php';
 require_once __DIR__ . '/ai_robot.php';
+require_once __DIR__ . '/translate_json.php';
 
 
 ini_set('max_execution_time', MAX_EXECUTE_SCRIPT);
@@ -222,6 +223,10 @@ if ($chek == true) {
 	$anggota = file_put_contents($file, $jsonfile);
 }
 
+$status = array('chat_id' => $chat_id, 'action' => 'typing');
+$telegram->sendChatAction($status);
+
+use Stichoza\GoogleTranslate\GoogleTranslate;
 
 if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	$reply = 'Hai ' . $username . ', Apa kabar? ';
@@ -230,7 +235,7 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	exit;
 } elseif ($text == '/leave' || $text == '/leave@fadhil_riyanto_bot') {
 	if ($userID == $userid_pemilik) {
-		$content = array('chat_id' => $chat_id);
+		$content = array('chat_id' => '@fadhil_riyanto_project');
 		$telegram->leaveChat($content);
 	}
 } elseif ('/db_add' == $adanParse[0] || '/db_add@fadhil_riyanto_bot' == $adanParse[0]) {
@@ -392,8 +397,7 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	}
 	exit;
 } elseif ('/capture_full' == $adanParse[0] || '/capture_full@fadhil_riyanto_bot' == $adanParse[0]) {
-	$status = array('chat_id' => $chat_id, 'action' => 'upload_photo');
-	$telegram->sendChatAction($status);
+
 	$azanHilangcommand = str_replace($adanParse[0], '', $text);
 	$udahDiparse = str_replace($adanParse[0] . ' ', '', $text);
 
