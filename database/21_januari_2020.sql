@@ -460,7 +460,6 @@ INSERT INTO `data_ai` (`data_key_ai`, `data_res_ai`) VALUES
 	('aku kembali lagi', 'Selamat datang kembali. Apa yang dapat saya lakukan untuk Anda?'),
 	('aku kembali lagi disini', 'Selamat datang kembali. Apa yang dapat saya lakukan untuk Anda?'),
 	('aku disini', 'Selamat datang kembali. Apa yang dapat saya lakukan untuk Anda?'),
-	('aku telah tembali', 'Selamat datang kembali. Apa yang dapat saya lakukan untuk Anda?'),
 	('aku telah kembali', 'Selamat datang kembali. Apa yang dapat saya lakukan untuk Anda?'),
 	('aku telah balik', 'Selamat datang kembali. Apa yang dapat saya lakukan untuk Anda?'),
 	('ini aku lagi lah', 'Selamat datang kembali. Apa yang dapat saya lakukan untuk Anda?'),
@@ -5121,7 +5120,8 @@ INSERT INTO `data_ai` (`data_key_ai`, `data_res_ai`) VALUES
 	('aku bukan syifa lah', 'lalu siapa kamu'),
 	('ya kamu lah g jelas banget sih', 'gak jelas sendiri'),
 	('silah nang sendiri atu', 'ouh'),
-	('barusan gw dapat uang', 'iya.');
+	('barusan gw dapat uang', 'iya.'),
+	('napa..hehe', 'hmhm');
 /*!40000 ALTER TABLE `data_ai` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
