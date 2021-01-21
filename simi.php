@@ -213,5 +213,3 @@ function kata_kata_jorok($text)
     }
     return false;
 }
-
-// sc5W7p64_P_d2OPln-8s5f8.hQ.InTBI5qGXLV43
