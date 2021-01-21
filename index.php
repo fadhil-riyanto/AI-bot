@@ -296,10 +296,7 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 				$telegram->buildInlineKeyBoardButton("help", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot help'),
 				$telegram->buildInlineKeyBoardButton("wiki", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot wiki')
 			),
-			array(
-				$telegram->buildInlineKeyBoardButton("capture", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot capture'),
-				$telegram->buildInlineKeyBoardButton("capture_full", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot capture_full')
-			),
+
 			array(
 				$telegram->buildInlineKeyBoardButton("tulis", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot tulis'),
 				$telegram->buildInlineKeyBoardButton("get_ip", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot get_ip')
@@ -347,6 +344,9 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 			array(
 				$telegram->buildInlineKeyBoardButton("ripemd320", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot ripemd320'),
 				$telegram->buildInlineKeyBoardButton("whirlpool", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot whirlpool')
+			), array(
+				$telegram->buildInlineKeyBoardButton("capture", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot capture'),
+
 			),
 
 		);
@@ -395,33 +395,35 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 		}
 	}
 	exit;
-} elseif ('/capture_full' == $adanParse[0] || '/capture_full@fadhil_riyanto_bot' == $adanParse[0]) {
+}
+// } elseif ('/capture_full' == $adanParse[0] || '/capture_full@fadhil_riyanto_bot' == $adanParse[0]) {
 
-	$azanHilangcommand = str_replace($adanParse[0], '', $text);
-	$udahDiparse = str_replace($adanParse[0] . ' ', '', $text);
+// 	$azanHilangcommand = str_replace($adanParse[0], '', $text);
+// 	$udahDiparse = str_replace($adanParse[0] . ' ', '', $text);
 
-	$hash_cek = hash_file('md5', 'https://cdn.statically.io/screenshot/' . hapus_http($udahDiparse));
+// 	$hash_cek = hash_file('md5', 'https://cdn.statically.io/screenshot/' . hapus_http($udahDiparse));
 
-	if ($azanHilangcommand == null) {
-		$reply = 'Hai ' . $username . PHP_EOL . 'Ini adalah command untuk menggunakan mengambil capture web secara full page, gunakan command <pre>/capture_full {domain or IP}</pre>' . PHP_EOL . PHP_EOL .  'Contoh : <pre>/capture_full google.com</pre>';
-		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-		$telegram->sendMessage($content);
-	} elseif ($udahDiparse != null) {
+// 	if ($azanHilangcommand == null) {
+// 		$reply = 'Hai ' . $username . PHP_EOL . 'Ini adalah command untuk menggunakan mengambil capture web secara full page, gunakan command <pre>/capture_full {domain or IP}</pre>' . PHP_EOL . PHP_EOL .  'Contoh : <pre>/capture_full google.com</pre>';
+// 		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+// 		$telegram->sendMessage($content);
+// 	} elseif ($udahDiparse != null) {
 
-		if ($hash_cek == '9c60b52f2f14216bf26f6685c2f25283') {
-			// $reply = '1';
-			// $content = array('chat_id' => $chat_id, 'photo' => 'https://cdn.statically.io/screenshot/google.com');
-			// $telegram->sendPhoto($content);
-			$reply = 'Maaf, kami tidak bisa mendapatkan gambar nya. Mungkin url kamu salah atau mungkin server yang tidak aktif. Kamu bisa coba mengeja kembali atau menambahkan WWW didepan nya';
-			$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-			$telegram->sendMessage($content);
-		} else {
-			$content = array('chat_id' => $chat_id, 'document' => 'https://cdn.statically.io/screenshot/full=true/' . hapus_http($udahDiparse), 'reply_to_message_id' => $message_id);
-			$telegram->sendDocument($content);
-		}
-	}
-	exit;
-} elseif ('/faker' == $adanParse[0] || '/faker@fadhil_riyanto_bot' == $adanParse[0]) {
+// 		if ($hash_cek == '9c60b52f2f14216bf26f6685c2f25283') {
+// 			// $reply = '1';
+// 			// $content = array('chat_id' => $chat_id, 'photo' => 'https://cdn.statically.io/screenshot/google.com');
+// 			// $telegram->sendPhoto($content);
+// 			$reply = 'Maaf, kami tidak bisa mendapatkan gambar nya. Mungkin url kamu salah atau mungkin server yang tidak aktif. Kamu bisa coba mengeja kembali atau menambahkan WWW didepan nya';
+// 			$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+// 			$telegram->sendMessage($content);
+// 		} else {
+// 			$content = array('chat_id' => $chat_id, 'document' => 'https://cdn.statically.io/screenshot/full=true/' . hapus_http($udahDiparse), 'reply_to_message_id' => $message_id);
+// 			$telegram->sendDocument($content);
+// 		}
+// 	}
+// 	exit;
+// } 
+elseif ('/faker' == $adanParse[0] || '/faker@fadhil_riyanto_bot' == $adanParse[0]) {
 	// $azanHilangcommand = str_replace($adanParse[0], '', $text);
 	// $udahDiparse = str_replace($adanParse[0] . ' ', '', $text);
 	if (1) {
