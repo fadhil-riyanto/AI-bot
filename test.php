@@ -24,7 +24,7 @@ foreach ($q as $data_res_ai_val) {
         CURLOPT_POSTFIELDS => "{\n\t\"utext\": \". $hhh .\", \n\t\"lang\": \"id\" \n}",
         CURLOPT_HTTPHEADER => array(
             "Content-Type: application/json",
-            "x-api-key: X9QTrw5PpgtPTFZwS1PgR95JbYUvSJqCh03nRHim"
+            "x-api-key: MACquj9mn5F2v6iVim7qQL-CnJcK1t1XYV90vppE"
         ),
     ));
 
