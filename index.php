@@ -227,6 +227,22 @@ $telegram->sendChatAction($status);
 
 use Stichoza\GoogleTranslate\GoogleTranslate;
 
+if (isset($text)) {
+	$chek_gc = detect_grup();
+	$nama_gc = $telegram->namaGrup();
+	if ($chek_gc == true) {
+		if ($nama_gc == 'fadhil_riyanto_project' || $nama_gc == 'gabut_people_group') {
+		} else {
+			$reply = 'Maaf, saya diprogram oleh pemilik saya untuk tidak dimasukkan ke grup. Jika anda masih tetap memasukkan saya ke grup. maka otomatis saya akan mengeluarkan diri.';
+			$content1 = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+			$telegram->sendMessage($content1);
+			$content = array('chat_id' => $chat_id);
+			$telegram->leaveChat($content);
+		}
+	} else {
+	}
+}
+
 if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	$reply = 'Hai ' . $username . ', Apa kabar? ';
 	$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
@@ -254,107 +270,18 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	$telegram->sendMessage($content);
 	exit;
 } elseif (isset($memberBaru)) {
+	if ($usernameBelumdiparse == 'Fadhil_riyanto_bot') {
+		exit;
+	}
 	$reply = 'Halo, apa kabar mu?';
 	$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
 	$telegram->sendMessage($content);
 	exit;
 } elseif ('/help' == $adanParse[0] || '/help@fadhil_riyanto_bot' == $adanParse[0]) {
-	if (detect_grup() == true) {
-		$reply = 'Hai ' . $username . ', Maaf, menu ini hanya bisa diakses via PM';
-		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-		$telegram->sendMessage($content);
-		exit;
-	} else {
-		$reply = 'Hai ' . $username . ', Selamat datang di buku panduan bot ini';
-		$option = array(
-			//First row
-			array(
-				$telegram->buildInlineKeyBoardButton("corona", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot corona'),
-				$telegram->buildInlineKeyBoardButton("userid", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot userid')
-			),
-			array(
-				$telegram->buildInlineKeyBoardButton("waktu", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot waktu'),
-				$telegram->buildInlineKeyBoardButton("info", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot info')
-			),
-			array(
-				$telegram->buildInlineKeyBoardButton("panggil", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot panggil'),
-				$telegram->buildInlineKeyBoardButton("start", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot start')
-			),
-			array(
-				$telegram->buildInlineKeyBoardButton("short", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot short'),
-				$telegram->buildInlineKeyBoardButton("tanggal", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot tanggal')
-			),
-			array(
-				$telegram->buildInlineKeyBoardButton("bug", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot bug'),
-				$telegram->buildInlineKeyBoardButton("azan", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot azan')
-			),
-			array(
-				$telegram->buildInlineKeyBoardButton("donate", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot donate'),
-				$telegram->buildInlineKeyBoardButton("gempa", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot gempa')
-			),
-			array(
-				$telegram->buildInlineKeyBoardButton("help", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot help'),
-				$telegram->buildInlineKeyBoardButton("wiki", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot wiki')
-			),
-
-			array(
-				$telegram->buildInlineKeyBoardButton("tulis", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot tulis'),
-				$telegram->buildInlineKeyBoardButton("get_ip", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot get_ip')
-			),
-			array(
-				$telegram->buildInlineKeyBoardButton("get_mx", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot get_mx'),
-				$telegram->buildInlineKeyBoardButton("get_ns", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot get_ns')
-			),
-			array(
-				$telegram->buildInlineKeyBoardButton("get_aaaa", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot get_aaaa'),
-				$telegram->buildInlineKeyBoardButton("get_txt", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot get_txt')
-			),
-			array(
-				$telegram->buildInlineKeyBoardButton("get_cname", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot get_cname'),
-				$telegram->buildInlineKeyBoardButton("get_github_user", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot get_github_user')
-			),
-			array(
-				$telegram->buildInlineKeyBoardButton("ip_geo", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot ip_geo'),
-				$telegram->buildInlineKeyBoardButton("faker", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot faker')
-			),
-			array(
-				$telegram->buildInlineKeyBoardButton("sha512", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot sha512'),
-				$telegram->buildInlineKeyBoardButton("sha384", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot sha384')
-			),
-			array(
-				$telegram->buildInlineKeyBoardButton("sha256", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot sha256'),
-				$telegram->buildInlineKeyBoardButton("sha1", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot sha1')
-			),
-			array(
-				$telegram->buildInlineKeyBoardButton("md5", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot md5'),
-				$telegram->buildInlineKeyBoardButton("md4", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot md4')
-			),
-			array(
-				$telegram->buildInlineKeyBoardButton("md2", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot md2'),
-				$telegram->buildInlineKeyBoardButton("base64_encode", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot base64_encode')
-			),
-			array(
-				$telegram->buildInlineKeyBoardButton("base64_decode", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot base64_decode'),
-				$telegram->buildInlineKeyBoardButton("ripemd128", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot ripemd128')
-			),
-			array(
-				$telegram->buildInlineKeyBoardButton("ripemd160", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot ripemd160'),
-				$telegram->buildInlineKeyBoardButton("ripemd256", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot ripemd256')
-			),
-			array(
-				$telegram->buildInlineKeyBoardButton("ripemd320", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot ripemd320'),
-				$telegram->buildInlineKeyBoardButton("whirlpool", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot whirlpool')
-			), array(
-				$telegram->buildInlineKeyBoardButton("capture", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot capture'),
-
-			),
-
-		);
-		$keyb = $telegram->buildInlineKeyBoard($option);
-		$content = array('chat_id' => $chat_id, 'text' => $reply,  'reply_markup' => $keyb, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-		$telegram->sendMessage($content);
-		exit;
-	}
+	$reply = 'Hai, baca buku panduan disini' . PHP_EOL . 'https://telegra.ph/Panduan-bot-fadhil-riyanto-12-31-2';
+	$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+	$telegram->sendMessage($content);
+	exit;
 } elseif ('/callback_q' == $adanParse[0] || '/callback_q@fadhil_riyanto_bot' == $adanParse[0]) {
 	$azanHilangcommand = str_replace($adanParse[0], '', $text);
 	$udahDiparse = str_replace($adanParse[0] . ' ', '', $text);
@@ -362,7 +289,7 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	$helper = json_decode($get_help_files, true);
 
 
-	$reply = $helper[$udahDiparse];
+	$reply = $helper[$adanParse[1]];
 	$option = array(
 		array($telegram->buildInlineKeyBoardButton("kembali", $url = "", $callback_data = '/help@fadhil_riyanto_bot'))
 	);
@@ -658,11 +585,9 @@ elseif ('/faker' == $adanParse[0] || '/faker@fadhil_riyanto_bot' == $adanParse[0
 		$telegram->sendMessage($content);
 		exit;
 	} elseif ($parsecJsons->status == "OK") {
-		$konten = array('chat_id' => $chat_id, 'photo' => $parsecJsons->image);
+		$konten = array('chat_id' => $chat_id, 'photo' => $parsecJsons->image, 'caption' => 'Hai ' . $username . ', Gambar berhasil dibuat!', 'reply_to_message_id' => $message_id,);
 		$telegram->sendPhoto($konten);
-		$reply = 'Hai ' . $username . PHP_EOL . 'Gambar berhasil dibuat!';
-		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-		$telegram->sendMessage($content);
+
 		exit;
 	} else {
 		$reply = 'Hai ' . $username . PHP_EOL . 'Maaf, sepertinya ada yang error di sistem kami';
@@ -721,10 +646,10 @@ elseif ('/faker' == $adanParse[0] || '/faker@fadhil_riyanto_bot' == $adanParse[0
 		);
 		$keyb = $telegram->buildInlineKeyBoard($option);
 
-		$konten = array('chat_id' => $chat_id, 'photo' => $githubAPIS->avatar_url);
+		$konten = array('chat_id' => $chat_id, 'photo' => $githubAPIS->avatar_url, 'reply_markup' => $keyb,  'reply_to_message_id' => $message_id, 'disable_web_page_preview' => true, 'caption' => $reply);
 		$telegram->sendPhoto($konten);
-		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_markup' => $keyb,  'reply_to_message_id' => $message_id, 'disable_web_page_preview' => true);
-		$telegram->sendMessage($content);
+		// $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_markup' => $keyb,  'reply_to_message_id' => $message_id, 'disable_web_page_preview' => true);
+		// $telegram->sendMessage($content);
 		//keyboard inline biar ga ribet buka link repo
 
 
@@ -1091,7 +1016,7 @@ elseif ('/faker' == $adanParse[0] || '/faker@fadhil_riyanto_bot' == $adanParse[0
 			exit;
 		}
 	} elseif ($azanHilangcommand == null) {
-		$reply = 'Maaf, gunakan pattern <pre>/azan namakota</pre>';
+		$reply = 'Maaf, gunakan pattern <pre>/azan nama kota</pre>' . PHP_EOL . PHP_EOL . 'contoh : /azan jakarta';
 		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
 		$telegram->sendMessage($content);
 	}
@@ -1195,7 +1120,7 @@ elseif ('/faker' == $adanParse[0] || '/faker@fadhil_riyanto_bot' == $adanParse[0
 		//First row
 		array($telegram->buildInlineKeyBoardButton("👥 Support Group", $url = "https://t.me/fadhil_riyanto_project"), $telegram->buildInlineKeyBoardButton("❓ Help", $url = "", $callback_data = '/help@fadhil_riyanto_bot')),
 		//Second row 
-		array($telegram->buildInlineKeyBoardButton("🎉 Tambahkan saya ke group", $url = "https://t.me/fadhil_riyanto_bot?startgroup=new"))
+
 	);
 	$keyb = $telegram->buildInlineKeyBoard($option);
 	$content = array('chat_id' => $chat_id, 'text' => $reply,  'reply_to_message_id' => $message_id, 'reply_markup' => $keyb, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
