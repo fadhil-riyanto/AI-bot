@@ -267,6 +267,10 @@ class Telegram
 		}
 		return $this->data['message']['chat']['id'];
 	}
+	public function namaGrup()
+	{
+		return $this->data['message']['chat']['username'];
+	}
 	public function member_baru()
 	{
 		$type = $this->getUpdateType();
