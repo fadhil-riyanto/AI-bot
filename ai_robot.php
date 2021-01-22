@@ -87,7 +87,9 @@ function hyphenize($string)
 {
 	$dict = array(
 		'simi' => 'fadhil',
+		'sim' => 'fadhil',
 		'simsimi' => 'fadhil',
+		'gila' => 'sehat',
 		'knp' => 'kenapa',
 		'bokep' => 'nonton drakor',
 		'bokepan' => 'nonton drakor',
