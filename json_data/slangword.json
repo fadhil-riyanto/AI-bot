@@ -21,7 +21,7 @@
 	"get_ns": "/get_ns merupakan command untuk mendapatkan Name Server (NS) website. ini berguna sekali jika anda merupakan developers.",
 	"get_aaaa": "/get_aaaa merupakan command untuk mendapatkan ip v6 dari website. ini berguna sekali jika anda merupakan developers.",
 	"get_txt": "/get_txt merupakan command untuk mendapatkan Record TXT website. ini berguna sekali jika anda merupakan developers.",
-	"get_cname ": "/get_cname merupakan command untuk mendapatkan data CNAME website. ini berguna sekali jika anda merupakan developers ",
+	"cname ": "/get_cname merupakan command untuk mendapatkan data CNAME website. ini berguna sekali jika anda merupakan developers.",
 	"get_github_user": "/get_github_user merupakan command untuk mendapatkan data user github. perlu diketahui bahwa hanya account yang terdaftar di github yang bisa dilihat datanya. seperti username, jumlah follower, jumlah repository, dan lain lain",
 	"ip_geo": "/ip_geo digunakan untuk melihat informasi server atau host berdasarkan geolokasi",
 	"faker": "/faker digunakan untuk menggenerate data dummy alias fake data. ini hanya untuk misal percobaan dll",
