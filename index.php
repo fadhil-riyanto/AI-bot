@@ -203,7 +203,6 @@ function tracking_user($userID)
 		}
 	}
 }
-
 $chek = tracking_user($userID);
 if ($chek == true) {
 } elseif ($chek == null) {

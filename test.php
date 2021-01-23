@@ -12,19 +12,45 @@ foreach ($q as $data_res_ai_val) {
     echo $data_res_ai_val['data_res_ai'];
     $ggg = $data_res_ai_val['data_res_ai'];
     $hhh =  $data_res_ai_val['data_key_ai'];
+
+    // $curl = curl_init();
+    // curl_setopt_array($curl, array(
+    //     CURLOPT_URL => "https://wsapi.simsimi.com/190410/talk/",
+    //     CURLOPT_RETURNTRANSFER => true,
+    //     CURLOPT_ENCODING => "",
+    //     CURLOPT_MAXREDIRS => 10,
+    //     CURLOPT_TIMEOUT => 30,
+    //     CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+    //     CURLOPT_CUSTOMREQUEST => "POST",
+    //     CURLOPT_POSTFIELDS => "{\n\t\"utext\": \". $hhh .\", \n\t\"lang\": \"id\" \n}",
+    //     CURLOPT_HTTPHEADER => array(
+    //         "Content-Type: application/json",
+    //         "x-api-key: MACquj9mn5F2v6iVim7qQL-CnJcK1t1XYV90vppE"
+    //     ),
+    // ));
+
+    // $response = curl_exec($curl);
+    // $err = curl_error($curl);
+
+    // curl_close($curl);
+
+
     $curl = curl_init();
+
     curl_setopt_array($curl, array(
-        CURLOPT_URL => "https://wsapi.simsimi.com/190410/talk/",
+        CURLOPT_URL => "https://afara.my.id/api/v3/sim-simi?text=" . $hhh,
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_ENCODING => "",
         CURLOPT_MAXREDIRS => 10,
         CURLOPT_TIMEOUT => 30,
         CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-        CURLOPT_CUSTOMREQUEST => "POST",
-        CURLOPT_POSTFIELDS => "{\n\t\"utext\": \". $hhh .\", \n\t\"lang\": \"id\" \n}",
+        CURLOPT_CUSTOMREQUEST => "GET",
+        // CURLOPT_POSTFIELDS => "{\n\t\"utext\": \"hello there\", \n\t\"lang\": \"en\" \n}",
         CURLOPT_HTTPHEADER => array(
+            "Accept: application/json",
             "Content-Type: application/json",
-            "x-api-key: MACquj9mn5F2v6iVim7qQL-CnJcK1t1XYV90vppE"
+            "Connection: keep-alive",
+            "Authorization: Bearer YhPPM-0A1uE-xtGTr-pvXSq"
         ),
     ));
 
@@ -34,8 +60,8 @@ foreach ($q as $data_res_ai_val) {
     curl_close($curl);
 
     $simi = json_decode($response);
-    $c = $simi->atext;
-    if (@$simi->message == 'Limit Exceeded Exception') {
+    $c = $simi->response;
+    if (@$simi->response == '429 To Many Request') {
         //kita pakai api yg ini lah bang
         echo 'simi  :  prebarui api key!' . PHP_EOL;
         exit;
