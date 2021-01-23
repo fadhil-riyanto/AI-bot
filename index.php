@@ -230,7 +230,7 @@ if (isset($text)) {
 	$chek_gc = detect_grup();
 	$nama_gc = $telegram->namaGrup();
 	if ($chek_gc == true) {
-		if ($nama_gc == 'fadhil_riyanto_project' || $nama_gc == 'gabut_people_group') {
+		if ($nama_gc == 'fadhil_riyanto_project' || $nama_gc == 'gabut_people_group' || $nama_gc == 'scriptiseng') {
 		} else {
 			$reply = 'Maaf, saya diprogram oleh pemilik saya untuk tidak dimasukkan ke grup. Jika anda masih tetap memasukkan saya ke grup. maka otomatis saya akan mengeluarkan diri.';
 			$content1 = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
