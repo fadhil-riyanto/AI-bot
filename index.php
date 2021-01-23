@@ -9,6 +9,8 @@ define('CUTLLY_API', 'fa1d93ba90dedd2ceb7d01e9bade271653373');				//WAJIB
 define('TIME_ZONE', 'Asia/Jakarta');										//WAJIB
 define('MAX_EXECUTE_SCRIPT', 20);											//SUNNAH_ROSUL
 
+
+
 // PENJELASAN SINGKAT
 
 // DB_HOST digunakan untuk login ke database, begitu juga username dan password_get_info
@@ -230,7 +232,7 @@ if (isset($text)) {
 	$chek_gc = detect_grup();
 	$nama_gc = $telegram->namaGrup();
 	if ($chek_gc == true) {
-		if ($nama_gc == 'fadhil_riyanto_project' || $nama_gc == 'gabut_people_group' || $nama_gc == 'scriptiseng') {
+		if ($nama_gc == 'fadhil_riyanto_project' || $nama_gc == 'testing7382' || $nama_gc == 'gabut_people_group' || $nama_gc == 'scriptiseng') {
 		} else {
 			$reply = 'Maaf, saya diprogram oleh pemilik saya untuk tidak dimasukkan ke grup. Jika anda masih tetap memasukkan saya ke grup. maka otomatis saya akan mengeluarkan diri.';
 			$content1 = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
@@ -568,14 +570,14 @@ elseif ('/faker' == $adanParse[0] || '/faker@fadhil_riyanto_bot' == $adanParse[0
 		$telegram->sendMessage($content);*/
 	} else {
 		$reply = 'Maaf ' . $username . ', Gunakan pattern /ip_geo {host atau IP}' . PHP_EOL . PHP_EOL .
-			'Pro tip : gunakan <pre>-map</pre> untuk menampilkan peta' . PHP_EOL . 'Contoh : <pre>/ip_geo google.com -map</pre>';
+			'Pro tip : gunakan <pre> -map</pre> untuk menampilkan peta' . PHP_EOL . 'Contoh : <pre>/ip_geo google.com -map</pre>';
 		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
 		$telegram->sendMessage($content);
 	}
 	exit;
 } elseif ('/tulis' == $adanParse[0] || '/tulis@fadhil_riyanto_bot' == $adanParse[0]) {
 	//$hapusTulis = 
-	$udahDiparse = str_replace($adanParse[0] . ' ', '', $text_plain);
+	$udahDiparse = str_replace($adanParse_plain[0] . ' ', '', $text_plain);
 	$curlImage = file_get_contents('https://tools.zone-xsec.com/api/nulis.php?q=' . urlencode($udahDiparse));
 	$parsecJsons = json_decode($curlImage);
 	if ($adanParse[1] == null) {
