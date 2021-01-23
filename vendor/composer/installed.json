@@ -1,6 +1,50 @@
 {
     "packages": [
         {
+            "name": "buchin/badwords",
+            "version": "dev-master",
+            "version_normalized": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/buchin/badwords.git",
+                "reference": "d1b01e6af0d35ba2453e0bc50eb8ddf4a5f6ea29"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/buchin/badwords/zipball/d1b01e6af0d35ba2453e0bc50eb8ddf4a5f6ea29",
+                "reference": "d1b01e6af0d35ba2453e0bc50eb8ddf4a5f6ea29",
+                "shasum": ""
+            },
+            "require-dev": {
+                "kahlan/kahlan": "dev-master"
+            },
+            "time": "2020-10-13T16:30:25+00:00",
+            "default-branch": true,
+            "type": "library",
+            "installation-source": "source",
+            "autoload": {
+                "psr-4": {
+                    "Buchin\\Badwords\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mochammad Masbuchin",
+                    "email": "buchin@dropsugar.com"
+                }
+            ],
+            "description": "Badwords filter in PHP",
+            "support": {
+                "issues": "https://github.com/buchin/badwords/issues",
+                "source": "https://github.com/buchin/badwords/tree/master"
+            },
+            "install-path": "../buchin/badwords"
+        },
+        {
             "name": "container-interop/container-interop",
             "version": "1.2.0",
             "version_normalized": "1.2.0.0",

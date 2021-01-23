@@ -1,4 +1,6 @@
 <?php
+
+use Buchin\Badwords\Badwords;
 // echo robot_artificial_intelegence('fia');
 function robot_artificial_intelegence($teks)
 {
@@ -35,8 +37,7 @@ function robot_artificial_intelegence($teks)
 	$stemmer  = $stemmerFactory->createStemmer();
 
 
-
-	$teksTerfilter_kata_jorok = kata_kata_jorok($teks);
+	$teksTerfilter_kata_jorok = Badwords::isDirty($teks);
 	$stemmer_hasil   = $stemmer->stem($teks);
 	$teksTerfilter = hyphenize($stemmer_hasil);
 
@@ -142,27 +143,4 @@ function cleanString($text)
 		'/ /'           =>   ' ',
 	);
 	return preg_replace(array_keys($utf8), array_values($utf8), $text);
-}
-function kata_kata_jorok($text)
-{
-	$daftar = array(
-		'bokong', 'ass', 'Anjing', 'Babi', 'Monyet', 'Kunyuk', 'Bajingan', 'Asu', 'Bangsat', 'Kampret',
-		'Kontol', 'Memek', 'Ngentot', 'Ngewe', 'Jembod', 'Jembud', 'Perek', 'Pecun', 'Bencong', 'Banci',
-		'Jablay', 'Maho', 'Bego', 'Goblok', 'Idiot', 'Geblek', 'Orang Gila', 'Gila', 'Sinting', 'Tolol', 'Sarap',
-		'Udik', 'Kampungan', 'Kamseupay', 'Buta', 'Budek', 'Bolot', 'Jelek', 'Setan', 'Iblis', 'Jahannam',
-		'Dajjal', 'Jin Tomang', 'Keparat', 'Bejad', 'Gembel', 'Brengsek', 'Tai', 'Sompret',
-		'Anjing', 'Babi', 'Kunyuk', 'Bajingan', 'Asu', 'Bangsat', 'Kampret', 'Kontol', 'Memek', 'Ngentot', 'Pentil', 'Perek',
-		'Pepek', 'Pecun', 'Bencong', 'Banci', 'Maho', 'Gila', 'Sinting', 'Tolol', 'Sarap', 'Setan', 'Lonte', 'Hencet', 'Taptei',
-		'Kampang', 'Pilat', 'Keparat', 'Bejad', 'Gembel', 'Brengsek', 'Tai', 'Anjrit', 'Bangsat', 'Fuck', 'Tetek', 'Ngulum', 'Jembut',
-		'Totong', 'Kolop', 'Pukimak', 'Bodat', 'Heang', 'Jancuk', 'Burit', 'Titit', 'Nenen', 'Bejat', 'Silit', 'Sempak', 'Fucking',
-		'Asshole', 'Bitch', 'Penis', 'Vagina', 'Klitoris', 'Kelentit', 'Borjong', 'Dancuk', 'Pantek', 'Taek', 'Itil', 'Teho', 'Bejat',
-		'Pantat', 'Bagudung', 'Babami', 'Kanciang', 'Bungul', 'Idiot', 'Kimak', 'Henceut', 'Kacuk', 'Blowjob', 'Pussy',
-
-	);
-	foreach ($daftar as $filters) {
-		if (stristr($text, $filters)) {
-			return true;
-		}
-	}
-	return false;
 }

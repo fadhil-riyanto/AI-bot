@@ -29,7 +29,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '3822ec525ea1e7ba633b4f6ba258ffa4e63a316e',
+    'reference' => '41f7e2ce89c70e02b3c497c78a05b441b9b41c78',
     'name' => '__root__',
   ),
   'versions' => 
@@ -41,7 +41,17 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '3822ec525ea1e7ba633b4f6ba258ffa4e63a316e',
+      'reference' => '41f7e2ce89c70e02b3c497c78a05b441b9b41c78',
+    ),
+    'buchin/badwords' => 
+    array (
+      'pretty_version' => 'dev-master',
+      'version' => 'dev-master',
+      'aliases' => 
+      array (
+        0 => '9999999-dev',
+      ),
+      'reference' => 'd1b01e6af0d35ba2453e0bc50eb8ddf4a5f6ea29',
     ),
     'container-interop/container-interop' => 
     array (
