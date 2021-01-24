@@ -226,7 +226,6 @@ if ($chek == true) {
 $status = array('chat_id' => $chat_id, 'action' => 'typing');
 $telegram->sendChatAction($status);
 
-use Stichoza\GoogleTranslate\GoogleTranslate;
 
 if (isset($text)) {
 	$chek_gc = detect_grup();
@@ -1597,3 +1596,9 @@ class Emoji
 		return $text;
 	}
 }
+
+$vars = array_keys(get_defined_vars());
+for ($i = 0; $i < sizeOf($vars); $i++) {
+	unset($$vars[$i]);
+}
+unset($vars, $i);
