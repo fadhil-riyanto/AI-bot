@@ -1,10 +1,11 @@
 <?php
+require_once __DIR__ . '/vendor/autoload.php';
 
 use Buchin\Badwords\Badwords;
 // echo robot_artificial_intelegence('fia');
 function robot_artificial_intelegence($teks)
 {
-	require_once __DIR__ . '/vendor/autoload.php';
+
 
 	global $koneksi;
 	// define('DB_HOST', 'freedb.tech');											//WAJIB

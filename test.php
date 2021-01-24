@@ -1,14 +1,15 @@
 <?php
 include(__DIR__ . "/vendor/autoload.php");
+$time_start = microtime(true);
 
-use Buchin\Badwords\Badwords;
+//sample script
+for ($i = 0; $i < 1000000000000000000000000000000000000000000000000000000000; $i++) {
+    //do anything
+}
 
-var_dump(Badwords::isDirty('dasar kontol'));
+$time_end = microtime(true);
 
-/*
-when string contains bad words, it returns true
-Example result:
-(boolean) true 
-*/
+//dividing with 60 will give the execution time in minutes otherwise seconds
+$execution_time = ($time_end - $time_start) / 60;
 
-echo Badwords::strip('Blood sugar sex magic');
+echo $execution_time;
