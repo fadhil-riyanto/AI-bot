@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '41f7e2ce89c70e02b3c497c78a05b441b9b41c78',
+    'reference' => '4fe45a881d89aef3731c3d898fd44f764562262c',
     'name' => '__root__',
   ),
   'versions' => 
@@ -18,17 +18,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '41f7e2ce89c70e02b3c497c78a05b441b9b41c78',
-    ),
-    'buchin/badwords' => 
-    array (
-      'pretty_version' => 'dev-master',
-      'version' => 'dev-master',
-      'aliases' => 
-      array (
-        0 => '9999999-dev',
-      ),
-      'reference' => 'd1b01e6af0d35ba2453e0bc50eb8ddf4a5f6ea29',
+      'reference' => '4fe45a881d89aef3731c3d898fd44f764562262c',
     ),
     'container-interop/container-interop' => 
     array (

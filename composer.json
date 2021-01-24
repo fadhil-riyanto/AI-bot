@@ -4,7 +4,6 @@
         "sastrawi/sastrawi": "^1.2",
         "eleirbag89/telegrambotphp": "^1.3",
         "rmccue/requests": "^1.7",
-        "stichoza/google-translate-php": "^4.1",
-        "buchin/badwords": "dev-master"
+        "stichoza/google-translate-php": "^4.1"
     }
 }

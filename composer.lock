@@ -4,49 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "197b9682e01faba33298503dd10d1b10",
+    "content-hash": "e15783d0412c1122283cc5d30d0b0418",
     "packages": [
-        {
-            "name": "buchin/badwords",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/buchin/badwords.git",
-                "reference": "d1b01e6af0d35ba2453e0bc50eb8ddf4a5f6ea29"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/buchin/badwords/zipball/d1b01e6af0d35ba2453e0bc50eb8ddf4a5f6ea29",
-                "reference": "d1b01e6af0d35ba2453e0bc50eb8ddf4a5f6ea29",
-                "shasum": ""
-            },
-            "require-dev": {
-                "kahlan/kahlan": "dev-master"
-            },
-            "default-branch": true,
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Buchin\\Badwords\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Mochammad Masbuchin",
-                    "email": "buchin@dropsugar.com"
-                }
-            ],
-            "description": "Badwords filter in PHP",
-            "support": {
-                "issues": "https://github.com/buchin/badwords/issues",
-                "source": "https://github.com/buchin/badwords/tree/master"
-            },
-            "time": "2020-10-13T16:30:25+00:00"
-        },
         {
             "name": "container-interop/container-interop",
             "version": "1.2.0",
@@ -1183,9 +1142,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "buchin/badwords": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
