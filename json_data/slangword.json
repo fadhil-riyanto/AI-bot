@@ -14,14 +14,13 @@
 	"help": "/help digunakan untuk melihat helper bot ini",
 	"wiki": "/wiki digunakan untuk mencari ensiklopedia bebas. kita menggunaakan sumber dari wikipedia indonesia. Jika kata yang dicari tidak sesuai ekpektasi. bisa dicoba dengan merubah besar kecil huruf. \r\n\r\nGunakan pattern /wiki {kata}",
 	"capture": "/capture digunakan untuk mengambil screenshot website. \r\n\r\nContohnya ketika mau mengambil melihat isi link sebelum diklik. Nah, kamu bisa menggunkan command ini\r\n\r\nGunakan pattern /capture {link}",
-	"capture_full": "/capture_full digunakan untuk mengambil screenshot website. \r\n\r\nPerbedaanya hanya jika yg ini dia akan mengambil full page. Ini sama aja kayak command /capture hanya aja ini yang versi full",
 	"tulis": "/tulis merupakan command untuk membuat buku. bisa digunakan dengan pattern /tulis {teks kamu} \r\n\r\ncontoh : /tulis halo semua, mimin disini \r\n\r\nPerlu diketahui bahwa command ini hanya bisa membuat 1 kertas doang. jika lebih dia akan error",
 	"get_ip": "/get_ip merupakan command untuk mendapatkan IP website. ini berguna sekali jika anda ingin mencari IP dibalik suatu website. Ingat, ini tidak bisa menembus layanan proxy server seperti cloudFlare atau layanan proxy IP lainnya.",
 	"get_mx": "/get_mx merupakan command untuk mendapatkan record MX DNS website. ini berguna sekali jika anda merupakan developers. dan ini berguna untuk mengecek apakah MX sudah dipropagandasi oleh DNS service. ",
 	"get_ns": "/get_ns merupakan command untuk mendapatkan Name Server (NS) website. ini berguna sekali jika anda merupakan developers.",
 	"get_aaaa": "/get_aaaa merupakan command untuk mendapatkan ip v6 dari website. ini berguna sekali jika anda merupakan developers.",
 	"get_txt": "/get_txt merupakan command untuk mendapatkan Record TXT website. ini berguna sekali jika anda merupakan developers.",
-	"cname ": "/get_cname merupakan command untuk mendapatkan data CNAME website. ini berguna sekali jika anda merupakan developers.",
+	"cname": "/get_cname merupakan command untuk mendapatkan data CNAME website. ini berguna sekali jika anda merupakan developers.",
 	"get_github_user": "/get_github_user merupakan command untuk mendapatkan data user github. perlu diketahui bahwa hanya account yang terdaftar di github yang bisa dilihat datanya. seperti username, jumlah follower, jumlah repository, dan lain lain",
 	"ip_geo": "/ip_geo digunakan untuk melihat informasi server atau host berdasarkan geolokasi",
 	"faker": "/faker digunakan untuk menggenerate data dummy alias fake data. ini hanya untuk misal percobaan dll",
@@ -38,5 +37,6 @@
 	"ripemd160": "/ripemd160 digunakan untuk mengconvert string ke algoritma tersebut",
 	"ripemd256": "/ripemd256 digunakan untuk mengconvert string ke algoritma tersebut",
 	"ripemd320": "/ripemd320 digunakan untuk mengconvert string ke algoritma tersebut",
+	"cnames": "/get_cname merupakan command untuk mendapatkan data CNAME website. ini berguna sekali jika anda merupakan developers.",
 	"whirlpool": "/whirlpool \r\ndigunakan untuk mengconvert string ke algoritma tersebut. \r\n\r\nDalam ilmu komputer dan kriptografi, Whirlpool adalah fungsi hash kriptografi. Ini dirancang oleh Vincent Rijmen dan Paulo S. L. M. Barreto, yang pertama kali menggambarkannya pada tahun 2000. Hash telah direkomendasikan oleh proyek NESSIE. \r\n\r\nUntuk menggunakan command ini cara nya mudah. Kamu cukup menulis <pre>/whirlpool {teks}</pre> \r\n\r\nContoh:\r\n<pre>/whirlpool Kamu aku</pre> \r\n\r\nNanti dia akan mengembalikan bentuk hash dari algoritma tersebut"
 }
