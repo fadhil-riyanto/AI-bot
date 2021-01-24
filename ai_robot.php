@@ -89,6 +89,7 @@ function hyphenize($string)
 		'simi' => 'fadhil',
 		'sim' => 'fadhil',
 		'simsimi' => 'fadhil',
+		'sasimi' => 'fadhil',
 		'gila' => 'sehat',
 		'knp' => 'kenapa',
 		'bokep' => 'nonton drakor',
