@@ -557,15 +557,12 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	$telegram->sendMessage($content);
 	exit;
 } elseif (isset($memberBaru)) {
-	if ($usernameBelumdiparse == 'Fadhil_riyanto_bot') {
+	if ($usernameBelumdiparse == 'Fadhil_riyanto_bot' || $nama_gc == 'scriptiseng') {
 		exit;
 	}
 	$reply = 'Halo ' . $username . ', apa kabar mu?';
 	$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-	$url = $telegram->sendMessage($content);
-	sleep(300);
-	$content = array('chat_id' => $chat_id,  'message_id' => $url['result']['message_id']);
-	$url = $telegram->deleteMessage($content);
+	$telegram->sendMessage($content);
 	exit;
 } elseif ('/help' == $adanParse[0] || '/help@fadhil_riyanto_bot' == $adanParse[0]) {
 	if (detect_grup() == true) {
