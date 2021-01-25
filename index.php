@@ -548,7 +548,7 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	$telegram->sendMessage($content);
 	exit;
 } elseif (isset($memberBaru)) {
-	if ($usernameBelumdiparse == 'Fadhil_riyanto_bot') {
+	if ($usernameBelumdiparse == 'Fadhil_riyanto_bot' || $nama_gc == 'scriptiseng') {
 		exit;
 	}
 	$reply = 'Halo ' . $username . ', apa kabar mu?';
