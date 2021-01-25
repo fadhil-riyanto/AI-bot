@@ -526,6 +526,15 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
 	$telegram->sendMessage($content);
 	exit;
+} elseif ($text == '/debug' || $text == '/debug@fadhil_riyanto_bot') {
+
+	$reply = 'Hai ' . $username . ', Apa kabar? ';
+	$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+	// $url = $telegram->sendMessage($content);
+	// sleep(10);
+	// $content = array('chat_id' => $chat_id,  'message_id' => $url['result']['message_id']);
+	// $url = $telegram->deleteMessage($content);
+	exit;
 } elseif ($text == '/leave' || $text == '/leave@fadhil_riyanto_bot') {
 	if ($userID == $userid_pemilik) {
 		$content = array('chat_id' => '@fadhil_riyanto_project');
@@ -548,12 +557,15 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	$telegram->sendMessage($content);
 	exit;
 } elseif (isset($memberBaru)) {
-	if ($usernameBelumdiparse == 'Fadhil_riyanto_bot' || $nama_gc == 'scriptiseng') {
+	if ($usernameBelumdiparse == 'Fadhil_riyanto_bot') {
 		exit;
 	}
 	$reply = 'Halo ' . $username . ', apa kabar mu?';
 	$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-	$telegram->sendMessage($content);
+	$url = $telegram->sendMessage($content);
+	sleep(300);
+	$content = array('chat_id' => $chat_id,  'message_id' => $url['result']['message_id']);
+	$url = $telegram->deleteMessage($content);
 	exit;
 } elseif ('/help' == $adanParse[0] || '/help@fadhil_riyanto_bot' == $adanParse[0]) {
 	if (detect_grup() == true) {
