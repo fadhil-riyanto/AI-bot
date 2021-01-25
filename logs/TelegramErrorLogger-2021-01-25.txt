@@ -1,0 +1,757 @@
+============[Date]============
+[ 2021-01-25 06:48:43  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: bot is not a member of the supergroup chat
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804389495
+ref.message.message_id= 12478
+ref.message.from.id= 1489990155
+ref.message.from.is_bot= true
+ref.message.from.first_name= Fadhil Riyanto Bot
+ref.message.from.username= Fadhil_riyanto_bot
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= Fadhil's bot Project
+ref.message.chat.username= fadhil_riyanto_project
+ref.message.chat.type= supergroup
+ref.message.date= 1611532119
+ref.message.left_chat_participant.id= 1489990155
+ref.message.left_chat_participant.is_bot= true
+ref.message.left_chat_participant.first_name= Fadhil Riyanto Bot
+ref.message.left_chat_participant.username= Fadhil_riyanto_bot
+ref.message.left_chat_member.id= 1489990155
+ref.message.left_chat_member.is_bot= true
+ref.message.left_chat_member.first_name= Fadhil Riyanto Bot
+ref.message.left_chat_member.username= Fadhil_riyanto_bot
+
+
+[ref]
+ref.action= typing
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(131): Telegram->endpoint('sendChatAction', Array)
+#3 C:\bot telegram\index.php(227): Telegram->sendChatAction(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-25 06:51:31  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804389496
+ref.message.message_id= 9201
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1611532286
+ref.message.text= /debug
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(255): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-25 06:54:54  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message can't be edited
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804389501
+ref.message.message_id= 9209
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1611532489
+ref.message.text= /debug
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.message_id= 9209
+ref.text= hey
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(184): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\index.php(258): Telegram->editMessageText(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-25 06:55:10  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message can't be edited
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804389502
+ref.message.message_id= 9211
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1611532504
+ref.message.text= /debug
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.message_id= 9211
+ref.text= hey
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(184): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\index.php(258): Telegram->editMessageText(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-25 10:53:56  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.action= typing
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(131): Telegram->endpoint('sendChatAction', Array)
+#3 C:\bot telegram\index.php(227): Telegram->sendChatAction(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-25 10:53:58  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.action= typing
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(131): Telegram->endpoint('sendChatAction', Array)
+#3 C:\bot telegram\index.php(227): Telegram->sendChatAction(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-25 10:54:04  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.action= typing
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(131): Telegram->endpoint('sendChatAction', Array)
+#3 C:\bot telegram\index.php(227): Telegram->sendChatAction(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-25 13:08:11  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Can't find end tag corresponding to start tag pre
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804389587
+ref.message.message_id= 6213
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕊𝕔𝕣𝕚𝕡𝕥 𝕀𝕤𝕖𝕟𝕘®
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1611554887
+ref.message.text= /cuaca@Fadhil_riyanto_bot
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 25
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Maaf, gunakan pattern 
+<pre>/cuaca {namakota}.
+
+contoh /cuaca jakarta
+ref.reply_to_message_id= 6213
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(265): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-25 14:59:36  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse inline keyboard button: Text buttons are unallowed in the inline keyboard
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804389624
+ref.message.message_id= 9390
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1611561561
+ref.message.text= /cuaca makassar
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 📌 <b></b>
+
+ℹ️ <b>Info daerah</b>
+Negara : 
+Waktu lokal : 
+Zona waktu : 
+
+ℹ️ <b>Info Sederhana</b>
+Suhu celcius : 
+Suhu farenheit : 
+kelembaban : 
+awan : 
+kondisi : Hubungi @fadhil_riyanto untuk bug kondisi cuaca!
+Ultraviolet : 
+
+
+ref.reply_markup= {"inline_keyboard":[[{"text":"Github Account"}],[{"text":"Repository","url":"?tab=repositories"}]]}
+ref.reply_to_message_id= 9390
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(474): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-25 15:07:00  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: bot is not a member of the supergroup chat
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804389630
+ref.callback_query.id= 5984360330013699371
+ref.callback_query.from.id= 1393342467
+ref.callback_query.from.is_bot= false
+ref.callback_query.from.first_name= Fadhil
+ref.callback_query.from.last_name= Riyanto
+ref.callback_query.from.username= fadhil_riyanto
+ref.callback_query.from.language_code= id
+ref.callback_query.message.message_id= 25
+ref.callback_query.message.from.id= 1489990155
+ref.callback_query.message.from.is_bot= true
+ref.callback_query.message.from.first_name= Fadhil Riyanto Bot
+ref.callback_query.message.from.username= Fadhil_riyanto_bot
+ref.callback_query.message.chat.id= -1001193873220
+ref.callback_query.message.chat.title= Testing12345
+ref.callback_query.message.chat.username= testing7382
+ref.callback_query.message.chat.type= supergroup
+ref.callback_query.message.date= 1611562002
+ref.callback_query.message.reply_to_message.message_id= 24
+ref.callback_query.message.reply_to_message.from.id= 1393342467
+ref.callback_query.message.reply_to_message.from.is_bot= false
+ref.callback_query.message.reply_to_message.from.first_name= Fadhil
+ref.callback_query.message.reply_to_message.from.last_name= Riyanto
+ref.callback_query.message.reply_to_message.from.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.from.language_code= id
+ref.callback_query.message.reply_to_message.chat.id= -1001193873220
+ref.callback_query.message.reply_to_message.chat.title= Testing12345
+ref.callback_query.message.reply_to_message.chat.username= testing7382
+ref.callback_query.message.reply_to_message.chat.type= supergroup
+ref.callback_query.message.reply_to_message.date= 1611561996
+ref.callback_query.message.reply_to_message.text= /cuaca semarang
+ref.callback_query.message.reply_to_message.entities.0.offset= 0
+ref.callback_query.message.reply_to_message.entities.0.length= 6
+ref.callback_query.message.reply_to_message.entities.0.type= bot_command
+ref.callback_query.message.text= 📌 Semarang
+
+ℹ️ Info daerah
+Negara : Indonesia
+Waktu lokal : 2021-01-25 15:06
+Zona waktu : Asia/Jakarta
+
+ℹ️ Info Sederhana
+Suhu celcius : 28.6
+Suhu farenheit : 83.5
+kelembaban : 73
+awan : 57
+kondisi : Kemungkinan hujan tidak merata
+Ultraviolet : 6
+ref.callback_query.message.entities.0.offset= 3
+ref.callback_query.message.entities.0.length= 8
+ref.callback_query.message.entities.0.type= bold
+ref.callback_query.message.entities.1.offset= 16
+ref.callback_query.message.entities.1.length= 11
+ref.callback_query.message.entities.1.type= bold
+ref.callback_query.message.entities.2.offset= 108
+ref.callback_query.message.entities.2.length= 14
+ref.callback_query.message.entities.2.type= bold
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.text= Selengkapnya
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.callback_data= /cuaca_tidak_sederhana Semarang
+ref.callback_query.chat_instance= 5637726438305160746
+ref.callback_query.data= /cuaca_tidak_sederhana Semarang
+
+
+[ref]
+ref.text= 📌 <b>Semarang</b>
+
+ℹ️ <b>Info daerah</b>
+Negara : Indonesia
+Waktu lokal : 2021-01-25 15:06
+Zona waktu : Asia/Jakarta
+
+ℹ️ <b>Info Sederhana</b>
+Suhu celcius : 28.6
+Suhu farenheit : 83.5
+kelembaban : 73
+awan : 57
+Ultraviolet : 6
+
+ℹ️ <b>Info Lebih lanjut</b>
+Kecepatan angin (MPH) : 7.8
+Kecepatan angin (KPH) : 12.6
+derajat angin : 321
+arah angin : NW
+tekanan mb : 1009
+tekanan masuk : 30.3
+presipitasi Mm : 0.2
+presipitasi In : 0.01
+feelslike_c : 32.5
+feelslike_f : 90.5
+vis_km : 9.7
+vis_miles : 6
+gust_mph : 9.2
+gust_kph : 14.8
+
+ref.reply_to_message_id= 25
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(529): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-25 15:07:03  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: bot is not a member of the supergroup chat
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804389631
+ref.message.message_id= 27
+ref.message.from.id= 1489990155
+ref.message.from.is_bot= true
+ref.message.from.first_name= Fadhil Riyanto Bot
+ref.message.from.username= Fadhil_riyanto_bot
+ref.message.chat.id= -1001193873220
+ref.message.chat.title= Testing12345
+ref.message.chat.username= testing7382
+ref.message.chat.type= supergroup
+ref.message.date= 1611562018
+ref.message.left_chat_participant.id= 1489990155
+ref.message.left_chat_participant.is_bot= true
+ref.message.left_chat_participant.first_name= Fadhil Riyanto Bot
+ref.message.left_chat_participant.username= Fadhil_riyanto_bot
+ref.message.left_chat_member.id= 1489990155
+ref.message.left_chat_member.is_bot= true
+ref.message.left_chat_member.first_name= Fadhil Riyanto Bot
+ref.message.left_chat_member.username= Fadhil_riyanto_bot
+
+
+[ref]
+ref.action= typing
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(131): Telegram->endpoint('sendChatAction', Array)
+#3 C:\bot telegram\index.php(229): Telegram->sendChatAction(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-25 15:08:19  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: bot is not a member of the supergroup chat
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804389634
+ref.callback_query.id= 5984360331138419641
+ref.callback_query.from.id= 1393342467
+ref.callback_query.from.is_bot= false
+ref.callback_query.from.first_name= Fadhil
+ref.callback_query.from.last_name= Riyanto
+ref.callback_query.from.username= fadhil_riyanto
+ref.callback_query.from.language_code= id
+ref.callback_query.message.message_id= 31
+ref.callback_query.message.from.id= 1489990155
+ref.callback_query.message.from.is_bot= true
+ref.callback_query.message.from.first_name= Fadhil Riyanto Bot
+ref.callback_query.message.from.username= Fadhil_riyanto_bot
+ref.callback_query.message.chat.id= -1001193873220
+ref.callback_query.message.chat.title= Testing12345
+ref.callback_query.message.chat.username= testing7382
+ref.callback_query.message.chat.type= supergroup
+ref.callback_query.message.date= 1611562091
+ref.callback_query.message.reply_to_message.message_id= 30
+ref.callback_query.message.reply_to_message.from.id= 1393342467
+ref.callback_query.message.reply_to_message.from.is_bot= false
+ref.callback_query.message.reply_to_message.from.first_name= Fadhil
+ref.callback_query.message.reply_to_message.from.last_name= Riyanto
+ref.callback_query.message.reply_to_message.from.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.from.language_code= id
+ref.callback_query.message.reply_to_message.chat.id= -1001193873220
+ref.callback_query.message.reply_to_message.chat.title= Testing12345
+ref.callback_query.message.reply_to_message.chat.username= testing7382
+ref.callback_query.message.reply_to_message.chat.type= supergroup
+ref.callback_query.message.reply_to_message.date= 1611562087
+ref.callback_query.message.reply_to_message.text= /cuaca semarang
+ref.callback_query.message.reply_to_message.entities.0.offset= 0
+ref.callback_query.message.reply_to_message.entities.0.length= 6
+ref.callback_query.message.reply_to_message.entities.0.type= bot_command
+ref.callback_query.message.text= 📌 Semarang
+
+ℹ️ Info daerah
+Negara : Indonesia
+Waktu lokal : 2021-01-25 15:06
+Zona waktu : Asia/Jakarta
+
+ℹ️ Info Sederhana
+Suhu celcius : 28.6
+Suhu farenheit : 83.5
+kelembaban : 73
+awan : 57
+kondisi : Kemungkinan hujan tidak merata
+Ultraviolet : 6
+ref.callback_query.message.entities.0.offset= 3
+ref.callback_query.message.entities.0.length= 8
+ref.callback_query.message.entities.0.type= bold
+ref.callback_query.message.entities.1.offset= 16
+ref.callback_query.message.entities.1.length= 11
+ref.callback_query.message.entities.1.type= bold
+ref.callback_query.message.entities.2.offset= 108
+ref.callback_query.message.entities.2.length= 14
+ref.callback_query.message.entities.2.type= bold
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.text= Selengkapnya
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.callback_data= /cuaca_tidak_sederhana Semarang
+ref.callback_query.chat_instance= 5637726438305160746
+ref.callback_query.data= /cuaca_tidak_sederhana Semarang
+
+
+[ref]
+ref.text= 📌 <b>Semarang</b>
+
+ℹ️ <b>Info daerah</b>
+Negara : Indonesia
+Waktu lokal : 2021-01-25 15:06
+Zona waktu : Asia/Jakarta
+
+ℹ️ <b>Info Sederhana</b>
+Suhu celcius : 28.6
+Suhu farenheit : 83.5
+kelembaban : 73
+awan : 57
+Ultraviolet : 6
+
+ℹ️ <b>Info Lebih lanjut</b>
+Kecepatan angin (MPH) : 7.8
+Kecepatan angin (KPH) : 12.6
+derajat angin : 321
+arah angin : NW
+tekanan mb : 1009
+tekanan masuk : 30.3
+presipitasi Mm : 0.2
+presipitasi In : 0.01
+feelslike_c : 32.5
+feelslike_f : 90.5
+vis_km : 9.7
+vis_miles : 6
+gust_mph : 9.2
+gust_kph : 14.8
+
+ref.reply_to_message_id= 31
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(529): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-25 15:08:21  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: bot is not a member of the supergroup chat
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804389635
+ref.message.message_id= 33
+ref.message.from.id= 1489990155
+ref.message.from.is_bot= true
+ref.message.from.first_name= Fadhil Riyanto Bot
+ref.message.from.username= Fadhil_riyanto_bot
+ref.message.chat.id= -1001193873220
+ref.message.chat.title= Testing12345
+ref.message.chat.username= testing7382
+ref.message.chat.type= supergroup
+ref.message.date= 1611562097
+ref.message.left_chat_participant.id= 1489990155
+ref.message.left_chat_participant.is_bot= true
+ref.message.left_chat_participant.first_name= Fadhil Riyanto Bot
+ref.message.left_chat_participant.username= Fadhil_riyanto_bot
+ref.message.left_chat_member.id= 1489990155
+ref.message.left_chat_member.is_bot= true
+ref.message.left_chat_member.first_name= Fadhil Riyanto Bot
+ref.message.left_chat_member.username= Fadhil_riyanto_bot
+
+
+[ref]
+ref.action= typing
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(131): Telegram->endpoint('sendChatAction', Array)
+#3 C:\bot telegram\index.php(229): Telegram->sendChatAction(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-25 15:11:55  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: bot is not a member of the group chat
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804389641
+ref.message.message_id= 9398
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= -464950750
+ref.message.chat.title= Hhhhh87777
+ref.message.chat.type= group
+ref.message.chat.all_members_are_administrators= true
+ref.message.date= 1611562309
+ref.message.new_chat_participant.id= 1489990155
+ref.message.new_chat_participant.is_bot= true
+ref.message.new_chat_participant.first_name= Fadhil Riyanto Bot
+ref.message.new_chat_participant.username= Fadhil_riyanto_bot
+ref.message.new_chat_member.id= 1489990155
+ref.message.new_chat_member.is_bot= true
+ref.message.new_chat_member.first_name= Fadhil Riyanto Bot
+ref.message.new_chat_member.username= Fadhil_riyanto_bot
+ref.message.new_chat_members.0.id= 1489990155
+ref.message.new_chat_members.0.is_bot= true
+ref.message.new_chat_members.0.first_name= Fadhil Riyanto Bot
+ref.message.new_chat_members.0.username= Fadhil_riyanto_bot
+
+
+[ref]
+ref.text= Halo  @fadhil_riyanto, apa kabar mu?
+ref.reply_to_message_id= 9398
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(556): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-25 15:11:58  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: bot is not a member of the group chat
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804389642
+ref.message.message_id= 9400
+ref.message.from.id= 1489990155
+ref.message.from.is_bot= true
+ref.message.from.first_name= Fadhil Riyanto Bot
+ref.message.from.username= Fadhil_riyanto_bot
+ref.message.chat.id= -464950750
+ref.message.chat.title= Hhhhh87777
+ref.message.chat.type= group
+ref.message.chat.all_members_are_administrators= true
+ref.message.date= 1611562313
+ref.message.left_chat_participant.id= 1489990155
+ref.message.left_chat_participant.is_bot= true
+ref.message.left_chat_participant.first_name= Fadhil Riyanto Bot
+ref.message.left_chat_participant.username= Fadhil_riyanto_bot
+ref.message.left_chat_member.id= 1489990155
+ref.message.left_chat_member.is_bot= true
+ref.message.left_chat_member.first_name= Fadhil Riyanto Bot
+ref.message.left_chat_member.username= Fadhil_riyanto_bot
+
+
+[ref]
+ref.action= typing
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(131): Telegram->endpoint('sendChatAction', Array)
+#3 C:\bot telegram\index.php(229): Telegram->sendChatAction(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-25 15:12:01  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: bot is not a member of the group chat
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804389642
+ref.message.message_id= 9400
+ref.message.from.id= 1489990155
+ref.message.from.is_bot= true
+ref.message.from.first_name= Fadhil Riyanto Bot
+ref.message.from.username= Fadhil_riyanto_bot
+ref.message.chat.id= -464950750
+ref.message.chat.title= Hhhhh87777
+ref.message.chat.type= group
+ref.message.chat.all_members_are_administrators= true
+ref.message.date= 1611562313
+ref.message.left_chat_participant.id= 1489990155
+ref.message.left_chat_participant.is_bot= true
+ref.message.left_chat_participant.first_name= Fadhil Riyanto Bot
+ref.message.left_chat_participant.username= Fadhil_riyanto_bot
+ref.message.left_chat_member.id= 1489990155
+ref.message.left_chat_member.is_bot= true
+ref.message.left_chat_member.first_name= Fadhil Riyanto Bot
+ref.message.left_chat_member.username= Fadhil_riyanto_bot
+
+
+[ref]
+ref.text= Maaf, saya diprogram oleh pemilik saya untuk tidak dimasukkan ke grup. Jika anda masih tetap memasukkan saya ke grup. maka otomatis saya akan mengeluarkan diri.
+ref.reply_to_message_id= 9400
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(515): Telegram->sendMessage(Array)
+#4 {main}
+
