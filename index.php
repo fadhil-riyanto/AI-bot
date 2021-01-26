@@ -8,7 +8,7 @@ define('USER_ID_TG_ME', '1393342467');										//WAJIB
 define('CUTLLY_API', 'fa1d93ba90dedd2ceb7d01e9bade271653373');				//WAJIB
 define('TIME_ZONE', 'Asia/Jakarta');										//WAJIB
 define('API_WEATHER_KEY', '7cf7252c68d3473681054158212501');				//WAJIB
-define('MAX_EXECUTE_SCRIPT', 20);											//SUNNAH_ROSUL
+define('MAX_EXECUTE_SCRIPT', 30);											//SUNNAH_ROSUL
 
 
 
@@ -442,7 +442,7 @@ if ('/cuaca' == $adanParse[0] || '/cuaca@fadhil_riyanto_bot' == $adanParse[0]) {
 			$keyb = $telegram->buildInlineKeyBoard($option);
 
 			$content = array('chat_id' => $chat_id, 'text' => $reply, 'disable_web_page_preview' => true, 'reply_markup' => $keyb, 'reply_to_message_id' => $message_id, 'disable_web_page_preview' => true, 'parse_mode' => 'html');
-			$telegram->sendMessage($content);
+			$cuacabtn = $telegram->sendMessage($content);
 		}
 	}
 	exit;
@@ -469,6 +469,7 @@ if ('/cuaca' == $adanParse[0] || '/cuaca@fadhil_riyanto_bot' == $adanParse[0]) {
 			$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
 			$telegram->sendMessage($content);
 		} else {
+
 			$reply = '📌 <b>' . $h_weat->location->name . '</b>' . PHP_EOL . PHP_EOL .
 				'ℹ️ <b>Info daerah</b>' .  PHP_EOL .
 				'Negara : ' . $h_weat->location->country . PHP_EOL .
@@ -557,12 +558,15 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	$telegram->sendMessage($content);
 	exit;
 } elseif (isset($memberBaru)) {
-	if ($usernameBelumdiparse == 'Fadhil_riyanto_bot' || $nama_gc == 'scriptiseng') {
+	if ($usernameBelumdiparse == 'Fadhil_riyanto_bot') {
 		exit;
 	}
 	$reply = 'Halo ' . $username . ', apa kabar mu?';
 	$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-	$telegram->sendMessage($content);
+	$url = $telegram->sendMessage($content);
+	sleep(10);
+	$content = array('chat_id' => $chat_id,  'message_id' => $url['result']['message_id']);
+	$url = $telegram->deleteMessage($content);
 	exit;
 } elseif ('/help' == $adanParse[0] || '/help@fadhil_riyanto_bot' == $adanParse[0]) {
 	if (detect_grup() == true) {

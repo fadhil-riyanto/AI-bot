@@ -836,3 +836,339 @@ ref.disable_web_page_preview= true
 #3 C:\bot telegram\index.php(538): Telegram->sendMessage(Array)
 #4 {main}
 
+============[Date]============
+[ 2021-01-25 22:50:49  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message identifier is not specified
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804389706
+ref.callback_query.id= 5984360331750979309
+ref.callback_query.from.id= 1393342467
+ref.callback_query.from.is_bot= false
+ref.callback_query.from.first_name= Fadhil
+ref.callback_query.from.last_name= Riyanto
+ref.callback_query.from.username= fadhil_riyanto
+ref.callback_query.from.language_code= en
+ref.callback_query.message.message_id= 9458
+ref.callback_query.message.from.id= 1489990155
+ref.callback_query.message.from.is_bot= true
+ref.callback_query.message.from.first_name= Fadhil Riyanto Bot
+ref.callback_query.message.from.username= Fadhil_riyanto_bot
+ref.callback_query.message.chat.id= 1393342467
+ref.callback_query.message.chat.first_name= Fadhil
+ref.callback_query.message.chat.last_name= Riyanto
+ref.callback_query.message.chat.username= fadhil_riyanto
+ref.callback_query.message.chat.type= private
+ref.callback_query.message.date= 1611589834
+ref.callback_query.message.reply_to_message.message_id= 9457
+ref.callback_query.message.reply_to_message.from.id= 1393342467
+ref.callback_query.message.reply_to_message.from.is_bot= false
+ref.callback_query.message.reply_to_message.from.first_name= Fadhil
+ref.callback_query.message.reply_to_message.from.last_name= Riyanto
+ref.callback_query.message.reply_to_message.from.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.from.language_code= en
+ref.callback_query.message.reply_to_message.chat.id= 1393342467
+ref.callback_query.message.reply_to_message.chat.first_name= Fadhil
+ref.callback_query.message.reply_to_message.chat.last_name= Riyanto
+ref.callback_query.message.reply_to_message.chat.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.chat.type= private
+ref.callback_query.message.reply_to_message.date= 1611589830
+ref.callback_query.message.reply_to_message.text= /cuaca jakarta
+ref.callback_query.message.reply_to_message.entities.0.offset= 0
+ref.callback_query.message.reply_to_message.entities.0.length= 6
+ref.callback_query.message.reply_to_message.entities.0.type= bot_command
+ref.callback_query.message.text= 📌 Jakarta
+
+ℹ️ Info daerah
+Negara : Indonesia
+Waktu lokal : 2021-01-25 22:50
+Zona waktu : Asia/Jakarta
+
+ℹ️ Info Sederhana
+Suhu celcius : 26
+Suhu farenheit : 78.8
+kelembaban : 89
+awan : 50
+kondisi : Hujan ringan tidak merata
+Ultraviolet : 1
+ref.callback_query.message.entities.0.offset= 3
+ref.callback_query.message.entities.0.length= 7
+ref.callback_query.message.entities.0.type= bold
+ref.callback_query.message.entities.1.offset= 15
+ref.callback_query.message.entities.1.length= 11
+ref.callback_query.message.entities.1.type= bold
+ref.callback_query.message.entities.2.offset= 107
+ref.callback_query.message.entities.2.length= 14
+ref.callback_query.message.entities.2.type= bold
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.text= Selengkapnya
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.callback_data= /cuaca_tidak_sederhana Jakarta
+ref.callback_query.chat_instance= -5109722127778484442
+ref.callback_query.data= /cuaca_tidak_sederhana Jakarta
+
+
+[ref]
+ref.message_id= 
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(548): Telegram->endpoint('deleteMessage', Array)
+#3 C:\bot telegram\index.php(473): Telegram->deleteMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-25 22:52:36  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message identifier is not specified
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804389708
+ref.callback_query.id= 5984360330065344118
+ref.callback_query.from.id= 1393342467
+ref.callback_query.from.is_bot= false
+ref.callback_query.from.first_name= Fadhil
+ref.callback_query.from.last_name= Riyanto
+ref.callback_query.from.username= fadhil_riyanto
+ref.callback_query.from.language_code= en
+ref.callback_query.message.message_id= 9461
+ref.callback_query.message.from.id= 1489990155
+ref.callback_query.message.from.is_bot= true
+ref.callback_query.message.from.first_name= Fadhil Riyanto Bot
+ref.callback_query.message.from.username= Fadhil_riyanto_bot
+ref.callback_query.message.chat.id= 1393342467
+ref.callback_query.message.chat.first_name= Fadhil
+ref.callback_query.message.chat.last_name= Riyanto
+ref.callback_query.message.chat.username= fadhil_riyanto
+ref.callback_query.message.chat.type= private
+ref.callback_query.message.date= 1611589953
+ref.callback_query.message.reply_to_message.message_id= 9460
+ref.callback_query.message.reply_to_message.from.id= 1393342467
+ref.callback_query.message.reply_to_message.from.is_bot= false
+ref.callback_query.message.reply_to_message.from.first_name= Fadhil
+ref.callback_query.message.reply_to_message.from.last_name= Riyanto
+ref.callback_query.message.reply_to_message.from.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.from.language_code= en
+ref.callback_query.message.reply_to_message.chat.id= 1393342467
+ref.callback_query.message.reply_to_message.chat.first_name= Fadhil
+ref.callback_query.message.reply_to_message.chat.last_name= Riyanto
+ref.callback_query.message.reply_to_message.chat.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.chat.type= private
+ref.callback_query.message.reply_to_message.date= 1611589948
+ref.callback_query.message.reply_to_message.text= /cuaca jakarta
+ref.callback_query.message.reply_to_message.entities.0.offset= 0
+ref.callback_query.message.reply_to_message.entities.0.length= 6
+ref.callback_query.message.reply_to_message.entities.0.type= bot_command
+ref.callback_query.message.text= 📌 Jakarta
+
+ℹ️ Info daerah
+Negara : Indonesia
+Waktu lokal : 2021-01-25 22:50
+Zona waktu : Asia/Jakarta
+
+ℹ️ Info Sederhana
+Suhu celcius : 26
+Suhu farenheit : 78.8
+kelembaban : 89
+awan : 50
+kondisi : Hujan ringan tidak merata
+Ultraviolet : 1
+ref.callback_query.message.entities.0.offset= 3
+ref.callback_query.message.entities.0.length= 7
+ref.callback_query.message.entities.0.type= bold
+ref.callback_query.message.entities.1.offset= 15
+ref.callback_query.message.entities.1.length= 11
+ref.callback_query.message.entities.1.type= bold
+ref.callback_query.message.entities.2.offset= 107
+ref.callback_query.message.entities.2.length= 14
+ref.callback_query.message.entities.2.type= bold
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.text= Selengkapnya
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.callback_data= /cuaca_tidak_sederhana Jakarta
+ref.callback_query.chat_instance= -5109722127778484442
+ref.callback_query.data= /cuaca_tidak_sederhana Jakarta
+
+
+[ref]
+ref.message_id= 
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(548): Telegram->endpoint('deleteMessage', Array)
+#3 C:\bot telegram\index.php(473): Telegram->deleteMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-25 22:53:55  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message identifier is not specified
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804389710
+ref.callback_query.id= 5984360330860653121
+ref.callback_query.from.id= 1393342467
+ref.callback_query.from.is_bot= false
+ref.callback_query.from.first_name= Fadhil
+ref.callback_query.from.last_name= Riyanto
+ref.callback_query.from.username= fadhil_riyanto
+ref.callback_query.from.language_code= en
+ref.callback_query.message.message_id= 9464
+ref.callback_query.message.from.id= 1489990155
+ref.callback_query.message.from.is_bot= true
+ref.callback_query.message.from.first_name= Fadhil Riyanto Bot
+ref.callback_query.message.from.username= Fadhil_riyanto_bot
+ref.callback_query.message.chat.id= 1393342467
+ref.callback_query.message.chat.first_name= Fadhil
+ref.callback_query.message.chat.last_name= Riyanto
+ref.callback_query.message.chat.username= fadhil_riyanto
+ref.callback_query.message.chat.type= private
+ref.callback_query.message.date= 1611590030
+ref.callback_query.message.reply_to_message.message_id= 9463
+ref.callback_query.message.reply_to_message.from.id= 1393342467
+ref.callback_query.message.reply_to_message.from.is_bot= false
+ref.callback_query.message.reply_to_message.from.first_name= Fadhil
+ref.callback_query.message.reply_to_message.from.last_name= Riyanto
+ref.callback_query.message.reply_to_message.from.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.from.language_code= en
+ref.callback_query.message.reply_to_message.chat.id= 1393342467
+ref.callback_query.message.reply_to_message.chat.first_name= Fadhil
+ref.callback_query.message.reply_to_message.chat.last_name= Riyanto
+ref.callback_query.message.reply_to_message.chat.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.chat.type= private
+ref.callback_query.message.reply_to_message.date= 1611590026
+ref.callback_query.message.reply_to_message.text= /cuaca jakarta
+ref.callback_query.message.reply_to_message.entities.0.offset= 0
+ref.callback_query.message.reply_to_message.entities.0.length= 6
+ref.callback_query.message.reply_to_message.entities.0.type= bot_command
+ref.callback_query.message.text= 📌 Jakarta
+
+ℹ️ Info daerah
+Negara : Indonesia
+Waktu lokal : 2021-01-25 22:53
+Zona waktu : Asia/Jakarta
+
+ℹ️ Info Sederhana
+Suhu celcius : 26
+Suhu farenheit : 78.8
+kelembaban : 89
+awan : 50
+kondisi : Hujan ringan tidak merata
+Ultraviolet : 1
+ref.callback_query.message.entities.0.offset= 3
+ref.callback_query.message.entities.0.length= 7
+ref.callback_query.message.entities.0.type= bold
+ref.callback_query.message.entities.1.offset= 15
+ref.callback_query.message.entities.1.length= 11
+ref.callback_query.message.entities.1.type= bold
+ref.callback_query.message.entities.2.offset= 107
+ref.callback_query.message.entities.2.length= 14
+ref.callback_query.message.entities.2.type= bold
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.text= Selengkapnya
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.callback_data= /cuaca_tidak_sederhana Jakarta
+ref.callback_query.chat_instance= -5109722127778484442
+ref.callback_query.data= /cuaca_tidak_sederhana Jakarta
+
+
+[ref]
+ref.message_id= 
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(548): Telegram->endpoint('deleteMessage', Array)
+#3 C:\bot telegram\index.php(473): Telegram->deleteMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-25 22:54:59  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message identifier is not specified
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804389712
+ref.callback_query.id= 5984360330031109193
+ref.callback_query.from.id= 1393342467
+ref.callback_query.from.is_bot= false
+ref.callback_query.from.first_name= Fadhil
+ref.callback_query.from.last_name= Riyanto
+ref.callback_query.from.username= fadhil_riyanto
+ref.callback_query.from.language_code= en
+ref.callback_query.message.message_id= 9467
+ref.callback_query.message.from.id= 1489990155
+ref.callback_query.message.from.is_bot= true
+ref.callback_query.message.from.first_name= Fadhil Riyanto Bot
+ref.callback_query.message.from.username= Fadhil_riyanto_bot
+ref.callback_query.message.chat.id= 1393342467
+ref.callback_query.message.chat.first_name= Fadhil
+ref.callback_query.message.chat.last_name= Riyanto
+ref.callback_query.message.chat.username= fadhil_riyanto
+ref.callback_query.message.chat.type= private
+ref.callback_query.message.date= 1611590095
+ref.callback_query.message.reply_to_message.message_id= 9466
+ref.callback_query.message.reply_to_message.from.id= 1393342467
+ref.callback_query.message.reply_to_message.from.is_bot= false
+ref.callback_query.message.reply_to_message.from.first_name= Fadhil
+ref.callback_query.message.reply_to_message.from.last_name= Riyanto
+ref.callback_query.message.reply_to_message.from.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.from.language_code= en
+ref.callback_query.message.reply_to_message.chat.id= 1393342467
+ref.callback_query.message.reply_to_message.chat.first_name= Fadhil
+ref.callback_query.message.reply_to_message.chat.last_name= Riyanto
+ref.callback_query.message.reply_to_message.chat.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.chat.type= private
+ref.callback_query.message.reply_to_message.date= 1611590091
+ref.callback_query.message.reply_to_message.text= /cuaca jakarta
+ref.callback_query.message.reply_to_message.entities.0.offset= 0
+ref.callback_query.message.reply_to_message.entities.0.length= 6
+ref.callback_query.message.reply_to_message.entities.0.type= bot_command
+ref.callback_query.message.text= 📌 Jakarta
+
+ℹ️ Info daerah
+Negara : Indonesia
+Waktu lokal : 2021-01-25 22:53
+Zona waktu : Asia/Jakarta
+
+ℹ️ Info Sederhana
+Suhu celcius : 26
+Suhu farenheit : 78.8
+kelembaban : 89
+awan : 50
+kondisi : Hujan ringan tidak merata
+Ultraviolet : 1
+ref.callback_query.message.entities.0.offset= 3
+ref.callback_query.message.entities.0.length= 7
+ref.callback_query.message.entities.0.type= bold
+ref.callback_query.message.entities.1.offset= 15
+ref.callback_query.message.entities.1.length= 11
+ref.callback_query.message.entities.1.type= bold
+ref.callback_query.message.entities.2.offset= 107
+ref.callback_query.message.entities.2.length= 14
+ref.callback_query.message.entities.2.type= bold
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.text= Selengkapnya
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.callback_data= /cuaca_tidak_sederhana Jakarta
+ref.callback_query.chat_instance= -5109722127778484442
+ref.callback_query.data= /cuaca_tidak_sederhana Jakarta
+
+
+[ref]
+ref.message_id= 
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(548): Telegram->endpoint('deleteMessage', Array)
+#3 C:\bot telegram\index.php(473): Telegram->deleteMessage(Array)
+#4 {main}
+
