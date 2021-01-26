@@ -499,7 +499,7 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	$reply = 'Halo ' . $username . ', apa kabar mu?';
 	$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
 	$url = $telegram->sendMessage($content);
-	sleep(300);
+	sleep(5);
 	$content = array('chat_id' => $chat_id,  'message_id' => $url['result']['message_id']);
 	$url = $telegram->deleteMessage($content);
 	exit;
