@@ -3,12 +3,12 @@ define('DB_HOST', 'freedb.tech');											//WAJIB
 define('DB_USERNAME', 'freedbtech_ai_bot_fadhil_riyanto');					//WAJIB
 define('DB_PASSWORD', '789b697698hyufijbbiub*&^BO&it87tbn7to&^7896');		//WAJIB
 define('DB_NAME', 'freedbtech_ai_bot_fadhil_riyanto');						//WAJIB
-define('TG_HTTP_API', '1489990155:AAEC3c6I-hmtDfbk9OojmlDjNFt1NeMEjfs');	//WAJIB
+define('TG_HTTP_API', '1489990155:AAHJ4-6PcvnNtvZszUeYrfKsAcICxVAfb6A');	//WAJIB
 define('USER_ID_TG_ME', '1393342467');										//WAJIB
 define('CUTLLY_API', 'fa1d93ba90dedd2ceb7d01e9bade271653373');				//WAJIB
 define('TIME_ZONE', 'Asia/Jakarta');										//WAJIB
 define('API_WEATHER_KEY', '7cf7252c68d3473681054158212501');				//WAJIB
-define('MAX_EXECUTE_SCRIPT', 30);											//SUNNAH_ROSUL
+define('MAX_EXECUTE_SCRIPT', 20);											//SUNNAH_ROSUL
 
 
 
@@ -107,9 +107,9 @@ if ($koneksi == 1) {
 	$namaTerakhir = $telegram->LastName();
 }
 
-if ($usernameBelumdiparse != null) {
+if ($usernameBelumdiparse != null) { //Jika user ada usernamenya
 	$username = ' @' . $usernameBelumdiparse;
-} else {
+} else { //ini user aneh, username gaada.....
 	$username = '<a href="tg://user?id=' . $userID . '">' . $namaPertama . ' ' . $namaTerakhir . '</a>';
 }
 
@@ -228,7 +228,31 @@ if ($chek == true) {
 $status = array('chat_id' => $chat_id, 'action' => 'typing');
 $telegram->sendChatAction($status);
 
-if ('/cuaca' == $adanParse[0] || '/cuaca@fadhil_riyanto_bot' == $adanParse[0]) {
+
+
+if (isset($text)) {
+	$chek_gc = detect_grup();
+	$nama_gc = $telegram->namaGrup();
+	if ($chek_gc == true) {
+		if ($nama_gc == 'fadhil_riyanto_project' || $nama_gc == 'testing7382' || $nama_gc == 'gabut_people_group' || $nama_gc == 'scriptiseng') {
+		} else {
+			$reply = 'Maaf, saya diprogram oleh pemilik saya untuk tidak dimasukkan ke grup. Jika anda masih tetap memasukkan saya ke grup. maka otomatis saya akan mengeluarkan diri.';
+			$content1 = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+			$telegram->sendMessage($content1);
+			$content = array('chat_id' => $chat_id);
+			$telegram->leaveChat($content);
+		}
+	} else {
+	}
+}
+
+if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
+
+	$reply = 'Hai ' . $username . ', Apa kabar? ';
+	$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+	$telegram->sendMessage($content);
+	exit;
+} elseif ('/cuaca' == $adanParse[0] || '/cuaca@fadhil_riyanto_bot' == $adanParse[0]) {
 	$azanHilangcommand = str_replace($adanParse[0], '', $text);
 	$udahDiparse = str_replace($adanParse[0] . ' ', '', $text);
 	if ($azanHilangcommand == null) {
@@ -403,7 +427,7 @@ if ('/cuaca' == $adanParse[0] || '/cuaca@fadhil_riyanto_bot' == $adanParse[0]) {
 			}
 
 			$reply = '📌 <b>' . $h_weat->location->name . '</b>' . PHP_EOL . PHP_EOL .
-				'ℹ️ <b>Info daerah</b>' .  PHP_EOL .
+				'ℹ️ <b>Info cuaca</b>' .  PHP_EOL .
 				'Negara : ' . $h_weat->location->country . PHP_EOL .
 				'Waktu lokal : ' . $h_weat->location->localtime . PHP_EOL .
 				'Zona waktu : ' . $h_weat->location->tz_id . PHP_EOL . PHP_EOL .
@@ -413,10 +437,10 @@ if ('/cuaca' == $adanParse[0] || '/cuaca@fadhil_riyanto_bot' == $adanParse[0]) {
 				'kelembaban : ' . $h_weat->current->humidity . PHP_EOL .
 				'awan : ' . $h_weat->current->cloud . PHP_EOL .
 				'kondisi : ' .  $kondisi_cuaca . PHP_EOL .
-				'Ultraviolet : ' . $h_weat->current->uv . PHP_EOL . PHP_EOL;
-			// 'ℹ️ <b>Info Lebih lanjut</b>' .  PHP_EOL .
-			// 'Kecepatan angin (MPH) : ' . $h_weat->current->wind_mph . PHP_EOL .
-			// 'Kecepatan angin (KPH) : ' . $h_weat->current->wind_kph . PHP_EOL .
+				'Ultraviolet : ' . $h_weat->current->uv . PHP_EOL .
+				// 'ℹ️ <b>Info Lebih lanjut</b>' .  PHP_EOL .
+				'Kecepatan angin (MPH) : ' . $h_weat->current->wind_mph . PHP_EOL .
+				'Kecepatan angin (KPH) : ' . $h_weat->current->wind_kph . PHP_EOL;
 			// 'derajat angin : ' . $h_weat->current->wind_degree . PHP_EOL .
 			// 'arah angin : ' . $h_weat->current->wind_dir . PHP_EOL .
 			// 'tekanan mb : ' . $h_weat->current->pressure_mb . PHP_EOL .
@@ -431,110 +455,21 @@ if ('/cuaca' == $adanParse[0] || '/cuaca@fadhil_riyanto_bot' == $adanParse[0]) {
 
 			// 'gust_mph : ' . $h_weat->current->gust_mph . PHP_EOL .
 			// 'gust_kph : ' . $h_weat->current->gust_kph . PHP_EOL;
-			$option = array(
-				//First row
-				// array($telegram->buildInlineKeyBoardButton("Button 1", $url = "http://link1.com"), $telegram->buildInlineKeyBoardButton("Button 2", $url = "http://link2.com")),
-				// //Second row 
-				// array($telegram->buildInlineKeyBoardButton("Button 3", $url = "http://link3.com"), $telegram->buildInlineKeyBoardButton("Button 4", $url = "http://link4.com"), $telegram->buildInlineKeyBoardButton("Button 5", $url = "http://link5.com")),
-				// //Third row
-				array($telegram->buildInlineKeyBoardButton("Selengkapnya", $url = '', $callback_data = '/cuaca_tidak_sederhana ' . $h_weat->location->name))
-			);
-			$keyb = $telegram->buildInlineKeyBoard($option);
 
-			$content = array('chat_id' => $chat_id, 'text' => $reply, 'disable_web_page_preview' => true, 'reply_markup' => $keyb, 'reply_to_message_id' => $message_id, 'disable_web_page_preview' => true, 'parse_mode' => 'html');
-			$cuacabtn = $telegram->sendMessage($content);
-		}
-	}
-	exit;
-} elseif ('/cuaca_tidak_sederhana' == $adanParse[0] || '/cuaca_tidak_sederhana@fadhil_riyanto_bot' == $adanParse[0]) {
-	$azanHilangcommand = str_replace($adanParse[0], '', $text);
-	$udahDiparse = str_replace($adanParse[0] . ' ', '', $text);
-	if ($azanHilangcommand == null) {
-		$reply = 'Maaf, gunakan pattern ' . PHP_EOL .
-			'<pre>/cuaca {namakota}.</pre>' . PHP_EOL . PHP_EOL .
-			'contoh /cuaca jakarta';
-		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-		$telegram->sendMessage($content);
-	} else {
-		$ch = curl_init();
-		curl_setopt($ch, CURLOPT_URL, "http://api.weatherapi.com/v1/current.json?key=" . API_WEATHER_KEY . '&q=' . urlencode($udahDiparse));
-		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-		$output_weat = curl_exec($ch);
-		curl_close($ch);
 
-		// var_dump($weat);
-		$h_weat = json_decode($output_weat);
-		if ($h_weat->error->code == 1006) {
-			$reply = 'Ups, kota tidak ditemukan';
-			$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-			$telegram->sendMessage($content);
-		} else {
-
-			$reply = '📌 <b>' . $h_weat->location->name . '</b>' . PHP_EOL . PHP_EOL .
-				'ℹ️ <b>Info daerah</b>' .  PHP_EOL .
-				'Negara : ' . $h_weat->location->country . PHP_EOL .
-				'Waktu lokal : ' . $h_weat->location->localtime . PHP_EOL .
-				'Zona waktu : ' . $h_weat->location->tz_id . PHP_EOL . PHP_EOL .
-				'ℹ️ <b>Info Sederhana</b>' .  PHP_EOL .
-				'Suhu celcius : ' . $h_weat->current->temp_c . PHP_EOL .
-				'Suhu farenheit : ' . $h_weat->current->temp_f . PHP_EOL .
-				'kelembaban : ' . $h_weat->current->humidity . PHP_EOL .
-				'awan : ' . $h_weat->current->cloud . PHP_EOL .
-				'Ultraviolet : ' . $h_weat->current->uv . PHP_EOL . PHP_EOL .
-				'ℹ️ <b>Info Lebih lanjut</b>' .  PHP_EOL .
-				'Kecepatan angin (MPH) : ' . $h_weat->current->wind_mph . PHP_EOL .
-				'Kecepatan angin (KPH) : ' . $h_weat->current->wind_kph . PHP_EOL .
-				'derajat angin : ' . $h_weat->current->wind_degree . PHP_EOL .
-				'arah angin : ' . $h_weat->current->wind_dir . PHP_EOL .
-				'tekanan mb : ' . $h_weat->current->pressure_mb . PHP_EOL .
-				'tekanan masuk : ' . $h_weat->current->pressure_in . PHP_EOL .
-				'presipitasi Mm : ' . $h_weat->current->precip_mm . PHP_EOL .
-				'presipitasi In : ' . $h_weat->current->precip_in . PHP_EOL .
-
-				'feelslike_c : ' . $h_weat->current->feelslike_c . PHP_EOL .
-				'feelslike_f : ' . $h_weat->current->feelslike_f . PHP_EOL .
-				'vis_km : ' . $h_weat->current->vis_km . PHP_EOL .
-				'vis_miles : ' . $h_weat->current->vis_miles . PHP_EOL .
-
-				'gust_mph : ' . $h_weat->current->gust_mph . PHP_EOL .
-				'gust_kph : ' . $h_weat->current->gust_kph . PHP_EOL;
-			$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+			$content = array('chat_id' => $chat_id, 'text' => $reply, 'disable_web_page_preview' => true, 'reply_to_message_id' => $message_id, 'disable_web_page_preview' => true, 'parse_mode' => 'html');
 			$telegram->sendMessage($content);
 		}
 	}
-	exit;
-}
-
-if (isset($text)) {
-	$chek_gc = detect_grup();
-	$nama_gc = $telegram->namaGrup();
-	if ($chek_gc == true) {
-		if ($nama_gc == 'fadhil_riyanto_project' || $nama_gc == 'testing7382' || $nama_gc == 'gabut_people_group' || $nama_gc == 'scriptiseng') {
-		} else {
-			$reply = 'Maaf, saya diprogram oleh pemilik saya untuk tidak dimasukkan ke grup. Jika anda masih tetap memasukkan saya ke grup. maka otomatis saya akan mengeluarkan diri.';
-			$content1 = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-			$telegram->sendMessage($content1);
-			$content = array('chat_id' => $chat_id);
-			$telegram->leaveChat($content);
-		}
-	} else {
-	}
-}
-
-if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
-
-	$reply = 'Hai ' . $username . ', Apa kabar? ';
-	$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-	$telegram->sendMessage($content);
 	exit;
 } elseif ($text == '/debug' || $text == '/debug@fadhil_riyanto_bot') {
 
 	$reply = 'Hai ' . $username . ', Apa kabar? ';
 	$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-	// $url = $telegram->sendMessage($content);
-	// sleep(10);
-	// $content = array('chat_id' => $chat_id,  'message_id' => $url['result']['message_id']);
-	// $url = $telegram->deleteMessage($content);
+	$url = $telegram->sendMessage($content);
+	sleep(5);
+	$content = array('chat_id' => $chat_id, 'text' => 'pesan berhasil di edit', 'message_id' => $url['result']['message_id']);
+	$url = $telegram->editMessageText($content);
 	exit;
 } elseif ($text == '/leave' || $text == '/leave@fadhil_riyanto_bot') {
 	if ($userID == $userid_pemilik) {
@@ -564,7 +499,7 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	$reply = 'Halo ' . $username . ', apa kabar mu?';
 	$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
 	$url = $telegram->sendMessage($content);
-	sleep(10);
+	sleep(300);
 	$content = array('chat_id' => $chat_id,  'message_id' => $url['result']['message_id']);
 	$url = $telegram->deleteMessage($content);
 	exit;
@@ -1639,6 +1574,33 @@ elseif ('/faker' == $adanParse[0] || '/faker@fadhil_riyanto_bot' == $adanParse[0
 		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
 		$telegram->sendMessage($content);
 	}
+	exit;
+} elseif ($text === '/corona_provinsi' || $text == '/corona_provinsi@fadhil_riyanto_bot') {
+	$azanHilangcommand = str_replace($adanParse[0], '', $text); //Hilangkan command
+	$udahDiparse = str_replace($adanParse[0] . ' ', '', $text); //ambil data setelah command
+	if ($azanHilangcommand != null) { //jika data ternyata ngga kosong maka
+		$a_provinsi_corona = file_get_contents('https://api.kawalcorona.com/indonesia/provinsi/'); //get json ke server
+		$b_provinsi_corona = json_decode($a_provinsi_corona); //lalu decode
+		foreach ($b_provinsi_corona as $bb_b_provinsi_corona) { //loop sampai menemukan yg pas
+			if (strtolower($bb_b_provinsi_corona->attributes->Provinsi) == $udahDiparse) { //jika nama provinsi sama maka
+				$reply = 'Provinsi : ' . $bb_b_provinsi_corona->attributes->Provinsi . PHP_EOL . PHP_EOL .
+					'😊 Total sembuh : ' . $bb_b_provinsi_corona->attributes->Kasus_Semb . PHP_EOL .
+					'😞 Total positif : ' . $bb_b_provinsi_corona->attributes->Kasus_Posi . PHP_EOL .
+					'😢 Total meninggal : ' . $bb_b_provinsi_corona->attributes->Kasus_Meni; 
+				$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+				$telegram->sendMessage($content); //Kirim teks ini
+			} else { //jika ternyata ngga nemu maka
+				$reply = 'ups, ngga ditemukan';
+				$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+				$telegram->sendMessage($content); //kirim teks ini
+			}
+		}
+	} else {
+		$reply = 'Maaf gunakan patern nama provinsi'; //jiika dia ngetik command doang tanpa parameter kirim ini
+		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+		$telegram->sendMessage($content);
+	}
+
 	exit;
 }
 // ENCRYPT TOOLS DIMULAI DARI SINI WOYY
