@@ -1575,25 +1575,33 @@ elseif ('/faker' == $adanParse[0] || '/faker@fadhil_riyanto_bot' == $adanParse[0
 		$telegram->sendMessage($content);
 	}
 	exit;
-} elseif ($text === '/corona_provinsi' || $text == '/corona_provinsi@fadhil_riyanto_bot') {
+} elseif ('/corona_provinsi' == $adanParse[0] || '/corona_provinsi@fadhil_riyanto_bot' == $adanParse[0]) {
+	// exit;
 	$azanHilangcommand = str_replace($adanParse[0], '', $text); //Hilangkan command
 	$udahDiparse = str_replace($adanParse[0] . ' ', '', $text); //ambil data setelah command
 	if ($azanHilangcommand != null) { //jika data ternyata ngga kosong maka
-		$a_provinsi_corona = file_get_contents('https://api.kawalcorona.com/indonesia/provinsi/'); //get json ke server
-		$b_provinsi_corona = json_decode($a_provinsi_corona); //lalu decode
-		foreach ($b_provinsi_corona as $bb_b_provinsi_corona) { //loop sampai menemukan yg pas
-			if (strtolower($bb_b_provinsi_corona->attributes->Provinsi) == $udahDiparse) { //jika nama provinsi sama maka
-				$reply = 'Provinsi : ' . $bb_b_provinsi_corona->attributes->Provinsi . PHP_EOL . PHP_EOL .
-					'😊 Total sembuh : ' . $bb_b_provinsi_corona->attributes->Kasus_Semb . PHP_EOL .
-					'😞 Total positif : ' . $bb_b_provinsi_corona->attributes->Kasus_Posi . PHP_EOL .
-					'😢 Total meninggal : ' . $bb_b_provinsi_corona->attributes->Kasus_Meni; 
-				$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-				$telegram->sendMessage($content); //Kirim teks ini
-			} else { //jika ternyata ngga nemu maka
-				$reply = 'ups, ngga ditemukan';
-				$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-				$telegram->sendMessage($content); //kirim teks ini
-			}
+		// $a_provinsi_corona = file_get_contents('https://api.kawalcorona.com/indonesia/provinsi'); //get json ke server
+		// $b_provinsi_corona = json_decode($a_provinsi_corona); //lalu decode
+		// foreach ($b_provinsi_corona as $bb_b_provinsi_corona) { //loop sampai menemukan yg pas
+		// 	if (strtolower($bb_b_provinsi_corona->attributes->Provinsi) == $udahDiparse) { //jika nama provinsi sama maka
+		// 		$reply = 'Provinsi : ' . $bb_b_provinsi_corona->attributes->Provinsi . PHP_EOL . PHP_EOL .
+		// 			'😊 Total sembuh : ' . $bb_b_provinsi_corona->attributes->Kasus_Semb . PHP_EOL .
+		// 			'😞 Total positif : ' . $bb_b_provinsi_corona->attributes->Kasus_Posi . PHP_EOL .
+		// 			'😢 Total meninggal : ' . $bb_b_provinsi_corona->attributes->Kasus_Meni . PHP_EOL;
+		// 		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+		// 		$telegram->sendMessage($content); //Kirim teks ini
+		// 		exit;
+		// 	}
+		// }
+		$coronaprov = file_get_contents($host_server . '/APIs.php?method=corona_provinsi&dns=' . urlencode($udahDiparse));
+		if ($coronaprov == null) {
+			$reply = 'Maaf provinsi tidak ditemukan'; //jiika dia ngetik command doang tanpa parameter kirim ini
+			$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+			$telegram->sendMessage($content);
+		} else {
+			$reply = $coronaprov; //jiika dia ngetik command doang tanpa parameter kirim ini
+			$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+			$telegram->sendMessage($content);
 		}
 	} else {
 		$reply = 'Maaf gunakan patern nama provinsi'; //jiika dia ngetik command doang tanpa parameter kirim ini

@@ -1609,3 +1609,332 @@ ref.action= typing
 #3 C:\bot telegram\index.php(229): Telegram->sendChatAction(Array)
 #4 {main}
 
+============[Date]============
+[ 2021-01-26 18:25:39  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: reply message not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804389870
+ref.message.message_id= 6699
+ref.message.from.id= 1018501765
+ref.message.from.is_bot= false
+ref.message.from.first_name= Muslim
+ref.message.from.last_name= nuansya
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕊𝕔𝕣𝕚𝕡𝕥 𝕀𝕤𝕖𝕟𝕘®
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1611648125
+ref.message.new_chat_participant.id= 1018501765
+ref.message.new_chat_participant.is_bot= false
+ref.message.new_chat_participant.first_name= Muslim
+ref.message.new_chat_participant.last_name= nuansya
+ref.message.new_chat_member.id= 1018501765
+ref.message.new_chat_member.is_bot= false
+ref.message.new_chat_member.first_name= Muslim
+ref.message.new_chat_member.last_name= nuansya
+ref.message.new_chat_members.0.id= 1018501765
+ref.message.new_chat_members.0.is_bot= false
+ref.message.new_chat_members.0.first_name= Muslim
+ref.message.new_chat_members.0.last_name= nuansya
+
+
+[ref]
+ref.text= Halo <a href="tg://user?id=1018501765">Muslim nuansya</a>, apa kabar mu?
+ref.reply_to_message_id= 6699
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(501): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-26 18:25:51  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: reply message not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804389870
+ref.message.message_id= 6699
+ref.message.from.id= 1018501765
+ref.message.from.is_bot= false
+ref.message.from.first_name= Muslim
+ref.message.from.last_name= nuansya
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕊𝕔𝕣𝕚𝕡𝕥 𝕀𝕤𝕖𝕟𝕘®
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1611648125
+ref.message.new_chat_participant.id= 1018501765
+ref.message.new_chat_participant.is_bot= false
+ref.message.new_chat_participant.first_name= Muslim
+ref.message.new_chat_participant.last_name= nuansya
+ref.message.new_chat_member.id= 1018501765
+ref.message.new_chat_member.is_bot= false
+ref.message.new_chat_member.first_name= Muslim
+ref.message.new_chat_member.last_name= nuansya
+ref.message.new_chat_members.0.id= 1018501765
+ref.message.new_chat_members.0.is_bot= false
+ref.message.new_chat_members.0.first_name= Muslim
+ref.message.new_chat_members.0.last_name= nuansya
+
+
+[ref]
+ref.text= Halo <a href="tg://user?id=1018501765">Muslim nuansya</a>, apa kabar mu?
+ref.reply_to_message_id= 6699
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(501): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-26 18:26:38  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: reply message not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804389870
+ref.message.message_id= 6699
+ref.message.from.id= 1018501765
+ref.message.from.is_bot= false
+ref.message.from.first_name= Muslim
+ref.message.from.last_name= nuansya
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕊𝕔𝕣𝕚𝕡𝕥 𝕀𝕤𝕖𝕟𝕘®
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1611648125
+ref.message.new_chat_participant.id= 1018501765
+ref.message.new_chat_participant.is_bot= false
+ref.message.new_chat_participant.first_name= Muslim
+ref.message.new_chat_participant.last_name= nuansya
+ref.message.new_chat_member.id= 1018501765
+ref.message.new_chat_member.is_bot= false
+ref.message.new_chat_member.first_name= Muslim
+ref.message.new_chat_member.last_name= nuansya
+ref.message.new_chat_members.0.id= 1018501765
+ref.message.new_chat_members.0.is_bot= false
+ref.message.new_chat_members.0.first_name= Muslim
+ref.message.new_chat_members.0.last_name= nuansya
+
+
+[ref]
+ref.text= Halo <a href="tg://user?id=1018501765">Muslim nuansya</a>, apa kabar mu?
+ref.reply_to_message_id= 6699
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(501): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-26 18:27:59  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: reply message not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804389870
+ref.message.message_id= 6699
+ref.message.from.id= 1018501765
+ref.message.from.is_bot= false
+ref.message.from.first_name= Muslim
+ref.message.from.last_name= nuansya
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕊𝕔𝕣𝕚𝕡𝕥 𝕀𝕤𝕖𝕟𝕘®
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1611648125
+ref.message.new_chat_participant.id= 1018501765
+ref.message.new_chat_participant.is_bot= false
+ref.message.new_chat_participant.first_name= Muslim
+ref.message.new_chat_participant.last_name= nuansya
+ref.message.new_chat_member.id= 1018501765
+ref.message.new_chat_member.is_bot= false
+ref.message.new_chat_member.first_name= Muslim
+ref.message.new_chat_member.last_name= nuansya
+ref.message.new_chat_members.0.id= 1018501765
+ref.message.new_chat_members.0.is_bot= false
+ref.message.new_chat_members.0.first_name= Muslim
+ref.message.new_chat_members.0.last_name= nuansya
+
+
+[ref]
+ref.text= Halo <a href="tg://user?id=1018501765">Muslim nuansya</a>, apa kabar mu?
+ref.reply_to_message_id= 6699
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(501): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-26 18:29:37  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: reply message not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804389870
+ref.message.message_id= 6699
+ref.message.from.id= 1018501765
+ref.message.from.is_bot= false
+ref.message.from.first_name= Muslim
+ref.message.from.last_name= nuansya
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕊𝕔𝕣𝕚𝕡𝕥 𝕀𝕤𝕖𝕟𝕘®
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1611648125
+ref.message.new_chat_participant.id= 1018501765
+ref.message.new_chat_participant.is_bot= false
+ref.message.new_chat_participant.first_name= Muslim
+ref.message.new_chat_participant.last_name= nuansya
+ref.message.new_chat_member.id= 1018501765
+ref.message.new_chat_member.is_bot= false
+ref.message.new_chat_member.first_name= Muslim
+ref.message.new_chat_member.last_name= nuansya
+ref.message.new_chat_members.0.id= 1018501765
+ref.message.new_chat_members.0.is_bot= false
+ref.message.new_chat_members.0.first_name= Muslim
+ref.message.new_chat_members.0.last_name= nuansya
+
+
+[ref]
+ref.text= Halo <a href="tg://user?id=1018501765">Muslim nuansya</a>, apa kabar mu?
+ref.reply_to_message_id= 6699
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(501): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-26 18:34:41  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: reply message not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804389870
+ref.message.message_id= 6699
+ref.message.from.id= 1018501765
+ref.message.from.is_bot= false
+ref.message.from.first_name= Muslim
+ref.message.from.last_name= nuansya
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕊𝕔𝕣𝕚𝕡𝕥 𝕀𝕤𝕖𝕟𝕘®
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1611648125
+ref.message.new_chat_participant.id= 1018501765
+ref.message.new_chat_participant.is_bot= false
+ref.message.new_chat_participant.first_name= Muslim
+ref.message.new_chat_participant.last_name= nuansya
+ref.message.new_chat_member.id= 1018501765
+ref.message.new_chat_member.is_bot= false
+ref.message.new_chat_member.first_name= Muslim
+ref.message.new_chat_member.last_name= nuansya
+ref.message.new_chat_members.0.id= 1018501765
+ref.message.new_chat_members.0.is_bot= false
+ref.message.new_chat_members.0.first_name= Muslim
+ref.message.new_chat_members.0.last_name= nuansya
+
+
+[ref]
+ref.text= Halo <a href="tg://user?id=1018501765">Muslim nuansya</a>, apa kabar mu?
+ref.reply_to_message_id= 6699
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(501): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-26 18:35:38  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: reply message not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804389870
+ref.message.message_id= 6699
+ref.message.from.id= 1018501765
+ref.message.from.is_bot= false
+ref.message.from.first_name= Muslim
+ref.message.from.last_name= nuansya
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕊𝕔𝕣𝕚𝕡𝕥 𝕀𝕤𝕖𝕟𝕘®
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1611648125
+ref.message.new_chat_participant.id= 1018501765
+ref.message.new_chat_participant.is_bot= false
+ref.message.new_chat_participant.first_name= Muslim
+ref.message.new_chat_participant.last_name= nuansya
+ref.message.new_chat_member.id= 1018501765
+ref.message.new_chat_member.is_bot= false
+ref.message.new_chat_member.first_name= Muslim
+ref.message.new_chat_member.last_name= nuansya
+ref.message.new_chat_members.0.id= 1018501765
+ref.message.new_chat_members.0.is_bot= false
+ref.message.new_chat_members.0.first_name= Muslim
+ref.message.new_chat_members.0.last_name= nuansya
+
+
+[ref]
+ref.text= Halo <a href="tg://user?id=1018501765">Muslim nuansya</a>, apa kabar mu?
+ref.reply_to_message_id= 6699
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(501): Telegram->sendMessage(Array)
+#4 {main}
+

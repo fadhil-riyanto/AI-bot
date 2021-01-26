@@ -1,5 +1,5 @@
 <?php
-$udahDiparse = 'Maluku Utara';
+$udahDiparse = 'DKI Jakarta';
 $a_provinsi_corona = file_get_contents('https://api.kawalcorona.com/indonesia/provinsi/');
 $b_provinsi_corona = json_decode($a_provinsi_corona);
 foreach ($b_provinsi_corona as $bb_b_provinsi_corona) {
@@ -10,8 +10,8 @@ foreach ($b_provinsi_corona as $bb_b_provinsi_corona) {
             '😊 Total sembuh : ' . $bb_b_provinsi_corona->attributes->Kasus_Semb . PHP_EOL .
             '😞 Total positif : ' . $bb_b_provinsi_corona->attributes->Kasus_Posi . PHP_EOL .
             '😢 Total meninggal : ' . $bb_b_provinsi_corona->attributes->Kasus_Meni . PHP_EOL;
-        echo $reply;
     } else {
         $reply = 'elses';
     }
 }
+echo $reply;
