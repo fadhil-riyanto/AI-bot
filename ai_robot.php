@@ -33,9 +33,6 @@ function robot_artificial_intelegence($teks)
 
 	$stemmerFactory = new \Sastrawi\Stemmer\StemmerFactory();
 	$stemmer  = $stemmerFactory->createStemmer();
-
-
-
 	$teksTerfilter_kata_jorok = kata_kata_jorok($teks);
 	$stemmer_hasil   = $stemmer->stem($teks);
 	$teksTerfilter = hyphenize($stemmer_hasil);
@@ -44,10 +41,7 @@ function robot_artificial_intelegence($teks)
 	$q = mysqli_query($koneksi, "SELECT * FROM `data_ai` WHERE `data_key_ai` SOUNDS LIKE _utf8 '$teksTerfilter' ");
 	$tes_jumlah_row = @mysqli_affected_rows($koneksi);
 	$dataAI = mysqli_fetch_assoc($q);
-	foreach ($dataAI as $data_res_ai_val) {
-		# code...
-	}
-
+	
 	// Jika ternyata ada kata kata jorok 
 	if ($teksTerfilter_kata_jorok == true) {
 		$arrayres = array('respon' => @hyphenize($dataAI['data_res_ai']), 'normalisasi_tulisan' => @$teksTerfilter, 'bad_word' => @$teksTerfilter_kata_jorok, 'stemmer' => $stemmer_hasil, 'affected' => $tes_jumlah_row);
