@@ -229,7 +229,7 @@ $status = array('chat_id' => $chat_id, 'action' => 'typing');
 $telegram->sendChatAction($status);
 
 
-
+$calkulatorpreg = preg_match('/[a-zA-Z]\s+([-+]?\s*\d+(?:\s*[-+*\/]\s*[-+]?\s*\d+)+)/i', $text, $hasilpreg);
 if (isset($text)) {
 	$chek_gc = detect_grup();
 	$nama_gc = $telegram->namaGrup();
@@ -464,12 +464,16 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	exit;
 } elseif ($text == '/debug' || $text == '/debug@fadhil_riyanto_bot') {
 
-	$reply = 'Hai ' . $username . ', Apa kabar? ';
-	$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-	$url = $telegram->sendMessage($content);
-	sleep(5);
-	$content = array('chat_id' => $chat_id, 'text' => 'pesan berhasil di edit', 'message_id' => $url['result']['message_id']);
-	$url = $telegram->editMessageText($content);
+	$reply = "tes";
+	$option = array(
+		array(
+			$telegram->buildInlineKeyBoardButton("tombol 1", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot panggil'),
+			$telegram->buildInlineKeyBoardButton("dua", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot start')
+		),
+	);
+	$keyb = $telegram->buildInlineKeyBoard($option);
+	$content = array('chat_id' => $chat_id, 'text' => $reply,  'reply_markup' => $keyb, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+	$telegram->sendMessage($content);
 	exit;
 } elseif ($text == '/leave' || $text == '/leave@fadhil_riyanto_bot') {
 	if ($userID == $userid_pemilik) {
@@ -492,20 +496,14 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
 	$telegram->sendMessage($content);
 	exit;
-} 
-// elseif (isset($memberBaru)) {
-// 	if ($usernameBelumdiparse == 'Fadhil_riyanto_bot') {
-// 		exit;
-// 	}
-// 	$reply = 'Halo ' . $username . ', apa kabar mu?';
-// 	$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-// 	$url = $telegram->sendMessage($content);
-// 	sleep(5);
-// 	$content = array('chat_id' => $chat_id,  'message_id' => $url['result']['message_id']);
-// 	$url = $telegram->deleteMessage($content);
-// 	exit;
-// } 
-elseif ('/help' == $adanParse[0] || '/help@fadhil_riyanto_bot' == $adanParse[0]) {
+} elseif ($calkulatorpreg > 0) {
+	eval("\$hsl = $hasilpreg[1];");
+	$jawabcal = array("hasil adalah " . $hsl, "hasilnya kan " . $hsl . " ngab", "eh hasil nya " . $hsl);
+	$reply =  $jawabcal[random_int(0, 2)];
+	$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+	$url = $telegram->sendMessage($content);
+	exit;
+} elseif ('/help' == $adanParse[0] || '/help@fadhil_riyanto_bot' == $adanParse[0]) {
 	if (detect_grup() == true) {
 		$reply = 'Hai ' . $username . ', Maaf, menu ini hanya bisa diakses via PM';
 		$option = array(
