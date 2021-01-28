@@ -11,7 +11,7 @@ define('API_WEATHER_KEY', '7cf7252c68d3473681054158212501');				//WAJIB
 define('MAX_EXECUTE_SCRIPT', 20);											//SUNNAH_ROSUL
 
 
-
+echo 'yo';
 
 // PENJELASAN SINGKAT
 
@@ -24,10 +24,10 @@ define('MAX_EXECUTE_SCRIPT', 20);											//SUNNAH_ROSUL
 // =============== BARIS SELANJUT NYA TIDAK USAH DIUBAH. KARENA KEMUNGKINAN KAMU TIDAL PAHAM ============
 
 require_once __DIR__ . '/vendor/autoload.php';
-require_once __DIR__ . '/ai_robot.php';
+require_once __DIR__ . '/function/ai_robot.php';
 
 
-echo 'yo';
+
 ini_set('max_execution_time', MAX_EXECUTE_SCRIPT);
 error_reporting(1);
 $userid_pemilik = USER_ID_TG_ME;
