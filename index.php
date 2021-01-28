@@ -480,6 +480,19 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 		$content = array('chat_id' => '@fadhil_riyanto_project');
 		$telegram->leaveChat($content);
 	}
+} elseif ('/quran' == $adanParse[0] || '/quran@fadhil_riyanto_bot' == $adanParse[0]) {
+	$azanHilangcommand = str_replace($adanParse[0], '', $text);
+	$udahDiparse = str_replace($adanParse[0] . ' ', '', $text);
+	if ($azanHilangcommand == null) {
+		$reply = 'kosong';
+		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+		$telegram->sendMessage($content);
+	} else {
+		$reply = file_get_contents($host_server . '/APIs.php?method=surah&dns=' . urlencode($udahDiparse));;
+		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+		$telegram->sendMessage($content);
+	}
+	exit;
 } elseif ('/db_add' == $adanParse[0] || '/db_add@fadhil_riyanto_bot' == $adanParse[0]) {
 	if ($userID != $userid_pemilik) {
 		exit;
