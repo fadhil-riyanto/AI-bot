@@ -1,0 +1,54 @@
+============[Date]============
+[ 2021-01-28 09:19:58  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804390130
+ref.message.message_id= 7685
+ref.message.from.id= 1195226552
+ref.message.from.is_bot= false
+ref.message.from.first_name= Raffi
+ref.message.from.last_name= Fadlika
+ref.message.from.username= mrfadlika
+ref.message.from.language_code= en
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕊𝕔𝕣𝕚𝕡𝕥 𝕀𝕤𝕖𝕟𝕘®
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1611800369
+ref.message.reply_to_message.message_id= 7684
+ref.message.reply_to_message.from.id= 1489990155
+ref.message.reply_to_message.from.is_bot= true
+ref.message.reply_to_message.from.first_name= Fadhil Riyanto Bot
+ref.message.reply_to_message.from.username= Fadhil_riyanto_bot
+ref.message.reply_to_message.chat.id= -1001209274058
+ref.message.reply_to_message.chat.title= 𝕊𝕔𝕣𝕚𝕡𝕥 𝕀𝕤𝕖𝕟𝕘®
+ref.message.reply_to_message.chat.username= scriptiseng
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1611800349
+ref.message.reply_to_message.text= Maaf provinsi tidak ditemukan
+ref.message.text= lah kok gak di temukan ???
+@fadhil_riyanto
+ref.message.entities.0.offset= 27
+ref.message.entities.0.length= 15
+ref.message.entities.0.type= mention
+
+
+[ref]
+ref.text= 
+
+ref.reply_to_message_id= 7685
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(1902): Telegram->sendMessage(Array)
+#4 {main}
+
