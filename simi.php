@@ -24,7 +24,7 @@ foreach ($q as $data_res_ai_val) {
         CURLOPT_POSTFIELDS => "{\n\t\"utext\": \". $hhh .\", \n\t\"lang\": \"id\" \n}",
         CURLOPT_HTTPHEADER => array(
             "Content-Type: application/json",
-            "x-api-key: 50c086cb-5ea3-4190-bdd6-69787a540ec4"
+            "x-api-key: .jHY.1FYEFlbFtUeq40A7q0C64jo9po0aftsVspc"
         ),
     ));
 
@@ -41,7 +41,6 @@ foreach ($q as $data_res_ai_val) {
         exit;
     } elseif ($c == null) {
         echo "null";
-        exit;
     } else {
         mysqli_query($kon, "UPDATE `data_ai` SET `data_res_ai`='$c' WHERE  `data_key_ai`='$hhh' AND `data_res_ai`='hmhm' LIMIT 1");
     }
