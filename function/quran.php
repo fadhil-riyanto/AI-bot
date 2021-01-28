@@ -1,5 +1,5 @@
 <?php
-echo (quran_surah("Al Muslk"));
+// echo (quran_surah("Al Muslk"));
 function quran_surah($input)
 {
     $preg1 = preg_match('/([a-zA-Z_+\- ]+)\s([-+]?\s*\d+(?:\s*)+)/i', $input, $hasil);
@@ -17,6 +17,10 @@ function quran_surah($input)
             if (isset($hasil[2])) {
                 $ayat = file_get_contents('https://api.banghasan.com/quran/format/json/surat/' . $quranfor->nomor . '/ayat/' . $hasil[2]);
                 $jsonayat = json_decode($ayat);
+                if (isset($jsonayat->ayat->error)) {
+                    return 'kosong';
+                    exit;
+                }
                 foreach ($jsonayat->ayat->data->ar as $ayat_for) {
                     $hasilAyat1 = $ayat_for->teks . PHP_EOL;
                 }
@@ -38,3 +42,7 @@ function quran_surah($input)
         }
     }
 }
+// var_dump(quran_surah('al mulk 9'));
+// $surah = $_GET['surah'];
+// $a = quran_surah($surah);
+// echo $a;

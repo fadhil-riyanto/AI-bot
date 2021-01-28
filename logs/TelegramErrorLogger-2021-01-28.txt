@@ -52,3 +52,636 @@ ref.disable_web_page_preview= true
 #3 C:\bot telegram\index.php(1902): Telegram->sendMessage(Array)
 #4 {main}
 
+============[Date]============
+[ 2021-01-28 13:40:26  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Unsupported start tag "br" at byte offset 546
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804390154
+ref.message.message_id= 9930
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1611816023
+ref.message.text= /quran al mulk 9
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 67. Al Mulk
+30 ayat, mekah
+
+ayat ke 9
+قَالُوا بَلَىٰ قَدْ جَاءَنَا نَذِيرٌ فَكَذَّبْنَا وَقُلْنَا مَا نَزَّلَ اللَّهُ مِنْ شَيْءٍ إِنْ أَنْتُمْ إِلَّا فِي ضَلَالٍ كَبِيرٍ
+
+q<u>aa</u>luu bal<u>aa</u> qad j<u>aa</u>-an<u>aa</u> na<u>dz</u>iirun faka<u>dzdz</u>abn<u>aa</u> waquln<u>aa</u> m<u>aa</u> nazzala <strong>al</strong>l<u>aa</u>hu min syay-in in antum ill<u>aa</u> fii <u>dh</u>al<u>aa</u>lin kabiir<strong>in</strong><br>
+
+
+Mereka menjawab: "Benar ada", sesungguhnya telah datang kepada kami seorang pemberi peringatan, maka kami mendustakan(nya) dan kami katakan: "Allah tidak menurunkan sesuatupun; kamu tidak lain hanyalah di dalam kesesatan yang besar".
+
+
+ref.disable_web_page_preview= true
+ref.reply_to_message_id= 9930
+ref.parse_mode= html
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(484): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-28 13:41:29  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Unsupported start tag "br" at byte offset 546
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804390155
+ref.message.message_id= 9931
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1611816084
+ref.message.text= /quran al mulk 9jdhskjahkda
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 67. Al Mulk
+30 ayat, mekah
+
+ayat ke 9
+قَالُوا بَلَىٰ قَدْ جَاءَنَا نَذِيرٌ فَكَذَّبْنَا وَقُلْنَا مَا نَزَّلَ اللَّهُ مِنْ شَيْءٍ إِنْ أَنْتُمْ إِلَّا فِي ضَلَالٍ كَبِيرٍ
+
+q<u>aa</u>luu bal<u>aa</u> qad j<u>aa</u>-an<u>aa</u> na<u>dz</u>iirun faka<u>dzdz</u>abn<u>aa</u> waquln<u>aa</u> m<u>aa</u> nazzala <strong>al</strong>l<u>aa</u>hu min syay-in in antum ill<u>aa</u> fii <u>dh</u>al<u>aa</u>lin kabiir<strong>in</strong><br>
+
+
+Mereka menjawab: "Benar ada", sesungguhnya telah datang kepada kami seorang pemberi peringatan, maka kami mendustakan(nya) dan kami katakan: "Allah tidak menurunkan sesuatupun; kamu tidak lain hanyalah di dalam kesesatan yang besar".
+
+
+ref.disable_web_page_preview= true
+ref.reply_to_message_id= 9931
+ref.parse_mode= html
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(484): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-28 13:48:23  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Unsupported start tag "br" at byte offset 546
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804390158
+ref.message.message_id= 9935
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1611816499
+ref.message.text= /quran al mulk 9
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 67. Al Mulk
+30 ayat, mekah
+
+ayat ke 9
+قَالُوا بَلَىٰ قَدْ جَاءَنَا نَذِيرٌ فَكَذَّبْنَا وَقُلْنَا مَا نَزَّلَ اللَّهُ مِنْ شَيْءٍ إِنْ أَنْتُمْ إِلَّا فِي ضَلَالٍ كَبِيرٍ
+
+q<u>aa</u>luu bal<u>aa</u> qad j<u>aa</u>-an<u>aa</u> na<u>dz</u>iirun faka<u>dzdz</u>abn<u>aa</u> waquln<u>aa</u> m<u>aa</u> nazzala <strong>al</strong>l<u>aa</u>hu min syay-in in antum ill<u>aa</u> fii <u>dh</u>al<u>aa</u>lin kabiir<strong>in</strong><br>
+
+
+Mereka menjawab: "Benar ada", sesungguhnya telah datang kepada kami seorang pemberi peringatan, maka kami mendustakan(nya) dan kami katakan: "Allah tidak menurunkan sesuatupun; kamu tidak lain hanyalah di dalam kesesatan yang besar".
+
+
+ref.disable_web_page_preview= true
+ref.reply_to_message_id= 9935
+ref.parse_mode= html
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(488): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-28 13:54:11  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804390160
+ref.message.message_id= 9938
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1611816846
+ref.message.text= /quran al mulk 9
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.disable_web_page_preview= true
+ref.reply_to_message_id= 9938
+ref.parse_mode= html
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(480): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-28 14:00:23  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Unsupported start tag "br" at byte offset 546
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804390164
+ref.message.message_id= 9944
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1611817218
+ref.message.text= /quran al mulk 9
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 67. Al Mulk
+30 ayat, mekah
+
+ayat ke 9
+قَالُوا بَلَىٰ قَدْ جَاءَنَا نَذِيرٌ فَكَذَّبْنَا وَقُلْنَا مَا نَزَّلَ اللَّهُ مِنْ شَيْءٍ إِنْ أَنْتُمْ إِلَّا فِي ضَلَالٍ كَبِيرٍ
+
+q<u>aa</u>luu bal<u>aa</u> qad j<u>aa</u>-an<u>aa</u> na<u>dz</u>iirun faka<u>dzdz</u>abn<u>aa</u> waquln<u>aa</u> m<u>aa</u> nazzala <strong>al</strong>l<u>aa</u>hu min syay-in in antum ill<u>aa</u> fii <u>dh</u>al<u>aa</u>lin kabiir<strong>in</strong><br>
+
+
+Mereka menjawab: "Benar ada", sesungguhnya telah datang kepada kami seorang pemberi peringatan, maka kami mendustakan(nya) dan kami katakan: "Allah tidak menurunkan sesuatupun; kamu tidak lain hanyalah di dalam kesesatan yang besar".
+
+
+ref.disable_web_page_preview= true
+ref.reply_to_message_id= 9944
+ref.parse_mode= html
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(527): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-28 14:02:38  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Unsupported start tag "br" at byte offset 546
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804390165
+ref.message.message_id= 9945
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1611817348
+ref.message.text= /quran al mulk 9
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 67. Al Mulk
+30 ayat, mekah
+
+ayat ke 9
+قَالُوا بَلَىٰ قَدْ جَاءَنَا نَذِيرٌ فَكَذَّبْنَا وَقُلْنَا مَا نَزَّلَ اللَّهُ مِنْ شَيْءٍ إِنْ أَنْتُمْ إِلَّا فِي ضَلَالٍ كَبِيرٍ
+
+q<u>aa</u>luu bal<u>aa</u> qad j<u>aa</u>-an<u>aa</u> na<u>dz</u>iirun faka<u>dzdz</u>abn<u>aa</u> waquln<u>aa</u> m<u>aa</u> nazzala <strong>al</strong>l<u>aa</u>hu min syay-in in antum ill<u>aa</u> fii <u>dh</u>al<u>aa</u>lin kabiir<strong>in</strong><br>
+
+
+Mereka menjawab: "Benar ada", sesungguhnya telah datang kepada kami seorang pemberi peringatan, maka kami mendustakan(nya) dan kami katakan: "Allah tidak menurunkan sesuatupun; kamu tidak lain hanyalah di dalam kesesatan yang besar".
+
+
+ref.disable_web_page_preview= true
+ref.reply_to_message_id= 9945
+ref.parse_mode= html
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(488): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-28 14:05:17  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.action= typing
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(131): Telegram->endpoint('sendChatAction', Array)
+#3 C:\bot telegram\index.php(233): Telegram->sendChatAction(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-28 14:06:05  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Unsupported start tag "br" at byte offset 546
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804390166
+ref.message.message_id= 9946
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1611817561
+ref.message.text= /quran al mulk 9
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 67. Al Mulk
+30 ayat, mekah
+
+ayat ke 9
+قَالُوا بَلَىٰ قَدْ جَاءَنَا نَذِيرٌ فَكَذَّبْنَا وَقُلْنَا مَا نَزَّلَ اللَّهُ مِنْ شَيْءٍ إِنْ أَنْتُمْ إِلَّا فِي ضَلَالٍ كَبِيرٍ
+
+q<u>aa</u>luu bal<u>aa</u> qad j<u>aa</u>-an<u>aa</u> na<u>dz</u>iirun faka<u>dzdz</u>abn<u>aa</u> waquln<u>aa</u> m<u>aa</u> nazzala <strong>al</strong>l<u>aa</u>hu min syay-in in antum ill<u>aa</u> fii <u>dh</u>al<u>aa</u>lin kabiir<strong>in</strong><br>
+
+
+Mereka menjawab: "Benar ada", sesungguhnya telah datang kepada kami seorang pemberi peringatan, maka kami mendustakan(nya) dan kami katakan: "Allah tidak menurunkan sesuatupun; kamu tidak lain hanyalah di dalam kesesatan yang besar".
+
+
+ref.disable_web_page_preview= true
+ref.reply_to_message_id= 9946
+ref.parse_mode= html
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(487): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-28 14:07:32  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Unsupported start tag "br" at byte offset 546
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804390169
+ref.message.message_id= 9951
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1611817648
+ref.message.text= /quran al mulk 9
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 67. Al Mulk
+30 ayat, mekah
+
+ayat ke 9
+قَالُوا بَلَىٰ قَدْ جَاءَنَا نَذِيرٌ فَكَذَّبْنَا وَقُلْنَا مَا نَزَّلَ اللَّهُ مِنْ شَيْءٍ إِنْ أَنْتُمْ إِلَّا فِي ضَلَالٍ كَبِيرٍ
+
+q<u>aa</u>luu bal<u>aa</u> qad j<u>aa</u>-an<u>aa</u> na<u>dz</u>iirun faka<u>dzdz</u>abn<u>aa</u> waquln<u>aa</u> m<u>aa</u> nazzala <strong>al</strong>l<u>aa</u>hu min syay-in in antum ill<u>aa</u> fii <u>dh</u>al<u>aa</u>lin kabiir<strong>in</strong><br>
+
+
+Mereka menjawab: "Benar ada", sesungguhnya telah datang kepada kami seorang pemberi peringatan, maka kami mendustakan(nya) dan kami katakan: "Allah tidak menurunkan sesuatupun; kamu tidak lain hanyalah di dalam kesesatan yang besar".
+
+
+ref.disable_web_page_preview= true
+ref.reply_to_message_id= 9951
+ref.parse_mode= html
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(477): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-28 14:08:17  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Unsupported start tag "br" at byte offset 431
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804390170
+ref.message.message_id= 9952
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1611817694
+ref.message.text= /quran al mulk 9
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 67. Al Mulk
+30 ayat, mekah
+
+ayat ke 8
+تَكَادُ تَمَيَّزُ مِنَ الْغَيْظِ ۖ كُلَّمَا أُلْقِيَ فِيهَا فَوْجٌ سَأَلَهُمْ خَزَنَتُهَا أَلَمْ يَأْتِكُمْ نَذِيرٌ
+
+tak<u>aa</u>du tamayyazu mina alghay<u>zh</u>i kullam<u>aa</u> ulqiya fiih<u>aa</u> fawjun sa-alahum khazanatuh<u>aa</u> alam ya/tikum na<u>dz</u>iir<strong>un</strong><br>
+
+
+hampir-hampir (neraka) itu terpecah-pecah lantaran marah. Setiap kali dilemparkan ke dalamnya sekumpulan (orang-orang kafir), penjaga-penjaga (neraka itu) bertanya kepada mereka: "Apakah belum pernah datang kepada kamu (di dunia) seorang pemberi peringatan?"
+
+
+ref.disable_web_page_preview= true
+ref.reply_to_message_id= 9952
+ref.parse_mode= html
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(477): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-28 14:10:45  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804390171
+ref.message.message_id= 9953
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1611817840
+ref.message.text= /quran al mulk 9
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 
+ref.disable_web_page_preview= true
+ref.reply_to_message_id= 9953
+ref.parse_mode= html
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(523): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-28 14:11:29  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Unsupported start tag "br" at byte offset 546
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804390172
+ref.message.message_id= 9954
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1611817885
+ref.message.text= /quran al mulk 9
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 67. Al Mulk
+30 ayat, mekah
+
+ayat ke 9
+قَالُوا بَلَىٰ قَدْ جَاءَنَا نَذِيرٌ فَكَذَّبْنَا وَقُلْنَا مَا نَزَّلَ اللَّهُ مِنْ شَيْءٍ إِنْ أَنْتُمْ إِلَّا فِي ضَلَالٍ كَبِيرٍ
+
+q<u>aa</u>luu bal<u>aa</u> qad j<u>aa</u>-an<u>aa</u> na<u>dz</u>iirun faka<u>dzdz</u>abn<u>aa</u> waquln<u>aa</u> m<u>aa</u> nazzala <strong>al</strong>l<u>aa</u>hu min syay-in in antum ill<u>aa</u> fii <u>dh</u>al<u>aa</u>lin kabiir<strong>in</strong><br>
+
+
+Mereka menjawab: "Benar ada", sesungguhnya telah datang kepada kami seorang pemberi peringatan, maka kami mendustakan(nya) dan kami katakan: "Allah tidak menurunkan sesuatupun; kamu tidak lain hanyalah di dalam kesesatan yang besar".
+
+
+ref.disable_web_page_preview= true
+ref.reply_to_message_id= 9954
+ref.parse_mode= html
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(509): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-28 14:11:30  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Unsupported start tag "br" at byte offset 546
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804390172
+ref.message.message_id= 9954
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1611817885
+ref.message.text= /quran al mulk 9
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 67. Al Mulk
+30 ayat, mekah
+
+ayat ke 9
+قَالُوا بَلَىٰ قَدْ جَاءَنَا نَذِيرٌ فَكَذَّبْنَا وَقُلْنَا مَا نَزَّلَ اللَّهُ مِنْ شَيْءٍ إِنْ أَنْتُمْ إِلَّا فِي ضَلَالٍ كَبِيرٍ
+
+q<u>aa</u>luu bal<u>aa</u> qad j<u>aa</u>-an<u>aa</u> na<u>dz</u>iirun faka<u>dzdz</u>abn<u>aa</u> waquln<u>aa</u> m<u>aa</u> nazzala <strong>al</strong>l<u>aa</u>hu min syay-in in antum ill<u>aa</u> fii <u>dh</u>al<u>aa</u>lin kabiir<strong>in</strong><br>
+
+
+Mereka menjawab: "Benar ada", sesungguhnya telah datang kepada kami seorang pemberi peringatan, maka kami mendustakan(nya) dan kami katakan: "Allah tidak menurunkan sesuatupun; kamu tidak lain hanyalah di dalam kesesatan yang besar".
+
+
+ref.disable_web_page_preview= true
+ref.reply_to_message_id= 9954
+ref.parse_mode= html
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(523): Telegram->sendMessage(Array)
+#4 {main}
+
