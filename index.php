@@ -24,7 +24,7 @@ define('MAX_EXECUTE_SCRIPT', 20);											//SUNNAH_ROSUL
 // =============== BARIS SELANJUT NYA TIDAK USAH DIUBAH. KARENA KEMUNGKINAN KAMU TIDAL PAHAM ============
 
 require_once __DIR__ . '/vendor/autoload.php';
-require_once __DIR__ . '/ai_robot.php';
+require_once __DIR__ . '/function/ai_robot.php';
 
 
 
