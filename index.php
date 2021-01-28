@@ -489,7 +489,7 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
 		$telegram->sendMessage($content);
 	} else {
-		$reply = file_get_contents($host_server . '/function/quran.php?surah=' . urlencode($udahDiparse));
+		$reply = file_get_contents("http://serv1-fadhil-riyanto-bot.herokuapp.com/function/quran.php?surah=al%20fatihah");
 		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
 		$telegram->sendMessage($content);
 	}
