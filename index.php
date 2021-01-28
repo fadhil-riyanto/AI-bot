@@ -24,7 +24,8 @@ define('MAX_EXECUTE_SCRIPT', 20);											//SUNNAH_ROSUL
 // =============== BARIS SELANJUT NYA TIDAK USAH DIUBAH. KARENA KEMUNGKINAN KAMU TIDAL PAHAM ============
 
 require_once __DIR__ . '/vendor/autoload.php';
-require_once __DIR__ . '/function/ai_robot.php';
+require_once __DIR__ . '/ai_robot.php';
+
 
 
 ini_set('max_execution_time', MAX_EXECUTE_SCRIPT);
@@ -456,39 +457,6 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 			// 'gust_kph : ' . $h_weat->current->gust_kph . PHP_EOL;
 
 
-			$content = array('chat_id' => $chat_id, 'text' => $reply, 'disable_web_page_preview' => true, 'reply_to_message_id' => $message_id, 'disable_web_page_preview' => true, 'parse_mode' => 'html');
-			$telegram->sendMessage($content);
-		}
-	}
-	exit;
-} elseif ('/quran' == $adanParse[0] || '/quran@fadhil_riyanto_bot' == $adanParse[0]) {
-
-	$azanHilangcommand = str_replace($adanParse[0], '', $text);
-	$udahDiparse = str_replace($adanParse[0] . ' ', '', $text);
-
-	if ($azanHilangcommand == null) {
-		$reply = 'maaf, gunakan pattern /quran {surah} {ayat}' . PHP_EOL . PHP_EOL . 'contoh /quran al mulk 9';
-		$content = array('chat_id' => $chat_id, 'text' => $reply, 'disable_web_page_preview' => true, 'reply_to_message_id' => $message_id, 'disable_web_page_preview' => true, 'parse_mode' => 'html');
-		$telegram->sendMessage($content);
-	} else {
-
-
-		$ch = curl_init();
-		curl_setopt($ch, CURLOPT_URL, $host_server . '/APIs.php?method=surah&dns=' . urlencode($udahDiparse));
-		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-		$quran_bool = curl_exec($ch);
-		curl_close($ch);
-
-		if ($quran_bool == null) {
-			$reply = 'maaf, surah tidak ditemukan';
-			$content = array('chat_id' => $chat_id, 'text' => $reply, 'disable_web_page_preview' => true, 'reply_to_message_id' => $message_id, 'disable_web_page_preview' => true, 'parse_mode' => 'html');
-			$telegram->sendMessage($content);
-		} elseif ($quran_bool == 'kosong') {
-			$reply = 'maaf, ayat tidak ditemukan';
-			$content = array('chat_id' => $chat_id, 'text' => $reply, 'disable_web_page_preview' => true, 'reply_to_message_id' => $message_id, 'disable_web_page_preview' => true, 'parse_mode' => 'html');
-			$telegram->sendMessage($content);
-		} else {
-			$reply = $quran_bool;
 			$content = array('chat_id' => $chat_id, 'text' => $reply, 'disable_web_page_preview' => true, 'reply_to_message_id' => $message_id, 'disable_web_page_preview' => true, 'parse_mode' => 'html');
 			$telegram->sendMessage($content);
 		}
