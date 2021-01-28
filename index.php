@@ -11,7 +11,7 @@ define('API_WEATHER_KEY', '7cf7252c68d3473681054158212501');				//WAJIB
 define('MAX_EXECUTE_SCRIPT', 20);											//SUNNAH_ROSUL
 
 
-
+echo 'yo';
 
 // PENJELASAN SINGKAT
 
