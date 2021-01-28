@@ -44,4 +44,4 @@ if (isset($ayatnum) == true) {
     $reply = 'gk nemu';
 }
 header('type: text/plain');
-echo $reply;
+echo json_encode(array('hasil' => $reply));
