@@ -508,7 +508,7 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 			global $ayatSurah;
 			global $namaSurah;
 			global $typeSurah;
-			$listSurah = file_get_contents(__DIR__ . '\json_data\quran\list_surat.json');
+			$listSurah = file_get_contents(__DIR__ . '/json_data/quran/list_surat.json');
 			$listSurah_dec = json_decode($listSurah);
 			foreach ($listSurah_dec->hasil as $listSurah_for) {
 				if (strtolower($listSurah_for->nama) == strtolower($teks)) {
@@ -534,7 +534,7 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 			$reply =  '<b>' . $nomorSurah . '. ' . $namaSurah .  ' (' . $artiSurah . ')</b>' . PHP_EOL .
 				$ayatSurah . ' Ayat, ' . $typeSurah .   PHP_EOL . PHP_EOL . $ketSurah;
 		} elseif ($angkaBoolQS == true || empty($hasilayat[2]) == false) {
-			$qjson_get_data = file_get_contents(__DIR__ . '\json_data\quran\\'  . $angka . '.json');
+			$qjson_get_data = file_get_contents(__DIR__ . '/json_data/quran/'  . $angka . '.json');
 			$a = json_decode($qjson_get_data);
 			$reply = '<b>' . $nomorSurah . '. ' . $namaSurah .  ' (' . $artiSurah . ')</b>' . PHP_EOL .
 				$ayatSurah . ' Ayat, ' . $typeSurah .   PHP_EOL . PHP_EOL .
