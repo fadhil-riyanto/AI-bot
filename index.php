@@ -491,7 +491,7 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	$azanHilangcommand = str_replace($adanParse[0], '', $text);
 	$udahDiparse = str_replace($adanParse[0] . ' ', '', $text);
 	if ($azanHilangcommand == null) {
-		$reply = 'Gunakan pattern ' . PHP_EOL . '/quran {surah} {ayat}' . PHP_EOL . 'Contoh /quran al mulk 9';
+		$reply = 'Gunakan pattern ' . PHP_EOL . '/quran {surah} {ayat}' . PHP_EOL . PHP_EOL . 'Contoh <pre>/quran al mulk 9</pre>';
 		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
 		$telegram->sendMessage($content);
 	} else {
