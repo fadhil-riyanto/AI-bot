@@ -1,0 +1,506 @@
+============[Date]============
+[ 2021-01-29 07:31:49  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804390296
+ref.callback_query.id= 5984360328519860018
+ref.callback_query.from.id= 1393342467
+ref.callback_query.from.is_bot= false
+ref.callback_query.from.first_name= Fadhil
+ref.callback_query.from.last_name= Riyanto
+ref.callback_query.from.username= fadhil_riyanto
+ref.callback_query.from.language_code= en
+ref.callback_query.message.message_id= 10084
+ref.callback_query.message.from.id= 1489990155
+ref.callback_query.message.from.is_bot= true
+ref.callback_query.message.from.first_name= Fadhil Riyanto Bot
+ref.callback_query.message.from.username= Fadhil_riyanto_bot
+ref.callback_query.message.chat.id= 1393342467
+ref.callback_query.message.chat.first_name= Fadhil
+ref.callback_query.message.chat.last_name= Riyanto
+ref.callback_query.message.chat.username= fadhil_riyanto
+ref.callback_query.message.chat.type= private
+ref.callback_query.message.date= 1611880299
+ref.callback_query.message.reply_to_message.message_id= 10083
+ref.callback_query.message.reply_to_message.from.id= 1393342467
+ref.callback_query.message.reply_to_message.from.is_bot= false
+ref.callback_query.message.reply_to_message.from.first_name= Fadhil
+ref.callback_query.message.reply_to_message.from.last_name= Riyanto
+ref.callback_query.message.reply_to_message.from.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.from.language_code= en
+ref.callback_query.message.reply_to_message.chat.id= 1393342467
+ref.callback_query.message.reply_to_message.chat.first_name= Fadhil
+ref.callback_query.message.reply_to_message.chat.last_name= Riyanto
+ref.callback_query.message.reply_to_message.chat.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.chat.type= private
+ref.callback_query.message.reply_to_message.date= 1611880293
+ref.callback_query.message.reply_to_message.text= /help
+ref.callback_query.message.reply_to_message.entities.0.offset= 0
+ref.callback_query.message.reply_to_message.entities.0.length= 5
+ref.callback_query.message.reply_to_message.entities.0.type= bot_command
+ref.callback_query.message.text= Hai  @fadhil_riyanto, Selamat datang di buku panduan bot ini
+ref.callback_query.message.entities.0.offset= 5
+ref.callback_query.message.entities.0.length= 15
+ref.callback_query.message.entities.0.type= mention
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.text= corona
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.callback_data= /callback_q@fadhil_riyanto_bot corona
+ref.callback_query.message.reply_markup.inline_keyboard.0.1.text= userid
+ref.callback_query.message.reply_markup.inline_keyboard.0.1.callback_data= /callback_q@fadhil_riyanto_bot userid
+ref.callback_query.message.reply_markup.inline_keyboard.1.0.text= waktu
+ref.callback_query.message.reply_markup.inline_keyboard.1.0.callback_data= /callback_q@fadhil_riyanto_bot waktu
+ref.callback_query.message.reply_markup.inline_keyboard.1.1.text= info
+ref.callback_query.message.reply_markup.inline_keyboard.1.1.callback_data= /callback_q@fadhil_riyanto_bot info
+ref.callback_query.message.reply_markup.inline_keyboard.2.0.text= panggil
+ref.callback_query.message.reply_markup.inline_keyboard.2.0.callback_data= /callback_q@fadhil_riyanto_bot panggil
+ref.callback_query.message.reply_markup.inline_keyboard.2.1.text= start
+ref.callback_query.message.reply_markup.inline_keyboard.2.1.callback_data= /callback_q@fadhil_riyanto_bot start
+ref.callback_query.message.reply_markup.inline_keyboard.3.0.text= short
+ref.callback_query.message.reply_markup.inline_keyboard.3.0.callback_data= /callback_q@fadhil_riyanto_bot short
+ref.callback_query.message.reply_markup.inline_keyboard.3.1.text= tanggal
+ref.callback_query.message.reply_markup.inline_keyboard.3.1.callback_data= /callback_q@fadhil_riyanto_bot tanggal
+ref.callback_query.message.reply_markup.inline_keyboard.4.0.text= bug
+ref.callback_query.message.reply_markup.inline_keyboard.4.0.callback_data= /callback_q@fadhil_riyanto_bot bug
+ref.callback_query.message.reply_markup.inline_keyboard.4.1.text= azan
+ref.callback_query.message.reply_markup.inline_keyboard.4.1.callback_data= /callback_q@fadhil_riyanto_bot azan
+ref.callback_query.message.reply_markup.inline_keyboard.5.0.text= donate
+ref.callback_query.message.reply_markup.inline_keyboard.5.0.callback_data= /callback_q@fadhil_riyanto_bot donate
+ref.callback_query.message.reply_markup.inline_keyboard.5.1.text= gempa
+ref.callback_query.message.reply_markup.inline_keyboard.5.1.callback_data= /callback_q@fadhil_riyanto_bot gempa
+ref.callback_query.message.reply_markup.inline_keyboard.6.0.text= help
+ref.callback_query.message.reply_markup.inline_keyboard.6.0.callback_data= /callback_q@fadhil_riyanto_bot help
+ref.callback_query.message.reply_markup.inline_keyboard.6.1.text= wiki
+ref.callback_query.message.reply_markup.inline_keyboard.6.1.callback_data= /callback_q@fadhil_riyanto_bot wiki
+ref.callback_query.message.reply_markup.inline_keyboard.7.0.text= tulis
+ref.callback_query.message.reply_markup.inline_keyboard.7.0.callback_data= /callback_q@fadhil_riyanto_bot tulis
+ref.callback_query.message.reply_markup.inline_keyboard.7.1.text= get_ip
+ref.callback_query.message.reply_markup.inline_keyboard.7.1.callback_data= /callback_q@fadhil_riyanto_bot get_ip
+ref.callback_query.message.reply_markup.inline_keyboard.8.0.text= get_mx
+ref.callback_query.message.reply_markup.inline_keyboard.8.0.callback_data= /callback_q@fadhil_riyanto_bot get_mx
+ref.callback_query.message.reply_markup.inline_keyboard.8.1.text= get_ns
+ref.callback_query.message.reply_markup.inline_keyboard.8.1.callback_data= /callback_q@fadhil_riyanto_bot get_ns
+ref.callback_query.message.reply_markup.inline_keyboard.9.0.text= get_aaaa
+ref.callback_query.message.reply_markup.inline_keyboard.9.0.callback_data= /callback_q@fadhil_riyanto_bot get_aaaa
+ref.callback_query.message.reply_markup.inline_keyboard.9.1.text= get_txt
+ref.callback_query.message.reply_markup.inline_keyboard.9.1.callback_data= /callback_q@fadhil_riyanto_bot get_txt
+ref.callback_query.message.reply_markup.inline_keyboard.10.0.text= get_cname
+ref.callback_query.message.reply_markup.inline_keyboard.10.0.callback_data= /callback_q@fadhil_riyanto_bot cname
+ref.callback_query.message.reply_markup.inline_keyboard.10.1.text= get_github_user
+ref.callback_query.message.reply_markup.inline_keyboard.10.1.callback_data= /callback_q@fadhil_riyanto_bot get_github_user
+ref.callback_query.message.reply_markup.inline_keyboard.11.0.text= ip_geo
+ref.callback_query.message.reply_markup.inline_keyboard.11.0.callback_data= /callback_q@fadhil_riyanto_bot ip_geo
+ref.callback_query.message.reply_markup.inline_keyboard.11.1.text= faker
+ref.callback_query.message.reply_markup.inline_keyboard.11.1.callback_data= /callback_q@fadhil_riyanto_bot faker
+ref.callback_query.message.reply_markup.inline_keyboard.12.0.text= sha512
+ref.callback_query.message.reply_markup.inline_keyboard.12.0.callback_data= /callback_q@fadhil_riyanto_bot sha512
+ref.callback_query.message.reply_markup.inline_keyboard.12.1.text= sha384
+ref.callback_query.message.reply_markup.inline_keyboard.12.1.callback_data= /callback_q@fadhil_riyanto_bot sha384
+ref.callback_query.message.reply_markup.inline_keyboard.13.0.text= sha256
+ref.callback_query.message.reply_markup.inline_keyboard.13.0.callback_data= /callback_q@fadhil_riyanto_bot sha256
+ref.callback_query.message.reply_markup.inline_keyboard.13.1.text= sha1
+ref.callback_query.message.reply_markup.inline_keyboard.13.1.callback_data= /callback_q@fadhil_riyanto_bot sha1
+ref.callback_query.message.reply_markup.inline_keyboard.14.0.text= md5
+ref.callback_query.message.reply_markup.inline_keyboard.14.0.callback_data= /callback_q@fadhil_riyanto_bot md5
+ref.callback_query.message.reply_markup.inline_keyboard.14.1.text= md4
+ref.callback_query.message.reply_markup.inline_keyboard.14.1.callback_data= /callback_q@fadhil_riyanto_bot md4
+ref.callback_query.message.reply_markup.inline_keyboard.15.0.text= md2
+ref.callback_query.message.reply_markup.inline_keyboard.15.0.callback_data= /callback_q@fadhil_riyanto_bot md2
+ref.callback_query.message.reply_markup.inline_keyboard.15.1.text= base64_encode
+ref.callback_query.message.reply_markup.inline_keyboard.15.1.callback_data= /callback_q@fadhil_riyanto_bot base64_encode
+ref.callback_query.message.reply_markup.inline_keyboard.16.0.text= base64_decode
+ref.callback_query.message.reply_markup.inline_keyboard.16.0.callback_data= /callback_q@fadhil_riyanto_bot base64_decode
+ref.callback_query.message.reply_markup.inline_keyboard.16.1.text= ripemd128
+ref.callback_query.message.reply_markup.inline_keyboard.16.1.callback_data= /callback_q@fadhil_riyanto_bot ripemd128
+ref.callback_query.message.reply_markup.inline_keyboard.17.0.text= ripemd160
+ref.callback_query.message.reply_markup.inline_keyboard.17.0.callback_data= /callback_q@fadhil_riyanto_bot ripemd160
+ref.callback_query.message.reply_markup.inline_keyboard.17.1.text= ripemd256
+ref.callback_query.message.reply_markup.inline_keyboard.17.1.callback_data= /callback_q@fadhil_riyanto_bot ripemd256
+ref.callback_query.message.reply_markup.inline_keyboard.18.0.text= ripemd320
+ref.callback_query.message.reply_markup.inline_keyboard.18.0.callback_data= /callback_q@fadhil_riyanto_bot ripemd320
+ref.callback_query.message.reply_markup.inline_keyboard.18.1.text= whirlpool
+ref.callback_query.message.reply_markup.inline_keyboard.18.1.callback_data= /callback_q@fadhil_riyanto_bot whirlpool
+ref.callback_query.message.reply_markup.inline_keyboard.19.0.text= capture
+ref.callback_query.message.reply_markup.inline_keyboard.19.0.callback_data= /callback_q@fadhil_riyanto_bot capture
+ref.callback_query.chat_instance= -5109722127778484442
+ref.callback_query.data= /callback_q@fadhil_riyanto_bot short
+
+
+[ref]
+ref.text= /short merupakan command untuk memperpendek link. 
+
+pattern yang ada di bot ini adalah <pre>/short {link kamu}</pre>. 
+
+contoh <pre>/short http://google.com</pre> 
+
+ Nanti dia akan mengembalikan link dengan wujud telah disingkat
+ref.message_id= 
+ref.reply_markup= {"inline_keyboard":[[{"text":"kembali","callback_data":"\/help@fadhil_riyanto_bot"}]]}
+ref.reply_to_message_id= 10084
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(184): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\index.php(648): Telegram->editMessageText(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-29 07:32:06  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804390297
+ref.callback_query.id= 5984360331429092937
+ref.callback_query.from.id= 1393342467
+ref.callback_query.from.is_bot= false
+ref.callback_query.from.first_name= Fadhil
+ref.callback_query.from.last_name= Riyanto
+ref.callback_query.from.username= fadhil_riyanto
+ref.callback_query.from.language_code= en
+ref.callback_query.message.message_id= 10084
+ref.callback_query.message.from.id= 1489990155
+ref.callback_query.message.from.is_bot= true
+ref.callback_query.message.from.first_name= Fadhil Riyanto Bot
+ref.callback_query.message.from.username= Fadhil_riyanto_bot
+ref.callback_query.message.chat.id= 1393342467
+ref.callback_query.message.chat.first_name= Fadhil
+ref.callback_query.message.chat.last_name= Riyanto
+ref.callback_query.message.chat.username= fadhil_riyanto
+ref.callback_query.message.chat.type= private
+ref.callback_query.message.date= 1611880299
+ref.callback_query.message.reply_to_message.message_id= 10083
+ref.callback_query.message.reply_to_message.from.id= 1393342467
+ref.callback_query.message.reply_to_message.from.is_bot= false
+ref.callback_query.message.reply_to_message.from.first_name= Fadhil
+ref.callback_query.message.reply_to_message.from.last_name= Riyanto
+ref.callback_query.message.reply_to_message.from.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.from.language_code= en
+ref.callback_query.message.reply_to_message.chat.id= 1393342467
+ref.callback_query.message.reply_to_message.chat.first_name= Fadhil
+ref.callback_query.message.reply_to_message.chat.last_name= Riyanto
+ref.callback_query.message.reply_to_message.chat.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.chat.type= private
+ref.callback_query.message.reply_to_message.date= 1611880293
+ref.callback_query.message.reply_to_message.text= /help
+ref.callback_query.message.reply_to_message.entities.0.offset= 0
+ref.callback_query.message.reply_to_message.entities.0.length= 5
+ref.callback_query.message.reply_to_message.entities.0.type= bot_command
+ref.callback_query.message.text= Hai  @fadhil_riyanto, Selamat datang di buku panduan bot ini
+ref.callback_query.message.entities.0.offset= 5
+ref.callback_query.message.entities.0.length= 15
+ref.callback_query.message.entities.0.type= mention
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.text= corona
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.callback_data= /callback_q@fadhil_riyanto_bot corona
+ref.callback_query.message.reply_markup.inline_keyboard.0.1.text= userid
+ref.callback_query.message.reply_markup.inline_keyboard.0.1.callback_data= /callback_q@fadhil_riyanto_bot userid
+ref.callback_query.message.reply_markup.inline_keyboard.1.0.text= waktu
+ref.callback_query.message.reply_markup.inline_keyboard.1.0.callback_data= /callback_q@fadhil_riyanto_bot waktu
+ref.callback_query.message.reply_markup.inline_keyboard.1.1.text= info
+ref.callback_query.message.reply_markup.inline_keyboard.1.1.callback_data= /callback_q@fadhil_riyanto_bot info
+ref.callback_query.message.reply_markup.inline_keyboard.2.0.text= panggil
+ref.callback_query.message.reply_markup.inline_keyboard.2.0.callback_data= /callback_q@fadhil_riyanto_bot panggil
+ref.callback_query.message.reply_markup.inline_keyboard.2.1.text= start
+ref.callback_query.message.reply_markup.inline_keyboard.2.1.callback_data= /callback_q@fadhil_riyanto_bot start
+ref.callback_query.message.reply_markup.inline_keyboard.3.0.text= short
+ref.callback_query.message.reply_markup.inline_keyboard.3.0.callback_data= /callback_q@fadhil_riyanto_bot short
+ref.callback_query.message.reply_markup.inline_keyboard.3.1.text= tanggal
+ref.callback_query.message.reply_markup.inline_keyboard.3.1.callback_data= /callback_q@fadhil_riyanto_bot tanggal
+ref.callback_query.message.reply_markup.inline_keyboard.4.0.text= bug
+ref.callback_query.message.reply_markup.inline_keyboard.4.0.callback_data= /callback_q@fadhil_riyanto_bot bug
+ref.callback_query.message.reply_markup.inline_keyboard.4.1.text= azan
+ref.callback_query.message.reply_markup.inline_keyboard.4.1.callback_data= /callback_q@fadhil_riyanto_bot azan
+ref.callback_query.message.reply_markup.inline_keyboard.5.0.text= donate
+ref.callback_query.message.reply_markup.inline_keyboard.5.0.callback_data= /callback_q@fadhil_riyanto_bot donate
+ref.callback_query.message.reply_markup.inline_keyboard.5.1.text= gempa
+ref.callback_query.message.reply_markup.inline_keyboard.5.1.callback_data= /callback_q@fadhil_riyanto_bot gempa
+ref.callback_query.message.reply_markup.inline_keyboard.6.0.text= help
+ref.callback_query.message.reply_markup.inline_keyboard.6.0.callback_data= /callback_q@fadhil_riyanto_bot help
+ref.callback_query.message.reply_markup.inline_keyboard.6.1.text= wiki
+ref.callback_query.message.reply_markup.inline_keyboard.6.1.callback_data= /callback_q@fadhil_riyanto_bot wiki
+ref.callback_query.message.reply_markup.inline_keyboard.7.0.text= tulis
+ref.callback_query.message.reply_markup.inline_keyboard.7.0.callback_data= /callback_q@fadhil_riyanto_bot tulis
+ref.callback_query.message.reply_markup.inline_keyboard.7.1.text= get_ip
+ref.callback_query.message.reply_markup.inline_keyboard.7.1.callback_data= /callback_q@fadhil_riyanto_bot get_ip
+ref.callback_query.message.reply_markup.inline_keyboard.8.0.text= get_mx
+ref.callback_query.message.reply_markup.inline_keyboard.8.0.callback_data= /callback_q@fadhil_riyanto_bot get_mx
+ref.callback_query.message.reply_markup.inline_keyboard.8.1.text= get_ns
+ref.callback_query.message.reply_markup.inline_keyboard.8.1.callback_data= /callback_q@fadhil_riyanto_bot get_ns
+ref.callback_query.message.reply_markup.inline_keyboard.9.0.text= get_aaaa
+ref.callback_query.message.reply_markup.inline_keyboard.9.0.callback_data= /callback_q@fadhil_riyanto_bot get_aaaa
+ref.callback_query.message.reply_markup.inline_keyboard.9.1.text= get_txt
+ref.callback_query.message.reply_markup.inline_keyboard.9.1.callback_data= /callback_q@fadhil_riyanto_bot get_txt
+ref.callback_query.message.reply_markup.inline_keyboard.10.0.text= get_cname
+ref.callback_query.message.reply_markup.inline_keyboard.10.0.callback_data= /callback_q@fadhil_riyanto_bot cname
+ref.callback_query.message.reply_markup.inline_keyboard.10.1.text= get_github_user
+ref.callback_query.message.reply_markup.inline_keyboard.10.1.callback_data= /callback_q@fadhil_riyanto_bot get_github_user
+ref.callback_query.message.reply_markup.inline_keyboard.11.0.text= ip_geo
+ref.callback_query.message.reply_markup.inline_keyboard.11.0.callback_data= /callback_q@fadhil_riyanto_bot ip_geo
+ref.callback_query.message.reply_markup.inline_keyboard.11.1.text= faker
+ref.callback_query.message.reply_markup.inline_keyboard.11.1.callback_data= /callback_q@fadhil_riyanto_bot faker
+ref.callback_query.message.reply_markup.inline_keyboard.12.0.text= sha512
+ref.callback_query.message.reply_markup.inline_keyboard.12.0.callback_data= /callback_q@fadhil_riyanto_bot sha512
+ref.callback_query.message.reply_markup.inline_keyboard.12.1.text= sha384
+ref.callback_query.message.reply_markup.inline_keyboard.12.1.callback_data= /callback_q@fadhil_riyanto_bot sha384
+ref.callback_query.message.reply_markup.inline_keyboard.13.0.text= sha256
+ref.callback_query.message.reply_markup.inline_keyboard.13.0.callback_data= /callback_q@fadhil_riyanto_bot sha256
+ref.callback_query.message.reply_markup.inline_keyboard.13.1.text= sha1
+ref.callback_query.message.reply_markup.inline_keyboard.13.1.callback_data= /callback_q@fadhil_riyanto_bot sha1
+ref.callback_query.message.reply_markup.inline_keyboard.14.0.text= md5
+ref.callback_query.message.reply_markup.inline_keyboard.14.0.callback_data= /callback_q@fadhil_riyanto_bot md5
+ref.callback_query.message.reply_markup.inline_keyboard.14.1.text= md4
+ref.callback_query.message.reply_markup.inline_keyboard.14.1.callback_data= /callback_q@fadhil_riyanto_bot md4
+ref.callback_query.message.reply_markup.inline_keyboard.15.0.text= md2
+ref.callback_query.message.reply_markup.inline_keyboard.15.0.callback_data= /callback_q@fadhil_riyanto_bot md2
+ref.callback_query.message.reply_markup.inline_keyboard.15.1.text= base64_encode
+ref.callback_query.message.reply_markup.inline_keyboard.15.1.callback_data= /callback_q@fadhil_riyanto_bot base64_encode
+ref.callback_query.message.reply_markup.inline_keyboard.16.0.text= base64_decode
+ref.callback_query.message.reply_markup.inline_keyboard.16.0.callback_data= /callback_q@fadhil_riyanto_bot base64_decode
+ref.callback_query.message.reply_markup.inline_keyboard.16.1.text= ripemd128
+ref.callback_query.message.reply_markup.inline_keyboard.16.1.callback_data= /callback_q@fadhil_riyanto_bot ripemd128
+ref.callback_query.message.reply_markup.inline_keyboard.17.0.text= ripemd160
+ref.callback_query.message.reply_markup.inline_keyboard.17.0.callback_data= /callback_q@fadhil_riyanto_bot ripemd160
+ref.callback_query.message.reply_markup.inline_keyboard.17.1.text= ripemd256
+ref.callback_query.message.reply_markup.inline_keyboard.17.1.callback_data= /callback_q@fadhil_riyanto_bot ripemd256
+ref.callback_query.message.reply_markup.inline_keyboard.18.0.text= ripemd320
+ref.callback_query.message.reply_markup.inline_keyboard.18.0.callback_data= /callback_q@fadhil_riyanto_bot ripemd320
+ref.callback_query.message.reply_markup.inline_keyboard.18.1.text= whirlpool
+ref.callback_query.message.reply_markup.inline_keyboard.18.1.callback_data= /callback_q@fadhil_riyanto_bot whirlpool
+ref.callback_query.message.reply_markup.inline_keyboard.19.0.text= capture
+ref.callback_query.message.reply_markup.inline_keyboard.19.0.callback_data= /callback_q@fadhil_riyanto_bot capture
+ref.callback_query.chat_instance= -5109722127778484442
+ref.callback_query.data= /callback_q@fadhil_riyanto_bot userid
+
+
+[ref]
+ref.text= /userid berguna untuk melihat ID telegram kamu. Command ini terinspirasi dari bot @getidsbot. Terinstpirasi tidak berarti plagiat. semua kode sumber bot ini ditulis asli tanpa copy paste sumber lain
+ref.message_id= 
+ref.reply_markup= {"inline_keyboard":[[{"text":"kembali","callback_data":"\/help@fadhil_riyanto_bot"}]]}
+ref.reply_to_message_id= 10084
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(184): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\index.php(648): Telegram->editMessageText(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-29 07:54:15  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804390304
+ref.message.message_id= 10097
+ref.message.from.id= 1389486417
+ref.message.from.is_bot= false
+ref.message.from.first_name= Anak mamak
+ref.message.from.language_code= id
+ref.message.chat.id= 1389486417
+ref.message.chat.first_name= Anak mamak
+ref.message.chat.type= private
+ref.message.date= 1611881646
+ref.message.text= Telat
+
+
+[ref]
+ref.text= 
+
+ref.reply_to_message_id= 10097
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(1921): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-29 07:58:00  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+curl_error_code:		6
+curl_error:		Could not resolve host: api.telegram.org
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804390306
+ref.message.message_id= 10100
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1611881866
+ref.message.text= /quran al mulk 9
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.action= typing
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(131): Telegram->endpoint('sendChatAction', Array)
+#3 C:\bot telegram\index.php(230): Telegram->sendChatAction(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-29 08:01:41  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Unsupported start tag "br" at byte offset 413
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804390309
+ref.message.message_id= 10105
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1611882095
+ref.message.text= /quran al fatihah 7
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 1. Al Fatihah / 7 ayat, mekah
+ayat ke 7
+
+صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ
+<u>sh</u>ir<u>aath</u>a <strong>al</strong>la<u>dz</u>iina an'amta 'alayhim ghayri <strong>a</strong>lmagh<u>dh</u>uubi 'alayhim wal<u>aa</u> <strong>al</strong><u>dhdhaa</u>lliin<strong>a</strong><br>
+(yaitu) Jalan orang-orang yang telah Engkau beri ni'mat kepada mereka; bukan (jalan) mereka yang dimurkai dan bukan (pula jalan) mereka yang sesat. {9}
+
+
+ref.reply_to_message_id= 10105
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(529): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-29 08:06:16  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Unsupported start tag "br" at byte offset 541
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804390311
+ref.message.message_id= 10107
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1611882368
+ref.message.text= /quran al fatihah 7
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Surat <i>Al Faatihah</i> (Pembukaan) yang diturunkan di Mekah dan terdiri dari 7 ayat adalah surat yang pertama-tama diturunkan dengan lengkap  diantara surat-surat yang ada dalam Al Quran dan termasuk golongan surat Makkiyyah. Surat ini disebut <i>Al Faatihah</i> (Pembukaan), karena dengan surat inilah dibuka dan dimulainya Al Quran. Dinamakan <i>Ummul Quran</i> (induk Al Quran) atau <i>Ummul Kitaab</i> (induk Al Kitaab) karena dia merupakan induk dari semua isi Al Quran, dan karena itu diwajibkan membacanya pada tiap-tiap sembahyang.<br> Dinamakan pula <i>As Sab'ul matsaany</i> (tujuh yang berulang-ulang) karena ayatnya tujuh dan dibaca berulang-ulang dalam sholat.
+ref.reply_to_message_id= 10107
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(525): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-01-29 08:07:36  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Unsupported start tag "br" at byte offset 541
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804390312
+ref.message.message_id= 10108
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1611882448
+ref.message.text= /quran al fatihah 7
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Surat <i>Al Faatihah</i> (Pembukaan) yang diturunkan di Mekah dan terdiri dari 7 ayat adalah surat yang pertama-tama diturunkan dengan lengkap  diantara surat-surat yang ada dalam Al Quran dan termasuk golongan surat Makkiyyah. Surat ini disebut <i>Al Faatihah</i> (Pembukaan), karena dengan surat inilah dibuka dan dimulainya Al Quran. Dinamakan <i>Ummul Quran</i> (induk Al Quran) atau <i>Ummul Kitaab</i> (induk Al Kitaab) karena dia merupakan induk dari semua isi Al Quran, dan karena itu diwajibkan membacanya pada tiap-tiap sembahyang.<br> Dinamakan pula <i>As Sab'ul matsaany</i> (tujuh yang berulang-ulang) karena ayatnya tujuh dan dibaca berulang-ulang dalam sholat.
+ref.reply_to_message_id= 10108
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(516): Telegram->sendMessage(Array)
+#4 {main}
+
