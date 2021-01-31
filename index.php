@@ -235,7 +235,7 @@ if (isset($text)) {
 	$chek_gc = detect_grup();
 	$nama_gc = $telegram->namaGrup();
 	if ($chek_gc == true) {
-		if ($nama_gc == 'fadhil_riyanto_project' || $nama_gc == 'testing7382' || $nama_gc == 'gabut_people_group' || $nama_gc == 'scriptiseng') {
+		if ($nama_gc == 'tgdev_php_group' || $nama_gc == 'testing470927409237094283' || $nama_gc == 'gabut_people_group' || $nama_gc == 'scriptiseng') {
 		} else {
 			$reply = 'Maaf, saya diprogram oleh pemilik saya untuk tidak dimasukkan ke grup. Jika anda masih tetap memasukkan saya ke grup. maka otomatis saya akan mengeluarkan diri.';
 			$content1 = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
@@ -476,6 +476,42 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	$content = array('chat_id' => $chat_id, 'text' => $reply,  'reply_markup' => $keyb, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
 	$telegram->sendMessage($content);
 	exit;
+} elseif ('/tr' == $adanParse[0] || '/tr@fadhil_riyanto_bot' == $adanParse[0]) {
+	$resultGetReply = $telegram->getData();
+	$textByreply = $resultGetReply['message']['reply_to_message']['text'];
+
+	$azanHilangcommand = str_replace($adanParse[0], '', $text);
+	$udahDiparse = str_replace($adanParse[0] . ' ', '', $text);
+
+	if (!isset($textByreply)) {
+		$reply = 'Ups, anda harus mereply pesan yang ingin di translate' . PHP_EOL . PHP_EOL .
+			'Default akan ditranslate ke bahasa indonesia. Untuk mengubah gunakan ' . PHP_EOL . PHP_EOL .
+			'<pre>/tr {kode bahasa}</pre>' . PHP_EOL . PHP_EOL . 'Kode bahasa : https://cloud.google.com/translate/docs/languages';
+		$content = array('chat_id' => $chat_id, 'text' => $reply,  'reply_markup' => $keyb, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+		$telegram->sendMessage($content);
+	} elseif (isset($adanParse[1]) and $textByreply) {
+		$translateByReply = file_get_contents('https://api-translate.azharimm.tk/translate?engine=google&text=' . urlencode($textByreply) . '&to=' .  $adanParse[1]);
+		$transhasil = json_decode($translateByReply);
+		$reply = $transhasil->data->result;
+		$content = array('chat_id' => $chat_id, 'text' => $reply,  'reply_markup' => $keyb, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+		$telegram->sendMessage($content);
+	} elseif (isset($textByreply)) {
+		$reply = 'pakek id';
+		$content = array('chat_id' => $chat_id, 'text' => $reply,  'reply_markup' => $keyb, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+		$telegram->sendMessage($content);
+	} else {
+		$translateByReply = file_get_contents('https://api-translate.azharimm.tk/translate?engine=google&text=' . urlencode($textByreply) . '&to=id');
+		$transhasil = json_decode($translateByReply);
+		$reply = $transhasil->data->result;
+		$content = array('chat_id' => $chat_id, 'text' => $reply,  'reply_markup' => $keyb, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+		$telegram->sendMessage($content);
+	}
+
+
+	// $reply = $text;
+	// $content = array('chat_id' => $chat_id, 'text' => $reply,  'reply_markup' => $keyb, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+	// $telegram->sendMessage($content);
+	exit;
 } elseif ($text == '/leave' || $text == '/leave@fadhil_riyanto_bot') {
 	if ($userID == $userid_pemilik) {
 		$content = array('chat_id' => '@fadhil_riyanto_project');
@@ -532,7 +568,7 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 			$reply =  "ups, tidak ditemukan";
 		} elseif ($angkaBoolQS == true and empty($hasilayat[2])) {
 			$reply =  '<b>' . $nomorSurah . '. ' . $namaSurah .  ' (' . $artiSurah . ')</b>' . PHP_EOL .
-				$ayatSurah . ' Ayat, ' . $typeSurah .   PHP_EOL . PHP_EOL . $ketSurah;
+				$ayatSurah . ' Ayat, ' . $typeSurah .   PHP_EOL . PHP_EOL . strip_tags($ketSurah);
 		} elseif ($angkaBoolQS == true || empty($hasilayat[2]) == false) {
 			$qjson_get_data = file_get_contents(__DIR__ . '/json_data/quran/'  . $angka . '.json');
 			$a = json_decode($qjson_get_data);
