@@ -13,6 +13,8 @@ function cariKodeNomorSurah($teks)
     global $ketSurah;
     global $artiSurah;
     global $ayatSurah;
+    global $namaSurah;
+    global $typeSurah;
     $listSurah = file_get_contents(__DIR__ . '\..\json_data\quran\list_surat.json');
     $listSurah_dec = json_decode($listSurah);
     foreach ($listSurah_dec->hasil as $listSurah_for) {
@@ -20,7 +22,9 @@ function cariKodeNomorSurah($teks)
             $nomorSurah = $listSurah_for->nomor;
             $ketSurah = $listSurah_for->keterangan;
             $artiSurah = $listSurah_for->arti;
-            $ayatSurah = $listSurah_for->arti;
+            $ayatSurah = $listSurah_for->ayat;
+            $namaSurah = $listSurah_for->nama;
+            $typeSurah = $listSurah_for->type;
             return true;
         }
     }
@@ -32,16 +36,16 @@ if (isset($hasilayat[2])) {
     $ayat = $hasilayat[2];
 }
 if ($angkaBoolQS == false) {
-    echo "ups, ga nemu";
+    $reply =  "ups, ga nemu";
 } elseif ($angkaBoolQS == true and empty($hasilayat[2])) {
-    echo "ket";
+    $reply =  '<b>' . $nomorSurah . '. ' . $namaSurah .  ' (' . $artiSurah . ')</b>' . PHP_EOL .
+        $ayatSurah . ' Ayat, ' . $typeSurah .   PHP_EOL . PHP_EOL . $ketSurah;
 } elseif ($angkaBoolQS == true || empty($hasilayat[2]) == false) {
     $qjson_get_data = file_get_contents(__DIR__ . '\..\json_data\quran\\'  . $angka . '.json');
     $a = json_decode($qjson_get_data);
-    $reply = 'Nama surah : ' . $a->$angka->name_latin . PHP_EOL .
-        'Jumlah ayah : ' . $a->$angka->number_of_ayah . PHP_EOL .
-        $a->$angka->text->$ayat . PHP_EOL .
-        $a->$angka->translations->id->text->$ayat . PHP_EOL;
-
-    echo $reply;
+    $reply = '<b>' . $nomorSurah . '. ' . $namaSurah .  ' (' . $artiSurah . ')</b>' . PHP_EOL .
+        $ayatSurah . ' Ayat, ' . $typeSurah .   PHP_EOL . PHP_EOL .
+        $a->$angka->text->$ayat . PHP_EOL . PHP_EOL .
+        'Translate : ' . $a->$angka->translations->id->text->$ayat;
 }
+echo $reply;
