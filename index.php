@@ -8,7 +8,7 @@ define('USER_ID_TG_ME', '1393342467');										//WAJIB
 define('CUTLLY_API', 'fa1d93ba90dedd2ceb7d01e9bade271653373');				//WAJIB
 define('TIME_ZONE', 'Asia/Jakarta');										//WAJIB
 define('API_WEATHER_KEY', '7cf7252c68d3473681054158212501');				//WAJIB
-define('MAX_EXECUTE_SCRIPT', 20);											//SUNNAH_ROSUL
+define('MAX_EXECUTE_SCRIPT', 5000);											//SUNNAH_ROSUL
 
 
 
@@ -482,6 +482,12 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 		$telegram->leaveChat($content);
 	}
 } elseif ('/quran' == $adanParse[0] || '/quran@fadhil_riyanto_bot' == $adanParse[0]) {
+	if ($userID != $userid_pemilik) {
+		$reply = '403 acces ditolak, yg bisa mengeksekusi command ini hanya @fadhil_riyanto. Command ini sedang tahap ujicoba';
+		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+		$telegram->sendMessage($content);
+		exit;
+	}
 	$azanHilangcommand = str_replace($adanParse[0], '', $text);
 	$udahDiparse = str_replace($adanParse[0] . ' ', '', $text);
 	if ($azanHilangcommand == null) {
@@ -489,16 +495,48 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
 		$telegram->sendMessage($content);
 	} else {
-		//$reply = file_get_contents("http://serv1-fadhil-riyanto-bot.herokuapp.com/function/quran.php?surah=al%20fatihah");
-		// $reply = 'y';
-		$ch = curl_init();
-		curl_setopt($ch, CURLOPT_URL, $host_server . '/function/quran.php?surah=' . urlencode($udahDiparse));
-		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-		$repl = curl_exec($ch);
-		curl_close($ch);
+
+		$preg1_surah = preg_match('/([a-zA-Z_+\- ]+)\s([-+]?\s*\d+(?:\s*)+)/i', $udahDiparse, $hasilayat);
+		if ($preg1_surah == 0) {
+			preg_match('/([a-zA-Z_+\- ]+)/i', $udahDiparse, $hasilayat);
+		}
+		$qs_trimmed = rtrim($hasilayat[1], " ");
+		function cariKodeNomorSurah($teks)
+		{
+			global $nomorSurah;
+			$listSurah = file_get_contents(__DIR__ . '\json_data\quran\list_surat.json');
+			$listSurah_dec = json_decode($listSurah);
+			foreach ($listSurah_dec->hasil as $listSurah_for) {
+				if (strtolower($listSurah_for->nama) == strtolower($teks)) {
+					$nomorSurah = $listSurah_for->nomor;
+					return true;
+				}
+			}
+			return false;
+		}
+		$angkaBoolQS = cariKodeNomorSurah($qs_trimmed);
+		$angka = $nomorSurah;
+		if (isset($hasilayat[2])) {
+			$ayat = $hasilayat[2];
+		}
+		if ($angkaBoolQS == false) {
+			$reply = "ups, ga nemu";
+		} elseif ($angkaBoolQS == true and empty($hasilayat[2])) {
+			$reply = "ket";
+		} elseif ($angkaBoolQS == true || empty($hasilayat[2]) == false) {
+			$qjson_get_data = file_get_contents(__DIR__ . '\json_data\quran\\'  . $angka . '.json');
+			$a = json_decode($qjson_get_data);
+			$reply = 'Nama surah : ' . $a->$angka->name_latin . PHP_EOL .
+				'Jumlah ayah : ' . $a->$angka->number_of_ayah . PHP_EOL .
+				$a->$angka->text->$ayat . PHP_EOL .
+				$a->$angka->translations->id->text->$ayat . PHP_EOL;
+		}
+
 		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
 		$telegram->sendMessage($content);
 	}
+	unset($angka);
+	unset($reply);
 	exit;
 } elseif ('/db_add' == $adanParse[0] || '/db_add@fadhil_riyanto_bot' == $adanParse[0]) {
 	if ($userID != $userid_pemilik) {
@@ -626,7 +664,7 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 		);
 		$keyb = $telegram->buildInlineKeyBoard($option);
 		$content = array('chat_id' => $chat_id, 'text' => $reply,  'reply_markup' => $keyb, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-		$telegram->sendMessage($content);
+		$msgUdahDikirim = $telegram->sendMessage($content);
 		exit;
 	}
 } elseif ('/callback_q' == $adanParse[0] || '/callback_q@fadhil_riyanto_bot' == $adanParse[0]) {
