@@ -1,0 +1,1075 @@
+============[Date]============
+[ 2021-02-01 19:25:45  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804390614
+ref.callback_query.id= 5984360331858713533
+ref.callback_query.from.id= 1393342467
+ref.callback_query.from.is_bot= false
+ref.callback_query.from.first_name= Fadhil
+ref.callback_query.from.last_name= Riyanto
+ref.callback_query.from.username= fadhil_riyanto
+ref.callback_query.from.language_code= id
+ref.callback_query.message.message_id= 10379
+ref.callback_query.message.from.id= 1489990155
+ref.callback_query.message.from.is_bot= true
+ref.callback_query.message.from.first_name= Fadhil Riyanto Bot
+ref.callback_query.message.from.username= Fadhil_riyanto_bot
+ref.callback_query.message.chat.id= 1393342467
+ref.callback_query.message.chat.first_name= Fadhil
+ref.callback_query.message.chat.last_name= Riyanto
+ref.callback_query.message.chat.username= fadhil_riyanto
+ref.callback_query.message.chat.type= private
+ref.callback_query.message.date= 1612182333
+ref.callback_query.message.reply_to_message.message_id= 10378
+ref.callback_query.message.reply_to_message.from.id= 1393342467
+ref.callback_query.message.reply_to_message.from.is_bot= false
+ref.callback_query.message.reply_to_message.from.first_name= Fadhil
+ref.callback_query.message.reply_to_message.from.last_name= Riyanto
+ref.callback_query.message.reply_to_message.from.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.from.language_code= id
+ref.callback_query.message.reply_to_message.chat.id= 1393342467
+ref.callback_query.message.reply_to_message.chat.first_name= Fadhil
+ref.callback_query.message.reply_to_message.chat.last_name= Riyanto
+ref.callback_query.message.reply_to_message.chat.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.chat.type= private
+ref.callback_query.message.reply_to_message.date= 1612182325
+ref.callback_query.message.reply_to_message.text= /help
+ref.callback_query.message.reply_to_message.entities.0.offset= 0
+ref.callback_query.message.reply_to_message.entities.0.length= 5
+ref.callback_query.message.reply_to_message.entities.0.type= bot_command
+ref.callback_query.message.text= Hai  @fadhil_riyanto, Selamat datang di buku panduan bot ini
+ref.callback_query.message.entities.0.offset= 5
+ref.callback_query.message.entities.0.length= 15
+ref.callback_query.message.entities.0.type= mention
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.text= corona
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.callback_data= /callback_q@fadhil_riyanto_bot corona
+ref.callback_query.message.reply_markup.inline_keyboard.0.1.text= userid
+ref.callback_query.message.reply_markup.inline_keyboard.0.1.callback_data= /callback_q@fadhil_riyanto_bot userid
+ref.callback_query.message.reply_markup.inline_keyboard.1.0.text= waktu
+ref.callback_query.message.reply_markup.inline_keyboard.1.0.callback_data= /callback_q@fadhil_riyanto_bot waktu
+ref.callback_query.message.reply_markup.inline_keyboard.1.1.text= info
+ref.callback_query.message.reply_markup.inline_keyboard.1.1.callback_data= /callback_q@fadhil_riyanto_bot info
+ref.callback_query.message.reply_markup.inline_keyboard.2.0.text= panggil
+ref.callback_query.message.reply_markup.inline_keyboard.2.0.callback_data= /callback_q@fadhil_riyanto_bot panggil
+ref.callback_query.message.reply_markup.inline_keyboard.2.1.text= start
+ref.callback_query.message.reply_markup.inline_keyboard.2.1.callback_data= /callback_q@fadhil_riyanto_bot start
+ref.callback_query.message.reply_markup.inline_keyboard.3.0.text= short
+ref.callback_query.message.reply_markup.inline_keyboard.3.0.callback_data= /callback_q@fadhil_riyanto_bot short
+ref.callback_query.message.reply_markup.inline_keyboard.3.1.text= tanggal
+ref.callback_query.message.reply_markup.inline_keyboard.3.1.callback_data= /callback_q@fadhil_riyanto_bot tanggal
+ref.callback_query.message.reply_markup.inline_keyboard.4.0.text= bug
+ref.callback_query.message.reply_markup.inline_keyboard.4.0.callback_data= /callback_q@fadhil_riyanto_bot bug
+ref.callback_query.message.reply_markup.inline_keyboard.4.1.text= azan
+ref.callback_query.message.reply_markup.inline_keyboard.4.1.callback_data= /callback_q@fadhil_riyanto_bot azan
+ref.callback_query.message.reply_markup.inline_keyboard.5.0.text= donate
+ref.callback_query.message.reply_markup.inline_keyboard.5.0.callback_data= /callback_q@fadhil_riyanto_bot donate
+ref.callback_query.message.reply_markup.inline_keyboard.5.1.text= gempa
+ref.callback_query.message.reply_markup.inline_keyboard.5.1.callback_data= /callback_q@fadhil_riyanto_bot gempa
+ref.callback_query.message.reply_markup.inline_keyboard.6.0.text= help
+ref.callback_query.message.reply_markup.inline_keyboard.6.0.callback_data= /callback_q@fadhil_riyanto_bot help
+ref.callback_query.message.reply_markup.inline_keyboard.6.1.text= wiki
+ref.callback_query.message.reply_markup.inline_keyboard.6.1.callback_data= /callback_q@fadhil_riyanto_bot wiki
+ref.callback_query.message.reply_markup.inline_keyboard.7.0.text= tulis
+ref.callback_query.message.reply_markup.inline_keyboard.7.0.callback_data= /callback_q@fadhil_riyanto_bot tulis
+ref.callback_query.message.reply_markup.inline_keyboard.7.1.text= get_ip
+ref.callback_query.message.reply_markup.inline_keyboard.7.1.callback_data= /callback_q@fadhil_riyanto_bot get_ip
+ref.callback_query.message.reply_markup.inline_keyboard.8.0.text= get_mx
+ref.callback_query.message.reply_markup.inline_keyboard.8.0.callback_data= /callback_q@fadhil_riyanto_bot get_mx
+ref.callback_query.message.reply_markup.inline_keyboard.8.1.text= get_ns
+ref.callback_query.message.reply_markup.inline_keyboard.8.1.callback_data= /callback_q@fadhil_riyanto_bot get_ns
+ref.callback_query.message.reply_markup.inline_keyboard.9.0.text= get_aaaa
+ref.callback_query.message.reply_markup.inline_keyboard.9.0.callback_data= /callback_q@fadhil_riyanto_bot get_aaaa
+ref.callback_query.message.reply_markup.inline_keyboard.9.1.text= get_txt
+ref.callback_query.message.reply_markup.inline_keyboard.9.1.callback_data= /callback_q@fadhil_riyanto_bot get_txt
+ref.callback_query.message.reply_markup.inline_keyboard.10.0.text= get_cname
+ref.callback_query.message.reply_markup.inline_keyboard.10.0.callback_data= /callback_q@fadhil_riyanto_bot cname
+ref.callback_query.message.reply_markup.inline_keyboard.10.1.text= get_github_user
+ref.callback_query.message.reply_markup.inline_keyboard.10.1.callback_data= /callback_q@fadhil_riyanto_bot get_github_user
+ref.callback_query.message.reply_markup.inline_keyboard.11.0.text= ip_geo
+ref.callback_query.message.reply_markup.inline_keyboard.11.0.callback_data= /callback_q@fadhil_riyanto_bot ip_geo
+ref.callback_query.message.reply_markup.inline_keyboard.11.1.text= faker
+ref.callback_query.message.reply_markup.inline_keyboard.11.1.callback_data= /callback_q@fadhil_riyanto_bot faker
+ref.callback_query.message.reply_markup.inline_keyboard.12.0.text= sha512
+ref.callback_query.message.reply_markup.inline_keyboard.12.0.callback_data= /callback_q@fadhil_riyanto_bot sha512
+ref.callback_query.message.reply_markup.inline_keyboard.12.1.text= sha384
+ref.callback_query.message.reply_markup.inline_keyboard.12.1.callback_data= /callback_q@fadhil_riyanto_bot sha384
+ref.callback_query.message.reply_markup.inline_keyboard.13.0.text= sha256
+ref.callback_query.message.reply_markup.inline_keyboard.13.0.callback_data= /callback_q@fadhil_riyanto_bot sha256
+ref.callback_query.message.reply_markup.inline_keyboard.13.1.text= sha1
+ref.callback_query.message.reply_markup.inline_keyboard.13.1.callback_data= /callback_q@fadhil_riyanto_bot sha1
+ref.callback_query.message.reply_markup.inline_keyboard.14.0.text= md5
+ref.callback_query.message.reply_markup.inline_keyboard.14.0.callback_data= /callback_q@fadhil_riyanto_bot md5
+ref.callback_query.message.reply_markup.inline_keyboard.14.1.text= md4
+ref.callback_query.message.reply_markup.inline_keyboard.14.1.callback_data= /callback_q@fadhil_riyanto_bot md4
+ref.callback_query.message.reply_markup.inline_keyboard.15.0.text= md2
+ref.callback_query.message.reply_markup.inline_keyboard.15.0.callback_data= /callback_q@fadhil_riyanto_bot md2
+ref.callback_query.message.reply_markup.inline_keyboard.15.1.text= base64_encode
+ref.callback_query.message.reply_markup.inline_keyboard.15.1.callback_data= /callback_q@fadhil_riyanto_bot base64_encode
+ref.callback_query.message.reply_markup.inline_keyboard.16.0.text= base64_decode
+ref.callback_query.message.reply_markup.inline_keyboard.16.0.callback_data= /callback_q@fadhil_riyanto_bot base64_decode
+ref.callback_query.message.reply_markup.inline_keyboard.16.1.text= ripemd128
+ref.callback_query.message.reply_markup.inline_keyboard.16.1.callback_data= /callback_q@fadhil_riyanto_bot ripemd128
+ref.callback_query.message.reply_markup.inline_keyboard.17.0.text= ripemd160
+ref.callback_query.message.reply_markup.inline_keyboard.17.0.callback_data= /callback_q@fadhil_riyanto_bot ripemd160
+ref.callback_query.message.reply_markup.inline_keyboard.17.1.text= ripemd256
+ref.callback_query.message.reply_markup.inline_keyboard.17.1.callback_data= /callback_q@fadhil_riyanto_bot ripemd256
+ref.callback_query.message.reply_markup.inline_keyboard.18.0.text= ripemd320
+ref.callback_query.message.reply_markup.inline_keyboard.18.0.callback_data= /callback_q@fadhil_riyanto_bot ripemd320
+ref.callback_query.message.reply_markup.inline_keyboard.18.1.text= whirlpool
+ref.callback_query.message.reply_markup.inline_keyboard.18.1.callback_data= /callback_q@fadhil_riyanto_bot whirlpool
+ref.callback_query.message.reply_markup.inline_keyboard.19.0.text= capture
+ref.callback_query.message.reply_markup.inline_keyboard.19.0.callback_data= /callback_q@fadhil_riyanto_bot capture
+ref.callback_query.chat_instance= -5109722127778484442
+ref.callback_query.data= /callback_q@fadhil_riyanto_bot capture
+
+
+[ref]
+ref.text= /capture digunakan untuk mengambil screenshot website. 
+
+Contohnya ketika mau mengambil melihat isi link sebelum diklik. Nah, kamu bisa menggunkan command ini
+
+Gunakan pattern /capture {link}
+ref.message_id= 
+ref.reply_markup= {"inline_keyboard":[[{"text":"kembali","callback_data":"\/help@fadhil_riyanto_bot"}]]}
+ref.reply_to_message_id= 10379
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(184): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\index.php(735): Telegram->editMessageText(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-01 19:26:38  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804390616
+ref.callback_query.id= 5984360330363197660
+ref.callback_query.from.id= 1393342467
+ref.callback_query.from.is_bot= false
+ref.callback_query.from.first_name= Fadhil
+ref.callback_query.from.last_name= Riyanto
+ref.callback_query.from.username= fadhil_riyanto
+ref.callback_query.from.language_code= id
+ref.callback_query.message.message_id= 10381
+ref.callback_query.message.from.id= 1489990155
+ref.callback_query.message.from.is_bot= true
+ref.callback_query.message.from.first_name= Fadhil Riyanto Bot
+ref.callback_query.message.from.username= Fadhil_riyanto_bot
+ref.callback_query.message.chat.id= 1393342467
+ref.callback_query.message.chat.first_name= Fadhil
+ref.callback_query.message.chat.last_name= Riyanto
+ref.callback_query.message.chat.username= fadhil_riyanto
+ref.callback_query.message.chat.type= private
+ref.callback_query.message.date= 1612182382
+ref.callback_query.message.reply_to_message.message_id= 10380
+ref.callback_query.message.reply_to_message.from.id= 1393342467
+ref.callback_query.message.reply_to_message.from.is_bot= false
+ref.callback_query.message.reply_to_message.from.first_name= Fadhil
+ref.callback_query.message.reply_to_message.from.last_name= Riyanto
+ref.callback_query.message.reply_to_message.from.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.from.language_code= id
+ref.callback_query.message.reply_to_message.chat.id= 1393342467
+ref.callback_query.message.reply_to_message.chat.first_name= Fadhil
+ref.callback_query.message.reply_to_message.chat.last_name= Riyanto
+ref.callback_query.message.reply_to_message.chat.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.chat.type= private
+ref.callback_query.message.reply_to_message.date= 1612182377
+ref.callback_query.message.reply_to_message.text= /help
+ref.callback_query.message.reply_to_message.entities.0.offset= 0
+ref.callback_query.message.reply_to_message.entities.0.length= 5
+ref.callback_query.message.reply_to_message.entities.0.type= bot_command
+ref.callback_query.message.text= Hai  @fadhil_riyanto, Selamat datang di buku panduan bot ini
+ref.callback_query.message.entities.0.offset= 5
+ref.callback_query.message.entities.0.length= 15
+ref.callback_query.message.entities.0.type= mention
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.text= corona
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.callback_data= /callback_q@fadhil_riyanto_bot corona
+ref.callback_query.message.reply_markup.inline_keyboard.0.1.text= userid
+ref.callback_query.message.reply_markup.inline_keyboard.0.1.callback_data= /callback_q@fadhil_riyanto_bot userid
+ref.callback_query.message.reply_markup.inline_keyboard.1.0.text= waktu
+ref.callback_query.message.reply_markup.inline_keyboard.1.0.callback_data= /callback_q@fadhil_riyanto_bot waktu
+ref.callback_query.message.reply_markup.inline_keyboard.1.1.text= info
+ref.callback_query.message.reply_markup.inline_keyboard.1.1.callback_data= /callback_q@fadhil_riyanto_bot info
+ref.callback_query.message.reply_markup.inline_keyboard.2.0.text= panggil
+ref.callback_query.message.reply_markup.inline_keyboard.2.0.callback_data= /callback_q@fadhil_riyanto_bot panggil
+ref.callback_query.message.reply_markup.inline_keyboard.2.1.text= start
+ref.callback_query.message.reply_markup.inline_keyboard.2.1.callback_data= /callback_q@fadhil_riyanto_bot start
+ref.callback_query.message.reply_markup.inline_keyboard.3.0.text= short
+ref.callback_query.message.reply_markup.inline_keyboard.3.0.callback_data= /callback_q@fadhil_riyanto_bot short
+ref.callback_query.message.reply_markup.inline_keyboard.3.1.text= tanggal
+ref.callback_query.message.reply_markup.inline_keyboard.3.1.callback_data= /callback_q@fadhil_riyanto_bot tanggal
+ref.callback_query.message.reply_markup.inline_keyboard.4.0.text= bug
+ref.callback_query.message.reply_markup.inline_keyboard.4.0.callback_data= /callback_q@fadhil_riyanto_bot bug
+ref.callback_query.message.reply_markup.inline_keyboard.4.1.text= azan
+ref.callback_query.message.reply_markup.inline_keyboard.4.1.callback_data= /callback_q@fadhil_riyanto_bot azan
+ref.callback_query.message.reply_markup.inline_keyboard.5.0.text= donate
+ref.callback_query.message.reply_markup.inline_keyboard.5.0.callback_data= /callback_q@fadhil_riyanto_bot donate
+ref.callback_query.message.reply_markup.inline_keyboard.5.1.text= gempa
+ref.callback_query.message.reply_markup.inline_keyboard.5.1.callback_data= /callback_q@fadhil_riyanto_bot gempa
+ref.callback_query.message.reply_markup.inline_keyboard.6.0.text= help
+ref.callback_query.message.reply_markup.inline_keyboard.6.0.callback_data= /callback_q@fadhil_riyanto_bot help
+ref.callback_query.message.reply_markup.inline_keyboard.6.1.text= wiki
+ref.callback_query.message.reply_markup.inline_keyboard.6.1.callback_data= /callback_q@fadhil_riyanto_bot wiki
+ref.callback_query.message.reply_markup.inline_keyboard.7.0.text= tulis
+ref.callback_query.message.reply_markup.inline_keyboard.7.0.callback_data= /callback_q@fadhil_riyanto_bot tulis
+ref.callback_query.message.reply_markup.inline_keyboard.7.1.text= get_ip
+ref.callback_query.message.reply_markup.inline_keyboard.7.1.callback_data= /callback_q@fadhil_riyanto_bot get_ip
+ref.callback_query.message.reply_markup.inline_keyboard.8.0.text= get_mx
+ref.callback_query.message.reply_markup.inline_keyboard.8.0.callback_data= /callback_q@fadhil_riyanto_bot get_mx
+ref.callback_query.message.reply_markup.inline_keyboard.8.1.text= get_ns
+ref.callback_query.message.reply_markup.inline_keyboard.8.1.callback_data= /callback_q@fadhil_riyanto_bot get_ns
+ref.callback_query.message.reply_markup.inline_keyboard.9.0.text= get_aaaa
+ref.callback_query.message.reply_markup.inline_keyboard.9.0.callback_data= /callback_q@fadhil_riyanto_bot get_aaaa
+ref.callback_query.message.reply_markup.inline_keyboard.9.1.text= get_txt
+ref.callback_query.message.reply_markup.inline_keyboard.9.1.callback_data= /callback_q@fadhil_riyanto_bot get_txt
+ref.callback_query.message.reply_markup.inline_keyboard.10.0.text= get_cname
+ref.callback_query.message.reply_markup.inline_keyboard.10.0.callback_data= /callback_q@fadhil_riyanto_bot cname
+ref.callback_query.message.reply_markup.inline_keyboard.10.1.text= get_github_user
+ref.callback_query.message.reply_markup.inline_keyboard.10.1.callback_data= /callback_q@fadhil_riyanto_bot get_github_user
+ref.callback_query.message.reply_markup.inline_keyboard.11.0.text= ip_geo
+ref.callback_query.message.reply_markup.inline_keyboard.11.0.callback_data= /callback_q@fadhil_riyanto_bot ip_geo
+ref.callback_query.message.reply_markup.inline_keyboard.11.1.text= faker
+ref.callback_query.message.reply_markup.inline_keyboard.11.1.callback_data= /callback_q@fadhil_riyanto_bot faker
+ref.callback_query.message.reply_markup.inline_keyboard.12.0.text= sha512
+ref.callback_query.message.reply_markup.inline_keyboard.12.0.callback_data= /callback_q@fadhil_riyanto_bot sha512
+ref.callback_query.message.reply_markup.inline_keyboard.12.1.text= sha384
+ref.callback_query.message.reply_markup.inline_keyboard.12.1.callback_data= /callback_q@fadhil_riyanto_bot sha384
+ref.callback_query.message.reply_markup.inline_keyboard.13.0.text= sha256
+ref.callback_query.message.reply_markup.inline_keyboard.13.0.callback_data= /callback_q@fadhil_riyanto_bot sha256
+ref.callback_query.message.reply_markup.inline_keyboard.13.1.text= sha1
+ref.callback_query.message.reply_markup.inline_keyboard.13.1.callback_data= /callback_q@fadhil_riyanto_bot sha1
+ref.callback_query.message.reply_markup.inline_keyboard.14.0.text= md5
+ref.callback_query.message.reply_markup.inline_keyboard.14.0.callback_data= /callback_q@fadhil_riyanto_bot md5
+ref.callback_query.message.reply_markup.inline_keyboard.14.1.text= md4
+ref.callback_query.message.reply_markup.inline_keyboard.14.1.callback_data= /callback_q@fadhil_riyanto_bot md4
+ref.callback_query.message.reply_markup.inline_keyboard.15.0.text= md2
+ref.callback_query.message.reply_markup.inline_keyboard.15.0.callback_data= /callback_q@fadhil_riyanto_bot md2
+ref.callback_query.message.reply_markup.inline_keyboard.15.1.text= base64_encode
+ref.callback_query.message.reply_markup.inline_keyboard.15.1.callback_data= /callback_q@fadhil_riyanto_bot base64_encode
+ref.callback_query.message.reply_markup.inline_keyboard.16.0.text= base64_decode
+ref.callback_query.message.reply_markup.inline_keyboard.16.0.callback_data= /callback_q@fadhil_riyanto_bot base64_decode
+ref.callback_query.message.reply_markup.inline_keyboard.16.1.text= ripemd128
+ref.callback_query.message.reply_markup.inline_keyboard.16.1.callback_data= /callback_q@fadhil_riyanto_bot ripemd128
+ref.callback_query.message.reply_markup.inline_keyboard.17.0.text= ripemd160
+ref.callback_query.message.reply_markup.inline_keyboard.17.0.callback_data= /callback_q@fadhil_riyanto_bot ripemd160
+ref.callback_query.message.reply_markup.inline_keyboard.17.1.text= ripemd256
+ref.callback_query.message.reply_markup.inline_keyboard.17.1.callback_data= /callback_q@fadhil_riyanto_bot ripemd256
+ref.callback_query.message.reply_markup.inline_keyboard.18.0.text= ripemd320
+ref.callback_query.message.reply_markup.inline_keyboard.18.0.callback_data= /callback_q@fadhil_riyanto_bot ripemd320
+ref.callback_query.message.reply_markup.inline_keyboard.18.1.text= whirlpool
+ref.callback_query.message.reply_markup.inline_keyboard.18.1.callback_data= /callback_q@fadhil_riyanto_bot whirlpool
+ref.callback_query.message.reply_markup.inline_keyboard.19.0.text= capture
+ref.callback_query.message.reply_markup.inline_keyboard.19.0.callback_data= /callback_q@fadhil_riyanto_bot capture
+ref.callback_query.chat_instance= -5109722127778484442
+ref.callback_query.data= /callback_q@fadhil_riyanto_bot capture
+
+
+[ref]
+ref.text= /capture digunakan untuk mengambil screenshot website. 
+
+Contohnya ketika mau mengambil melihat isi link sebelum diklik. Nah, kamu bisa menggunkan command ini
+
+Gunakan pattern /capture {link}
+ref.message_id= 
+ref.reply_markup= {"inline_keyboard":[[{"text":"kembali","callback_data":"\/help@fadhil_riyanto_bot"}]]}
+ref.reply_to_message_id= 10381
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(184): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\index.php(735): Telegram->editMessageText(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-01 19:26:43  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804390617
+ref.callback_query.id= 5984360331102273645
+ref.callback_query.from.id= 1393342467
+ref.callback_query.from.is_bot= false
+ref.callback_query.from.first_name= Fadhil
+ref.callback_query.from.last_name= Riyanto
+ref.callback_query.from.username= fadhil_riyanto
+ref.callback_query.from.language_code= id
+ref.callback_query.message.message_id= 10381
+ref.callback_query.message.from.id= 1489990155
+ref.callback_query.message.from.is_bot= true
+ref.callback_query.message.from.first_name= Fadhil Riyanto Bot
+ref.callback_query.message.from.username= Fadhil_riyanto_bot
+ref.callback_query.message.chat.id= 1393342467
+ref.callback_query.message.chat.first_name= Fadhil
+ref.callback_query.message.chat.last_name= Riyanto
+ref.callback_query.message.chat.username= fadhil_riyanto
+ref.callback_query.message.chat.type= private
+ref.callback_query.message.date= 1612182382
+ref.callback_query.message.reply_to_message.message_id= 10380
+ref.callback_query.message.reply_to_message.from.id= 1393342467
+ref.callback_query.message.reply_to_message.from.is_bot= false
+ref.callback_query.message.reply_to_message.from.first_name= Fadhil
+ref.callback_query.message.reply_to_message.from.last_name= Riyanto
+ref.callback_query.message.reply_to_message.from.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.from.language_code= id
+ref.callback_query.message.reply_to_message.chat.id= 1393342467
+ref.callback_query.message.reply_to_message.chat.first_name= Fadhil
+ref.callback_query.message.reply_to_message.chat.last_name= Riyanto
+ref.callback_query.message.reply_to_message.chat.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.chat.type= private
+ref.callback_query.message.reply_to_message.date= 1612182377
+ref.callback_query.message.reply_to_message.text= /help
+ref.callback_query.message.reply_to_message.entities.0.offset= 0
+ref.callback_query.message.reply_to_message.entities.0.length= 5
+ref.callback_query.message.reply_to_message.entities.0.type= bot_command
+ref.callback_query.message.text= Hai  @fadhil_riyanto, Selamat datang di buku panduan bot ini
+ref.callback_query.message.entities.0.offset= 5
+ref.callback_query.message.entities.0.length= 15
+ref.callback_query.message.entities.0.type= mention
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.text= corona
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.callback_data= /callback_q@fadhil_riyanto_bot corona
+ref.callback_query.message.reply_markup.inline_keyboard.0.1.text= userid
+ref.callback_query.message.reply_markup.inline_keyboard.0.1.callback_data= /callback_q@fadhil_riyanto_bot userid
+ref.callback_query.message.reply_markup.inline_keyboard.1.0.text= waktu
+ref.callback_query.message.reply_markup.inline_keyboard.1.0.callback_data= /callback_q@fadhil_riyanto_bot waktu
+ref.callback_query.message.reply_markup.inline_keyboard.1.1.text= info
+ref.callback_query.message.reply_markup.inline_keyboard.1.1.callback_data= /callback_q@fadhil_riyanto_bot info
+ref.callback_query.message.reply_markup.inline_keyboard.2.0.text= panggil
+ref.callback_query.message.reply_markup.inline_keyboard.2.0.callback_data= /callback_q@fadhil_riyanto_bot panggil
+ref.callback_query.message.reply_markup.inline_keyboard.2.1.text= start
+ref.callback_query.message.reply_markup.inline_keyboard.2.1.callback_data= /callback_q@fadhil_riyanto_bot start
+ref.callback_query.message.reply_markup.inline_keyboard.3.0.text= short
+ref.callback_query.message.reply_markup.inline_keyboard.3.0.callback_data= /callback_q@fadhil_riyanto_bot short
+ref.callback_query.message.reply_markup.inline_keyboard.3.1.text= tanggal
+ref.callback_query.message.reply_markup.inline_keyboard.3.1.callback_data= /callback_q@fadhil_riyanto_bot tanggal
+ref.callback_query.message.reply_markup.inline_keyboard.4.0.text= bug
+ref.callback_query.message.reply_markup.inline_keyboard.4.0.callback_data= /callback_q@fadhil_riyanto_bot bug
+ref.callback_query.message.reply_markup.inline_keyboard.4.1.text= azan
+ref.callback_query.message.reply_markup.inline_keyboard.4.1.callback_data= /callback_q@fadhil_riyanto_bot azan
+ref.callback_query.message.reply_markup.inline_keyboard.5.0.text= donate
+ref.callback_query.message.reply_markup.inline_keyboard.5.0.callback_data= /callback_q@fadhil_riyanto_bot donate
+ref.callback_query.message.reply_markup.inline_keyboard.5.1.text= gempa
+ref.callback_query.message.reply_markup.inline_keyboard.5.1.callback_data= /callback_q@fadhil_riyanto_bot gempa
+ref.callback_query.message.reply_markup.inline_keyboard.6.0.text= help
+ref.callback_query.message.reply_markup.inline_keyboard.6.0.callback_data= /callback_q@fadhil_riyanto_bot help
+ref.callback_query.message.reply_markup.inline_keyboard.6.1.text= wiki
+ref.callback_query.message.reply_markup.inline_keyboard.6.1.callback_data= /callback_q@fadhil_riyanto_bot wiki
+ref.callback_query.message.reply_markup.inline_keyboard.7.0.text= tulis
+ref.callback_query.message.reply_markup.inline_keyboard.7.0.callback_data= /callback_q@fadhil_riyanto_bot tulis
+ref.callback_query.message.reply_markup.inline_keyboard.7.1.text= get_ip
+ref.callback_query.message.reply_markup.inline_keyboard.7.1.callback_data= /callback_q@fadhil_riyanto_bot get_ip
+ref.callback_query.message.reply_markup.inline_keyboard.8.0.text= get_mx
+ref.callback_query.message.reply_markup.inline_keyboard.8.0.callback_data= /callback_q@fadhil_riyanto_bot get_mx
+ref.callback_query.message.reply_markup.inline_keyboard.8.1.text= get_ns
+ref.callback_query.message.reply_markup.inline_keyboard.8.1.callback_data= /callback_q@fadhil_riyanto_bot get_ns
+ref.callback_query.message.reply_markup.inline_keyboard.9.0.text= get_aaaa
+ref.callback_query.message.reply_markup.inline_keyboard.9.0.callback_data= /callback_q@fadhil_riyanto_bot get_aaaa
+ref.callback_query.message.reply_markup.inline_keyboard.9.1.text= get_txt
+ref.callback_query.message.reply_markup.inline_keyboard.9.1.callback_data= /callback_q@fadhil_riyanto_bot get_txt
+ref.callback_query.message.reply_markup.inline_keyboard.10.0.text= get_cname
+ref.callback_query.message.reply_markup.inline_keyboard.10.0.callback_data= /callback_q@fadhil_riyanto_bot cname
+ref.callback_query.message.reply_markup.inline_keyboard.10.1.text= get_github_user
+ref.callback_query.message.reply_markup.inline_keyboard.10.1.callback_data= /callback_q@fadhil_riyanto_bot get_github_user
+ref.callback_query.message.reply_markup.inline_keyboard.11.0.text= ip_geo
+ref.callback_query.message.reply_markup.inline_keyboard.11.0.callback_data= /callback_q@fadhil_riyanto_bot ip_geo
+ref.callback_query.message.reply_markup.inline_keyboard.11.1.text= faker
+ref.callback_query.message.reply_markup.inline_keyboard.11.1.callback_data= /callback_q@fadhil_riyanto_bot faker
+ref.callback_query.message.reply_markup.inline_keyboard.12.0.text= sha512
+ref.callback_query.message.reply_markup.inline_keyboard.12.0.callback_data= /callback_q@fadhil_riyanto_bot sha512
+ref.callback_query.message.reply_markup.inline_keyboard.12.1.text= sha384
+ref.callback_query.message.reply_markup.inline_keyboard.12.1.callback_data= /callback_q@fadhil_riyanto_bot sha384
+ref.callback_query.message.reply_markup.inline_keyboard.13.0.text= sha256
+ref.callback_query.message.reply_markup.inline_keyboard.13.0.callback_data= /callback_q@fadhil_riyanto_bot sha256
+ref.callback_query.message.reply_markup.inline_keyboard.13.1.text= sha1
+ref.callback_query.message.reply_markup.inline_keyboard.13.1.callback_data= /callback_q@fadhil_riyanto_bot sha1
+ref.callback_query.message.reply_markup.inline_keyboard.14.0.text= md5
+ref.callback_query.message.reply_markup.inline_keyboard.14.0.callback_data= /callback_q@fadhil_riyanto_bot md5
+ref.callback_query.message.reply_markup.inline_keyboard.14.1.text= md4
+ref.callback_query.message.reply_markup.inline_keyboard.14.1.callback_data= /callback_q@fadhil_riyanto_bot md4
+ref.callback_query.message.reply_markup.inline_keyboard.15.0.text= md2
+ref.callback_query.message.reply_markup.inline_keyboard.15.0.callback_data= /callback_q@fadhil_riyanto_bot md2
+ref.callback_query.message.reply_markup.inline_keyboard.15.1.text= base64_encode
+ref.callback_query.message.reply_markup.inline_keyboard.15.1.callback_data= /callback_q@fadhil_riyanto_bot base64_encode
+ref.callback_query.message.reply_markup.inline_keyboard.16.0.text= base64_decode
+ref.callback_query.message.reply_markup.inline_keyboard.16.0.callback_data= /callback_q@fadhil_riyanto_bot base64_decode
+ref.callback_query.message.reply_markup.inline_keyboard.16.1.text= ripemd128
+ref.callback_query.message.reply_markup.inline_keyboard.16.1.callback_data= /callback_q@fadhil_riyanto_bot ripemd128
+ref.callback_query.message.reply_markup.inline_keyboard.17.0.text= ripemd160
+ref.callback_query.message.reply_markup.inline_keyboard.17.0.callback_data= /callback_q@fadhil_riyanto_bot ripemd160
+ref.callback_query.message.reply_markup.inline_keyboard.17.1.text= ripemd256
+ref.callback_query.message.reply_markup.inline_keyboard.17.1.callback_data= /callback_q@fadhil_riyanto_bot ripemd256
+ref.callback_query.message.reply_markup.inline_keyboard.18.0.text= ripemd320
+ref.callback_query.message.reply_markup.inline_keyboard.18.0.callback_data= /callback_q@fadhil_riyanto_bot ripemd320
+ref.callback_query.message.reply_markup.inline_keyboard.18.1.text= whirlpool
+ref.callback_query.message.reply_markup.inline_keyboard.18.1.callback_data= /callback_q@fadhil_riyanto_bot whirlpool
+ref.callback_query.message.reply_markup.inline_keyboard.19.0.text= capture
+ref.callback_query.message.reply_markup.inline_keyboard.19.0.callback_data= /callback_q@fadhil_riyanto_bot capture
+ref.callback_query.chat_instance= -5109722127778484442
+ref.callback_query.data= /callback_q@fadhil_riyanto_bot capture
+
+
+[ref]
+ref.text= /capture digunakan untuk mengambil screenshot website. 
+
+Contohnya ketika mau mengambil melihat isi link sebelum diklik. Nah, kamu bisa menggunkan command ini
+
+Gunakan pattern /capture {link}
+ref.message_id= 
+ref.reply_markup= {"inline_keyboard":[[{"text":"kembali","callback_data":"\/help@fadhil_riyanto_bot"}]]}
+ref.reply_to_message_id= 10381
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(184): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\index.php(735): Telegram->editMessageText(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-01 19:43:05  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804390621
+ref.callback_query.id= 5984360331202685111
+ref.callback_query.from.id= 1393342467
+ref.callback_query.from.is_bot= false
+ref.callback_query.from.first_name= Fadhil
+ref.callback_query.from.last_name= Riyanto
+ref.callback_query.from.username= fadhil_riyanto
+ref.callback_query.from.language_code= id
+ref.callback_query.message.message_id= 10387
+ref.callback_query.message.from.id= 1489990155
+ref.callback_query.message.from.is_bot= true
+ref.callback_query.message.from.first_name= Fadhil Riyanto Bot
+ref.callback_query.message.from.username= Fadhil_riyanto_bot
+ref.callback_query.message.chat.id= 1393342467
+ref.callback_query.message.chat.first_name= Fadhil
+ref.callback_query.message.chat.last_name= Riyanto
+ref.callback_query.message.chat.username= fadhil_riyanto
+ref.callback_query.message.chat.type= private
+ref.callback_query.message.date= 1612183378
+ref.callback_query.message.reply_to_message.message_id= 10386
+ref.callback_query.message.reply_to_message.from.id= 1393342467
+ref.callback_query.message.reply_to_message.from.is_bot= false
+ref.callback_query.message.reply_to_message.from.first_name= Fadhil
+ref.callback_query.message.reply_to_message.from.last_name= Riyanto
+ref.callback_query.message.reply_to_message.from.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.from.language_code= id
+ref.callback_query.message.reply_to_message.chat.id= 1393342467
+ref.callback_query.message.reply_to_message.chat.first_name= Fadhil
+ref.callback_query.message.reply_to_message.chat.last_name= Riyanto
+ref.callback_query.message.reply_to_message.chat.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.chat.type= private
+ref.callback_query.message.reply_to_message.date= 1612183373
+ref.callback_query.message.reply_to_message.text= /help
+ref.callback_query.message.reply_to_message.entities.0.offset= 0
+ref.callback_query.message.reply_to_message.entities.0.length= 5
+ref.callback_query.message.reply_to_message.entities.0.type= bot_command
+ref.callback_query.message.text= Hai  @fadhil_riyanto, Selamat datang di buku panduan bot ini
+ref.callback_query.message.entities.0.offset= 5
+ref.callback_query.message.entities.0.length= 15
+ref.callback_query.message.entities.0.type= mention
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.text= corona
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.callback_data= /callback_q@fadhil_riyanto_bot corona
+ref.callback_query.message.reply_markup.inline_keyboard.0.1.text= userid
+ref.callback_query.message.reply_markup.inline_keyboard.0.1.callback_data= /callback_q@fadhil_riyanto_bot userid
+ref.callback_query.message.reply_markup.inline_keyboard.1.0.text= waktu
+ref.callback_query.message.reply_markup.inline_keyboard.1.0.callback_data= /callback_q@fadhil_riyanto_bot waktu
+ref.callback_query.message.reply_markup.inline_keyboard.1.1.text= info
+ref.callback_query.message.reply_markup.inline_keyboard.1.1.callback_data= /callback_q@fadhil_riyanto_bot info
+ref.callback_query.message.reply_markup.inline_keyboard.2.0.text= panggil
+ref.callback_query.message.reply_markup.inline_keyboard.2.0.callback_data= /callback_q@fadhil_riyanto_bot panggil
+ref.callback_query.message.reply_markup.inline_keyboard.2.1.text= start
+ref.callback_query.message.reply_markup.inline_keyboard.2.1.callback_data= /callback_q@fadhil_riyanto_bot start
+ref.callback_query.message.reply_markup.inline_keyboard.3.0.text= short
+ref.callback_query.message.reply_markup.inline_keyboard.3.0.callback_data= /callback_q@fadhil_riyanto_bot short
+ref.callback_query.message.reply_markup.inline_keyboard.3.1.text= tanggal
+ref.callback_query.message.reply_markup.inline_keyboard.3.1.callback_data= /callback_q@fadhil_riyanto_bot tanggal
+ref.callback_query.message.reply_markup.inline_keyboard.4.0.text= bug
+ref.callback_query.message.reply_markup.inline_keyboard.4.0.callback_data= /callback_q@fadhil_riyanto_bot bug
+ref.callback_query.message.reply_markup.inline_keyboard.4.1.text= azan
+ref.callback_query.message.reply_markup.inline_keyboard.4.1.callback_data= /callback_q@fadhil_riyanto_bot azan
+ref.callback_query.message.reply_markup.inline_keyboard.5.0.text= donate
+ref.callback_query.message.reply_markup.inline_keyboard.5.0.callback_data= /callback_q@fadhil_riyanto_bot donate
+ref.callback_query.message.reply_markup.inline_keyboard.5.1.text= gempa
+ref.callback_query.message.reply_markup.inline_keyboard.5.1.callback_data= /callback_q@fadhil_riyanto_bot gempa
+ref.callback_query.message.reply_markup.inline_keyboard.6.0.text= help
+ref.callback_query.message.reply_markup.inline_keyboard.6.0.callback_data= /callback_q@fadhil_riyanto_bot help
+ref.callback_query.message.reply_markup.inline_keyboard.6.1.text= wiki
+ref.callback_query.message.reply_markup.inline_keyboard.6.1.callback_data= /callback_q@fadhil_riyanto_bot wiki
+ref.callback_query.message.reply_markup.inline_keyboard.7.0.text= tulis
+ref.callback_query.message.reply_markup.inline_keyboard.7.0.callback_data= /callback_q@fadhil_riyanto_bot tulis
+ref.callback_query.message.reply_markup.inline_keyboard.7.1.text= get_ip
+ref.callback_query.message.reply_markup.inline_keyboard.7.1.callback_data= /callback_q@fadhil_riyanto_bot get_ip
+ref.callback_query.message.reply_markup.inline_keyboard.8.0.text= get_mx
+ref.callback_query.message.reply_markup.inline_keyboard.8.0.callback_data= /callback_q@fadhil_riyanto_bot get_mx
+ref.callback_query.message.reply_markup.inline_keyboard.8.1.text= get_ns
+ref.callback_query.message.reply_markup.inline_keyboard.8.1.callback_data= /callback_q@fadhil_riyanto_bot get_ns
+ref.callback_query.message.reply_markup.inline_keyboard.9.0.text= get_aaaa
+ref.callback_query.message.reply_markup.inline_keyboard.9.0.callback_data= /callback_q@fadhil_riyanto_bot get_aaaa
+ref.callback_query.message.reply_markup.inline_keyboard.9.1.text= get_txt
+ref.callback_query.message.reply_markup.inline_keyboard.9.1.callback_data= /callback_q@fadhil_riyanto_bot get_txt
+ref.callback_query.message.reply_markup.inline_keyboard.10.0.text= get_cname
+ref.callback_query.message.reply_markup.inline_keyboard.10.0.callback_data= /callback_q@fadhil_riyanto_bot cname
+ref.callback_query.message.reply_markup.inline_keyboard.10.1.text= get_github_user
+ref.callback_query.message.reply_markup.inline_keyboard.10.1.callback_data= /callback_q@fadhil_riyanto_bot get_github_user
+ref.callback_query.message.reply_markup.inline_keyboard.11.0.text= ip_geo
+ref.callback_query.message.reply_markup.inline_keyboard.11.0.callback_data= /callback_q@fadhil_riyanto_bot ip_geo
+ref.callback_query.message.reply_markup.inline_keyboard.11.1.text= faker
+ref.callback_query.message.reply_markup.inline_keyboard.11.1.callback_data= /callback_q@fadhil_riyanto_bot faker
+ref.callback_query.message.reply_markup.inline_keyboard.12.0.text= sha512
+ref.callback_query.message.reply_markup.inline_keyboard.12.0.callback_data= /callback_q@fadhil_riyanto_bot sha512
+ref.callback_query.message.reply_markup.inline_keyboard.12.1.text= sha384
+ref.callback_query.message.reply_markup.inline_keyboard.12.1.callback_data= /callback_q@fadhil_riyanto_bot sha384
+ref.callback_query.message.reply_markup.inline_keyboard.13.0.text= sha256
+ref.callback_query.message.reply_markup.inline_keyboard.13.0.callback_data= /callback_q@fadhil_riyanto_bot sha256
+ref.callback_query.message.reply_markup.inline_keyboard.13.1.text= sha1
+ref.callback_query.message.reply_markup.inline_keyboard.13.1.callback_data= /callback_q@fadhil_riyanto_bot sha1
+ref.callback_query.message.reply_markup.inline_keyboard.14.0.text= md5
+ref.callback_query.message.reply_markup.inline_keyboard.14.0.callback_data= /callback_q@fadhil_riyanto_bot md5
+ref.callback_query.message.reply_markup.inline_keyboard.14.1.text= md4
+ref.callback_query.message.reply_markup.inline_keyboard.14.1.callback_data= /callback_q@fadhil_riyanto_bot md4
+ref.callback_query.message.reply_markup.inline_keyboard.15.0.text= md2
+ref.callback_query.message.reply_markup.inline_keyboard.15.0.callback_data= /callback_q@fadhil_riyanto_bot md2
+ref.callback_query.message.reply_markup.inline_keyboard.15.1.text= base64_encode
+ref.callback_query.message.reply_markup.inline_keyboard.15.1.callback_data= /callback_q@fadhil_riyanto_bot base64_encode
+ref.callback_query.message.reply_markup.inline_keyboard.16.0.text= base64_decode
+ref.callback_query.message.reply_markup.inline_keyboard.16.0.callback_data= /callback_q@fadhil_riyanto_bot base64_decode
+ref.callback_query.message.reply_markup.inline_keyboard.16.1.text= ripemd128
+ref.callback_query.message.reply_markup.inline_keyboard.16.1.callback_data= /callback_q@fadhil_riyanto_bot ripemd128
+ref.callback_query.message.reply_markup.inline_keyboard.17.0.text= ripemd160
+ref.callback_query.message.reply_markup.inline_keyboard.17.0.callback_data= /callback_q@fadhil_riyanto_bot ripemd160
+ref.callback_query.message.reply_markup.inline_keyboard.17.1.text= ripemd256
+ref.callback_query.message.reply_markup.inline_keyboard.17.1.callback_data= /callback_q@fadhil_riyanto_bot ripemd256
+ref.callback_query.message.reply_markup.inline_keyboard.18.0.text= ripemd320
+ref.callback_query.message.reply_markup.inline_keyboard.18.0.callback_data= /callback_q@fadhil_riyanto_bot ripemd320
+ref.callback_query.message.reply_markup.inline_keyboard.18.1.text= whirlpool
+ref.callback_query.message.reply_markup.inline_keyboard.18.1.callback_data= /callback_q@fadhil_riyanto_bot whirlpool
+ref.callback_query.message.reply_markup.inline_keyboard.19.0.text= capture
+ref.callback_query.message.reply_markup.inline_keyboard.19.0.callback_data= /callback_q@fadhil_riyanto_bot capture
+ref.callback_query.chat_instance= -5109722127778484442
+ref.callback_query.data= /callback_q@fadhil_riyanto_bot capture
+
+
+[ref]
+ref.text= /capture digunakan untuk mengambil screenshot website. 
+
+Contohnya ketika mau mengambil melihat isi link sebelum diklik. Nah, kamu bisa menggunkan command ini
+
+Gunakan pattern /capture {link}
+ref.message_id= 
+ref.reply_markup= {"inline_keyboard":[[{"text":"kembali","callback_data":"\/help@fadhil_riyanto_bot"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(184): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\index.php(739): Telegram->editMessageText(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-01 20:40:09  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804390639
+ref.message.message_id= 10411
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1612186802
+ref.message.text= /help
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Selamat datang di buku panduan bot ini
+ref.message_id= 10408
+ref.reply_markup= {"inline_keyboard":[[{"text":"corona","callback_data":"\/callback_q@fadhil_riyanto_bot corona"},{"text":"userid","callback_data":"\/callback_q@fadhil_riyanto_bot userid"}],[{"text":"waktu","callback_data":"\/callback_q@fadhil_riyanto_bot waktu"},{"text":"info","callback_data":"\/callback_q@fadhil_riyanto_bot info"}],[{"text":"panggil","callback_data":"\/callback_q@fadhil_riyanto_bot panggil"},{"text":"start","callback_data":"\/callback_q@fadhil_riyanto_bot start"}],[{"text":"short","callback_data":"\/callback_q@fadhil_riyanto_bot short"},{"text":"tanggal","callback_data":"\/callback_q@fadhil_riyanto_bot tanggal"}],[{"text":"bug","callback_data":"\/callback_q@fadhil_riyanto_bot bug"},{"text":"azan","callback_data":"\/callback_q@fadhil_riyanto_bot azan"}],[{"text":"donate","callback_data":"\/callback_q@fadhil_riyanto_bot donate"},{"text":"gempa","callback_data":"\/callback_q@fadhil_riyanto_bot gempa"}],[{"text":"help","callback_data":"\/callback_q@fadhil_riyanto_bot help"},{"text":"wiki","callback_data":"\/callback_q@fadhil_riyanto_bot wiki"}],[{"text":"tulis","callback_data":"\/callback_q@fadhil_riyanto_bot tulis"},{"text":"get_ip","callback_data":"\/callback_q@fadhil_riyanto_bot get_ip"}],[{"text":"get_mx","callback_data":"\/callback_q@fadhil_riyanto_bot get_mx"},{"text":"get_ns","callback_data":"\/callback_q@fadhil_riyanto_bot get_ns"}],[{"text":"get_aaaa","callback_data":"\/callback_q@fadhil_riyanto_bot get_aaaa"},{"text":"get_txt","callback_data":"\/callback_q@fadhil_riyanto_bot get_txt"}],[{"text":"get_cname","callback_data":"\/callback_q@fadhil_riyanto_bot cname"},{"text":"get_github_user","callback_data":"\/callback_q@fadhil_riyanto_bot get_github_user"}],[{"text":"ip_geo","callback_data":"\/callback_q@fadhil_riyanto_bot ip_geo"},{"text":"faker","callback_data":"\/callback_q@fadhil_riyanto_bot faker"}],[{"text":"sha512","callback_data":"\/callback_q@fadhil_riyanto_bot sha512"},{"text":"sha384","callback_data":"\/callback_q@fadhil_riyanto_bot sha384"}],[{"text":"sha256","callback_data":"\/callback_q@fadhil_riyanto_bot sha256"},{"text":"sha1","callback_data":"\/callback_q@fadhil_riyanto_bot sha1"}],[{"text":"md5","callback_data":"\/callback_q@fadhil_riyanto_bot md5"},{"text":"md4","callback_data":"\/callback_q@fadhil_riyanto_bot md4"}],[{"text":"md2","callback_data":"\/callback_q@fadhil_riyanto_bot md2"},{"text":"base64_encode","callback_data":"\/callback_q@fadhil_riyanto_bot base64_encode"}],[{"text":"base64_decode","callback_data":"\/callback_q@fadhil_riyanto_bot base64_decode"},{"text":"ripemd128","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd128"}],[{"text":"ripemd160","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd160"},{"text":"ripemd256","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd256"}],[{"text":"ripemd320","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd320"},{"text":"whirlpool","callback_data":"\/callback_q@fadhil_riyanto_bot whirlpool"}],[{"text":"capture","callback_data":"\/callback_q@fadhil_riyanto_bot capture"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(184): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\index.php(727): Telegram->editMessageText(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-01 20:40:52  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804390640
+ref.message.message_id= 10412
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1612186833
+ref.message.text= /help
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Selamat datang di buku panduan bot ini
+ref.message_id= 10408
+ref.reply_markup= {"inline_keyboard":[[{"text":"corona","callback_data":"\/callback_q@fadhil_riyanto_bot corona"},{"text":"userid","callback_data":"\/callback_q@fadhil_riyanto_bot userid"}],[{"text":"waktu","callback_data":"\/callback_q@fadhil_riyanto_bot waktu"},{"text":"info","callback_data":"\/callback_q@fadhil_riyanto_bot info"}],[{"text":"panggil","callback_data":"\/callback_q@fadhil_riyanto_bot panggil"},{"text":"start","callback_data":"\/callback_q@fadhil_riyanto_bot start"}],[{"text":"short","callback_data":"\/callback_q@fadhil_riyanto_bot short"},{"text":"tanggal","callback_data":"\/callback_q@fadhil_riyanto_bot tanggal"}],[{"text":"bug","callback_data":"\/callback_q@fadhil_riyanto_bot bug"},{"text":"azan","callback_data":"\/callback_q@fadhil_riyanto_bot azan"}],[{"text":"donate","callback_data":"\/callback_q@fadhil_riyanto_bot donate"},{"text":"gempa","callback_data":"\/callback_q@fadhil_riyanto_bot gempa"}],[{"text":"help","callback_data":"\/callback_q@fadhil_riyanto_bot help"},{"text":"wiki","callback_data":"\/callback_q@fadhil_riyanto_bot wiki"}],[{"text":"tulis","callback_data":"\/callback_q@fadhil_riyanto_bot tulis"},{"text":"get_ip","callback_data":"\/callback_q@fadhil_riyanto_bot get_ip"}],[{"text":"get_mx","callback_data":"\/callback_q@fadhil_riyanto_bot get_mx"},{"text":"get_ns","callback_data":"\/callback_q@fadhil_riyanto_bot get_ns"}],[{"text":"get_aaaa","callback_data":"\/callback_q@fadhil_riyanto_bot get_aaaa"},{"text":"get_txt","callback_data":"\/callback_q@fadhil_riyanto_bot get_txt"}],[{"text":"get_cname","callback_data":"\/callback_q@fadhil_riyanto_bot cname"},{"text":"get_github_user","callback_data":"\/callback_q@fadhil_riyanto_bot get_github_user"}],[{"text":"ip_geo","callback_data":"\/callback_q@fadhil_riyanto_bot ip_geo"},{"text":"faker","callback_data":"\/callback_q@fadhil_riyanto_bot faker"}],[{"text":"sha512","callback_data":"\/callback_q@fadhil_riyanto_bot sha512"},{"text":"sha384","callback_data":"\/callback_q@fadhil_riyanto_bot sha384"}],[{"text":"sha256","callback_data":"\/callback_q@fadhil_riyanto_bot sha256"},{"text":"sha1","callback_data":"\/callback_q@fadhil_riyanto_bot sha1"}],[{"text":"md5","callback_data":"\/callback_q@fadhil_riyanto_bot md5"},{"text":"md4","callback_data":"\/callback_q@fadhil_riyanto_bot md4"}],[{"text":"md2","callback_data":"\/callback_q@fadhil_riyanto_bot md2"},{"text":"base64_encode","callback_data":"\/callback_q@fadhil_riyanto_bot base64_encode"}],[{"text":"base64_decode","callback_data":"\/callback_q@fadhil_riyanto_bot base64_decode"},{"text":"ripemd128","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd128"}],[{"text":"ripemd160","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd160"},{"text":"ripemd256","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd256"}],[{"text":"ripemd320","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd320"},{"text":"whirlpool","callback_data":"\/callback_q@fadhil_riyanto_bot whirlpool"}],[{"text":"capture","callback_data":"\/callback_q@fadhil_riyanto_bot capture"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(184): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\index.php(727): Telegram->editMessageText(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-01 20:41:13  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804390641
+ref.message.message_id= 10413
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1612186863
+ref.message.text= /help
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Selamat datang di buku panduan bot ini
+ref.message_id= 10408
+ref.reply_markup= {"inline_keyboard":[[{"text":"corona","callback_data":"\/callback_q@fadhil_riyanto_bot corona"},{"text":"userid","callback_data":"\/callback_q@fadhil_riyanto_bot userid"}],[{"text":"waktu","callback_data":"\/callback_q@fadhil_riyanto_bot waktu"},{"text":"info","callback_data":"\/callback_q@fadhil_riyanto_bot info"}],[{"text":"panggil","callback_data":"\/callback_q@fadhil_riyanto_bot panggil"},{"text":"start","callback_data":"\/callback_q@fadhil_riyanto_bot start"}],[{"text":"short","callback_data":"\/callback_q@fadhil_riyanto_bot short"},{"text":"tanggal","callback_data":"\/callback_q@fadhil_riyanto_bot tanggal"}],[{"text":"bug","callback_data":"\/callback_q@fadhil_riyanto_bot bug"},{"text":"azan","callback_data":"\/callback_q@fadhil_riyanto_bot azan"}],[{"text":"donate","callback_data":"\/callback_q@fadhil_riyanto_bot donate"},{"text":"gempa","callback_data":"\/callback_q@fadhil_riyanto_bot gempa"}],[{"text":"help","callback_data":"\/callback_q@fadhil_riyanto_bot help"},{"text":"wiki","callback_data":"\/callback_q@fadhil_riyanto_bot wiki"}],[{"text":"tulis","callback_data":"\/callback_q@fadhil_riyanto_bot tulis"},{"text":"get_ip","callback_data":"\/callback_q@fadhil_riyanto_bot get_ip"}],[{"text":"get_mx","callback_data":"\/callback_q@fadhil_riyanto_bot get_mx"},{"text":"get_ns","callback_data":"\/callback_q@fadhil_riyanto_bot get_ns"}],[{"text":"get_aaaa","callback_data":"\/callback_q@fadhil_riyanto_bot get_aaaa"},{"text":"get_txt","callback_data":"\/callback_q@fadhil_riyanto_bot get_txt"}],[{"text":"get_cname","callback_data":"\/callback_q@fadhil_riyanto_bot cname"},{"text":"get_github_user","callback_data":"\/callback_q@fadhil_riyanto_bot get_github_user"}],[{"text":"ip_geo","callback_data":"\/callback_q@fadhil_riyanto_bot ip_geo"},{"text":"faker","callback_data":"\/callback_q@fadhil_riyanto_bot faker"}],[{"text":"sha512","callback_data":"\/callback_q@fadhil_riyanto_bot sha512"},{"text":"sha384","callback_data":"\/callback_q@fadhil_riyanto_bot sha384"}],[{"text":"sha256","callback_data":"\/callback_q@fadhil_riyanto_bot sha256"},{"text":"sha1","callback_data":"\/callback_q@fadhil_riyanto_bot sha1"}],[{"text":"md5","callback_data":"\/callback_q@fadhil_riyanto_bot md5"},{"text":"md4","callback_data":"\/callback_q@fadhil_riyanto_bot md4"}],[{"text":"md2","callback_data":"\/callback_q@fadhil_riyanto_bot md2"},{"text":"base64_encode","callback_data":"\/callback_q@fadhil_riyanto_bot base64_encode"}],[{"text":"base64_decode","callback_data":"\/callback_q@fadhil_riyanto_bot base64_decode"},{"text":"ripemd128","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd128"}],[{"text":"ripemd160","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd160"},{"text":"ripemd256","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd256"}],[{"text":"ripemd320","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd320"},{"text":"whirlpool","callback_data":"\/callback_q@fadhil_riyanto_bot whirlpool"}],[{"text":"capture","callback_data":"\/callback_q@fadhil_riyanto_bot capture"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(184): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\index.php(727): Telegram->editMessageText(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-01 20:41:45  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804390642
+ref.message.message_id= 10414
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1612186898
+ref.message.text= /help
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Selamat datang di buku panduan bot ini
+ref.message_id= 10408
+ref.reply_markup= {"inline_keyboard":[[{"text":"corona","callback_data":"\/callback_q@fadhil_riyanto_bot corona"},{"text":"userid","callback_data":"\/callback_q@fadhil_riyanto_bot userid"}],[{"text":"waktu","callback_data":"\/callback_q@fadhil_riyanto_bot waktu"},{"text":"info","callback_data":"\/callback_q@fadhil_riyanto_bot info"}],[{"text":"panggil","callback_data":"\/callback_q@fadhil_riyanto_bot panggil"},{"text":"start","callback_data":"\/callback_q@fadhil_riyanto_bot start"}],[{"text":"short","callback_data":"\/callback_q@fadhil_riyanto_bot short"},{"text":"tanggal","callback_data":"\/callback_q@fadhil_riyanto_bot tanggal"}],[{"text":"bug","callback_data":"\/callback_q@fadhil_riyanto_bot bug"},{"text":"azan","callback_data":"\/callback_q@fadhil_riyanto_bot azan"}],[{"text":"donate","callback_data":"\/callback_q@fadhil_riyanto_bot donate"},{"text":"gempa","callback_data":"\/callback_q@fadhil_riyanto_bot gempa"}],[{"text":"help","callback_data":"\/callback_q@fadhil_riyanto_bot help"},{"text":"wiki","callback_data":"\/callback_q@fadhil_riyanto_bot wiki"}],[{"text":"tulis","callback_data":"\/callback_q@fadhil_riyanto_bot tulis"},{"text":"get_ip","callback_data":"\/callback_q@fadhil_riyanto_bot get_ip"}],[{"text":"get_mx","callback_data":"\/callback_q@fadhil_riyanto_bot get_mx"},{"text":"get_ns","callback_data":"\/callback_q@fadhil_riyanto_bot get_ns"}],[{"text":"get_aaaa","callback_data":"\/callback_q@fadhil_riyanto_bot get_aaaa"},{"text":"get_txt","callback_data":"\/callback_q@fadhil_riyanto_bot get_txt"}],[{"text":"get_cname","callback_data":"\/callback_q@fadhil_riyanto_bot cname"},{"text":"get_github_user","callback_data":"\/callback_q@fadhil_riyanto_bot get_github_user"}],[{"text":"ip_geo","callback_data":"\/callback_q@fadhil_riyanto_bot ip_geo"},{"text":"faker","callback_data":"\/callback_q@fadhil_riyanto_bot faker"}],[{"text":"sha512","callback_data":"\/callback_q@fadhil_riyanto_bot sha512"},{"text":"sha384","callback_data":"\/callback_q@fadhil_riyanto_bot sha384"}],[{"text":"sha256","callback_data":"\/callback_q@fadhil_riyanto_bot sha256"},{"text":"sha1","callback_data":"\/callback_q@fadhil_riyanto_bot sha1"}],[{"text":"md5","callback_data":"\/callback_q@fadhil_riyanto_bot md5"},{"text":"md4","callback_data":"\/callback_q@fadhil_riyanto_bot md4"}],[{"text":"md2","callback_data":"\/callback_q@fadhil_riyanto_bot md2"},{"text":"base64_encode","callback_data":"\/callback_q@fadhil_riyanto_bot base64_encode"}],[{"text":"base64_decode","callback_data":"\/callback_q@fadhil_riyanto_bot base64_decode"},{"text":"ripemd128","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd128"}],[{"text":"ripemd160","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd160"},{"text":"ripemd256","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd256"}],[{"text":"ripemd320","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd320"},{"text":"whirlpool","callback_data":"\/callback_q@fadhil_riyanto_bot whirlpool"}],[{"text":"capture","callback_data":"\/callback_q@fadhil_riyanto_bot capture"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(184): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\index.php(727): Telegram->editMessageText(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-01 20:42:04  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804390643
+ref.message.message_id= 10415
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1612186918
+ref.message.text= /help
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Selamat datang di buku panduan bot ini
+ref.message_id= 10408
+ref.reply_markup= {"inline_keyboard":[[{"text":"corona","callback_data":"\/callback_q@fadhil_riyanto_bot corona"},{"text":"userid","callback_data":"\/callback_q@fadhil_riyanto_bot userid"}],[{"text":"waktu","callback_data":"\/callback_q@fadhil_riyanto_bot waktu"},{"text":"info","callback_data":"\/callback_q@fadhil_riyanto_bot info"}],[{"text":"panggil","callback_data":"\/callback_q@fadhil_riyanto_bot panggil"},{"text":"start","callback_data":"\/callback_q@fadhil_riyanto_bot start"}],[{"text":"short","callback_data":"\/callback_q@fadhil_riyanto_bot short"},{"text":"tanggal","callback_data":"\/callback_q@fadhil_riyanto_bot tanggal"}],[{"text":"bug","callback_data":"\/callback_q@fadhil_riyanto_bot bug"},{"text":"azan","callback_data":"\/callback_q@fadhil_riyanto_bot azan"}],[{"text":"donate","callback_data":"\/callback_q@fadhil_riyanto_bot donate"},{"text":"gempa","callback_data":"\/callback_q@fadhil_riyanto_bot gempa"}],[{"text":"help","callback_data":"\/callback_q@fadhil_riyanto_bot help"},{"text":"wiki","callback_data":"\/callback_q@fadhil_riyanto_bot wiki"}],[{"text":"tulis","callback_data":"\/callback_q@fadhil_riyanto_bot tulis"},{"text":"get_ip","callback_data":"\/callback_q@fadhil_riyanto_bot get_ip"}],[{"text":"get_mx","callback_data":"\/callback_q@fadhil_riyanto_bot get_mx"},{"text":"get_ns","callback_data":"\/callback_q@fadhil_riyanto_bot get_ns"}],[{"text":"get_aaaa","callback_data":"\/callback_q@fadhil_riyanto_bot get_aaaa"},{"text":"get_txt","callback_data":"\/callback_q@fadhil_riyanto_bot get_txt"}],[{"text":"get_cname","callback_data":"\/callback_q@fadhil_riyanto_bot cname"},{"text":"get_github_user","callback_data":"\/callback_q@fadhil_riyanto_bot get_github_user"}],[{"text":"ip_geo","callback_data":"\/callback_q@fadhil_riyanto_bot ip_geo"},{"text":"faker","callback_data":"\/callback_q@fadhil_riyanto_bot faker"}],[{"text":"sha512","callback_data":"\/callback_q@fadhil_riyanto_bot sha512"},{"text":"sha384","callback_data":"\/callback_q@fadhil_riyanto_bot sha384"}],[{"text":"sha256","callback_data":"\/callback_q@fadhil_riyanto_bot sha256"},{"text":"sha1","callback_data":"\/callback_q@fadhil_riyanto_bot sha1"}],[{"text":"md5","callback_data":"\/callback_q@fadhil_riyanto_bot md5"},{"text":"md4","callback_data":"\/callback_q@fadhil_riyanto_bot md4"}],[{"text":"md2","callback_data":"\/callback_q@fadhil_riyanto_bot md2"},{"text":"base64_encode","callback_data":"\/callback_q@fadhil_riyanto_bot base64_encode"}],[{"text":"base64_decode","callback_data":"\/callback_q@fadhil_riyanto_bot base64_decode"},{"text":"ripemd128","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd128"}],[{"text":"ripemd160","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd160"},{"text":"ripemd256","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd256"}],[{"text":"ripemd320","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd320"},{"text":"whirlpool","callback_data":"\/callback_q@fadhil_riyanto_bot whirlpool"}],[{"text":"capture","callback_data":"\/callback_q@fadhil_riyanto_bot capture"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(184): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\index.php(727): Telegram->editMessageText(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-01 20:55:27  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804390646
+ref.message.message_id= 10416
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Rasmus Ledorf
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Rasmus Ledorf
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1612187710
+ref.message.text= /help
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Selamat datang di buku panduan bot ini
+ref.reply_markup= {"inline_keyboard":[[{"text":"corona","callback_data":"\/callback_q@fadhil_riyanto_bot corona"},{"text":"userid","callback_data":"\/callback_q@fadhil_riyanto_bot userid"}],[{"text":"waktu","callback_data":"\/callback_q@fadhil_riyanto_bot waktu"},{"text":"info","callback_data":"\/callback_q@fadhil_riyanto_bot info"}],[{"text":"panggil","callback_data":"\/callback_q@fadhil_riyanto_bot panggil"},{"text":"start","callback_data":"\/callback_q@fadhil_riyanto_bot start"}],[{"text":"short","callback_data":"\/callback_q@fadhil_riyanto_bot short"},{"text":"tanggal","callback_data":"\/callback_q@fadhil_riyanto_bot tanggal"}],[{"text":"bug","callback_data":"\/callback_q@fadhil_riyanto_bot bug"},{"text":"azan","callback_data":"\/callback_q@fadhil_riyanto_bot azan"}],[{"text":"donate","callback_data":"\/callback_q@fadhil_riyanto_bot donate"},{"text":"gempa","callback_data":"\/callback_q@fadhil_riyanto_bot gempa"}],[{"text":"help","callback_data":"\/callback_q@fadhil_riyanto_bot help"},{"text":"wiki","callback_data":"\/callback_q@fadhil_riyanto_bot wiki"}],[{"text":"tulis","callback_data":"\/callback_q@fadhil_riyanto_bot tulis"},{"text":"get_ip","callback_data":"\/callback_q@fadhil_riyanto_bot get_ip"}],[{"text":"get_mx","callback_data":"\/callback_q@fadhil_riyanto_bot get_mx"},{"text":"get_ns","callback_data":"\/callback_q@fadhil_riyanto_bot get_ns"}],[{"text":"get_aaaa","callback_data":"\/callback_q@fadhil_riyanto_bot get_aaaa"},{"text":"get_txt","callback_data":"\/callback_q@fadhil_riyanto_bot get_txt"}],[{"text":"get_cname","callback_data":"\/callback_q@fadhil_riyanto_bot cname"},{"text":"get_github_user","callback_data":"\/callback_q@fadhil_riyanto_bot get_github_user"}],[{"text":"ip_geo","callback_data":"\/callback_q@fadhil_riyanto_bot ip_geo"},{"text":"faker","callback_data":"\/callback_q@fadhil_riyanto_bot faker"}],[{"text":"sha512","callback_data":"\/callback_q@fadhil_riyanto_bot sha512"},{"text":"sha384","callback_data":"\/callback_q@fadhil_riyanto_bot sha384"}],[{"text":"sha256","callback_data":"\/callback_q@fadhil_riyanto_bot sha256"},{"text":"sha1","callback_data":"\/callback_q@fadhil_riyanto_bot sha1"}],[{"text":"md5","callback_data":"\/callback_q@fadhil_riyanto_bot md5"},{"text":"md4","callback_data":"\/callback_q@fadhil_riyanto_bot md4"}],[{"text":"md2","callback_data":"\/callback_q@fadhil_riyanto_bot md2"},{"text":"base64_encode","callback_data":"\/callback_q@fadhil_riyanto_bot base64_encode"}],[{"text":"base64_decode","callback_data":"\/callback_q@fadhil_riyanto_bot base64_decode"},{"text":"ripemd128","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd128"}],[{"text":"ripemd160","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd160"},{"text":"ripemd256","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd256"}],[{"text":"ripemd320","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd320"},{"text":"whirlpool","callback_data":"\/callback_q@fadhil_riyanto_bot whirlpool"}],[{"text":"capture","callback_data":"\/callback_q@fadhil_riyanto_bot capture"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(184): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\index.php(723): Telegram->editMessageText(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-01 20:55:53  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804390649
+ref.callback_query.id= 5984360331681749134
+ref.callback_query.from.id= 1393342467
+ref.callback_query.from.is_bot= false
+ref.callback_query.from.first_name= Rasmus Ledorf
+ref.callback_query.from.username= fadhil_riyanto
+ref.callback_query.from.language_code= id
+ref.callback_query.message.message_id= 10417
+ref.callback_query.message.from.id= 1489990155
+ref.callback_query.message.from.is_bot= true
+ref.callback_query.message.from.first_name= Fadhil Riyanto Bot
+ref.callback_query.message.from.username= Fadhil_riyanto_bot
+ref.callback_query.message.chat.id= 1393342467
+ref.callback_query.message.chat.first_name= Rasmus Ledorf
+ref.callback_query.message.chat.username= fadhil_riyanto
+ref.callback_query.message.chat.type= private
+ref.callback_query.message.date= 1612187728
+ref.callback_query.message.edit_date= 1612187745
+ref.callback_query.message.reply_to_message.message_id= 10416
+ref.callback_query.message.reply_to_message.from.id= 1393342467
+ref.callback_query.message.reply_to_message.from.is_bot= false
+ref.callback_query.message.reply_to_message.from.first_name= Rasmus Ledorf
+ref.callback_query.message.reply_to_message.from.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.from.language_code= id
+ref.callback_query.message.reply_to_message.chat.id= 1393342467
+ref.callback_query.message.reply_to_message.chat.first_name= Rasmus Ledorf
+ref.callback_query.message.reply_to_message.chat.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.chat.type= private
+ref.callback_query.message.reply_to_message.date= 1612187710
+ref.callback_query.message.reply_to_message.text= /help
+ref.callback_query.message.reply_to_message.entities.0.offset= 0
+ref.callback_query.message.reply_to_message.entities.0.length= 5
+ref.callback_query.message.reply_to_message.entities.0.type= bot_command
+ref.callback_query.message.text= /md4 digunakan untuk mengconvert string ke algoritma tersebut. Md 4 adalah salah satu versi dari metode kriptografi
+ref.callback_query.message.entities.0.offset= 0
+ref.callback_query.message.entities.0.length= 4
+ref.callback_query.message.entities.0.type= bot_command
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.text= kembali
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.callback_data= /help@fadhil_riyanto_bot
+ref.callback_query.chat_instance= -5109722127778484442
+ref.callback_query.data= /help@fadhil_riyanto_bot
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Selamat datang di buku panduan bot ini
+ref.reply_markup= {"inline_keyboard":[[{"text":"corona","callback_data":"\/callback_q@fadhil_riyanto_bot corona"},{"text":"userid","callback_data":"\/callback_q@fadhil_riyanto_bot userid"}],[{"text":"waktu","callback_data":"\/callback_q@fadhil_riyanto_bot waktu"},{"text":"info","callback_data":"\/callback_q@fadhil_riyanto_bot info"}],[{"text":"panggil","callback_data":"\/callback_q@fadhil_riyanto_bot panggil"},{"text":"start","callback_data":"\/callback_q@fadhil_riyanto_bot start"}],[{"text":"short","callback_data":"\/callback_q@fadhil_riyanto_bot short"},{"text":"tanggal","callback_data":"\/callback_q@fadhil_riyanto_bot tanggal"}],[{"text":"bug","callback_data":"\/callback_q@fadhil_riyanto_bot bug"},{"text":"azan","callback_data":"\/callback_q@fadhil_riyanto_bot azan"}],[{"text":"donate","callback_data":"\/callback_q@fadhil_riyanto_bot donate"},{"text":"gempa","callback_data":"\/callback_q@fadhil_riyanto_bot gempa"}],[{"text":"help","callback_data":"\/callback_q@fadhil_riyanto_bot help"},{"text":"wiki","callback_data":"\/callback_q@fadhil_riyanto_bot wiki"}],[{"text":"tulis","callback_data":"\/callback_q@fadhil_riyanto_bot tulis"},{"text":"get_ip","callback_data":"\/callback_q@fadhil_riyanto_bot get_ip"}],[{"text":"get_mx","callback_data":"\/callback_q@fadhil_riyanto_bot get_mx"},{"text":"get_ns","callback_data":"\/callback_q@fadhil_riyanto_bot get_ns"}],[{"text":"get_aaaa","callback_data":"\/callback_q@fadhil_riyanto_bot get_aaaa"},{"text":"get_txt","callback_data":"\/callback_q@fadhil_riyanto_bot get_txt"}],[{"text":"get_cname","callback_data":"\/callback_q@fadhil_riyanto_bot cname"},{"text":"get_github_user","callback_data":"\/callback_q@fadhil_riyanto_bot get_github_user"}],[{"text":"ip_geo","callback_data":"\/callback_q@fadhil_riyanto_bot ip_geo"},{"text":"faker","callback_data":"\/callback_q@fadhil_riyanto_bot faker"}],[{"text":"sha512","callback_data":"\/callback_q@fadhil_riyanto_bot sha512"},{"text":"sha384","callback_data":"\/callback_q@fadhil_riyanto_bot sha384"}],[{"text":"sha256","callback_data":"\/callback_q@fadhil_riyanto_bot sha256"},{"text":"sha1","callback_data":"\/callback_q@fadhil_riyanto_bot sha1"}],[{"text":"md5","callback_data":"\/callback_q@fadhil_riyanto_bot md5"},{"text":"md4","callback_data":"\/callback_q@fadhil_riyanto_bot md4"}],[{"text":"md2","callback_data":"\/callback_q@fadhil_riyanto_bot md2"},{"text":"base64_encode","callback_data":"\/callback_q@fadhil_riyanto_bot base64_encode"}],[{"text":"base64_decode","callback_data":"\/callback_q@fadhil_riyanto_bot base64_decode"},{"text":"ripemd128","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd128"}],[{"text":"ripemd160","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd160"},{"text":"ripemd256","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd256"}],[{"text":"ripemd320","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd320"},{"text":"whirlpool","callback_data":"\/callback_q@fadhil_riyanto_bot whirlpool"}],[{"text":"capture","callback_data":"\/callback_q@fadhil_riyanto_bot capture"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(184): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\index.php(723): Telegram->editMessageText(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-01 20:58:45  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804390652
+ref.callback_query.id= 5984360328430746204
+ref.callback_query.from.id= 1393342467
+ref.callback_query.from.is_bot= false
+ref.callback_query.from.first_name= Rasmus Ledorf
+ref.callback_query.from.username= fadhil_riyanto
+ref.callback_query.from.language_code= id
+ref.callback_query.message.message_id= 10418
+ref.callback_query.message.from.id= 1489990155
+ref.callback_query.message.from.is_bot= true
+ref.callback_query.message.from.first_name= Fadhil Riyanto Bot
+ref.callback_query.message.from.username= Fadhil_riyanto_bot
+ref.callback_query.message.chat.id= 1393342467
+ref.callback_query.message.chat.first_name= Rasmus Ledorf
+ref.callback_query.message.chat.username= fadhil_riyanto
+ref.callback_query.message.chat.type= private
+ref.callback_query.message.date= 1612187754
+ref.callback_query.message.edit_date= 1612187917
+ref.callback_query.message.reply_to_message.message_id= 10417
+ref.callback_query.message.reply_to_message.from.id= 1489990155
+ref.callback_query.message.reply_to_message.from.is_bot= true
+ref.callback_query.message.reply_to_message.from.first_name= Fadhil Riyanto Bot
+ref.callback_query.message.reply_to_message.from.username= Fadhil_riyanto_bot
+ref.callback_query.message.reply_to_message.chat.id= 1393342467
+ref.callback_query.message.reply_to_message.chat.first_name= Rasmus Ledorf
+ref.callback_query.message.reply_to_message.chat.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.chat.type= private
+ref.callback_query.message.reply_to_message.date= 1612187728
+ref.callback_query.message.reply_to_message.edit_date= 1612187745
+ref.callback_query.message.reply_to_message.text= /md4 digunakan untuk mengconvert string ke algoritma tersebut. Md 4 adalah salah satu versi dari metode kriptografi
+ref.callback_query.message.reply_to_message.entities.0.offset= 0
+ref.callback_query.message.reply_to_message.entities.0.length= 4
+ref.callback_query.message.reply_to_message.entities.0.type= bot_command
+ref.callback_query.message.reply_to_message.reply_markup.inline_keyboard.0.0.text= kembali
+ref.callback_query.message.reply_to_message.reply_markup.inline_keyboard.0.0.callback_data= /help@fadhil_riyanto_bot
+ref.callback_query.message.text= /capture digunakan untuk mengambil screenshot website. 
+
+Contohnya ketika mau mengambil melihat isi link sebelum diklik. Nah, kamu bisa menggunkan command ini
+
+Gunakan pattern /capture {link}
+ref.callback_query.message.entities.0.offset= 0
+ref.callback_query.message.entities.0.length= 8
+ref.callback_query.message.entities.0.type= bot_command
+ref.callback_query.message.entities.1.offset= 176
+ref.callback_query.message.entities.1.length= 8
+ref.callback_query.message.entities.1.type= bot_command
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.text= kembali
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.callback_data= /help@fadhil_riyanto_bot
+ref.callback_query.chat_instance= -5109722127778484442
+ref.callback_query.data= /help@fadhil_riyanto_bot
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Selamat datang di buku panduan bot ini
+ref.reply_markup= {"inline_keyboard":[[{"text":"corona","callback_data":"\/callback_q@fadhil_riyanto_bot corona"},{"text":"userid","callback_data":"\/callback_q@fadhil_riyanto_bot userid"}],[{"text":"waktu","callback_data":"\/callback_q@fadhil_riyanto_bot waktu"},{"text":"info","callback_data":"\/callback_q@fadhil_riyanto_bot info"}],[{"text":"panggil","callback_data":"\/callback_q@fadhil_riyanto_bot panggil"},{"text":"start","callback_data":"\/callback_q@fadhil_riyanto_bot start"}],[{"text":"short","callback_data":"\/callback_q@fadhil_riyanto_bot short"},{"text":"tanggal","callback_data":"\/callback_q@fadhil_riyanto_bot tanggal"}],[{"text":"bug","callback_data":"\/callback_q@fadhil_riyanto_bot bug"},{"text":"azan","callback_data":"\/callback_q@fadhil_riyanto_bot azan"}],[{"text":"donate","callback_data":"\/callback_q@fadhil_riyanto_bot donate"},{"text":"gempa","callback_data":"\/callback_q@fadhil_riyanto_bot gempa"}],[{"text":"help","callback_data":"\/callback_q@fadhil_riyanto_bot help"},{"text":"wiki","callback_data":"\/callback_q@fadhil_riyanto_bot wiki"}],[{"text":"tulis","callback_data":"\/callback_q@fadhil_riyanto_bot tulis"},{"text":"get_ip","callback_data":"\/callback_q@fadhil_riyanto_bot get_ip"}],[{"text":"get_mx","callback_data":"\/callback_q@fadhil_riyanto_bot get_mx"},{"text":"get_ns","callback_data":"\/callback_q@fadhil_riyanto_bot get_ns"}],[{"text":"get_aaaa","callback_data":"\/callback_q@fadhil_riyanto_bot get_aaaa"},{"text":"get_txt","callback_data":"\/callback_q@fadhil_riyanto_bot get_txt"}],[{"text":"get_cname","callback_data":"\/callback_q@fadhil_riyanto_bot cname"},{"text":"get_github_user","callback_data":"\/callback_q@fadhil_riyanto_bot get_github_user"}],[{"text":"ip_geo","callback_data":"\/callback_q@fadhil_riyanto_bot ip_geo"},{"text":"faker","callback_data":"\/callback_q@fadhil_riyanto_bot faker"}],[{"text":"sha512","callback_data":"\/callback_q@fadhil_riyanto_bot sha512"},{"text":"sha384","callback_data":"\/callback_q@fadhil_riyanto_bot sha384"}],[{"text":"sha256","callback_data":"\/callback_q@fadhil_riyanto_bot sha256"},{"text":"sha1","callback_data":"\/callback_q@fadhil_riyanto_bot sha1"}],[{"text":"md5","callback_data":"\/callback_q@fadhil_riyanto_bot md5"},{"text":"md4","callback_data":"\/callback_q@fadhil_riyanto_bot md4"}],[{"text":"md2","callback_data":"\/callback_q@fadhil_riyanto_bot md2"},{"text":"base64_encode","callback_data":"\/callback_q@fadhil_riyanto_bot base64_encode"}],[{"text":"base64_decode","callback_data":"\/callback_q@fadhil_riyanto_bot base64_decode"},{"text":"ripemd128","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd128"}],[{"text":"ripemd160","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd160"},{"text":"ripemd256","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd256"}],[{"text":"ripemd320","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd320"},{"text":"whirlpool","callback_data":"\/callback_q@fadhil_riyanto_bot whirlpool"}],[{"text":"capture","callback_data":"\/callback_q@fadhil_riyanto_bot capture"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(184): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\index.php(723): Telegram->editMessageText(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-01 21:06:47  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804390657
+ref.message.message_id= 10422
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Rasmus Ledorf
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Rasmus Ledorf
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1612188402
+ref.message.text= /help
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Selamat datang di buku panduan bot ini
+ref.message_id= 
+ref.reply_markup= {"inline_keyboard":[[{"text":"corona","callback_data":"\/callback_q@fadhil_riyanto_bot corona"},{"text":"userid","callback_data":"\/callback_q@fadhil_riyanto_bot userid"}],[{"text":"waktu","callback_data":"\/callback_q@fadhil_riyanto_bot waktu"},{"text":"info","callback_data":"\/callback_q@fadhil_riyanto_bot info"}],[{"text":"panggil","callback_data":"\/callback_q@fadhil_riyanto_bot panggil"},{"text":"start","callback_data":"\/callback_q@fadhil_riyanto_bot start"}],[{"text":"short","callback_data":"\/callback_q@fadhil_riyanto_bot short"},{"text":"tanggal","callback_data":"\/callback_q@fadhil_riyanto_bot tanggal"}],[{"text":"bug","callback_data":"\/callback_q@fadhil_riyanto_bot bug"},{"text":"azan","callback_data":"\/callback_q@fadhil_riyanto_bot azan"}],[{"text":"donate","callback_data":"\/callback_q@fadhil_riyanto_bot donate"},{"text":"gempa","callback_data":"\/callback_q@fadhil_riyanto_bot gempa"}],[{"text":"help","callback_data":"\/callback_q@fadhil_riyanto_bot help"},{"text":"wiki","callback_data":"\/callback_q@fadhil_riyanto_bot wiki"}],[{"text":"tulis","callback_data":"\/callback_q@fadhil_riyanto_bot tulis"},{"text":"get_ip","callback_data":"\/callback_q@fadhil_riyanto_bot get_ip"}],[{"text":"get_mx","callback_data":"\/callback_q@fadhil_riyanto_bot get_mx"},{"text":"get_ns","callback_data":"\/callback_q@fadhil_riyanto_bot get_ns"}],[{"text":"get_aaaa","callback_data":"\/callback_q@fadhil_riyanto_bot get_aaaa"},{"text":"get_txt","callback_data":"\/callback_q@fadhil_riyanto_bot get_txt"}],[{"text":"get_cname","callback_data":"\/callback_q@fadhil_riyanto_bot cname"},{"text":"get_github_user","callback_data":"\/callback_q@fadhil_riyanto_bot get_github_user"}],[{"text":"ip_geo","callback_data":"\/callback_q@fadhil_riyanto_bot ip_geo"},{"text":"faker","callback_data":"\/callback_q@fadhil_riyanto_bot faker"}],[{"text":"sha512","callback_data":"\/callback_q@fadhil_riyanto_bot sha512"},{"text":"sha384","callback_data":"\/callback_q@fadhil_riyanto_bot sha384"}],[{"text":"sha256","callback_data":"\/callback_q@fadhil_riyanto_bot sha256"},{"text":"sha1","callback_data":"\/callback_q@fadhil_riyanto_bot sha1"}],[{"text":"md5","callback_data":"\/callback_q@fadhil_riyanto_bot md5"},{"text":"md4","callback_data":"\/callback_q@fadhil_riyanto_bot md4"}],[{"text":"md2","callback_data":"\/callback_q@fadhil_riyanto_bot md2"},{"text":"base64_encode","callback_data":"\/callback_q@fadhil_riyanto_bot base64_encode"}],[{"text":"base64_decode","callback_data":"\/callback_q@fadhil_riyanto_bot base64_decode"},{"text":"ripemd128","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd128"}],[{"text":"ripemd160","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd160"},{"text":"ripemd256","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd256"}],[{"text":"ripemd320","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd320"},{"text":"whirlpool","callback_data":"\/callback_q@fadhil_riyanto_bot whirlpool"}],[{"text":"capture","callback_data":"\/callback_q@fadhil_riyanto_bot capture"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(184): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\index.php(723): Telegram->editMessageText(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-01 21:10:17  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804390664
+ref.message.message_id= 10424
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Rasmus Ledorf
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Rasmus Ledorf
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1612188612
+ref.message.text= /help
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Selamat datang di buku panduan bot ini
+ref.message_id= 10423
+ref.reply_markup= {"inline_keyboard":[[{"text":"corona","callback_data":"\/callback_q@fadhil_riyanto_bot corona"},{"text":"userid","callback_data":"\/callback_q@fadhil_riyanto_bot userid"}],[{"text":"waktu","callback_data":"\/callback_q@fadhil_riyanto_bot waktu"},{"text":"info","callback_data":"\/callback_q@fadhil_riyanto_bot info"}],[{"text":"panggil","callback_data":"\/callback_q@fadhil_riyanto_bot panggil"},{"text":"start","callback_data":"\/callback_q@fadhil_riyanto_bot start"}],[{"text":"short","callback_data":"\/callback_q@fadhil_riyanto_bot short"},{"text":"tanggal","callback_data":"\/callback_q@fadhil_riyanto_bot tanggal"}],[{"text":"bug","callback_data":"\/callback_q@fadhil_riyanto_bot bug"},{"text":"azan","callback_data":"\/callback_q@fadhil_riyanto_bot azan"}],[{"text":"donate","callback_data":"\/callback_q@fadhil_riyanto_bot donate"},{"text":"gempa","callback_data":"\/callback_q@fadhil_riyanto_bot gempa"}],[{"text":"help","callback_data":"\/callback_q@fadhil_riyanto_bot help"},{"text":"wiki","callback_data":"\/callback_q@fadhil_riyanto_bot wiki"}],[{"text":"tulis","callback_data":"\/callback_q@fadhil_riyanto_bot tulis"},{"text":"get_ip","callback_data":"\/callback_q@fadhil_riyanto_bot get_ip"}],[{"text":"get_mx","callback_data":"\/callback_q@fadhil_riyanto_bot get_mx"},{"text":"get_ns","callback_data":"\/callback_q@fadhil_riyanto_bot get_ns"}],[{"text":"get_aaaa","callback_data":"\/callback_q@fadhil_riyanto_bot get_aaaa"},{"text":"get_txt","callback_data":"\/callback_q@fadhil_riyanto_bot get_txt"}],[{"text":"get_cname","callback_data":"\/callback_q@fadhil_riyanto_bot cname"},{"text":"get_github_user","callback_data":"\/callback_q@fadhil_riyanto_bot get_github_user"}],[{"text":"ip_geo","callback_data":"\/callback_q@fadhil_riyanto_bot ip_geo"},{"text":"faker","callback_data":"\/callback_q@fadhil_riyanto_bot faker"}],[{"text":"sha512","callback_data":"\/callback_q@fadhil_riyanto_bot sha512"},{"text":"sha384","callback_data":"\/callback_q@fadhil_riyanto_bot sha384"}],[{"text":"sha256","callback_data":"\/callback_q@fadhil_riyanto_bot sha256"},{"text":"sha1","callback_data":"\/callback_q@fadhil_riyanto_bot sha1"}],[{"text":"md5","callback_data":"\/callback_q@fadhil_riyanto_bot md5"},{"text":"md4","callback_data":"\/callback_q@fadhil_riyanto_bot md4"}],[{"text":"md2","callback_data":"\/callback_q@fadhil_riyanto_bot md2"},{"text":"base64_encode","callback_data":"\/callback_q@fadhil_riyanto_bot base64_encode"}],[{"text":"base64_decode","callback_data":"\/callback_q@fadhil_riyanto_bot base64_decode"},{"text":"ripemd128","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd128"}],[{"text":"ripemd160","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd160"},{"text":"ripemd256","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd256"}],[{"text":"ripemd320","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd320"},{"text":"whirlpool","callback_data":"\/callback_q@fadhil_riyanto_bot whirlpool"}],[{"text":"capture","callback_data":"\/callback_q@fadhil_riyanto_bot capture"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(184): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\index.php(723): Telegram->editMessageText(Array)
+#4 {main}
+
