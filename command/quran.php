@@ -65,18 +65,22 @@ if ($azanHilangcommand == null) {
         // $perbandinganAyatsatu = $ayat + 1;
         // $perbandinganAyatdua = $perbandinganAyatsatu - $a->$angka->number_of_ayah;
         // if ($perbandinganAyatdua <= 0) {
+        //     $calKurang = $ayat - 1;
+        //     $callback_dataAyah = '/quran ' . $namaSurah . ' ' . $calKurang;
         //     $option = array(
         //         //First row
-        //         array($telegram->buildInlineKeyBoardButton('Sebelumnya', $url = '', $callback_data = '/quran ' . $namaSurah . ' ' . $ayat - 1), $telegram->buildInlineKeyBoardButton('Selanjutnya', $url = '', $callback_data = '/start'))
+        //         array($telegram->buildInlineKeyBoardButton('Sebelumnya', $url = '', $callback_data = $callback_dataAyah), $telegram->buildInlineKeyBoardButton('Selanjutnya', $url = '', $callback_data = '/start'))
         //         //Second row 
         //         // array($telegram->buildInlineKeyBoardButton("Button 3", $url = "http://link3.com"), $telegram->buildInlineKeyBoardButton("Button 4", $url = "http://link4.com"), $telegram->buildInlineKeyBoardButton("Button 5", $url = "http://link5.com")),
         //         // //Third row
         //         // array($telegram->buildInlineKeyBoardButton("Button 6", $url = "http://link6.com"))
         //     );
         // } else {
+        //     $calKurang = $ayat - 1;
+        //     $callback_dataAyah = '/quran ' . $namaSurah . ' ' . $calKurang;
         //     $option = array(
         //         //First row
-        //         array($telegram->buildInlineKeyBoardButton('Sebelumnya', $url = '', $callback_data = '/quran'), $telegram->buildInlineKeyBoardButton('Selanjutnya', $url = '', $callback_data = '/start'))
+        //         array($telegram->buildInlineKeyBoardButton('Sebelumnya', $url = '', $callback_data = $callback_dataAyah), $telegram->buildInlineKeyBoardButton('Selanjutnya', $url = '', $callback_data = '/start'))
         //         //Second row 
         //         // array($telegram->buildInlineKeyBoardButton("Button 3", $url = "http://link3.com"), $telegram->buildInlineKeyBoardButton("Button 4", $url = "http://link4.com"), $telegram->buildInlineKeyBoardButton("Button 5", $url = "http://link5.com")),
         //         // //Third row
