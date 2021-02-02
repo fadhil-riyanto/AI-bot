@@ -17,7 +17,7 @@ $helper = json_decode($get_help_files, true);
 
 $reply = $helper[$adanParse[1]];
 $option = array(
-    array($telegram->buildInlineKeyBoardButton("kembali", $url = "", $callback_data = '/help@fadhil_riyanto_bot'))
+    array($telegram->buildInlineKeyBoardButton("kembali", $url = "", $callback_data = '/help_i@fadhil_riyanto_bot'))
 );
 $keyb = $telegram->buildInlineKeyBoard($option);
 $content = array('chat_id' => $chat_id, 'text' => $reply, 'message_id' => $idPesan, 'reply_markup' => $keyb, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
