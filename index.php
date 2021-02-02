@@ -25,9 +25,6 @@ define('MAX_EXECUTE_SCRIPT', 5000);											//SUNNAH_ROSUL
 
 require_once __DIR__ . '/vendor/autoload.php';
 require_once __DIR__ . '/ai_robot.php';
-require_once __DIR__ . '/function/quran.php';
-
-
 
 ini_set('max_execution_time', MAX_EXECUTE_SCRIPT);
 error_reporting(1);
@@ -276,7 +273,10 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
 	$url = $telegram->sendMessage($content);
 	exit;
-} elseif ('/help' == $adanParse[0] || '/help@fadhil_riyanto_bot' == $adanParse[0]) {
+} elseif ('/help_i' == $adanParse[0] || '/help_i@fadhil_riyanto_bot' == $adanParse[0]) {
+	require __DIR__ . '/command/help_i.php';
+	exit;
+} elseif ('/help' == $adanParse[0] || '/help_i@fadhil_riyanto_bot' == $adanParse[0]) {
 	require __DIR__ . '/command/help.php';
 	exit;
 } elseif ('/callback_q' == $adanParse[0] || '/callback_q@fadhil_riyanto_bot' == $adanParse[0]) {
