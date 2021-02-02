@@ -655,3 +655,71 @@ ref.disable_web_page_preview= true
 #4 C:\bot telegram\index.php(391): require('C:\\bot telegram...')
 #5 {main}
 
+============[Date]============
+[ 2021-02-02 13:10:17  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+curl_error_code:		6
+curl_error:		Could not resolve host: api.telegram.org
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.action= typing
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(131): Telegram->endpoint('sendChatAction', Array)
+#3 C:\bot telegram\index.php(230): Telegram->sendChatAction(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-02 13:33:14  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse inline keyboard button: Text buttons are unallowed in the inline keyboard
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804390863
+ref.message.message_id= 10635
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1612247589
+ref.message.text= /quran al mulk 9
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= <b>67. Al Mulk (Kerajaan)</b>
+30 Ayat, mekah
+
+قَالُوْا بَلٰى قَدْ جَاۤءَنَا نَذِيْرٌ ەۙ فَكَذَّبْنَا وَقُلْنَا مَا نَزَّلَ اللّٰهُ مِنْ شَيْءٍۖ اِنْ اَنْتُمْ اِلَّا فِيْ ضَلٰلٍ كَبِيْرٍ
+
+Translate : Mereka menjawab, “Benar, sungguh, seorang pemberi peringatan telah datang kepada kami, tetapi kami mendustakan(nya) dan kami katakan, “Allah tidak menurunkan sesuatu apa pun, kamu sebenarnya di dalam kesesatan yang besar.”
+ref.reply_markup= {"inline_keyboard":[[{"text":"Sebelumnya"},{"text":"Selanjutnya"}]]}
+ref.reply_to_message_id= 10635
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\quran.php(75): Telegram->sendMessage(Array)
+#4 C:\bot telegram\index.php(267): require('C:\\bot telegram...')
+#5 {main}
+

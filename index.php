@@ -395,199 +395,43 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 // LICENSE BY FADHIL
 // PAHAM?
 elseif ('/sha256' == $adanParse[0] || '/sha256@fadhil_riyanto_bot' == $adanParse[0]) {
-	$azanHilangcommand = str_replace($adanParse_plain[0], '', $text_plain);
-	$udahDiparse = str_replace($adanParse_plain[0] . ' ', '', $text_plain);
-	$udahDiparse_hash = str_replace($adanParse_plain[0] . ' ', '', $text_plain_nokarakter);
-	if ($azanHilangcommand == null) {
-		$reply = 'Hai ' . $username . PHP_EOL . 'Untuk menggunakan encrypt SHA256, gunakan command <pre>/sha256 {teks atau kata}</pre>' . PHP_EOL . PHP_EOL .
-			'Contoh : <pre>/sha256 indonesia</pre>';
-		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-		$telegram->sendMessage($content);
-	} else {
-		$reply = 'Hai ' . $username . ', Hasil convert text to hash dengan algoritma SHA256 adalah' . PHP_EOL . PHP_EOL .
-			'Teks : ' . $udahDiparse . PHP_EOL . '---------------' .  PHP_EOL .  'Hash : <pre>' .  hash('sha256', $udahDiparse_hash) . '</pre>';
-		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-		$telegram->sendMessage($content);
-	}
+	require __DIR__ . '/command/sha256.php';
 	exit;
 } elseif ('/sha1' == $adanParse[0] || '/sha1@fadhil_riyanto_bot' == $adanParse[0]) {
-	$azanHilangcommand = str_replace($adanParse_plain[0], '', $text_plain);
-	$udahDiparse = str_replace($adanParse_plain[0] . ' ', '', $text_plain);
-	$udahDiparse_hash = str_replace($adanParse_plain[0] . ' ', '', $text_plain_nokarakter);
-	if ($azanHilangcommand == null) {
-		$reply = 'Hai ' . $username . PHP_EOL . 'Untuk menggunakan encrypt SHA1, gunakan command <pre>/sha1 {teks atau kata}</pre>' . PHP_EOL . PHP_EOL .
-			'Contoh : <pre>/sha1 indonesia</pre>';
-		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-		$telegram->sendMessage($content);
-	} else {
-		$reply = 'Hai ' . $username . ', Hasil convert text to hash dengan algoritma SHA1 adalah' . PHP_EOL . PHP_EOL .
-			'Teks : ' . $udahDiparse . PHP_EOL . '---------------' .  PHP_EOL .  'Hash : <pre>' .  hash('sha1', $udahDiparse_hash) . '</pre>';
-		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-		$telegram->sendMessage($content);
-	}
+	require __DIR__ . '/command/sha1.php';
 	exit;
 } elseif ('/sha512' == $adanParse[0] || '/sha512@fadhil_riyanto_bot' == $adanParse[0]) {
-	$azanHilangcommand = str_replace($adanParse_plain[0], '', $text_plain);
-	$udahDiparse = str_replace($adanParse_plain[0] . ' ', '', $text_plain);
-	$udahDiparse_hash = str_replace($adanParse_plain[0] . ' ', '', $text_plain_nokarakter);
-	if ($azanHilangcommand == null) {
-		$reply = 'Hai ' . $username . PHP_EOL . 'Untuk menggunakan encrypt SHA512, gunakan command <pre>/sha512 {teks atau kata}</pre>' . PHP_EOL . PHP_EOL .
-			'Contoh : <pre>/sha512 indonesia</pre>';
-		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-		$telegram->sendMessage($content);
-	} else {
-		$reply = 'Hai ' . $username . ', Hasil convert text to hash dengan algoritma SHA512 adalah' . PHP_EOL . PHP_EOL .
-			'Teks : ' . $udahDiparse . PHP_EOL . '---------------' .  PHP_EOL .  'Hash : <pre>' .  hash('sha512', $udahDiparse_hash) . '</pre>';
-		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-		$telegram->sendMessage($content);
-	}
+	require __DIR__ . '/command/sha512.php';
 	exit;
 } elseif ('/sha384' == $adanParse[0] || '/sha384@fadhil_riyanto_bot' == $adanParse[0]) {
-	$azanHilangcommand = str_replace($adanParse_plain[0], '', $text_plain);
-	$udahDiparse = str_replace($adanParse_plain[0] . ' ', '', $text_plain);
-	$udahDiparse_hash = str_replace($adanParse_plain[0] . ' ', '', $text_plain_nokarakter);
-	if ($azanHilangcommand == null) {
-		$reply = 'Hai ' . $username . PHP_EOL . 'Untuk menggunakan encrypt SHA384, gunakan command <pre>/sha384 {teks atau kata}</pre>' . PHP_EOL . PHP_EOL .
-			'Contoh : <pre>/sha384 indonesia</pre>';
-		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-		$telegram->sendMessage($content);
-	} else {
-		$reply = 'Hai ' . $username . ', Hasil convert text to hash dengan algoritma SHA384 adalah' . PHP_EOL . PHP_EOL .
-			'Teks : ' . $udahDiparse . PHP_EOL . '---------------' .  PHP_EOL .  'Hash : <pre>' .  hash('sha384', $udahDiparse_hash) . '</pre>';
-		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-		$telegram->sendMessage($content);
-	}
+	require __DIR__ . '/command/sha384.php';
 	exit;
 } elseif ('/md5' == $adanParse[0] || '/md5@fadhil_riyanto_bot' == $adanParse[0]) {
-	$azanHilangcommand = str_replace($adanParse_plain[0], '', $text_plain);
-	$udahDiparse = str_replace($adanParse_plain[0] . ' ', '', $text_plain);
-	$udahDiparse_hash = str_replace($adanParse_plain[0] . ' ', '', $text_plain_nokarakter);
-	if ($azanHilangcommand == null) {
-		$reply = 'Hai ' . $username . PHP_EOL . 'Untuk menggunakan encrypt MD5, gunakan command <pre>/md5 {teks atau kata}</pre>' . PHP_EOL . PHP_EOL .
-			'Contoh : <pre>/md5 indonesia</pre>';
-		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-		$telegram->sendMessage($content);
-	} else {
-		$reply = 'Hai ' . $username . ', Hasil convert text to hash dengan algoritma MD5 adalah' . PHP_EOL . PHP_EOL .
-			'Teks : ' . $udahDiparse . PHP_EOL . '---------------' .  PHP_EOL .  'Hash : <pre>' .  hash('md5', $udahDiparse_hash) . '</pre>';
-		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-		$telegram->sendMessage($content);
-	}
+	require __DIR__ . '/command/md5.php';
 	exit;
 } elseif ('/md4' == $adanParse[0] || '/md4@fadhil_riyanto_bot' == $adanParse[0]) {
-	$azanHilangcommand = str_replace($adanParse_plain[0], '', $text_plain);
-	$udahDiparse = str_replace($adanParse_plain[0] . ' ', '', $text_plain);
-	$udahDiparse_hash = str_replace($adanParse_plain[0] . ' ', '', $text_plain_nokarakter);
-	if ($azanHilangcommand == null) {
-		$reply = 'Hai ' . $username . PHP_EOL . 'Untuk menggunakan encrypt MD4, gunakan command <pre>/md4 {teks atau kata}</pre>' . PHP_EOL . PHP_EOL .
-			'Contoh : <pre>/md4 indonesia</pre>';
-		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-		$telegram->sendMessage($content);
-	} else {
-		$reply = 'Hai ' . $username . ', Hasil convert text to hash dengan algoritma MD4 adalah' . PHP_EOL . PHP_EOL .
-			'Teks : ' . $udahDiparse . PHP_EOL . '---------------' .  PHP_EOL .  'Hash : <pre>' .  hash('md4', $udahDiparse_hash) . '</pre>';
-		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-		$telegram->sendMessage($content);
-	}
+	require __DIR__ . '/command/md4.php';
 	exit;
 } elseif ('/md2' == $adanParse[0] || '/md2@fadhil_riyanto_bot' == $adanParse[0]) {
-	$azanHilangcommand = str_replace($adanParse_plain[0], '', $text_plain);
-	$udahDiparse = str_replace($adanParse_plain[0] . ' ', '', $text_plain);
-	$udahDiparse_hash = str_replace($adanParse_plain[0] . ' ', '', $text_plain_nokarakter);
-	if ($azanHilangcommand == null) {
-		$reply = 'Hai ' . $username . PHP_EOL . 'Untuk menggunakan encrypt MD2, gunakan command <pre>/md2 {teks atau kata}</pre>' . PHP_EOL . PHP_EOL .
-			'Contoh : <pre>/md2 indonesia</pre>';
-		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-		$telegram->sendMessage($content);
-	} else {
-		$reply = 'Hai ' . $username . ', Hasil convert text to hash dengan algoritma MD2 adalah' . PHP_EOL . PHP_EOL .
-			'Teks : ' . $udahDiparse . PHP_EOL . '---------------' .  PHP_EOL .  'Hash : <pre>' .  hash('md2', $udahDiparse_hash) . '</pre>';
-		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-		$telegram->sendMessage($content);
-	}
+	require __DIR__ . '/command/md2.php';
 	exit;
 }
 //ALL HASH DISINI
 // DIMULAI
 elseif ('/ripemd128' == $adanParse[0] || '/ripemd128@fadhil_riyanto_bot' == $adanParse[0]) {
-	$azanHilangcommand = str_replace($adanParse_plain[0], '', $text_plain);
-	$udahDiparse = str_replace($adanParse_plain[0] . ' ', '', $text_plain);
-	$udahDiparse_hash = str_replace($adanParse_plain[0] . ' ', '', $text_plain_nokarakter);
-	if ($azanHilangcommand == null) {
-		$reply = 'Hai ' . $username . PHP_EOL . 'Untuk menggunakan encrypt RIPEMD128, gunakan command <pre>/ripemd128 {teks atau kata}</pre>' . PHP_EOL . PHP_EOL .
-			'Contoh : <pre>/ripemd128 indonesia</pre>';
-		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-		$telegram->sendMessage($content);
-	} else {
-		$reply = 'Hai ' . $username . ', Hasil convert text to hash dengan algoritma RIPEMD128 adalah' . PHP_EOL . PHP_EOL .
-			'Teks : ' . $udahDiparse . PHP_EOL . '---------------' .  PHP_EOL .  'Hash : <pre>' .  hash('ripemd128', $udahDiparse_hash) . '</pre>';
-		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-		$telegram->sendMessage($content);
-	}
+	require __DIR__ . '/command/ripemd128.php';
 	exit;
 } elseif ('/ripemd160' == $adanParse[0] || '/ripemd160@fadhil_riyanto_bot' == $adanParse[0]) {
-	$azanHilangcommand = str_replace($adanParse_plain[0], '', $text_plain);
-	$udahDiparse = str_replace($adanParse_plain[0] . ' ', '', $text_plain);
-	$udahDiparse_hash = str_replace($adanParse_plain[0] . ' ', '', $text_plain_nokarakter);
-	if ($azanHilangcommand == null) {
-		$reply = 'Hai ' . $username . PHP_EOL . 'Untuk menggunakan encrypt RIPEMD160, gunakan command <pre>/ripemd160 {teks atau kata}</pre>' . PHP_EOL . PHP_EOL .
-			'Contoh : <pre>/ripemd160 indonesia</pre>';
-		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-		$telegram->sendMessage($content);
-	} else {
-		$reply = 'Hai ' . $username . ', Hasil convert text to hash dengan algoritma RIPEMD160 adalah' . PHP_EOL . PHP_EOL .
-			'Teks : ' . $udahDiparse . PHP_EOL . '---------------' .  PHP_EOL .  'Hash : <pre>' .  hash('ripemd160', $udahDiparse_hash) . '</pre>';
-		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-		$telegram->sendMessage($content);
-	}
+	require __DIR__ . '/command/ripemd160.php';
 	exit;
 } elseif ('/ripemd256' == $adanParse[0] || '/ripemd256@fadhil_riyanto_bot' == $adanParse[0]) {
-	$azanHilangcommand = str_replace($adanParse_plain[0], '', $text_plain);
-	$udahDiparse = str_replace($adanParse_plain[0] . ' ', '', $text_plain);
-	$udahDiparse_hash = str_replace($adanParse_plain[0] . ' ', '', $text_plain_nokarakter);
-	if ($azanHilangcommand == null) {
-		$reply = 'Hai ' . $username . PHP_EOL . 'Untuk menggunakan encrypt RIPEMD256, gunakan command <pre>/ripemd256 {teks atau kata}</pre>' . PHP_EOL . PHP_EOL .
-			'Contoh : <pre>/ripemd256 indonesia</pre>';
-		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-		$telegram->sendMessage($content);
-	} else {
-		$reply = 'Hai ' . $username . ', Hasil convert text to hash dengan algoritma RIPEMD256 adalah' . PHP_EOL . PHP_EOL .
-			'Teks : ' . $udahDiparse . PHP_EOL . '---------------' .  PHP_EOL .  'Hash : <pre>' .  hash('ripemd256', $udahDiparse_hash) . '</pre>';
-		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-		$telegram->sendMessage($content);
-	}
+	require __DIR__ . '/command/ripemd256.php';
 	exit;
 } elseif ('/ripemd320' == $adanParse[0] || '/ripemd320@fadhil_riyanto_bot' == $adanParse[0]) {
-	$azanHilangcommand = str_replace($adanParse_plain[0], '', $text_plain);
-	$udahDiparse = str_replace($adanParse_plain[0] . ' ', '', $text_plain);
-	$udahDiparse_hash = str_replace($adanParse_plain[0] . ' ', '', $text_plain_nokarakter);
-	if ($azanHilangcommand == null) {
-		$reply = 'Hai ' . $username . PHP_EOL . 'Untuk menggunakan encrypt RIPEMD320, gunakan command <pre>/ripemd320 {teks atau kata}</pre>' . PHP_EOL . PHP_EOL .
-			'Contoh : <pre>/ripemd320 indonesia</pre>';
-		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-		$telegram->sendMessage($content);
-	} else {
-		$reply = 'Hai ' . $username . ', Hasil convert text to hash dengan algoritma RIPEMD320 adalah' . PHP_EOL . PHP_EOL .
-			'Teks : ' . $udahDiparse . PHP_EOL . '---------------' .  PHP_EOL .  'Hash : <pre>' .  hash('ripemd320', $udahDiparse_hash) . '</pre>';
-		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-		$telegram->sendMessage($content);
-	}
+	require __DIR__ . '/command/ripemd320.php';
 	exit;
 } elseif ('/whirlpool' == $adanParse[0] || '/whirlpool@fadhil_riyanto_bot' == $adanParse[0]) {
-	$azanHilangcommand = str_replace($adanParse_plain[0], '', $text_plain);
-	$udahDiparse = str_replace($adanParse_plain[0] . ' ', '', $text_plain);
-	$udahDiparse_hash = str_replace($adanParse_plain[0] . ' ', '', $text_plain_nokarakter);
-	if ($azanHilangcommand == null) {
-		$reply = 'Hai ' . $username . PHP_EOL . 'Untuk menggunakan encrypt WHIRLPOOL, gunakan command <pre>/whirlpool {teks atau kata}</pre>' . PHP_EOL . PHP_EOL .
-			'Contoh : <pre>/whirlpool indonesia</pre>';
-		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-		$telegram->sendMessage($content);
-	} else {
-		$reply = 'Hai ' . $username . ', Hasil convert text to hash dengan algoritma WHIRLPOOL adalah' . PHP_EOL . PHP_EOL .
-			'Teks : ' . $udahDiparse . PHP_EOL . '---------------' .  PHP_EOL .  'Hash : <pre>' .  hash('whirlpool', $udahDiparse_hash) . '</pre>';
-		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-		$telegram->sendMessage($content);
-	}
+	require __DIR__ . '/command/whirlpool.php';
 	exit;
 }
 //BASE DECODE ENCODE WOYYY
@@ -595,47 +439,10 @@ elseif ('/ripemd128' == $adanParse[0] || '/ripemd128@fadhil_riyanto_bot' == $ada
 //BASE DECODE ENCODE WOYYY
 //BASE DECODE ENCODE WOYYY
 elseif ('/base64_encode' == $adanParse[0] || '/base64_encode@fadhil_riyanto_bot' == $adanParse[0]) {
-	$azanHilangcommand = str_replace($adanParse_plain[0], '', $text_plain);
-	$udahDiparse = str_replace($adanParse_plain[0] . ' ', '', $text_plain);
-	$udahDiparse_hash = str_replace($adanParse_plain[0] . ' ', '', $text_plain_nokarakter);
-	if ($azanHilangcommand == null) {
-		$reply = 'Hai ' . $username . PHP_EOL . 'Untuk menggunakan encode Base64, gunakan command <pre>/base64_encode {teks atau kata}</pre>' . PHP_EOL . PHP_EOL .
-			'Contoh : <pre>/base64_encode indonesia</pre>';
-		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-		$telegram->sendMessage($content);
-	} else {
-		$reply = 'Hai ' . $username . ', Hasil convert text to encode dengan algoritma BASE46 adalah' . PHP_EOL . PHP_EOL .
-			'Teks : ' . $udahDiparse . PHP_EOL . '---------------' .  PHP_EOL .  'Hash : <pre>' .  base64_encode($udahDiparse_hash) . '</pre>';
-		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-		$telegram->sendMessage($content);
-	}
+	require __DIR__ . '/command/base64_encode.php';
 	exit;
 } elseif ('/base64_decode' == $adanParse[0] || '/base64_decode@fadhil_riyanto_bot' == $adanParse[0]) {
-	$azanHilangcommand = str_replace($adanParse_plain[0], '', $text_plain);
-	$udahDiparse = str_replace($adanParse_plain[0] . ' ', '', $text_plain);
-	$udahDiparse_hash = str_replace($adanParse_plain[0] . ' ', '', $text_plain_nokarakter);
-	if ($azanHilangcommand == null) {
-		$reply = 'Hai ' . $username . PHP_EOL . 'Untuk menggunakan decode Base64, gunakan command <pre>/base64_decode {teks atau kata}</pre>' . PHP_EOL . PHP_EOL .
-			'Contoh : <pre>/base64_decode indonesia</pre>';
-		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-		$telegram->sendMessage($content);
-	} else {
-		if (base64_encode(base64_decode($udahDiparse, true)) === $udahDiparse) {
-			$reply = 'Hai ' . $username . ', Hasil convert text to encode dengan algoritma BASE46 adalah' . PHP_EOL . PHP_EOL .
-				'Encoded : ' . $udahDiparse . PHP_EOL . '---------------' .  PHP_EOL .  'Text : <pre>' .  base64_decode($udahDiparse_hash) . '</pre>';
-			$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-			$telegram->sendMessage($content);
-		} else {
-			$reply = 'Hai ' . $username . ', Maaf, base64 yang akan didecode tidak valid';
-			$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-			$telegram->sendMessage($content);
-		}
-	}
-	exit;
-
-
-
-
+	require __DIR__ . '/command/base64_decode.php';
 	exit;
 } elseif ($stringPertama == '/') {
 	// Jika ditemukan data dengan awalan coommand telegram, maka dia ngga akan diinsert ke database

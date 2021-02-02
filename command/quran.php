@@ -47,9 +47,13 @@ if ($azanHilangcommand == null) {
     }
     if ($angkaBoolQS == false) {
         $reply =  "ups, tidak ditemukan";
+        $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+        $telegram->sendMessage($content);
     } elseif ($angkaBoolQS == true and empty($hasilayat[2])) {
         $reply =  '<b>' . $nomorSurah . '. ' . $namaSurah .  ' (' . $artiSurah . ')</b>' . PHP_EOL .
             $ayatSurah . ' Ayat, ' . $typeSurah .   PHP_EOL . PHP_EOL . strip_tags($ketSurah);
+        $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+        $telegram->sendMessage($content);
     } elseif ($angkaBoolQS == true || empty($hasilayat[2]) == false) {
         $qjson_get_data = file_get_contents(__DIR__ . '/../json_data/quran/'  . $angka . '.json');
         $a = json_decode($qjson_get_data);
@@ -57,9 +61,35 @@ if ($azanHilangcommand == null) {
             $ayatSurah . ' Ayat, ' . $typeSurah .   PHP_EOL . PHP_EOL .
             $a->$angka->text->$ayat . PHP_EOL . PHP_EOL .
             'Translate : ' . strip_tags($a->$angka->translations->id->text->$ayat);
+
+        // $perbandinganAyatsatu = $ayat + 1;
+        // $perbandinganAyatdua = $perbandinganAyatsatu - $a->$angka->number_of_ayah;
+        // if ($perbandinganAyatdua <= 0) {
+        //     $option = array(
+        //         //First row
+        //         array($telegram->buildInlineKeyBoardButton('Sebelumnya', $url = '', $callback_data = '/quran ' . $namaSurah . ' ' . $ayat - 1), $telegram->buildInlineKeyBoardButton('Selanjutnya', $url = '', $callback_data = '/start'))
+        //         //Second row 
+        //         // array($telegram->buildInlineKeyBoardButton("Button 3", $url = "http://link3.com"), $telegram->buildInlineKeyBoardButton("Button 4", $url = "http://link4.com"), $telegram->buildInlineKeyBoardButton("Button 5", $url = "http://link5.com")),
+        //         // //Third row
+        //         // array($telegram->buildInlineKeyBoardButton("Button 6", $url = "http://link6.com"))
+        //     );
+        // } else {
+        //     $option = array(
+        //         //First row
+        //         array($telegram->buildInlineKeyBoardButton('Sebelumnya', $url = '', $callback_data = '/quran'), $telegram->buildInlineKeyBoardButton('Selanjutnya', $url = '', $callback_data = '/start'))
+        //         //Second row 
+        //         // array($telegram->buildInlineKeyBoardButton("Button 3", $url = "http://link3.com"), $telegram->buildInlineKeyBoardButton("Button 4", $url = "http://link4.com"), $telegram->buildInlineKeyBoardButton("Button 5", $url = "http://link5.com")),
+        //         // //Third row
+        //         // array($telegram->buildInlineKeyBoardButton("Button 6", $url = "http://link6.com"))
+        //     );
+        // }
+
+        // $keyb = $telegram->buildInlineKeyBoard($option);
+        // $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_markup' => $keyb, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+        // $telegram->sendMessage($content);
+        $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+        $telegram->sendMessage($content);
     }
-    $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-    $telegram->sendMessage($content);
 }
 unset($angka);
 unset($reply);
