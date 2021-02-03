@@ -229,21 +229,21 @@ $telegram->sendChatAction($status);
 
 $calkulatorpreg = preg_match('/[a-zA-Z]\s+([-+]?\s*\d+(?:\s*[-+*\/]\s*[-+]?\s*\d+)+)/i', $text, $hasilpreg);
 
-// if (isset($text)) {
-// 	$chek_gc = detect_grup();
-// 	$nama_gc = $telegram->namaGrup();
-// 	if ($chek_gc == true) {
-// 		if ($nama_gc == 'tgdev_php_group' || $nama_gc == 'testing470927409237094283' || $nama_gc == 'gabut_people_group' || $nama_gc == 'scriptiseng') {
-// 		} else {
-// 			$reply = 'Maaf, saya diprogram oleh pemilik saya untuk tidak dimasukkan ke grup. Jika anda masih tetap memasukkan saya ke grup. maka otomatis saya akan mengeluarkan diri.';
-// 			$content1 = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-// 			$telegram->sendMessage($content1);
-// 			$content = array('chat_id' => $chat_id);
-// 			$telegram->leaveChat($content);
-// 		}
-// 	} else {
-// 	}
-// }
+if (isset($text)) {
+	$chek_gc = detect_grup();
+	$nama_gc = $telegram->namaGrup();
+	if ($chek_gc == true) {
+		if ($nama_gc == 'tgdev_php_group' || $nama_gc == 'testing470927409237094283' || $nama_gc == 'gabut_people_group' || $nama_gc == 'scriptiseng') {
+		} else {
+			$reply = 'Maaf, saya diprogram oleh pemilik saya untuk tidak dimasukkan ke grup. Jika anda masih tetap memasukkan saya ke grup. maka otomatis saya akan mengeluarkan diri.';
+			$content1 = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+			$telegram->sendMessage($content1);
+			$content = array('chat_id' => $chat_id);
+			$telegram->leaveChat($content);
+		}
+	} else {
+	}
+}
 
 if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	require __DIR__ . '/command/start.php';
