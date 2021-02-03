@@ -276,7 +276,7 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 } elseif ('/help_i' == $adanParse[0] || '/help_i@fadhil_riyanto_bot' == $adanParse[0]) {
 	require __DIR__ . '/command/help_i.php';
 	exit;
-} elseif ('/help' == $adanParse[0] || '/help_i@fadhil_riyanto_bot' == $adanParse[0]) {
+} elseif ('/help' == $adanParse[0] || '/help@fadhil_riyanto_bot' == $adanParse[0]) {
 	require __DIR__ . '/command/help.php';
 	exit;
 } elseif ('/callback_q' == $adanParse[0] || '/callback_q@fadhil_riyanto_bot' == $adanParse[0]) {
