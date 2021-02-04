@@ -1,6 +1,6 @@
 <?php
 for($a=1;$a<200000;$a++){
-	$quot = file_get_contents('http://lolhuman.herokuapp.com/api/random/pantunn');
+	$quot = file_get_contents('http://lolhuman.herokuapp.com/api/random/pantun');
 	$quu = json_decode($quot);
 	$file = "pantun.json";
 	$anggota = file_get_contents($file);
