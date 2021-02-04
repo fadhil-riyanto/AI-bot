@@ -248,6 +248,12 @@ if (isset($text)) {
 if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	require __DIR__ . '/command/start.php';
 	exit;
+} elseif ('/pantun' == $adanParse[0] || '/pantun@fadhil_riyanto_bot' == $adanParse[0]) {
+	require __DIR__ . '/command/pantun.php';
+	exit;
+} elseif ('/quotes' == $adanParse[0] || '/quotes@fadhil_riyanto_bot' == $adanParse[0]) {
+	require __DIR__ . '/command/quotes.php';
+	exit;
 } elseif ('/cuaca' == $adanParse[0] || '/cuaca@fadhil_riyanto_bot' == $adanParse[0]) {
 	require __DIR__ . '/command/cuaca.php';
 	exit;
