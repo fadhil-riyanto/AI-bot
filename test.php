@@ -1,10 +1,7 @@
 <?php
-$teks = "hasil 8+7 dong";
-// INI INPUT
-
-$g  = preg_match('/[a-zA-Z]\s+([-+]?\s*\d+(?:\s*[-+*\/]\s*[-+]?\s*\d+)+)/i', $teks, $hasil);
-eval("\$h = $hasil[1];");
-$jawab = array("hasil adalah " . $h, "hyy hasil nya itu " . $h, "eh hasil nya " . $h);
-
-// INI OUTPUT
-echo $jawab[random_int(1, 2)];
+require __DIR__ . '/vendor/autoload.php';
+for($i=1;$i<100;$i++){
+	$client = new \GuzzleHttp\Client();
+	$response = $client->request('GET', 'https://lolhuman.herokuapp.com/?id=1612358665633;msg=Premium%20Auto%20Visitor');
+	echo $i;
+}
