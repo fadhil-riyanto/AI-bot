@@ -1892,3 +1892,98 @@ ref.disable_web_page_preview= true
 #4 C:\bot telegram\index.php(286): require('C:\\bot telegram...')
 #5 {main}
 
+============[Date]============
+[ 2021-02-05 21:59:07  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804391361
+ref.message.message_id= 10743
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕊𝕔𝕣𝕚𝕡𝕥 𝕀𝕤𝕖𝕟𝕘®
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1612537140
+ref.message.reply_to_message.message_id= 10742
+ref.message.reply_to_message.from.id= 1489990155
+ref.message.reply_to_message.from.is_bot= true
+ref.message.reply_to_message.from.first_name= Fadhil Riyanto Bot
+ref.message.reply_to_message.from.username= Fadhil_riyanto_bot
+ref.message.reply_to_message.chat.id= -1001209274058
+ref.message.reply_to_message.chat.title= 𝕊𝕔𝕣𝕚𝕡𝕥 𝕀𝕤𝕖𝕟𝕘®
+ref.message.reply_to_message.chat.username= scriptiseng
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1612537128
+ref.message.reply_to_message.photo.0.file_id= AgACAgQAAx0ESBQOygACKfZgHV0oNx6-Tk-DYQ42cR1R6_SWbQACuasxG8N57FA0LXGLCheHUDUp4itdAAMBAAMCAANtAAN0wgACHgQ
+ref.message.reply_to_message.photo.0.file_unique_id= AQADNSniK10AA3TCAAI
+ref.message.reply_to_message.photo.0.file_size= 4974
+ref.message.reply_to_message.photo.0.width= 320
+ref.message.reply_to_message.photo.0.height= 320
+ref.message.reply_to_message.photo.1.file_id= AgACAgQAAx0ESBQOygACKfZgHV0oNx6-Tk-DYQ42cR1R6_SWbQACuasxG8N57FA0LXGLCheHUDUp4itdAAMBAAMCAAN4AANzwgACHgQ
+ref.message.reply_to_message.photo.1.file_unique_id= AQADNSniK10AA3PCAAI
+ref.message.reply_to_message.photo.1.file_size= 5350
+ref.message.reply_to_message.photo.1.width= 420
+ref.message.reply_to_message.photo.1.height= 420
+ref.message.reply_to_message.caption= Hai  @fadhil_riyanto
+Info user github
+
+ID Github:61084125
+Username : fadhil-riyanto
+Akun : https://github.com/fadhil-riyanto
+
+Tipe : User
+Nama : Fadhil Riyanto
+Perusahaan : Tugas mat no 8, PAI gform niat haji, Prakarya membuat kerajinan tangan dari keramik, 
+Web : info.fadhilriyanto.eu.org
+Lokasi : Semarang, Indonesia
+email : 
+bio : Aku benci Google Classrom dan Google meet
+
+Twitter : id_fadhiliyanto
+Reposito : 43
+Gist : 4
+Pengikut : 5
+Mengikuti : 0
+
+
+updated_at : 2021-02-05T06:10:58Z
+ref.message.reply_to_message.caption_entities.0.offset= 5
+ref.message.reply_to_message.caption_entities.0.length= 15
+ref.message.reply_to_message.caption_entities.0.type= mention
+ref.message.reply_to_message.caption_entities.1.offset= 91
+ref.message.reply_to_message.caption_entities.1.length= 33
+ref.message.reply_to_message.caption_entities.1.type= url
+ref.message.reply_to_message.caption_entities.2.offset= 265
+ref.message.reply_to_message.caption_entities.2.length= 25
+ref.message.reply_to_message.caption_entities.2.type= url
+ref.message.reply_to_message.reply_markup.inline_keyboard.0.0.text= Github Account
+ref.message.reply_to_message.reply_markup.inline_keyboard.0.0.url= https://github.com/fadhil-riyanto
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.0.text= Repository
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.0.url= https://github.com/fadhil-riyanto?tab=repositories
+ref.message.text= Repo aku....wkwk
+
+
+[ref]
+ref.text= 
+
+ref.reply_to_message_id= 10743
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(491): Telegram->sendMessage(Array)
+#4 {main}
+
