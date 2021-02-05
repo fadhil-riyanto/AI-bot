@@ -78,10 +78,20 @@ $option = array(
         $telegram->buildInlineKeyBoardButton("ripemd320", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot ripemd320'),
         $telegram->buildInlineKeyBoardButton("whirlpool", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot whirlpool')
     ), array(
-        $telegram->buildInlineKeyBoardButton("capture", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot capture')
-
-    ), array($telegram->buildInlineKeyBoardButton("Button 3", $url = "http://link3.com"), $telegram->buildInlineKeyBoardButton("Button 4", $url = "http://link4.com"), $telegram->buildInlineKeyBoardButton("Button 5", $url = "http://link5.com")),
-
+        $telegram->buildInlineKeyBoardButton("capture", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot capture'),
+        $telegram->buildInlineKeyBoardButton("corona_provinsi", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot corona_provinsi')
+    ),
+    array(
+        $telegram->buildInlineKeyBoardButton("get_a", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot get_a'),
+        $telegram->buildInlineKeyBoardButton("cuaca", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot cuaca')
+    ),
+    array(
+        $telegram->buildInlineKeyBoardButton("quran", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot quran'),
+        $telegram->buildInlineKeyBoardButton("pantun", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot pantun')
+    ),
+    array(
+        $telegram->buildInlineKeyBoardButton("quotes", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot quotes')
+    ),
 
 );
 $keyb = $telegram->buildInlineKeyBoard($option);
