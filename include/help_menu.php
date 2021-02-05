@@ -80,8 +80,7 @@ $option = array(
     ), array(
         $telegram->buildInlineKeyBoardButton("capture", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot capture')
 
-    ), array($telegram->buildInlineKeyBoardButton("Button 3", $url = "http://link3.com"), $telegram->buildInlineKeyBoardButton("Button 4", $url = "http://link4.com"), $telegram->buildInlineKeyBoardButton("Button 5", $url = "http://link5.com")),
-
+    ),
 
 );
 $keyb = $telegram->buildInlineKeyBoard($option);

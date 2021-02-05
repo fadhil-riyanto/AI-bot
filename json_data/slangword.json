@@ -19,6 +19,7 @@
 	"get_mx": "/get_mx merupakan command untuk mendapatkan record MX DNS website. ini berguna sekali jika anda merupakan developers. dan ini berguna untuk mengecek apakah MX sudah dipropagandasi oleh DNS service. ",
 	"get_ns": "/get_ns merupakan command untuk mendapatkan Name Server (NS) website. ini berguna sekali jika anda merupakan developers.",
 	"get_aaaa": "/get_aaaa merupakan command untuk mendapatkan ip v6 dari website. ini berguna sekali jika anda merupakan developers.",
+	"get_a": "/get_a merupakan command untuk mendapatkan record dns A dari domain. ini berguna sekali jika anda merupakan developers.",
 	"get_txt": "/get_txt merupakan command untuk mendapatkan Record TXT website. ini berguna sekali jika anda merupakan developers.",
 	"cname": "/get_cname merupakan command untuk mendapatkan data CNAME website. ini berguna sekali jika anda merupakan developers.",
 	"get_github_user": "/get_github_user merupakan command untuk mendapatkan data user github. perlu diketahui bahwa hanya account yang terdaftar di github yang bisa dilihat datanya. seperti username, jumlah follower, jumlah repository, dan lain lain",
@@ -38,5 +39,10 @@
 	"ripemd256": "/ripemd256 digunakan untuk mengconvert string ke algoritma tersebut",
 	"ripemd320": "/ripemd320 digunakan untuk mengconvert string ke algoritma tersebut",
 	"cnames": "/get_cname merupakan command untuk mendapatkan data CNAME website. ini berguna sekali jika anda merupakan developers.",
-	"whirlpool": "/whirlpool \r\ndigunakan untuk mengconvert string ke algoritma tersebut. \r\n\r\nDalam ilmu komputer dan kriptografi, Whirlpool adalah fungsi hash kriptografi. Ini dirancang oleh Vincent Rijmen dan Paulo S. L. M. Barreto, yang pertama kali menggambarkannya pada tahun 2000. Hash telah direkomendasikan oleh proyek NESSIE. \r\n\r\nUntuk menggunakan command ini cara nya mudah. Kamu cukup menulis <pre>/whirlpool {teks}</pre> \r\n\r\nContoh:\r\n<pre>/whirlpool Kamu aku</pre> \r\n\r\nNanti dia akan mengembalikan bentuk hash dari algoritma tersebut"
+	"whirlpool": "/whirlpool \r\ndigunakan untuk mengconvert string ke algoritma tersebut. \r\n\r\nDalam ilmu komputer dan kriptografi, Whirlpool adalah fungsi hash kriptografi. Ini dirancang oleh Vincent Rijmen dan Paulo S. L. M. Barreto, yang pertama kali menggambarkannya pada tahun 2000. Hash telah direkomendasikan oleh proyek NESSIE. \r\n\r\nUntuk menggunakan command ini cara nya mudah. Kamu cukup menulis <pre>/whirlpool {teks}</pre> \r\n\r\nContoh:\r\n<pre>/whirlpool Kamu aku</pre> \r\n\r\nNanti dia akan mengembalikan bentuk hash dari algoritma tersebut",
+	"corona_provinsi": "/corona_provinsi digunakan untuk mencari daftar kasus corona berdasarkan provinsi di indonesia",
+	"cuaca": "/cuaca digunakan untuk melihat keadaan cuaca di suatu tempat\r\n\r\nCara nya cukup tulis /cuaca {kota}",
+	"quran": "/quran digunakan untuk mencari surah dan ayah di kitab suci alquran\r\n\r\nCara nya cukup tulis \n/quran {surah} {ayah}",
+	"pantun": "/pantun digunakan untuk menyuruh bot membuat pantun",
+	"quotes": "/quotes digunakan untuk menyuruh bot membuat quotes yang bagus banget",
 }
