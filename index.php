@@ -297,6 +297,15 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 } elseif ('/wiki' == $adanParse[0] || '/wiki@fadhil_riyanto_bot' == $adanParse[0]) {
 	require __DIR__ . '/command/wiki.php';
 	exit;
+} elseif ('/kata_bijak' == $adanParse[0] || '/kata_bijak@fadhil_riyanto_bot' == $adanParse[0]) {
+	require __DIR__ . '/command/kata_bijak.php';
+	exit;
+} elseif ('/bucin' == $adanParse[0] || '/bucin@fadhil_riyanto_bot' == $adanParse[0]) {
+	require __DIR__ . '/command/bucin.php';
+	exit;
+} elseif ('/fakta_unik' == $adanParse[0] || '/fakta_unik@fadhil_riyanto_bot' == $adanParse[0]) {
+	require __DIR__ . '/command/fakta.php';
+	exit;
 } elseif ('/ch_serv' == $adanParse[0] || '/ch_serv@fadhil_riyanto_bot' == $adanParse[0]) {
 	require __DIR__ . '/command/ch_serv.php';
 	exit;
@@ -337,7 +346,7 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	require __DIR__ . '/command/get_cname.php';
 	exit;
 } elseif ($text == '/donate' || $text == '/donate@fadhil_riyanto_bot') {
-	require __DIR__ . '/command/get_donate.php';
+	require __DIR__ . '/command/donate.php';
 	exit;
 } elseif ('/short' == $adanParse[0] || '/short@fadhil_riyanto_bot' == $adanParse[0]) {
 	require __DIR__ . '/command/short.php';

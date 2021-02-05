@@ -29,7 +29,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '954ec248616bfadf7d716bb72e11b3fd3277e5f5',
+    'reference' => 'd57a9f4dc58b0db8bd087c02b1bdf1018af92367',
     'name' => '__root__',
   ),
   'versions' => 
@@ -41,7 +41,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '954ec248616bfadf7d716bb72e11b3fd3277e5f5',
+      'reference' => 'd57a9f4dc58b0db8bd087c02b1bdf1018af92367',
     ),
     'buchin/badwords' => 
     array (
@@ -97,6 +97,15 @@ private static $installed = array (
       array (
       ),
       'reference' => '53330f47520498c0ae1f61f7e2c90f55690c06a3',
+    ),
+    'phplucidframe/console-table' => 
+    array (
+      'pretty_version' => 'v1.2.4',
+      'version' => '1.2.4.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'a973d911af96f3db42fca92cbeb1f473c9ad505e',
     ),
     'psr/container' => 
     array (

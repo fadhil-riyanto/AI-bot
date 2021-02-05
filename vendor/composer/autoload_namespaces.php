@@ -11,4 +11,6 @@ return array(
     'Sastrawi\\SentenceDetector' => array($vendorDir . '/sastrawi/sentence-detector/src'),
     'Sastrawi\\' => array($vendorDir . '/sastrawi/sastrawi/src'),
     'Requests' => array($vendorDir . '/rmccue/requests/library'),
+    'LucidFrame\\' => array($vendorDir . '/phplucidframe/console-table/src'),
+    'LucidFrameTest\\' => array($vendorDir . '/phplucidframe/console-table/tests'),
 );

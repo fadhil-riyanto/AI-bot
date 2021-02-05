@@ -1672,3 +1672,223 @@ ref.disable_web_page_preview= true
 #4 C:\bot telegram\index.php(286): require('C:\\bot telegram...')
 #5 {main}
 
+============[Date]============
+[ 2021-02-05 20:20:31  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804391339
+ref.message.message_id= 10914
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1612531228
+ref.message.text= /help
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Selamat datang di buku panduan bot ini
+ref.message_id= 
+ref.reply_markup= {"inline_keyboard":[[{"text":"corona","callback_data":"\/callback_q@fadhil_riyanto_bot corona"},{"text":"userid","callback_data":"\/callback_q@fadhil_riyanto_bot userid"}],[{"text":"waktu","callback_data":"\/callback_q@fadhil_riyanto_bot waktu"},{"text":"info","callback_data":"\/callback_q@fadhil_riyanto_bot info"}],[{"text":"panggil","callback_data":"\/callback_q@fadhil_riyanto_bot panggil"},{"text":"start","callback_data":"\/callback_q@fadhil_riyanto_bot start"}],[{"text":"short","callback_data":"\/callback_q@fadhil_riyanto_bot short"},{"text":"tanggal","callback_data":"\/callback_q@fadhil_riyanto_bot tanggal"}],[{"text":"bug","callback_data":"\/callback_q@fadhil_riyanto_bot bug"},{"text":"azan","callback_data":"\/callback_q@fadhil_riyanto_bot azan"}],[{"text":"donate","callback_data":"\/callback_q@fadhil_riyanto_bot donate"},{"text":"gempa","callback_data":"\/callback_q@fadhil_riyanto_bot gempa"}],[{"text":"help","callback_data":"\/callback_q@fadhil_riyanto_bot help"},{"text":"wiki","callback_data":"\/callback_q@fadhil_riyanto_bot wiki"}],[{"text":"tulis","callback_data":"\/callback_q@fadhil_riyanto_bot tulis"},{"text":"get_ip","callback_data":"\/callback_q@fadhil_riyanto_bot get_ip"}],[{"text":"get_mx","callback_data":"\/callback_q@fadhil_riyanto_bot get_mx"},{"text":"get_ns","callback_data":"\/callback_q@fadhil_riyanto_bot get_ns"}],[{"text":"get_aaaa","callback_data":"\/callback_q@fadhil_riyanto_bot get_aaaa"},{"text":"get_txt","callback_data":"\/callback_q@fadhil_riyanto_bot get_txt"}],[{"text":"get_cname","callback_data":"\/callback_q@fadhil_riyanto_bot cname"},{"text":"get_github_user","callback_data":"\/callback_q@fadhil_riyanto_bot get_github_user"}],[{"text":"ip_geo","callback_data":"\/callback_q@fadhil_riyanto_bot ip_geo"},{"text":"faker","callback_data":"\/callback_q@fadhil_riyanto_bot faker"}],[{"text":"sha512","callback_data":"\/callback_q@fadhil_riyanto_bot sha512"},{"text":"sha384","callback_data":"\/callback_q@fadhil_riyanto_bot sha384"}],[{"text":"sha256","callback_data":"\/callback_q@fadhil_riyanto_bot sha256"},{"text":"sha1","callback_data":"\/callback_q@fadhil_riyanto_bot sha1"}],[{"text":"md5","callback_data":"\/callback_q@fadhil_riyanto_bot md5"},{"text":"md4","callback_data":"\/callback_q@fadhil_riyanto_bot md4"}],[{"text":"md2","callback_data":"\/callback_q@fadhil_riyanto_bot md2"},{"text":"base64_encode","callback_data":"\/callback_q@fadhil_riyanto_bot base64_encode"}],[{"text":"base64_decode","callback_data":"\/callback_q@fadhil_riyanto_bot base64_decode"},{"text":"ripemd128","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd128"}],[{"text":"ripemd160","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd160"},{"text":"ripemd256","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd256"}],[{"text":"ripemd320","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd320"},{"text":"whirlpool","callback_data":"\/callback_q@fadhil_riyanto_bot whirlpool"}],[{"text":"capture","callback_data":"\/callback_q@fadhil_riyanto_bot capture"},{"text":"corona_provinsi","callback_data":"\/callback_q@fadhil_riyanto_bot corona_provinsi"}],[{"text":"get_a","callback_data":"\/callback_q@fadhil_riyanto_bot get_a"},{"text":"cuaca","callback_data":"\/callback_q@fadhil_riyanto_bot cuaca"}],[{"text":"quran","callback_data":"\/callback_q@fadhil_riyanto_bot quran"},{"text":"pantun","callback_data":"\/callback_q@fadhil_riyanto_bot pantun"}],[{"text":"quotes","callback_data":"\/callback_q@fadhil_riyanto_bot quotes"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(184): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\command\help.php(32): Telegram->editMessageText(Array)
+#4 C:\bot telegram\index.php(286): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-02-05 20:21:15  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804391340
+ref.message.message_id= 10916
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1612531271
+ref.message.text= /help
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Selamat datang di buku panduan bot ini
+ref.message_id= 
+ref.reply_markup= {"inline_keyboard":[[{"text":"corona","callback_data":"\/callback_q@fadhil_riyanto_bot corona"},{"text":"waktu","callback_data":"\/callback_q@fadhil_riyanto_bot waktu"},{"text":"userid","callback_data":"\/callback_q@fadhil_riyanto_bot userid"}],[{"text":"panggil","callback_data":"\/callback_q@fadhil_riyanto_bot panggil"},{"text":"start","callback_data":"\/callback_q@fadhil_riyanto_bot start"},{"text":"info","callback_data":"\/callback_q@fadhil_riyanto_bot info"}],[],[{"text":"short","callback_data":"\/callback_q@fadhil_riyanto_bot short"},{"text":"tanggal","callback_data":"\/callback_q@fadhil_riyanto_bot tanggal"}],[{"text":"bug","callback_data":"\/callback_q@fadhil_riyanto_bot bug"},{"text":"azan","callback_data":"\/callback_q@fadhil_riyanto_bot azan"}],[{"text":"donate","callback_data":"\/callback_q@fadhil_riyanto_bot donate"},{"text":"gempa","callback_data":"\/callback_q@fadhil_riyanto_bot gempa"}],[{"text":"help","callback_data":"\/callback_q@fadhil_riyanto_bot help"},{"text":"wiki","callback_data":"\/callback_q@fadhil_riyanto_bot wiki"}],[{"text":"tulis","callback_data":"\/callback_q@fadhil_riyanto_bot tulis"},{"text":"get_ip","callback_data":"\/callback_q@fadhil_riyanto_bot get_ip"}],[{"text":"get_mx","callback_data":"\/callback_q@fadhil_riyanto_bot get_mx"},{"text":"get_ns","callback_data":"\/callback_q@fadhil_riyanto_bot get_ns"}],[{"text":"get_aaaa","callback_data":"\/callback_q@fadhil_riyanto_bot get_aaaa"},{"text":"get_txt","callback_data":"\/callback_q@fadhil_riyanto_bot get_txt"}],[{"text":"get_cname","callback_data":"\/callback_q@fadhil_riyanto_bot cname"},{"text":"get_github_user","callback_data":"\/callback_q@fadhil_riyanto_bot get_github_user"}],[{"text":"ip_geo","callback_data":"\/callback_q@fadhil_riyanto_bot ip_geo"},{"text":"faker","callback_data":"\/callback_q@fadhil_riyanto_bot faker"}],[{"text":"sha512","callback_data":"\/callback_q@fadhil_riyanto_bot sha512"},{"text":"sha384","callback_data":"\/callback_q@fadhil_riyanto_bot sha384"}],[{"text":"sha256","callback_data":"\/callback_q@fadhil_riyanto_bot sha256"},{"text":"sha1","callback_data":"\/callback_q@fadhil_riyanto_bot sha1"}],[{"text":"md5","callback_data":"\/callback_q@fadhil_riyanto_bot md5"},{"text":"md4","callback_data":"\/callback_q@fadhil_riyanto_bot md4"}],[{"text":"md2","callback_data":"\/callback_q@fadhil_riyanto_bot md2"},{"text":"base64_encode","callback_data":"\/callback_q@fadhil_riyanto_bot base64_encode"}],[{"text":"base64_decode","callback_data":"\/callback_q@fadhil_riyanto_bot base64_decode"},{"text":"ripemd128","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd128"}],[{"text":"ripemd160","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd160"},{"text":"ripemd256","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd256"}],[{"text":"ripemd320","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd320"},{"text":"whirlpool","callback_data":"\/callback_q@fadhil_riyanto_bot whirlpool"}],[{"text":"capture","callback_data":"\/callback_q@fadhil_riyanto_bot capture"},{"text":"corona_provinsi","callback_data":"\/callback_q@fadhil_riyanto_bot corona_provinsi"}],[{"text":"get_a","callback_data":"\/callback_q@fadhil_riyanto_bot get_a"},{"text":"cuaca","callback_data":"\/callback_q@fadhil_riyanto_bot cuaca"}],[{"text":"quran","callback_data":"\/callback_q@fadhil_riyanto_bot quran"},{"text":"pantun","callback_data":"\/callback_q@fadhil_riyanto_bot pantun"}],[{"text":"quotes","callback_data":"\/callback_q@fadhil_riyanto_bot quotes"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(184): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\command\help.php(32): Telegram->editMessageText(Array)
+#4 C:\bot telegram\index.php(286): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-02-05 20:24:58  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804391343
+ref.message.message_id= 10918
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1612531495
+ref.message.text= /help
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Selamat datang di buku panduan bot ini
+ref.message_id= 
+ref.reply_markup= {"inline_keyboard":[[{"text":"corona","callback_data":"\/callback_q@fadhil_riyanto_bot corona"},{"text":"waktu","callback_data":"\/callback_q@fadhil_riyanto_bot waktu"},{"text":"userid","callback_data":"\/callback_q@fadhil_riyanto_bot userid"}],[{"text":"panggil","callback_data":"\/callback_q@fadhil_riyanto_bot panggil"},{"text":"start","callback_data":"\/callback_q@fadhil_riyanto_bot start"},{"text":"info","callback_data":"\/callback_q@fadhil_riyanto_bot info"}],[{"text":"short","callback_data":"\/callback_q@fadhil_riyanto_bot short"},{"text":"bug","callback_data":"\/callback_q@fadhil_riyanto_bot bug"},{"text":"tanggal","callback_data":"\/callback_q@fadhil_riyanto_bot tanggal"}],[{"text":"donate","callback_data":"\/callback_q@fadhil_riyanto_bot donate"},{"text":"gempa","callback_data":"\/callback_q@fadhil_riyanto_bot gempa"},{"text":"azan","callback_data":"\/callback_q@fadhil_riyanto_bot azan"}],[{"text":"help","callback_data":"\/callback_q@fadhil_riyanto_bot help"},{"text":"tulis","callback_data":"\/callback_q@fadhil_riyanto_bot tulis"},{"text":"wiki","callback_data":"\/callback_q@fadhil_riyanto_bot wiki"}],[{"text":"get_ip","callback_data":"\/callback_q@fadhil_riyanto_bot get_ip"},{"text":"get_mx","callback_data":"\/callback_q@fadhil_riyanto_bot get_mx"},{"text":"get_ns","callback_data":"\/callback_q@fadhil_riyanto_bot get_ns"}],[{"text":"get_aaaa","callback_data":"\/callback_q@fadhil_riyanto_bot get_aaaa"},{"text":"get_txt","callback_data":"\/callback_q@fadhil_riyanto_bot get_txt"}],[{"text":"get_cname","callback_data":"\/callback_q@fadhil_riyanto_bot cname"},{"text":"ip_geo","callback_data":"\/callback_q@fadhil_riyanto_bot ip_geo"},{"text":"get_github_user","callback_data":"\/callback_q@fadhil_riyanto_bot get_github_user"}],[{"text":"faker","callback_data":"\/callback_q@fadhil_riyanto_bot faker"},{"text":"sha512","callback_data":"\/callback_q@fadhil_riyanto_bot sha512"},{"text":"sha384","callback_data":"\/callback_q@fadhil_riyanto_bot sha384"}],[{"text":"sha256","callback_data":"\/callback_q@fadhil_riyanto_bot sha256"},{"text":"md5","callback_data":"\/callback_q@fadhil_riyanto_bot md5"},{"text":"sha1","callback_data":"\/callback_q@fadhil_riyanto_bot sha1"}],[{"text":"md4","callback_data":"\/callback_q@fadhil_riyanto_bot md4"},{"text":"md2","callback_data":"\/callback_q@fadhil_riyanto_bot md2"},{"text":"base64_encode","callback_data":"\/callback_q@fadhil_riyanto_bot base64_encode"}],[{"text":"base64_decode","callback_data":"\/callback_q@fadhil_riyanto_bot base64_decode"},{"text":"ripemd128","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd128"},{"text":"ripemd160","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd160"}],[{"text":"ripemd256","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd256"},{"text":"ripemd320","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd320"},{"text":"whirlpool","callback_data":"\/callback_q@fadhil_riyanto_bot whirlpool"}],[{"text":"capture","callback_data":"\/callback_q@fadhil_riyanto_bot capture"},{"text":"get_a","callback_data":"\/callback_q@fadhil_riyanto_bot get_a"},{"text":"corona_provinsi","callback_data":"\/callback_q@fadhil_riyanto_bot corona_provinsi"}],[{"text":"cuaca","callback_data":"\/callback_q@fadhil_riyanto_bot cuaca"},{"text":"quran","callback_data":"\/callback_q@fadhil_riyanto_bot quran"},{"text":"pantun","callback_data":"\/callback_q@fadhil_riyanto_bot pantun"}],[{"text":"quotes","callback_data":"\/callback_q@fadhil_riyanto_bot quotes"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(184): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\command\help.php(32): Telegram->editMessageText(Array)
+#4 C:\bot telegram\index.php(286): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-02-05 20:26:37  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804391345
+ref.message.message_id= 10921
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1612531594
+ref.message.text= /help
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Selamat datang di buku panduan bot ini
+ref.message_id= 
+ref.reply_markup= {"inline_keyboard":[[{"text":"corona","callback_data":"\/callback_q@fadhil_riyanto_bot corona"},{"text":"waktu","callback_data":"\/callback_q@fadhil_riyanto_bot waktu"},{"text":"userid","callback_data":"\/callback_q@fadhil_riyanto_bot userid"}],[{"text":"panggil","callback_data":"\/callback_q@fadhil_riyanto_bot panggil"},{"text":"start","callback_data":"\/callback_q@fadhil_riyanto_bot start"},{"text":"info","callback_data":"\/callback_q@fadhil_riyanto_bot info"}],[{"text":"short","callback_data":"\/callback_q@fadhil_riyanto_bot short"},{"text":"bug","callback_data":"\/callback_q@fadhil_riyanto_bot bug"},{"text":"tanggal","callback_data":"\/callback_q@fadhil_riyanto_bot tanggal"}],[{"text":"donate","callback_data":"\/callback_q@fadhil_riyanto_bot donate"},{"text":"gempa","callback_data":"\/callback_q@fadhil_riyanto_bot gempa"},{"text":"azan","callback_data":"\/callback_q@fadhil_riyanto_bot azan"}],[{"text":"help","callback_data":"\/callback_q@fadhil_riyanto_bot help"},{"text":"tulis","callback_data":"\/callback_q@fadhil_riyanto_bot tulis"},{"text":"wiki","callback_data":"\/callback_q@fadhil_riyanto_bot wiki"}],[{"text":"get_ip","callback_data":"\/callback_q@fadhil_riyanto_bot get_ip"},{"text":"get_mx","callback_data":"\/callback_q@fadhil_riyanto_bot get_mx"},{"text":"get_ns","callback_data":"\/callback_q@fadhil_riyanto_bot get_ns"}],[{"text":"get_cname","callback_data":"\/callback_q@fadhil_riyanto_bot cname"},{"text":"ip_geo","callback_data":"\/callback_q@fadhil_riyanto_bot ip_geo"},{"text":"get_github_user","callback_data":"\/callback_q@fadhil_riyanto_bot get_github_user"}],[{"text":"faker","callback_data":"\/callback_q@fadhil_riyanto_bot faker"},{"text":"sha512","callback_data":"\/callback_q@fadhil_riyanto_bot sha512"},{"text":"sha384","callback_data":"\/callback_q@fadhil_riyanto_bot sha384"}],[{"text":"sha256","callback_data":"\/callback_q@fadhil_riyanto_bot sha256"},{"text":"md5","callback_data":"\/callback_q@fadhil_riyanto_bot md5"},{"text":"sha1","callback_data":"\/callback_q@fadhil_riyanto_bot sha1"}],[{"text":"md4","callback_data":"\/callback_q@fadhil_riyanto_bot md4"},{"text":"md2","callback_data":"\/callback_q@fadhil_riyanto_bot md2"},{"text":"base64_encode","callback_data":"\/callback_q@fadhil_riyanto_bot base64_encode"}],[{"text":"base64_decode","callback_data":"\/callback_q@fadhil_riyanto_bot base64_decode"},{"text":"ripemd128","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd128"},{"text":"ripemd160","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd160"}],[{"text":"ripemd256","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd256"},{"text":"ripemd320","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd320"},{"text":"whirlpool","callback_data":"\/callback_q@fadhil_riyanto_bot whirlpool"}],[{"text":"capture","callback_data":"\/callback_q@fadhil_riyanto_bot capture"},{"text":"get_a","callback_data":"\/callback_q@fadhil_riyanto_bot get_a"},{"text":"corona_provinsi","callback_data":"\/callback_q@fadhil_riyanto_bot corona_provinsi"}],[{"text":"cuaca","callback_data":"\/callback_q@fadhil_riyanto_bot cuaca"},{"text":"quran","callback_data":"\/callback_q@fadhil_riyanto_bot quran"},{"text":"pantun","callback_data":"\/callback_q@fadhil_riyanto_bot pantun"}],[{"text":"quotes","callback_data":"\/callback_q@fadhil_riyanto_bot quotes"},{"text":"get_aaaa","callback_data":"\/callback_q@fadhil_riyanto_bot get_aaaa"},{"text":"get_txt","callback_data":"\/callback_q@fadhil_riyanto_bot get_txt"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(184): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\command\help.php(32): Telegram->editMessageText(Array)
+#4 C:\bot telegram\index.php(286): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-02-05 20:33:03  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804391348
+ref.message.message_id= 10923
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1612531979
+ref.message.text= /help
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Selamat datang di buku panduan bot ini
+ref.message_id= 
+ref.reply_markup= {"inline_keyboard":[[{"text":"corona","callback_data":"\/callback_q@fadhil_riyanto_bot corona"},{"text":"userid","callback_data":"\/callback_q@fadhil_riyanto_bot userid"}],[{"text":"waktu","callback_data":"\/callback_q@fadhil_riyanto_bot waktu"},{"text":"info","callback_data":"\/callback_q@fadhil_riyanto_bot info"}],[{"text":"panggil","callback_data":"\/callback_q@fadhil_riyanto_bot panggil"},{"text":"start","callback_data":"\/callback_q@fadhil_riyanto_bot start"}],[{"text":"short","callback_data":"\/callback_q@fadhil_riyanto_bot short"},{"text":"tanggal","callback_data":"\/callback_q@fadhil_riyanto_bot tanggal"}],[{"text":"bug","callback_data":"\/callback_q@fadhil_riyanto_bot bug"},{"text":"azan","callback_data":"\/callback_q@fadhil_riyanto_bot azan"}],[{"text":"donate","callback_data":"\/callback_q@fadhil_riyanto_bot donate"},{"text":"gempa","callback_data":"\/callback_q@fadhil_riyanto_bot gempa"}],[{"text":"help","callback_data":"\/callback_q@fadhil_riyanto_bot help"},{"text":"wiki","callback_data":"\/callback_q@fadhil_riyanto_bot wiki"}],[{"text":"tulis","callback_data":"\/callback_q@fadhil_riyanto_bot tulis"},{"text":"get_ip","callback_data":"\/callback_q@fadhil_riyanto_bot get_ip"}],[{"text":"get_mx","callback_data":"\/callback_q@fadhil_riyanto_bot get_mx"},{"text":"get_ns","callback_data":"\/callback_q@fadhil_riyanto_bot get_ns"}],[{"text":"get_aaaa","callback_data":"\/callback_q@fadhil_riyanto_bot get_aaaa"},{"text":"get_txt","callback_data":"\/callback_q@fadhil_riyanto_bot get_txt"}],[{"text":"get_cname","callback_data":"\/callback_q@fadhil_riyanto_bot cname"},{"text":"get_github_user","callback_data":"\/callback_q@fadhil_riyanto_bot get_github_user"}],[{"text":"ip_geo","callback_data":"\/callback_q@fadhil_riyanto_bot ip_geo"},{"text":"faker","callback_data":"\/callback_q@fadhil_riyanto_bot faker"}],[{"text":"sha512","callback_data":"\/callback_q@fadhil_riyanto_bot sha512"},{"text":"sha384","callback_data":"\/callback_q@fadhil_riyanto_bot sha384"}],[{"text":"sha256","callback_data":"\/callback_q@fadhil_riyanto_bot sha256"},{"text":"sha1","callback_data":"\/callback_q@fadhil_riyanto_bot sha1"}],[{"text":"md5","callback_data":"\/callback_q@fadhil_riyanto_bot md5"},{"text":"md4","callback_data":"\/callback_q@fadhil_riyanto_bot md4"}],[{"text":"md2","callback_data":"\/callback_q@fadhil_riyanto_bot md2"},{"text":"base64_encode","callback_data":"\/callback_q@fadhil_riyanto_bot base64_encode"}],[{"text":"base64_decode","callback_data":"\/callback_q@fadhil_riyanto_bot base64_decode"},{"text":"ripemd128","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd128"}],[{"text":"ripemd160","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd160"},{"text":"ripemd256","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd256"}],[{"text":"ripemd320","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd320"},{"text":"whirlpool","callback_data":"\/callback_q@fadhil_riyanto_bot whirlpool"}],[{"text":"capture","callback_data":"\/callback_q@fadhil_riyanto_bot capture"},{"text":"corona_provinsi","callback_data":"\/callback_q@fadhil_riyanto_bot corona_provinsi"}],[{"text":"get_a","callback_data":"\/callback_q@fadhil_riyanto_bot get_a"},{"text":"cuaca","callback_data":"\/callback_q@fadhil_riyanto_bot cuaca"}],[{"text":"quran","callback_data":"\/callback_q@fadhil_riyanto_bot quran"},{"text":"pantun","callback_data":"\/callback_q@fadhil_riyanto_bot pantun"}],[{"text":"quotes","callback_data":"\/callback_q@fadhil_riyanto_bot quotes"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(184): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\command\help.php(32): Telegram->editMessageText(Array)
+#4 C:\bot telegram\index.php(286): require('C:\\bot telegram...')
+#5 {main}
+

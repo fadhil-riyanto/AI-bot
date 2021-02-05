@@ -131,6 +131,17 @@ class ComposerStaticInit37458c04d77e08a184290ff46a23e733
                 0 => __DIR__ . '/..' . '/rmccue/requests/library',
             ),
         ),
+        'L' => 
+        array (
+            'LucidFrame\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/phplucidframe/console-table/src',
+            ),
+            'LucidFrameTest\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/phplucidframe/console-table/tests',
+            ),
+        ),
     );
 
     public static $classMap = array (
