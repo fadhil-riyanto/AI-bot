@@ -105,6 +105,24 @@ if ($koneksi == 1) {
 	$namaTerakhir = $telegram->LastName();
 }
 
+$anggota = file_get_contents(__DIR__ . '/pengaturan/settings.json');
+
+$data = json_decode($anggota, true);
+foreach ($data as $key => $d) {
+	if ($d['no'] === 1) {
+		if ($userID == $userid_pemilik) {
+			continue;
+		} elseif ($d['debug'] == true) {
+			$reply = 'maaf, bot ini sedang dalam perbaikan';
+			$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+			$telegram->sendMessage($content);
+			exit;
+		} elseif ($d['debug'] == false) {
+			continue;
+		}
+	}
+}
+
 if ($usernameBelumdiparse != null) { //Jika user ada usernamenya
 	$username = ' @' . $usernameBelumdiparse;
 } else { //ini user aneh, username gaada.....
@@ -302,6 +320,9 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	exit;
 } elseif ('/bucin' == $adanParse[0] || '/bucin@fadhil_riyanto_bot' == $adanParse[0]) {
 	require __DIR__ . '/command/bucin.php';
+	exit;
+} elseif ('/sudo' == $adanParse[0] || '/sudo@fadhil_riyanto_bot' == $adanParse[0]) {
+	require __DIR__ . '/command/sudo.php';
 	exit;
 } elseif ('/fakta_unik' == $adanParse[0] || '/fakta_unik@fadhil_riyanto_bot' == $adanParse[0]) {
 	require __DIR__ . '/command/fakta.php';
