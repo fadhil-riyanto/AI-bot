@@ -278,32 +278,40 @@ function tracking_user_forwaktu($userID)
 }
 $chek = tracking_user_forwaktu($userID);
 if ($chek == true) {
-	$file = __DIR__ . "/json_data/user_delay_time.json";
-	$anggota = file_get_contents($file);
-	$data = json_decode($anggota, true);
+	if (
+		'/help' == $adanParse[0] || '/help@fadhil_riyanto_bot' == $adanParse[0] ||
+		'/help_i' == $adanParse[0] || '/help_i@fadhil_riyanto_bot' == $adanParse[0] ||
+		'/callback_q' == $adanParse[0] || '/callback_q@fadhil_riyanto_bot' == $adanParse[0]
+	) {
+	} else {
+		$file = __DIR__ . "/json_data/user_delay_time.json";
+		$anggota = file_get_contents($file);
+		$delayedTime = 3;
+		$data = json_decode($anggota, true);
 
-	foreach ($data as $d) {
-		if ($d['userid'] == $useridTime) {
-			$useridTime = $d['userid'];
-			$timesekarang = $d['time'] + 10;
-			$timedelay = $timesekarang - time();
-			if ($timedelay > 0) {
-				$reply = 'anti flood 1';
-				$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-				$telegram->sendMessage($content);
-				exit;
-			} elseif ($timedelay < 0) {
-				foreach ($data as $key => $d) {
-					// Perbarui data kedua
-					if ($d['userid'] === $useridTime) {
-						$data[$key]['time'] = time() + 10;
+		foreach ($data as $d) {
+			if ($d['userid'] == $useridTime) {
+				$useridTime = $d['userid'];
+				$timesekarang = $d['time'] + $delayedTime;
+				$timedelay = $timesekarang - time();
+				if ($timedelay > 0) {
+					$reply = 'Maaf, kamu dapat mengirim pesan kembali setelah ' . ($timesekarang - time()) . ' detik';
+					$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+					$telegram->sendMessage($content);
+					exit;
+				} elseif ($timedelay < 0) {
+					foreach ($data as $key => $d) {
+						// Perbarui data kedua
+						if ($d['userid'] === $useridTime) {
+							$data[$key]['time'] = time() + $delayedTime;
+						}
 					}
+
+					$jsonfile = json_encode($data, JSON_PRETTY_PRINT);
+
+					// Menyimpan data ke dalam anggota.json
+					$anggota = file_put_contents($file, $jsonfile);
 				}
-
-				$jsonfile = json_encode($data, JSON_PRETTY_PRINT);
-
-				// Menyimpan data ke dalam anggota.json
-				$anggota = file_put_contents($file, $jsonfile);
 			}
 		}
 	}
@@ -314,7 +322,7 @@ if ($chek == true) {
 
 	$data[] = array(
 		"userid" => $userID,
-		"time" => time() + 10
+		"time" => time() + $delayedTime
 	);
 
 	$jsonfile = json_encode($data, JSON_PRETTY_PRINT);
