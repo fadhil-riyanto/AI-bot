@@ -329,7 +329,6 @@ if ($chek == true) {
 	$anggota = file_put_contents($file, $jsonfile);
 }
 
-
 if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	require __DIR__ . '/command/start.php';
 	exit;
