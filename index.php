@@ -444,8 +444,8 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 } elseif ($text == '/gempa' || $text == '/gempa@fadhil_riyanto_bot') {
 	require __DIR__ . '/command/gempa.php';
 	exit;
-} elseif ($text == '/userid' || $text == '/userid@fadhil_riyanto_bot') {
-	require __DIR__ . '/command/userid.php';
+} elseif ($text == '/whoami' || $text == '/whoami@fadhil_riyanto_bot') {
+	require __DIR__ . '/command/whoami.php';
 	exit;
 } elseif (
 	$text == '/panggil' ||
