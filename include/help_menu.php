@@ -90,7 +90,12 @@ $option = array(
         $telegram->buildInlineKeyBoardButton("pantun", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot pantun')
     ),
     array(
-        $telegram->buildInlineKeyBoardButton("quotes", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot quotes')
+        $telegram->buildInlineKeyBoardButton("quotes", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot quotes'),
+        $telegram->buildInlineKeyBoardButton("bucin", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot bucin')
+    ),
+    array(
+        $telegram->buildInlineKeyBoardButton("fakta", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot fakta'),
+        $telegram->buildInlineKeyBoardButton("kata_bijak", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot kata_bijak')
     ),
 
 );

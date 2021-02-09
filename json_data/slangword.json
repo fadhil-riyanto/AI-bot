@@ -44,5 +44,8 @@
 	"cuaca": "/cuaca digunakan untuk melihat keadaan cuaca di suatu tempat\r\n\r\nCara nya cukup tulis /cuaca {kota}",
 	"quran": "/quran digunakan untuk mencari surah dan ayah di kitab suci alquran\r\n\r\nCara nya cukup tulis \n/quran {surah} {ayah}",
 	"pantun": "/pantun digunakan untuk menyuruh bot membuat pantun",
-	"quotes": "/quotes digunakan untuk menyuruh bot membuat quotes yang bagus banget"
+	"quotes": "/quotes digunakan untuk menyuruh bot membuat quotes yang bagus banget",
+	"kata_bijak": "generate kata kata bijak, cocok untuk kamu yang mencari motivasi",
+	"fakta": "fakta unik dari seluruh dunia",
+	"bucin": "generate kata kata bucin...wkwk"
 }
