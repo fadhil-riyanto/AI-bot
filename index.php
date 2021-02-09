@@ -263,6 +263,65 @@ if (isset($text)) {
 	}
 }
 
+function tracking_user_forwaktu($userID)
+{
+	global $useridTime;
+	$file = __DIR__ . "/json_data/user_delay_time.json";
+	$anggota = file_get_contents($file);
+	$data = json_decode($anggota, true);
+	foreach ($data as $d) {
+		if ($d['userid'] == $userID) {
+			$useridTime = $d['userid'];
+			return true;
+		}
+	}
+}
+$chek = tracking_user_forwaktu($userID);
+if ($chek == true) {
+	$file = __DIR__ . "/json_data/user_delay_time.json";
+	$anggota = file_get_contents($file);
+	$data = json_decode($anggota, true);
+
+	foreach ($data as $d) {
+		if ($d['userid'] == $useridTime) {
+			$useridTime = $d['userid'];
+			$timesekarang = $d['time'] + 10;
+			$timedelay = $timesekarang - time();
+			if ($timedelay > 0) {
+				$reply = 'anti flood 1';
+				$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+				$telegram->sendMessage($content);
+				exit;
+			} elseif ($timedelay < 0) {
+				foreach ($data as $key => $d) {
+					// Perbarui data kedua
+					if ($d['userid'] === $useridTime) {
+						$data[$key]['time'] = time() + 10;
+					}
+				}
+
+				$jsonfile = json_encode($data, JSON_PRETTY_PRINT);
+
+				// Menyimpan data ke dalam anggota.json
+				$anggota = file_put_contents($file, $jsonfile);
+			}
+		}
+	}
+} elseif ($chek == null) {
+	$file = __DIR__ . "/json_data/user_delay_time.json";
+	$anggota = file_get_contents($file);
+	$data = json_decode($anggota, true);
+
+	$data[] = array(
+		"userid" => $userID,
+		"time" => time() + 10
+	);
+
+	$jsonfile = json_encode($data, JSON_PRETTY_PRINT);
+	$anggota = file_put_contents($file, $jsonfile);
+}
+
+
 if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	require __DIR__ . '/command/start.php';
 	exit;

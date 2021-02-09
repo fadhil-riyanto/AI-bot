@@ -1,13 +1,13 @@
 ============[Date]============
-[ 2021-02-08 21:38:53  Asia/Jakarta ] 
+[ 2021-02-09 08:11:40  Asia/Jakarta ] 
 ==========[Response]==========
 ok:			False
 error_code:		400
 description:		Bad Request: message to edit not found
 =========[Sent Data]==========
 [ref]
-ref.update_id= 804391462
-ref.message.message_id= 11062
+ref.update_id= 804391481
+ref.message.message_id= 11083
 ref.message.from.id= 1393342467
 ref.message.from.is_bot= false
 ref.message.from.first_name= Fadhil
@@ -19,7 +19,7 @@ ref.message.chat.first_name= Fadhil
 ref.message.chat.last_name= Riyanto
 ref.message.chat.username= fadhil_riyanto
 ref.message.chat.type= private
-ref.message.date= 1612795129
+ref.message.date= 1612833088
 ref.message.text= /help
 ref.message.entities.0.offset= 0
 ref.message.entities.0.length= 5
@@ -39,19 +39,19 @@ ref.disable_web_page_preview= true
 #1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
 #2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(184): Telegram->endpoint('editMessageText', Array)
 #3 C:\bot telegram\command\help.php(32): Telegram->editMessageText(Array)
-#4 C:\bot telegram\index.php(301): require('C:\\bot telegram...')
+#4 C:\bot telegram\index.php(326): require('C:\\bot telegram...')
 #5 {main}
 
 ============[Date]============
-[ 2021-02-08 21:39:12  Asia/Jakarta ] 
+[ 2021-02-09 08:12:01  Asia/Jakarta ] 
 ==========[Response]==========
 ok:			False
 error_code:		400
 description:		Bad Request: message to edit not found
 =========[Sent Data]==========
 [ref]
-ref.update_id= 804391463
-ref.message.message_id= 11064
+ref.update_id= 804391482
+ref.message.message_id= 11085
 ref.message.from.id= 1393342467
 ref.message.from.is_bot= false
 ref.message.from.first_name= Fadhil
@@ -63,7 +63,7 @@ ref.message.chat.first_name= Fadhil
 ref.message.chat.last_name= Riyanto
 ref.message.chat.username= fadhil_riyanto
 ref.message.chat.type= private
-ref.message.date= 1612795148
+ref.message.date= 1612833119
 ref.message.text= /help
 ref.message.entities.0.offset= 0
 ref.message.entities.0.length= 5
@@ -83,31 +83,162 @@ ref.disable_web_page_preview= true
 #1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
 #2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(184): Telegram->endpoint('editMessageText', Array)
 #3 C:\bot telegram\command\help.php(32): Telegram->editMessageText(Array)
-#4 C:\bot telegram\index.php(301): require('C:\\bot telegram...')
+#4 C:\bot telegram\index.php(326): require('C:\\bot telegram...')
 #5 {main}
 
 ============[Date]============
-[ 2021-02-08 21:42:19  Asia/Jakarta ] 
+[ 2021-02-09 09:45:23  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: reply message not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804391490
+ref.message.message_id= 1455
+ref.message.from.id= 1184720056
+ref.message.from.is_bot= false
+ref.message.from.first_name= Aisyah
+ref.message.from.username= Aisyah763
+ref.message.from.language_code= id
+ref.message.chat.id= -1001330116662
+ref.message.chat.title= F
+ref.message.chat.username= contohaja1
+ref.message.chat.type= supergroup
+ref.message.date= 1612838717
+ref.message.new_chat_participant.id= 1495648627
+ref.message.new_chat_participant.is_bot= true
+ref.message.new_chat_participant.first_name= Cobabot
+ref.message.new_chat_participant.username= Jsjdhdhchcbot
+ref.message.new_chat_member.id= 1495648627
+ref.message.new_chat_member.is_bot= true
+ref.message.new_chat_member.first_name= Cobabot
+ref.message.new_chat_member.username= Jsjdhdhchcbot
+ref.message.new_chat_members.0.id= 1495648627
+ref.message.new_chat_members.0.is_bot= true
+ref.message.new_chat_members.0.first_name= Cobabot
+ref.message.new_chat_members.0.username= Jsjdhdhchcbot
+
+
+[ref]
+ref.text= Maaf, saya diprogram oleh pemilik saya untuk tidak dimasukkan ke grup. Jika anda masih tetap memasukkan saya ke grup. maka otomatis saya akan mengeluarkan diri.
+ref.reply_to_message_id= 1455
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(258): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-09 09:45:27  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: bot is not a member of the supergroup chat
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804391491
+ref.message.message_id= 1461
+ref.message.from.id= 1489990155
+ref.message.from.is_bot= true
+ref.message.from.first_name= Fadhil Riyanto Bot
+ref.message.from.username= Fadhil_riyanto_bot
+ref.message.chat.id= -1001330116662
+ref.message.chat.title= F
+ref.message.chat.username= contohaja1
+ref.message.chat.type= supergroup
+ref.message.date= 1612838725
+ref.message.left_chat_participant.id= 1489990155
+ref.message.left_chat_participant.is_bot= true
+ref.message.left_chat_participant.first_name= Fadhil Riyanto Bot
+ref.message.left_chat_participant.username= Fadhil_riyanto_bot
+ref.message.left_chat_member.id= 1489990155
+ref.message.left_chat_member.is_bot= true
+ref.message.left_chat_member.first_name= Fadhil Riyanto Bot
+ref.message.left_chat_member.username= Fadhil_riyanto_bot
+
+
+[ref]
+ref.action= typing
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(131): Telegram->endpoint('sendChatAction', Array)
+#3 C:\bot telegram\index.php(245): Telegram->sendChatAction(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-09 09:45:28  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: bot is not a member of the supergroup chat
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804391491
+ref.message.message_id= 1461
+ref.message.from.id= 1489990155
+ref.message.from.is_bot= true
+ref.message.from.first_name= Fadhil Riyanto Bot
+ref.message.from.username= Fadhil_riyanto_bot
+ref.message.chat.id= -1001330116662
+ref.message.chat.title= F
+ref.message.chat.username= contohaja1
+ref.message.chat.type= supergroup
+ref.message.date= 1612838725
+ref.message.left_chat_participant.id= 1489990155
+ref.message.left_chat_participant.is_bot= true
+ref.message.left_chat_participant.first_name= Fadhil Riyanto Bot
+ref.message.left_chat_participant.username= Fadhil_riyanto_bot
+ref.message.left_chat_member.id= 1489990155
+ref.message.left_chat_member.is_bot= true
+ref.message.left_chat_member.first_name= Fadhil Riyanto Bot
+ref.message.left_chat_member.username= Fadhil_riyanto_bot
+
+
+[ref]
+ref.text= Maaf, saya diprogram oleh pemilik saya untuk tidak dimasukkan ke grup. Jika anda masih tetap memasukkan saya ke grup. maka otomatis saya akan mengeluarkan diri.
+ref.reply_to_message_id= 1461
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(258): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-09 10:07:09  Asia/Jakarta ] 
 ==========[Response]==========
 ok:			False
 error_code:		400
 description:		Bad Request: message to edit not found
 =========[Sent Data]==========
 [ref]
-ref.update_id= 804391466
-ref.message.message_id= 11071
+ref.update_id= 804391494
+ref.message.message_id= 11099
 ref.message.from.id= 1393342467
 ref.message.from.is_bot= false
 ref.message.from.first_name= Fadhil
 ref.message.from.last_name= Riyanto
 ref.message.from.username= fadhil_riyanto
-ref.message.from.language_code= id
+ref.message.from.language_code= en
 ref.message.chat.id= 1393342467
 ref.message.chat.first_name= Fadhil
 ref.message.chat.last_name= Riyanto
 ref.message.chat.username= fadhil_riyanto
 ref.message.chat.type= private
-ref.message.date= 1612795336
+ref.message.date= 1612840026
 ref.message.text= /help
 ref.message.entities.0.offset= 0
 ref.message.entities.0.length= 5
@@ -127,31 +258,31 @@ ref.disable_web_page_preview= true
 #1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
 #2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(184): Telegram->endpoint('editMessageText', Array)
 #3 C:\bot telegram\command\help.php(32): Telegram->editMessageText(Array)
-#4 C:\bot telegram\index.php(302): require('C:\\bot telegram...')
+#4 C:\bot telegram\index.php(335): require('C:\\bot telegram...')
 #5 {main}
 
 ============[Date]============
-[ 2021-02-08 21:46:09  Asia/Jakarta ] 
+[ 2021-02-09 10:07:17  Asia/Jakarta ] 
 ==========[Response]==========
 ok:			False
 error_code:		400
 description:		Bad Request: message to edit not found
 =========[Sent Data]==========
 [ref]
-ref.update_id= 804391468
-ref.message.message_id= 11075
+ref.update_id= 804391495
+ref.message.message_id= 11100
 ref.message.from.id= 1393342467
 ref.message.from.is_bot= false
 ref.message.from.first_name= Fadhil
 ref.message.from.last_name= Riyanto
 ref.message.from.username= fadhil_riyanto
-ref.message.from.language_code= id
+ref.message.from.language_code= en
 ref.message.chat.id= 1393342467
 ref.message.chat.first_name= Fadhil
 ref.message.chat.last_name= Riyanto
 ref.message.chat.username= fadhil_riyanto
 ref.message.chat.type= private
-ref.message.date= 1612795566
+ref.message.date= 1612840029
 ref.message.text= /help
 ref.message.entities.0.offset= 0
 ref.message.entities.0.length= 5
@@ -171,19 +302,19 @@ ref.disable_web_page_preview= true
 #1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
 #2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(184): Telegram->endpoint('editMessageText', Array)
 #3 C:\bot telegram\command\help.php(32): Telegram->editMessageText(Array)
-#4 C:\bot telegram\index.php(304): require('C:\\bot telegram...')
+#4 C:\bot telegram\index.php(335): require('C:\\bot telegram...')
 #5 {main}
 
 ============[Date]============
-[ 2021-02-08 21:50:57  Asia/Jakarta ] 
+[ 2021-02-09 13:40:39  Asia/Jakarta ] 
 ==========[Response]==========
 ok:			False
-error_code:		400
-description:		Bad Request: message to edit not found
+curl_error_code:		6
+curl_error:		Could not resolve host: api.telegram.org
 =========[Sent Data]==========
 [ref]
-ref.update_id= 804391474
-ref.message.message_id= 11081
+ref.update_id= 804391547
+ref.message.message_id= 11166
 ref.message.from.id= 1393342467
 ref.message.from.is_bot= false
 ref.message.from.first_name= Fadhil
@@ -195,7 +326,91 @@ ref.message.chat.first_name= Fadhil
 ref.message.chat.last_name= Riyanto
 ref.message.chat.username= fadhil_riyanto
 ref.message.chat.type= private
-ref.message.date= 1612795854
+ref.message.date= 1612852836
+ref.message.text= /userid
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 7
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.action= typing
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(131): Telegram->endpoint('sendChatAction', Array)
+#3 C:\bot telegram\index.php(245): Telegram->sendChatAction(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-09 13:40:39  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+curl_error_code:		6
+curl_error:		Could not resolve host: api.telegram.org
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804391547
+ref.message.message_id= 11166
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1612852836
+ref.message.text= /userid
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 7
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, id kamu adalah
+ID :1393342467
+Terimakasih.
+ref.reply_to_message_id= 11166
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\userid.php(4): Telegram->sendMessage(Array)
+#4 C:\bot telegram\index.php(406): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-02-09 14:04:53  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804391566
+ref.message.message_id= 11206
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1612854291
 ref.message.text= /help
 ref.message.entities.0.offset= 0
 ref.message.entities.0.length= 5
@@ -215,6 +430,138 @@ ref.disable_web_page_preview= true
 #1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
 #2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(184): Telegram->endpoint('editMessageText', Array)
 #3 C:\bot telegram\command\help.php(32): Telegram->editMessageText(Array)
-#4 C:\bot telegram\index.php(304): require('C:\\bot telegram...')
+#4 C:\bot telegram\index.php(363): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-02-09 14:05:13  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804391568
+ref.message.message_id= 11210
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1612854311
+ref.message.text= /help
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Selamat datang di buku panduan bot ini
+ref.message_id= 
+ref.reply_markup= {"inline_keyboard":[[{"text":"corona","callback_data":"\/callback_q@fadhil_riyanto_bot corona"},{"text":"userid","callback_data":"\/callback_q@fadhil_riyanto_bot userid"}],[{"text":"waktu","callback_data":"\/callback_q@fadhil_riyanto_bot waktu"},{"text":"info","callback_data":"\/callback_q@fadhil_riyanto_bot info"}],[{"text":"panggil","callback_data":"\/callback_q@fadhil_riyanto_bot panggil"},{"text":"start","callback_data":"\/callback_q@fadhil_riyanto_bot start"}],[{"text":"short","callback_data":"\/callback_q@fadhil_riyanto_bot short"},{"text":"tanggal","callback_data":"\/callback_q@fadhil_riyanto_bot tanggal"}],[{"text":"bug","callback_data":"\/callback_q@fadhil_riyanto_bot bug"},{"text":"azan","callback_data":"\/callback_q@fadhil_riyanto_bot azan"}],[{"text":"donate","callback_data":"\/callback_q@fadhil_riyanto_bot donate"},{"text":"gempa","callback_data":"\/callback_q@fadhil_riyanto_bot gempa"}],[{"text":"help","callback_data":"\/callback_q@fadhil_riyanto_bot help"},{"text":"wiki","callback_data":"\/callback_q@fadhil_riyanto_bot wiki"}],[{"text":"tulis","callback_data":"\/callback_q@fadhil_riyanto_bot tulis"},{"text":"get_ip","callback_data":"\/callback_q@fadhil_riyanto_bot get_ip"}],[{"text":"get_mx","callback_data":"\/callback_q@fadhil_riyanto_bot get_mx"},{"text":"get_ns","callback_data":"\/callback_q@fadhil_riyanto_bot get_ns"}],[{"text":"get_aaaa","callback_data":"\/callback_q@fadhil_riyanto_bot get_aaaa"},{"text":"get_txt","callback_data":"\/callback_q@fadhil_riyanto_bot get_txt"}],[{"text":"get_cname","callback_data":"\/callback_q@fadhil_riyanto_bot cname"},{"text":"get_github_user","callback_data":"\/callback_q@fadhil_riyanto_bot get_github_user"}],[{"text":"ip_geo","callback_data":"\/callback_q@fadhil_riyanto_bot ip_geo"},{"text":"faker","callback_data":"\/callback_q@fadhil_riyanto_bot faker"}],[{"text":"sha512","callback_data":"\/callback_q@fadhil_riyanto_bot sha512"},{"text":"sha384","callback_data":"\/callback_q@fadhil_riyanto_bot sha384"}],[{"text":"sha256","callback_data":"\/callback_q@fadhil_riyanto_bot sha256"},{"text":"sha1","callback_data":"\/callback_q@fadhil_riyanto_bot sha1"}],[{"text":"md5","callback_data":"\/callback_q@fadhil_riyanto_bot md5"},{"text":"md4","callback_data":"\/callback_q@fadhil_riyanto_bot md4"}],[{"text":"md2","callback_data":"\/callback_q@fadhil_riyanto_bot md2"},{"text":"base64_encode","callback_data":"\/callback_q@fadhil_riyanto_bot base64_encode"}],[{"text":"base64_decode","callback_data":"\/callback_q@fadhil_riyanto_bot base64_decode"},{"text":"ripemd128","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd128"}],[{"text":"ripemd160","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd160"},{"text":"ripemd256","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd256"}],[{"text":"ripemd320","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd320"},{"text":"whirlpool","callback_data":"\/callback_q@fadhil_riyanto_bot whirlpool"}],[{"text":"capture","callback_data":"\/callback_q@fadhil_riyanto_bot capture"},{"text":"corona_provinsi","callback_data":"\/callback_q@fadhil_riyanto_bot corona_provinsi"}],[{"text":"get_a","callback_data":"\/callback_q@fadhil_riyanto_bot get_a"},{"text":"cuaca","callback_data":"\/callback_q@fadhil_riyanto_bot cuaca"}],[{"text":"quran","callback_data":"\/callback_q@fadhil_riyanto_bot quran"},{"text":"pantun","callback_data":"\/callback_q@fadhil_riyanto_bot pantun"}],[{"text":"quotes","callback_data":"\/callback_q@fadhil_riyanto_bot quotes"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(184): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\command\help.php(32): Telegram->editMessageText(Array)
+#4 C:\bot telegram\index.php(363): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-02-09 14:05:36  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804391572
+ref.message.message_id= 11217
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1612854331
+ref.message.text= /help
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Selamat datang di buku panduan bot ini
+ref.message_id= 
+ref.reply_markup= {"inline_keyboard":[[{"text":"corona","callback_data":"\/callback_q@fadhil_riyanto_bot corona"},{"text":"userid","callback_data":"\/callback_q@fadhil_riyanto_bot userid"}],[{"text":"waktu","callback_data":"\/callback_q@fadhil_riyanto_bot waktu"},{"text":"info","callback_data":"\/callback_q@fadhil_riyanto_bot info"}],[{"text":"panggil","callback_data":"\/callback_q@fadhil_riyanto_bot panggil"},{"text":"start","callback_data":"\/callback_q@fadhil_riyanto_bot start"}],[{"text":"short","callback_data":"\/callback_q@fadhil_riyanto_bot short"},{"text":"tanggal","callback_data":"\/callback_q@fadhil_riyanto_bot tanggal"}],[{"text":"bug","callback_data":"\/callback_q@fadhil_riyanto_bot bug"},{"text":"azan","callback_data":"\/callback_q@fadhil_riyanto_bot azan"}],[{"text":"donate","callback_data":"\/callback_q@fadhil_riyanto_bot donate"},{"text":"gempa","callback_data":"\/callback_q@fadhil_riyanto_bot gempa"}],[{"text":"help","callback_data":"\/callback_q@fadhil_riyanto_bot help"},{"text":"wiki","callback_data":"\/callback_q@fadhil_riyanto_bot wiki"}],[{"text":"tulis","callback_data":"\/callback_q@fadhil_riyanto_bot tulis"},{"text":"get_ip","callback_data":"\/callback_q@fadhil_riyanto_bot get_ip"}],[{"text":"get_mx","callback_data":"\/callback_q@fadhil_riyanto_bot get_mx"},{"text":"get_ns","callback_data":"\/callback_q@fadhil_riyanto_bot get_ns"}],[{"text":"get_aaaa","callback_data":"\/callback_q@fadhil_riyanto_bot get_aaaa"},{"text":"get_txt","callback_data":"\/callback_q@fadhil_riyanto_bot get_txt"}],[{"text":"get_cname","callback_data":"\/callback_q@fadhil_riyanto_bot cname"},{"text":"get_github_user","callback_data":"\/callback_q@fadhil_riyanto_bot get_github_user"}],[{"text":"ip_geo","callback_data":"\/callback_q@fadhil_riyanto_bot ip_geo"},{"text":"faker","callback_data":"\/callback_q@fadhil_riyanto_bot faker"}],[{"text":"sha512","callback_data":"\/callback_q@fadhil_riyanto_bot sha512"},{"text":"sha384","callback_data":"\/callback_q@fadhil_riyanto_bot sha384"}],[{"text":"sha256","callback_data":"\/callback_q@fadhil_riyanto_bot sha256"},{"text":"sha1","callback_data":"\/callback_q@fadhil_riyanto_bot sha1"}],[{"text":"md5","callback_data":"\/callback_q@fadhil_riyanto_bot md5"},{"text":"md4","callback_data":"\/callback_q@fadhil_riyanto_bot md4"}],[{"text":"md2","callback_data":"\/callback_q@fadhil_riyanto_bot md2"},{"text":"base64_encode","callback_data":"\/callback_q@fadhil_riyanto_bot base64_encode"}],[{"text":"base64_decode","callback_data":"\/callback_q@fadhil_riyanto_bot base64_decode"},{"text":"ripemd128","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd128"}],[{"text":"ripemd160","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd160"},{"text":"ripemd256","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd256"}],[{"text":"ripemd320","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd320"},{"text":"whirlpool","callback_data":"\/callback_q@fadhil_riyanto_bot whirlpool"}],[{"text":"capture","callback_data":"\/callback_q@fadhil_riyanto_bot capture"},{"text":"corona_provinsi","callback_data":"\/callback_q@fadhil_riyanto_bot corona_provinsi"}],[{"text":"get_a","callback_data":"\/callback_q@fadhil_riyanto_bot get_a"},{"text":"cuaca","callback_data":"\/callback_q@fadhil_riyanto_bot cuaca"}],[{"text":"quran","callback_data":"\/callback_q@fadhil_riyanto_bot quran"},{"text":"pantun","callback_data":"\/callback_q@fadhil_riyanto_bot pantun"}],[{"text":"quotes","callback_data":"\/callback_q@fadhil_riyanto_bot quotes"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(184): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\command\help.php(32): Telegram->editMessageText(Array)
+#4 C:\bot telegram\index.php(363): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-02-09 14:05:56  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804391577
+ref.message.message_id= 11223
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1612854338
+ref.message.text= /help
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Selamat datang di buku panduan bot ini
+ref.message_id= 
+ref.reply_markup= {"inline_keyboard":[[{"text":"corona","callback_data":"\/callback_q@fadhil_riyanto_bot corona"},{"text":"userid","callback_data":"\/callback_q@fadhil_riyanto_bot userid"}],[{"text":"waktu","callback_data":"\/callback_q@fadhil_riyanto_bot waktu"},{"text":"info","callback_data":"\/callback_q@fadhil_riyanto_bot info"}],[{"text":"panggil","callback_data":"\/callback_q@fadhil_riyanto_bot panggil"},{"text":"start","callback_data":"\/callback_q@fadhil_riyanto_bot start"}],[{"text":"short","callback_data":"\/callback_q@fadhil_riyanto_bot short"},{"text":"tanggal","callback_data":"\/callback_q@fadhil_riyanto_bot tanggal"}],[{"text":"bug","callback_data":"\/callback_q@fadhil_riyanto_bot bug"},{"text":"azan","callback_data":"\/callback_q@fadhil_riyanto_bot azan"}],[{"text":"donate","callback_data":"\/callback_q@fadhil_riyanto_bot donate"},{"text":"gempa","callback_data":"\/callback_q@fadhil_riyanto_bot gempa"}],[{"text":"help","callback_data":"\/callback_q@fadhil_riyanto_bot help"},{"text":"wiki","callback_data":"\/callback_q@fadhil_riyanto_bot wiki"}],[{"text":"tulis","callback_data":"\/callback_q@fadhil_riyanto_bot tulis"},{"text":"get_ip","callback_data":"\/callback_q@fadhil_riyanto_bot get_ip"}],[{"text":"get_mx","callback_data":"\/callback_q@fadhil_riyanto_bot get_mx"},{"text":"get_ns","callback_data":"\/callback_q@fadhil_riyanto_bot get_ns"}],[{"text":"get_aaaa","callback_data":"\/callback_q@fadhil_riyanto_bot get_aaaa"},{"text":"get_txt","callback_data":"\/callback_q@fadhil_riyanto_bot get_txt"}],[{"text":"get_cname","callback_data":"\/callback_q@fadhil_riyanto_bot cname"},{"text":"get_github_user","callback_data":"\/callback_q@fadhil_riyanto_bot get_github_user"}],[{"text":"ip_geo","callback_data":"\/callback_q@fadhil_riyanto_bot ip_geo"},{"text":"faker","callback_data":"\/callback_q@fadhil_riyanto_bot faker"}],[{"text":"sha512","callback_data":"\/callback_q@fadhil_riyanto_bot sha512"},{"text":"sha384","callback_data":"\/callback_q@fadhil_riyanto_bot sha384"}],[{"text":"sha256","callback_data":"\/callback_q@fadhil_riyanto_bot sha256"},{"text":"sha1","callback_data":"\/callback_q@fadhil_riyanto_bot sha1"}],[{"text":"md5","callback_data":"\/callback_q@fadhil_riyanto_bot md5"},{"text":"md4","callback_data":"\/callback_q@fadhil_riyanto_bot md4"}],[{"text":"md2","callback_data":"\/callback_q@fadhil_riyanto_bot md2"},{"text":"base64_encode","callback_data":"\/callback_q@fadhil_riyanto_bot base64_encode"}],[{"text":"base64_decode","callback_data":"\/callback_q@fadhil_riyanto_bot base64_decode"},{"text":"ripemd128","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd128"}],[{"text":"ripemd160","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd160"},{"text":"ripemd256","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd256"}],[{"text":"ripemd320","callback_data":"\/callback_q@fadhil_riyanto_bot ripemd320"},{"text":"whirlpool","callback_data":"\/callback_q@fadhil_riyanto_bot whirlpool"}],[{"text":"capture","callback_data":"\/callback_q@fadhil_riyanto_bot capture"},{"text":"corona_provinsi","callback_data":"\/callback_q@fadhil_riyanto_bot corona_provinsi"}],[{"text":"get_a","callback_data":"\/callback_q@fadhil_riyanto_bot get_a"},{"text":"cuaca","callback_data":"\/callback_q@fadhil_riyanto_bot cuaca"}],[{"text":"quran","callback_data":"\/callback_q@fadhil_riyanto_bot quran"},{"text":"pantun","callback_data":"\/callback_q@fadhil_riyanto_bot pantun"}],[{"text":"quotes","callback_data":"\/callback_q@fadhil_riyanto_bot quotes"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(184): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\command\help.php(32): Telegram->editMessageText(Array)
+#4 C:\bot telegram\index.php(363): require('C:\\bot telegram...')
 #5 {main}
 

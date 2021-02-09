@@ -1,15 +1,31 @@
 [
     {
-        "userid": 1393342467,
-        "username": "fadhil_r iyanto",
-        "firstname": "Fadhil",
-        "lastname": "Riyanto"
+        "userid": "092389",
+        "time": "098"
     },
     {
-        "userid": 1455250320,
-        "username": null,
-        "firstname": "Andika arya",
-        "lastname": "Gumalang"
+        "userid": 1393342467,
+        "time": 1612833280
+    },
+    {
+        "userid": 1393342467,
+        "time": 1612833284
+    },
+    {
+        "userid": 1393342467,
+        "time": 1612833289
+    },
+    {
+        "userid": 656259129,
+        "time": 1612838408
+    },
+    {
+        "userid": 1184720056,
+        "time": 1612838734
+    },
+    {
+        "userid": 1489990155,
+        "time": 1612838738
     },
     {
         "userid": 1489990155,
@@ -18,183 +34,9 @@
         "lastname": null
     },
     {
-        "userid": 1403445830,
-        "username": null,
-        "firstname": "\ud83c\uddf2\ud83c\udde8CYBER CRIME\ud83c\uddf2\ud83c\udde8",
-        "lastname": null
-    },
-    {
-        "userid": 1349919799,
-        "username": "Oh_Yoon_Hee",
-        "firstname": "Oh",
-        "lastname": "Yoon Hee"
-    },
-    {
-        "userid": 304504330,
-        "username": "niddumulu",
-        "firstname": "Niddumulu",
-        "lastname": null
-    },
-    {
-        "userid": null,
-        "username": null,
-        "firstname": null,
-        "lastname": null
-    },
-    {
-        "userid": 1431213922,
-        "username": "BravoVr46",
-        "firstname": "Razali",
-        "lastname": "Us"
-    },
-    {
-        "userid": 1223173857,
-        "username": "Gw_orang77272",
-        "firstname": "Gw Orang",
-        "lastname": null
-    },
-    {
-        "userid": 1379303271,
-        "username": "Al14_3",
-        "firstname": "Rizky albana",
-        "lastname": null
-    },
-    {
         "userid": 1195226552,
         "username": "mrfadlika",
         "firstname": "Raffi",
         "lastname": "Fadlika"
-    },
-    {
-        "userid": 723238999,
-        "username": "norahm4d",
-        "firstname": "@norahm4d",
-        "lastname": null
-    },
-    {
-        "userid": 1298533646,
-        "username": "Mahlukkmarss",
-        "firstname": "Aku",
-        "lastname": "Siapa?"
-    },
-    {
-        "userid": 91668320,
-        "username": "luckyguy354",
-        "firstname": "Wiwid",
-        "lastname": "LuckyGuy354"
-    },
-    {
-        "userid": 1120561474,
-        "username": "ThisChaEunwoo",
-        "firstname": "Dirga\u1d3c\u02b7\u207f\u1d49\u02b3\u1d40\u1d49\u1d43\u02b3\u02e2\u1d2e\u1d43\u02b3",
-        "lastname": null
-    },
-    {
-        "userid": 1361169936,
-        "username": "NoSavage",
-        "firstname": "A l i e n",
-        "lastname": "M a r s."
-    },
-    {
-        "userid": 1407208084,
-        "username": "SamsulJedua",
-        "firstname": "Dede",
-        "lastname": "Kurniawan"
-    },
-    {
-        "userid": 1164970937,
-        "username": "Sitzzans07",
-        "firstname": "Ya",
-        "lastname": "Sitzz"
-    },
-    {
-        "userid": 1253079946,
-        "username": "LoLHumen",
-        "firstname": "LoL",
-        "lastname": "Human"
-    },
-    {
-        "userid": 1406203636,
-        "username": null,
-        "firstname": "Akun Terhapus",
-        "lastname": null
-    },
-    {
-        "userid": 1184720056,
-        "username": "Aisyah763",
-        "firstname": "Aisyah",
-        "lastname": null
-    },
-    {
-        "userid": 1018501765,
-        "username": null,
-        "firstname": "Muslim",
-        "lastname": "nuansya"
-    },
-    {
-        "userid": 1470938626,
-        "username": "Names78",
-        "firstname": "\u00a9\u00a9\u00a9",
-        "lastname": null
-    },
-    {
-        "userid": 1173381757,
-        "username": "Anonymurder",
-        "firstname": "Vampiric Dwarf",
-        "lastname": "(Penghuni Gua bawah tanah)"
-    },
-    {
-        "userid": 1576220729,
-        "username": "Minyoongi07",
-        "firstname": "Min Ye Na",
-        "lastname": null
-    },
-    {
-        "userid": 1389486417,
-        "username": null,
-        "firstname": "Anak mamak",
-        "lastname": null
-    },
-    {
-        "userid": 1386887236,
-        "username": "MrXHUNTER",
-        "firstname": "\u00a9Mr.X-HUNTER",
-        "lastname": null
-    },
-    {
-        "userid": 1347163113,
-        "username": "wyhyuuwybii",
-        "firstname": "panggil aja wahyu",
-        "lastname": "\ud83e\udd5c"
-    },
-    {
-        "userid": 1192566681,
-        "username": "fakboipensiun",
-        "firstname": "Fakboi Pensiun",
-        "lastname": "| RBio!"
-    },
-    {
-        "userid": 967096976,
-        "username": "CheloMCB",
-        "firstname": "Chelo",
-        "lastname": ":v"
-    },
-    {
-        "userid": 1416099345,
-        "username": "nzathon",
-        "firstname": "\u0274",
-        "lastname": null
-    },
-    {
-        "userid": 1355798219,
-        "username": "nekoha",
-        "firstname": "Kee",
-        "lastname": null
-    },
-    {
-        "userid": 911871993,
-        "username": "mhmm_idris",
-        "firstname": "Idris",
-        "lastname": null
     }
 ]
