@@ -286,7 +286,7 @@ if ($chek == true) {
 	} else {
 		$file = __DIR__ . "/json_data/user_delay_time.json";
 		$anggota = file_get_contents($file);
-		$delayedTime = 1;
+		$delayedTime = 3;
 		$data = json_decode($anggota, true);
 
 		foreach ($data as $d) {
