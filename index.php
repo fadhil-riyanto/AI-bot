@@ -281,6 +281,7 @@ if ($chek == true) {
 	if (
 		'/help' == $adanParse[0] || '/help@fadhil_riyanto_bot' == $adanParse[0] ||
 		'/help_i' == $adanParse[0] || '/help_i@fadhil_riyanto_bot' == $adanParse[0] ||
+		'/sudo' == $adanParse[0] || '/sudo@fadhil_riyanto_bot' == $adanParse[0] ||
 		'/callback_q' == $adanParse[0] || '/callback_q@fadhil_riyanto_bot' == $adanParse[0]
 	) {
 	} else {
@@ -301,15 +302,11 @@ if ($chek == true) {
 					exit;
 				} elseif ($timedelay < 0) {
 					foreach ($data as $key => $d) {
-						// Perbarui data kedua
 						if ($d['userid'] === $useridTime) {
 							$data[$key]['time'] = time() + $delayedTime;
 						}
 					}
-
 					$jsonfile = json_encode($data, JSON_PRETTY_PRINT);
-
-					// Menyimpan data ke dalam anggota.json
 					$anggota = file_put_contents($file, $jsonfile);
 				}
 			}
