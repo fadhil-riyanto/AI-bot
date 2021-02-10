@@ -1,5 +1,7 @@
 <?php
-$file = "quot.json";
-	$anggota = file_get_contents($file);
-	$data = json_decode($anggota, true);
-	echo count($data);
+
+	require 'vendor/autoload.php';
+	
+$nmap = new Nmap();
+
+$nmap->scan([ 'williamdurand.fr' ], [ 21, 22, 80 ]);

@@ -1,8 +1,9 @@
 <?php
 if ($userID != $userid_pemilik) {
-    $reply = 'Acces denied for you!' . PHP_EOL . PHP_EOL . 'acces grant for @fadhil_riyanto';
+    $reply = 'Acces denied!!' . PHP_EOL . PHP_EOL . 'command ini hanya bisa dijalankan oleh pemilik bot ini';
     $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
     $telegram->sendMessage($content);
+    exit;
 }
 $azanHilangcommand = str_replace($adanParse[0], '', $text);
 $udahDiparse = str_replace($adanParse[0] . ' ', '', $text);
@@ -54,4 +55,15 @@ if ($getStringFromSpasi[0] == 'debug' || $getStringFromSpasi[0] == 'debugmode') 
         $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
         $telegram->sendMessage($content);
     }
+} elseif ($getStringFromSpasi[0] == 'ram' || $getStringFromSpasi[0] == 'ram_usage') {
+    function convert($size)
+    {
+        $unit = array('b', 'kb', 'mb', 'gb', 'tb', 'pb');
+        return @round($size / pow(1024, ($i = floor(log($size, 1024)))), 2) . ' ' . $unit[$i];
+    }
+
+    $ramUsage =  convert(memory_get_usage(true)); // 123 kb
+    $reply = 'ram used ' . $ramUsage;
+    $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+    $telegram->sendMessage($content);
 }

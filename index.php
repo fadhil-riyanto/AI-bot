@@ -287,7 +287,7 @@ if ($chek == true) {
 	} else {
 		$file = __DIR__ . "/json_data/user_delay_time.json";
 		$anggota = file_get_contents($file);
-		$delayedTime = 3;
+		$delayedTime = 2;
 		$data = json_decode($anggota, true);
 
 		foreach ($data as $d) {
@@ -349,6 +349,9 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	exit;
 } elseif ('/quran' == $adanParse[0] || '/quran@fadhil_riyanto_bot' == $adanParse[0]) {
 	require __DIR__ . '/command/quran.php';
+	exit;
+} elseif ('/ping' == $adanParse[0] || '/ping@fadhil_riyanto_bot' == $adanParse[0]) {
+	require __DIR__ . '/command/ping.php';
 	exit;
 } elseif ('/db_add' == $adanParse[0] || '/db_add@fadhil_riyanto_bot' == $adanParse[0]) {
 	require __DIR__ . '/command/db_add.php';
