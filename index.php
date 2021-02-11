@@ -353,6 +353,10 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 } elseif ('/ping' == $adanParse[0] || '/ping@fadhil_riyanto_bot' == $adanParse[0]) {
 	require __DIR__ . '/command/ping.php';
 	exit;
+} elseif ('/run' == $adanParse[0] || '/run@fadhil_riyanto_bot' == $adanParse[0]) {
+	// jalankan kode memakai rextester
+	require __DIR__ . '/command/run.php';
+	exit;
 } elseif ('/db_add' == $adanParse[0] || '/db_add@fadhil_riyanto_bot' == $adanParse[0]) {
 	require __DIR__ . '/command/db_add.php';
 	exit;

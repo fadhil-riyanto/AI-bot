@@ -1,0 +1,36 @@
+$ch = curl_init();
+                curl_setopt($ch, CURLOPT_URL, "https://rextester.com/rundotnet/api");
+                curl_setopt($ch, CURLOPT_POST, 1);
+                curl_setopt(
+                    $ch,
+                    CURLOPT_POSTFIELDS,
+                    "LanguageChoice=8&Program=" . urlencode($sourceCodeexec) . "&Input=&CompilerArgs="
+                );
+                curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+                $server_output_rextester = curl_exec($ch);
+                $extractHasilRundotnetApi = json_decode($server_output_rextester);
+                $warningProgram = $extractHasilRundotnetApi->warning;
+                $errorProgram = $extractHasilRundotnetApi->Errors;
+                $resultProgram = $extractHasilRundotnetApi->Result;
+                if ($extractHasilRundotnetApi->warning == null) {
+                    $warningProgram = 'tidak ada warning';
+                }
+                if ($extractHasilRundotnetApi->Errors == null) {
+                    $errorProgram = 'tidak ada warning';
+                }
+                if ($extractHasilRundotnetApi->Errors == null) {
+                    $errorProgram = 'tidak ada warning';
+                }
+                if ($extractHasilRundotnetApi->Result == null) {
+                    $resultProgram = 'kosong';
+                }
+                $reply = 'warning : ' . $warningProgram . PHP_EOL .
+                    'error : ' . $errorProgram . PHP_EOL .
+                    'hasil : ' . $resultProgram;
+                $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'disable_web_page_preview' => true);
+                $telegram->sendMessage($content);
+
+            $reply = 'Ups, bahasa tidak ditemukan' . PHP_EOL .
+                'coba tulis <pre>/run all</pre>';
+            $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+            $telegram->sendMessage($content);
