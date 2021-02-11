@@ -10,7 +10,7 @@ $azanHilangcommand = str_replace($adanParse_plain[0], '', $text_plain);
 		$telegram->sendMessage($content);
 	} else {
 		if (base64_encode(base64_decode($udahDiparse, true)) === $udahDiparse) {
-			$reply = 'Hai ' . $username . ', Hasil convert text to encode dengan algoritma BASE46 adalah' . PHP_EOL . PHP_EOL .
+			$reply = 'Hai ' . $username . ', Hasil convert text to encode dengan algoritma BASE64 adalah' . PHP_EOL . PHP_EOL .
 				'Encoded : ' . $udahDiparse . PHP_EOL . '---------------' .  PHP_EOL .  'Text : <pre>' .  base64_decode($udahDiparse_hash) . '</pre>';
 			$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
 			$telegram->sendMessage($content);
