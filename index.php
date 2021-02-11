@@ -288,7 +288,7 @@ if (isset($text)) {
 	}
 }
 $deteksiApakahGrupwaktu = detect_grup();
-if ($deteksiApakahGrupwaktu == true) {
+if ($deteksiApakahGrupwaktu != true) {
 	function tracking_user_forwaktu($userID)
 	{
 		global $useridTime;
