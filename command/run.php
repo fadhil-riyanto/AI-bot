@@ -3,7 +3,7 @@ require __DIR__ . '/../vendor/autoload.php';
 $azanHilangcommand = str_replace($adanParse_plain[0], '', $text_plain);
 $udahDiparse = str_replace($adanParse_plain[0] . ' ', '', $text_plain);
 $udahDiparse_hash = str_replace($adanParse_plain[0] . ' ', '', $text_plain_nokarakter);
-$sourceCodeexec = str_replace($adanParse_plain[0] . ' ' . $adanParse_plain[1], '', $text_plain_nokarakter);
+$sourceCodeexec = str_replace($adanParse_plain_nokarakter[0] . ' ' . $adanParse_plain_nokarakter[1] . ' ', null, $text_plain_nokarakter);
 
 function langProgrammingindex($string)
 {
@@ -128,7 +128,8 @@ if ($azanHilangcommand == null) {
         $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
         $telegram->sendMessage($content);
     } else {
-        $progralng = langProgrammingindex($adanParse_plain[1]);
+        $progralng = langProgrammingindex($adanParse_plain_nokarakter[1]);
+        $compileArgs = json_decode(file_get_contents(__DIR__ . '/../json_data/rextester/compilerArgs.json'));
         if ($progralng === false) {
             $reply = 'ups, bahasa pemrograman tidak ditemukan, coba tulis <pre>/run list</pre>';
             $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
@@ -140,28 +141,25 @@ if ($azanHilangcommand == null) {
             curl_setopt(
                 $ch,
                 CURLOPT_POSTFIELDS,
-                "LanguageChoice=" . $progralng . "&Program=" . urlencode($sourceCodeexec) . "&Input=&CompilerArgs="
+                "LanguageChoice=" . $progralng . "&Program=" . urlencode($sourceCodeexec) . "&Input=&CompilerArgs=" . $compileArgs->$progralng
             );
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
             $server_output_rextester = curl_exec($ch);
             $extractHasilRundotnetApi = json_decode($server_output_rextester);
-            $warningProgram = $extractHasilRundotnetApi->warning;
+            $warningProgram = $extractHasilRundotnetApi->Warnings;
             $errorProgram = $extractHasilRundotnetApi->Errors;
             $resultProgram = $extractHasilRundotnetApi->Result;
-            if ($extractHasilRundotnetApi->warning == null) {
+            if ($extractHasilRundotnetApi->Warnings == null) {
                 $warningProgram = 'tidak ada warning';
             }
             if ($extractHasilRundotnetApi->Errors == null) {
-                $errorProgram = 'tidak ada warning';
-            }
-            if ($extractHasilRundotnetApi->Errors == null) {
-                $errorProgram = 'tidak ada warning';
+                $errorProgram = 'tidak ada error';
             }
             if ($extractHasilRundotnetApi->Result == null) {
                 $resultProgram = 'kosong';
             }
-            $reply = 'warning : ' . $warningProgram . PHP_EOL .
-                'error : ' . $errorProgram . PHP_EOL .
+            $reply = 'Warning : ' . $warningProgram . PHP_EOL .
+                'Error : ' . $errorProgram . PHP_EOL .
                 'hasil : ' . $resultProgram;
             $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'disable_web_page_preview' => true);
             $telegram->sendMessage($content);

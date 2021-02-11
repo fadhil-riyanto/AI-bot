@@ -8,6 +8,7 @@ define('USER_ID_TG_ME', '1393342467');										//WAJIB
 define('CUTLLY_API', 'fa1d93ba90dedd2ceb7d01e9bade271653373');				//WAJIB
 define('TIME_ZONE', 'Asia/Jakarta');										//WAJIB
 define('API_WEATHER_KEY', '7cf7252c68d3473681054158212501');				//WAJIB
+define('ID_BOT', '1489990155');	                                  			//WAJIB
 define('MAX_EXECUTE_SCRIPT', 5000);											//SUNNAH_ROSUL
 
 
@@ -31,7 +32,7 @@ error_reporting(1);
 $userid_pemilik = USER_ID_TG_ME;
 $telegramAPIs   = TG_HTTP_API;
 $api_key_cuttly = CUTLLY_API;
-
+$id_bot_sendiri = ID_BOT;
 echo 'Ini server 1 bot telegram' . PHP_EOL . '<hr>';
 function SERVER_ALAMAT_addr()
 {
@@ -145,6 +146,24 @@ function detect_grup()
 		return true;
 	}
 }
+$deteksiApakahGrup = detect_grup();
+function detect_apakah_pesan_reply_ke_bot()
+{
+	global $replyid_replian;
+	global $id_bot_sendiri;
+	global $deteksiApakahGrup;
+	if (isset($replyid_replian)) {
+		if ($replyid_replian == $id_bot_sendiri) {
+			return true;
+		} else {
+			return false;
+		}
+	} elseif ($deteksiApakahGrup == null) {
+		return true;
+	} else {
+		return false;
+	}
+}
 function is_valid_domain_name($domain_name)
 {
 	return (preg_match("/^([a-z\d](-*[a-z\d])*)(\.([a-z\d](-*[a-z\d])*))*$/i", $domain_name) //valid chars check
@@ -202,6 +221,10 @@ $stringKedua = substr($text, 0, 2);
 
 $stringTerakhir = substr($text, 0, -1);
 $memberBaru = $telegram->member_baru();
+
+$result_getreplyian = $telegram->getData();
+$replyid_replian = $result_getreplyian['message']['reply_to_message']['from']['id'];
+
 //sleep(10);
 //TRACK DATA
 // $q_track = mysqli_query($koneksi, "SELECT * FROM `client_user` WHERE `userid` LIKE '$userID' ");
@@ -241,8 +264,10 @@ if ($chek == true) {
 	$anggota = file_put_contents($file, $jsonfile);
 }
 
-$status = array('chat_id' => $chat_id, 'action' => 'typing');
-$telegram->sendChatAction($status);
+if (detect_apakah_pesan_reply_ke_bot() == true) {
+	$status = array('chat_id' => $chat_id, 'action' => 'typing');
+	$telegram->sendChatAction($status);
+}
 
 
 $calkulatorpreg = preg_match('/[a-zA-Z]\s+([-+]?\s*\d+(?:\s*[-+*\/]\s*[-+]?\s*\d+)+)/i', $text, $hasilpreg);
@@ -355,6 +380,7 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	exit;
 } elseif ('/run' == $adanParse[0] || '/run@fadhil_riyanto_bot' == $adanParse[0]) {
 	// jalankan kode memakai rextester
+
 	require __DIR__ . '/command/run.php';
 	exit;
 } elseif ('/db_add' == $adanParse[0] || '/db_add@fadhil_riyanto_bot' == $adanParse[0]) {
@@ -558,45 +584,49 @@ elseif ('/base64_encode' == $adanParse[0] || '/base64_encode@fadhil_riyanto_bot'
 // ENCRYPT TOOLS DIAKHIRI
 // LICENSE BY FADHIL
 // PAHAM?
-$ai_chatting = robot_artificial_intelegence($text);
-$ai_chatting_decode = json_decode($ai_chatting);
-if ($ai_chatting_decode->bad_word == true) {
-	$reply = 'Aku ogah jawab ah, ada kata kata yg tidak sopan soalnya';
-	$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-	$telegram->sendMessage($content);
-	exit;
-}
-
-if ($koneksi == 1) {
-	if ($ai_chatting_decode->affected > 0) {
-		$reply = Emoji::Decode($ai_chatting_decode->respon) . PHP_EOL;
+$detectReply = detect_apakah_pesan_reply_ke_bot();
+if ($detectReply == true) {
+	$ai_chatting = robot_artificial_intelegence($text);
+	$ai_chatting_decode = json_decode($ai_chatting);
+	if ($ai_chatting_decode->bad_word == true) {
+		$reply = 'Aku ogah jawab ah, ada kata kata yg tidak sopan soalnya';
 		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
 		$telegram->sendMessage($content);
 		exit;
-		//}
-	} elseif ($ai_chatting_decode->affected === 'simsimi') {
+	}
 
-		$reply = Emoji::Decode($ai_chatting_decode->respon) . PHP_EOL;
-		//mysqli_query($koneksi, "INSERT INTO `data_ai` (`data_key_ai`, `data_res_ai`) VALUES ('$teksTerfilter', 'hmhm')");
-		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+	if ($koneksi == 1) {
+		if ($ai_chatting_decode->affected > 0) {
+			$reply = Emoji::Decode($ai_chatting_decode->respon) . PHP_EOL;
+			$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+			$telegram->sendMessage($content);
+			exit;
+			//}
+		} elseif ($ai_chatting_decode->affected === 'simsimi') {
+
+			$reply = Emoji::Decode($ai_chatting_decode->respon) . PHP_EOL;
+			//mysqli_query($koneksi, "INSERT INTO `data_ai` (`data_key_ai`, `data_res_ai`) VALUES ('$teksTerfilter', 'hmhm')");
+			$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+			$telegram->sendMessage($content);
+		}
+	} elseif ($koneksi == 0) {
+		$reply = 'Maaf, saat ini kamu tidak bisa membalas pesan kamu dikarnakan database sedang error. Jadi kami hanya bisa menerima command saja untuk sementara waktu ini. Kamu bisa melaporkan ke @fadhil_riyanto selaku pembuatnya';
+		$option = array(
+			//First row
+			// array($telegram->buildInlineKeyBoardButton("Button 1", $url = "http://link1.com"), $telegram->buildInlineKeyBoardButton("Button 2", $url = "http://link2.com")),
+			// //Second row 
+			// array($telegram->buildInlineKeyBoardButton("Button 3", $url = "http://link3.com"), $telegram->buildInlineKeyBoardButton("Button 4", $url = "http://link4.com"), $telegram->buildInlineKeyBoardButton("Button 5", $url = "http://link5.com")),
+			// //Third row
+
+			array($telegram->buildInlineKeyBoardButton("👥 Support Group", $url = 'https://t.me/fadhil_riyanto_project'))
+		);
+		$keyb = $telegram->buildInlineKeyBoard($option);
+
+
+		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_markup' => $keyb,  'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
 		$telegram->sendMessage($content);
 	}
-} elseif ($koneksi == 0) {
-	$reply = 'Maaf, saat ini kamu tidak bisa membalas pesan kamu dikarnakan database sedang error. Jadi kami hanya bisa menerima command saja untuk sementara waktu ini. Kamu bisa melaporkan ke @fadhil_riyanto selaku pembuatnya';
-	$option = array(
-		//First row
-		// array($telegram->buildInlineKeyBoardButton("Button 1", $url = "http://link1.com"), $telegram->buildInlineKeyBoardButton("Button 2", $url = "http://link2.com")),
-		// //Second row 
-		// array($telegram->buildInlineKeyBoardButton("Button 3", $url = "http://link3.com"), $telegram->buildInlineKeyBoardButton("Button 4", $url = "http://link4.com"), $telegram->buildInlineKeyBoardButton("Button 5", $url = "http://link5.com")),
-		// //Third row
-
-		array($telegram->buildInlineKeyBoardButton("👥 Support Group", $url = 'https://t.me/fadhil_riyanto_project'))
-	);
-	$keyb = $telegram->buildInlineKeyBoard($option);
-
-
-	$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_markup' => $keyb,  'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-	$telegram->sendMessage($content);
+} else {
 }
 // TELEGRAM KELAS
 // V 4
