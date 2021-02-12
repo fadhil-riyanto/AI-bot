@@ -20,4 +20,5 @@ return array(
     'GuzzleHttp\\Promise\\' => array($vendorDir . '/guzzlehttp/promises/src'),
     'GuzzleHttp\\' => array($vendorDir . '/guzzlehttp/guzzle/src'),
     'Buchin\\Badwords\\' => array($vendorDir . '/buchin/badwords/src'),
+    'Brainly\\' => array($vendorDir . '/ammarfaizi2/brainly/src'),
 );

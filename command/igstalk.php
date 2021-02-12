@@ -34,7 +34,6 @@ if ($adanParse[1] == null) {
         'id :' . $igid . PHP_EOL .
         'username :' . $userig . PHP_EOL .
         'fullname :' . $fullnameig . PHP_EOL .
-        'fullname :' . $fullnameig . PHP_EOL .
         'follower : ' . $pengikutig . PHP_EOL .
         'followed : ' . $mengikutiig . PHP_EOL .
         'bio : ' . $bioig . PHP_EOL .

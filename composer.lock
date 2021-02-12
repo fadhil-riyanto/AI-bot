@@ -4,8 +4,49 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "607fc2ad6883d74aa212193dd3ea568d",
+    "content-hash": "d0cc4b22c278f73b231f92016d056921",
     "packages": [
+        {
+            "name": "ammarfaizi2/brainly",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ammarfaizi2/Brainly.git",
+                "reference": "9a5e59a51bf6a5d60419b739d8acc3c40ea79d9b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ammarfaizi2/Brainly/zipball/9a5e59a51bf6a5d60419b739d8acc3c40ea79d9b",
+                "reference": "9a5e59a51bf6a5d60419b739d8acc3c40ea79d9b",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.6.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Brainly\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ammar Faizi",
+                    "email": "ammarfaizi2@gmail.com"
+                }
+            ],
+            "description": "Brainly",
+            "support": {
+                "issues": "https://github.com/ammarfaizi2/Brainly/issues",
+                "source": "https://github.com/ammarfaizi2/Brainly/tree/1.0.0"
+            },
+            "time": "2020-09-10T10:01:31+00:00"
+        },
         {
             "name": "buchin/badwords",
             "version": "dev-master",

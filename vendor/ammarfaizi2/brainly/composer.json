@@ -1,0 +1,22 @@
+{
+    "name": "ammarfaizi2/brainly",
+    "description": "Brainly",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ammar Faizi",
+            "email": "ammarfaizi2@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.6.4",
+        "ext-curl": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Brainly\\": "src/"
+        }
+    }
+}

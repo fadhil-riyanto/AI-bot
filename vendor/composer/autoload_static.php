@@ -44,6 +44,7 @@ class ComposerStaticInit37458c04d77e08a184290ff46a23e733
         'B' => 
         array (
             'Buchin\\Badwords\\' => 16,
+            'Brainly\\' => 8,
         ),
     );
 
@@ -103,6 +104,10 @@ class ComposerStaticInit37458c04d77e08a184290ff46a23e733
         'Buchin\\Badwords\\' => 
         array (
             0 => __DIR__ . '/..' . '/buchin/badwords/src',
+        ),
+        'Brainly\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/ammarfaizi2/brainly/src',
         ),
     );
 
