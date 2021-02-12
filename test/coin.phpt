@@ -1,4 +1,5 @@
 <?php
+berita:
 $xmlparseTempo = simplexml_load_file('https://rss.tempo.co/nasional');
 $jsonTempo = json_encode($xmlparseTempo, JSON_PRETTY_PRINT);
 $beritaTempo = json_decode($jsonTempo);
@@ -14,11 +15,15 @@ $angka_kumparan = count($berita_kumparan->channel->item);
 $randomintForberita_kumparan = random_int(0, $angka_kumparan);
 $reply_kumparan = 'Judul : ' . $berita_kumparan->channel->item[$randomintForberita_kumparan]->title . PHP_EOL . PHP_EOL .
     'Link : ' . $berita_kumparan->channel->item[$randomintForberita_kumparan]->link . PHP_EOL . PHP_EOL;
-
+if ($beritaTempo->channel->item[$randomintForberita_tempo]->title == null) {
+    goto berita;
+} elseif ($berita_kumparan->channel->item[$randomintForberita_kumparan]->title == null) {
+    goto berita;
+}
 $randomintberita = random_int(0, 1);
 if ($randomintberita == 1) {
     $reply = $reply_kumparan;
 } elseif ($randomintberita == 0) {
     $reply = $reply_tempo;
 }
-echo $reply;
+echo $angka_tempo;
