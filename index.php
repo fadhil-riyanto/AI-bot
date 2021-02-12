@@ -410,6 +410,9 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 } elseif ('/faker' == $adanParse[0] || '/faker@fadhil_riyanto_bot' == $adanParse[0]) {
 	require __DIR__ . '/command/faker.php';
 	exit;
+} elseif ('/berita' == $adanParse[0] || '/berita@fadhil_riyanto_bot' == $adanParse[0]) {
+	require __DIR__ . '/command/berita.php';
+	exit;
 } elseif ('/wiki' == $adanParse[0] || '/wiki@fadhil_riyanto_bot' == $adanParse[0]) {
 	require __DIR__ . '/command/wiki.php';
 	exit;
@@ -418,6 +421,9 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	exit;
 } elseif ('/bucin' == $adanParse[0] || '/bucin@fadhil_riyanto_bot' == $adanParse[0]) {
 	require __DIR__ . '/command/bucin.php';
+	exit;
+} elseif ('/bucin_i' == $adanParse[0] || '/bucin_i@fadhil_riyanto_bot' == $adanParse[0]) {
+	require __DIR__ . '/command/bucin_i.php';
 	exit;
 } elseif ('/sudo' == $adanParse[0] || '/sudo@fadhil_riyanto_bot' == $adanParse[0]) {
 	require __DIR__ . '/command/sudo.php';
