@@ -1,9 +1,9 @@
 <?php
 $azanHilangcommand = str_replace($adanParse[0], '', $text);
 $udahDiparse = str_replace($adanParse[0] . ' ', '', $text);
-$instagram = new \InstagramScraper\Instagram(new \GuzzleHttp\Client());
+$instagram = @new \InstagramScraper\Instagram(new \GuzzleHttp\Client());
 try {
-    $account = $instagram->getAccount($udahDiparse);
+    $account = @$instagram->getAccount($udahDiparse);
     $igid = $account->getId();
     $userig = $account->getUsername();
     $fullnameig = $account->getFullName();
