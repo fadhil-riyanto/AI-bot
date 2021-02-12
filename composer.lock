@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d0cc4b22c278f73b231f92016d056921",
+    "content-hash": "47195660c7a661af381cea4cc7a1c88b",
     "packages": [
         {
             "name": "ammarfaizi2/brainly",
@@ -614,113 +614,6 @@
                 "source": "https://github.com/php-fig/http-message/tree/master"
             },
             "time": "2016-08-06T14:39:51+00:00"
-        },
-        {
-            "name": "psr/simple-cache",
-            "version": "1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-fig/simple-cache.git",
-                "reference": "408d5eafb83c57f6365a3ca330ff23aa4a5fa39b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/simple-cache/zipball/408d5eafb83c57f6365a3ca330ff23aa4a5fa39b",
-                "reference": "408d5eafb83c57f6365a3ca330ff23aa4a5fa39b",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Psr\\SimpleCache\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "PHP-FIG",
-                    "homepage": "http://www.php-fig.org/"
-                }
-            ],
-            "description": "Common interfaces for simple caching",
-            "keywords": [
-                "cache",
-                "caching",
-                "psr",
-                "psr-16",
-                "simple-cache"
-            ],
-            "support": {
-                "source": "https://github.com/php-fig/simple-cache/tree/master"
-            },
-            "time": "2017-10-23T01:57:42+00:00"
-        },
-        {
-            "name": "raiym/instagram-php-scraper",
-            "version": "v0.11.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/postaddictme/instagram-php-scraper.git",
-                "reference": "c3de997d13f1b31c7bea47fbf0da463b26eaa228"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/postaddictme/instagram-php-scraper/zipball/c3de997d13f1b31c7bea47fbf0da463b26eaa228",
-                "reference": "c3de997d13f1b31c7bea47fbf0da463b26eaa228",
-                "shasum": ""
-            },
-            "require": {
-                "ext-curl": "*",
-                "ext-json": "*",
-                "guzzlehttp/psr7": "^1.7",
-                "php": ">=7.2",
-                "psr/http-client": "~1.0",
-                "psr/simple-cache": "~1.0"
-            },
-            "require-dev": {
-                "guzzlehttp/guzzle": "^7.2",
-                "phpfastcache/phpfastcache": "^7.1",
-                "phpunit/phpunit": "^7.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "InstagramScraper\\": "src/InstagramScraper/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "raiym",
-                    "email": "r.kapishev@gmail.com"
-                }
-            ],
-            "description": "Instagram PHP Scraper. Get account information, photos and videos without any authorization",
-            "homepage": "https://github.com/raiym/instagram-php-scraper",
-            "keywords": [
-                "instagram",
-                "scraper"
-            ],
-            "support": {
-                "email": "r.kapishev@gmail.com",
-                "issues": "https://github.com/postaddictme/instagram-php-scraper/issues",
-                "source": "https://github.com/postaddictme/instagram-php-scraper/tree/v0.11.1"
-            },
-            "time": "2021-01-31T08:56:55+00:00"
         },
         {
             "name": "ralouphie/getallheaders",

@@ -29,7 +29,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => 'd146a4c9490240433da1363e69c14711e7608df7',
+    'reference' => 'a643fd18f6ff8e9dc3f3a3ef29ddbcdd447cb43b',
     'name' => '__root__',
   ),
   'versions' => 
@@ -41,7 +41,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => 'd146a4c9490240433da1363e69c14711e7608df7',
+      'reference' => 'a643fd18f6ff8e9dc3f3a3ef29ddbcdd447cb43b',
     ),
     'ammarfaizi2/brainly' => 
     array (
@@ -156,24 +156,6 @@ private static $installed = array (
       array (
         0 => '1.0',
       ),
-    ),
-    'psr/simple-cache' => 
-    array (
-      'pretty_version' => '1.0.1',
-      'version' => '1.0.1.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '408d5eafb83c57f6365a3ca330ff23aa4a5fa39b',
-    ),
-    'raiym/instagram-php-scraper' => 
-    array (
-      'pretty_version' => 'v0.11.1',
-      'version' => '0.11.1.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => 'c3de997d13f1b31c7bea47fbf0da463b26eaa228',
     ),
     'ralouphie/getallheaders' => 
     array (
