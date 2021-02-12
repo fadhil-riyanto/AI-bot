@@ -1,6 +1,12 @@
 <?php
 $azanHilangcommand = str_replace($adanParse[0], '', $text);
 $udahDiparse = str_replace($adanParse[0] . ' ', '', $text);
+if ($adanParse[1] == null) {
+    $reply = 'Hai ' . $username . PHP_EOL . 'Maaf, Gunakan pattern' . PHP_EOL . PHP_EOL . '<pre>/igstalk {username}</pre>' . PHP_EOL . PHP_EOL . 'Contoh : <pre>/igstalk kevin</pre>';
+    $content = array('chat_id' => $chat_id, 'text' => $reply,  'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+    $telegram->sendMessage($content);
+    exit;
+}
 $instagram = @new \InstagramScraper\Instagram(new \GuzzleHttp\Client());
 try {
     $account = @$instagram->getAccount($udahDiparse);
@@ -19,12 +25,7 @@ try {
 } catch (InstagramScraper\Exception\InstagramNotFoundException $e) {
     $notfoundig = true;
 }
-if ($adanParse[1] == null) {
-    $reply = 'Hai ' . $username . PHP_EOL . 'Maaf, Gunakan pattern' . PHP_EOL . PHP_EOL . '<pre>/igstalk {username}</pre>' . PHP_EOL . PHP_EOL . 'Contoh : <pre>/igstalk kevin</pre>';
-    $content = array('chat_id' => $chat_id, 'text' => $reply,  'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-    $telegram->sendMessage($content);
-    exit;
-} elseif ($notfoundig == true) {
+if ($notfoundig == true) {
     $reply = 'Hai ' . $username . PHP_EOL . 'Maaf, tidak ditemukan, Mungkin kamu salah ketik atau mungkin akun yang kamu cari sudah dibanned sama instagram';
     $content = array('chat_id' => $chat_id, 'text' => $reply,  'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
     $telegram->sendMessage($content);
