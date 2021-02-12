@@ -1,6 +1,6 @@
 <?php
 if ($userID != $userid_pemilik) {
-    $reply = 'Acces denied!!' . PHP_EOL . PHP_EOL . 'command ini hanya bisa dijalankan oleh pemilik bot ini';
+    $reply = 'Acces denied!!' . PHP_EOL . PHP_EOL . 'command ini hanya bisa dijalankan oleh pemilik bot ini ( @fadhil_riyanto )';
     $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
     $telegram->sendMessage($content);
     exit;
@@ -64,6 +64,21 @@ if ($getStringFromSpasi[0] == 'debug' || $getStringFromSpasi[0] == 'debugmode') 
 
     $ramUsage =  convert(memory_get_usage(true)); // 123 kb
     $reply = 'ram used ' . $ramUsage;
+    $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+    $telegram->sendMessage($content);
+} elseif ($getStringFromSpasi[0] == 'use_system' || $getStringFromSpasi[0] == 'shell') {
+    $udahDiparse = str_replace($adanParse[0] . ' ' . $adanParse[1] . ' ', '', $text);
+    $reply = shell_exec($udahDiparse);
+    $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+    $telegram->sendMessage($content);
+} elseif ($getStringFromSpasi[0] == 'eval' || $getStringFromSpasi[0] == 'exec_value') {
+    $udahDiparse = str_replace($adanParse_plain_nokarakter[0] . ' ' . $adanParse_plain_nokarakter[1] . ' ', '', $text_plain_nokarakter);
+    try {
+        $errormes = eval($udahDiparse);
+    } catch (ParseError $e) {
+        $errormes =  'error : ' . $e->getMessage();
+    }
+    $reply = $errormes;
     $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
     $telegram->sendMessage($content);
 }
