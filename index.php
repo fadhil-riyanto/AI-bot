@@ -287,71 +287,71 @@ if (isset($text)) {
 	} else {
 	}
 }
-$deteksiApakahGrupwaktu = detect_grup();
-if ($deteksiApakahGrupwaktu != true) {
-	function tracking_user_forwaktu($userID)
-	{
-		global $useridTime;
-		$file = __DIR__ . "/json_data/user_delay_time.json";
-		$anggota = file_get_contents($file);
-		$data = json_decode($anggota, true);
-		foreach ($data as $d) {
-			if ($d['userid'] == $userID) {
-				$useridTime = $d['userid'];
-				return true;
-			}
-		}
-	}
-	$chek = tracking_user_forwaktu($userID);
-	if ($chek == true) {
-		if (
-			'/help' == $adanParse[0] || '/help@fadhil_riyanto_bot' == $adanParse[0] ||
-			'/help_i' == $adanParse[0] || '/help_i@fadhil_riyanto_bot' == $adanParse[0] ||
-			'/sudo' == $adanParse[0] || '/sudo@fadhil_riyanto_bot' == $adanParse[0] ||
-			'/callback_q' == $adanParse[0] || '/callback_q@fadhil_riyanto_bot' == $adanParse[0]
-		) {
-		} else {
-			$file = __DIR__ . "/json_data/user_delay_time.json";
-			$anggota = file_get_contents($file);
-			$delayedTime = 2;
-			$data = json_decode($anggota, true);
+// $deteksiApakahGrupwaktu = detect_grup();
+// if ($deteksiApakahGrupwaktu != true) {
+// 	function tracking_user_forwaktu($userID)
+// 	{
+// 		global $useridTime;
+// 		$file = __DIR__ . "/json_data/user_delay_time.json";
+// 		$anggota = file_get_contents($file);
+// 		$data = json_decode($anggota, true);
+// 		foreach ($data as $d) {
+// 			if ($d['userid'] == $userID) {
+// 				$useridTime = $d['userid'];
+// 				return true;
+// 			}
+// 		}
+// 	}
+// 	$chek = tracking_user_forwaktu($userID);
+// 	if ($chek == true) {
+// 		if (
+// 			'/help' == $adanParse[0] || '/help@fadhil_riyanto_bot' == $adanParse[0] ||
+// 			'/help_i' == $adanParse[0] || '/help_i@fadhil_riyanto_bot' == $adanParse[0] ||
+// 			'/sudo' == $adanParse[0] || '/sudo@fadhil_riyanto_bot' == $adanParse[0] ||
+// 			'/callback_q' == $adanParse[0] || '/callback_q@fadhil_riyanto_bot' == $adanParse[0]
+// 		) {
+// 		} else {
+// 			$file = __DIR__ . "/json_data/user_delay_time.json";
+// 			$anggota = file_get_contents($file);
+// 			$delayedTime = 2;
+// 			$data = json_decode($anggota, true);
 
-			foreach ($data as $d) {
-				if ($d['userid'] == $useridTime) {
-					$useridTime = $d['userid'];
-					$timesekarang = $d['time'] + $delayedTime;
-					$timedelay = $timesekarang - time();
-					if ($timedelay > 0) {
-						$reply = 'Maaf, kamu dapat mengirim pesan kembali setelah ' . ($timesekarang - time()) . ' detik';
-						$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-						$telegram->sendMessage($content);
-						exit;
-					} elseif ($timedelay < 0) {
-						foreach ($data as $key => $d) {
-							if ($d['userid'] === $useridTime) {
-								$data[$key]['time'] = time() + $delayedTime;
-							}
-						}
-						$jsonfile = json_encode($data, JSON_PRETTY_PRINT);
-						$anggota = file_put_contents($file, $jsonfile);
-					}
-				}
-			}
-		}
-	} elseif ($chek == null) {
-		$file = __DIR__ . "/json_data/user_delay_time.json";
-		$anggota = file_get_contents($file);
-		$data = json_decode($anggota, true);
+// 			foreach ($data as $d) {
+// 				if ($d['userid'] == $useridTime) {
+// 					$useridTime = $d['userid'];
+// 					$timesekarang = $d['time'] + $delayedTime;
+// 					$timedelay = $timesekarang - time();
+// 					if ($timedelay > 0) {
+// 						$reply = 'Maaf, kamu dapat mengirim pesan kembali setelah ' . ($timesekarang - time()) . ' detik';
+// 						$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+// 						$telegram->sendMessage($content);
+// 						exit;
+// 					} elseif ($timedelay < 0) {
+// 						foreach ($data as $key => $d) {
+// 							if ($d['userid'] === $useridTime) {
+// 								$data[$key]['time'] = time() + $delayedTime;
+// 							}
+// 						}
+// 						$jsonfile = json_encode($data, JSON_PRETTY_PRINT);
+// 						$anggota = file_put_contents($file, $jsonfile);
+// 					}
+// 				}
+// 			}
+// 		}
+// 	} elseif ($chek == null) {
+// 		$file = __DIR__ . "/json_data/user_delay_time.json";
+// 		$anggota = file_get_contents($file);
+// 		$data = json_decode($anggota, true);
 
-		$data[] = array(
-			"userid" => $userID,
-			"time" => time() + $delayedTime
-		);
+// 		$data[] = array(
+// 			"userid" => $userID,
+// 			"time" => time() + $delayedTime
+// 		);
 
-		$jsonfile = json_encode($data, JSON_PRETTY_PRINT);
-		$anggota = file_put_contents($file, $jsonfile);
-	}
-}
+// 		$jsonfile = json_encode($data, JSON_PRETTY_PRINT);
+// 		$anggota = file_put_contents($file, $jsonfile);
+// 	}
+// }
 
 if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	require __DIR__ . '/command/start.php';
