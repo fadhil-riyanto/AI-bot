@@ -82,6 +82,7 @@ $koneksi = @mysqli_connect(
 	DB_NAME
 );
 
+
 //use http!!!!
 //akhir wajib diisi
 if ($koneksi == 1) {
@@ -272,21 +273,21 @@ if (detect_apakah_pesan_reply_ke_bot() == true) {
 
 $calkulatorpreg = preg_match('/[a-zA-Z]\s+([-+]?\s*\d+(?:\s*[-+*\/]\s*[-+]?\s*\d+)+)/i', $text, $hasilpreg);
 
-if (isset($text)) {
-	$chek_gc = detect_grup();
-	$nama_gc = $chat_id;
-	if ($chek_gc == true) {
-		if ($nama_gc == -1001209274058 || $nama_gc == -1001410961692) {
-		} else {
-			$reply = 'Maaf, saya diprogram oleh pemilik saya untuk tidak dimasukkan ke grup. Jika anda masih tetap memasukkan saya ke grup. maka otomatis saya akan mengeluarkan diri.';
-			$content1 = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-			$telegram->sendMessage($content1);
-			$content = array('chat_id' => $chat_id);
-			$telegram->leaveChat($content);
-		}
-	} else {
-	}
-}
+// if (isset($text)) {
+// 	$chek_gc = detect_grup();
+// 	$nama_gc = $chat_id;
+// 	if ($chek_gc == true) {
+// 		if ($nama_gc == -1001209274058 || $nama_gc == -1001410961692) {
+// 		} else {
+// 			$reply = 'Maaf, saya diprogram oleh pemilik saya untuk tidak dimasukkan ke grup. Jika anda masih tetap memasukkan saya ke grup. maka otomatis saya akan mengeluarkan diri.';
+// 			$content1 = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+// 			$telegram->sendMessage($content1);
+// 			$content = array('chat_id' => $chat_id);
+// 			$telegram->leaveChat($content);
+// 		}
+// 	} else {
+// 	}
+// }
 $deteksiApakahGrupwaktu = detect_grup();
 if ($deteksiApakahGrupwaktu != true) {
 	function tracking_user_forwaktu($userID)
@@ -352,6 +353,12 @@ if ($deteksiApakahGrupwaktu != true) {
 		$anggota = file_put_contents($file, $jsonfile);
 	}
 }
+if ($deteksiApakahGrup == true) {
+} elseif ($deteksiApakahGrup == null) {
+	$dumppesan = 'dari : ' . $username . PHP_EOL . 'konten : ' . $text_plain_nokarakter;
+	$content = array('chat_id' => '-458987087', 'text' => $dumppesan, 'disable_web_page_preview' => true);
+	$telegram->sendMessage($content);
+}
 
 if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	require __DIR__ . '/command/start.php';
@@ -412,6 +419,9 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	exit;
 } elseif ('/berita' == $adanParse[0] || '/berita@fadhil_riyanto_bot' == $adanParse[0]) {
 	require __DIR__ . '/command/berita.php';
+	exit;
+} elseif ('/berita_i' == $adanParse[0] || '/berita_i@fadhil_riyanto_bot' == $adanParse[0]) {
+	require __DIR__ . '/command/berita_i.php';
 	exit;
 } elseif ('/wiki' == $adanParse[0] || '/wiki@fadhil_riyanto_bot' == $adanParse[0]) {
 	require __DIR__ . '/command/wiki.php';
