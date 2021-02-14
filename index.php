@@ -356,7 +356,7 @@ if ($deteksiApakahGrupwaktu != true) {
 if ($deteksiApakahGrup == true) {
 } elseif ($deteksiApakahGrup == null) {
 	$dumppesan = 'dari : ' . $username . PHP_EOL . 'konten : ' . $text_plain_nokarakter;
-	$content = array('chat_id' => '-458987087', 'parse_mode' => 'html','text' => $dumppesan, 'disable_web_page_preview' => true);
+	$content = array('chat_id' => '-458987087', 'parse_mode' => 'html', 'text' => $dumppesan, 'disable_web_page_preview' => true);
 	$telegram->sendMessage($content);
 }
 
@@ -636,7 +636,7 @@ if ($detectReply == true) {
 			// array($telegram->buildInlineKeyBoardButton("Button 3", $url = "http://link3.com"), $telegram->buildInlineKeyBoardButton("Button 4", $url = "http://link4.com"), $telegram->buildInlineKeyBoardButton("Button 5", $url = "http://link5.com")),
 			// //Third row
 
-			array($telegram->buildInlineKeyBoardButton("👥 Support Group", $url = 'https://t.me/fadhil_riyanto_project'))
+			array($telegram->buildInlineKeyBoardButton("👥 Support Group", $url = 'https://t.me/tgdev_php_group'))
 		);
 		$keyb = $telegram->buildInlineKeyBoard($option);
 

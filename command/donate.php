@@ -1,8 +1,6 @@
 <?php
-$reply = 'Hai ' . $username . ', Saya senang mendengar anda mau donasi' . PHP_EOL . PHP_EOL .
-		'Saya memiliki 2 cara untuk donasi' . PHP_EOL . PHP_EOL .
-		'Cara pertama kamu hanya perlu mengirimkan banyak pertanyaan ringan ke bot. Agar apa? agar dia pintar. karena semakin banyak kata maka semakin banyak jumlah kata yang tersimpan (Jangan spam yaa, kasihan CPU server-nya).' . PHP_EOL . PHP_EOL .
-		'Cara kedua kamu bisa mengirimkan uang ke saya, jumlah bebas dan seikhlasnya. uang akan digunakan untuk membeli dan memperpanjang hosting database server.' . PHP_EOL . PHP_EOL .
-		'Contact @fadhil_riyanto untuk penjelasan lebih lanjut';
-	$content = array('chat_id' => $chat_id, 'text' => $reply,  'reply_to_message_id' => $message_id);
-	$telegram->sendMessage($content);
+$reply = 'Hai ' . $username . ', Saya senang mendengar niat baik anda untuk donasi' . PHP_EOL . PHP_EOL .
+	'Tapi, saya tidak menerima donasi apapun. semua free dan semua biaya ditanggung pembuat.' . PHP_EOL . PHP_EOL .
+	'Semoga niat baik anda untuk donasi akan dicatat sebagai amal (Karna niat dan belum dilakukan itu sudah dicatat sebagai pahala oleh malaikat)';
+$content = array('chat_id' => $chat_id, 'text' => $reply,  'reply_to_message_id' => $message_id);
+$telegram->sendMessage($content);
