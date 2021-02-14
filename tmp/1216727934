@@ -1,0 +1,3 @@
+<?php
+$content = array('chat_id' => $chat_id, 'sticker' => 'CAACAgEAAx0CSBQOygACQwNgKSPLEIDAIk1wDAABn-ro43qV2QIAAg0AA8NzCRWHpAxXNx_aax4E');
+$telegram->sendMessage($content);

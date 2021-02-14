@@ -1,0 +1,4 @@
+<?php
+$a=9+9;
+$content = array('chat_id' => $chat_id, 'text' => $a);
+$telegram->sendMessage($content);

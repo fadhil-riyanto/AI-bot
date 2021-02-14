@@ -1,0 +1,626 @@
+============[Date]============
+[ 2021-02-14 19:33:21  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.action= typing
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(131): Telegram->endpoint('sendChatAction', Array)
+#3 C:\bot telegram\index.php(270): Telegram->sendChatAction(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-14 19:33:29  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Unsupported start tag "anonymous" at byte offset 740
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804395962
+ref.message.message_id= 13012
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= PHP TGdev
+ref.message.chat.username= tgdev_php_group
+ref.message.chat.type= supergroup
+ref.message.date= 1613306004
+ref.message.reply_to_message.message_id= 13008
+ref.message.reply_to_message.from.id= 1489990155
+ref.message.reply_to_message.from.is_bot= true
+ref.message.reply_to_message.from.first_name= Fadhil Riyanto Bot
+ref.message.reply_to_message.from.username= Fadhil_riyanto_bot
+ref.message.reply_to_message.chat.id= -1001410961692
+ref.message.reply_to_message.chat.title= PHP TGdev
+ref.message.reply_to_message.chat.username= tgdev_php_group
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1613296725
+ref.message.reply_to_message.text= Warning : tidak ada warning
+Error : 1908002523/source.js:2
+console.log (nama.length())
+                  ^
+
+TypeError: nama.length is not a function
+    at Object.<anonymous> (1908002523/source.js:2:19)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+
+hasil : kosong
+ref.message.reply_to_message.entities.0.offset= 36
+ref.message.reply_to_message.entities.0.length= 10
+ref.message.reply_to_message.entities.0.type= phone_number
+ref.message.reply_to_message.entities.1.offset= 176
+ref.message.reply_to_message.entities.1.length= 10
+ref.message.reply_to_message.entities.1.type= phone_number
+ref.message.text= /sudo json
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= {"update_id":804395962,"message":{"message_id":13012,"from":{"id":1393342467,"is_bot":false,"first_name":"Fadhil","last_name":"Riyanto","username":"fadhil_riyanto","language_code":"en"},"chat":{"id":-1001410961692,"title":"PHP TGdev","username":"tgdev_php_group","type":"supergroup"},"date":1613306004,"reply_to_message":{"message_id":13008,"from":{"id":1489990155,"is_bot":true,"first_name":"Fadhil Riyanto Bot","username":"Fadhil_riyanto_bot"},"chat":{"id":-1001410961692,"title":"PHP TGdev","username":"tgdev_php_group","type":"supergroup"},"date":1613296725,"text":"Warning : tidak ada warning\nError : 1908002523\/source.js:2\nconsole.log (nama.length())\n                  ^\n\nTypeError: nama.length is not a function\n    at Object.<anonymous> (1908002523\/source.js:2:19)\n    at Module._compile (module.js:652:30)\n    at Object.Module._extensions..js (module.js:663:10)\n    at Module.load (module.js:565:32)\n    at tryModuleLoad (module.js:505:12)\n    at Function.Module._load (module.js:497:3)\n    at Function.Module.runMain (module.js:693:10)\n    at startup (bootstrap_node.js:188:16)\n    at bootstrap_node.js:609:3\n\nhasil : kosong","entities":[{"offset":36,"length":10,"type":"phone_number"},{"offset":176,"length":10,"type":"phone_number"}]},"text":"\/sudo json","entities":[{"offset":0,"length":5,"type":"bot_command"}]}}
+ref.reply_to_message_id= 13012
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\sudo.php(89): Telegram->sendMessage(Array)
+#4 C:\bot telegram\index.php(439): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-02-14 19:34:54  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.action= typing
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(131): Telegram->endpoint('sendChatAction', Array)
+#3 C:\bot telegram\index.php(270): Telegram->sendChatAction(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-14 19:35:00  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.action= typing
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(131): Telegram->endpoint('sendChatAction', Array)
+#3 C:\bot telegram\index.php(270): Telegram->sendChatAction(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-14 19:35:25  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804395964
+ref.message.message_id= 13015
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= PHP TGdev
+ref.message.chat.username= tgdev_php_group
+ref.message.chat.type= supergroup
+ref.message.date= 1613306122
+ref.message.reply_to_message.message_id= 13014
+ref.message.reply_to_message.from.id= 1489990155
+ref.message.reply_to_message.from.is_bot= true
+ref.message.reply_to_message.from.first_name= Fadhil Riyanto Bot
+ref.message.reply_to_message.from.username= Fadhil_riyanto_bot
+ref.message.reply_to_message.chat.id= -1001410961692
+ref.message.reply_to_message.chat.title= PHP TGdev
+ref.message.reply_to_message.chat.username= tgdev_php_group
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1613306083
+ref.message.reply_to_message.text= Array
+ref.message.text= /sudo json
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 
+ref.reply_to_message_id= 13015
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\sudo.php(89): Telegram->sendMessage(Array)
+#4 C:\bot telegram\index.php(439): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-02-14 19:42:23  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804395971
+ref.message.message_id= 14144
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1613306537
+ref.message.text= /sudo eval echo "oke";
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 
+ref.reply_to_message_id= 14144
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\sudo.php(80): Telegram->sendMessage(Array)
+#4 C:\bot telegram\index.php(439): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-02-14 20:01:38  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse inline keyboard button: Text buttons are unallowed in the inline keyboard
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804395976
+ref.message.message_id= 13026
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= PHP TGdev
+ref.message.chat.username= tgdev_php_group
+ref.message.chat.type= supergroup
+ref.message.date= 1613307693
+ref.message.reply_to_message.message_id= 13024
+ref.message.reply_to_message.from.id= 1489990155
+ref.message.reply_to_message.from.is_bot= true
+ref.message.reply_to_message.from.first_name= Fadhil Riyanto Bot
+ref.message.reply_to_message.from.username= Fadhil_riyanto_bot
+ref.message.reply_to_message.chat.id= -1001410961692
+ref.message.reply_to_message.chat.title= PHP TGdev
+ref.message.reply_to_message.chat.username= tgdev_php_group
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1613307676
+ref.message.reply_to_message.text= Aku ogah jawab ah, ada kata kata yg tidak sopan soalnya
+ref.message.text= /sudo eval <?php $option = array( 
+    array($telegram->buildInlineKeyBoardButton("Button 1", $url=""), $telegram->buildInlineKeyBoardButton("Button 2", $url="")), 
+    array($telegram->buildInlineKeyBoardButton("Button 3", $url=""), $telegram->buildInlineKeyBoardButton("Button 4", $url=""), $telegram->buildInlineKeyBoardButton("Button 5", $url="")), 
+    array($telegram->buildInlineKeyBoardButton("Button 6", $url="")) );
+$keyb = $telegram->buildInlineKeyBoard($option);
+$content = array('chat_id' => $chat_id, 'reply_markup' => $keyb, 'text' => "testing");
+$telegram->sendMessage($content);
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.reply_markup= {"inline_keyboard":[[{"text":"Button 1"},{"text":"Button 2"}],[{"text":"Button 3"},{"text":"Button 4"},{"text":"Button 5"}],[{"text":"Button 6"}]]}
+ref.text= testing
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\tmp\1470498128(7): Telegram->sendMessage(Array)
+#4 C:\bot telegram\command\sudo.php(79): require('C:\\bot telegram...')
+#5 C:\bot telegram\index.php(439): require('C:\\bot telegram...')
+#6 {main}
+
+============[Date]============
+[ 2021-02-14 20:02:24  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse inline keyboard button: Text buttons are unallowed in the inline keyboard
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804395977
+ref.message.message_id= 13027
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= PHP TGdev
+ref.message.chat.username= tgdev_php_group
+ref.message.chat.type= supergroup
+ref.message.date= 1613307740
+ref.message.reply_to_message.message_id= 13024
+ref.message.reply_to_message.from.id= 1489990155
+ref.message.reply_to_message.from.is_bot= true
+ref.message.reply_to_message.from.first_name= Fadhil Riyanto Bot
+ref.message.reply_to_message.from.username= Fadhil_riyanto_bot
+ref.message.reply_to_message.chat.id= -1001410961692
+ref.message.reply_to_message.chat.title= PHP TGdev
+ref.message.reply_to_message.chat.username= tgdev_php_group
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1613307676
+ref.message.reply_to_message.text= Aku ogah jawab ah, ada kata kata yg tidak sopan soalnya
+ref.message.text= /sudo eval <?php $option = array( 
+    array($telegram->buildInlineKeyBoardButton("Button 1", $url=""), $telegram->buildInlineKeyBoardButton("Button 2", $url="")), 
+    array($telegram->buildInlineKeyBoardButton("Button 3", $url=""), $telegram->buildInlineKeyBoardButton("Button 4", $url=""), $telegram->buildInlineKeyBoardButton("Button 5", $url="")), 
+    array($telegram->buildInlineKeyBoardButton("Button 6", $url="")) );
+$keyb = $telegram->buildInlineKeyBoard($option);
+$content = array('chat_id' => $chat_id, 'reply_markup' => $keyb, 'text' => "testing");
+$telegram->sendMessage($content);
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.reply_markup= {"inline_keyboard":[[{"text":"Button 1"},{"text":"Button 2"}],[{"text":"Button 3"},{"text":"Button 4"},{"text":"Button 5"}],[{"text":"Button 6"}]]}
+ref.text= testing
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\tmp\1660870117(7): Telegram->sendMessage(Array)
+#4 C:\bot telegram\command\sudo.php(79): require('C:\\bot telegram...')
+#5 C:\bot telegram\index.php(439): require('C:\\bot telegram...')
+#6 {main}
+
+============[Date]============
+[ 2021-02-14 20:12:19  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.action= typing
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(131): Telegram->endpoint('sendChatAction', Array)
+#3 C:\bot telegram\index.php(270): Telegram->sendChatAction(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-14 20:13:12  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.action= typing
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(131): Telegram->endpoint('sendChatAction', Array)
+#3 C:\bot telegram\index.php(270): Telegram->sendChatAction(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-14 20:15:15  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.action= typing
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(131): Telegram->endpoint('sendChatAction', Array)
+#3 C:\bot telegram\index.php(270): Telegram->sendChatAction(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-14 20:15:23  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.action= typing
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(131): Telegram->endpoint('sendChatAction', Array)
+#3 C:\bot telegram\index.php(270): Telegram->sendChatAction(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-14 20:23:40  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804395988
+ref.message.message_id= 17158
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1613309017
+ref.message.text= /sudo eval <?php
+$content = array('chat_id' => $chat_id, 'sticker' => 'CAACAgEAAx0CSBQOygACQwNgKSPLEIDAIk1wDAABn-ro43qV2QIAAg0AA8NzCRWHpAxXNx_aax4E');
+$telegram->sendMessage($content);
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.sticker= CAACAgEAAx0CSBQOygACQwNgKSPLEIDAIk1wDAABn-ro43qV2QIAAg0AA8NzCRWHpAxXNx_aax4E
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\tmp\1216727934(3): Telegram->sendMessage(Array)
+#4 C:\bot telegram\command\sudo.php(79): require('C:\\bot telegram...')
+#5 C:\bot telegram\index.php(439): require('C:\\bot telegram...')
+#6 {main}
+
+============[Date]============
+[ 2021-02-14 20:24:00  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804395989
+ref.message.message_id= 13034
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= PHP TGdev
+ref.message.chat.username= tgdev_php_group
+ref.message.chat.type= supergroup
+ref.message.date= 1613309035
+ref.message.reply_to_message.message_id= 13030
+ref.message.reply_to_message.from.id= 1489990155
+ref.message.reply_to_message.from.is_bot= true
+ref.message.reply_to_message.from.first_name= Fadhil Riyanto Bot
+ref.message.reply_to_message.from.username= Fadhil_riyanto_bot
+ref.message.reply_to_message.chat.id= -1001410961692
+ref.message.reply_to_message.chat.title= PHP TGdev
+ref.message.reply_to_message.chat.username= tgdev_php_group
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1613307800
+ref.message.reply_to_message.text= errormes
+ref.message.text= /sudo eval <?php
+$content = array('chat_id' => $chat_id, 'sticker' => 'CAACAgEAAx0CSBQOygACQwNgKSPLEIDAIk1wDAABn-ro43qV2QIAAg0AA8NzCRWHpAxXNx_aax4E');
+$telegram->sendMessage($content);
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.sticker= CAACAgEAAx0CSBQOygACQwNgKSPLEIDAIk1wDAABn-ro43qV2QIAAg0AA8NzCRWHpAxXNx_aax4E
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\tmp\1623138927(3): Telegram->sendMessage(Array)
+#4 C:\bot telegram\command\sudo.php(79): require('C:\\bot telegram...')
+#5 C:\bot telegram\index.php(439): require('C:\\bot telegram...')
+#6 {main}
+
+============[Date]============
+[ 2021-02-14 20:26:04  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804395990
+ref.message.message_id= 13035
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= PHP TGdev
+ref.message.chat.username= tgdev_php_group
+ref.message.chat.type= supergroup
+ref.message.date= 1613309158
+ref.message.reply_to_message.message_id= 13030
+ref.message.reply_to_message.from.id= 1489990155
+ref.message.reply_to_message.from.is_bot= true
+ref.message.reply_to_message.from.first_name= Fadhil Riyanto Bot
+ref.message.reply_to_message.from.username= Fadhil_riyanto_bot
+ref.message.reply_to_message.chat.id= -1001410961692
+ref.message.reply_to_message.chat.title= PHP TGdev
+ref.message.reply_to_message.chat.username= tgdev_php_group
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1613307800
+ref.message.reply_to_message.text= errormes
+ref.message.text= /sudo eval <?php
+$content = array('chat_id' => $chat_id, 'sticker' => 'CAACAgEAAx0CSBQOygACQwNgKSPLEIDAIk1wDAABn-ro43qV2QIAAg0AA8NzCRWHpAxXNx_aax4E');
+$telegram->sendMessage($content);
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.sticker= CAACAgEAAx0CSBQOygACQwNgKSPLEIDAIk1wDAABn-ro43qV2QIAAg0AA8NzCRWHpAxXNx_aax4E
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\tmp\497390008(3): Telegram->sendMessage(Array)
+#4 C:\bot telegram\command\sudo.php(79): require('C:\\bot telegram...')
+#5 C:\bot telegram\index.php(439): require('C:\\bot telegram...')
+#6 {main}
+
+============[Date]============
+[ 2021-02-14 20:26:47  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804395991
+ref.message.message_id= 13036
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= PHP TGdev
+ref.message.chat.username= tgdev_php_group
+ref.message.chat.type= supergroup
+ref.message.date= 1613309204
+ref.message.reply_to_message.message_id= 13031
+ref.message.reply_to_message.from.id= 1393342467
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Fadhil
+ref.message.reply_to_message.from.last_name= Riyanto
+ref.message.reply_to_message.from.username= fadhil_riyanto
+ref.message.reply_to_message.from.language_code= en
+ref.message.reply_to_message.chat.id= -1001410961692
+ref.message.reply_to_message.chat.title= PHP TGdev
+ref.message.reply_to_message.chat.username= tgdev_php_group
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1613307921
+ref.message.reply_to_message.text= /sudo json
+ref.message.reply_to_message.entities.0.offset= 0
+ref.message.reply_to_message.entities.0.length= 5
+ref.message.reply_to_message.entities.0.type= bot_command
+ref.message.text= /sudo eval <?php
+$content = array('chat_id' => $chat_id, 'sticker' => 'AAMCAQADHQJIFA7KAAJDA2ApI8sQgMAiTXAMAAGf6ujjepXZAgACDQADw3MJFYekDFc3H9pruHD3SRcAAwEAB20AA1pKAAIeBA');
+$telegram->sendMessage($content);
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.sticker= AAMCAQADHQJIFA7KAAJDA2ApI8sQgMAiTXAMAAGf6ujjepXZAgACDQADw3MJFYekDFc3H9pruHD3SRcAAwEAB20AA1pKAAIeBA
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\tmp\1616865990(3): Telegram->sendMessage(Array)
+#4 C:\bot telegram\command\sudo.php(79): require('C:\\bot telegram...')
+#5 C:\bot telegram\index.php(439): require('C:\\bot telegram...')
+#6 {main}
+

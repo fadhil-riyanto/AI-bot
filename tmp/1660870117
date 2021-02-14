@@ -1,0 +1,7 @@
+<?php $option = array( 
+    array($telegram->buildInlineKeyBoardButton("Button 1", $url=""), $telegram->buildInlineKeyBoardButton("Button 2", $url="")), 
+    array($telegram->buildInlineKeyBoardButton("Button 3", $url=""), $telegram->buildInlineKeyBoardButton("Button 4", $url=""), $telegram->buildInlineKeyBoardButton("Button 5", $url="")), 
+    array($telegram->buildInlineKeyBoardButton("Button 6", $url="")) );
+$keyb = $telegram->buildInlineKeyBoard($option);
+$content = array('chat_id' => $chat_id, 'reply_markup' => $keyb, 'text' => "testing");
+$telegram->sendMessage($content);

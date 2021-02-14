@@ -73,12 +73,26 @@ if ($getStringFromSpasi[0] == 'debug' || $getStringFromSpasi[0] == 'debugmode') 
     $telegram->sendMessage($content);
 } elseif ($getStringFromSpasi[0] == 'eval' || $getStringFromSpasi[0] == 'exec_value') {
     $udahDiparse = str_replace($adanParse_plain_nokarakter[0] . ' ' . $adanParse_plain_nokarakter[1] . ' ', '', $text_plain_nokarakter);
-    try {
-        $errormes = eval($udahDiparse);
-    } catch (ParseError $e) {
-        $errormes =  'error : ' . $e->getMessage();
-    }
-    $reply = $errormes;
+    $filePath = __DIR__ . '/../tmp/' . mt_rand();
+    file_put_contents($filePath, $udahDiparse);
+    register_shutdown_function('unlink', $udahDiparse);
+    require($filePath);
+    // $reply = 'errormes';
+    // $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+    // $telegram->sendMessage($content);
+} elseif ($getStringFromSpasi[0] == 'json' || $getStringFromSpasi[0] == 'jsondebug') {
+    $result = $telegram->getData();
+    $getJsonraw = file_get_contents('php://input');
+    $decs = json_decode($getJsonraw);
+    $reply = json_encode($decs, JSON_PRETTY_PRINT);
     $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
     $telegram->sendMessage($content);
+} elseif ($getStringFromSpasi[0] == 'del' || $getStringFromSpasi[0] == 'd') {
+    $result = $telegram->getData();
+    $replymessageid = $result['message']['reply_to_message']['message_id'];
+    if (isset($replymessageid)) {
+        $content = array('chat_id' => $chat_id, 'message_id' => $replymessageid);
+        $telegram->deleteMessage($content);
+    } else {
+    }
 }
