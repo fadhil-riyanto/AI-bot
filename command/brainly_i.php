@@ -7,6 +7,16 @@ if (isset($adanParse[1])) {
     $numbersPage = $adanParse[1];
 }
 
+$file = __DIR__ . "/../json_data/fitur_tambahan_json/brainly.json";
+$anggota = file_get_contents($file);
+$data = json_decode($anggota, true);
+foreach ($data as $d) {
+    if ($d['userid'] == $userID) {
+        $idPesan = $d['msgid'];
+        $lastPesan = $d['lastTanya'];
+    }
+}
+
 
 $azanHilangcommand = str_replace($adanParse_plain[0], '', $text_plain);
 $udahDiparse = str_replace($adanParse_plain[0] . ' ', '', $text_plain);
@@ -20,10 +30,10 @@ if ($azanHilangcommand == null) {
     $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
     $telegram->sendMessage($content);
 } else {
-    $st = new Brainly($udahDiparse_hash);
+    $st = new Brainly($lastPesan);
     $result = $st->exec();
     if (count($result) == 0) {
-        $a = file_get_contents('https://afara.my.id/api/brainly-scraper?q=' . urlencode($udahDiparse_hash));
+        $a = file_get_contents('https://afara.my.id/api/brainly-scraper?q=' . urlencode($lastPesan));
         $result = json_decode($a);
     }
 
@@ -35,14 +45,7 @@ if ($azanHilangcommand == null) {
         $reply = 'pertanyaan : ' . strip_tags($result[$randomINt]['content']) . PHP_EOL . PHP_EOL .
             'jawaban : ' . strip_tags($result[$randomINt]['answers'][0]);
 
-        $file = __DIR__ . "/../json_data/fitur_tambahan_json/brainly.json";
-        $anggota = file_get_contents($file);
-        $data = json_decode($anggota, true);
-        foreach ($data as $d) {
-            if ($d['userid'] == $userID) {
-                $idPesan = $d['msgid'];
-            }
-        }
+
         $numbersPagecallback = $numbersPage + 1;
         $option = array(
             array($telegram->buildInlineKeyBoardButton("Jawaban salah?", $url = "", $callback_data = '/brainly_i@fadhil_riyanto_bot ' . $numbersPagecallback . ' ' . $pertanyaanParse))

@@ -1,17 +1,11 @@
 <?php
-// require __DIR__ . '/../vendor/autoload.php';
+require __DIR__ . '/../vendor/autoload.php';
 
-// use Brainly\Brainly;
-if ($userID != $userid_pemilik) {
-    $reply = 'ups, fitur ini sedang dalam developing' . PHP_EOL . PHP_EOL . 'command ini akan dibuka untuk umum ketika proses developing telah selesai';
-    $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-    $telegram->sendMessage($content);
-    exit;
-}
+use Brainly\Brainly;
 
 $azanHilangcommand = str_replace($adanParse_plain[0], '', $text_plain);
 $udahDiparse = str_replace($adanParse_plain[0] . ' ', '', $text_plain);
-$udahDiparse_hash = str_replace($adanParse_plain_nokarakter[0] . ' ', '', $text_plain_nokarakter);
+$udahDiparse_hash = str_replace($adanParse_plain[0] . ' ', '', $text_plain_nokarakter);
 
 if ($azanHilangcommand == null) {
     $reply = 'Hai ' . $username . PHP_EOL . 'Untuk menggunakan brainly, gunakan command <pre>/brainly {pertanyaan}</pre>' . PHP_EOL . PHP_EOL .
@@ -19,19 +13,19 @@ if ($azanHilangcommand == null) {
     $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
     $telegram->sendMessage($content);
 } else {
-    // $st = new Brainly($udahDiparse_hash);
-    // $result = $st->exec();
-    // if (count($result) === 0) {
+    $st = new Brainly($udahDiparse_hash);
+    $result = $st->exec();
+    if (count($result) === 0) {
 
-    $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, 'https://afara.my.id/api/brainly-scraper?q=' . urlencode($udahDiparse_hash));
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-    $a = curl_exec($ch);
-    curl_close($ch);
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, 'https://afara.my.id/api/brainly-scraper?q=' . urlencode($udahDiparse_hash));
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        $a = curl_exec($ch);
+        curl_close($ch);
 
-    $result = json_decode($a, true);
-    // } else {
-    // }
+        $result = json_decode($a, true);
+    } else {
+    }
 
     if (count($result) === 0) {
         $reply = "tidak ditemukan!";
@@ -44,10 +38,10 @@ if ($azanHilangcommand == null) {
             'jawaban : ' . strip_tags($result[$randomINt]['answers'][0]);
 
         $option = array(
-            array($telegram->buildInlineKeyBoardButton("Jawaban salah?", $url = "", $callback_data = '/brainly_i@fadhil_riyanto_bot 1 ' . $udahDiparse_hash))
+            array($telegram->buildInlineKeyBoardButton("Jawaban salah?", $url = "", $callback_data = '/brainly_i@fadhil_riyanto_bot 1 '))
         );
         $keyb = $telegram->buildInlineKeyBoard($option);
-        $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_markup' => $keyb, 'reply_to_message_id' => $message_id, 'disable_web_page_preview' => true);
+        $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_markup' => $keyb, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => false);
         $urlCall = $telegram->sendMessage($content);
         $msgidUntukedit = $urlCall['result']['message_id'];
         function getUseridFromeditmessage($userID)
@@ -69,6 +63,7 @@ if ($azanHilangcommand == null) {
             foreach ($data as $key => $d) {
                 if ($d['userid'] === $userID) {
                     $data[$key]['msgid'] = $msgidUntukedit;
+                    $data[$key]['lastTanya'] = $udahDiparse_hash;
                 }
             }
             $jsonfile = json_encode($data, JSON_PRETTY_PRINT);
@@ -80,7 +75,8 @@ if ($azanHilangcommand == null) {
 
             $data[] = array(
                 "userid" => $userID,
-                "msgid" => $msgidUntukedit
+                "msgid" => $msgidUntukedit,
+                "lastTanya" => $udahDiparse_hash
             );
 
             $jsonfile = json_encode($data, JSON_PRETTY_PRINT);

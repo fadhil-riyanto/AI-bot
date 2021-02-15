@@ -3831,3 +3831,287 @@ ref.disable_web_page_preview= true
 #4 C:\bot telegram\index.php(376): require('C:\\bot telegram...')
 #5 {main}
 
+============[Date]============
+[ 2021-02-15 13:15:59  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message can't be edited
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804396448
+ref.callback_query.id= 5984360327914817261
+ref.callback_query.from.id= 1393342467
+ref.callback_query.from.is_bot= false
+ref.callback_query.from.first_name= Fadhil
+ref.callback_query.from.last_name= Riyanto
+ref.callback_query.from.username= fadhil_riyanto
+ref.callback_query.from.language_code= en
+ref.callback_query.message.message_id= 17553
+ref.callback_query.message.from.id= 1489990155
+ref.callback_query.message.from.is_bot= true
+ref.callback_query.message.from.first_name= Fadhil Riyanto Bot
+ref.callback_query.message.from.username= Fadhil_riyanto_bot
+ref.callback_query.message.chat.id= -1001209274058
+ref.callback_query.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.callback_query.message.chat.username= scriptiseng
+ref.callback_query.message.chat.type= supergroup
+ref.callback_query.message.date= 1613369257
+ref.callback_query.message.edit_date= 1613369322
+ref.callback_query.message.reply_to_message.message_id= 17552
+ref.callback_query.message.reply_to_message.from.id= 1393342467
+ref.callback_query.message.reply_to_message.from.is_bot= false
+ref.callback_query.message.reply_to_message.from.first_name= Fadhil
+ref.callback_query.message.reply_to_message.from.last_name= Riyanto
+ref.callback_query.message.reply_to_message.from.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.from.language_code= en
+ref.callback_query.message.reply_to_message.chat.id= -1001209274058
+ref.callback_query.message.reply_to_message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.callback_query.message.reply_to_message.chat.username= scriptiseng
+ref.callback_query.message.reply_to_message.chat.type= supergroup
+ref.callback_query.message.reply_to_message.date= 1613369255
+ref.callback_query.message.reply_to_message.text= /brainly apa itu air
+ref.callback_query.message.reply_to_message.entities.0.offset= 0
+ref.callback_query.message.reply_to_message.entities.0.length= 8
+ref.callback_query.message.reply_to_message.entities.0.type= bot_command
+ref.callback_query.message.text= pertanyaan : jika air didinginkan sampai suhu 4°C maka air akan
+
+jawaban : berubah suhu...................
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.text= Jawaban salah?
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.callback_data= /brainly_i@fadhil_riyanto_bot 5 apa itu air
+ref.callback_query.chat_instance= -1698981424917340985
+ref.callback_query.data= /brainly_i@fadhil_riyanto_bot 5 apa itu air
+
+
+[ref]
+ref.text= pertanyaan : di sebuah kolamterdapat 5 air mancur . dalam 1 menit 5 air mancur mengeluarkan 48.000 cm kubik air , setiap air macur megeluarkan air sama banyak.debit air setiap air macur adalah..... cm kubik perdetik
+
+jawaban : Volume = 48.000 cm^3Waktu = 1 menit = 60 detikDebit 5 air mancur = Volume x waktu = 48.000 : 60 = 800 cm^3/detikDebit setiap air mancur = 800 : 5 = 160 cm^3/detik.Rate 5 bintang ya. Thanks.
+ref.message_id= 14388
+ref.reply_markup= {"inline_keyboard":[[{"text":"Jawaban salah?","callback_data":"\/brainly_i@fadhil_riyanto_bot 6 apa itu air"}]]}
+ref.reply_to_message_id= 17553
+ref.parse_mode= html
+ref.disable_web_page_preview= false
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(184): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\command\brainly_i.php(53): Telegram->editMessageText(Array)
+#4 C:\bot telegram\index.php(379): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-02-15 13:32:49  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: BUTTON_DATA_INVALID
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804396464
+ref.message.message_id= 14407
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1613370756
+ref.message.text= /debug jika trapesium abcd dan pqrs sebangun maka panjang bc adalah
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= pertanyaans : Jika trapesium ABCD dan trapesium PQRS sebangun maka panjang BC adalah....
+
+jawaban : x/15 = 16/2020x = 16 x 1520x = 240x= 12
+ref.reply_markup= {"inline_keyboard":[[{"text":"Jawaban salah?","callback_data":"\/brainly_i@fadhil_riyanto_bot 1 jika trapesium abcd dan pqrs sebangun maka panjang bc adalah"}]]}
+ref.reply_to_message_id= 14407
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\debug.php(29): Telegram->sendMessage(Array)
+#4 C:\bot telegram\index.php(382): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-02-15 13:36:48  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: BUTTON_DATA_INVALID
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804396469
+ref.message.message_id= 14419
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1613371005
+ref.message.text= /brainly jika trapesium abcd dan pqrs sebangun maka panjang bc adalah
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 8
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= pertanyaan : Jika trapesium ABCD dan trapesium PQRS sebangun maka panjang BC adalah....
+
+jawaban : x/15 = 16/2020x = 16 x 1520x = 240x= 12
+ref.reply_markup= {"inline_keyboard":[[{"text":"Jawaban salah?","callback_data":"\/brainly_i@fadhil_riyanto_bot 1 jika+trapesium+abcd+dan+pqrs+sebangun+maka+panjang+bc+adalah"}]]}
+ref.reply_to_message_id= 14419
+ref.parse_mode= html
+ref.disable_web_page_preview= false
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\brainly.php(45): Telegram->sendMessage(Array)
+#4 C:\bot telegram\index.php(376): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-02-15 13:37:11  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: BUTTON_DATA_INVALID
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804396470
+ref.message.message_id= 14421
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1613371028
+ref.message.text= /brainly jika trapesium abcd dan pqrs sebangun maka panjang bc adalah
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 8
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= pertanyaan : Jika trapesium ABCD dan trapesium PQRS sebangun maka panjang BC adalah....
+
+jawaban : x/15 = 16/2020x = 16 x 1520x = 240x= 12
+ref.reply_markup= {"inline_keyboard":[[{"text":"Jawaban salah?","callback_data":"\/brainly_i@fadhil_riyanto_bot 1 jika trapesium abcd dan pqrs sebangun maka panjang bc adalah"}]]}
+ref.reply_to_message_id= 14421
+ref.parse_mode= html
+ref.disable_web_page_preview= false
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\brainly.php(45): Telegram->sendMessage(Array)
+#4 C:\bot telegram\index.php(376): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-02-15 13:42:49  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.action= typing
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(131): Telegram->endpoint('sendChatAction', Array)
+#3 C:\bot telegram\index.php(270): Telegram->sendChatAction(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-15 13:43:24  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.action= typing
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(131): Telegram->endpoint('sendChatAction', Array)
+#3 C:\bot telegram\index.php(270): Telegram->sendChatAction(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-15 13:43:39  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.action= typing
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(131): Telegram->endpoint('sendChatAction', Array)
+#3 C:\bot telegram\index.php(270): Telegram->sendChatAction(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-15 13:43:45  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.action= typing
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(131): Telegram->endpoint('sendChatAction', Array)
+#3 C:\bot telegram\index.php(270): Telegram->sendChatAction(Array)
+#4 {main}
+

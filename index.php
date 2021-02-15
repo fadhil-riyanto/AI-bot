@@ -372,14 +372,17 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 } elseif ('/pantun' == $adanParse[0] || '/pantun@fadhil_riyanto_bot' == $adanParse[0]) {
 	require __DIR__ . '/command/pantun.php';
 	exit;
-} elseif ('/brainly' == $adanParse[0] || '/brainly@fadhil_riyanto_bot' == $adanParse[0]) {
+} elseif (
+	'/brainly' == $adanParse[0] || '/brainly@fadhil_riyanto_bot' == $adanParse[0] ||
+	'/br' == $adanParse[0] || '/br@fadhil_riyanto_bot' == $adanParse[0]
+) {
 	require __DIR__ . '/command/brainly.php';
 	exit;
 } elseif ('/brainly_i' == $adanParse[0] || '/brainly_i@fadhil_riyanto_bot' == $adanParse[0]) {
 	require __DIR__ . '/command/brainly_i.php';
 	exit;
 } elseif ('/debug' == $adanParse[0] || '/debug@fadhil_riyanto_bot' == $adanParse[0]) {
-
+	require __DIR__ . '/command/debug.php';
 	exit;
 } elseif ('/kalimat_quotes' == $adanParse[0] || '/kalimat_quotes@fadhil_riyanto_bot' == $adanParse[0]) {
 	require __DIR__ . '/command/kalimat_quotes.php';
