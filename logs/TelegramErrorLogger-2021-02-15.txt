@@ -2616,3 +2616,120 @@ ref.action= typing
 #3 C:\bot telegram\index.php(270): Telegram->sendChatAction(Array)
 #4 {main}
 
+============[Date]============
+[ 2021-02-15 12:07:08  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.action= typing
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(131): Telegram->endpoint('sendChatAction', Array)
+#3 C:\bot telegram\index.php(270): Telegram->sendChatAction(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-15 12:07:11  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.action= typing
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(131): Telegram->endpoint('sendChatAction', Array)
+#3 C:\bot telegram\index.php(270): Telegram->sendChatAction(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-15 12:07:12  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.text= Maaf, kamu dapat mengirim pesan kembali setelah 1 detik
+ref.reply_to_message_id= 
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\index.php(328): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-15 12:07:14  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.action= typing
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(131): Telegram->endpoint('sendChatAction', Array)
+#3 C:\bot telegram\index.php(270): Telegram->sendChatAction(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-15 12:15:43  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.action= typing
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(131): Telegram->endpoint('sendChatAction', Array)
+#3 C:\bot telegram\index.php(270): Telegram->sendChatAction(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-15 12:15:51  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.action= typing
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(131): Telegram->endpoint('sendChatAction', Array)
+#3 C:\bot telegram\index.php(270): Telegram->sendChatAction(Array)
+#4 {main}
+
