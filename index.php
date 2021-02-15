@@ -309,6 +309,12 @@ if ($deteksiApakahGrupwaktu != true) {
 			'/help' == $adanParse[0] || '/help@fadhil_riyanto_bot' == $adanParse[0] ||
 			'/help_i' == $adanParse[0] || '/help_i@fadhil_riyanto_bot' == $adanParse[0] ||
 			'/sudo' == $adanParse[0] || '/sudo@fadhil_riyanto_bot' == $adanParse[0] ||
+			'/bucin' == $adanParse[0] || '/bucin@fadhil_riyanto_bot' == $adanParse[0] ||
+			'/bucin_i' == $adanParse[0] || '/bucin_i@fadhil_riyanto_bot' == $adanParse[0] ||
+			'/berita' == $adanParse[0] || '/berita@fadhil_riyanto_bot' == $adanParse[0] ||
+			'/berita_i' == $adanParse[0] || '/berita_i@fadhil_riyanto_bot' == $adanParse[0] ||
+			'/brainly' == $adanParse[0] || '/brainly@fadhil_riyanto_bot' == $adanParse[0] ||
+			'/brainly_i' == $adanParse[0] || '/brainly_i@fadhil_riyanto_bot' == $adanParse[0] ||
 			'/callback_q' == $adanParse[0] || '/callback_q@fadhil_riyanto_bot' == $adanParse[0]
 		) {
 		} else {
@@ -389,9 +395,6 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	exit;
 } elseif ('/tr' == $adanParse[0] || '/tr@fadhil_riyanto_bot' == $adanParse[0]) {
 	require __DIR__ . '/command/tr.php';
-	exit;
-} elseif ($text == '/leave' || $text == '/leave@fadhil_riyanto_bot') {
-	require __DIR__ . '/command/leave.php';
 	exit;
 } elseif ('/quran' == $adanParse[0] || '/quran@fadhil_riyanto_bot' == $adanParse[0]) {
 	require __DIR__ . '/command/quran.php';
