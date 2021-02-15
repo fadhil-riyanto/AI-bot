@@ -14,7 +14,7 @@ if ($azanHilangcommand == null) {
     try {
         $text =  wordwrap($udahDiparse_hash, 20, "\n");
         (new QuoteMaker)
-            ->setBackground(__DIR__ . '/../assets/quotesgen/img' . random_int(1, 15) . '.jpg')
+            ->setBackground(__DIR__ . '/../assets/quotesgen/img' . random_int(1, 30) . '.jpg')
             ->quoteText($text)
             ->setQuoteFontSize(60)
             ->toFile("result.jpg");
