@@ -12,7 +12,7 @@ $file = __DIR__ . "/../json_data/fitur_tambahan_json/brainly.json";
 $anggota = file_get_contents($file);
 $data = json_decode($anggota, true);
 foreach ($data as $d) {
-    if ($d['userid'] == $useridpenerima) {
+    if ($d['userid'] == $userID) {
         $idPesan = $d['msgid'];
         $lastPesan = $d['lastTanya'];
     }
@@ -49,7 +49,7 @@ if ($azanHilangcommand == null) {
 
         $numbersPagecallback = $numbersPage + 1;
         $option = array(
-            array($telegram->buildInlineKeyBoardButton("Jawaban salah?", $url = "", $callback_data = '/brainly_i@fadhil_riyanto_bot ' . $numbersPagecallback . ' ' . $useridpenerima))
+            array($telegram->buildInlineKeyBoardButton("Jawaban salah?", $url = "", $callback_data = '/brainly_i@fadhil_riyanto_bot ' . $numbersPagecallback))
         );
         $keyb = $telegram->buildInlineKeyBoard($option);
 
