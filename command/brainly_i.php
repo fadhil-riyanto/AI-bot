@@ -48,7 +48,7 @@ if ($azanHilangcommand == null) {
 
         $numbersPagecallback = $numbersPage + 1;
         $option = array(
-            array($telegram->buildInlineKeyBoardButton("Jawaban salah?", $url = "", $callback_data = '/brainly_i@fadhil_riyanto_bot ' . $numbersPagecallback . ' ' . $pertanyaanParse))
+            array($telegram->buildInlineKeyBoardButton("Jawaban salah?", $url = "", $callback_data = '/brainly_i@fadhil_riyanto_bot ' . $numbersPagecallback . ' ' . $lastPesan))
         );
         $keyb = $telegram->buildInlineKeyBoard($option);
 
