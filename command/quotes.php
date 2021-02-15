@@ -5,6 +5,8 @@ use masokky\QuoteMaker;
 $azanHilangcommand = str_replace($adanParse_plain[0], '', $text_plain);
 $udahDiparse = str_replace($adanParse_plain[0] . ' ', '', $text_plain);
 $udahDiparse_hash = str_replace($adanParse_plain[0] . ' ', '', $text_plain_nokarakter);
+
+$watermarktext = $namaPertama . ' ' . $namaTerakhir;
 if ($azanHilangcommand == null) {
     $reply = 'Hai ' . $username . PHP_EOL . 'Untuk menggunakan quotes generator, gunakan command <pre>/quotes {teks atau kata}</pre>' . PHP_EOL . PHP_EOL .
         'Contoh : <pre>/quotes kamu bagaikan bunga dipagi hari</pre>';
@@ -16,6 +18,8 @@ if ($azanHilangcommand == null) {
         (new QuoteMaker)
             ->setBackground(__DIR__ . '/../assets/quotesgen/img' . random_int(1, 30) . '.jpg')
             ->quoteText($text)
+            ->watermarkText($watermarktext)
+            ->setWatermarkFontSize(34)
             ->setQuoteFontSize(60)
             ->toFile("result.jpg");
 
