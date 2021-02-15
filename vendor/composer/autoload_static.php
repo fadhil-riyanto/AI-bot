@@ -101,7 +101,25 @@ class ComposerStaticInit37458c04d77e08a184290ff46a23e733
         ),
     );
 
+    public static $fallbackDirsPsr4 = array (
+        0 => __DIR__ . '/..' . '/league/color-extractor/src',
+    );
+
     public static $prefixesPsr0 = array (
+        'm' => 
+        array (
+            'masokky' => 
+            array (
+                0 => __DIR__ . '/..' . '/masokky/quotemaker/src',
+            ),
+        ),
+        'c' => 
+        array (
+            'claviska' => 
+            array (
+                0 => __DIR__ . '/..' . '/claviska/simpleimage/src',
+            ),
+        ),
         'S' => 
         array (
             'Sastrawi\\Trka' => 
@@ -150,6 +168,7 @@ class ComposerStaticInit37458c04d77e08a184290ff46a23e733
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit37458c04d77e08a184290ff46a23e733::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit37458c04d77e08a184290ff46a23e733::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr4 = ComposerStaticInit37458c04d77e08a184290ff46a23e733::$fallbackDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInit37458c04d77e08a184290ff46a23e733::$prefixesPsr0;
             $loader->classMap = ComposerStaticInit37458c04d77e08a184290ff46a23e733::$classMap;
 

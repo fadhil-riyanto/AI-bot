@@ -7,6 +7,13 @@ if ($userID != $userid_pemilik) {
 }
 $azanHilangcommand = str_replace($adanParse[0], '', $text);
 $udahDiparse = str_replace($adanParse[0] . ' ', '', $text);
+function photo($link)
+{
+    global $chat_id;
+    global $telegram;
+    $konten = array('chat_id' => $chat_id, 'photo' => $link, 'caption' => '200 ');
+    $telegram->sendPhoto($konten);
+}
 
 $getStringFromSpasi = explode(' ', $udahDiparse);
 if ($getStringFromSpasi[0] == 'debug' || $getStringFromSpasi[0] == 'debugmode') {

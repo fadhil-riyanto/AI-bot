@@ -1,0 +1,3 @@
+<?php 
+$content = array('chat_id' => $chat_id, 'photo' => 'http://fadhilriyanto.rf.gd/rahasia/kharina/khar_ina9_116716537_664065424212307_7698101662129876783_n.jpg');
+    $telegram->sendPhoto($content);

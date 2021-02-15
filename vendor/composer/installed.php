@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => 'a643fd18f6ff8e9dc3f3a3ef29ddbcdd447cb43b',
+    'reference' => 'e7172d1d683959626dd24d0af3293de3c39bfdda',
     'name' => '__root__',
   ),
   'versions' => 
@@ -18,7 +18,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => 'a643fd18f6ff8e9dc3f3a3ef29ddbcdd447cb43b',
+      'reference' => 'e7172d1d683959626dd24d0af3293de3c39bfdda',
     ),
     'ammarfaizi2/brainly' => 
     array (
@@ -38,6 +38,15 @@
         0 => '9999999-dev',
       ),
       'reference' => '7b0da84f53814d9ad8ed94af6bf098427fdbd971',
+    ),
+    'claviska/simpleimage' => 
+    array (
+      'pretty_version' => '3.6.0',
+      'version' => '3.6.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'd4652ab80aa87d3f5bb6daa857ca6d57c1b421a1',
     ),
     'container-interop/container-interop' => 
     array (
@@ -83,6 +92,31 @@
       array (
       ),
       'reference' => '53330f47520498c0ae1f61f7e2c90f55690c06a3',
+    ),
+    'league/color-extractor' => 
+    array (
+      'pretty_version' => '0.3.2',
+      'version' => '0.3.2.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '837086ec60f50c84c611c613963e4ad2e2aec806',
+    ),
+    'masokky/quotemaker' => 
+    array (
+      'pretty_version' => 'v1.0.0',
+      'version' => '1.0.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'd1b1b056b65cfc8cf189ca10c3f6a5838b489341',
+    ),
+    'matthecat/colorextractor' => 
+    array (
+      'replaced' => 
+      array (
+        0 => '*',
+      ),
     ),
     'phplucidframe/console-table' => 
     array (
