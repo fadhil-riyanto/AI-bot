@@ -19,8 +19,8 @@ if ($azanHilangcommand == null) {
             ->setBackground(__DIR__ . '/../assets/quotesgen/img' . random_int(1, 30) . '.jpg')
             ->quoteText($text)
             ->watermarkText($watermarktext)
-            ->setWatermarkFontSize(70)
-            ->setQuoteFontSize(90)
+            ->setWatermarkFontSize(34)
+            ->setQuoteFontSize(60)
             ->toFile("result.jpg");
 
         $bot_url    = "https://api.telegram.org/bot" . TG_HTTP_API . "/";
