@@ -264,7 +264,7 @@ class QuoteMaker {
 	}
 	private function create_template(){
 		self::$image
-				->resize(1280,720)
+				->resize(2400,1300)
 				->darken(20)
 				->overlay(self::$top_quote_mark,"center",1,0,-250)
 				->overlay(self::$bottom_quote_mark,"center",1,0,100);
