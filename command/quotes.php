@@ -20,7 +20,7 @@ if ($azanHilangcommand == null) {
             ->quoteText($text)
             ->watermarkText($watermarktext)
             ->setWatermarkFontSize(70)
-            // ->setQuoteFontSize(110)
+            ->setQuoteFontSize(90)
             ->toFile("result.jpg");
 
         $bot_url    = "https://api.telegram.org/bot" . TG_HTTP_API . "/";
