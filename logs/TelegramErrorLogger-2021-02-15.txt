@@ -4363,3 +4363,229 @@ ref.action= typing
 #3 C:\bot telegram\index.php(270): Telegram->sendChatAction(Array)
 #4 {main}
 
+============[Date]============
+[ 2021-02-15 14:38:24  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.action= typing
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(131): Telegram->endpoint('sendChatAction', Array)
+#3 C:\bot telegram\index.php(270): Telegram->sendChatAction(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-15 14:39:18  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.action= typing
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(131): Telegram->endpoint('sendChatAction', Array)
+#3 C:\bot telegram\index.php(270): Telegram->sendChatAction(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-15 14:39:44  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804396687
+ref.callback_query.id= 5984360328561070495
+ref.callback_query.from.id= 1393342467
+ref.callback_query.from.is_bot= false
+ref.callback_query.from.first_name= Fadhil
+ref.callback_query.from.last_name= Riyanto
+ref.callback_query.from.username= fadhil_riyanto
+ref.callback_query.from.language_code= en
+ref.callback_query.message.message_id= 17672
+ref.callback_query.message.from.id= 1489990155
+ref.callback_query.message.from.is_bot= true
+ref.callback_query.message.from.first_name= Fadhil Riyanto Bot
+ref.callback_query.message.from.username= Fadhil_riyanto_bot
+ref.callback_query.message.chat.id= -1001209274058
+ref.callback_query.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.callback_query.message.chat.username= scriptiseng
+ref.callback_query.message.chat.type= supergroup
+ref.callback_query.message.date= 1613374697
+ref.callback_query.message.edit_date= 1613374766
+ref.callback_query.message.reply_to_message.message_id= 17671
+ref.callback_query.message.reply_to_message.from.id= 1393342467
+ref.callback_query.message.reply_to_message.from.is_bot= false
+ref.callback_query.message.reply_to_message.from.first_name= Fadhil
+ref.callback_query.message.reply_to_message.from.last_name= Riyanto
+ref.callback_query.message.reply_to_message.from.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.from.language_code= en
+ref.callback_query.message.reply_to_message.chat.id= -1001209274058
+ref.callback_query.message.reply_to_message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.callback_query.message.reply_to_message.chat.username= scriptiseng
+ref.callback_query.message.reply_to_message.chat.type= supergroup
+ref.callback_query.message.reply_to_message.date= 1613374695
+ref.callback_query.message.reply_to_message.text= /br apa itu air
+ref.callback_query.message.reply_to_message.entities.0.offset= 0
+ref.callback_query.message.reply_to_message.entities.0.length= 3
+ref.callback_query.message.reply_to_message.entities.0.type= bot_command
+ref.callback_query.message.text= pertanyaan : Jenis air apa yang di gunakan MCK? dan dari mana air itu di dapat?
+Jenis air apa yang di gunakan Industri besar dan kecil? dan dari mana air itu di dapat?
+Jenis air apa yang di gunakan PLTA? dan dari mana air itu di dapat?
+Jenis air apa yang di gunakan Olahraga air? dan dari mana air itu di dapat?
+Jenis air apa yang di gunakan Perikanan? dan dari mana air itu di dapat?
+
+jawaban : pembuatan es batu air sungaidanau biasanya terdapat ketinggian +100 m di permukaan lautsungai yg arusnya yg deras di perbukitanair sungai .suka suka ikan mau di air tawar/air asin
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.text= Jawaban salah?
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.callback_data= /brainly_i@fadhil_riyanto_bot 4
+ref.callback_query.chat_instance= -1698981424917340985
+ref.callback_query.data= /brainly_i@fadhil_riyanto_bot 4
+
+
+[ref]
+ref.text= pertanyaan : air yang bisa kita dapatkan meliputi air ...,air...,dan air
+
+jawaban : sungai,danau,laut,rawamaaf kalo salah :)
+ref.message_id= 17672
+ref.reply_markup= {"inline_keyboard":[[{"text":"Jawaban salah?","callback_data":"\/brainly_i@fadhil_riyanto_bot 5"}]]}
+ref.reply_to_message_id= 17672
+ref.parse_mode= html
+ref.disable_web_page_preview= false
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(184): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\command\brainly_i.php(57): Telegram->editMessageText(Array)
+#4 C:\bot telegram\index.php(382): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-02-15 14:39:46  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804396688
+ref.callback_query.id= 5984360330088430666
+ref.callback_query.from.id= 1393342467
+ref.callback_query.from.is_bot= false
+ref.callback_query.from.first_name= Fadhil
+ref.callback_query.from.last_name= Riyanto
+ref.callback_query.from.username= fadhil_riyanto
+ref.callback_query.from.language_code= en
+ref.callback_query.message.message_id= 17672
+ref.callback_query.message.from.id= 1489990155
+ref.callback_query.message.from.is_bot= true
+ref.callback_query.message.from.first_name= Fadhil Riyanto Bot
+ref.callback_query.message.from.username= Fadhil_riyanto_bot
+ref.callback_query.message.chat.id= -1001209274058
+ref.callback_query.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.callback_query.message.chat.username= scriptiseng
+ref.callback_query.message.chat.type= supergroup
+ref.callback_query.message.date= 1613374697
+ref.callback_query.message.edit_date= 1613374766
+ref.callback_query.message.reply_to_message.message_id= 17671
+ref.callback_query.message.reply_to_message.from.id= 1393342467
+ref.callback_query.message.reply_to_message.from.is_bot= false
+ref.callback_query.message.reply_to_message.from.first_name= Fadhil
+ref.callback_query.message.reply_to_message.from.last_name= Riyanto
+ref.callback_query.message.reply_to_message.from.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.from.language_code= en
+ref.callback_query.message.reply_to_message.chat.id= -1001209274058
+ref.callback_query.message.reply_to_message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.callback_query.message.reply_to_message.chat.username= scriptiseng
+ref.callback_query.message.reply_to_message.chat.type= supergroup
+ref.callback_query.message.reply_to_message.date= 1613374695
+ref.callback_query.message.reply_to_message.text= /br apa itu air
+ref.callback_query.message.reply_to_message.entities.0.offset= 0
+ref.callback_query.message.reply_to_message.entities.0.length= 3
+ref.callback_query.message.reply_to_message.entities.0.type= bot_command
+ref.callback_query.message.text= pertanyaan : Jenis air apa yang di gunakan MCK? dan dari mana air itu di dapat?
+Jenis air apa yang di gunakan Industri besar dan kecil? dan dari mana air itu di dapat?
+Jenis air apa yang di gunakan PLTA? dan dari mana air itu di dapat?
+Jenis air apa yang di gunakan Olahraga air? dan dari mana air itu di dapat?
+Jenis air apa yang di gunakan Perikanan? dan dari mana air itu di dapat?
+
+jawaban : pembuatan es batu air sungaidanau biasanya terdapat ketinggian +100 m di permukaan lautsungai yg arusnya yg deras di perbukitanair sungai .suka suka ikan mau di air tawar/air asin
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.text= Jawaban salah?
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.callback_data= /brainly_i@fadhil_riyanto_bot 4
+ref.callback_query.chat_instance= -1698981424917340985
+ref.callback_query.data= /brainly_i@fadhil_riyanto_bot 4
+
+
+[ref]
+ref.text= pertanyaan : air yang bisa kita dapatkan meliputi air ...,air...,dan air
+
+jawaban : sungai,danau,laut,rawamaaf kalo salah :)
+ref.message_id= 17672
+ref.reply_markup= {"inline_keyboard":[[{"text":"Jawaban salah?","callback_data":"\/brainly_i@fadhil_riyanto_bot 5"}]]}
+ref.reply_to_message_id= 17672
+ref.parse_mode= html
+ref.disable_web_page_preview= false
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(184): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\command\brainly_i.php(57): Telegram->editMessageText(Array)
+#4 C:\bot telegram\index.php(382): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-02-15 14:39:56  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.action= typing
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(131): Telegram->endpoint('sendChatAction', Array)
+#3 C:\bot telegram\index.php(270): Telegram->sendChatAction(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-15 14:40:22  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.action= typing
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(131): Telegram->endpoint('sendChatAction', Array)
+#3 C:\bot telegram\index.php(270): Telegram->sendChatAction(Array)
+#4 {main}
+
