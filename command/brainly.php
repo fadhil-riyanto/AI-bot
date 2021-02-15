@@ -38,7 +38,7 @@ if ($azanHilangcommand == null) {
             'jawaban : ' . strip_tags($result[$randomINt]['answers'][0]);
 
         $option = array(
-            array($telegram->buildInlineKeyBoardButton("Jawaban salah?", $url = "", $callback_data = '/brainly_i@fadhil_riyanto_bot 1 '))
+            array($telegram->buildInlineKeyBoardButton("Jawaban salah?", $url = "", $callback_data = '/brainly_i@fadhil_riyanto_bot 1 ' . $userID))
         );
         $keyb = $telegram->buildInlineKeyBoard($option);
         $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_markup' => $keyb, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => false);
