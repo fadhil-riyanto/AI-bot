@@ -1,45 +1,53 @@
 <?php
-require __DIR__ . '/../vendor/autoload.php';
+// require __DIR__ . '/../vendor/autoload.php';
 
-use Brainly\Brainly;
-
+// use Brainly\Brainly;
+if ($userID != $userid_pemilik) {
+    $reply = 'ups, fitur ini sedang dalam developing' . PHP_EOL . PHP_EOL . 'command ini akan dibuka untuk umum ketika proses developing telah selesai';
+    $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+    $telegram->sendMessage($content);
+    exit;
+}
 
 $azanHilangcommand = str_replace($adanParse_plain[0], '', $text_plain);
 $udahDiparse = str_replace($adanParse_plain[0] . ' ', '', $text_plain);
-$udahDiparse_hash = str_replace($adanParse_plain[0] . ' ', '', $text_plain_nokarakter);
+$udahDiparse_hash = str_replace($adanParse_plain_nokarakter[0] . ' ', '', $text_plain_nokarakter);
 
-$watermarktext = $namaPertama . ' ' . $namaTerakhir;
 if ($azanHilangcommand == null) {
     $reply = 'Hai ' . $username . PHP_EOL . 'Untuk menggunakan brainly, gunakan command <pre>/brainly {pertanyaan}</pre>' . PHP_EOL . PHP_EOL .
         'Contoh : <pre>/brainly penemu listrik</pre>';
     $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
     $telegram->sendMessage($content);
 } else {
-    $st = new Brainly($udahDiparse_hash);
-    $result = $st->exec();
+    // $st = new Brainly($udahDiparse_hash);
+    // $result = $st->exec();
+    // if (count($result) === 0) {
+
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, 'https://afara.my.id/api/brainly-scraper?q=' . urlencode($udahDiparse_hash));
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    $a = curl_exec($ch);
+    curl_close($ch);
+
+    $result = json_decode($a, true);
+    // } else {
+    // }
 
     if (count($result) === 0) {
-        $reply = "tidak ditemukan!\n";
-        $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_markup' => $keyb, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => false);
+        $reply = "tidak ditemukan!";
+        $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => false);
         $urlCall = $telegram->sendMessage($content);
     } else {
         $hitungjumlahJawaban = count($result);
-        // $randomINt = random_int(0, $hitungjumlahJawaban);
         $randomINt = 0;
-        // print json_encode($result, JSON_PRETTY_PRINT);
-        // foreach ($result as $results) {
         $reply = 'pertanyaan : ' . strip_tags($result[$randomINt]['content']) . PHP_EOL . PHP_EOL .
             'jawaban : ' . strip_tags($result[$randomINt]['answers'][0]);
-        // if (isset($results->answers[1])) {
-        //     echo 'jawaban : ' . $results->answers[1];
-        // }
-        //     break;
-        // }
+
         $option = array(
             array($telegram->buildInlineKeyBoardButton("Jawaban salah?", $url = "", $callback_data = '/brainly_i@fadhil_riyanto_bot 1 ' . $udahDiparse_hash))
         );
         $keyb = $telegram->buildInlineKeyBoard($option);
-        $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_markup' => $keyb, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => false);
+        $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_markup' => $keyb, 'reply_to_message_id' => $message_id, 'disable_web_page_preview' => true);
         $urlCall = $telegram->sendMessage($content);
         $msgidUntukedit = $urlCall['result']['message_id'];
         function getUseridFromeditmessage($userID)

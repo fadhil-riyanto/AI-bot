@@ -3,29 +3,27 @@ require __DIR__ . '/../vendor/autoload.php';
 
 use Brainly\Brainly;
 
+$udahDiparse_hash = "jika trapesium abcd dan pqrs sebangun maka panjang bc adalah";
+$st = new Brainly($udahDiparse_hash);
+$results = $st->exec();
+if (count($results) === 0) {
 
-$azanHilangcommand = str_replace($adanParse_plain[0], '', $text_plain);
-$udahDiparse = str_replace($adanParse_plain[0] . ' ', '', $text_plain);
-$udahDiparse_hash = str_replace($adanParse_plain[0] . ' ', '', $text_plain_nokarakter);
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, 'https://afara.my.id/api/brainly-scraper?q=' . urlencode($udahDiparse_hash));
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    $a = curl_exec($ch);
+    curl_close($ch);
 
-$watermarktext = $namaPertama . ' ' . $namaTerakhir;
-if ($azanHilangcommand == null) {
-    $reply = 'Hai ' . $username . PHP_EOL . 'Untuk menggunakan brainly, gunakan command <pre>/brainly {pertanyaan}</pre>' . PHP_EOL . PHP_EOL .
-        'Contoh : <pre>/brainly penemu listrik</pre>';
-    $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-    $telegram->sendMessage($content);
+    $result = json_decode($a, true);
 } else {
-    $st = new Brainly($udahDiparse_hash);
-    $result = $st->exec();
-
-    if (count($result) === 0) {
-        $reply = "tidak ditemukan!\n";
-    } else {
-        $hitungjumlahJawaban = count($result);
-        $randomINt = random_int(0, $hitungjumlahJawaban);
-        $reply = 'pertanyaan : ' . strip_tags($result[$randomINt]['content']) . PHP_EOL . PHP_EOL .
-            'jawaban : ' . strip_tags($result[$randomINt]['answers'][0]);
-        $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-        $telegram->sendMessage($content);
-    }
 }
+
+if (count($results) === 0) {
+    $reply = "tidak ditemukan!\n";
+} else {
+    $hitungjumlahJawaban = count($resulta);
+    $randomINt = 0;
+    $reply = 'pertanyaan : ' . strip_tags($results[$randomINt]['content']) . PHP_EOL . PHP_EOL .
+        'jawaban : ' . strip_tags($results[$randomINt]['answers'][0]);
+}
+echo $reply;

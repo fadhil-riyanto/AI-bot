@@ -20,8 +20,12 @@ if ($azanHilangcommand == null) {
     $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
     $telegram->sendMessage($content);
 } else {
-    $st = new Brainly($pertanyaanParse);
+    $st = new Brainly($udahDiparse_hash);
     $result = $st->exec();
+    if (count($result) == 0) {
+        $a = file_get_contents('https://afara.my.id/api/brainly-scraper?q=' . urlencode($udahDiparse_hash));
+        $result = json_decode($a);
+    }
 
     if (count($result) === 0) {
         $reply = "tidak ditemukan!\n";
