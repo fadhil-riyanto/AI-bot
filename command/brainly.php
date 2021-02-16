@@ -63,7 +63,8 @@ if ($azanHilangcommand == null) {
             foreach ($data as $key => $d) {
                 if ($d['userid'] === $userID) {
                     $data[$key]['msgid'] = $msgidUntukedit;
-                    $data[$key]['lastTanya'] = $udahDiparse_hash;
+                    $data[$key]['count_answer'] = 1;
+                    $data[$key]['jawaban'] = $result;
                 }
             }
             $jsonfile = json_encode($data, JSON_PRETTY_PRINT);
@@ -76,7 +77,9 @@ if ($azanHilangcommand == null) {
             $data[] = array(
                 "userid" => $userID,
                 "msgid" => $msgidUntukedit,
-                "lastTanya" => $udahDiparse_hash
+                "count_answer" => 1,
+                "jawaban" => $result
+
             );
 
             $jsonfile = json_encode($data, JSON_PRETTY_PRINT);

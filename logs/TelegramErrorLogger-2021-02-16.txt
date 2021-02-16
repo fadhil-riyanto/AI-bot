@@ -1,0 +1,412 @@
+============[Date]============
+[ 2021-02-16 09:50:03  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.action= typing
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(131): Telegram->endpoint('sendChatAction', Array)
+#3 C:\bot telegram\index.php(270): Telegram->sendChatAction(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-16 09:50:47  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.action= typing
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(131): Telegram->endpoint('sendChatAction', Array)
+#3 C:\bot telegram\index.php(270): Telegram->sendChatAction(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-16 09:53:02  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.action= typing
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(131): Telegram->endpoint('sendChatAction', Array)
+#3 C:\bot telegram\index.php(270): Telegram->sendChatAction(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-16 09:53:40  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.action= typing
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(131): Telegram->endpoint('sendChatAction', Array)
+#3 C:\bot telegram\index.php(270): Telegram->sendChatAction(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-16 09:53:47  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.action= typing
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(131): Telegram->endpoint('sendChatAction', Array)
+#3 C:\bot telegram\index.php(270): Telegram->sendChatAction(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-16 09:57:06  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.action= typing
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(131): Telegram->endpoint('sendChatAction', Array)
+#3 C:\bot telegram\index.php(270): Telegram->sendChatAction(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-16 09:58:09  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.action= typing
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(131): Telegram->endpoint('sendChatAction', Array)
+#3 C:\bot telegram\index.php(270): Telegram->sendChatAction(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-16 09:59:24  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.action= typing
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(131): Telegram->endpoint('sendChatAction', Array)
+#3 C:\bot telegram\index.php(270): Telegram->sendChatAction(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-16 11:12:09  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.action= typing
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(131): Telegram->endpoint('sendChatAction', Array)
+#3 C:\bot telegram\index.php(270): Telegram->sendChatAction(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-16 11:13:27  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.action= typing
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(131): Telegram->endpoint('sendChatAction', Array)
+#3 C:\bot telegram\index.php(270): Telegram->sendChatAction(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-16 11:13:34  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.action= typing
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(131): Telegram->endpoint('sendChatAction', Array)
+#3 C:\bot telegram\index.php(270): Telegram->sendChatAction(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-16 11:14:15  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.action= typing
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(131): Telegram->endpoint('sendChatAction', Array)
+#3 C:\bot telegram\index.php(270): Telegram->sendChatAction(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-16 11:15:16  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.action= typing
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(131): Telegram->endpoint('sendChatAction', Array)
+#3 C:\bot telegram\index.php(270): Telegram->sendChatAction(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-16 11:17:52  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.action= typing
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(131): Telegram->endpoint('sendChatAction', Array)
+#3 C:\bot telegram\index.php(270): Telegram->sendChatAction(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-16 11:47:35  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804397524
+ref.callback_query.id= 5984360329145354064
+ref.callback_query.from.id= 1393342467
+ref.callback_query.from.is_bot= false
+ref.callback_query.from.first_name= Fadhil
+ref.callback_query.from.last_name= Riyanto
+ref.callback_query.from.username= fadhil_riyanto
+ref.callback_query.from.language_code= en
+ref.callback_query.message.message_id= 14619
+ref.callback_query.message.from.id= 1489990155
+ref.callback_query.message.from.is_bot= true
+ref.callback_query.message.from.first_name= Fadhil Riyanto Bot
+ref.callback_query.message.from.username= Fadhil_riyanto_bot
+ref.callback_query.message.chat.id= 1393342467
+ref.callback_query.message.chat.first_name= Fadhil
+ref.callback_query.message.chat.last_name= Riyanto
+ref.callback_query.message.chat.username= fadhil_riyanto
+ref.callback_query.message.chat.type= private
+ref.callback_query.message.date= 1613450829
+ref.callback_query.message.edit_date= 1613450842
+ref.callback_query.message.reply_to_message.message_id= 14617
+ref.callback_query.message.reply_to_message.from.id= 1393342467
+ref.callback_query.message.reply_to_message.from.is_bot= false
+ref.callback_query.message.reply_to_message.from.first_name= Fadhil
+ref.callback_query.message.reply_to_message.from.last_name= Riyanto
+ref.callback_query.message.reply_to_message.from.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.from.language_code= en
+ref.callback_query.message.reply_to_message.chat.id= 1393342467
+ref.callback_query.message.reply_to_message.chat.first_name= Fadhil
+ref.callback_query.message.reply_to_message.chat.last_name= Riyanto
+ref.callback_query.message.reply_to_message.chat.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.chat.type= private
+ref.callback_query.message.reply_to_message.date= 1613450823
+ref.callback_query.message.reply_to_message.text= /br apa itu carbon
+ref.callback_query.message.reply_to_message.entities.0.offset= 0
+ref.callback_query.message.reply_to_message.entities.0.length= 3
+ref.callback_query.message.reply_to_message.entities.0.type= bot_command
+ref.callback_query.message.text= pertanyaan : salah satu potensi kelautan Indonesia adalah sebagai blue carbon, apakah blue carbon itu? apa manfaat blue carbon​
+
+jawaban : Jawaban:Karbon biru merupakan karbon yang ditangkap dan disimpan di samudra dan ekosistem pesisir, termasuk karbon pantai yang tersimpan di lahan basah pasang surut. # manfaat nya :Selain manfaat penyimpanan karbon, ekosistem karbon biru juga menyediakan lapangan kerja dan pendapatan bagi ekonomi lokal, meningkatkan kualitas air, mendukung perikanan yang sehat, dan memberikan perlindungan pesisir.Penjelasan:Karbon biru merupakan karbon yang ditangkap dan disimpan di samudra dan ekosistem pesisir, termasuk karbon pantai yang tersimpan di lahan basah pasang surut. seperti hutan yang dipengaruhi pasang surut, bakau, rawa pasang surut dan padang lamun, di dalam tanah, biomassa hidup dan sumber karbon biomassa yang tidak hidup. Seperti namanya, karbon ini berwarna biru.
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.text= Jawaban salah?
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.callback_data= /brainly_i@fadhil_riyanto_bot
+ref.callback_query.chat_instance= -5109722127778484442
+ref.callback_query.data= /brainly_i@fadhil_riyanto_bot
+
+
+[ref]
+ref.text= pertanyaan : salah satu potensi kelautan Indonesia adalah sebagai blue carbon, apakah blue carbon itu? apa manfaat blue carbon​
+
+jawaban : Jawaban:Karbon biru merupakan karbon yang ditangkap dan disimpan di samudra dan ekosistem pesisir, termasuk karbon pantai yang tersimpan di lahan basah pasang surut. # manfaat nya :Selain manfaat penyimpanan karbon, ekosistem karbon biru juga menyediakan lapangan kerja dan pendapatan bagi ekonomi lokal, meningkatkan kualitas air, mendukung perikanan yang sehat, dan memberikan perlindungan pesisir.Penjelasan:Karbon biru merupakan karbon yang ditangkap dan disimpan di samudra dan ekosistem pesisir, termasuk karbon pantai yang tersimpan di lahan basah pasang surut. seperti hutan yang dipengaruhi pasang surut, bakau, rawa pasang surut dan padang lamun, di dalam tanah, biomassa hidup dan sumber karbon biomassa yang tidak hidup. Seperti namanya, karbon ini berwarna biru.
+ref.message_id= 
+ref.reply_markup= {"inline_keyboard":[[{"text":"Jawaban salah?","callback_data":"\/brainly_i@fadhil_riyanto_bot"}]]}
+ref.reply_to_message_id= 14619
+ref.parse_mode= html
+ref.disable_web_page_preview= false
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(184): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\command\brainly_i.php(68): Telegram->editMessageText(Array)
+#4 C:\bot telegram\index.php(382): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-02-16 11:48:33  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804397532
+ref.callback_query.id= 5984360331141353681
+ref.callback_query.from.id= 1393342467
+ref.callback_query.from.is_bot= false
+ref.callback_query.from.first_name= Fadhil
+ref.callback_query.from.last_name= Riyanto
+ref.callback_query.from.username= fadhil_riyanto
+ref.callback_query.from.language_code= en
+ref.callback_query.message.message_id= 14624
+ref.callback_query.message.from.id= 1489990155
+ref.callback_query.message.from.is_bot= true
+ref.callback_query.message.from.first_name= Fadhil Riyanto Bot
+ref.callback_query.message.from.username= Fadhil_riyanto_bot
+ref.callback_query.message.chat.id= 1393342467
+ref.callback_query.message.chat.first_name= Fadhil
+ref.callback_query.message.chat.last_name= Riyanto
+ref.callback_query.message.chat.username= fadhil_riyanto
+ref.callback_query.message.chat.type= private
+ref.callback_query.message.date= 1613450896
+ref.callback_query.message.edit_date= 1613450904
+ref.callback_query.message.reply_to_message.message_id= 14622
+ref.callback_query.message.reply_to_message.from.id= 1393342467
+ref.callback_query.message.reply_to_message.from.is_bot= false
+ref.callback_query.message.reply_to_message.from.first_name= Fadhil
+ref.callback_query.message.reply_to_message.from.last_name= Riyanto
+ref.callback_query.message.reply_to_message.from.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.from.language_code= en
+ref.callback_query.message.reply_to_message.chat.id= 1393342467
+ref.callback_query.message.reply_to_message.chat.first_name= Fadhil
+ref.callback_query.message.reply_to_message.chat.last_name= Riyanto
+ref.callback_query.message.reply_to_message.chat.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.chat.type= private
+ref.callback_query.message.reply_to_message.date= 1613450892
+ref.callback_query.message.reply_to_message.text= /br apa itu carbon
+ref.callback_query.message.reply_to_message.entities.0.offset= 0
+ref.callback_query.message.reply_to_message.entities.0.length= 3
+ref.callback_query.message.reply_to_message.entities.0.type= bot_command
+ref.callback_query.message.text= pertanyaan : salah satu potensi kelautan Indonesia adalah sebagai blue carbon, apakah blue carbon itu? apa manfaat blue carbon​
+
+jawaban : Jawaban:Karbon biru merupakan karbon yang ditangkap dan disimpan di samudra dan ekosistem pesisir, termasuk karbon pantai yang tersimpan di lahan basah pasang surut. # manfaat nya :Selain manfaat penyimpanan karbon, ekosistem karbon biru juga menyediakan lapangan kerja dan pendapatan bagi ekonomi lokal, meningkatkan kualitas air, mendukung perikanan yang sehat, dan memberikan perlindungan pesisir.Penjelasan:Karbon biru merupakan karbon yang ditangkap dan disimpan di samudra dan ekosistem pesisir, termasuk karbon pantai yang tersimpan di lahan basah pasang surut. seperti hutan yang dipengaruhi pasang surut, bakau, rawa pasang surut dan padang lamun, di dalam tanah, biomassa hidup dan sumber karbon biomassa yang tidak hidup. Seperti namanya, karbon ini berwarna biru.
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.text= Jawaban salah?
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.callback_data= /brainly_i@fadhil_riyanto_bot
+ref.callback_query.chat_instance= -5109722127778484442
+ref.callback_query.data= /brainly_i@fadhil_riyanto_bot
+
+
+[ref]
+ref.text= pertanyaan : salah satu potensi kelautan Indonesia adalah sebagai blue carbon, apakah blue carbon itu? apa manfaat blue carbon​
+
+jawaban : Jawaban:Karbon biru merupakan karbon yang ditangkap dan disimpan di samudra dan ekosistem pesisir, termasuk karbon pantai yang tersimpan di lahan basah pasang surut. # manfaat nya :Selain manfaat penyimpanan karbon, ekosistem karbon biru juga menyediakan lapangan kerja dan pendapatan bagi ekonomi lokal, meningkatkan kualitas air, mendukung perikanan yang sehat, dan memberikan perlindungan pesisir.Penjelasan:Karbon biru merupakan karbon yang ditangkap dan disimpan di samudra dan ekosistem pesisir, termasuk karbon pantai yang tersimpan di lahan basah pasang surut. seperti hutan yang dipengaruhi pasang surut, bakau, rawa pasang surut dan padang lamun, di dalam tanah, biomassa hidup dan sumber karbon biomassa yang tidak hidup. Seperti namanya, karbon ini berwarna biru.
+ref.message_id= 14624
+ref.reply_markup= {"inline_keyboard":[[{"text":"Jawaban salah?","callback_data":"\/brainly_i@fadhil_riyanto_bot"}]]}
+ref.reply_to_message_id= 14624
+ref.parse_mode= html
+ref.disable_web_page_preview= false
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(184): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\command\brainly_i.php(67): Telegram->editMessageText(Array)
+#4 C:\bot telegram\index.php(382): require('C:\\bot telegram...')
+#5 {main}
+
