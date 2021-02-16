@@ -361,7 +361,9 @@ if ($deteksiApakahGrupwaktu != true) {
 }
 if ($deteksiApakahGrup == true) {
 } elseif ($deteksiApakahGrup == null) {
-	$dumppesan = 'dari : ' . $username . PHP_EOL . 'konten : ' . $text_plain_nokarakter;
+	$dumppesan = 'dari : ' . $username . PHP_EOL .
+		'userid : <pre>' . $userID . '</pre>' .  PHP_EOL .
+		'konten : ' . $text_plain_nokarakter;
 	$content = array('chat_id' => '-458987087', 'parse_mode' => 'html', 'text' => $dumppesan, 'disable_web_page_preview' => true);
 	$telegram->sendMessage($content);
 }
