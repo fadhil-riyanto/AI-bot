@@ -387,8 +387,8 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 } elseif ('/kalimat_quotes' == $adanParse[0] || '/kalimat_quotes@fadhil_riyanto_bot' == $adanParse[0]) {
 	require __DIR__ . '/command/kalimat_quotes.php';
 	exit;
-} elseif ('/quotes' == $adanParse[0] || '/quotes@fadhil_riyanto_bot' == $adanParse[0]) {
-	require __DIR__ . '/command/quotes.php';
+} elseif ('/q' == $adanParse[0] || '/q@fadhil_riyanto_bot' == $adanParse[0]) {
+	require __DIR__ . '/command/q.php';
 	exit;
 } elseif ('/cuaca' == $adanParse[0] || '/cuaca@fadhil_riyanto_bot' == $adanParse[0]) {
 	require __DIR__ . '/command/cuaca.php';
