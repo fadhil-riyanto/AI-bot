@@ -11,13 +11,6 @@ define('API_WEATHER_KEY', '7cf7252c68d3473681054158212501');				//WAJIB
 define('ID_BOT', '1489990155');	                                  			//WAJIB
 define('MAX_EXECUTE_SCRIPT', 5000);											//SUNNAH_ROSUL
 
-$banslistget = file_get_contents(__DIR__ . '/json_data/bans.json');
-$banlistjsondec = json_decode($banslistget);
-foreach ($banlistjsondec as $banuser) {
-	if ($banuser->uid == $userID) {
-		exit;
-	}
-}
 
 // PENJELASAN SINGKAT
 
