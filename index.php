@@ -11,8 +11,13 @@ define('API_WEATHER_KEY', '7cf7252c68d3473681054158212501');				//WAJIB
 define('ID_BOT', '1489990155');	                                  			//WAJIB
 define('MAX_EXECUTE_SCRIPT', 5000);											//SUNNAH_ROSUL
 
-
-
+$banslistget = file_get_contents(__DIR__ . '/json_data/bans.json');
+$banlistjsondec = json_decode($banslistget);
+foreach ($banlistjsondec as $banuser) {
+	if ($banuser->uid == $userID) {
+		exit;
+	}
+}
 
 // PENJELASAN SINGKAT
 
@@ -106,6 +111,25 @@ if ($koneksi == 1) {
 	$namaPertama = $telegram->FirstName();
 	$namaTerakhir = $telegram->LastName();
 }
+if ($usernameBelumdiparse != null) { //Jika user ada usernamenya
+	$username = ' @' . $usernameBelumdiparse;
+} else { //ini user aneh, username gaada.....
+	$username = '<a href="tg://user?id=' . $userID . '">' . $namaPertama . ' ' . $namaTerakhir . '</a>';
+}
+
+$banslistget = file_get_contents(__DIR__ . '/json_data/bans.json');
+$banlistjsondec = json_decode($banslistget);
+foreach ($banlistjsondec as $banuser) {
+	if ($banuser->uid == $userID) {
+		$dumppesan = '#ban_user' . PHP_EOL .
+			'dari : ' . $username . PHP_EOL .
+			'userid : <pre>' . $userID . '</pre>' .  PHP_EOL .
+			'konten : ' . $text_plain_nokarakter;
+		$content = array('chat_id' => '-458987087', 'parse_mode' => 'html', 'text' => $dumppesan, 'disable_web_page_preview' => true);
+		$telegram->sendMessage($content);
+		exit;
+	}
+}
 
 $anggota = file_get_contents(__DIR__ . '/pengaturan/settings.json');
 
@@ -123,12 +147,6 @@ foreach ($data as $key => $d) {
 			continue;
 		}
 	}
-}
-
-if ($usernameBelumdiparse != null) { //Jika user ada usernamenya
-	$username = ' @' . $usernameBelumdiparse;
-} else { //ini user aneh, username gaada.....
-	$username = '<a href="tg://user?id=' . $userID . '">' . $namaPertama . ' ' . $namaTerakhir . '</a>';
 }
 
 $adanParse = explode(' ', $text);
@@ -265,10 +283,6 @@ if ($chek == true) {
 	$anggota = file_put_contents($file, $jsonfile);
 }
 
-if (detect_apakah_pesan_reply_ke_bot() == true) {
-	$status = array('chat_id' => $chat_id, 'action' => 'typing');
-	$telegram->sendChatAction($status);
-}
 
 
 $calkulatorpreg = preg_match('/[a-zA-Z]\s+([-+]?\s*\d+(?:\s*[-+*\/]\s*[-+]?\s*\d+)+)/i', $text, $hasilpreg);
@@ -367,6 +381,14 @@ if ($deteksiApakahGrup == true) {
 	$content = array('chat_id' => '-458987087', 'parse_mode' => 'html', 'text' => $dumppesan, 'disable_web_page_preview' => true);
 	$telegram->sendMessage($content);
 }
+
+
+
+if (detect_apakah_pesan_reply_ke_bot() == true) {
+	$status = array('chat_id' => $chat_id, 'action' => 'typing');
+	$telegram->sendChatAction($status);
+}
+
 
 if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	require __DIR__ . '/command/start.php';
