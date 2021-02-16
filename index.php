@@ -419,6 +419,9 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 } elseif ('/quran' == $adanParse[0] || '/quran@fadhil_riyanto_bot' == $adanParse[0]) {
 	require __DIR__ . '/command/quran.php';
 	exit;
+} elseif ('/php_doc' == $adanParse[0] || '/php_doc@fadhil_riyanto_bot' == $adanParse[0]) {
+	require __DIR__ . '/command/php_doc.php';
+	exit;
 } elseif ('/ping' == $adanParse[0] || '/ping@fadhil_riyanto_bot' == $adanParse[0]) {
 	require __DIR__ . '/command/ping.php';
 	exit;

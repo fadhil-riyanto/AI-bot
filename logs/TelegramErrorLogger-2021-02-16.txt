@@ -486,3 +486,816 @@ ref.action= typing
 #3 C:\bot telegram\index.php(283): Telegram->sendChatAction(Array)
 #4 {main}
 
+============[Date]============
+[ 2021-02-16 14:45:09  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.action= typing
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(131): Telegram->endpoint('sendChatAction', Array)
+#3 C:\bot telegram\index.php(382): Telegram->sendChatAction(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-16 14:45:46  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.action= typing
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(131): Telegram->endpoint('sendChatAction', Array)
+#3 C:\bot telegram\index.php(382): Telegram->sendChatAction(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-16 14:45:53  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.action= typing
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(131): Telegram->endpoint('sendChatAction', Array)
+#3 C:\bot telegram\index.php(382): Telegram->sendChatAction(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-16 21:16:12  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+curl_error_code:		6
+curl_error:		Could not resolve host: api.telegram.org
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804398208
+ref.message.message_id= 19393
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1613484957
+ref.message.text= /panggil@Fadhil_riyanto_bot
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 27
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, ada apa memanggil saya?
+
+ref.reply_to_message_id= 19393
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\panggil.php(4): Telegram->sendMessage(Array)
+#4 C:\bot telegram\index.php(537): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-02-16 21:17:06  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.action= typing
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(131): Telegram->endpoint('sendChatAction', Array)
+#3 C:\bot telegram\index.php(382): Telegram->sendChatAction(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-16 21:17:52  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.action= typing
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(131): Telegram->endpoint('sendChatAction', Array)
+#3 C:\bot telegram\index.php(382): Telegram->sendChatAction(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-16 21:28:12  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to delete not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804398224
+ref.message.message_id= 19411
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1613485531
+ref.message.reply_to_message.message_id= 19406
+ref.message.reply_to_message.from.id= 1489990155
+ref.message.reply_to_message.from.is_bot= true
+ref.message.reply_to_message.from.first_name= Fadhil Riyanto Bot
+ref.message.reply_to_message.from.username= Fadhil_riyanto_bot
+ref.message.reply_to_message.chat.id= -1001209274058
+ref.message.reply_to_message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.reply_to_message.chat.username= scriptiseng
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1613485471
+ref.message.reply_to_message.text= Active Connections
+
+  Proto  Local Address          Foreign Address        State
+  TCP    127.0.0.1:80           Fadhil-Riyanto:5993    ESTABLISHED
+  TCP    127.0.0.1:5758         Fadhil-Riyanto:5759    ESTABLISHED
+  TCP    127.0.0.1:5759         Fadhil-Riyanto:5758    ESTABLISHED
+  TCP    127.0.0.1:5854         Fadhil-Riyanto:5863    ESTABLISHED
+  TCP    127.0.0.1:5854         Fadhil-Riyanto:5882    ESTABLISHED
+  TCP    127.0.0.1:5854         Fadhil-Riyanto:5883    ESTABLISHED
+  TCP    127.0.0.1:5854         Fadhil-Riyanto:5908    ESTABLISHED
+  TCP    127.0.0.1:5854         Fadhil-Riyanto:5912    ESTABLISHED
+  TCP    127.0.0.1:5854         Fadhil-Riyanto:5913    ESTABLISHED
+  TCP    127.0.0.1:5854         Fadhil-Riyanto:5949    ESTABLISHED
+  TCP    127.0.0.1:5854         Fadhil-Riyanto:5988    ESTABLISHED
+  TCP    127.0.0.1:5863         Fadhil-Riyanto:5854    ESTABLISHED
+  TCP    127.0.0.1:5882         Fadhil-Riyanto:5854    ESTABLISHED
+  TCP    127.0.0.1:5883         Fadhil-Riyanto:5854    ESTABLISHED
+  TCP    127.0.0.1:5908         Fadhil-Riyanto:5854    ESTABLISHED
+  TCP    127.0.0.1:5912         Fadhil-Riyanto:5854    ESTABLISHED
+  TCP    127.0.0.1:5913         Fadhil-Riyanto:5854    ESTABLISHED
+  TCP    127.0.0.1:5949         Fadhil-Riyanto:5854    ESTABLISHED
+  TCP    127.0.0.1:5988         Fadhil-Riyanto:5854    ESTABLISHED
+  TCP    127.0.0.1:5993         Fadhil-Riyanto:http    ESTABLISHED
+  TCP    192.168.43.38:1099     13.107.51.254:https    ESTABLISHED
+  TCP    192.168.43.38:1100     13.107.42.254:https    ESTABLISHED
+  TCP    192.168.43.38:1102     20.140.48.71:https     ESTABLISHED
+  TCP    192.168.43.38:5500     91.108.56.140:https    ESTABLISHED
+  TCP    192.168.43.38:5574     5.62.53.131:http       ESTABLISHED
+  TCP    192.168.43.38:5605     40.119.211.203:https   ESTABLISHED
+  TCP    192.168.43.38:5618     prg39-011:http         ESTABLISHED
+  TCP    192.168.43.38:5829     sb-in-f188:5228        ESTABLISHED
+  TCP    192.168.43.38:5855     static:8022            ESTABLISHED
+  TCP    192.168.43.38:5941     whatsapp-cdn-shv-01-any2:https  ESTABLISHED
+  TCP    192.168.43.38:5955     117.18.232.200:https   ESTABLISHED
+  TCP    192.168.43.38:5959     117.18.232.200:https   ESTABLISHED
+  TCP    192.168.43.38:5968     23:https               ESTABLISHED
+  TCP    192.168.43.38:5969     23:https               ESTABLISHED
+  TCP    192.168.43.38:5970     23:https               ESTABLISHED
+  TCP    192.168.43.38:5971     23:https               ESTABLISHED
+  TCP    192.168.43.38:5972     23:https               ESTABLISHED
+  TCP    192.168.43.38:5973     23:https               ESTABLISHED
+  TCP    192.168.43.38:5974     23:https               ESTABLISHED
+  TCP    192.168.43.38:5975     183:https              ESTABLISHED
+  TCP    192.168.43.38:5984     91.108.56.140:https    ESTABLISHED
+  TCP    192.168.43.38:5986     91.108.56.140:https    ESTABLISHED
+  TCP    192.168.43.38:5991     172.217.194.102:https  TIME_WAIT
+  TCP    192.168.43.38:5992     172.217.194.94:https   ESTABLISHED
+  TCP    192.168.43.38:5994     ec2-3-101-16-113:3306  ESTABLISHED
+ref.message.reply_to_message.entities.0.offset= 90
+ref.message.reply_to_message.entities.0.length= 12
+ref.message.reply_to_message.entities.0.type= url
+ref.message.reply_to_message.entities.1.offset= 157
+ref.message.reply_to_message.entities.1.length= 14
+ref.message.reply_to_message.entities.1.type= url
+ref.message.reply_to_message.entities.2.offset= 224
+ref.message.reply_to_message.entities.2.length= 14
+ref.message.reply_to_message.entities.2.type= url
+ref.message.reply_to_message.entities.3.offset= 291
+ref.message.reply_to_message.entities.3.length= 14
+ref.message.reply_to_message.entities.3.type= url
+ref.message.reply_to_message.entities.4.offset= 358
+ref.message.reply_to_message.entities.4.length= 14
+ref.message.reply_to_message.entities.4.type= url
+ref.message.reply_to_message.entities.5.offset= 425
+ref.message.reply_to_message.entities.5.length= 14
+ref.message.reply_to_message.entities.5.type= url
+ref.message.reply_to_message.entities.6.offset= 492
+ref.message.reply_to_message.entities.6.length= 14
+ref.message.reply_to_message.entities.6.type= url
+ref.message.reply_to_message.entities.7.offset= 559
+ref.message.reply_to_message.entities.7.length= 14
+ref.message.reply_to_message.entities.7.type= url
+ref.message.reply_to_message.entities.8.offset= 626
+ref.message.reply_to_message.entities.8.length= 14
+ref.message.reply_to_message.entities.8.type= url
+ref.message.reply_to_message.entities.9.offset= 693
+ref.message.reply_to_message.entities.9.length= 14
+ref.message.reply_to_message.entities.9.type= url
+ref.message.reply_to_message.entities.10.offset= 760
+ref.message.reply_to_message.entities.10.length= 14
+ref.message.reply_to_message.entities.10.type= url
+ref.message.reply_to_message.entities.11.offset= 827
+ref.message.reply_to_message.entities.11.length= 14
+ref.message.reply_to_message.entities.11.type= url
+ref.message.reply_to_message.entities.12.offset= 894
+ref.message.reply_to_message.entities.12.length= 14
+ref.message.reply_to_message.entities.12.type= url
+ref.message.reply_to_message.entities.13.offset= 961
+ref.message.reply_to_message.entities.13.length= 14
+ref.message.reply_to_message.entities.13.type= url
+ref.message.reply_to_message.entities.14.offset= 1028
+ref.message.reply_to_message.entities.14.length= 14
+ref.message.reply_to_message.entities.14.type= url
+ref.message.reply_to_message.entities.15.offset= 1095
+ref.message.reply_to_message.entities.15.length= 14
+ref.message.reply_to_message.entities.15.type= url
+ref.message.reply_to_message.entities.16.offset= 1162
+ref.message.reply_to_message.entities.16.length= 14
+ref.message.reply_to_message.entities.16.type= url
+ref.message.reply_to_message.entities.17.offset= 1229
+ref.message.reply_to_message.entities.17.length= 14
+ref.message.reply_to_message.entities.17.type= url
+ref.message.reply_to_message.entities.18.offset= 1296
+ref.message.reply_to_message.entities.18.length= 14
+ref.message.reply_to_message.entities.18.type= url
+ref.message.reply_to_message.entities.19.offset= 1363
+ref.message.reply_to_message.entities.19.length= 14
+ref.message.reply_to_message.entities.19.type= url
+ref.message.reply_to_message.entities.20.offset= 1430
+ref.message.reply_to_message.entities.20.length= 18
+ref.message.reply_to_message.entities.20.type= url
+ref.message.reply_to_message.entities.21.offset= 1453
+ref.message.reply_to_message.entities.21.length= 13
+ref.message.reply_to_message.entities.21.type= url
+ref.message.reply_to_message.entities.22.offset= 1497
+ref.message.reply_to_message.entities.22.length= 18
+ref.message.reply_to_message.entities.22.type= url
+ref.message.reply_to_message.entities.23.offset= 1520
+ref.message.reply_to_message.entities.23.length= 13
+ref.message.reply_to_message.entities.23.type= url
+ref.message.reply_to_message.entities.24.offset= 1564
+ref.message.reply_to_message.entities.24.length= 18
+ref.message.reply_to_message.entities.24.type= url
+ref.message.reply_to_message.entities.25.offset= 1587
+ref.message.reply_to_message.entities.25.length= 12
+ref.message.reply_to_message.entities.25.type= url
+ref.message.reply_to_message.entities.26.offset= 1631
+ref.message.reply_to_message.entities.26.length= 18
+ref.message.reply_to_message.entities.26.type= url
+ref.message.reply_to_message.entities.27.offset= 1654
+ref.message.reply_to_message.entities.27.length= 13
+ref.message.reply_to_message.entities.27.type= url
+ref.message.reply_to_message.entities.28.offset= 1698
+ref.message.reply_to_message.entities.28.length= 18
+ref.message.reply_to_message.entities.28.type= url
+ref.message.reply_to_message.entities.29.offset= 1721
+ref.message.reply_to_message.entities.29.length= 11
+ref.message.reply_to_message.entities.29.type= url
+ref.message.reply_to_message.entities.30.offset= 1765
+ref.message.reply_to_message.entities.30.length= 18
+ref.message.reply_to_message.entities.30.type= url
+ref.message.reply_to_message.entities.31.offset= 1788
+ref.message.reply_to_message.entities.31.length= 14
+ref.message.reply_to_message.entities.31.type= url
+ref.message.reply_to_message.entities.32.offset= 1832
+ref.message.reply_to_message.entities.32.length= 18
+ref.message.reply_to_message.entities.32.type= url
+ref.message.reply_to_message.entities.33.offset= 1899
+ref.message.reply_to_message.entities.33.length= 18
+ref.message.reply_to_message.entities.33.type= url
+ref.message.reply_to_message.entities.34.offset= 1966
+ref.message.reply_to_message.entities.34.length= 18
+ref.message.reply_to_message.entities.34.type= url
+ref.message.reply_to_message.entities.35.offset= 2033
+ref.message.reply_to_message.entities.35.length= 18
+ref.message.reply_to_message.entities.35.type= url
+ref.message.reply_to_message.entities.36.offset= 2109
+ref.message.reply_to_message.entities.36.length= 18
+ref.message.reply_to_message.entities.36.type= url
+ref.message.reply_to_message.entities.37.offset= 2132
+ref.message.reply_to_message.entities.37.length= 14
+ref.message.reply_to_message.entities.37.type= url
+ref.message.reply_to_message.entities.38.offset= 2176
+ref.message.reply_to_message.entities.38.length= 18
+ref.message.reply_to_message.entities.38.type= url
+ref.message.reply_to_message.entities.39.offset= 2199
+ref.message.reply_to_message.entities.39.length= 14
+ref.message.reply_to_message.entities.39.type= url
+ref.message.reply_to_message.entities.40.offset= 2243
+ref.message.reply_to_message.entities.40.length= 18
+ref.message.reply_to_message.entities.40.type= url
+ref.message.reply_to_message.entities.41.offset= 2310
+ref.message.reply_to_message.entities.41.length= 18
+ref.message.reply_to_message.entities.41.type= url
+ref.message.reply_to_message.entities.42.offset= 2377
+ref.message.reply_to_message.entities.42.length= 18
+ref.message.reply_to_message.entities.42.type= url
+ref.message.reply_to_message.entities.43.offset= 2444
+ref.message.reply_to_message.entities.43.length= 18
+ref.message.reply_to_message.entities.43.type= url
+ref.message.reply_to_message.entities.44.offset= 2511
+ref.message.reply_to_message.entities.44.length= 18
+ref.message.reply_to_message.entities.44.type= url
+ref.message.reply_to_message.entities.45.offset= 2578
+ref.message.reply_to_message.entities.45.length= 18
+ref.message.reply_to_message.entities.45.type= url
+ref.message.reply_to_message.entities.46.offset= 2645
+ref.message.reply_to_message.entities.46.length= 18
+ref.message.reply_to_message.entities.46.type= url
+ref.message.reply_to_message.entities.47.offset= 2712
+ref.message.reply_to_message.entities.47.length= 18
+ref.message.reply_to_message.entities.47.type= url
+ref.message.reply_to_message.entities.48.offset= 2779
+ref.message.reply_to_message.entities.48.length= 18
+ref.message.reply_to_message.entities.48.type= url
+ref.message.reply_to_message.entities.49.offset= 2802
+ref.message.reply_to_message.entities.49.length= 13
+ref.message.reply_to_message.entities.49.type= url
+ref.message.reply_to_message.entities.50.offset= 2846
+ref.message.reply_to_message.entities.50.length= 18
+ref.message.reply_to_message.entities.50.type= url
+ref.message.reply_to_message.entities.51.offset= 2869
+ref.message.reply_to_message.entities.51.length= 13
+ref.message.reply_to_message.entities.51.type= url
+ref.message.reply_to_message.entities.52.offset= 2913
+ref.message.reply_to_message.entities.52.length= 18
+ref.message.reply_to_message.entities.52.type= url
+ref.message.reply_to_message.entities.53.offset= 2936
+ref.message.reply_to_message.entities.53.length= 15
+ref.message.reply_to_message.entities.53.type= url
+ref.message.reply_to_message.entities.54.offset= 2978
+ref.message.reply_to_message.entities.54.length= 18
+ref.message.reply_to_message.entities.54.type= url
+ref.message.reply_to_message.entities.55.offset= 3001
+ref.message.reply_to_message.entities.55.length= 14
+ref.message.reply_to_message.entities.55.type= url
+ref.message.reply_to_message.entities.56.offset= 3045
+ref.message.reply_to_message.entities.56.length= 18
+ref.message.reply_to_message.entities.56.type= url
+ref.message.text= /sudo del
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.message_id= 19406
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(548): Telegram->endpoint('deleteMessage', Array)
+#3 C:\bot telegram\command\sudo.php(102): Telegram->deleteMessage(Array)
+#4 C:\bot telegram\index.php(474): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-02-16 21:28:17  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to delete not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804398227
+ref.message.message_id= 19415
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1613485575
+ref.message.reply_to_message.message_id= 19413
+ref.message.reply_to_message.from.id= 1489990155
+ref.message.reply_to_message.from.is_bot= true
+ref.message.reply_to_message.from.first_name= Fadhil Riyanto Bot
+ref.message.reply_to_message.from.username= Fadhil_riyanto_bot
+ref.message.reply_to_message.chat.id= -1001209274058
+ref.message.reply_to_message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.reply_to_message.chat.username= scriptiseng
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1613485557
+ref.message.reply_to_message.text= Active Connections
+
+  Proto  Local Address          Foreign Address        State
+  TCP    127.0.0.1:80           Fadhil-Riyanto:5993    TIME_WAIT
+  TCP    127.0.0.1:80           Fadhil-Riyanto:6001    ESTABLISHED
+  TCP    127.0.0.1:5758         Fadhil-Riyanto:5759    ESTABLISHED
+  TCP    127.0.0.1:5759         Fadhil-Riyanto:5758    ESTABLISHED
+  TCP    127.0.0.1:5854         Fadhil-Riyanto:5863    ESTABLISHED
+  TCP    127.0.0.1:5854         Fadhil-Riyanto:5882    ESTABLISHED
+  TCP    127.0.0.1:5854         Fadhil-Riyanto:5883    ESTABLISHED
+  TCP    127.0.0.1:5854         Fadhil-Riyanto:5908    ESTABLISHED
+  TCP    127.0.0.1:5854         Fadhil-Riyanto:5912    ESTABLISHED
+  TCP    127.0.0.1:5854         Fadhil-Riyanto:5913    ESTABLISHED
+  TCP    127.0.0.1:5854         Fadhil-Riyanto:5949    ESTABLISHED
+  TCP    127.0.0.1:5854         Fadhil-Riyanto:5988    ESTABLISHED
+  TCP    127.0.0.1:5854         Fadhil-Riyanto:6000    ESTABLISHED
+  TCP    127.0.0.1:5863         Fadhil-Riyanto:5854    ESTABLISHED
+  TCP    127.0.0.1:5882         Fadhil-Riyanto:5854    ESTABLISHED
+  TCP    127.0.0.1:5883         Fadhil-Riyanto:5854    ESTABLISHED
+  TCP    127.0.0.1:5908         Fadhil-Riyanto:5854    ESTABLISHED
+  TCP    127.0.0.1:5912         Fadhil-Riyanto:5854    ESTABLISHED
+  TCP    127.0.0.1:5913         Fadhil-Riyanto:5854    ESTABLISHED
+  TCP    127.0.0.1:5949         Fadhil-Riyanto:5854    ESTABLISHED
+  TCP    127.0.0.1:5988         Fadhil-Riyanto:5854    ESTABLISHED
+  TCP    127.0.0.1:6000         Fadhil-Riyanto:5854    ESTABLISHED
+  TCP    127.0.0.1:6001         Fadhil-Riyanto:http    ESTABLISHED
+  TCP    127.0.0.1:6007         Fadhil-Riyanto:6006    TIME_WAIT
+  TCP    192.168.43.38:1099     13.107.51.254:https    ESTABLISHED
+  TCP    192.168.43.38:1100     13.107.42.254:https    ESTABLISHED
+  TCP    192.168.43.38:1102     20.140.48.71:https     ESTABLISHED
+  TCP    192.168.43.38:5500     91.108.56.140:https    ESTABLISHED
+  TCP    192.168.43.38:5574     5.62.53.131:http       ESTABLISHED
+  TCP    192.168.43.38:5605     40.119.211.203:https   ESTABLISHED
+  TCP    192.168.43.38:5618     prg39-011:http         ESTABLISHED
+  TCP    192.168.43.38:5829     sb-in-f188:5228        ESTABLISHED
+  TCP    192.168.43.38:5855     static:8022            ESTABLISHED
+  TCP    192.168.43.38:5941     whatsapp-cdn-shv-01-any2:https  ESTABLISHED
+  TCP    192.168.43.38:5955     117.18.232.200:https   CLOSE_WAIT
+  TCP    192.168.43.38:5959     117.18.232.200:https   CLOSE_WAIT
+  TCP    192.168.43.38:5984     91.108.56.140:https    ESTABLISHED
+  TCP    192.168.43.38:5994     ec2-3-101-16-113:3306  TIME_WAIT
+  TCP    192.168.43.38:5998     91.108.56.140:https    TIME_WAIT
+  TCP    192.168.43.38:6002     91.108.56.140:https    ESTABLISHED
+  TCP    192.168.43.38:6004     172.217.194.102:https  TIME_WAIT
+  TCP    192.168.43.38:6005     172.217.194.102:https  TIME_WAIT
+  TCP    192.168.43.38:6010     149.154.167.220:https  TIME_WAIT
+  TCP    192.168.43.38:6011     ec2-3-101-16-113:3306  ESTABLISHED
+ref.message.reply_to_message.entities.0.offset= 90
+ref.message.reply_to_message.entities.0.length= 12
+ref.message.reply_to_message.entities.0.type= url
+ref.message.reply_to_message.entities.1.offset= 155
+ref.message.reply_to_message.entities.1.length= 12
+ref.message.reply_to_message.entities.1.type= url
+ref.message.reply_to_message.entities.2.offset= 222
+ref.message.reply_to_message.entities.2.length= 14
+ref.message.reply_to_message.entities.2.type= url
+ref.message.reply_to_message.entities.3.offset= 289
+ref.message.reply_to_message.entities.3.length= 14
+ref.message.reply_to_message.entities.3.type= url
+ref.message.reply_to_message.entities.4.offset= 356
+ref.message.reply_to_message.entities.4.length= 14
+ref.message.reply_to_message.entities.4.type= url
+ref.message.reply_to_message.entities.5.offset= 423
+ref.message.reply_to_message.entities.5.length= 14
+ref.message.reply_to_message.entities.5.type= url
+ref.message.reply_to_message.entities.6.offset= 490
+ref.message.reply_to_message.entities.6.length= 14
+ref.message.reply_to_message.entities.6.type= url
+ref.message.reply_to_message.entities.7.offset= 557
+ref.message.reply_to_message.entities.7.length= 14
+ref.message.reply_to_message.entities.7.type= url
+ref.message.reply_to_message.entities.8.offset= 624
+ref.message.reply_to_message.entities.8.length= 14
+ref.message.reply_to_message.entities.8.type= url
+ref.message.reply_to_message.entities.9.offset= 691
+ref.message.reply_to_message.entities.9.length= 14
+ref.message.reply_to_message.entities.9.type= url
+ref.message.reply_to_message.entities.10.offset= 758
+ref.message.reply_to_message.entities.10.length= 14
+ref.message.reply_to_message.entities.10.type= url
+ref.message.reply_to_message.entities.11.offset= 825
+ref.message.reply_to_message.entities.11.length= 14
+ref.message.reply_to_message.entities.11.type= url
+ref.message.reply_to_message.entities.12.offset= 892
+ref.message.reply_to_message.entities.12.length= 14
+ref.message.reply_to_message.entities.12.type= url
+ref.message.reply_to_message.entities.13.offset= 959
+ref.message.reply_to_message.entities.13.length= 14
+ref.message.reply_to_message.entities.13.type= url
+ref.message.reply_to_message.entities.14.offset= 1026
+ref.message.reply_to_message.entities.14.length= 14
+ref.message.reply_to_message.entities.14.type= url
+ref.message.reply_to_message.entities.15.offset= 1093
+ref.message.reply_to_message.entities.15.length= 14
+ref.message.reply_to_message.entities.15.type= url
+ref.message.reply_to_message.entities.16.offset= 1160
+ref.message.reply_to_message.entities.16.length= 14
+ref.message.reply_to_message.entities.16.type= url
+ref.message.reply_to_message.entities.17.offset= 1227
+ref.message.reply_to_message.entities.17.length= 14
+ref.message.reply_to_message.entities.17.type= url
+ref.message.reply_to_message.entities.18.offset= 1294
+ref.message.reply_to_message.entities.18.length= 14
+ref.message.reply_to_message.entities.18.type= url
+ref.message.reply_to_message.entities.19.offset= 1361
+ref.message.reply_to_message.entities.19.length= 14
+ref.message.reply_to_message.entities.19.type= url
+ref.message.reply_to_message.entities.20.offset= 1428
+ref.message.reply_to_message.entities.20.length= 14
+ref.message.reply_to_message.entities.20.type= url
+ref.message.reply_to_message.entities.21.offset= 1495
+ref.message.reply_to_message.entities.21.length= 14
+ref.message.reply_to_message.entities.21.type= url
+ref.message.reply_to_message.entities.22.offset= 1562
+ref.message.reply_to_message.entities.22.length= 14
+ref.message.reply_to_message.entities.22.type= url
+ref.message.reply_to_message.entities.23.offset= 1629
+ref.message.reply_to_message.entities.23.length= 14
+ref.message.reply_to_message.entities.23.type= url
+ref.message.reply_to_message.entities.24.offset= 1694
+ref.message.reply_to_message.entities.24.length= 18
+ref.message.reply_to_message.entities.24.type= url
+ref.message.reply_to_message.entities.25.offset= 1717
+ref.message.reply_to_message.entities.25.length= 13
+ref.message.reply_to_message.entities.25.type= url
+ref.message.reply_to_message.entities.26.offset= 1761
+ref.message.reply_to_message.entities.26.length= 18
+ref.message.reply_to_message.entities.26.type= url
+ref.message.reply_to_message.entities.27.offset= 1784
+ref.message.reply_to_message.entities.27.length= 13
+ref.message.reply_to_message.entities.27.type= url
+ref.message.reply_to_message.entities.28.offset= 1828
+ref.message.reply_to_message.entities.28.length= 18
+ref.message.reply_to_message.entities.28.type= url
+ref.message.reply_to_message.entities.29.offset= 1851
+ref.message.reply_to_message.entities.29.length= 12
+ref.message.reply_to_message.entities.29.type= url
+ref.message.reply_to_message.entities.30.offset= 1895
+ref.message.reply_to_message.entities.30.length= 18
+ref.message.reply_to_message.entities.30.type= url
+ref.message.reply_to_message.entities.31.offset= 1918
+ref.message.reply_to_message.entities.31.length= 13
+ref.message.reply_to_message.entities.31.type= url
+ref.message.reply_to_message.entities.32.offset= 1962
+ref.message.reply_to_message.entities.32.length= 18
+ref.message.reply_to_message.entities.32.type= url
+ref.message.reply_to_message.entities.33.offset= 1985
+ref.message.reply_to_message.entities.33.length= 11
+ref.message.reply_to_message.entities.33.type= url
+ref.message.reply_to_message.entities.34.offset= 2029
+ref.message.reply_to_message.entities.34.length= 18
+ref.message.reply_to_message.entities.34.type= url
+ref.message.reply_to_message.entities.35.offset= 2052
+ref.message.reply_to_message.entities.35.length= 14
+ref.message.reply_to_message.entities.35.type= url
+ref.message.reply_to_message.entities.36.offset= 2096
+ref.message.reply_to_message.entities.36.length= 18
+ref.message.reply_to_message.entities.36.type= url
+ref.message.reply_to_message.entities.37.offset= 2163
+ref.message.reply_to_message.entities.37.length= 18
+ref.message.reply_to_message.entities.37.type= url
+ref.message.reply_to_message.entities.38.offset= 2230
+ref.message.reply_to_message.entities.38.length= 18
+ref.message.reply_to_message.entities.38.type= url
+ref.message.reply_to_message.entities.39.offset= 2297
+ref.message.reply_to_message.entities.39.length= 18
+ref.message.reply_to_message.entities.39.type= url
+ref.message.reply_to_message.entities.40.offset= 2373
+ref.message.reply_to_message.entities.40.length= 18
+ref.message.reply_to_message.entities.40.type= url
+ref.message.reply_to_message.entities.41.offset= 2396
+ref.message.reply_to_message.entities.41.length= 14
+ref.message.reply_to_message.entities.41.type= url
+ref.message.reply_to_message.entities.42.offset= 2439
+ref.message.reply_to_message.entities.42.length= 18
+ref.message.reply_to_message.entities.42.type= url
+ref.message.reply_to_message.entities.43.offset= 2462
+ref.message.reply_to_message.entities.43.length= 14
+ref.message.reply_to_message.entities.43.type= url
+ref.message.reply_to_message.entities.44.offset= 2505
+ref.message.reply_to_message.entities.44.length= 18
+ref.message.reply_to_message.entities.44.type= url
+ref.message.reply_to_message.entities.45.offset= 2528
+ref.message.reply_to_message.entities.45.length= 13
+ref.message.reply_to_message.entities.45.type= url
+ref.message.reply_to_message.entities.46.offset= 2572
+ref.message.reply_to_message.entities.46.length= 18
+ref.message.reply_to_message.entities.46.type= url
+ref.message.reply_to_message.entities.47.offset= 2637
+ref.message.reply_to_message.entities.47.length= 18
+ref.message.reply_to_message.entities.47.type= url
+ref.message.reply_to_message.entities.48.offset= 2660
+ref.message.reply_to_message.entities.48.length= 13
+ref.message.reply_to_message.entities.48.type= url
+ref.message.reply_to_message.entities.49.offset= 2702
+ref.message.reply_to_message.entities.49.length= 18
+ref.message.reply_to_message.entities.49.type= url
+ref.message.reply_to_message.entities.50.offset= 2725
+ref.message.reply_to_message.entities.50.length= 13
+ref.message.reply_to_message.entities.50.type= url
+ref.message.reply_to_message.entities.51.offset= 2769
+ref.message.reply_to_message.entities.51.length= 18
+ref.message.reply_to_message.entities.51.type= url
+ref.message.reply_to_message.entities.52.offset= 2792
+ref.message.reply_to_message.entities.52.length= 15
+ref.message.reply_to_message.entities.52.type= url
+ref.message.reply_to_message.entities.53.offset= 2834
+ref.message.reply_to_message.entities.53.length= 18
+ref.message.reply_to_message.entities.53.type= url
+ref.message.reply_to_message.entities.54.offset= 2857
+ref.message.reply_to_message.entities.54.length= 15
+ref.message.reply_to_message.entities.54.type= url
+ref.message.reply_to_message.entities.55.offset= 2899
+ref.message.reply_to_message.entities.55.length= 18
+ref.message.reply_to_message.entities.55.type= url
+ref.message.reply_to_message.entities.56.offset= 2922
+ref.message.reply_to_message.entities.56.length= 15
+ref.message.reply_to_message.entities.56.type= url
+ref.message.reply_to_message.entities.57.offset= 2964
+ref.message.reply_to_message.entities.57.length= 18
+ref.message.reply_to_message.entities.57.type= url
+ref.message.text= /sudo d
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.message_id= 19413
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(548): Telegram->endpoint('deleteMessage', Array)
+#3 C:\bot telegram\command\sudo.php(102): Telegram->deleteMessage(Array)
+#4 C:\bot telegram\index.php(474): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-02-16 21:29:59  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Unexpected end tag at byte offset 0
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804398230
+ref.message.message_id= 14798
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1613485792
+ref.message.text= /php_doc microtime
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 8
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= </br></br>
+ref.reply_to_message_id= 14798
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\php_doc.php(50): Telegram->sendMessage(Array)
+#4 C:\bot telegram\index.php(423): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-02-16 21:31:30  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Unexpected end tag at byte offset 16
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804398233
+ref.message.message_id= 14806
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1613485884
+ref.message.text= /php_doc microtime
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 8
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= <b>microtime</b></br><i>(PHP 4, PHP 5, PHP 7, PHP 8)</i></br><i>microtime  &mdash; Return current Unix timestamp with microseconds </i></br></br><b>parameters : </b></br><pre>    microtime      ( bool  $as_float = false      ) : string |float  </pre><b>Description : </b>    microtime()  returns the current Unix timestamp with    microseconds. This function is only available on operating systems that    support the gettimeofday() system call.   </br></br><b>return value : </b>Return Values
+
+    By default, microtime()  returns a string  in    the form &quot;msec sec&quot;, where sec is the number of seconds     since the Unix epoch (0:00:00 January 1,1970 GMT), and msec     measures microseconds that have elapsed since sec     and is also expressed in seconds.
+
+    If as_float is set to true, then    microtime()  returns a float , which    represents the current time in seconds since the Unix epoch accurate to the    nearest microsecond.     
+ref.reply_to_message_id= 14806
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\php_doc.php(50): Telegram->sendMessage(Array)
+#4 C:\bot telegram\index.php(423): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-02-16 21:33:11  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Unsupported start tag "br" at byte offset 16
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804398234
+ref.message.message_id= 14808
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1613485985
+ref.message.text= /php_doc microtime
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 8
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= <b>microtime</b><br><i>(PHP 4, PHP 5, PHP 7, PHP 8)</i><br><i>microtime  &mdash; Return current Unix timestamp with microseconds </i><br></br><b>parameters : </b></br><pre>    microtime      ( bool  $as_float = false      ) : string |float  </pre><b>Description : </b>    microtime()  returns the current Unix timestamp with    microseconds. This function is only available on operating systems that    support the gettimeofday() system call.   <br></br><b>return value : </b>Return Values
+
+    By default, microtime()  returns a string  in    the form &quot;msec sec&quot;, where sec is the number of seconds     since the Unix epoch (0:00:00 January 1,1970 GMT), and msec     measures microseconds that have elapsed since sec     and is also expressed in seconds.
+
+    If as_float is set to true, then    microtime()  returns a float , which    represents the current time in seconds since the Unix epoch accurate to the    nearest microsecond.     
+ref.reply_to_message_id= 14808
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\php_doc.php(50): Telegram->sendMessage(Array)
+#4 C:\bot telegram\index.php(423): require('C:\\bot telegram...')
+#5 {main}
+
