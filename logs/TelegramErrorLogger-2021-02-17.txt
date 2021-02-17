@@ -1,0 +1,47 @@
+============[Date]============
+[ 2021-02-17 00:09:45  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+curl_error_code:		6
+curl_error:		Could not resolve host: api.telegram.org
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804398344
+ref.message.message_id= 14914
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1613495366
+ref.message.text= /php_doc include
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 8
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= <i>(PHP 4, PHP 5, PHP 7, PHP 8)</i>
+
+
+
+Array The documentation below also applies to require .  Files are included based on the file path given or, if none is given, the include_path specified. If the file isn&#039;t found in the include_path, include will finally check in the calling script&#039;s own directory and the current working directory before failing. The include construct will emit an E_WARNING if it cannot find a file; this is different behavior from require , which will emit an E_ERROR.  Note that both include and require raise additional E_WARNINGs, if the file cannot be accessed, before raising the final E_WARNING or E_ERROR, respectively. 
+ref.reply_to_message_id= 14914
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\php_doc.php(82): Telegram->sendMessage(Array)
+#4 C:\bot telegram\index.php(423): require('C:\\bot telegram...')
+#5 {main}
+
