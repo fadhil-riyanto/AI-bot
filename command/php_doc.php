@@ -10,6 +10,7 @@ function removeEscapedphpdocs($string)
 {
     $dict = array(
         '&mdash;' => '-',
+        '\n' => PHP_EOL,
         'Return Values' => '<b>Return Values</b>'
 
         // replace teks lainnya disini
@@ -40,19 +41,24 @@ if ($azanHilangcommand == null) {
 
     $phpdocfiles = file_get_contents(__DIR__ . "/../json_data/phpdocs/database.json");
     $phpdoc = json_decode($phpdocfiles);
+    if ($phpdoc->$funcname->name == null) {
+        $reply = 'Maaf ' . $username . ', function tidak ditemukan.';
+        $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+        $telegram->sendMessage($content);
+    } else {
+        $hasil = '<b>' . $phpdoc->$funcname->name . '</b>' . PHP_EOL .
+            '<i>' . $phpdoc->$funcname->ver . '</i>' . PHP_EOL . PHP_EOL .
+            '<pre>' . $phpdoc->$funcname->name . '</pre> - ' . $phpdoc->$funcname->desc . PHP_EOL . PHP_EOL .
+            $parameterswkwk  . PHP_EOL . PHP_EOL .
+            '<b>Description</b>' . PHP_EOL . $phpdoc->$funcname->long_desc . PHP_EOL . PHP_EOL .
+            '<b>Return value</b>' . PHP_EOL . $phpdoc->$funcname->ret_desc;
 
-    $hasil = '<b>' . $phpdoc->$funcname->name . '</b>' . PHP_EOL .
-        '<i>' . $phpdoc->$funcname->ver . '</i>' . PHP_EOL . PHP_EOL .
-        '<pre>' . $phpdoc->$funcname->name . '</pre> - ' . $phpdoc->$funcname->desc . PHP_EOL . PHP_EOL .
-        $parameterswkwk  . PHP_EOL . PHP_EOL .
-        '<b>Description</b>' . PHP_EOL . $phpdoc->$funcname->long_desc . PHP_EOL . PHP_EOL .
-        '<b>Return value</b>' . PHP_EOL . $phpdoc->$funcname->ret_desc;
-
-    $option = array(
-        array($telegram->buildInlineKeyBoardButton("Ducumentation", $url = "https://www.php.net/manual/en/" . $phpdoc->$funcname->url))
-    );
-    $keyb = $telegram->buildInlineKeyBoard($option);
-    $reply = removeEscapedphpdocs($hasil);
-    $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_markup' => $keyb, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-    $telegram->sendMessage($content);
+        $option = array(
+            array($telegram->buildInlineKeyBoardButton("Ducumentation", $url = "https://www.php.net/manual/en/" . $phpdoc->$funcname->url))
+        );
+        $keyb = $telegram->buildInlineKeyBoard($option);
+        $reply = removeEscapedphpdocs($hasil);
+        $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_markup' => $keyb, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+        $telegram->sendMessage($content);
+    }
 }
