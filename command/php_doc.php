@@ -50,14 +50,14 @@ if ($azanHilangcommand == null) {
             '<i>' . $phpdoc->$funcname->ver . '</i>' . PHP_EOL . PHP_EOL .
             '<pre>' . $phpdoc->$funcname->name . '</pre> - ' . $phpdoc->$funcname->desc . PHP_EOL . PHP_EOL .
             $parameterswkwk  . PHP_EOL . PHP_EOL .
-            '<b>Description</b>' . PHP_EOL . $phpdoc->$funcname->long_desc . PHP_EOL . PHP_EOL .
-            '<b>Return value</b>' . PHP_EOL . $phpdoc->$funcname->ret_desc;
+            '<b>Description</b>' . PHP_EOL . removeEscapedphpdocs($phpdoc->$funcname->long_desc) . PHP_EOL . PHP_EOL .
+            '<b>Return value</b>' . PHP_EOL . removeEscapedphpdocs($phpdoc->$funcname->ret_desc);
 
         $option = array(
             array($telegram->buildInlineKeyBoardButton("Ducumentation", $url = "https://www.php.net/manual/en/" . $phpdoc->$funcname->url))
         );
         $keyb = $telegram->buildInlineKeyBoard($option);
-        $reply = removeEscapedphpdocs($hasil);
+        $reply = $hasil;
         $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_markup' => $keyb, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
         $telegram->sendMessage($content);
     }
