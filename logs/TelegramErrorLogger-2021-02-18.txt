@@ -1,0 +1,126 @@
+============[Date]============
+[ 2021-02-18 13:16:23  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		401
+description:		Unauthorized
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804399379
+ref.message.message_id= 15174
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1613628981
+ref.message.text= /panggil
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 8
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.parse_mode= html
+ref.text= dari :  @fadhil_riyanto
+userid : <pre>1393342467</pre>
+konten : /panggil
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(365): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-18 13:16:24  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		401
+description:		Unauthorized
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804399379
+ref.message.message_id= 15174
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1613628981
+ref.message.text= /panggil
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 8
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.action= typing
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(131): Telegram->endpoint('sendChatAction', Array)
+#3 C:\bot telegram\hook.php(372): Telegram->sendChatAction(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-18 13:16:25  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		401
+description:		Unauthorized
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804399379
+ref.message.message_id= 15174
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1613628981
+ref.message.text= /panggil
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 8
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, ada apa memanggil saya?
+
+ref.reply_to_message_id= 15174
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\panggil.php(4): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(533): require('C:\\bot telegram...')
+#5 {main}
+
