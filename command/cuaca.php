@@ -168,7 +168,7 @@ if ($azanHilangcommand == null) {
 				break;
 
 			default:
-				$kondisi_cuaca = 'Hubungi @fadhil_riyanto untuk bug kondisi cuaca!';
+				$kondisi_cuaca = 'Hubungi ' . PUMBUAT_BOT . ' untuk bug kondisi cuaca!';
 				break;
 		}
 
