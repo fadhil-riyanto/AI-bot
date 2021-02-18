@@ -1,17 +1,7 @@
 <?php
-define('DB_HOST', 'freedb.tech');											//WAJIB
-define('DB_USERNAME', 'freedbtech_ai_bot_fadhil_riyanto');					//WAJIB
-define('DB_PASSWORD', '789b697698hyufijbbiub*&^BO&it87tbn7to&^7896');		//WAJIB
-define('DB_NAME', 'freedbtech_ai_bot_fadhil_riyanto');						//WAJIB
-define('TG_HTTP_API', '1489990155:AAHJ4-6PcvnNtvZszUeYrfKsAcICxVAfb6A');	//WAJIB
-define('USER_ID_TG_ME', '1393342467');										//WAJIB
-define('CUTLLY_API', 'fa1d93ba90dedd2ceb7d01e9bade271653373');				//WAJIB
-define('TIME_ZONE', 'Asia/Jakarta');										//WAJIB
-define('API_WEATHER_KEY', '7cf7252c68d3473681054158212501');				//WAJIB
-define('ID_BOT', '1489990155');	                                  			//WAJIB
-define('MAX_EXECUTE_SCRIPT', 5000);											//SUNNAH_ROSUL
 
 
+require __DIR__ . '/pengaturan/env.php';
 // PENJELASAN SINGKAT
 
 // DB_HOST digunakan untuk login ke database, begitu juga username dan password_get_info
@@ -148,7 +138,7 @@ $adanParse_plain_nokarakter = explode(' ', $text_plain_nokarakter);
 
 $hilangAzan = str_replace('/azan ', '', $text, $hit);
 if ($hit == 0) {
-	$hilangAzan = str_replace('/azan@fadhil_riyanto_bot ', '', $text);
+	$hilangAzan = str_replace('/azan' . USERNAME_BOT . ' ', '', $text);
 }
 function detect_grup()
 {
@@ -313,16 +303,16 @@ if ($deteksiApakahGrupwaktu != true) {
 	$chek = tracking_user_forwaktu($userID);
 	if ($chek == true) {
 		if (
-			'/help' == $adanParse[0] || '/help@fadhil_riyanto_bot' == $adanParse[0] ||
-			'/help_i' == $adanParse[0] || '/help_i@fadhil_riyanto_bot' == $adanParse[0] ||
-			'/sudo' == $adanParse[0] || '/sudo@fadhil_riyanto_bot' == $adanParse[0] ||
-			'/bucin' == $adanParse[0] || '/bucin@fadhil_riyanto_bot' == $adanParse[0] ||
-			'/bucin_i' == $adanParse[0] || '/bucin_i@fadhil_riyanto_bot' == $adanParse[0] ||
-			'/berita' == $adanParse[0] || '/berita@fadhil_riyanto_bot' == $adanParse[0] ||
-			'/berita_i' == $adanParse[0] || '/berita_i@fadhil_riyanto_bot' == $adanParse[0] ||
-			'/brainly' == $adanParse[0] || '/brainly@fadhil_riyanto_bot' == $adanParse[0] ||
-			'/brainly_i' == $adanParse[0] || '/brainly_i@fadhil_riyanto_bot' == $adanParse[0] ||
-			'/callback_q' == $adanParse[0] || '/callback_q@fadhil_riyanto_bot' == $adanParse[0]
+			'/help' == $adanParse[0] || '/help' . USERNAME_BOT . '' == $adanParse[0] ||
+			'/help_i' == $adanParse[0] || '/help_i' . USERNAME_BOT . '' == $adanParse[0] ||
+			'/sudo' == $adanParse[0] || '/sudo' . USERNAME_BOT . '' == $adanParse[0] ||
+			'/bucin' == $adanParse[0] || '/bucin' . USERNAME_BOT . '' == $adanParse[0] ||
+			'/bucin_i' == $adanParse[0] || '/bucin_i' . USERNAME_BOT . '' == $adanParse[0] ||
+			'/berita' == $adanParse[0] || '/berita' . USERNAME_BOT . '' == $adanParse[0] ||
+			'/berita_i' == $adanParse[0] || '/berita_i' . USERNAME_BOT . '' == $adanParse[0] ||
+			'/brainly' == $adanParse[0] || '/brainly' . USERNAME_BOT . '' == $adanParse[0] ||
+			'/brainly_i' == $adanParse[0] || '/brainly_i' . USERNAME_BOT . '' == $adanParse[0] ||
+			'/callback_q' == $adanParse[0] || '/callback_q' . USERNAME_BOT . '' == $adanParse[0]
 		) {
 		} else {
 			$file = __DIR__ . "/json_data/user_delay_time.json";
@@ -383,57 +373,57 @@ if (detect_apakah_pesan_reply_ke_bot() == true) {
 }
 
 
-if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
+if ($text == '/start' || $text == '/start' . USERNAME_BOT . '') {
 	require __DIR__ . '/command/start.php';
 	exit;
-} elseif ('/pantun' == $adanParse[0] || '/pantun@fadhil_riyanto_bot' == $adanParse[0]) {
+} elseif ('/pantun' == $adanParse[0] || '/pantun' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/pantun.php';
 	exit;
-} elseif ('/chapcha' == $adanParse[0] || '/chapcha@fadhil_riyanto_bot' == $adanParse[0]) {
+} elseif ('/chapcha' == $adanParse[0] || '/chapcha' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/chapcha.php';
 	exit;
 } elseif (
-	'/brainly' == $adanParse[0] || '/brainly@fadhil_riyanto_bot' == $adanParse[0] ||
-	'/br' == $adanParse[0] || '/br@fadhil_riyanto_bot' == $adanParse[0]
+	'/brainly' == $adanParse[0] || '/brainly' . USERNAME_BOT . '' == $adanParse[0] ||
+	'/br' == $adanParse[0] || '/br' . USERNAME_BOT . '' == $adanParse[0]
 ) {
 	require __DIR__ . '/command/brainly.php';
 	exit;
-} elseif ('/brainly_i' == $adanParse[0] || '/brainly_i@fadhil_riyanto_bot' == $adanParse[0]) {
+} elseif ('/brainly_i' == $adanParse[0] || '/brainly_i' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/brainly_i.php';
 	exit;
-} elseif ('/debug' == $adanParse[0] || '/debug@fadhil_riyanto_bot' == $adanParse[0]) {
+} elseif ('/debug' == $adanParse[0] || '/debug' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/debug.php';
 	exit;
-} elseif ('/kalimat_quotes' == $adanParse[0] || '/kalimat_quotes@fadhil_riyanto_bot' == $adanParse[0]) {
+} elseif ('/kalimat_quotes' == $adanParse[0] || '/kalimat_quotes' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/kalimat_quotes.php';
 	exit;
-} elseif ('/q' == $adanParse[0] || '/q@fadhil_riyanto_bot' == $adanParse[0]) {
+} elseif ('/q' == $adanParse[0] || '/q' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/q.php';
 	exit;
-} elseif ('/cuaca' == $adanParse[0] || '/cuaca@fadhil_riyanto_bot' == $adanParse[0]) {
+} elseif ('/cuaca' == $adanParse[0] || '/cuaca' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/cuaca.php';
 	exit;
-} elseif ($text == '/debug' || $text == '/debug@fadhil_riyanto_bot') {
+} elseif ($text == '/debug' || $text == '/debug' . USERNAME_BOT . '') {
 	require __DIR__ . '/command/debug.php';
 	exit;
-} elseif ('/tr' == $adanParse[0] || '/tr@fadhil_riyanto_bot' == $adanParse[0]) {
+} elseif ('/tr' == $adanParse[0] || '/tr' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/tr.php';
 	exit;
-} elseif ('/quran' == $adanParse[0] || '/quran@fadhil_riyanto_bot' == $adanParse[0]) {
+} elseif ('/quran' == $adanParse[0] || '/quran' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/quran.php';
 	exit;
-} elseif ('/php_doc' == $adanParse[0] || '/php_doc@fadhil_riyanto_bot' == $adanParse[0]) {
+} elseif ('/php_doc' == $adanParse[0] || '/php_doc' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/php_doc.php';
 	exit;
-} elseif ('/ping' == $adanParse[0] || '/ping@fadhil_riyanto_bot' == $adanParse[0]) {
+} elseif ('/ping' == $adanParse[0] || '/ping' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/ping.php';
 	exit;
-} elseif ('/run' == $adanParse[0] || '/run@fadhil_riyanto_bot' == $adanParse[0]) {
+} elseif ('/run' == $adanParse[0] || '/run' . USERNAME_BOT . '' == $adanParse[0]) {
 	// jalankan kode memakai rextester
 
 	require __DIR__ . '/command/run.php';
 	exit;
-} elseif ('/db_add' == $adanParse[0] || '/db_add@fadhil_riyanto_bot' == $adanParse[0]) {
+} elseif ('/db_add' == $adanParse[0] || '/db_add' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/db_add.php';
 	exit;
 } elseif ($calkulatorpreg > 0) {
@@ -443,123 +433,123 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
 	$url = $telegram->sendMessage($content);
 	exit;
-} elseif ('/help_i' == $adanParse[0] || '/help_i@fadhil_riyanto_bot' == $adanParse[0]) {
+} elseif ('/help_i' == $adanParse[0] || '/help_i' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/help_i.php';
 	exit;
-} elseif ('/help' == $adanParse[0] || '/help@fadhil_riyanto_bot' == $adanParse[0]) {
+} elseif ('/help' == $adanParse[0] || '/help' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/help.php';
 	exit;
-} elseif ('/callback_q' == $adanParse[0] || '/callback_q@fadhil_riyanto_bot' == $adanParse[0]) {
+} elseif ('/callback_q' == $adanParse[0] || '/callback_q' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/callback_q.php';
 	exit;
-} elseif ('/capture' == $adanParse[0] || '/capture@fadhil_riyanto_bot' == $adanParse[0]) {
+} elseif ('/capture' == $adanParse[0] || '/capture' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/capture.php';
 	exit;
-} elseif ('/faker' == $adanParse[0] || '/faker@fadhil_riyanto_bot' == $adanParse[0]) {
+} elseif ('/faker' == $adanParse[0] || '/faker' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/faker.php';
 	exit;
-} elseif ('/berita' == $adanParse[0] || '/berita@fadhil_riyanto_bot' == $adanParse[0]) {
+} elseif ('/berita' == $adanParse[0] || '/berita' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/berita.php';
 	exit;
-} elseif ('/berita_i' == $adanParse[0] || '/berita_i@fadhil_riyanto_bot' == $adanParse[0]) {
+} elseif ('/berita_i' == $adanParse[0] || '/berita_i' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/berita_i.php';
 	exit;
-} elseif ('/wiki' == $adanParse[0] || '/wiki@fadhil_riyanto_bot' == $adanParse[0]) {
+} elseif ('/wiki' == $adanParse[0] || '/wiki' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/wiki.php';
 	exit;
-} elseif ('/kata_bijak' == $adanParse[0] || '/kata_bijak@fadhil_riyanto_bot' == $adanParse[0]) {
+} elseif ('/kata_bijak' == $adanParse[0] || '/kata_bijak' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/kata_bijak.php';
 	exit;
-} elseif ('/bucin' == $adanParse[0] || '/bucin@fadhil_riyanto_bot' == $adanParse[0]) {
+} elseif ('/bucin' == $adanParse[0] || '/bucin' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/bucin.php';
 	exit;
-} elseif ('/bucin_i' == $adanParse[0] || '/bucin_i@fadhil_riyanto_bot' == $adanParse[0]) {
+} elseif ('/bucin_i' == $adanParse[0] || '/bucin_i' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/bucin_i.php';
 	exit;
-} elseif ('/sudo' == $adanParse[0] || '/sudo@fadhil_riyanto_bot' == $adanParse[0]) {
+} elseif ('/sudo' == $adanParse[0] || '/sudo' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/sudo.php';
 	exit;
-} elseif ('/fakta_unik' == $adanParse[0] || '/fakta_unik@fadhil_riyanto_bot' == $adanParse[0]) {
+} elseif ('/fakta_unik' == $adanParse[0] || '/fakta_unik' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/fakta.php';
 	exit;
-} elseif ('/ch_serv' == $adanParse[0] || '/ch_serv@fadhil_riyanto_bot' == $adanParse[0]) {
+} elseif ('/ch_serv' == $adanParse[0] || '/ch_serv' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/ch_serv.php';
 	exit;
-} elseif ('/ip_geo' == $adanParse[0] || '/ip_geo@fadhil_riyanto_bot' == $adanParse[0]) {
+} elseif ('/ip_geo' == $adanParse[0] || '/ip_geo' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/ip_geo.php';
 	exit;
-} elseif ('/tulis' == $adanParse[0] || '/tulis@fadhil_riyanto_bot' == $adanParse[0]) {
+} elseif ('/tulis' == $adanParse[0] || '/tulis' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/tulis.php';
 	exit;
-} elseif ('/get_github_user' == $adanParse[0] || '/get_github_user@fadhil_riyanto_bot' == $adanParse[0]) {
+} elseif ('/get_github_user' == $adanParse[0] || '/get_github_user' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/get_github_user.php';
 	exit;
-} elseif ($text == '/berhenti' || $text == '/berhenti@fadhil_riyanto_bot') {
+} elseif ($text == '/berhenti' || $text == '/berhenti' . USERNAME_BOT . '') {
 	require __DIR__ . '/command/berhenti.php';
 	exit;
-} elseif ('/spam' == $adanParse[0] || '/spam@fadhil_riyanto_bot' == $adanParse[0]) {
+} elseif ('/spam' == $adanParse[0] || '/spam' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/spam.php';
 	exit;
-} elseif ('/get_ip' == $adanParse[0] || '/get_ip@fadhil_riyanto_bot' == $adanParse[0]) {
+} elseif ('/get_ip' == $adanParse[0] || '/get_ip' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/get_ip.php';
 	exit;
-} elseif ('/get_mx' == $adanParse[0] || '/get_mx@fadhil_riyanto_bot' == $adanParse[0]) {
+} elseif ('/get_mx' == $adanParse[0] || '/get_mx' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/get_mx.php';
 	exit;
-} elseif ('/get_ns' == $adanParse[0] || '/get_ns@fadhil_riyanto_bot' == $adanParse[0]) {
+} elseif ('/get_ns' == $adanParse[0] || '/get_ns' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/get_ns.php';
 	exit;
-} elseif ('/get_a' == $adanParse[0] || '/get_a@fadhil_riyanto_bot' == $adanParse[0]) {
+} elseif ('/get_a' == $adanParse[0] || '/get_a' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/get_a.php';
 	exit;
-} elseif ('/get_aaaa' == $adanParse[0] || '/get_aaaa@fadhil_riyanto_bot' == $adanParse[0]) {
+} elseif ('/get_aaaa' == $adanParse[0] || '/get_aaaa' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/get_aaaa.php';
 	exit;
-} elseif ('/get_txt' == $adanParse[0] || '/get_txt@fadhil_riyanto_bot' == $adanParse[0]) {
+} elseif ('/get_txt' == $adanParse[0] || '/get_txt' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/get_txt.php';
 	exit;
-} elseif ('/get_cname' == $adanParse[0] || '/get_cname@fadhil_riyanto_bot' == $adanParse[0]) {
+} elseif ('/get_cname' == $adanParse[0] || '/get_cname' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/get_cname.php';
 	exit;
-} elseif ($text == '/donate' || $text == '/donate@fadhil_riyanto_bot') {
+} elseif ($text == '/donate' || $text == '/donate' . USERNAME_BOT . '') {
 	require __DIR__ . '/command/donate.php';
 	exit;
-} elseif ('/short' == $adanParse[0] || '/short@fadhil_riyanto_bot' == $adanParse[0]) {
+} elseif ('/short' == $adanParse[0] || '/short' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/short.php';
 	exit;
-} elseif ('/azan' == $adanParse[0] || '/azan@fadhil_riyanto_bot' == $adanParse[0]) {
+} elseif ('/azan' == $adanParse[0] || '/azan' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/azan.php';
 	exit;
-} elseif ($text == '/gempa' || $text == '/gempa@fadhil_riyanto_bot') {
+} elseif ($text == '/gempa' || $text == '/gempa' . USERNAME_BOT . '') {
 	require __DIR__ . '/command/gempa.php';
 	exit;
-} elseif ($text == '/whoami' || $text == '/whoami@fadhil_riyanto_bot') {
+} elseif ($text == '/whoami' || $text == '/whoami' . USERNAME_BOT . '') {
 	require __DIR__ . '/command/whoami.php';
 	exit;
 } elseif (
 	$text == '/panggil' ||
-	$text == '/panggil@fadhil_riyanto_bot'
+	$text == '/panggil' . USERNAME_BOT . ''
 ) {
 	require __DIR__ . '/command/panggil.php';
 	exit;
 } elseif (
 	$text == 'ini jam berapa?' || $text === '/waktu' || $text === 'ini jam berapa ya?' || $text === 'jam sekarang!' ||
-	$text == 'lihat jam' || $text == 'waktu' || $text == '/waktu@fadhil_riyanto_bot' || $text == 'sekarang jam berapa?' ||
+	$text == 'lihat jam' || $text == 'waktu' || $text == '/waktu' . USERNAME_BOT . '' || $text == 'sekarang jam berapa?' ||
 	$text == 'sekarang jam berapa' || $text == 'jam berapa ini' || $text == 'jam berapa ini?' || $text == 'jam berapa' || $text == 'jam berapa?'
 ) {
 	require __DIR__ . '/command/waktu.php';
 	exit;
 } elseif (
 	$text == '/info' ||
-	$text == '/info@fadhil_riyanto_bot' ||
+	$text == '/info' . USERNAME_BOT . '' ||
 	$text == 'info bot fadhil riyanto'
 ) {
 	require __DIR__ . '/command/info.php';
 	exit;
-} elseif ($text == '/tanggal' || $text == '/tanggal@fadhil_riyanto_bot') {
+} elseif ($text == '/tanggal' || $text == '/tanggal' . USERNAME_BOT . '') {
 	require __DIR__ . '/command/tanggal.php';
 	exit;
-} elseif ($text == '/bug' || $text == '/bug@fadhil_riyanto_bot') {
+} elseif ($text == '/bug' || $text == '/bug' . USERNAME_BOT . '') {
 	require __DIR__ . '/command/bug.php';
 	exit;
 } elseif ($text == null) {
@@ -573,11 +563,11 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 	$text === 'update corona bagaimana?' || $text === 'corona gimana?' || $text === 'status corona' || $text === 'info covid' || $text === 'info covid 19' || $text === 'info covid19' ||
 	//slang teks disini
 	$text === 'corona bgmn?' || $text === 'corona bgmn' || $text === 'status corona' || $text === 'statiska corona' || $text === 'info covid' ||
-	$text === 'info covid 19' || $text === 'info covid19' || $text == '/corona@fadhil_riyanto_bot'
+	$text === 'info covid 19' || $text === 'info covid19' || $text == '/corona' . USERNAME_BOT . ''
 ) {
 	require __DIR__ . '/command/corona.php';
 	exit;
-} elseif ('/corona_provinsi' == $adanParse[0] || '/corona_provinsi@fadhil_riyanto_bot' == $adanParse[0]) {
+} elseif ('/corona_provinsi' == $adanParse[0] || '/corona_provinsi' . USERNAME_BOT . '' == $adanParse[0]) {
 	// exit;
 	require __DIR__ . '/command/corona_provinsi.php';
 	exit;
@@ -585,43 +575,43 @@ if ($text == '/start' || $text == '/start@fadhil_riyanto_bot') {
 // ENCRYPT TOOLS DIMULAI DARI SINI WOYY
 // LICENSE BY FADHIL
 // PAHAM?
-elseif ('/sha256' == $adanParse[0] || '/sha256@fadhil_riyanto_bot' == $adanParse[0]) {
+elseif ('/sha256' == $adanParse[0] || '/sha256' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/sha256.php';
 	exit;
-} elseif ('/sha1' == $adanParse[0] || '/sha1@fadhil_riyanto_bot' == $adanParse[0]) {
+} elseif ('/sha1' == $adanParse[0] || '/sha1' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/sha1.php';
 	exit;
-} elseif ('/sha512' == $adanParse[0] || '/sha512@fadhil_riyanto_bot' == $adanParse[0]) {
+} elseif ('/sha512' == $adanParse[0] || '/sha512' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/sha512.php';
 	exit;
-} elseif ('/sha384' == $adanParse[0] || '/sha384@fadhil_riyanto_bot' == $adanParse[0]) {
+} elseif ('/sha384' == $adanParse[0] || '/sha384' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/sha384.php';
 	exit;
-} elseif ('/md5' == $adanParse[0] || '/md5@fadhil_riyanto_bot' == $adanParse[0]) {
+} elseif ('/md5' == $adanParse[0] || '/md5' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/md5.php';
 	exit;
-} elseif ('/md4' == $adanParse[0] || '/md4@fadhil_riyanto_bot' == $adanParse[0]) {
+} elseif ('/md4' == $adanParse[0] || '/md4' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/md4.php';
 	exit;
-} elseif ('/md2' == $adanParse[0] || '/md2@fadhil_riyanto_bot' == $adanParse[0]) {
+} elseif ('/md2' == $adanParse[0] || '/md2' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/md2.php';
 	exit;
 }
 //ALL HASH DISINI
 // DIMULAI
-elseif ('/ripemd128' == $adanParse[0] || '/ripemd128@fadhil_riyanto_bot' == $adanParse[0]) {
+elseif ('/ripemd128' == $adanParse[0] || '/ripemd128' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/ripemd128.php';
 	exit;
-} elseif ('/ripemd160' == $adanParse[0] || '/ripemd160@fadhil_riyanto_bot' == $adanParse[0]) {
+} elseif ('/ripemd160' == $adanParse[0] || '/ripemd160' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/ripemd160.php';
 	exit;
-} elseif ('/ripemd256' == $adanParse[0] || '/ripemd256@fadhil_riyanto_bot' == $adanParse[0]) {
+} elseif ('/ripemd256' == $adanParse[0] || '/ripemd256' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/ripemd256.php';
 	exit;
-} elseif ('/ripemd320' == $adanParse[0] || '/ripemd320@fadhil_riyanto_bot' == $adanParse[0]) {
+} elseif ('/ripemd320' == $adanParse[0] || '/ripemd320' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/ripemd320.php';
 	exit;
-} elseif ('/whirlpool' == $adanParse[0] || '/whirlpool@fadhil_riyanto_bot' == $adanParse[0]) {
+} elseif ('/whirlpool' == $adanParse[0] || '/whirlpool' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/whirlpool.php';
 	exit;
 }
@@ -629,10 +619,10 @@ elseif ('/ripemd128' == $adanParse[0] || '/ripemd128@fadhil_riyanto_bot' == $ada
 //BASE DECODE ENCODE WOYYY
 //BASE DECODE ENCODE WOYYY
 //BASE DECODE ENCODE WOYYY
-elseif ('/base64_encode' == $adanParse[0] || '/base64_encode@fadhil_riyanto_bot' == $adanParse[0]) {
+elseif ('/base64_encode' == $adanParse[0] || '/base64_encode' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/base64_encode.php';
 	exit;
-} elseif ('/base64_decode' == $adanParse[0] || '/base64_decode@fadhil_riyanto_bot' == $adanParse[0]) {
+} elseif ('/base64_decode' == $adanParse[0] || '/base64_decode' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/base64_decode.php';
 	exit;
 } elseif ($stringPertama == '/') {
@@ -669,7 +659,7 @@ if ($detectReply == true) {
 			$telegram->sendMessage($content);
 		}
 	} elseif ($koneksi == 0) {
-		$reply = 'Maaf, saat ini kamu tidak bisa membalas pesan kamu dikarnakan database sedang error. Jadi kami hanya bisa menerima command saja untuk sementara waktu ini. Kamu bisa melaporkan ke @fadhil_riyanto selaku pembuatnya';
+		$reply = 'Maaf, saat ini kamu tidak bisa membalas pesan kamu dikarnakan database sedang error. Jadi kami hanya bisa menerima command saja untuk sementara waktu ini. Kamu bisa melaporkan ke ' . PUMBUAT_BOT . ' selaku pembuatnya';
 		$option = array(
 			//First row
 			// array($telegram->buildInlineKeyBoardButton("Button 1", $url = "http://link1.com"), $telegram->buildInlineKeyBoardButton("Button 2", $url = "http://link2.com")),
