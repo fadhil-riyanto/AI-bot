@@ -382,6 +382,12 @@ if ($text == '/start' || $text == '/start' . USERNAME_BOT . '') {
 } elseif ('/chapcha' == $adanParse[0] || '/chapcha' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/chapcha.php';
 	exit;
+} elseif ('/qr_code' == $adanParse[0] || '/qr_code' . USERNAME_BOT . '' == $adanParse[0]) {
+	require __DIR__ . '/command/qr_code.php';
+	exit;
+} elseif ('/read_qr' == $adanParse[0] || '/read_qr' . USERNAME_BOT . '' == $adanParse[0]) {
+	require __DIR__ . '/command/read_qr.php';
+	exit;
 } elseif (
 	'/brainly' == $adanParse[0] || '/brainly' . USERNAME_BOT . '' == $adanParse[0] ||
 	'/br' == $adanParse[0] || '/br' . USERNAME_BOT . '' == $adanParse[0]

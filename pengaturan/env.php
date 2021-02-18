@@ -1,9 +1,9 @@
 <?php
 define('BOT_VERSION', '10.0.2'); //informasi versi bot
 define('DB_HOST', 'freedb.tech');											//WAJIB
-define('DB_USERNAME', 'freedbtech_ai_bot_fadhil_riyanto');					//WAJIB
-define('DB_PASSWORD', '789b697698hyufijbbiub*&^BO&it87tbn7to&^7896');		//WAJIB
-define('DB_NAME', 'freedbtech_ai_bot_fadhil_riyanto');						//WAJIB
+define('DB_USERNAME', 'freedbtech_telegramdb1');					//WAJIB
+define('DB_PASSWORD', 'T*YUVT*YUtoUITOUIBTUHGBJHGbyuvtuiybtukybgtjkb');		//WAJIB
+define('DB_NAME', 'freedbtech_telegramdb1');						//WAJIB
 define('TG_HTTP_API', '1489990155:AAHJ4-6PcvnNtvZszUeYrfKsAcICxVAfb6A');	//WAJIB
 define('USER_ID_TG_ME', '1393342467');										//WAJIB
 define('CUTLLY_API', 'fa1d93ba90dedd2ceb7d01e9bade271653373');				//WAJIB

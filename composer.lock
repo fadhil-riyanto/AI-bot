@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3001c5498fd139e53d8d0d8ff1ebd4f2",
+    "content-hash": "a9a52c39e8c90a1b4baab7d15e8034bd",
     "packages": [
         {
             "name": "ammarfaizi2/brainly",

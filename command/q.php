@@ -21,7 +21,7 @@ if ($azanHilangcommand == null) {
             ->watermarkText($watermarktext)
             ->setWatermarkFontSize(34)
             ->setQuoteFontSize(60)
-            ->toFile("result.jpg");
+            ->toFile('tmp/quotestemp.png');
 
         $bot_url    = "https://api.telegram.org/bot" . TG_HTTP_API . "/";
         $url        = $bot_url . "sendPhoto?chat_id=" . $chat_id;
@@ -29,7 +29,7 @@ if ($azanHilangcommand == null) {
         $post_fields = array(
             'chat_id'   => $chat_id,
             'reply_to_message_id' => $message_id,
-            'photo'     => new CURLFile(realpath("result.jpg"))
+            'photo'     => new CURLFile(realpath('tmp/quotestemp.png'))
         );
 
         $ch = curl_init();

@@ -124,3 +124,529 @@ ref.disable_web_page_preview= true
 #4 C:\bot telegram\hook.php(533): require('C:\\bot telegram...')
 #5 {main}
 
+============[Date]============
+[ 2021-02-18 18:32:49  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+curl_error_code:		6
+curl_error:		Could not resolve host: api.telegram.org
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804399584
+ref.message.message_id= 20848
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1613647947
+ref.message.reply_to_message.message_id= 20847
+ref.message.reply_to_message.from.id= 1489990155
+ref.message.reply_to_message.from.is_bot= true
+ref.message.reply_to_message.from.first_name= Fadhil Riyanto Bot
+ref.message.reply_to_message.from.username= Fadhil_riyanto_bot
+ref.message.reply_to_message.chat.id= -1001209274058
+ref.message.reply_to_message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.reply_to_message.chat.username= scriptiseng
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1613647463
+ref.message.reply_to_message.text= {
+    "update_id": 804399583,
+    "message": {
+        "message_id": 20846,
+        "from": {
+            "id": 1393342467,
+            "is_bot": false,
+            "first_name": "Fadhil",
+            "last_name": "Riyanto",
+            "username": "fadhil_riyanto",
+            "language_code": "id"
+        },
+        "chat": {
+            "id": -1001209274058,
+            "title": "\ud835\udd44\ud835\udd52\ud835\udd64\ud835\udd6a\ud835\udd52\ud835\udd63\ud835\udd52\ud835\udd5c\ud835\udd52\ud835\udd65 \ud835\udd40\ud835\udd64\ud835\udd56\ud835\udd5f\ud835\udd58\u00a9",
+            "username": "scriptiseng",
+            "type": "supergroup"
+        },
+        "date": 1613647461,
+        "reply_to_message": {
+            "message_id": 20845,
+            "from": {
+                "id": 1393342467,
+                "is_bot": false,
+                "first_name": "Fadhil",
+                "last_name": "Riyanto",
+                "username": "fadhil_riyanto",
+                "language_code": "id"
+            },
+            "chat": {
+                "id": -1001209274058,
+                "title": "\ud835\udd44\ud835\udd52\ud835\udd64\ud835\udd6a\ud835\udd52\ud835\udd63\ud835\udd52\ud835\udd5c\ud835\udd52\ud835\udd65 \ud835\udd40\ud835\udd64\ud835\udd56\ud835\udd5f\ud835\udd58\u00a9",
+                "username": "scriptiseng",
+                "type": "supergroup"
+            },
+            "date": 1613647456,
+            "document": {
+                "file_name": "5_6156667792968909423.png",
+                "mime_type": "image\/png",
+                "thumb": {
+                    "file_id": "AAMCBQADHQJIFA7KAAJRbWAuTl_NdjDBvX0aAb76TiYrZR7EAAKdAQACVPN4VYE12O2e45ztLPeQbnQAAwEAB20AA85eAAIeBA",
+                    "file_unique_id": "AQADLPeQbnQAA85eAAI",
+                    "file_size": 13685,
+                    "width": 320,
+                    "height": 320
+                },
+                "file_id": "BQACAgUAAx0CSBQOygACUW1gLk5fzXYwwb19GgG--k4mK2UexAACnQEAAlTzeFWBNdjtnuOc7R4E",
+                "file_unique_id": "AgADnQEAAlTzeFU",
+                "file_size": 1495
+            }
+        },
+        "text": "\/sudo json",
+        "entities": [
+            {
+                "offset": 0,
+                "length": 5,
+                "type": "bot_command"
+            }
+        ]
+    }
+}
+ref.message.reply_to_message.entities.0.offset= 19
+ref.message.reply_to_message.entities.0.length= 9
+ref.message.reply_to_message.entities.0.type= phone_number
+ref.message.reply_to_message.entities.1.offset= 112
+ref.message.reply_to_message.entities.1.length= 10
+ref.message.reply_to_message.entities.1.type= phone_number
+ref.message.reply_to_message.entities.2.offset= 675
+ref.message.reply_to_message.entities.2.length= 10
+ref.message.reply_to_message.entities.2.type= phone_number
+ref.message.reply_to_message.entities.3.offset= 794
+ref.message.reply_to_message.entities.3.length= 10
+ref.message.reply_to_message.entities.3.type= phone_number
+ref.message.reply_to_message.entities.4.offset= 1409
+ref.message.reply_to_message.entities.4.length= 10
+ref.message.reply_to_message.entities.4.type= phone_number
+ref.message.reply_to_message.entities.5.offset= 1541
+ref.message.reply_to_message.entities.5.length= 4
+ref.message.reply_to_message.entities.5.type= bot_command
+ref.message.reply_to_message.entities.6.offset= 2133
+ref.message.reply_to_message.entities.6.length= 5
+ref.message.reply_to_message.entities.6.type= bot_command
+ref.message.text= /sudo del
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.action= typing
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(131): Telegram->endpoint('sendChatAction', Array)
+#3 C:\bot telegram\hook.php(372): Telegram->sendChatAction(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-18 18:46:25  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804399596
+ref.message.message_id= 15290
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1613648782
+ref.message.reply_to_message.message_id= 15280
+ref.message.reply_to_message.from.id= 1393342467
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Fadhil
+ref.message.reply_to_message.from.last_name= Riyanto
+ref.message.reply_to_message.from.username= fadhil_riyanto
+ref.message.reply_to_message.from.language_code= en
+ref.message.reply_to_message.chat.id= 1393342467
+ref.message.reply_to_message.chat.first_name= Fadhil
+ref.message.reply_to_message.chat.last_name= Riyanto
+ref.message.reply_to_message.chat.username= fadhil_riyanto
+ref.message.reply_to_message.chat.type= private
+ref.message.reply_to_message.date= 1613648420
+ref.message.reply_to_message.document.file_name= 500091000666_136596.jpg
+ref.message.reply_to_message.document.mime_type= image/jpeg
+ref.message.reply_to_message.document.thumb.file_id= AAMCBQADGQEAAjuwYC5SJP98yX1BGDfBOfqP0rl7gZ4AAn0CAAK94HBVyZvLhhoNoKsnSIZudAADAQAHbQADbWwAAh4E
+ref.message.reply_to_message.document.thumb.file_unique_id= AQADJ0iGbnQAA21sAAI
+ref.message.reply_to_message.document.thumb.file_size= 32735
+ref.message.reply_to_message.document.thumb.width= 320
+ref.message.reply_to_message.document.thumb.height= 320
+ref.message.reply_to_message.document.file_id= BQACAgUAAxkBAAI7sGAuUiT_fMl9QRg3wTn6j9K5e4GeAAJ9AgACveBwVcmby4YaDaCrHgQ
+ref.message.reply_to_message.document.file_unique_id= AgADfQIAAr3gcFU
+ref.message.reply_to_message.document.file_size= 104103
+ref.message.text= /read_qr
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 8
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 
+ref.reply_to_message_id= 15290
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\read_qr.php(33): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(389): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-02-18 18:46:38  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804399597
+ref.message.message_id= 15292
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1613648795
+ref.message.reply_to_message.message_id= 15280
+ref.message.reply_to_message.from.id= 1393342467
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Fadhil
+ref.message.reply_to_message.from.last_name= Riyanto
+ref.message.reply_to_message.from.username= fadhil_riyanto
+ref.message.reply_to_message.from.language_code= en
+ref.message.reply_to_message.chat.id= 1393342467
+ref.message.reply_to_message.chat.first_name= Fadhil
+ref.message.reply_to_message.chat.last_name= Riyanto
+ref.message.reply_to_message.chat.username= fadhil_riyanto
+ref.message.reply_to_message.chat.type= private
+ref.message.reply_to_message.date= 1613648420
+ref.message.reply_to_message.document.file_name= 500091000666_136596.jpg
+ref.message.reply_to_message.document.mime_type= image/jpeg
+ref.message.reply_to_message.document.thumb.file_id= AAMCBQADGQEAAjuwYC5SJP98yX1BGDfBOfqP0rl7gZ4AAn0CAAK94HBVyZvLhhoNoKsnSIZudAADAQAHbQADbWwAAh4E
+ref.message.reply_to_message.document.thumb.file_unique_id= AQADJ0iGbnQAA21sAAI
+ref.message.reply_to_message.document.thumb.file_size= 32735
+ref.message.reply_to_message.document.thumb.width= 320
+ref.message.reply_to_message.document.thumb.height= 320
+ref.message.reply_to_message.document.file_id= BQACAgUAAxkBAAI7sGAuUiT_fMl9QRg3wTn6j9K5e4GeAAJ9AgACveBwVcmby4YaDaCrHgQ
+ref.message.reply_to_message.document.file_unique_id= AgADfQIAAr3gcFU
+ref.message.reply_to_message.document.file_size= 104103
+ref.message.text= /read_qr
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 8
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 
+ref.reply_to_message_id= 15292
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\read_qr.php(33): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(389): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-02-18 18:49:11  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804399600
+ref.message.message_id= 15300
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1613648948
+ref.message.reply_to_message.message_id= 15280
+ref.message.reply_to_message.from.id= 1393342467
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Fadhil
+ref.message.reply_to_message.from.last_name= Riyanto
+ref.message.reply_to_message.from.username= fadhil_riyanto
+ref.message.reply_to_message.from.language_code= en
+ref.message.reply_to_message.chat.id= 1393342467
+ref.message.reply_to_message.chat.first_name= Fadhil
+ref.message.reply_to_message.chat.last_name= Riyanto
+ref.message.reply_to_message.chat.username= fadhil_riyanto
+ref.message.reply_to_message.chat.type= private
+ref.message.reply_to_message.date= 1613648420
+ref.message.reply_to_message.document.file_name= 500091000666_136596.jpg
+ref.message.reply_to_message.document.mime_type= image/jpeg
+ref.message.reply_to_message.document.thumb.file_id= AAMCBQADGQEAAjuwYC5SJP98yX1BGDfBOfqP0rl7gZ4AAn0CAAK94HBVyZvLhhoNoKsnSIZudAADAQAHbQADbWwAAh4E
+ref.message.reply_to_message.document.thumb.file_unique_id= AQADJ0iGbnQAA21sAAI
+ref.message.reply_to_message.document.thumb.file_size= 32735
+ref.message.reply_to_message.document.thumb.width= 320
+ref.message.reply_to_message.document.thumb.height= 320
+ref.message.reply_to_message.document.file_id= BQACAgUAAxkBAAI7sGAuUiT_fMl9QRg3wTn6j9K5e4GeAAJ9AgACveBwVcmby4YaDaCrHgQ
+ref.message.reply_to_message.document.file_unique_id= AgADfQIAAr3gcFU
+ref.message.reply_to_message.document.file_size= 104103
+ref.message.text= /read_qr
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 8
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 
+ref.reply_to_message_id= 15300
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\read_qr.php(33): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(389): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-02-18 19:09:41  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804399609
+ref.message.message_id= 15318
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1613650179
+ref.message.reply_to_message.message_id= 15313
+ref.message.reply_to_message.from.id= 1393342467
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Fadhil
+ref.message.reply_to_message.from.last_name= Riyanto
+ref.message.reply_to_message.from.username= fadhil_riyanto
+ref.message.reply_to_message.from.language_code= en
+ref.message.reply_to_message.chat.id= 1393342467
+ref.message.reply_to_message.chat.first_name= Fadhil
+ref.message.reply_to_message.chat.last_name= Riyanto
+ref.message.reply_to_message.chat.username= fadhil_riyanto
+ref.message.reply_to_message.chat.type= private
+ref.message.reply_to_message.date= 1613650008
+ref.message.reply_to_message.photo.0.file_id= AgACAgUAAxkBAAI70WAuWFi6FXrvHX02-dkalTMAAfdhtgACwKoxG73gcFUeYEIn3zhPZloXv290AAMBAAMCAANtAAOTFQIAAR4E
+ref.message.reply_to_message.photo.0.file_unique_id= AQADWhe_b3QAA5MVAgAB
+ref.message.reply_to_message.photo.0.file_size= 35193
+ref.message.reply_to_message.photo.0.width= 320
+ref.message.reply_to_message.photo.0.height= 320
+ref.message.reply_to_message.photo.1.file_id= AgACAgUAAxkBAAI70WAuWFi6FXrvHX02-dkalTMAAfdhtgACwKoxG73gcFUeYEIn3zhPZloXv290AAMBAAMCAAN4AAOUFQIAAR4E
+ref.message.reply_to_message.photo.1.file_unique_id= AQADWhe_b3QAA5QVAgAB
+ref.message.reply_to_message.photo.1.file_size= 104103
+ref.message.reply_to_message.photo.1.width= 640
+ref.message.reply_to_message.photo.1.height= 640
+ref.message.text= /read_qr
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 8
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 
+ref.reply_to_message_id= 15318
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\read_qr.php(32): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(389): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-02-18 19:11:32  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804399610
+ref.message.message_id= 15320
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1613650290
+ref.message.reply_to_message.message_id= 15313
+ref.message.reply_to_message.from.id= 1393342467
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Fadhil
+ref.message.reply_to_message.from.last_name= Riyanto
+ref.message.reply_to_message.from.username= fadhil_riyanto
+ref.message.reply_to_message.from.language_code= en
+ref.message.reply_to_message.chat.id= 1393342467
+ref.message.reply_to_message.chat.first_name= Fadhil
+ref.message.reply_to_message.chat.last_name= Riyanto
+ref.message.reply_to_message.chat.username= fadhil_riyanto
+ref.message.reply_to_message.chat.type= private
+ref.message.reply_to_message.date= 1613650008
+ref.message.reply_to_message.photo.0.file_id= AgACAgUAAxkBAAI70WAuWFi6FXrvHX02-dkalTMAAfdhtgACwKoxG73gcFUeYEIn3zhPZloXv290AAMBAAMCAANtAAOTFQIAAR4E
+ref.message.reply_to_message.photo.0.file_unique_id= AQADWhe_b3QAA5MVAgAB
+ref.message.reply_to_message.photo.0.file_size= 35193
+ref.message.reply_to_message.photo.0.width= 320
+ref.message.reply_to_message.photo.0.height= 320
+ref.message.reply_to_message.photo.1.file_id= AgACAgUAAxkBAAI70WAuWFi6FXrvHX02-dkalTMAAfdhtgACwKoxG73gcFUeYEIn3zhPZloXv290AAMBAAMCAAN4AAOUFQIAAR4E
+ref.message.reply_to_message.photo.1.file_unique_id= AQADWhe_b3QAA5QVAgAB
+ref.message.reply_to_message.photo.1.file_size= 104103
+ref.message.reply_to_message.photo.1.width= 640
+ref.message.reply_to_message.photo.1.height= 640
+ref.message.text= /read_qr
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 8
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 
+ref.reply_to_message_id= 15320
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\read_qr.php(32): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(389): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-02-18 19:12:31  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804399611
+ref.message.message_id= 15322
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1613650349
+ref.message.reply_to_message.message_id= 15313
+ref.message.reply_to_message.from.id= 1393342467
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Fadhil
+ref.message.reply_to_message.from.last_name= Riyanto
+ref.message.reply_to_message.from.username= fadhil_riyanto
+ref.message.reply_to_message.from.language_code= en
+ref.message.reply_to_message.chat.id= 1393342467
+ref.message.reply_to_message.chat.first_name= Fadhil
+ref.message.reply_to_message.chat.last_name= Riyanto
+ref.message.reply_to_message.chat.username= fadhil_riyanto
+ref.message.reply_to_message.chat.type= private
+ref.message.reply_to_message.date= 1613650008
+ref.message.reply_to_message.photo.0.file_id= AgACAgUAAxkBAAI70WAuWFi6FXrvHX02-dkalTMAAfdhtgACwKoxG73gcFUeYEIn3zhPZloXv290AAMBAAMCAANtAAOTFQIAAR4E
+ref.message.reply_to_message.photo.0.file_unique_id= AQADWhe_b3QAA5MVAgAB
+ref.message.reply_to_message.photo.0.file_size= 35193
+ref.message.reply_to_message.photo.0.width= 320
+ref.message.reply_to_message.photo.0.height= 320
+ref.message.reply_to_message.photo.1.file_id= AgACAgUAAxkBAAI70WAuWFi6FXrvHX02-dkalTMAAfdhtgACwKoxG73gcFUeYEIn3zhPZloXv290AAMBAAMCAAN4AAOUFQIAAR4E
+ref.message.reply_to_message.photo.1.file_unique_id= AQADWhe_b3QAA5QVAgAB
+ref.message.reply_to_message.photo.1.file_size= 104103
+ref.message.reply_to_message.photo.1.width= 640
+ref.message.reply_to_message.photo.1.height= 640
+ref.message.text= /read_qr
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 8
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 
+ref.reply_to_message_id= 15322
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\read_qr.php(32): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(389): require('C:\\bot telegram...')
+#5 {main}
+

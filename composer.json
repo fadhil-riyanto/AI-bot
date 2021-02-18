@@ -9,6 +9,7 @@
         "guzzlehttp/guzzle": "^7.2",
         "ammarfaizi2/brainly": "^1.0",
         "masokky/quotemaker": "^1.0",
-        "endroid/qr-code": "^3.9"
+        "endroid/qr-code": "^3.9",
+        "khanamiryan/qrcode-detector-decoder": "^1.0"
     }
 }
