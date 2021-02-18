@@ -1,0 +1,6 @@
+{
+	"require": {
+		"docs" : "ia adalah require",
+		"ver": "php8"
+	}
+}
