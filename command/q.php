@@ -8,8 +8,8 @@ $udahDiparse_hash = str_replace($adanParse_plain[0] . ' ', '', $text_plain_nokar
 
 $watermarktext = $namaPertama . ' ' . $namaTerakhir;
 if ($azanHilangcommand == null) {
-    $reply = 'Hai ' . $username . PHP_EOL . 'Untuk menggunakan quotes generator, gunakan command <pre>/quotes {teks atau kata}</pre>' . PHP_EOL . PHP_EOL .
-        'Contoh : <pre>/quotes kamu bagaikan bunga dipagi hari</pre>';
+    $reply = 'Hai ' . $username . PHP_EOL . 'Untuk menggunakan quotes generator, gunakan command <pre>/q {teks atau kata}</pre>' . PHP_EOL . PHP_EOL .
+        'Contoh : <pre>/q kamu bagaikan bunga dipagi hari</pre>';
     $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
     $telegram->sendMessage($content);
 } else {

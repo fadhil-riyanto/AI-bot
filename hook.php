@@ -270,21 +270,21 @@ if ($chek == true) {
 
 $calkulatorpreg = preg_match('/[a-zA-Z]\s+([-+]?\s*\d+(?:\s*[-+*\/]\s*[-+]?\s*\d+)+)/i', $text, $hasilpreg);
 
-// if (isset($text)) {
-// 	$chek_gc = detect_grup();
-// 	$nama_gc = $chat_id;
-// 	if ($chek_gc == true) {
-// 		if ($nama_gc == -1001209274058 || $nama_gc == -1001410961692) {
-// 		} else {
-// 			$reply = 'Maaf, saya diprogram oleh pemilik saya untuk tidak dimasukkan ke grup. Jika anda masih tetap memasukkan saya ke grup. maka otomatis saya akan mengeluarkan diri.';
-// 			$content1 = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-// 			$telegram->sendMessage($content1);
-// 			$content = array('chat_id' => $chat_id);
-// 			$telegram->leaveChat($content);
-// 		}
-// 	} else {
-// 	}
-// }
+if (isset($text)) {
+	$chek_gc = detect_grup();
+	$nama_gc = $chat_id;
+	if ($chek_gc == true) {
+		if ($nama_gc == -1001209274058 || $nama_gc == -1001410961692) {
+		} else {
+			$reply = 'Maaf, saya diprogram oleh pemilik saya untuk tidak dimasukkan ke grup. Jika anda masih tetap memasukkan saya ke grup. maka otomatis saya akan mengeluarkan diri.';
+			$content1 = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+			$telegram->sendMessage($content1);
+			$content = array('chat_id' => $chat_id);
+			$telegram->leaveChat($content);
+		}
+	} else {
+	}
+}
 $deteksiApakahGrupwaktu = detect_grup();
 if ($deteksiApakahGrupwaktu != true) {
 	function tracking_user_forwaktu($userID)
@@ -356,6 +356,7 @@ if ($deteksiApakahGrupwaktu != true) {
 		$anggota = file_put_contents($file, $jsonfile);
 	}
 }
+
 if ($deteksiApakahGrup == true) {
 } elseif ($deteksiApakahGrup == null) {
 	$dumppesan = 'dari : ' . $username . PHP_EOL .
@@ -632,6 +633,7 @@ elseif ('/base64_encode' == $adanParse[0] || '/base64_encode' . USERNAME_BOT . '
 	require __DIR__ . '/command/base64_decode.php';
 	exit;
 } elseif ($stringPertama == '/') {
+	require __DIR__ . '/admin_command/__init__.php';
 	// Jika ditemukan data dengan awalan coommand telegram, maka dia ngga akan diinsert ke database
 	// kita menggunakan exit agar dia keluar dari konsol
 	exit;
