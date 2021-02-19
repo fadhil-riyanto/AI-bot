@@ -539,3 +539,152 @@ ref.disable_web_page_preview= true
 #4 C:\bot telegram\hook.php(477): require('C:\\bot telegram...')
 #5 {main}
 
+============[Date]============
+[ 2021-02-19 12:37:45  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: not enough rights to manage pinned messages in the chat
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804400385
+ref.message.message_id= 21650
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1613713059
+ref.message.reply_to_message.message_id= 21648
+ref.message.reply_to_message.from.id= 1416099345
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= ɴ
+ref.message.reply_to_message.from.username= nzathon
+ref.message.reply_to_message.from.language_code= id
+ref.message.reply_to_message.chat.id= -1001209274058
+ref.message.reply_to_message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.reply_to_message.chat.username= scriptiseng
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1613712882
+ref.message.reply_to_message.text= Ntah
+ref.message.text= /pin_chat
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 9
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.message_id= 21648
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(516): Telegram->endpoint('pinChatMessage', Array)
+#3 C:\bot telegram\admin_command\pin.php(7): Telegram->pinChatMessage(Array)
+#4 C:\bot telegram\admin_command\__init__.php(122): require('C:\\bot telegram...')
+#5 C:\bot telegram\hook.php(636): require('C:\\bot telegram...')
+#6 {main}
+
+============[Date]============
+[ 2021-02-19 12:38:11  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: not enough rights to manage pinned messages in the chat
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804400386
+ref.message.message_id= 21651
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1613713088
+ref.message.reply_to_message.message_id= 21648
+ref.message.reply_to_message.from.id= 1416099345
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= ɴ
+ref.message.reply_to_message.from.username= nzathon
+ref.message.reply_to_message.from.language_code= id
+ref.message.reply_to_message.chat.id= -1001209274058
+ref.message.reply_to_message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.reply_to_message.chat.username= scriptiseng
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1613712882
+ref.message.reply_to_message.text= Ntah
+ref.message.text= /pin_chat
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 9
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.message_id= 21648
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(516): Telegram->endpoint('pinChatMessage', Array)
+#3 C:\bot telegram\admin_command\pin.php(7): Telegram->pinChatMessage(Array)
+#4 C:\bot telegram\admin_command\__init__.php(122): require('C:\\bot telegram...')
+#5 C:\bot telegram\hook.php(636): require('C:\\bot telegram...')
+#6 {main}
+
+============[Date]============
+[ 2021-02-19 13:24:14  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Expected equal sign in declaration of an attribute of the tag "a" at byte offset 0
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804400495
+ref.message.message_id= 13174
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= PHP TGdev
+ref.message.chat.username= tgdev_php_group
+ref.message.chat.type= supergroup
+ref.message.date= 1613715844
+ref.message.text= /adminlist
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 10
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= <a href="tg://user?id="1489990155 >Fadhil Riyanto Bot </a>
+<a href="tg://user?id="1393342467 >Fadhil Riyanto</a>
+<a href="tg://user?id="1153655966 >RavEthan バーチャル ✕ </a>
+ref.reply_to_message_id= 13174
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\admin_command\adminlist.php(12): Telegram->sendMessage(Array)
+#4 C:\bot telegram\admin_command\__init__.php(126): require('C:\\bot telegram...')
+#5 C:\bot telegram\hook.php(636): require('C:\\bot telegram...')
+#6 {main}
+

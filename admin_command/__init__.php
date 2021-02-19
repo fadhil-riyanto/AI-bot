@@ -1,12 +1,20 @@
 <?php
-if (detect_grup() == true) {
+
+function deteksi_grup()
+{
+    global $chat_id;
+    $pregs = substr($chat_id, 0, 1);
+    if ($pregs == '-') {
+        return true;
+    }
+}
+if (deteksi_grup() == true) {
     $delaycached = 20;
     $getlistjsonadmin = __DIR__ . '/../json_data/group_command/adminlist.json';
-    function getUseridFromeditmessage($gid)
+    function getUseridFromeditmessageinit($chat_id)
     {
         global $grupid;
         global $getlistjsonadmin;
-        global $chat_id;
         $anggota = file_get_contents($getlistjsonadmin);
         $data = json_decode($anggota, true);
         foreach ($data as $d) {
@@ -16,7 +24,7 @@ if (detect_grup() == true) {
             }
         }
     }
-    $cheker = getUseridFromeditmessage($chat_id);
+    $cheker = getUseridFromeditmessageinit($chat_id);
     if ($cheker == true) {
         $anggota = file_get_contents($getlistjsonadmin);
         $data = json_decode($anggota, true);
@@ -32,10 +40,10 @@ if (detect_grup() == true) {
 
                     $gid =  $d['gid'];
                     $admins =  $d['admin'];
-                    exit;
+                    //exit;
                 } elseif ($timedelay < 0) {
                     foreach ($data as $key => $d) {
-                        if ($d['gid'] === $grupid) {
+                        if ($d['gid'] == $grupid) {
                             $content = array('chat_id' => $chat_id);
                             $adminlist = $telegram->getChatAdministrators($content);
                             $endadmin = json_encode($adminlist);
@@ -48,7 +56,7 @@ if (detect_grup() == true) {
 
                             //get data
                             $gid =  $d['gid'];
-                            $admins =  $d['admin'];
+                            $admins =  $id_admin;
                         }
                     }
                     $jsonfile = json_encode($data, JSON_PRETTY_PRINT);
@@ -71,6 +79,7 @@ if (detect_grup() == true) {
         $data[] = array(
             "gid" => $chat_id,
             "timelapsce" => time() + $delaycached,
+            "welcometext" => null,
             "admin" => $id_admin
         );
 
@@ -81,6 +90,9 @@ if (detect_grup() == true) {
         $admins =  $id_admin;
     }
 } else {
+    $reply = 'Maaf, command ini hanya berlaku di grup saja';
+    $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+    $telegram->sendMessage($content);
 }
 
 function is_admin_grup($userID)
@@ -96,7 +108,7 @@ $isadmin = is_admin_grup($userID);
 if ($isadmin == true) {
     $kamu_admin = true;
 } else {
-    if ($adanParse[0] == '/pin' || $adanParse[0] == '/unpin') {
+    if ($adanParse[0] == '/pin_chat' || $adanParse[0] == '/lepas') {
         $kamu_admin = false;
         $reply = 'ups, kamu bukan admin';
         $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
@@ -111,4 +123,6 @@ if ($adanParseadmin[0] == '/pin') {
     require 'pin.php';
 } elseif ($adanParseadmin[0] == '/unpin') {
     require 'unpin.php';
+} elseif ($adanParseadmin[0] == '/adminlist') {
+    require 'adminlist.php';
 }
