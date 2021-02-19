@@ -52,7 +52,7 @@ if (detect_grup() == true) {
     } elseif ($cheker == null) {
         $anggota = file_get_contents($getlistjsonadmin);
         $data = json_decode($anggota, true);
-
+        //update admin
         $content = array('chat_id' => $chat_id);
         $adminlist = $telegram->getChatAdministrators($content);
         $endadmin = json_encode($adminlist);

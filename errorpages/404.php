@@ -1,10 +1,6 @@
 <!-- about -->
 <link rel="stylesheet" href="/../assets/css/404.css">
 
-<!-- end about -->
-
-
-
 <section class="wrapper">
 
     <div class="container">
@@ -46,7 +42,7 @@
         <div class="text">
             <article>
                 <p>Ups, halaman yang kamu minta gaada <br>Silahkan kembali ke halaman utama!</p>
-               
+
             </article>
         </div>
 

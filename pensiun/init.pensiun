@@ -42,6 +42,7 @@ if (detect_grup() == true) {
                 }
             }
         }
+        
     } elseif ($cheker == null) {
         $anggota = file_get_contents($getlistjsonadmin);
         $data = json_decode($anggota, true);
