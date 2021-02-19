@@ -96,7 +96,7 @@ $isadmin = is_admin_grup($userID);
 if ($isadmin == true) {
     $kamu_admin = true;
 } else {
-    if ($adanParse[0] != '/pin' || $adanParse[0] != '/unpin') {
+    if ($adanParse[0] == '/pin' || $adanParse[0] == '/unpin') {
         $kamu_admin = false;
         $reply = 'ups, kamu bukan admin';
         $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
