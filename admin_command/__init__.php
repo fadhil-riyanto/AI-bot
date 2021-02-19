@@ -79,7 +79,6 @@ if (deteksi_grup() == true) {
         $data[] = array(
             "gid" => $chat_id,
             "timelapsce" => time() + $delaycached,
-            "welcometext" => null,
             "admin" => $id_admin
         );
 
@@ -110,19 +109,31 @@ if ($isadmin == true) {
 } else {
     if ($adanParse[0] == '/pin_chat' || $adanParse[0] == '/lepas') {
         $kamu_admin = false;
-        $reply = 'ups, kamu bukan admin';
-        $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-        $telegram->sendMessage($content);
     } else {
     }
 }
 
-//require all
-$adanParseadmin = explode(' ', $text);
-if ($adanParseadmin[0] == '/pin') {
-    require 'pin.php';
-} elseif ($adanParseadmin[0] == '/unpin') {
-    require 'unpin.php';
-} elseif ($adanParseadmin[0] == '/adminlist') {
-    require 'adminlist.php';
+if ($kamu_admin == true) {
+    $adanParseadmin = explode(' ', $text);
+    if ($adanParseadmin[0] == '/pin') {
+        require 'pin.php';
+    } elseif ($adanParseadmin[0] == '/unpin') {
+        require 'unpin.php';
+    } elseif ($adanParseadmin[0] == '/adminlist') {
+        require 'adminlist.php';
+    } elseif ($adanParseadmin[0] == '/setwelcome') {
+        require 'setwelcome.php';
+    } elseif ($adanParseadmin[0] == '/welcome') {
+        require 'welcome.php';
+    }
+} elseif ($kamu_admin == false) {
+    if (
+        $adanParse[0] == '/pin' || $adanParse[0] == '/unpin' || $adanParse[0] == '/adminlist' ||
+        $adanParse[0] == '/setwelcome' || $adanParse[0] == '/welcome'
+    ) {
+        $reply = 'ups, kamu bukan admin';
+        $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+        $telegram->sendMessage($content);
+    }
 }
+//require all
