@@ -29,7 +29,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => 'bf3b5d4157f976861a60ac96ae20ebec00cd81da',
+    'reference' => '1890915b05dd44da274d60c37d19265732b5ce03',
     'name' => '__root__',
   ),
   'versions' => 
@@ -41,7 +41,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => 'bf3b5d4157f976861a60ac96ae20ebec00cd81da',
+      'reference' => '1890915b05dd44da274d60c37d19265732b5ce03',
     ),
     'ammarfaizi2/brainly' => 
     array (
@@ -244,6 +244,16 @@ private static $installed = array (
       array (
       ),
       'reference' => 'ff82616135204e2d29aca51c56def3330b994b1c',
+    ),
+    'thingengineer/mysqli-database-class' => 
+    array (
+      'pretty_version' => 'dev-master',
+      'version' => 'dev-master',
+      'aliases' => 
+      array (
+        0 => '9999999-dev',
+      ),
+      'reference' => '16564ba0717fad64617a1ce4a8d3f9b90e68c7c2',
     ),
     'zendframework/zend-escaper' => 
     array (

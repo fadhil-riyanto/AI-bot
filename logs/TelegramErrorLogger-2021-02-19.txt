@@ -688,3 +688,391 @@ ref.disable_web_page_preview= true
 #5 C:\bot telegram\hook.php(636): require('C:\\bot telegram...')
 #6 {main}
 
+============[Date]============
+[ 2021-02-19 20:06:07  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: reply message not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804400980
+ref.message.message_id= 22300
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1613739921
+ref.message.text= /setwelcome
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 11
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= isikan parameter!!
+ref.parse_mode= html
+ref.reply_to_message_id= 22300
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\admin_command\setwelcome.php(8): Telegram->sendMessage(Array)
+#4 C:\bot telegram\admin_command\__init__.php(128): require('C:\\bot telegram...')
+#5 C:\bot telegram\hook.php(636): require('C:\\bot telegram...')
+#6 {main}
+
+============[Date]============
+[ 2021-02-19 21:03:25  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804401029
+ref.message.message_id= 22368
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1613743399
+ref.message.text= /debug
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 
+ref.reply_to_message_id= 22368
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\debug.php(27): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(436): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-02-19 21:19:49  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: text must be encoded in UTF-8
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804401041
+ref.message.message_id= 13223
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= PHP TGdev
+ref.message.chat.username= tgdev_php_group
+ref.message.chat.type= supergroup
+ref.message.date= 1613744385
+ref.message.new_chat_participant.id= 1269084693
+ref.message.new_chat_participant.is_bot= true
+ref.message.new_chat_participant.first_name= Uang tunai gratis💵💸
+ref.message.new_chat_participant.username= uangtunai_bot
+ref.message.new_chat_member.id= 1269084693
+ref.message.new_chat_member.is_bot= true
+ref.message.new_chat_member.first_name= Uang tunai gratis💵💸
+ref.message.new_chat_member.username= uangtunai_bot
+ref.message.new_chat_members.0.id= 1269084693
+ref.message.new_chat_members.0.is_bot= true
+ref.message.new_chat_members.0.first_name= Uang tunai gratis💵💸
+ref.message.new_chat_members.0.username= uangtunai_bot
+
+
+[ref]
+ref.text= selamat datang uang tunai gratis�������� di grup ini...semoga betah
+ref.reply_to_message_id= 13223
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(421): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-19 21:34:01  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: reply message not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804401066
+ref.message.message_id= 22421
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1613745236
+ref.message.new_chat_participant.id= 1153655966
+ref.message.new_chat_participant.is_bot= false
+ref.message.new_chat_participant.first_name= RavEthan バーチャル ✕
+ref.message.new_chat_participant.username= TheEthaners
+ref.message.new_chat_participant.language_code= id
+ref.message.new_chat_member.id= 1153655966
+ref.message.new_chat_member.is_bot= false
+ref.message.new_chat_member.first_name= RavEthan バーチャル ✕
+ref.message.new_chat_member.username= TheEthaners
+ref.message.new_chat_member.language_code= id
+ref.message.new_chat_members.0.id= 1153655966
+ref.message.new_chat_members.0.is_bot= false
+ref.message.new_chat_members.0.first_name= RavEthan バーチャル ✕
+ref.message.new_chat_members.0.username= TheEthaners
+ref.message.new_chat_members.0.language_code= id
+
+
+[ref]
+ref.text= hai <a href="tg://user?id=" >ravethan バーチャル ✕ </a> jangan lupa baca rules, oh iya kak ravethan バーチャル ✕ jangan lupa jaga kesehatan dan pakai masker yak, id kamu  gunakan untuk bertanya
+ref.reply_to_message_id= 22421
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(427): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-19 21:41:10  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: reply message not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804401072
+ref.message.message_id= 22433
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1613745362
+ref.message.new_chat_participant.id= 1153655966
+ref.message.new_chat_participant.is_bot= false
+ref.message.new_chat_participant.first_name= RavEthan バーチャル ✕
+ref.message.new_chat_participant.username= TheEthaners
+ref.message.new_chat_participant.language_code= id
+ref.message.new_chat_member.id= 1153655966
+ref.message.new_chat_member.is_bot= false
+ref.message.new_chat_member.first_name= RavEthan バーチャル ✕
+ref.message.new_chat_member.username= TheEthaners
+ref.message.new_chat_member.language_code= id
+ref.message.new_chat_members.0.id= 1153655966
+ref.message.new_chat_members.0.is_bot= false
+ref.message.new_chat_members.0.first_name= RavEthan バーチャル ✕
+ref.message.new_chat_members.0.username= TheEthaners
+ref.message.new_chat_members.0.language_code= id
+
+
+[ref]
+ref.text= hai <a href="tg://user?id=1153655966" >ravethan バーチャル ✕ </a> jangan lupa baca rules, oh iya kak ravethan バーチャル ✕ jangan lupa jaga kesehatan dan pakai masker yak, id kamu 1153655966 gunakan untuk bertanya
+ref.reply_to_message_id= 22433
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(427): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-19 21:41:22  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: reply message not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804401073
+ref.message.message_id= 22436
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1613745638
+ref.message.new_chat_participant.id= 1153655966
+ref.message.new_chat_participant.is_bot= false
+ref.message.new_chat_participant.first_name= RavEthan バーチャル ✕
+ref.message.new_chat_participant.username= TheEthaners
+ref.message.new_chat_participant.language_code= id
+ref.message.new_chat_member.id= 1153655966
+ref.message.new_chat_member.is_bot= false
+ref.message.new_chat_member.first_name= RavEthan バーチャル ✕
+ref.message.new_chat_member.username= TheEthaners
+ref.message.new_chat_member.language_code= id
+ref.message.new_chat_members.0.id= 1153655966
+ref.message.new_chat_members.0.is_bot= false
+ref.message.new_chat_members.0.first_name= RavEthan バーチャル ✕
+ref.message.new_chat_members.0.username= TheEthaners
+ref.message.new_chat_members.0.language_code= id
+
+
+[ref]
+ref.text= hai <a href="tg://user?id=1153655966" >ravethan バーチャル ✕ </a> jangan lupa baca rules, oh iya kak ravethan バーチャル ✕ jangan lupa jaga kesehatan dan pakai masker yak, id kamu 1153655966 gunakan untuk bertanya
+ref.reply_to_message_id= 22436
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(427): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-19 22:02:53  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804401130
+ref.message.message_id= 15465
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1613746963
+ref.message.text= /help
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Selamat datang di buku panduan bot ini
+ref.message_id= 
+ref.reply_markup= {"inline_keyboard":[[{"text":"tools dns","callback_data":"\/callback_q@fadhil_riyanto_bot corona"},{"text":"utinitas","callback_data":"\/callback_q@fadhil_riyanto_bot userid"}],[{"text":"hash","callback_data":"\/callback_q@fadhil_riyanto_bot waktu"},{"text":"gabut","callback_data":"\/callback_q@fadhil_riyanto_bot info"}],[{"text":"developer tools","callback_data":"\/callback_q@fadhil_riyanto_bot panggil"},{"text":"admin command","callback_data":"\/callback_q@fadhil_riyanto_bot start"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(184): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\command\help.php(32): Telegram->editMessageText(Array)
+#4 C:\bot telegram\hook.php(503): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-02-19 22:09:42  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804401140
+ref.message.message_id= 15468
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1613747370
+ref.message.text= /help
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Selamat datang di buku panduan bot ini
+Anda dapat membaca panduan di bawah ini, dengan mengklik sebuah tombol dibawah.
+Anda juga dapat mengajukan pertanyaan apa pun di Support group, harap diperhatikan bahwa Anda hanya dapat bertanya setelah membaca panduan, dan hanya bertanya tentang bot ini!
+
+Perintah umum adalah:
+- / start: Mulai bot
+- / help: Berikan pesan ini
+- / donate: Donasikan pemiliknya untuk server yang lebih baik
+- / pengaturan: Ubah grup terhubung Anda di Pesan Pribadi
+
+Semua perintah bekerja dengan /
+ref.message_id= 
+ref.reply_markup= {"inline_keyboard":[[{"text":"tools dns","callback_data":"\/callback_q@fadhil_riyanto_bot dns_tools"},{"text":"utility","callback_data":"\/callback_q@fadhil_riyanto_bot utility"}],[{"text":"hash","callback_data":"\/callback_q@fadhil_riyanto_bot hash"},{"text":"gabut","callback_data":"\/callback_q@fadhil_riyanto_bot gabut"}],[{"text":"developer tools","callback_data":"\/callback_q@fadhil_riyanto_bot dev_tools"},{"text":"admin command","callback_data":"\/callback_q@fadhil_riyanto_bot admin_command"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(184): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\command\help.php(32): Telegram->editMessageText(Array)
+#4 C:\bot telegram\hook.php(503): require('C:\\bot telegram...')
+#5 {main}
+
