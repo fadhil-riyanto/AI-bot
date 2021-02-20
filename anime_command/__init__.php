@@ -21,4 +21,3 @@ if ($checkanime == true) {
     $content = array('chat_id' => $chat_id, 'photo' => $imganimedec->url, 'reply_to_message_id' => $message_id, 'disable_web_page_preview' => true);
     $telegram->sendPhoto($content);
 }
-exit;
