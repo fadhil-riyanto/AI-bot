@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '1890915b05dd44da274d60c37d19265732b5ce03',
+    'reference' => '454106318afbefc4cf2cf326a4ff9269e7e73adf',
     'name' => '__root__',
   ),
   'versions' => 
@@ -18,7 +18,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '1890915b05dd44da274d60c37d19265732b5ce03',
+      'reference' => '454106318afbefc4cf2cf326a4ff9269e7e73adf',
     ),
     'ammarfaizi2/brainly' => 
     array (
@@ -224,13 +224,12 @@
     ),
     'thingengineer/mysqli-database-class' => 
     array (
-      'pretty_version' => 'dev-master',
-      'version' => 'dev-master',
+      'pretty_version' => 'v2.9.3',
+      'version' => '2.9.3.0',
       'aliases' => 
       array (
-        0 => '9999999-dev',
       ),
-      'reference' => '16564ba0717fad64617a1ce4a8d3f9b90e68c7c2',
+      'reference' => '03dbce1c7f1c9def315ad8ef52e1f5c0a806d6ed',
     ),
     'zendframework/zend-escaper' => 
     array (
