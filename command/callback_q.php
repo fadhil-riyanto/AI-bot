@@ -2,6 +2,7 @@
 $azanHilangcommand = str_replace($adanParse[0], '', $text);
 $udahDiparse = str_replace($adanParse[0] . ' ', '', $text);
 
+
 $file = __DIR__ . "/../json_data/editMsgID.json";
 $anggota = file_get_contents($file);
 $data = json_decode($anggota, true);

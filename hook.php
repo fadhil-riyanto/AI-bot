@@ -429,7 +429,8 @@ if (isset($memberanyar)) {
 	}
 	exit;
 }
-
+$content = array('callback_query_id' => '/callback_q', 'text' => 'hmhm', 'show_alert' => true);
+$telegram->answerCallbackQuery($content);
 if ($text == '/start' || $text == '/start' . USERNAME_BOT . '') {
 	require __DIR__ . '/command/start.php';
 	exit;
