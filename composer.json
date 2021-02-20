@@ -8,6 +8,8 @@
         "phplucidframe/console-table": "^1.2",
         "guzzlehttp/guzzle": "^7.2",
         "ammarfaizi2/brainly": "^1.0",
-        "masokky/quotemaker": "^1.0"
+        "masokky/quotemaker": "^1.0",
+        "sergeytsalkov/meekrodb": "^2.3",
+        "thingengineer/mysqli-database-class": "^2.9"
     }
 }
