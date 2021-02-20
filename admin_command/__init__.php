@@ -92,6 +92,7 @@ if (deteksi_grup() == true) {
     $reply = 'Maaf, command ini hanya berlaku di grup saja';
     $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
     $telegram->sendMessage($content);
+    exit;
 }
 
 function is_admin_grup($userID)
@@ -106,11 +107,8 @@ function is_admin_grup($userID)
 $isadmin = is_admin_grup($userID);
 if ($isadmin == true) {
     $kamu_admin = true;
-} else {
-    if ($adanParse[0] == '/pin_chat' || $adanParse[0] == '/lepas') {
-        $kamu_admin = false;
-    } else {
-    }
+} elseif ($isadmin == null) {
+    $kamu_admin = false;
 }
 
 if ($kamu_admin == true) {

@@ -638,46 +638,7 @@ if ($text == '/start' || $text == '/start' . USERNAME_BOT . '') {
 // ENCRYPT TOOLS DIMULAI DARI SINI WOYY
 // LICENSE BY FADHIL
 // PAHAM?
-elseif ('/sha256' == $adanParse[0] || '/sha256' . USERNAME_BOT . '' == $adanParse[0]) {
-	require __DIR__ . '/command/sha256.php';
-	exit;
-} elseif ('/sha1' == $adanParse[0] || '/sha1' . USERNAME_BOT . '' == $adanParse[0]) {
-	require __DIR__ . '/command/sha1.php';
-	exit;
-} elseif ('/sha512' == $adanParse[0] || '/sha512' . USERNAME_BOT . '' == $adanParse[0]) {
-	require __DIR__ . '/command/sha512.php';
-	exit;
-} elseif ('/sha384' == $adanParse[0] || '/sha384' . USERNAME_BOT . '' == $adanParse[0]) {
-	require __DIR__ . '/command/sha384.php';
-	exit;
-} elseif ('/md5' == $adanParse[0] || '/md5' . USERNAME_BOT . '' == $adanParse[0]) {
-	require __DIR__ . '/command/md5.php';
-	exit;
-} elseif ('/md4' == $adanParse[0] || '/md4' . USERNAME_BOT . '' == $adanParse[0]) {
-	require __DIR__ . '/command/md4.php';
-	exit;
-} elseif ('/md2' == $adanParse[0] || '/md2' . USERNAME_BOT . '' == $adanParse[0]) {
-	require __DIR__ . '/command/md2.php';
-	exit;
-}
-//ALL HASH DISINI
-// DIMULAI
-elseif ('/ripemd128' == $adanParse[0] || '/ripemd128' . USERNAME_BOT . '' == $adanParse[0]) {
-	require __DIR__ . '/command/ripemd128.php';
-	exit;
-} elseif ('/ripemd160' == $adanParse[0] || '/ripemd160' . USERNAME_BOT . '' == $adanParse[0]) {
-	require __DIR__ . '/command/ripemd160.php';
-	exit;
-} elseif ('/ripemd256' == $adanParse[0] || '/ripemd256' . USERNAME_BOT . '' == $adanParse[0]) {
-	require __DIR__ . '/command/ripemd256.php';
-	exit;
-} elseif ('/ripemd320' == $adanParse[0] || '/ripemd320' . USERNAME_BOT . '' == $adanParse[0]) {
-	require __DIR__ . '/command/ripemd320.php';
-	exit;
-} elseif ('/whirlpool' == $adanParse[0] || '/whirlpool' . USERNAME_BOT . '' == $adanParse[0]) {
-	require __DIR__ . '/command/whirlpool.php';
-	exit;
-}
+
 //BASE DECODE ENCODE WOYYY
 //BASE DECODE ENCODE WOYYY
 //BASE DECODE ENCODE WOYYY
@@ -689,7 +650,9 @@ elseif ('/base64_encode' == $adanParse[0] || '/base64_encode' . USERNAME_BOT . '
 	require __DIR__ . '/command/base64_decode.php';
 	exit;
 } elseif ($stringPertama == '/') {
+	require __DIR__ . '/hash_command/__init__.php';
 	require __DIR__ . '/admin_command/__init__.php';
+
 	// Jika ditemukan data dengan awalan coommand telegram, maka dia ngga akan diinsert ke database
 	// kita menggunakan exit agar dia keluar dari konsol
 	exit;

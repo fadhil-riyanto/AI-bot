@@ -1,27 +1,37 @@
+<?php
+function SERVER_ALAMAT_addr()
+{
+  $protocol = ((!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') ||
+    $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
+  $domainName = $_SERVER['HTTP_HOST'];
+  return $protocol . $domainName;
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
 <head>
-<meta name="description" content="Closed API for forever">
-<meta name="keywords" content="">
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Meta Finish -->
+  <meta name="description" content="Closed API for forever">
+  <meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Meta Finish -->
 
 
-  <meta charset="utf-8"/>
+  <meta charset="utf-8" />
   <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport'/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
-  <link rel="stylesheet" type="text/css" href="assets/css/fonts.css"/>
+  <link rel="stylesheet" type="text/css" href="assets/css/fonts.css" />
   <link rel="stylesheet" href="assets/css/fontawesome.css">
   <!-- CSS Files -->
-  <link href="assets/css/material-kit.css?v=2.0.3" rel="stylesheet"/>
+  <link href="assets/css/material-kit.css?v=2.0.3" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
-  <link href="assets/demo/demo.css" rel="stylesheet"/>
+  <link href="assets/demo/demo.css" rel="stylesheet" />
 </head>
 
 <body class="index-page sidebar-collapse">
@@ -39,17 +49,17 @@
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav ml-auto">
           <li class="dropdown nav-item">
-            <a href="https://github.com/fadhil-riyanto" class=" nav-link" >
+            <a href="https://github.com/fadhil-riyanto" class=" nav-link">
               <i class="material-icons">settings_input_component</i> Github
             </a>
-            
+
           </li>
           <li class="dropdown nav-item">
-           <a href="https://www.developers.eu.org/" class=" nav-link" >
+            <a href="https://www.developers.eu.org/" class=" nav-link">
               <i class="material-icons">settings_input_component</i> official website
             </a>
           </li>
-          
+
         </ul>
       </div>
     </div>
@@ -64,7 +74,8 @@
           </div>
         </div>
       </div>
-      <br/><div class="alert alert-success">
+      <br />
+      <div class="alert alert-success">
         <div class="container">
           <div class="alert-icon">
             <i class="material-icons">check</i>
@@ -72,19 +83,19 @@
           <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true"><i class="material-icons">clear</i></span>
           </button>
-          <strong style="color:red">WAJIB!!</strong> untuk mendapatkan apikey hubungi pemilik api ini, 
+          <strong style="color:red">WAJIB!!</strong> untuk mendapatkan apikey hubungi pemilik api ini,
         </div>
       </div>
     </div>
   </div><!-- Meta Start -->
 
-<!-- Meta Finish -->
+  <!-- Meta Finish -->
 
-<title>Fadhil's - APIs</title>
+  <title>Fadhil's - APIs</title>
   <div class="main main-raised">
     <div class="section section-basic">
       <div class="container">
-			<!-- Content -->
+        <!-- Content -->
         <div id="nav-tabs">
           <div class="row">
             <div class="col-md-12">
@@ -95,11 +106,7 @@
                   <div class="nav-tabs-navigation">
                     <div class="nav-tabs-wrapper">
                       <ul class="nav nav-tabs" data-tabs="tabs">
-                        <li class="nav-item">
-                          <a class="nav-link active" href="#param" data-toggle="tab">
-                            <i class="material-icons">face</i> URL + Paramaters
-                          </a>
-                        </li>
+
                         <li class="nav-item">
                           <a class="nav-link" href="#example" data-toggle="tab">
                             <i class="material-icons">settings</i> #1 Example
@@ -127,134 +134,155 @@
                 <div class="card-body ">
                   <div class="tab-content">
                     <div class="tab-pane active" id="param">
-                            <br/>Source: Planetbiru.com<br/><br/><div class="blockquote undefined"><span class="badge badge-primary">GET [SSL]</span> <font size="3">https://rest.farzain.com/api/ramal_XXXXXX.php</font><br><br/><span class="badge badge-primary">GET [NO SSL]</span> <font size="3">http://api.farzain.com/ramal_XXXXXX.php</font><br></div><br/>
-                            change ramal_XXXXXX to the correct url, here's a list of usable urls<br/>
-                            ramal_nama, ramal_hobi, ramal_fans, ramal_keluarga<br/><br/>
-                            <table class="table table-bordered">
-                                <tbody><tr>
-                                    <th>Parameter</th>
-                                    <th>Required</th>
-                                    <th>Description</th>
-                                </tr>
-                                <tr>
-                                    <td>1.) apikey</td>
-                                    <td><i>yes</i></td>
-                                    <td>your apikey <a href="https://farzan.com/user/signup.php">click here</a> to get your free apikey</td>
-                                </tr>
-                                <tr>
-                                    <td>2.) name</td>
-                                    <td><i>yes</i></td>
-                                    <td>Your name</td>
-                                </tr>
-                                <tr>
-                                    <td>3.) name2</td>
-                                    <td><i>no</i></td>
-                                    <td>if you use ramal_keluarga.php</td>
-                                </tr>
-                            </tbody></table>
+                      <br />mendapatkan random quotes<br /><br />
+                      <div class="blockquote undefined"><span class="badge badge-primary">GET [SSL]</span>
+                        <font size="3"><?php echo SERVER_ALAMAT_addr(); ?>/api/quotes.php?keyid=</font><br>
+                      </div><br />
+                      change ramal_XXXXXX to the correct url, here's a list of usable urls<br />
+                      ramal_nama, ramal_hobi, ramal_fans, ramal_keluarga<br /><br />
+                      <table class="table table-bordered">
+                        <tbody>
+                          <tr>
+                            <th>Parameter</th>
+                            <th>Required</th>
+                            <th>Description</th>
+                          </tr>
+                          <tr>
+                            <td>1.) apikey</td>
+                            <td><i>yes</i></td>
+                            <td>your apikey <a href="https://farzan.com/user/signup.php">click here</a> to get your free apikey</td>
+                          </tr>
+                          <tr>
+                            <td>2.) name</td>
+                            <td><i>yes</i></td>
+                            <td>Your name</td>
+                          </tr>
+                          <tr>
+                            <td>3.) name2</td>
+                            <td><i>no</i></td>
+                            <td>if you use ramal_keluarga.php</td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
                     <div class="tab-pane" id="example">
-                      <br/>Source: Planetbiru.com<br/><br/><div class="blockquote undefined"><span class="badge badge-primary">GET [SSL]</span> <font size="3">https://rest.farzain.com/api/ramal_nama.php?apikey=beta&name=udin</font><br><br/><span class="badge badge-primary">GET [NO SSL]</span> <font size="3">http://api.farzain.com/ramal_nama.php?apikey=beta&name=udin</font><br></div><br/>
-                        <xmp style="padding:10px;background:#263238;color:#fff;min-height:300px">
-{
-    "status": 200,
-    "creator": "Faraaz",
-    "result": [
-        {
-            "nama": "ROMANTIS",
-            "hasil": "26%"
-        },
-        {
-            "nama": "MESUM",
-            "hasil": "47%"
-        },
-        {
-            "nama": "MIRIS",
-            "hasil": "69%"
-        },
-        {
-            "nama": "TULUS",
-            "hasil": "63%"
-        },
-        {
-            "nama": "LOYAL",
-            "hasil": "31%"
-        }
-    ]
-}                        </xmp>
+                      <br />Source: Planetbiru.com<br /><br />
+                      <div class="blockquote undefined"><span class="badge badge-primary">GET [SSL]</span>
+                        <font size="3">https://rest.farzain.com/api/ramal_nama.php?apikey=beta&name=udin</font><br><br /><span class="badge badge-primary">GET [NO SSL]</span>
+                        <font size="3">http://api.farzain.com/ramal_nama.php?apikey=beta&name=udin</font><br>
+                      </div><br />
+                      <xmp style="padding:10px;background:#263238;color:#fff;min-height:300px">
+                        {
+                        "status": 200,
+                        "creator": "Faraaz",
+                        "result": [
+                        {
+                        "nama": "ROMANTIS",
+                        "hasil": "26%"
+                        },
+                        {
+                        "nama": "MESUM",
+                        "hasil": "47%"
+                        },
+                        {
+                        "nama": "MIRIS",
+                        "hasil": "69%"
+                        },
+                        {
+                        "nama": "TULUS",
+                        "hasil": "63%"
+                        },
+                        {
+                        "nama": "LOYAL",
+                        "hasil": "31%"
+                        }
+                        ]
+                        } </xmp>
                     </div>
                     <div class="tab-pane" id="example2">
-                      <br/>Source: Planetbiru.com<br/><br/><div class="blockquote undefined"><span class="badge badge-primary">GET [SSL]</span> <font size="3">https://rest.farzain.com/api/ramal_hobi.php?apikey=beta&name=udin</font><br><br/><span class="badge badge-primary">GET [NO SSL]</span> <font size="3">http://api.farzain.com/ramal_hobi.php?apikey=beta&name=udin</font><br></div><br/>
-                        <xmp style="padding:10px;background:#263238;color:#fff;min-height:300px">
-{
-    "status": 200,
-    "creator": "Faraaz",
-    "result": [
-        {
-            "nama": "Makanan",
-            "hasil": "Nasi Kucing"
-        },
-        {
-            "nama": "Minuman",
-            "hasil": "Bandreks"
-        },
-        {
-            "nama": "Kebiasaan Baik",
-            "hasil": "Merapikan Kamar"
-        },
-        {
-            "nama": "Kebiasaan Buruk",
-            "hasil": "Menguap"
-        }
-    ]
-}                        </xmp>
+                      <br />Source: Planetbiru.com<br /><br />
+                      <div class="blockquote undefined"><span class="badge badge-primary">GET [SSL]</span>
+                        <font size="3">https://rest.farzain.com/api/ramal_hobi.php?apikey=beta&name=udin</font><br><br /><span class="badge badge-primary">GET [NO SSL]</span>
+                        <font size="3">http://api.farzain.com/ramal_hobi.php?apikey=beta&name=udin</font><br>
+                      </div><br />
+                      <xmp style="padding:10px;background:#263238;color:#fff;min-height:300px">
+                        {
+                        "status": 200,
+                        "creator": "Faraaz",
+                        "result": [
+                        {
+                        "nama": "Makanan",
+                        "hasil": "Nasi Kucing"
+                        },
+                        {
+                        "nama": "Minuman",
+                        "hasil": "Bandreks"
+                        },
+                        {
+                        "nama": "Kebiasaan Baik",
+                        "hasil": "Merapikan Kamar"
+                        },
+                        {
+                        "nama": "Kebiasaan Buruk",
+                        "hasil": "Menguap"
+                        }
+                        ]
+                        } </xmp>
                     </div>
                     <div class="tab-pane" id="example3">
-                      <br/>Source: Planetbiru.com<br/><br/><div class="blockquote undefined"><span class="badge badge-primary">GET [SSL]</span> <font size="3">https://rest.farzain.com/api/ramal_fans.php?apikey=beta&name=udin</font><br><br/><span class="badge badge-primary">GET [NO SSL]</span> <font size="3">http://api.farzain.com/ramal_fans.php?apikey=beta&name=udin</font><br></div><br/>
-                        <xmp style="padding:10px;background:#263238;color:#fff;min-height:300px">
-{
-    "status": 200,
-    "creator": "Faraaz",
-    "result": [
-        {
-            "nama": "PENGAGUM RAHASIA",
-            "hasil": "3 orang"
-        },
-        {
-            "nama": "CURI CURI PANDANG",
-            "hasil": "9 orang"
-        },
-        {
-            "nama": "DIAM DIAM KEPO",
-            "hasil": "5 orang"
-        },
-        {
-            "nama": "DIAM DIAM PERHATIAN",
-            "hasil": "20 orang"
-        },
-        {
-            "nama": "DIAM DIAM SUKA",
-            "hasil": "17 orang"
-        }
-    ]
-}                        </xmp>
+                      <br />Source: Planetbiru.com<br /><br />
+                      <div class="blockquote undefined"><span class="badge badge-primary">GET [SSL]</span>
+                        <font size="3">https://rest.farzain.com/api/ramal_fans.php?apikey=beta&name=udin</font><br><br /><span class="badge badge-primary">GET [NO SSL]</span>
+                        <font size="3">http://api.farzain.com/ramal_fans.php?apikey=beta&name=udin</font><br>
+                      </div><br />
+                      <xmp style="padding:10px;background:#263238;color:#fff;min-height:300px">
+                        {
+                        "status": 200,
+                        "creator": "Faraaz",
+                        "result": [
+                        {
+                        "nama": "PENGAGUM RAHASIA",
+                        "hasil": "3 orang"
+                        },
+                        {
+                        "nama": "CURI CURI PANDANG",
+                        "hasil": "9 orang"
+                        },
+                        {
+                        "nama": "DIAM DIAM KEPO",
+                        "hasil": "5 orang"
+                        },
+                        {
+                        "nama": "DIAM DIAM PERHATIAN",
+                        "hasil": "20 orang"
+                        },
+                        {
+                        "nama": "DIAM DIAM SUKA",
+                        "hasil": "17 orang"
+                        }
+                        ]
+                        } </xmp>
                     </div>
                     <div class="tab-pane" id="example4">
-                      <br/>Source: Planetbiru.com<br/><br/><div class="blockquote undefined"><span class="badge badge-primary">GET [SSL]</span> <font size="3">https://rest.farzain.com/api/ramal_keluarga.php?apikey=beta&name=udin&nama2=juminten</font><br><br/><span class="badge badge-primary">GET [NO SSL]</span> <font size="3">http://api.farzain.com/ramal_keluarga.php?apikey=beta&name=udin&nama2=juminten</font><br></div><br/>
-                        <xmp style="padding:10px;background:#263238;color:#fff;min-height:300px">
-{
-    "status": 200,
-    "creator": "Faraaz",
-    "result": [
-        "Jumlah Anak Maksimum: 12 Orang",
-        "Jarak Kelahiran Anak Minimum: 9 Bulan",
-        "Kemungkinan Anak Pertama: Laki-Laki",
-        "Kemungkinan Poligami: 70%",
-        "Kemungkinan Cerai: 57%",
-        "Kemungkinan Selingkuh: 40%",
-        "Kemungkinan Bertengkar: 28 Kali Setahun"
-    ]
-}                        </xmp>
+                      <br />Source: Planetbiru.com<br /><br />
+                      <div class="blockquote undefined"><span class="badge badge-primary">GET [SSL]</span>
+                        <font size="3">https://rest.farzain.com/api/ramal_keluarga.php?apikey=beta&name=udin&nama2=juminten</font><br><br /><span class="badge badge-primary">GET [NO SSL]</span>
+                        <font size="3">http://api.farzain.com/ramal_keluarga.php?apikey=beta&name=udin&nama2=juminten</font><br>
+                      </div><br />
+                      <xmp style="padding:10px;background:#263238;color:#fff;min-height:300px">
+                        {
+                        "status": 200,
+                        "creator": "Faraaz",
+                        "result": [
+                        "Jumlah Anak Maksimum: 12 Orang",
+                        "Jarak Kelahiran Anak Minimum: 9 Bulan",
+                        "Kemungkinan Anak Pertama: Laki-Laki",
+                        "Kemungkinan Poligami: 70%",
+                        "Kemungkinan Cerai: 57%",
+                        "Kemungkinan Selingkuh: 40%",
+                        "Kemungkinan Bertengkar: 28 Kali Setahun"
+                        ]
+                        } </xmp>
                     </div>
                   </div>
                 </div>
@@ -263,7 +291,7 @@
             </div>
           </div>
         </div>
-			<!-- Content -->
+        <!-- Content -->
         <div class="space-50"></div>
 
       </div>
@@ -271,7 +299,7 @@
   </div>
   <footer class="footer" data-background-color="black">
     <div class="container">
-      
+
       <div class="copyright float-right">
         &copy;
         <script>
@@ -279,27 +307,28 @@
         </script>, Fadhil Riyanto.
       </div>
     </div>
-  </footer>  <!--<div id="SC_TBlock_524464" class="SC_TBlock">loading...</div> -->
+  </footer>
+  <!--<div id="SC_TBlock_524464" class="SC_TBlock">loading...</div> -->
   <!--   Core JS Files   -->
-<script>
-function myFunction() {
-  var input, filter, table, tr, td, i;
-  input = document.getElementById("myInput");
-  filter = input.value.toUpperCase();
-  table = document.getElementById("myTable");
-  tr = table.getElementsByTagName("tr");
-  for (i = 0; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td")[0];
-    if (td) {
-      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
-        tr[i].style.display = "";
-      } else {
-        tr[i].style.display = "none";
+  <script>
+    function myFunction() {
+      var input, filter, table, tr, td, i;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      table = document.getElementById("myTable");
+      tr = table.getElementsByTagName("tr");
+      for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[0];
+        if (td) {
+          if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
+          }
+        }
       }
-    }       
-  }
-}
-</script>
+    }
+  </script>
 
 
   <script src="assets/js/core/jquery.min.js" type="text/javascript"></script>
@@ -331,4 +360,5 @@ function myFunction() {
     }
   </script>
 </body>
+
 </html>
