@@ -437,6 +437,9 @@ if ($text == '/start' || $text == '/start' . USERNAME_BOT . '') {
 } elseif ('/pantun' == $adanParse[0] || '/pantun' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/pantun.php';
 	exit;
+} elseif ('/wallpaper' == $adanParse[0] || '/wallpaper' . USERNAME_BOT . '' == $adanParse[0]) {
+	require __DIR__ . '/command/wallpaper.php';
+	exit;
 } elseif ('/chapcha' == $adanParse[0] || '/chapcha' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/chapcha.php';
 	exit;
@@ -651,6 +654,7 @@ elseif ('/base64_encode' == $adanParse[0] || '/base64_encode' . USERNAME_BOT . '
 	require __DIR__ . '/command/base64_decode.php';
 	exit;
 } elseif ($stringPertama == '/') {
+	require __DIR__ . '/anime_command/__init__.php';
 	require __DIR__ . '/hash_command/__init__.php';
 	require __DIR__ . '/admin_command/__init__.php';
 
