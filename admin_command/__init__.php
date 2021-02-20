@@ -103,11 +103,12 @@ function is_admin_grup($userID)
             return true;
         }
     }
+    return false;
 }
 $isadmin = is_admin_grup($userID);
 if ($isadmin == true) {
     $kamu_admin = true;
-} elseif ($isadmin == null) {
+} elseif ($isadmin == false) {
     $kamu_admin = false;
 }
 

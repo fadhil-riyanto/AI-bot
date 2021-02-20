@@ -615,6 +615,9 @@ if ($text == '/start' || $text == '/start' . USERNAME_BOT . '') {
 } elseif ($text == '/tanggal' || $text == '/tanggal' . USERNAME_BOT . '') {
 	require __DIR__ . '/command/tanggal.php';
 	exit;
+} elseif ($text == '/wallpaper' || $text == '/wallpaper' . USERNAME_BOT . '') {
+	require __DIR__ . '/command/wallpaper.php';
+	exit;
 } elseif ($text == '/bug' || $text == '/bug' . USERNAME_BOT . '') {
 	require __DIR__ . '/command/bug.php';
 	exit;
