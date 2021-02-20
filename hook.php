@@ -3,7 +3,7 @@
 
 require __DIR__ . '/pengaturan/env.php';
 // PENJELASAN SINGKAT
-
+echo "okok";
 // DB_HOST digunakan untuk login ke database, begitu juga username dan password_get_info
 // TG HTTP API digunakan untuk identifikasi API, bisa didapat di @botfather
 // USERid digunakan untuk identifikasi
