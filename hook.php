@@ -3,7 +3,7 @@
 
 require __DIR__ . '/pengaturan/env.php';
 // PENJELASAN SINGKAT
-echo "okok";
+
 // DB_HOST digunakan untuk login ke database, begitu juga username dan password_get_info
 // TG HTTP API digunakan untuk identifikasi API, bisa didapat di @botfather
 // USERid digunakan untuk identifikasi
@@ -373,62 +373,62 @@ if (detect_apakah_pesan_reply_ke_bot() == true) {
 	$telegram->sendChatAction($status);
 }
 $memberanyar = $telegram->member_baru();
-// if (isset($memberanyar)) {
-// 	if ($usernameBelumdiparse == ID_BOT) {
-// 		exit;
-// 	}
-// 	$db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
-// 	$db->where("gid", $chat_id);
-// 	$user = $db->getOne("grup_data");
-// 	if ($user['welcome_text'] == null) {
-// 		$reply = 'Halo, apa kabar mu?';
-// 		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-// 		$telegram->sendMessage($content);
-// 	} else {
+if (isset($memberanyar)) {
+	if ($usernameBelumdiparse == ID_BOT) {
+		exit;
+	}
+	$db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
+	$db->where("gid", $chat_id);
+	$user = $db->getOne("grup_data");
+	if ($user['welcome_text'] == null) {
+		$reply = 'Halo, apa kabar mu?';
+		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+		$telegram->sendMessage($content);
+	} else {
 
-// 		$db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
-// 		$db->where("gid", $chat_id);
-// 		$user = $db->getOne("grup_data");
-// 		if ($user['welcome_text'] == null) {
-// 			$reply = 'Halo, apa kabar mu?';
-// 			$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-// 			$telegram->sendMessage($content);
-// 		} else {
-// 			$result = $telegram->getData();
-// 			$memberanyarpertama = $result['message']['new_chat_member']['first_name'];
-// 			$memberanyarkedua = $result['message']['new_chat_member']['last_name'];
-// 			$memberanyarid = $result['message']['new_chat_member']['id'];
+		$db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
+		$db->where("gid", $chat_id);
+		$user = $db->getOne("grup_data");
+		if ($user['welcome_text'] == null) {
+			$reply = 'Halo, apa kabar mu?';
+			$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+			$telegram->sendMessage($content);
+		} else {
+			$result = $telegram->getData();
+			$memberanyarpertama = $result['message']['new_chat_member']['first_name'];
+			$memberanyarkedua = $result['message']['new_chat_member']['last_name'];
+			$memberanyarid = $result['message']['new_chat_member']['id'];
 
-// 			$memberbaruname = '<a href="tg://user?id=' . $memberanyarid . '" >' . $memberanyarpertama . ' ' . $memberanyarkedua . '</a>';
-// 			function parsewelcome($string)
-// 			{
-// 				global $memberbaruname;
-// 				global $memberanyarpertama;
-// 				global $memberanyarpertama;
-// 				global $memberanyarid;
-// 				$dict = array(
-// 					'[[username]]' => $memberbaruname,
-// 					'[[first]]' => $memberanyarpertama,
-// 					'[[last]]' => $memberanyarpertama,
-// 					'[[id]]' => $memberanyarid
+			$memberbaruname = '<a href="tg://user?id=' . $memberanyarid . '" >' . $memberanyarpertama . ' ' . $memberanyarkedua . '</a>';
+			function parsewelcome($string)
+			{
+				global $memberbaruname;
+				global $memberanyarpertama;
+				global $memberanyarpertama;
+				global $memberanyarid;
+				$dict = array(
+					'[[username]]' => $memberbaruname,
+					'[[first]]' => $memberanyarpertama,
+					'[[last]]' => $memberanyarpertama,
+					'[[id]]' => $memberanyarid
 
-// 					// replace teks lainnya disini
-// 				);
-// 				return strtolower(
-// 					str_replace(
-// 						array_keys($dict),
-// 						array_values($dict),
-// 						$string
-// 					)
-// 				);
-// 			}
-// 			$reply = parsewelcome($user['welcome_text']);
-// 			$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-// 			$telegram->sendMessage($content);
-// 		}
-// 	}
-// 	exit;
-// }
+					// replace teks lainnya disini
+				);
+				return strtolower(
+					str_replace(
+						array_keys($dict),
+						array_values($dict),
+						$string
+					)
+				);
+			}
+			$reply = parsewelcome($user['welcome_text']);
+			$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+			$telegram->sendMessage($content);
+		}
+	}
+	exit;
+}
 $content = array('callback_query_id' => '/callback_q', 'text' => 'hmhm', 'show_alert' => true);
 $telegram->answerCallbackQuery($content);
 if ($text == '/start' || $text == '/start' . USERNAME_BOT . '') {
@@ -651,8 +651,9 @@ elseif ('/base64_encode' == $adanParse[0] || '/base64_encode' . USERNAME_BOT . '
 	require __DIR__ . '/command/base64_decode.php';
 	exit;
 } elseif ($stringPertama == '/') {
-	//require __DIR__ . '/hash_command/__init__.php';
-	//require __DIR__ . '/admin_command/__init__.php';
+	require __DIR__ . '/anime_command/__init__.php';
+	require __DIR__ . '/hash_command/__init__.php';
+	require __DIR__ . '/admin_command/__init__.php';
 
 	// Jika ditemukan data dengan awalan coommand telegram, maka dia ngga akan diinsert ke database
 	// kita menggunakan exit agar dia keluar dari konsol
