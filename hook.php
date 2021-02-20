@@ -651,8 +651,8 @@ elseif ('/base64_encode' == $adanParse[0] || '/base64_encode' . USERNAME_BOT . '
 	require __DIR__ . '/command/base64_decode.php';
 	exit;
 } elseif ($stringPertama == '/') {
-	require __DIR__ . '/hash_command/__init__.php';
-	require __DIR__ . '/admin_command/__init__.php';
+	//require __DIR__ . '/hash_command/__init__.php';
+	//require __DIR__ . '/admin_command/__init__.php';
 
 	// Jika ditemukan data dengan awalan coommand telegram, maka dia ngga akan diinsert ke database
 	// kita menggunakan exit agar dia keluar dari konsol
