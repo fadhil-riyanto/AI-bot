@@ -89,9 +89,15 @@ if (deteksi_grup() == true) {
         $admins =  $id_admin;
     }
 } else {
-    $reply = 'Maaf, command ini hanya berlaku di grup saja';
-    $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-    $telegram->sendMessage($content);
+    if (
+        $adanParse[0] == '/pin' || $adanParse[0] == '/unpin' || $adanParse[0] == '/adminlist' ||
+        $adanParse[0] == '/setwelcome' || $adanParse[0] == '/welcome'
+    ) {
+        $reply = 'Maaf, command ini hanya berlaku di grup saja';
+        $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+        $telegram->sendMessage($content);
+    }
+
     exit;
 }
 
