@@ -278,7 +278,7 @@ if (isset($text)) {
 	if ($chek_gc == true) {
 		if ($nama_gc == -1001209274058 || $nama_gc == -1001410961692) {
 		} else {
-			$reply = 'Maaf, saya diprogram oleh pemilik saya untuk tidak dimasukkan ke grup secara sembarangan tanpa izin pemilik. Jika anda masih tetap memasukkan saya ke grup yang tidak ada dalam daftar putih. maka otomatis saya akan mengeluarkan diri.' . PHP_EOL . PHP_EOL . 'agar anda dapat memasukkan bot ini ke grup anda, silahkan hubungi ' . SUPPORT_GROUP . ' atau pm langsung pemilik di ' . PUMBUAT_BOT;
+			$reply = 'Maaf, saya diprogram oleh pemilik saya untuk tidak dimasukkan ke grup. Jika anda masih tetap memasukkan saya ke grup. maka otomatis saya akan mengeluarkan diri.';
 			$content1 = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
 			$telegram->sendMessage($content1);
 			$content = array('chat_id' => $chat_id);
@@ -314,9 +314,6 @@ if ($deteksiApakahGrupwaktu != true) {
 			'/berita_i' == $adanParse[0] || '/berita_i' . USERNAME_BOT . '' == $adanParse[0] ||
 			'/brainly' == $adanParse[0] || '/brainly' . USERNAME_BOT . '' == $adanParse[0] ||
 			'/brainly_i' == $adanParse[0] || '/brainly_i' . USERNAME_BOT . '' == $adanParse[0] ||
-			'/admin_help' == $adanParse[0] || '/admin_help' . USERNAME_BOT . '' == $adanParse[0] ||
-			'/admin_help_i' == $adanParse[0] || '/admin_help_i' . USERNAME_BOT . '' == $adanParse[0] ||
-			'/admin_callback_q' == $adanParse[0] || '/admin_callback_q' . USERNAME_BOT . '' == $adanParse[0] ||
 			'/callback_q' == $adanParse[0] || '/callback_q' . USERNAME_BOT . '' == $adanParse[0]
 		) {
 		} else {
@@ -373,10 +370,10 @@ if ($deteksiApakahGrup == true) {
 
 
 
-// if (detect_apakah_pesan_reply_ke_bot() == true) {
-// 	$status = array('chat_id' => $chat_id, 'action' => 'typing');
-// 	$telegram->sendChatAction($status);
-// }
+if (detect_apakah_pesan_reply_ke_bot() == true) {
+	$status = array('chat_id' => $chat_id, 'action' => 'typing');
+	$telegram->sendChatAction($status);
+}
 $memberanyar = $telegram->member_baru();
 if (isset($memberanyar)) {
 	if ($usernameBelumdiparse == ID_BOT) {
@@ -390,6 +387,7 @@ if (isset($memberanyar)) {
 		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
 		$telegram->sendMessage($content);
 	} else {
+
 		$db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
 		$db->where("gid", $chat_id);
 		$user = $db->getOne("grup_data");
@@ -437,18 +435,6 @@ $content = array('callback_query_id' => '/callback_q', 'text' => 'hmhm', 'show_a
 $telegram->answerCallbackQuery($content);
 if ($text == '/start' || $text == '/start' . USERNAME_BOT . '') {
 	require __DIR__ . '/command/start.php';
-	exit;
-} elseif ('/admin_help' == $adanParse[0] || '/admin_help' . USERNAME_BOT . '' == $adanParse[0]) {
-	require __DIR__ . '/admin_command/admin_help.php';
-	exit;
-} elseif ('/admin_help_i' == $adanParse[0] || '/admin_help_i' . USERNAME_BOT . '' == $adanParse[0]) {
-	require __DIR__ . '/admin_command/admin_help_i.php';
-	exit;
-} elseif ('/admin_callback_q' == $adanParse[0] || '/admin_callback_q' . USERNAME_BOT . '' == $adanParse[0]) {
-	require __DIR__ . '/admin_command/admin_callback_q.php';
-	exit;
-} elseif ('/transformasi_help' == $adanParse[0] || '/transformasi_help' . USERNAME_BOT . '' == $adanParse[0]) {
-	require __DIR__ . '/admin_command/transformasi_help.php';
 	exit;
 } elseif ('/pantun' == $adanParse[0] || '/pantun' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/pantun.php';
@@ -629,9 +615,6 @@ if ($text == '/start' || $text == '/start' . USERNAME_BOT . '') {
 } elseif ($text == '/tanggal' || $text == '/tanggal' . USERNAME_BOT . '') {
 	require __DIR__ . '/command/tanggal.php';
 	exit;
-} elseif ($text == '/wallpaper' || $text == '/wallpaper' . USERNAME_BOT . '') {
-	require __DIR__ . '/command/wallpaper.php';
-	exit;
 } elseif ($text == '/bug' || $text == '/bug' . USERNAME_BOT . '') {
 	require __DIR__ . '/command/bug.php';
 	exit;
@@ -681,14 +664,6 @@ elseif ('/base64_encode' == $adanParse[0] || '/base64_encode' . USERNAME_BOT . '
 // ENCRYPT TOOLS DIAKHIRI
 // LICENSE BY FADHIL
 // PAHAM?
-$koneksi = @mysqli_connect(
-	DB_HOST,
-	DB_USERNAME,
-	DB_PASSWORD,
-	DB_NAME
-);
-
-
 $detectReply = detect_apakah_pesan_reply_ke_bot();
 if ($detectReply == true) {
 	$ai_chatting = robot_artificial_intelegence($text);
