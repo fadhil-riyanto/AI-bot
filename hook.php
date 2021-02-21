@@ -314,6 +314,9 @@ if ($deteksiApakahGrupwaktu != true) {
 			'/berita_i' == $adanParse[0] || '/berita_i' . USERNAME_BOT . '' == $adanParse[0] ||
 			'/brainly' == $adanParse[0] || '/brainly' . USERNAME_BOT . '' == $adanParse[0] ||
 			'/brainly_i' == $adanParse[0] || '/brainly_i' . USERNAME_BOT . '' == $adanParse[0] ||
+			'/admin_help' == $adanParse[0] || '/admin_help' . USERNAME_BOT . '' == $adanParse[0] ||
+			'/admin_help_i' == $adanParse[0] || '/admin_help_i' . USERNAME_BOT . '' == $adanParse[0] ||
+			'/admin_callback_q' == $adanParse[0] || '/admin_callback_q' . USERNAME_BOT . '' == $adanParse[0] ||
 			'/callback_q' == $adanParse[0] || '/callback_q' . USERNAME_BOT . '' == $adanParse[0]
 		) {
 		} else {
@@ -678,6 +681,14 @@ elseif ('/base64_encode' == $adanParse[0] || '/base64_encode' . USERNAME_BOT . '
 // ENCRYPT TOOLS DIAKHIRI
 // LICENSE BY FADHIL
 // PAHAM?
+$koneksi = @mysqli_connect(
+	DB_HOST,
+	DB_USERNAME,
+	DB_PASSWORD,
+	DB_NAME
+);
+
+
 $detectReply = detect_apakah_pesan_reply_ke_bot();
 if ($detectReply == true) {
 	$ai_chatting = robot_artificial_intelegence($text);

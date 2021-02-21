@@ -6,7 +6,7 @@ Anda juga dapat mengajukan pertanyaan apa pun di Support group, harap diperhatik
 Perintah umum adalah:
 - /start: Mulai bot
 - /help: Berikan pesan ini
-- /help_admin: melihat semua command untuk group management
+- /admin_help: melihat semua command untuk group management
 
 Semua perintah hanya bekerja dengan / (garis miring)';
 $option = array(
@@ -18,15 +18,16 @@ $option = array(
     ),
     array(
         $telegram->buildInlineKeyBoardButton("dev tools", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot dev_tools'),
-        $telegram->buildInlineKeyBoardButton("admins", $url = "", $callback_data = '/transformasi_help@fadhil_riyanto_bot'),
+        //$telegram->buildInlineKeyBoardButton("admins", $url = "", $callback_data = '/transformasi_help@fadhil_riyanto_bot'),
+		$telegram->buildInlineKeyBoardButton("anime", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot anime'),
         $telegram->buildInlineKeyBoardButton("bot ini", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot bot_ini')
     ),
-    array(
-        $telegram->buildInlineKeyBoardButton("anime", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot anime')
+    //array(
+        //$telegram->buildInlineKeyBoardButton("anime", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot anime')
         // ,
         // $telegram->buildInlineKeyBoardButton("admins", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot admins'),
         // $telegram->buildInlineKeyBoardButton("bot ini", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot bot_ini')
-    )
+    //)
 
 );
 $keyb = $telegram->buildInlineKeyBoard($option);
