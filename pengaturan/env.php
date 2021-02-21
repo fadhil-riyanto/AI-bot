@@ -10,7 +10,7 @@ define('CUTLLY_API', 'fa1d93ba90dedd2ceb7d01e9bade271653373');				//WAJIB
 define('TIME_ZONE', 'Asia/Jakarta');										//WAJIB
 define('API_WEATHER_KEY', '7cf7252c68d3473681054158212501');				//WAJIB
 define('ID_BOT', '1489990155');	                                  			//WAJIB
-define('MAX_EXECUTE_SCRIPT', 5000);											//SUNNAH_ROSUL
+define('MAX_EXECUTE_SCRIPT', 10);											//SUNNAH_ROSUL
 define('USERNAME_BOT', '@fadhil_riyanto_bot');								// pakai at@
 define('PUMBUAT_BOT', '@fadhil_riyanto');								// pakai at@
 define('SUPPORT_GROUP', 'https://t.me/tgdev_php_group');				// type url

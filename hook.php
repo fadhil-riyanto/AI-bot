@@ -637,16 +637,7 @@ if ($text == '/start' || $text == '/start' . USERNAME_BOT . '') {
 	// exit;
 	require __DIR__ . '/command/corona_provinsi.php';
 	exit;
-}
-// ENCRYPT TOOLS DIMULAI DARI SINI WOYY
-// LICENSE BY FADHIL
-// PAHAM?
-
-//BASE DECODE ENCODE WOYYY
-//BASE DECODE ENCODE WOYYY
-//BASE DECODE ENCODE WOYYY
-//BASE DECODE ENCODE WOYYY
-elseif ('/base64_encode' == $adanParse[0] || '/base64_encode' . USERNAME_BOT . '' == $adanParse[0]) {
+} elseif ('/base64_encode' == $adanParse[0] || '/base64_encode' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/base64_encode.php';
 	exit;
 } elseif ('/base64_decode' == $adanParse[0] || '/base64_decode' . USERNAME_BOT . '' == $adanParse[0]) {
