@@ -442,6 +442,9 @@ if ($text == '/start' || $text == '/start' . USERNAME_BOT . '') {
 } elseif ('/chapcha' == $adanParse[0] || '/chapcha' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/chapcha.php';
 	exit;
+} elseif ('/wallpaper' == $adanParse[0] || '/wallpaper' . USERNAME_BOT . '' == $adanParse[0]) {
+	require __DIR__ . '/command/wallpaper.php';
+	exit;
 } elseif ('/qr_code' == $adanParse[0] || '/qr_code' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/qr_code.php';
 	exit;
