@@ -452,7 +452,6 @@ if ($text == '/start' || $text == '/start' . USERNAME_BOT . '') {
 	require __DIR__ . '/command/read_qr.php';
 	exit;
 } elseif (
-	'/brainly' == $adanParse[0] || '/brainly' . USERNAME_BOT . '' == $adanParse[0] ||
 	'/br' == $adanParse[0] || '/br' . USERNAME_BOT . '' == $adanParse[0]
 ) {
 	require __DIR__ . '/command/brainly.php';
