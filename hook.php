@@ -17,6 +17,7 @@ require_once __DIR__ . '/ai_robot.php';
 
 ini_set('max_execution_time', MAX_EXECUTE_SCRIPT);
 error_reporting(1);
+
 $userid_pemilik = USER_ID_TG_ME;
 $telegramAPIs   = TG_HTTP_API;
 $api_key_cuttly = CUTLLY_API;
