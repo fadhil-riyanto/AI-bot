@@ -2,7 +2,7 @@
     "7": "-Wall -std=c++14 -O2 -o a.out source_file.cpp",
     "27": "-Wall -std=c++14 -stdlib=libc++ -O2 -o a.out source_file.cpp",
     "28": "source_file.cpp -o a.exe /EHsc /MD /I C:\\boost_1_60_0 /link /LIBPATH:C:\\boost_1_60_0\\stage\\lib",
-    "6": "-Wall -std=gnu99 -O2 -o a.out source_file.c",
+    "6":  "-Wall -std=gnu99 -O2 -o a.out source_file.c",
     "26": "-Wall -std=gnu99 -O2 -o a.out source_file.c",
     "29": "source_file.c -o a.exe",
     "30": "source_file.d -ofa.out",

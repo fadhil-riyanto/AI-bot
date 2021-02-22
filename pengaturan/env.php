@@ -1,5 +1,5 @@
 <?php
-define('BOT_VERSION', '10.0.2'); //informasi versi bot
+define('BOT_VERSION', 'v10.0.2-alpha'); //informasi versi bot
 define('DB_HOST', 'freedb.tech');											//WAJIB
 define('DB_USERNAME', 'freedbtech_telegramdb1');					//WAJIB
 define('DB_PASSWORD', 'T*YUVT*YUtoUITOUIBTUHGBJHGbyuvtuiybtukybgtjkb');		//WAJIB
