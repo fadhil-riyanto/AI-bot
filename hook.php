@@ -471,7 +471,10 @@ $telegram->answerCallbackQuery($content);
 // $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
 // $telegram->sendMessage($content);
 if ($text == '/start' || $text == '/start' . USERNAME_BOT . '') {
-	require __DIR__ . '/command/start.php';
+	if (detect_grup() == true) {
+	} else {
+		require __DIR__ . '/command/start.php';
+	}
 	exit;
 } elseif ('/pantun' == $adanParse[0] || '/pantun' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/pantun.php';

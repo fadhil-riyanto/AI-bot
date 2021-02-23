@@ -1,19 +1,13 @@
 <?php
 if ($userID != $userid_pemilik) {
-    $reply = 'Acces denied!!' . PHP_EOL . PHP_EOL . 'command ini hanya bisa dijalankan oleh pemilik bot ini ( @fadhil_riyanto )';
+    $reply = 'Kamu gaada akses untuk menjalankan command ini!' . PHP_EOL . 'command ini hanya bisa dijalankan oleh pemilik bot ini ( @fadhil_riyanto )';
     $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
     $telegram->sendMessage($content);
     exit;
 }
 $azanHilangcommand = str_replace($adanParse[0], '', $text);
 $udahDiparse = str_replace($adanParse[0] . ' ', '', $text);
-function photo($link)
-{
-    global $chat_id;
-    global $telegram;
-    $konten = array('chat_id' => $chat_id, 'photo' => $link, 'caption' => '200 ');
-    $telegram->sendPhoto($konten);
-}
+
 
 $getStringFromSpasi = explode(' ', $udahDiparse);
 if ($getStringFromSpasi[0] == 'debug' || $getStringFromSpasi[0] == 'debugmode') {
@@ -84,14 +78,8 @@ if ($getStringFromSpasi[0] == 'debug' || $getStringFromSpasi[0] == 'debugmode') 
     // file_put_contents($filePath, $udahDiparse);
     // register_shutdown_function('unlink', $udahDiparse);
     // require($filePath);
-    function kirim($data)
-    {
-        global $chat_id;
-        global $message_id;
-        global $telegram;
-        $content = array('chat_id' => $chat_id, 'text' => $data, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-        $telegram->sendMessage($content);
-    }
+    require __DIR__ . '/../include/eval_func.php';
+
     try {
         $result = eval($udahDiparse);
         $content = array('chat_id' => $chat_id, 'text' => $result, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
