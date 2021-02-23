@@ -11,26 +11,27 @@ if ($azanHilangcommand == null) {
     $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
     $telegram->sendMessage($content);
 } else {
+    $api_dev_key             = PASTEBIN_API; // your api_developer_key
+    $api_paste_code         = $udahDiparse; // your paste text
+    $api_paste_private         = '1'; // 0=public 1=unlisted 2=private
+    $api_paste_name            = 'justmyfilename.php'; // name or title of your paste
+    $api_paste_expire_date         = '10M';
+    $api_paste_format         = 'php';
+    $api_user_key             = ''; // if an invalid or expired api_user_key is used, an error will spawn. If no api_user_key is used, a guest paste will be created
+    $api_paste_name            = urlencode($api_paste_name);
+    $api_paste_code            = urlencode($api_paste_code);
 
+    $url                 = 'https://pastebin.com/api/api_post.php';
+    $ch                 = curl_init($url);
 
-    $draft = new Draft(); // drafts represent unsent pastes
-    $draft->setContent($udahDiparse); // set the paste content
-    $developer = new Developer(PASTEBIN_API);
+    curl_setopt($ch, CURLOPT_POST, true);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, 'api_option=paste&api_user_key=' . $api_user_key . '&api_paste_private=' . $api_paste_private . '&api_paste_name=' . $api_paste_name . '&api_paste_expire_date=' . $api_paste_expire_date . '&api_paste_format=' . $api_paste_format . '&api_dev_key=' . $api_dev_key . '&api_paste_code=' . $api_paste_code . '');
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    // curl_setopt($ch, CURLOPT_VERBOSE, 1);
+    // curl_setopt($ch, CURLOPT_NOBODY, 0);
 
-    try {
-        // send the draft to Pastebin; turn it into a full blown Paste object
-        $paste = $draft->paste($developer);
-
-        // print out the URL of the new paste
-        //echo $paste->getUrl(); // e.g. https://ppastebin.com/JYvbS0fC
-        $reply = "yey bisa, link pastebin kamu adalah " . $paste->getUrl();
-        $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-        $telegram->sendMessage($content);
-    } catch (BrushException $e) {
-        // some sort of error occurred; check the message for the cause
-        echo $e->getMessage();
-        $reply = "ups ada kesalahan" . PHP_EOL . "debug : " . $e->getMessage();
-        $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-        $telegram->sendMessage($content);
-    }
+    $response              = curl_exec($ch);
+    $reply = "yey, paste berhasil dibuat. linknya " . $response;
+    $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+    $telegram->sendMessage($content);
 }

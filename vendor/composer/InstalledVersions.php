@@ -29,7 +29,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '3f9cb3417ec94d920d7cb9aecbf76bdd37747323',
+    'reference' => '1c0d37184971582b98901f5a036fa88936eec354',
     'name' => '__root__',
   ),
   'versions' => 
@@ -41,7 +41,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '3f9cb3417ec94d920d7cb9aecbf76bdd37747323',
+      'reference' => '1c0d37184971582b98901f5a036fa88936eec354',
     ),
     'ammarfaizi2/brainly' => 
     array (
@@ -98,6 +98,15 @@ private static $installed = array (
       ),
       'reference' => 'd5464bc7356f6031991e636b6b1b2402cbae88ea',
     ),
+    'ezyang/htmlpurifier' => 
+    array (
+      'pretty_version' => 'v4.13.0',
+      'version' => '4.13.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '08e27c97e4c6ed02f37c5b2b20488046c8d90d75',
+    ),
     'gebn/brush' => 
     array (
       'pretty_version' => 'v1.2.0',
@@ -143,6 +152,33 @@ private static $installed = array (
       ),
       'reference' => '837086ec60f50c84c611c613963e4ad2e2aec806',
     ),
+    'maennchen/zipstream-php' => 
+    array (
+      'pretty_version' => '2.1.0',
+      'version' => '2.1.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'c4c5803cc1f93df3d2448478ef79394a5981cc58',
+    ),
+    'markbaker/complex' => 
+    array (
+      'pretty_version' => '2.0.0',
+      'version' => '2.0.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '9999f1432fae467bc93c53f357105b4c31bb994c',
+    ),
+    'markbaker/matrix' => 
+    array (
+      'pretty_version' => '2.1.2',
+      'version' => '2.1.2.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '361c0f545c3172ee26c3d596a0aa03f0cef65e6a',
+    ),
     'masokky/quotemaker' => 
     array (
       'pretty_version' => 'v1.0.0',
@@ -159,6 +195,15 @@ private static $installed = array (
         0 => '*',
       ),
     ),
+    'myclabs/php-enum' => 
+    array (
+      'pretty_version' => '1.8.0',
+      'version' => '1.8.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '46cf3d8498b095bd33727b13fd5707263af99421',
+    ),
     'phplucidframe/console-table' => 
     array (
       'pretty_version' => 'v1.2.4',
@@ -167,6 +212,15 @@ private static $installed = array (
       array (
       ),
       'reference' => 'a973d911af96f3db42fca92cbeb1f473c9ad505e',
+    ),
+    'phpoffice/phpspreadsheet' => 
+    array (
+      'pretty_version' => '1.16.0',
+      'version' => '1.16.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '76d4323b85129d0c368149c831a07a3e258b2b50',
     ),
     'psr/container' => 
     array (
@@ -193,6 +247,15 @@ private static $installed = array (
         0 => '1.0',
       ),
     ),
+    'psr/http-factory' => 
+    array (
+      'pretty_version' => '1.0.1',
+      'version' => '1.0.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '12ac7fcd07e5b077433f5f2bee95b3a771bf61be',
+    ),
     'psr/http-message' => 
     array (
       'pretty_version' => '1.0.1',
@@ -208,6 +271,15 @@ private static $installed = array (
       array (
         0 => '1.0',
       ),
+    ),
+    'psr/simple-cache' => 
+    array (
+      'pretty_version' => '1.0.1',
+      'version' => '1.0.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '408d5eafb83c57f6365a3ca330ff23aa4a5fa39b',
     ),
     'ralouphie/getallheaders' => 
     array (
@@ -271,6 +343,15 @@ private static $installed = array (
       array (
       ),
       'reference' => 'e8c19ca2f8ed6a0fd0012c6c97e78aac80fded30',
+    ),
+    'symfony/polyfill-mbstring' => 
+    array (
+      'pretty_version' => 'v1.22.1',
+      'version' => '1.22.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '5232de97ee3b75b0360528dae24e73db49566ab1',
     ),
     'thingengineer/mysqli-database-class' => 
     array (

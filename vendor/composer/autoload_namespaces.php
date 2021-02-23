@@ -15,4 +15,5 @@ return array(
     'Requests' => array($vendorDir . '/rmccue/requests/library'),
     'LucidFrame\\' => array($vendorDir . '/phplucidframe/console-table/src'),
     'LucidFrameTest\\' => array($vendorDir . '/phplucidframe/console-table/tests'),
+    'HTMLPurifier' => array($vendorDir . '/ezyang/htmlpurifier/library'),
 );

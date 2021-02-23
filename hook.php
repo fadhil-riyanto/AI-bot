@@ -485,6 +485,9 @@ if ($text == '/start' || $text == '/start' . USERNAME_BOT . '') {
 } elseif ('/adminlist' == $adanParse[0] || '/adminlist' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/adminlist.php';
 	exit;
+} elseif ('/xlsx_to_json' == $adanParse[0] || '/xlsx_to_json' . USERNAME_BOT . '' == $adanParse[0]) {
+	require __DIR__ . '/command/xlsx_to_json.php';
+	exit;
 } elseif ('/pastebin' == $adanParse[0] || '/bin' == $adanParse[0] || '/pastebin' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/pastebin.php';
 	exit;
