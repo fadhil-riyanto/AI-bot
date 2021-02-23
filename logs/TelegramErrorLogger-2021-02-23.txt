@@ -16212,3 +16212,675 @@ ref.show_alert= true
 #3 C:\bot telegram\hook.php(464): Telegram->answerCallbackQuery(Array)
 #4 {main}
 
+============[Date]============
+[ 2021-02-23 19:54:57  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: query is too old and response timeout expired or query ID is invalid
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804405014
+ref.message.message_id= 16853
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1614084892
+ref.message.reply_to_message.message_id= 16835
+ref.message.reply_to_message.from.id= 1393342467
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Fadhil
+ref.message.reply_to_message.from.last_name= Riyanto
+ref.message.reply_to_message.from.username= fadhil_riyanto
+ref.message.reply_to_message.from.language_code= en
+ref.message.reply_to_message.chat.id= 1393342467
+ref.message.reply_to_message.chat.first_name= Fadhil
+ref.message.reply_to_message.chat.last_name= Riyanto
+ref.message.reply_to_message.chat.username= fadhil_riyanto
+ref.message.reply_to_message.chat.type= private
+ref.message.reply_to_message.date= 1614083487
+ref.message.reply_to_message.forward_from.id= 304504330
+ref.message.reply_to_message.forward_from.is_bot= false
+ref.message.reply_to_message.forward_from.first_name= Niddumulu
+ref.message.reply_to_message.forward_from.username= niddumulu
+ref.message.reply_to_message.forward_from.language_code= id
+ref.message.reply_to_message.forward_date= 1614083273
+ref.message.reply_to_message.document.file_name= Pesan.xlsx
+ref.message.reply_to_message.document.mime_type= application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+ref.message.reply_to_message.document.file_id= BQACAgUAAxkBAAJBw2A09Z-YsD4s04nsrzsFm__KonAoAAJkAgAC14-oVYdvJhzLlPy7HgQ
+ref.message.reply_to_message.document.file_unique_id= AgADZAIAAtePqFU
+ref.message.reply_to_message.document.file_size= 4929
+ref.message.text= /xlsx_to_json
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 13
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.callback_query_id= /callback_q
+ref.text= hmhm
+ref.show_alert= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(180): Telegram->endpoint('answerCallbackQ...', Array)
+#3 C:\bot telegram\hook.php(464): Telegram->answerCallbackQuery(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-23 19:55:38  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: query is too old and response timeout expired or query ID is invalid
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804405015
+ref.message.message_id= 16857
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1614084934
+ref.message.reply_to_message.message_id= 16835
+ref.message.reply_to_message.from.id= 1393342467
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Fadhil
+ref.message.reply_to_message.from.last_name= Riyanto
+ref.message.reply_to_message.from.username= fadhil_riyanto
+ref.message.reply_to_message.from.language_code= en
+ref.message.reply_to_message.chat.id= 1393342467
+ref.message.reply_to_message.chat.first_name= Fadhil
+ref.message.reply_to_message.chat.last_name= Riyanto
+ref.message.reply_to_message.chat.username= fadhil_riyanto
+ref.message.reply_to_message.chat.type= private
+ref.message.reply_to_message.date= 1614083487
+ref.message.reply_to_message.forward_from.id= 304504330
+ref.message.reply_to_message.forward_from.is_bot= false
+ref.message.reply_to_message.forward_from.first_name= Niddumulu
+ref.message.reply_to_message.forward_from.username= niddumulu
+ref.message.reply_to_message.forward_from.language_code= id
+ref.message.reply_to_message.forward_date= 1614083273
+ref.message.reply_to_message.document.file_name= Pesan.xlsx
+ref.message.reply_to_message.document.mime_type= application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+ref.message.reply_to_message.document.file_id= BQACAgUAAxkBAAJBw2A09Z-YsD4s04nsrzsFm__KonAoAAJkAgAC14-oVYdvJhzLlPy7HgQ
+ref.message.reply_to_message.document.file_unique_id= AgADZAIAAtePqFU
+ref.message.reply_to_message.document.file_size= 4929
+ref.message.text= /xlsx_to_json
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 13
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.callback_query_id= /callback_q
+ref.text= hmhm
+ref.show_alert= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(180): Telegram->endpoint('answerCallbackQ...', Array)
+#3 C:\bot telegram\hook.php(464): Telegram->answerCallbackQuery(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-23 19:56:16  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: query is too old and response timeout expired or query ID is invalid
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804405016
+ref.message.message_id= 16861
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1614084972
+ref.message.reply_to_message.message_id= 16835
+ref.message.reply_to_message.from.id= 1393342467
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Fadhil
+ref.message.reply_to_message.from.last_name= Riyanto
+ref.message.reply_to_message.from.username= fadhil_riyanto
+ref.message.reply_to_message.from.language_code= en
+ref.message.reply_to_message.chat.id= 1393342467
+ref.message.reply_to_message.chat.first_name= Fadhil
+ref.message.reply_to_message.chat.last_name= Riyanto
+ref.message.reply_to_message.chat.username= fadhil_riyanto
+ref.message.reply_to_message.chat.type= private
+ref.message.reply_to_message.date= 1614083487
+ref.message.reply_to_message.forward_from.id= 304504330
+ref.message.reply_to_message.forward_from.is_bot= false
+ref.message.reply_to_message.forward_from.first_name= Niddumulu
+ref.message.reply_to_message.forward_from.username= niddumulu
+ref.message.reply_to_message.forward_from.language_code= id
+ref.message.reply_to_message.forward_date= 1614083273
+ref.message.reply_to_message.document.file_name= Pesan.xlsx
+ref.message.reply_to_message.document.mime_type= application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+ref.message.reply_to_message.document.file_id= BQACAgUAAxkBAAJBw2A09Z-YsD4s04nsrzsFm__KonAoAAJkAgAC14-oVYdvJhzLlPy7HgQ
+ref.message.reply_to_message.document.file_unique_id= AgADZAIAAtePqFU
+ref.message.reply_to_message.document.file_size= 4929
+ref.message.text= /xlsx_to_json
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 13
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.callback_query_id= /callback_q
+ref.text= hmhm
+ref.show_alert= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(180): Telegram->endpoint('answerCallbackQ...', Array)
+#3 C:\bot telegram\hook.php(464): Telegram->answerCallbackQuery(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-23 19:58:05  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: query is too old and response timeout expired or query ID is invalid
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804405017
+ref.message.message_id= 16864
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1614085080
+ref.message.reply_to_message.message_id= 16835
+ref.message.reply_to_message.from.id= 1393342467
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Fadhil
+ref.message.reply_to_message.from.last_name= Riyanto
+ref.message.reply_to_message.from.username= fadhil_riyanto
+ref.message.reply_to_message.from.language_code= en
+ref.message.reply_to_message.chat.id= 1393342467
+ref.message.reply_to_message.chat.first_name= Fadhil
+ref.message.reply_to_message.chat.last_name= Riyanto
+ref.message.reply_to_message.chat.username= fadhil_riyanto
+ref.message.reply_to_message.chat.type= private
+ref.message.reply_to_message.date= 1614083487
+ref.message.reply_to_message.forward_from.id= 304504330
+ref.message.reply_to_message.forward_from.is_bot= false
+ref.message.reply_to_message.forward_from.first_name= Niddumulu
+ref.message.reply_to_message.forward_from.username= niddumulu
+ref.message.reply_to_message.forward_from.language_code= id
+ref.message.reply_to_message.forward_date= 1614083273
+ref.message.reply_to_message.document.file_name= Pesan.xlsx
+ref.message.reply_to_message.document.mime_type= application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+ref.message.reply_to_message.document.file_id= BQACAgUAAxkBAAJBw2A09Z-YsD4s04nsrzsFm__KonAoAAJkAgAC14-oVYdvJhzLlPy7HgQ
+ref.message.reply_to_message.document.file_unique_id= AgADZAIAAtePqFU
+ref.message.reply_to_message.document.file_size= 4929
+ref.message.text= /xlsx_to_json
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 13
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.callback_query_id= /callback_q
+ref.text= hmhm
+ref.show_alert= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(180): Telegram->endpoint('answerCallbackQ...', Array)
+#3 C:\bot telegram\hook.php(464): Telegram->answerCallbackQuery(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-23 19:58:36  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: query is too old and response timeout expired or query ID is invalid
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804405018
+ref.message.message_id= 26362
+ref.message.from.id= 1416099345
+ref.message.from.is_bot= false
+ref.message.from.first_name= ɴ
+ref.message.from.username= nzathon
+ref.message.from.language_code= id
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1614085111
+ref.message.reply_to_message.message_id= 26348
+ref.message.reply_to_message.from.id= 1355798219
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Kee
+ref.message.reply_to_message.from.username= nekoha
+ref.message.reply_to_message.from.language_code= en
+ref.message.reply_to_message.chat.id= -1001209274058
+ref.message.reply_to_message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.reply_to_message.chat.username= scriptiseng
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1614082484
+ref.message.reply_to_message.text= Berubah gmna?
+ref.message.text= Berubah jadi bedo kyk si Fadhil :v
+
+
+[ref]
+ref.callback_query_id= /callback_q
+ref.text= hmhm
+ref.show_alert= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(180): Telegram->endpoint('answerCallbackQ...', Array)
+#3 C:\bot telegram\hook.php(464): Telegram->answerCallbackQuery(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-23 19:59:08  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: query is too old and response timeout expired or query ID is invalid
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804405019
+ref.message.message_id= 16867
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1614085143
+ref.message.reply_to_message.message_id= 16835
+ref.message.reply_to_message.from.id= 1393342467
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Fadhil
+ref.message.reply_to_message.from.last_name= Riyanto
+ref.message.reply_to_message.from.username= fadhil_riyanto
+ref.message.reply_to_message.from.language_code= en
+ref.message.reply_to_message.chat.id= 1393342467
+ref.message.reply_to_message.chat.first_name= Fadhil
+ref.message.reply_to_message.chat.last_name= Riyanto
+ref.message.reply_to_message.chat.username= fadhil_riyanto
+ref.message.reply_to_message.chat.type= private
+ref.message.reply_to_message.date= 1614083487
+ref.message.reply_to_message.forward_from.id= 304504330
+ref.message.reply_to_message.forward_from.is_bot= false
+ref.message.reply_to_message.forward_from.first_name= Niddumulu
+ref.message.reply_to_message.forward_from.username= niddumulu
+ref.message.reply_to_message.forward_from.language_code= id
+ref.message.reply_to_message.forward_date= 1614083273
+ref.message.reply_to_message.document.file_name= Pesan.xlsx
+ref.message.reply_to_message.document.mime_type= application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+ref.message.reply_to_message.document.file_id= BQACAgUAAxkBAAJBw2A09Z-YsD4s04nsrzsFm__KonAoAAJkAgAC14-oVYdvJhzLlPy7HgQ
+ref.message.reply_to_message.document.file_unique_id= AgADZAIAAtePqFU
+ref.message.reply_to_message.document.file_size= 4929
+ref.message.text= /xlsx_to_json
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 13
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.callback_query_id= /callback_q
+ref.text= hmhm
+ref.show_alert= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(180): Telegram->endpoint('answerCallbackQ...', Array)
+#3 C:\bot telegram\hook.php(464): Telegram->answerCallbackQuery(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-23 19:59:47  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: query is too old and response timeout expired or query ID is invalid
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804405020
+ref.message.message_id= 26363
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1614085183
+ref.message.reply_to_message.message_id= 26362
+ref.message.reply_to_message.from.id= 1416099345
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= ɴ
+ref.message.reply_to_message.from.username= nzathon
+ref.message.reply_to_message.from.language_code= id
+ref.message.reply_to_message.chat.id= -1001209274058
+ref.message.reply_to_message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.reply_to_message.chat.username= scriptiseng
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1614085111
+ref.message.reply_to_message.text= Berubah jadi bedo kyk si Fadhil :v
+ref.message.text= pedo gimana sih? apa yang pedo? perasaan kok gw terus yang kena tuduh 😭😭
+
+
+[ref]
+ref.callback_query_id= /callback_q
+ref.text= hmhm
+ref.show_alert= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(180): Telegram->endpoint('answerCallbackQ...', Array)
+#3 C:\bot telegram\hook.php(464): Telegram->answerCallbackQuery(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-23 20:01:32  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: query is too old and response timeout expired or query ID is invalid
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804405021
+ref.message.message_id= 26364
+ref.message.from.id= 1416099345
+ref.message.from.is_bot= false
+ref.message.from.first_name= ɴ
+ref.message.from.username= nzathon
+ref.message.from.language_code= id
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1614085288
+ref.message.reply_to_message.message_id= 26363
+ref.message.reply_to_message.from.id= 1393342467
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Fadhil
+ref.message.reply_to_message.from.last_name= Riyanto
+ref.message.reply_to_message.from.username= fadhil_riyanto
+ref.message.reply_to_message.from.language_code= en
+ref.message.reply_to_message.chat.id= -1001209274058
+ref.message.reply_to_message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.reply_to_message.chat.username= scriptiseng
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1614085183
+ref.message.reply_to_message.text= pedo gimana sih? apa yang pedo? perasaan kok gw terus yang kena tuduh 😭😭
+ref.message.sticker.width= 512
+ref.message.sticker.height= 341
+ref.message.sticker.emoji= 😀
+ref.message.sticker.set_name= xiaohh2
+ref.message.sticker.is_animated= false
+ref.message.sticker.thumb.file_id= AAMCBQADHQJIFA7KAAJm_GA0_Kjgi-QzVf7RsioqXGJIX4imAAL4AQACvDF6D9Z3-Zz1aCAAAegX2zIABAEAB20AA7cSAAIeBA
+ref.message.sticker.thumb.file_unique_id= AQAD6BfbMgAEtxIAAg
+ref.message.sticker.thumb.file_size= 1978
+ref.message.sticker.thumb.width= 128
+ref.message.sticker.thumb.height= 85
+ref.message.sticker.file_id= CAACAgUAAx0CSBQOygACZvxgNPyo4IvkM1X-0bIqKlxiSF-IpgAC-AEAArwxeg_Wd_mc9WggAAEeBA
+ref.message.sticker.file_unique_id= AgAD-AEAArwxeg8
+ref.message.sticker.file_size= 7988
+
+
+[ref]
+ref.callback_query_id= /callback_q
+ref.text= hmhm
+ref.show_alert= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(180): Telegram->endpoint('answerCallbackQ...', Array)
+#3 C:\bot telegram\hook.php(464): Telegram->answerCallbackQuery(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-23 20:02:29  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: query is too old and response timeout expired or query ID is invalid
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804405022
+ref.message.message_id= 16870
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1614085344
+ref.message.reply_to_message.message_id= 16835
+ref.message.reply_to_message.from.id= 1393342467
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Fadhil
+ref.message.reply_to_message.from.last_name= Riyanto
+ref.message.reply_to_message.from.username= fadhil_riyanto
+ref.message.reply_to_message.from.language_code= en
+ref.message.reply_to_message.chat.id= 1393342467
+ref.message.reply_to_message.chat.first_name= Fadhil
+ref.message.reply_to_message.chat.last_name= Riyanto
+ref.message.reply_to_message.chat.username= fadhil_riyanto
+ref.message.reply_to_message.chat.type= private
+ref.message.reply_to_message.date= 1614083487
+ref.message.reply_to_message.forward_from.id= 304504330
+ref.message.reply_to_message.forward_from.is_bot= false
+ref.message.reply_to_message.forward_from.first_name= Niddumulu
+ref.message.reply_to_message.forward_from.username= niddumulu
+ref.message.reply_to_message.forward_from.language_code= id
+ref.message.reply_to_message.forward_date= 1614083273
+ref.message.reply_to_message.document.file_name= Pesan.xlsx
+ref.message.reply_to_message.document.mime_type= application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+ref.message.reply_to_message.document.file_id= BQACAgUAAxkBAAJBw2A09Z-YsD4s04nsrzsFm__KonAoAAJkAgAC14-oVYdvJhzLlPy7HgQ
+ref.message.reply_to_message.document.file_unique_id= AgADZAIAAtePqFU
+ref.message.reply_to_message.document.file_size= 4929
+ref.message.text= /xlsx_to_json
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 13
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.callback_query_id= /callback_q
+ref.text= hmhm
+ref.show_alert= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(180): Telegram->endpoint('answerCallbackQ...', Array)
+#3 C:\bot telegram\hook.php(464): Telegram->answerCallbackQuery(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-23 20:03:35  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: query is too old and response timeout expired or query ID is invalid
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804405023
+ref.message.message_id= 16873
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1614085410
+ref.message.reply_to_message.message_id= 16835
+ref.message.reply_to_message.from.id= 1393342467
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Fadhil
+ref.message.reply_to_message.from.last_name= Riyanto
+ref.message.reply_to_message.from.username= fadhil_riyanto
+ref.message.reply_to_message.from.language_code= en
+ref.message.reply_to_message.chat.id= 1393342467
+ref.message.reply_to_message.chat.first_name= Fadhil
+ref.message.reply_to_message.chat.last_name= Riyanto
+ref.message.reply_to_message.chat.username= fadhil_riyanto
+ref.message.reply_to_message.chat.type= private
+ref.message.reply_to_message.date= 1614083487
+ref.message.reply_to_message.forward_from.id= 304504330
+ref.message.reply_to_message.forward_from.is_bot= false
+ref.message.reply_to_message.forward_from.first_name= Niddumulu
+ref.message.reply_to_message.forward_from.username= niddumulu
+ref.message.reply_to_message.forward_from.language_code= id
+ref.message.reply_to_message.forward_date= 1614083273
+ref.message.reply_to_message.document.file_name= Pesan.xlsx
+ref.message.reply_to_message.document.mime_type= application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+ref.message.reply_to_message.document.file_id= BQACAgUAAxkBAAJBw2A09Z-YsD4s04nsrzsFm__KonAoAAJkAgAC14-oVYdvJhzLlPy7HgQ
+ref.message.reply_to_message.document.file_unique_id= AgADZAIAAtePqFU
+ref.message.reply_to_message.document.file_size= 4929
+ref.message.text= /xlsx_to_json
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 13
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.callback_query_id= /callback_q
+ref.text= hmhm
+ref.show_alert= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(180): Telegram->endpoint('answerCallbackQ...', Array)
+#3 C:\bot telegram\hook.php(464): Telegram->answerCallbackQuery(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-23 20:04:13  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: query is too old and response timeout expired or query ID is invalid
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804405024
+ref.message.message_id= 16876
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1614085449
+ref.message.reply_to_message.message_id= 16798
+ref.message.reply_to_message.from.id= 1393342467
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Fadhil
+ref.message.reply_to_message.from.last_name= Riyanto
+ref.message.reply_to_message.from.username= fadhil_riyanto
+ref.message.reply_to_message.from.language_code= en
+ref.message.reply_to_message.chat.id= 1393342467
+ref.message.reply_to_message.chat.first_name= Fadhil
+ref.message.reply_to_message.chat.last_name= Riyanto
+ref.message.reply_to_message.chat.username= fadhil_riyanto
+ref.message.reply_to_message.chat.type= private
+ref.message.reply_to_message.date= 1614081658
+ref.message.reply_to_message.document.file_name= test.xlsx
+ref.message.reply_to_message.document.mime_type= application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+ref.message.reply_to_message.document.file_id= BQACAgUAAxkBAAJBnmA0_UmRg2xjqMup4bB3y-W81j7PAAIgAgACUgipVXTHsgXJtlHVHgQ
+ref.message.reply_to_message.document.file_unique_id= AgADIAIAAlIIqVU
+ref.message.reply_to_message.document.file_size= 8115
+ref.message.text= /xlsx_to_json
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 13
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.callback_query_id= /callback_q
+ref.text= hmhm
+ref.show_alert= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(180): Telegram->endpoint('answerCallbackQ...', Array)
+#3 C:\bot telegram\hook.php(464): Telegram->answerCallbackQuery(Array)
+#4 {main}
+
