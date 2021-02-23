@@ -12459,3 +12459,1631 @@ ref.show_alert= true
 #3 C:\bot telegram\hook.php(464): Telegram->answerCallbackQuery(Array)
 #4 {main}
 
+============[Date]============
+[ 2021-02-23 11:02:20  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: query is too old and response timeout expired or query ID is invalid
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804404741
+ref.message.message_id= 26135
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1614052937
+ref.message.text= /sudo eval send('test testing <b>okok</b>');
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.callback_query_id= /callback_q
+ref.text= hmhm
+ref.show_alert= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(180): Telegram->endpoint('answerCallbackQ...', Array)
+#3 C:\bot telegram\hook.php(464): Telegram->answerCallbackQuery(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-23 11:02:23  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804404741
+ref.message.message_id= 26135
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1614052937
+ref.message.text= /sudo eval send('test testing <b>okok</b>');
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 
+ref.reply_to_message_id= 26135
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\sudo.php(86): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(584): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-02-23 11:03:02  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: query is too old and response timeout expired or query ID is invalid
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804404742
+ref.message.message_id= 26137
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1614052977
+ref.message.text= /sudo eval send('test testing <b>okok</b>');
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.callback_query_id= /callback_q
+ref.text= hmhm
+ref.show_alert= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(180): Telegram->endpoint('answerCallbackQ...', Array)
+#3 C:\bot telegram\hook.php(464): Telegram->answerCallbackQuery(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-23 11:03:05  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804404742
+ref.message.message_id= 26137
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1614052977
+ref.message.text= /sudo eval send('test testing <b>okok</b>');
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 
+ref.reply_to_message_id= 26137
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\sudo.php(86): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(584): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-02-23 11:06:53  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: query is too old and response timeout expired or query ID is invalid
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804404743
+ref.message.message_id= 26139
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1614053211
+ref.message.text= /sudo eval $a = get_curl('https://api.kawalcorona.com/indonesia/provinsi/');
+send($a);
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+ref.message.entities.1.offset= 26
+ref.message.entities.1.length= 47
+ref.message.entities.1.type= url
+
+
+[ref]
+ref.callback_query_id= /callback_q
+ref.text= hmhm
+ref.show_alert= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(180): Telegram->endpoint('answerCallbackQ...', Array)
+#3 C:\bot telegram\hook.php(464): Telegram->answerCallbackQuery(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-23 11:06:57  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804404743
+ref.message.message_id= 26139
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1614053211
+ref.message.text= /sudo eval $a = get_curl('https://api.kawalcorona.com/indonesia/provinsi/');
+send($a);
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+ref.message.entities.1.offset= 26
+ref.message.entities.1.length= 47
+ref.message.entities.1.type= url
+
+
+[ref]
+ref.text= 
+ref.reply_to_message_id= 26139
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\sudo.php(86): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(584): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-02-23 11:15:05  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: query is too old and response timeout expired or query ID is invalid
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804404744
+ref.message.message_id= 26141
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1614053702
+ref.message.text= /sudo eval $q = mysqli_query($koneksi, "SELECT * FROM afk_user_data WHERE userid LIKE  '1355798219' ");
+$datass = mysqli_fetch_assoc($q);
+send(print_r($datass));
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+ref.message.entities.1.offset= 54
+ref.message.entities.1.length= 13
+ref.message.entities.1.type= code
+ref.message.entities.2.offset= 74
+ref.message.entities.2.length= 6
+ref.message.entities.2.type= code
+ref.message.entities.3.offset= 88
+ref.message.entities.3.length= 10
+ref.message.entities.3.type= phone_number
+
+
+[ref]
+ref.callback_query_id= /callback_q
+ref.text= hmhm
+ref.show_alert= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(180): Telegram->endpoint('answerCallbackQ...', Array)
+#3 C:\bot telegram\hook.php(464): Telegram->answerCallbackQuery(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-23 11:15:10  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804404744
+ref.message.message_id= 26141
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1614053702
+ref.message.text= /sudo eval $q = mysqli_query($koneksi, "SELECT * FROM afk_user_data WHERE userid LIKE  '1355798219' ");
+$datass = mysqli_fetch_assoc($q);
+send(print_r($datass));
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+ref.message.entities.1.offset= 54
+ref.message.entities.1.length= 13
+ref.message.entities.1.type= code
+ref.message.entities.2.offset= 74
+ref.message.entities.2.length= 6
+ref.message.entities.2.type= code
+ref.message.entities.3.offset= 88
+ref.message.entities.3.length= 10
+ref.message.entities.3.type= phone_number
+
+
+[ref]
+ref.text= 
+ref.reply_to_message_id= 26141
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\sudo.php(86): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(584): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-02-23 11:15:52  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: query is too old and response timeout expired or query ID is invalid
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804404745
+ref.message.message_id= 26143
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1614053751
+ref.message.text= /sudo eval $q = mysqli_query($koneksi, "SELECT * FROM afk_user_data WHERE userid LIKE  '1355798219' ");
+$datass = mysqli_fetch_assoc($q);
+send(print_r($datass['username']));
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+ref.message.entities.1.offset= 54
+ref.message.entities.1.length= 13
+ref.message.entities.1.type= code
+ref.message.entities.2.offset= 74
+ref.message.entities.2.length= 6
+ref.message.entities.2.type= code
+ref.message.entities.3.offset= 88
+ref.message.entities.3.length= 10
+ref.message.entities.3.type= phone_number
+
+
+[ref]
+ref.callback_query_id= /callback_q
+ref.text= hmhm
+ref.show_alert= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(180): Telegram->endpoint('answerCallbackQ...', Array)
+#3 C:\bot telegram\hook.php(464): Telegram->answerCallbackQuery(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-23 11:15:55  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804404745
+ref.message.message_id= 26143
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1614053751
+ref.message.text= /sudo eval $q = mysqli_query($koneksi, "SELECT * FROM afk_user_data WHERE userid LIKE  '1355798219' ");
+$datass = mysqli_fetch_assoc($q);
+send(print_r($datass['username']));
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+ref.message.entities.1.offset= 54
+ref.message.entities.1.length= 13
+ref.message.entities.1.type= code
+ref.message.entities.2.offset= 74
+ref.message.entities.2.length= 6
+ref.message.entities.2.type= code
+ref.message.entities.3.offset= 88
+ref.message.entities.3.length= 10
+ref.message.entities.3.type= phone_number
+
+
+[ref]
+ref.text= 
+ref.reply_to_message_id= 26143
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\sudo.php(86): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(584): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-02-23 11:16:56  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: query is too old and response timeout expired or query ID is invalid
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804404746
+ref.message.message_id= 16678
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= -458987087
+ref.message.chat.title= Dump pesan bot
+ref.message.chat.type= group
+ref.message.chat.all_members_are_administrators= true
+ref.message.date= 1614053814
+ref.message.text= /sudo eval $db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
+    $db->where("userid", $userID);
+    $user = $db->getOne("afk_user_data");
+send(var_dump($user));
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.callback_query_id= /callback_q
+ref.text= hmhm
+ref.show_alert= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(180): Telegram->endpoint('answerCallbackQ...', Array)
+#3 C:\bot telegram\hook.php(464): Telegram->answerCallbackQuery(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-23 11:16:59  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804404746
+ref.message.message_id= 16678
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= -458987087
+ref.message.chat.title= Dump pesan bot
+ref.message.chat.type= group
+ref.message.chat.all_members_are_administrators= true
+ref.message.date= 1614053814
+ref.message.text= /sudo eval $db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
+    $db->where("userid", $userID);
+    $user = $db->getOne("afk_user_data");
+send(var_dump($user));
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= <pre></pre>
+ref.reply_to_message_id= 16678
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\include\eval_func.php(8): Telegram->sendMessage(Array)
+#4 C:\bot telegram\command\sudo.php(84) : eval()'d code(4): send(NULL)
+#5 C:\bot telegram\command\sudo.php(84): eval()
+#6 C:\bot telegram\hook.php(584): require('C:\\bot telegram...')
+#7 {main}
+
+============[Date]============
+[ 2021-02-23 11:17:00  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804404746
+ref.message.message_id= 16678
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= -458987087
+ref.message.chat.title= Dump pesan bot
+ref.message.chat.type= group
+ref.message.chat.all_members_are_administrators= true
+ref.message.date= 1614053814
+ref.message.text= /sudo eval $db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
+    $db->where("userid", $userID);
+    $user = $db->getOne("afk_user_data");
+send(var_dump($user));
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 
+ref.reply_to_message_id= 16678
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\sudo.php(86): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(584): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-02-23 11:17:31  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: query is too old and response timeout expired or query ID is invalid
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804404747
+ref.message.message_id= 16679
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= -458987087
+ref.message.chat.title= Dump pesan bot
+ref.message.chat.type= group
+ref.message.chat.all_members_are_administrators= true
+ref.message.date= 1614053849
+ref.message.text= /sudo eval $db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
+    $db->where("userid", '1355798219');
+    $user = $db->getOne("afk_user_data");
+send(var_dump($user));
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+ref.message.entities.1.offset= 101
+ref.message.entities.1.length= 10
+ref.message.entities.1.type= phone_number
+
+
+[ref]
+ref.callback_query_id= /callback_q
+ref.text= hmhm
+ref.show_alert= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(180): Telegram->endpoint('answerCallbackQ...', Array)
+#3 C:\bot telegram\hook.php(464): Telegram->answerCallbackQuery(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-23 11:17:34  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804404747
+ref.message.message_id= 16679
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= -458987087
+ref.message.chat.title= Dump pesan bot
+ref.message.chat.type= group
+ref.message.chat.all_members_are_administrators= true
+ref.message.date= 1614053849
+ref.message.text= /sudo eval $db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
+    $db->where("userid", '1355798219');
+    $user = $db->getOne("afk_user_data");
+send(var_dump($user));
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+ref.message.entities.1.offset= 101
+ref.message.entities.1.length= 10
+ref.message.entities.1.type= phone_number
+
+
+[ref]
+ref.text= <pre></pre>
+ref.reply_to_message_id= 16679
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\include\eval_func.php(8): Telegram->sendMessage(Array)
+#4 C:\bot telegram\command\sudo.php(84) : eval()'d code(4): send(NULL)
+#5 C:\bot telegram\command\sudo.php(84): eval()
+#6 C:\bot telegram\hook.php(584): require('C:\\bot telegram...')
+#7 {main}
+
+============[Date]============
+[ 2021-02-23 11:17:34  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804404747
+ref.message.message_id= 16679
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= -458987087
+ref.message.chat.title= Dump pesan bot
+ref.message.chat.type= group
+ref.message.chat.all_members_are_administrators= true
+ref.message.date= 1614053849
+ref.message.text= /sudo eval $db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
+    $db->where("userid", '1355798219');
+    $user = $db->getOne("afk_user_data");
+send(var_dump($user));
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+ref.message.entities.1.offset= 101
+ref.message.entities.1.length= 10
+ref.message.entities.1.type= phone_number
+
+
+[ref]
+ref.text= 
+ref.reply_to_message_id= 16679
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\sudo.php(86): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(584): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-02-23 11:18:32  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: query is too old and response timeout expired or query ID is invalid
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804404748
+ref.message.message_id= 16680
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= -458987087
+ref.message.chat.title= Dump pesan bot
+ref.message.chat.type= group
+ref.message.chat.all_members_are_administrators= true
+ref.message.date= 1614053910
+ref.message.text= /sudo eval send(file_get_html('google.com'))
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+ref.message.entities.1.offset= 31
+ref.message.entities.1.length= 10
+ref.message.entities.1.type= url
+
+
+[ref]
+ref.callback_query_id= /callback_q
+ref.text= hmhm
+ref.show_alert= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(180): Telegram->endpoint('answerCallbackQ...', Array)
+#3 C:\bot telegram\hook.php(464): Telegram->answerCallbackQuery(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-23 11:18:37  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: query is too old and response timeout expired or query ID is invalid
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804404749
+ref.message.message_id= 26145
+ref.message.from.id= 1355798219
+ref.message.from.is_bot= false
+ref.message.from.first_name= Kee
+ref.message.from.username= nekoha
+ref.message.from.language_code= en
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1614053911
+ref.message.sticker.width= 512
+ref.message.sticker.height= 503
+ref.message.sticker.emoji= 😡
+ref.message.sticker.set_name= LINE_NEKOMIMI_MiA
+ref.message.sticker.is_animated= false
+ref.message.sticker.thumb.file_id= AAMCAgADHQJIFA7KAAJmIWA0ghenyUV23k30HPIvLRUfJLh6AAKRLQAC4KOCByya7iqKo27BVai3DQAEAQAHbQADgwMAAh4E
+ref.message.sticker.thumb.file_unique_id= AQADVai3DQAEgwMAAg
+ref.message.sticker.thumb.file_size= 7898
+ref.message.sticker.thumb.width= 128
+ref.message.sticker.thumb.height= 126
+ref.message.sticker.file_id= CAACAgIAAx0CSBQOygACZiFgNIIXp8lFdt5N9BzyLy0VHyS4egACkS0AAuCjggcsmu4qiqNuwR4E
+ref.message.sticker.file_unique_id= AgADkS0AAuCjggc
+ref.message.sticker.file_size= 53746
+
+
+[ref]
+ref.callback_query_id= /callback_q
+ref.text= hmhm
+ref.show_alert= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(180): Telegram->endpoint('answerCallbackQ...', Array)
+#3 C:\bot telegram\hook.php(464): Telegram->answerCallbackQuery(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-23 11:18:47  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: query is too old and response timeout expired or query ID is invalid
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804404750
+ref.message.message_id= 26146
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1614053926
+ref.message.text= /sudo eval send(file_get_html('google.com'))
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+ref.message.entities.1.offset= 31
+ref.message.entities.1.length= 10
+ref.message.entities.1.type= url
+
+
+[ref]
+ref.callback_query_id= /callback_q
+ref.text= hmhm
+ref.show_alert= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(180): Telegram->endpoint('answerCallbackQ...', Array)
+#3 C:\bot telegram\hook.php(464): Telegram->answerCallbackQuery(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-23 11:19:15  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: query is too old and response timeout expired or query ID is invalid
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804404751
+ref.message.message_id= 26148
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1614053953
+ref.message.text= /sudo eval send(file_get_html('google.com'));
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+ref.message.entities.1.offset= 31
+ref.message.entities.1.length= 10
+ref.message.entities.1.type= url
+
+
+[ref]
+ref.callback_query_id= /callback_q
+ref.text= hmhm
+ref.show_alert= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(180): Telegram->endpoint('answerCallbackQ...', Array)
+#3 C:\bot telegram\hook.php(464): Telegram->answerCallbackQuery(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-23 11:19:31  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: query is too old and response timeout expired or query ID is invalid
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804404752
+ref.message.message_id= 26149
+ref.message.from.id= 1355798219
+ref.message.from.is_bot= false
+ref.message.from.first_name= Kee
+ref.message.from.username= nekoha
+ref.message.from.language_code= en
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1614053969
+ref.message.sticker.width= 512
+ref.message.sticker.height= 438
+ref.message.sticker.emoji= 😍
+ref.message.sticker.set_name= LINE_NEKOMIMI_MiA
+ref.message.sticker.is_animated= false
+ref.message.sticker.thumb.file_id= AAMCAgADHQJIFA7KAAJmJWA0glGJ26aYo1bXa8zrW2R4DAr5AAKjLQAC4KOCBwPk_h0aJ7LW2pG3DQAEAQAHbQADhAMAAh4E
+ref.message.sticker.thumb.file_unique_id= AQAD2pG3DQAEhAMAAg
+ref.message.sticker.thumb.file_size= 8930
+ref.message.sticker.thumb.width= 128
+ref.message.sticker.thumb.height= 109
+ref.message.sticker.file_id= CAACAgIAAx0CSBQOygACZiVgNIJRidummKNW12vM61tkeAwK-QACoy0AAuCjggcD5P4dGiey1h4E
+ref.message.sticker.file_unique_id= AgADoy0AAuCjggc
+ref.message.sticker.file_size= 63304
+
+
+[ref]
+ref.callback_query_id= /callback_q
+ref.text= hmhm
+ref.show_alert= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(180): Telegram->endpoint('answerCallbackQ...', Array)
+#3 C:\bot telegram\hook.php(464): Telegram->answerCallbackQuery(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-23 11:19:38  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: query is too old and response timeout expired or query ID is invalid
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804404753
+ref.message.message_id= 26150
+ref.message.from.id= 1355798219
+ref.message.from.is_bot= false
+ref.message.from.first_name= Kee
+ref.message.from.username= nekoha
+ref.message.from.language_code= en
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1614053977
+ref.message.text= Ijin off
+
+
+[ref]
+ref.callback_query_id= /callback_q
+ref.text= hmhm
+ref.show_alert= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(180): Telegram->endpoint('answerCallbackQ...', Array)
+#3 C:\bot telegram\hook.php(464): Telegram->answerCallbackQuery(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-23 11:20:04  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: query is too old and response timeout expired or query ID is invalid
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804404755
+ref.message.message_id= 26153
+ref.message.from.id= 1355798219
+ref.message.from.is_bot= false
+ref.message.from.first_name= Kee
+ref.message.from.username= nekoha
+ref.message.from.language_code= en
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1614054002
+ref.message.text= /afk bobo
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 4
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.callback_query_id= /callback_q
+ref.text= hmhm
+ref.show_alert= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(180): Telegram->endpoint('answerCallbackQ...', Array)
+#3 C:\bot telegram\hook.php(464): Telegram->answerCallbackQuery(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-23 11:20:15  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: query is too old and response timeout expired or query ID is invalid
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804404756
+ref.message.message_id= 26155
+ref.message.from.id= 1355798219
+ref.message.from.is_bot= false
+ref.message.from.first_name= Kee
+ref.message.from.username= nekoha
+ref.message.from.language_code= en
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1614054012
+ref.message.text= /unafk@Fadhil_riyanto_bot
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 25
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.callback_query_id= /callback_q
+ref.text= hmhm
+ref.show_alert= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(180): Telegram->endpoint('answerCallbackQ...', Array)
+#3 C:\bot telegram\hook.php(464): Telegram->answerCallbackQuery(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-23 11:20:21  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: query is too old and response timeout expired or query ID is invalid
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804404757
+ref.message.message_id= 26156
+ref.message.from.id= 1355798219
+ref.message.from.is_bot= false
+ref.message.from.first_name= Kee
+ref.message.from.username= nekoha
+ref.message.from.language_code= en
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1614054017
+ref.message.text= Mending ada setnya
+
+
+[ref]
+ref.callback_query_id= /callback_q
+ref.text= hmhm
+ref.show_alert= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(180): Telegram->endpoint('answerCallbackQ...', Array)
+#3 C:\bot telegram\hook.php(464): Telegram->answerCallbackQuery(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-23 11:20:29  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: query is too old and response timeout expired or query ID is invalid
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804404758
+ref.message.message_id= 26158
+ref.message.from.id= 1355798219
+ref.message.from.is_bot= false
+ref.message.from.first_name= Kee
+ref.message.from.username= nekoha
+ref.message.from.language_code= en
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1614054027
+ref.message.text= /afk bobo
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 4
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.callback_query_id= /callback_q
+ref.text= hmhm
+ref.show_alert= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(180): Telegram->endpoint('answerCallbackQ...', Array)
+#3 C:\bot telegram\hook.php(464): Telegram->answerCallbackQuery(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-23 11:20:53  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: query is too old and response timeout expired or query ID is invalid
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804404760
+ref.message.message_id= 26161
+ref.message.from.id= 1355798219
+ref.message.from.is_bot= false
+ref.message.from.first_name= Kee
+ref.message.from.username= nekoha
+ref.message.from.language_code= en
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1614054046
+ref.message.reply_to_message.message_id= 26159
+ref.message.reply_to_message.from.id= 1489990155
+ref.message.reply_to_message.from.is_bot= true
+ref.message.reply_to_message.from.first_name= Fadhil Riyanto Bot
+ref.message.reply_to_message.from.username= Fadhil_riyanto_bot
+ref.message.reply_to_message.chat.id= -1001209274058
+ref.message.reply_to_message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.reply_to_message.chat.username= scriptiseng
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1614054032
+ref.message.reply_to_message.text= anda sedang afk!
+gunakan /unafk untuk melepas status afk!
+ref.message.reply_to_message.entities.0.offset= 25
+ref.message.reply_to_message.entities.0.length= 6
+ref.message.reply_to_message.entities.0.type= bot_command
+ref.message.text= Test
+
+
+[ref]
+ref.callback_query_id= /callback_q
+ref.text= hmhm
+ref.show_alert= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(180): Telegram->endpoint('answerCallbackQ...', Array)
+#3 C:\bot telegram\hook.php(464): Telegram->answerCallbackQuery(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-23 11:21:00  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: query is too old and response timeout expired or query ID is invalid
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804404761
+ref.message.message_id= 26164
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1614054059
+ref.message.photo.0.file_id= AgACAgUAAx0CSBQOygACZjRgNIKqPiIanLDVOURVqAw01HExIAAC8KoxG9ePqFW1fq1ItN0XHry1YnF0AAMBAAMCAANtAANfigACHgQ
+ref.message.photo.0.file_unique_id= AQADvLVicXQAA1-KAAI
+ref.message.photo.0.file_size= 5404
+ref.message.photo.0.width= 320
+ref.message.photo.0.height= 185
+ref.message.photo.1.file_id= AgACAgUAAx0CSBQOygACZjRgNIKqPiIanLDVOURVqAw01HExIAAC8KoxG9ePqFW1fq1ItN0XHry1YnF0AAMBAAMCAAN4AANgigACHgQ
+ref.message.photo.1.file_unique_id= AQADvLVicXQAA2CKAAI
+ref.message.photo.1.file_size= 23499
+ref.message.photo.1.width= 800
+ref.message.photo.1.height= 463
+ref.message.photo.2.file_id= AgACAgUAAx0CSBQOygACZjRgNIKqPiIanLDVOURVqAw01HExIAAC8KoxG9ePqFW1fq1ItN0XHry1YnF0AAMBAAMCAAN5AANdigACHgQ
+ref.message.photo.2.file_unique_id= AQADvLVicXQAA12KAAI
+ref.message.photo.2.file_size= 33771
+ref.message.photo.2.width= 1076
+ref.message.photo.2.height= 623
+ref.message.caption= data nya di db...wkwk
+
+
+[ref]
+ref.callback_query_id= /callback_q
+ref.text= hmhm
+ref.show_alert= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(180): Telegram->endpoint('answerCallbackQ...', Array)
+#3 C:\bot telegram\hook.php(464): Telegram->answerCallbackQuery(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-23 11:21:03  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: query is too old and response timeout expired or query ID is invalid
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804404762
+ref.message.message_id= 26165
+ref.message.from.id= 1355798219
+ref.message.from.is_bot= false
+ref.message.from.first_name= Kee
+ref.message.from.username= nekoha
+ref.message.from.language_code= en
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1614054060
+ref.message.sticker.width= 512
+ref.message.sticker.height= 512
+ref.message.sticker.emoji= 😴
+ref.message.sticker.set_name= CatBoyLINE
+ref.message.sticker.is_animated= false
+ref.message.sticker.thumb.file_id= AAMCBQADHQJIFA7KAAJmNWA0gqyOf4qNLH0SBj-Qi0Z2FzBOAAJwAgACKv6QVfeEcTfS7sAYBObHbnQAAwEAB20AA7J1AAIeBA
+ref.message.sticker.thumb.file_unique_id= AQADBObHbnQAA7J1AAI
+ref.message.sticker.thumb.file_size= 16504
+ref.message.sticker.thumb.width= 320
+ref.message.sticker.thumb.height= 320
+ref.message.sticker.file_id= CAACAgUAAx0CSBQOygACZjVgNIKsjn-KjSx9EgY_kItGdhcwTgACcAIAAir-kFX3hHE30u7AGB4E
+ref.message.sticker.file_unique_id= AgADcAIAAir-kFU
+ref.message.sticker.file_size= 26250
+
+
+[ref]
+ref.callback_query_id= /callback_q
+ref.text= hmhm
+ref.show_alert= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(180): Telegram->endpoint('answerCallbackQ...', Array)
+#3 C:\bot telegram\hook.php(464): Telegram->answerCallbackQuery(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-23 11:21:16  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: query is too old and response timeout expired or query ID is invalid
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804404763
+ref.message.message_id= 26166
+ref.message.from.id= 1355798219
+ref.message.from.is_bot= false
+ref.message.from.first_name= Kee
+ref.message.from.username= nekoha
+ref.message.from.language_code= en
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1614054074
+ref.message.text= Gabisa db gw
+
+
+[ref]
+ref.callback_query_id= /callback_q
+ref.text= hmhm
+ref.show_alert= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(180): Telegram->endpoint('answerCallbackQ...', Array)
+#3 C:\bot telegram\hook.php(464): Telegram->answerCallbackQuery(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-23 11:21:52  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: query is too old and response timeout expired or query ID is invalid
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804404764
+ref.message.message_id= 26167
+ref.message.from.id= 1355798219
+ref.message.from.is_bot= false
+ref.message.from.first_name= Kee
+ref.message.from.username= nekoha
+ref.message.from.language_code= en
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1614054110
+ref.message.text= Username makan
+
+
+[ref]
+ref.callback_query_id= /callback_q
+ref.text= hmhm
+ref.show_alert= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(180): Telegram->endpoint('answerCallbackQ...', Array)
+#3 C:\bot telegram\hook.php(464): Telegram->answerCallbackQuery(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-23 11:21:57  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: query is too old and response timeout expired or query ID is invalid
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804404765
+ref.message.message_id= 26168
+ref.message.from.id= 1355798219
+ref.message.from.is_bot= false
+ref.message.from.first_name= Kee
+ref.message.from.username= nekoha
+ref.message.from.language_code= en
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1614054115
+ref.message.text= t.me/makan
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 10
+ref.message.entities.0.type= url
+
+
+[ref]
+ref.callback_query_id= /callback_q
+ref.text= hmhm
+ref.show_alert= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(180): Telegram->endpoint('answerCallbackQ...', Array)
+#3 C:\bot telegram\hook.php(464): Telegram->answerCallbackQuery(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-23 11:22:03  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: query is too old and response timeout expired or query ID is invalid
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804404766
+ref.message.message_id= 26169
+ref.message.from.id= 1355798219
+ref.message.from.is_bot= false
+ref.message.from.first_name= Kee
+ref.message.from.username= nekoha
+ref.message.from.language_code= en
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1614054121
+ref.message.text= Njer
+
+
+[ref]
+ref.callback_query_id= /callback_q
+ref.text= hmhm
+ref.show_alert= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(180): Telegram->endpoint('answerCallbackQ...', Array)
+#3 C:\bot telegram\hook.php(464): Telegram->answerCallbackQuery(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-23 11:22:21  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: query is too old and response timeout expired or query ID is invalid
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804404767
+ref.message.message_id= 26170
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1614054139
+ref.message.text= itu buat debug lah... jadi diisi sembarang aja
+
+
+[ref]
+ref.callback_query_id= /callback_q
+ref.text= hmhm
+ref.show_alert= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(180): Telegram->endpoint('answerCallbackQ...', Array)
+#3 C:\bot telegram\hook.php(464): Telegram->answerCallbackQuery(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-23 11:22:30  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: query is too old and response timeout expired or query ID is invalid
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804404768
+ref.message.message_id= 26171
+ref.message.from.id= 1355798219
+ref.message.from.is_bot= false
+ref.message.from.first_name= Kee
+ref.message.from.username= nekoha
+ref.message.from.language_code= en
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1614054148
+ref.message.text= Iya tau😂
+
+
+[ref]
+ref.callback_query_id= /callback_q
+ref.text= hmhm
+ref.show_alert= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(180): Telegram->endpoint('answerCallbackQ...', Array)
+#3 C:\bot telegram\hook.php(464): Telegram->answerCallbackQuery(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-23 11:22:59  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: query is too old and response timeout expired or query ID is invalid
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804404769
+ref.message.message_id= 26172
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1614054177
+ref.message.forward_from_chat.id= -1001257189694
+ref.message.forward_from_chat.title= varzesh
+ref.message.forward_from_chat.username= Varzesh
+ref.message.forward_from_chat.type= channel
+ref.message.forward_from_message_id= 63
+ref.message.forward_date= 1545574548
+ref.message.photo.0.file_id= AgACAgUAAx0CSBQOygACZjxgNIMhPI0nmFbrqIJ1H_fH8TAijQACXagxG-mN-VTBRWRq4Fuk0Qzp3zIABAEAAwIAA3MAA8oLAAIeBA
+ref.message.photo.0.file_unique_id= AQADDOnfMgAEygsAAg
+ref.message.photo.0.file_size= 1343
+ref.message.photo.0.width= 90
+ref.message.photo.0.height= 90
+ref.message.photo.1.file_id= AgACAgUAAx0CSBQOygACZjxgNIMhPI0nmFbrqIJ1H_fH8TAijQACXagxG-mN-VTBRWRq4Fuk0Qzp3zIABAEAAwIAA20AA8sLAAIeBA
+ref.message.photo.1.file_unique_id= AQADDOnfMgAEywsAAg
+ref.message.photo.1.file_size= 21457
+ref.message.photo.1.width= 320
+ref.message.photo.1.height= 320
+ref.message.photo.2.file_id= AgACAgUAAx0CSBQOygACZjxgNIMhPI0nmFbrqIJ1H_fH8TAijQACXagxG-mN-VTBRWRq4Fuk0Qzp3zIABAEAAwIAA3gAA8wLAAIeBA
+ref.message.photo.2.file_unique_id= AQADDOnfMgAEzAsAAg
+ref.message.photo.2.file_size= 53405
+ref.message.photo.2.width= 640
+ref.message.photo.2.height= 640
+ref.message.caption= توهم مثله من از این دنیا دلگیری :) بزن رو لینک بیا تو🖤👇
+https://t.me/joinchat/AAAAAFH_6h91toxkMSrRmA
+ref.message.caption_entities.0.offset= 58
+ref.message.caption_entities.0.length= 44
+ref.message.caption_entities.0.type= url
+
+
+[ref]
+ref.callback_query_id= /callback_q
+ref.text= hmhm
+ref.show_alert= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(180): Telegram->endpoint('answerCallbackQ...', Array)
+#3 C:\bot telegram\hook.php(464): Telegram->answerCallbackQuery(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-23 11:23:37  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: query is too old and response timeout expired or query ID is invalid
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804404770
+ref.message.message_id= 26173
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1614054214
+ref.message.text= /afk hehe
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 4
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.callback_query_id= /callback_q
+ref.text= hmhm
+ref.show_alert= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(180): Telegram->endpoint('answerCallbackQ...', Array)
+#3 C:\bot telegram\hook.php(464): Telegram->answerCallbackQuery(Array)
+#4 {main}
+
