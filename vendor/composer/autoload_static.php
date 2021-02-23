@@ -41,9 +41,14 @@ class ComposerStaticInit37458c04d77e08a184290ff46a23e733
             'GuzzleHttp\\Promise\\' => 19,
             'GuzzleHttp\\' => 11,
         ),
+        'C' => 
+        array (
+            'Crackle\\' => 8,
+        ),
         'B' => 
         array (
             'Buchin\\Badwords\\' => 16,
+            'Brush\\' => 6,
             'Brainly\\' => 8,
         ),
     );
@@ -93,9 +98,17 @@ class ComposerStaticInit37458c04d77e08a184290ff46a23e733
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
         ),
+        'Crackle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/crackle/crackle',
+        ),
         'Buchin\\Badwords\\' => 
         array (
             0 => __DIR__ . '/..' . '/buchin/badwords/src',
+        ),
+        'Brush\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/gebn/brush',
         ),
         'Brainly\\' => 
         array (

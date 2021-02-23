@@ -17,7 +17,9 @@ return array(
     'GuzzleHttp\\Psr7\\' => array($vendorDir . '/guzzlehttp/psr7/src'),
     'GuzzleHttp\\Promise\\' => array($vendorDir . '/guzzlehttp/promises/src'),
     'GuzzleHttp\\' => array($vendorDir . '/guzzlehttp/guzzle/src'),
+    'Crackle\\' => array($vendorDir . '/crackle/crackle'),
     'Buchin\\Badwords\\' => array($vendorDir . '/buchin/badwords/src'),
+    'Brush\\' => array($vendorDir . '/gebn/brush'),
     'Brainly\\' => array($vendorDir . '/ammarfaizi2/brainly/src'),
     '' => array($vendorDir . '/league/color-extractor/src'),
 );

@@ -10,6 +10,7 @@
         "ammarfaizi2/brainly": "^1.0",
         "masokky/quotemaker": "^1.0",
         "sergeytsalkov/meekrodb": "^2.3",
-        "thingengineer/mysqli-database-class": "^2.9"
+        "thingengineer/mysqli-database-class": "^2.9",
+        "gebn/brush": "1.*"
     }
 }

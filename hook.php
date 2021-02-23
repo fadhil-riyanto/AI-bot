@@ -485,6 +485,9 @@ if ($text == '/start' || $text == '/start' . USERNAME_BOT . '') {
 } elseif ('/adminlist' == $adanParse[0] || '/adminlist' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/adminlist.php';
 	exit;
+} elseif ('/pastebin' == $adanParse[0] || '/bin' == $adanParse[0] || '/pastebin' . USERNAME_BOT . '' == $adanParse[0]) {
+	require __DIR__ . '/command/pastebin.php';
+	exit;
 } elseif ('/unafk' == $adanParse[0] || 'unafk' == $adanParse[0] || '/unafk' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/unafk.php';
 	exit;
