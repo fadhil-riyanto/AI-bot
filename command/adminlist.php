@@ -3,6 +3,7 @@ $azanHilangcommand = str_replace($adanParse_plain[0], '', $text_plain);
 $udahDiparse = str_replace($adanParse_plain[0] . ' ', '', $text_plain);
 if ($azanHilangcommand == null) {
     $content = array('chat_id' => $chat_id);
+
     $admin_data = $telegram->getChatAdministrators($content);
     foreach ($admin_data['result'] as $adminlist) {
         $daftaradmin = $adminlist['user']['id'];
