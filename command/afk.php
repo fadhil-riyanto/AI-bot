@@ -1,4 +1,5 @@
 <?php
+date_default_timezone_set(TIME_ZONE);
 $result = $telegram->getData();
 $azanHilangcommand = str_replace($adanParse[0], '', $text);
 $udahDiparse = str_replace($adanParse[0] . ' ', '', $text);
@@ -7,42 +8,43 @@ if ($azanHilangcommand == null) {
     $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
     $telegram->sendMessage($content);
 } else {
-    $msgidUntukedit = $udahDiparse;
-    $namedafkjson = __DIR__ . '/../json_data/afk.json';
-    function getUseridFromeditmessage($userID)
-    {
-        $file = __DIR__ . "/../json_data/afk.json";
-        $anggota = file_get_contents($file);
-        $data = json_decode($anggota, true);
-        foreach ($data as $d) {
-            if ($d['userid'] == $userID) {
-                return true;
-            }
-        }
-    }
-    $cheker = getUseridFromeditmessage($userID);
-    if ($cheker == true) {
-        $file = __DIR__ . "/../json_data/afk.json";
-        $anggota = file_get_contents($file);
-        $data = json_decode($anggota, true);
-        foreach ($data as $key => $d) {
-            if ($d['userid'] === $userID) {
-                $data[$key]['alasan'] = $msgidUntukedit;
-            }
-        }
-        $jsonfile = json_encode($data, JSON_PRETTY_PRINT);
-        $anggota = file_put_contents($file, $jsonfile);
-    } elseif ($cheker == null) {
-        $file = __DIR__ . "/../json_data/afk.json";
-        $anggota = file_get_contents($file);
-        $data = json_decode($anggota, true);
-
-        $data[] = array(
+    $db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
+    $db->where("userid", $userID);
+    $user = $db->getOne("afk_user_data");
+    if ($user['userid'] == null) {
+        $data = array(
             "userid" => $userID,
-            "alasan" => $msgidUntukedit
+            "time_afk" =>  date("H:i:s"),
+            "alasan" => $udahDiparse,
+            "username" => $usernameBelumdiparse
         );
-
-        $jsonfile = json_encode($data, JSON_PRETTY_PRINT);
-        $anggota = file_put_contents($file, $jsonfile);
+        $id = $db->insert('afk_user_data', $data);
+        if ($id) {
+            $reply = "anda sedang afk!" . PHP_EOL . 'gunakan /unafk untuk melepas status afk!';
+            $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+            $telegram->sendMessage($content);
+        } else {
+            $reply = "ups ada kesalahan internal. Reason : " . $db->getLastError();
+            $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+            $telegram->sendMessage($content);
+        }
+    } else {
+        $data = array(
+            "userid" => $userID,
+            "time_afk" =>  date("H:i:s"),
+            "alasan" => $udahDiparse,
+            "username" => $usernameBelumdiparse
+            // active = !active;
+        );
+        $db->where('userid', $userID);
+        if ($db->update('afk_user_data', $data)) {
+            $reply = "anda sedang afk!" . PHP_EOL . 'gunakan /unafk untuk melepas status afk!';
+            $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+            $telegram->sendMessage($content);
+        } else {
+            $reply = "ups, ada kesalahan!. Penyebab : " . $db->getLastError();
+            $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+            $telegram->sendMessage($content);
+        }
     }
 }

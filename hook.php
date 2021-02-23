@@ -107,11 +107,24 @@ $result = $telegram->getData();
 $getreplyianid = $result['message']['reply_to_message']['from']['id'];
 $afkforstname = $result['message']['reply_to_message']['from']['first_name'];
 $afklastname = $result['message']['reply_to_message']['from']['last_name'];
-$jsongetafk = file_get_contents(__DIR__ . '/json_data/afk.json');
-$jsonafk = json_decode($jsongetafk, true);
-foreach ($jsonafk as $daftarafk) {
-	if ($daftarafk['userid'] == $getreplyianid) {
-		$reply = 'maaf, ' . $afkforstname . ' ' . $afklastname  . ' sedang afk' . PHP_EOL . 'Alasan : ' .  $daftarafk['alasan'];
+// $jsongetafk = file_get_contents(__DIR__ . '/json_data/afk.json');
+// $jsonafk = json_decode($jsongetafk, true);
+// foreach ($jsonafk as $daftarafk) {
+// 	if ($daftarafk['userid'] == $getreplyianid) {
+// 		$reply = 'maaf, ' . $afkforstname . ' ' . $afklastname  . ' sedang afk' . PHP_EOL . 'Alasan : ' .  $daftarafk['alasan'];
+// 		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+// 		$telegram->sendMessage($content);
+// 		exit;
+// 	}
+// }
+if (isset($getreplyianid)) {
+	$db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
+	$db->where("userid", $getreplyianid);
+	$user = $db->getOne("afk_user_data");
+	if ($user['userid'] == null) {
+	} else {
+		$reply = "Maaf ," . $afkforstname . ' ' . $afklastname . ' sedang AFK sejak ' . $user['time_afk'] . PHP_EOL .
+			'Alasan : ' . $user['alasan'];
 		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
 		$telegram->sendMessage($content);
 		exit;
@@ -450,18 +463,9 @@ if (isset($memberanyar)) {
 $content = array('callback_query_id' => '/callback_q', 'text' => 'hmhm', 'show_alert' => true);
 $telegram->answerCallbackQuery($content);
 
-$result = $telegram->getData();
-$getreplyianid = $result['message']['reply_to_message']['from']['id'];
-$jsongetafk = __DIR__ . '/json_data/afk.json';
-$jsonafk = json_decode($jsongetafk);
-foreach ($jsonafk as $daftarafk) {
-	if ($daftarafk->userid == $getreplyianid) {
-		$reply = 'ups dia denagn afk';
-		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-		$telegram->sendMessage($content);
-		exit;
-	}
-}
+// $result = $telegram->getData();
+// $getreplyianid = $result['message']['reply_to_message']['from']['id'];
+
 
 // $reply = $getreplyianid;
 // $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
