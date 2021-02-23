@@ -80,10 +80,28 @@ if ($getStringFromSpasi[0] == 'debug' || $getStringFromSpasi[0] == 'debugmode') 
     $telegram->sendMessage($content);
 } elseif ($getStringFromSpasi[0] == 'eval' || $getStringFromSpasi[0] == 'exec_value') {
     $udahDiparse = str_replace($adanParse_plain_nokarakter[0] . ' ' . $adanParse_plain_nokarakter[1] . ' ', '', $text_plain_nokarakter);
-    $filePath = __DIR__ . '/../tmp/' . mt_rand();
-    file_put_contents($filePath, $udahDiparse);
-    register_shutdown_function('unlink', $udahDiparse);
-    require($filePath);
+    // $filePath = __DIR__ . '/../tmp/' . mt_rand();
+    // file_put_contents($filePath, $udahDiparse);
+    // register_shutdown_function('unlink', $udahDiparse);
+    // require($filePath);
+    function kirim($data)
+    {
+        global $chat_id;
+        global $message_id;
+        global $telegram;
+        $content = array('chat_id' => $chat_id, 'text' => $data, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+        $telegram->sendMessage($content);
+    }
+    try {
+        $result = eval($udahDiparse);
+        $content = array('chat_id' => $chat_id, 'text' => $result, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+        $telegram->sendMessage($content);
+    } catch (ParseError $e) {
+        $reply = 'sintak error, alasan ' . PHP_EOL . PHP_EOL . $e;
+        $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+        $telegram->sendMessage($content);
+        // Report error somehow
+    }
     // $reply = 'errormes';
     // $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
     // $telegram->sendMessage($content);
