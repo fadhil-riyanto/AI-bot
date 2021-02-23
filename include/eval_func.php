@@ -4,7 +4,7 @@ function send($data)
     global $chat_id;
     global $message_id;
     global $telegram;
-    $content = array('chat_id' => $chat_id, 'text' => '<pre>' . htmlspecialchars(mb_strimwidth($data, 0, 4094)) . '</pre>', 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+    $content = array('chat_id' => $chat_id, 'text' => '<pre>' . htmlspecialchars(substr($data, 0, 4090)) . '</pre>', 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
     $telegram->sendMessage($content);
 }
 function get_curl($data)
