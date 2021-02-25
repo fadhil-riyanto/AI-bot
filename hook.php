@@ -305,7 +305,7 @@ if (isset($text)) {
 	$chek_gc = detect_grup();
 	$nama_gc = $chat_id;
 	if ($chek_gc == true) {
-		if ($nama_gc == -1001209274058 || $nama_gc == -1001410961692 || $nama_gc == -458987087) {
+		if ($nama_gc == -1001209274058 || $nama_gc == -1001410961692 || $nama_gc == -458987087 || $nama_gc == -1001433395819) {
 		} else {
 			$reply = 'Maaf, saya diprogram oleh pemilik saya untuk tidak dimasukkan ke grup. Jika anda masih tetap memasukkan saya ke grup. maka otomatis saya akan mengeluarkan diri.';
 			$content1 = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);

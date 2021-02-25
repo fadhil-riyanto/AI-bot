@@ -110,7 +110,7 @@ if ($getStringFromSpasi[0] == 'debug' || $getStringFromSpasi[0] == 'debugmode') 
     }
 }elseif ($getStringFromSpasi[0] == 'fadhil' || $getStringFromSpasi[0] == 'fadhil') {
 	$fadhil_lang = str_replace($adanParse_plain_nokarakter[0] . ' ' . $adanParse_plain_nokarakter[1] . ' ', '', $text_plain_nokarakter);
-    $reply = file_get_contents($host_server . '/parser.php?kode=' . $fadhil_lang);
+    $reply = file_get_contents($host_server . '/parser.php?kode=' . urlencode($fadhil_lang));
 	$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
     $telegram->sendMessage($content);
 }
