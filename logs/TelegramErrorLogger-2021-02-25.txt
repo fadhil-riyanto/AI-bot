@@ -1,0 +1,132 @@
+============[Date]============
+[ 2021-02-25 19:06:43  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: query is too old and response timeout expired or query ID is invalid
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804406201
+ref.message.message_id= 16961
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1614254797
+ref.message.text= /sudo fadhil # tes hello world
+
+tulis::hello world 
+tulis::bisa kenalan ga?
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.callback_query_id= /callback_q
+ref.text= hmhm
+ref.show_alert= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(180): Telegram->endpoint('answerCallbackQ...', Array)
+#3 C:\bot telegram\hook.php(464): Telegram->answerCallbackQuery(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-25 19:07:05  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: query is too old and response timeout expired or query ID is invalid
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804406202
+ref.message.message_id= 16963
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1614254822
+ref.message.text= /sudo fadhil # tes hello world
+
+tulis::hello world 
+tulis::bisa kenalan ga?
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.callback_query_id= /callback_q
+ref.text= hmhm
+ref.show_alert= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(180): Telegram->endpoint('answerCallbackQ...', Array)
+#3 C:\bot telegram\hook.php(464): Telegram->answerCallbackQuery(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-02-25 19:07:41  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: query is too old and response timeout expired or query ID is invalid
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804406202
+ref.message.message_id= 16963
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1614254822
+ref.message.text= /sudo fadhil # tes hello world
+
+tulis::hello world 
+tulis::bisa kenalan ga?
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.callback_query_id= /callback_q
+ref.text= hmhm
+ref.show_alert= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(180): Telegram->endpoint('answerCallbackQ...', Array)
+#3 C:\bot telegram\hook.php(464): Telegram->answerCallbackQuery(Array)
+#4 {main}
+
