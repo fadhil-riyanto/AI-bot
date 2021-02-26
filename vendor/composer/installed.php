@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '1c0d37184971582b98901f5a036fa88936eec354',
+    'reference' => '45e4fb2f143fce9643e4417b5df6758ee15f54cc',
     'name' => '__root__',
   ),
   'versions' => 
@@ -18,7 +18,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '1c0d37184971582b98901f5a036fa88936eec354',
+      'reference' => '45e4fb2f143fce9643e4417b5df6758ee15f54cc',
     ),
     'ammarfaizi2/brainly' => 
     array (
@@ -57,15 +57,6 @@
       ),
       'reference' => '79cbf1341c22ec75643d841642dd5d6acd83bdb8',
     ),
-    'crackle/crackle' => 
-    array (
-      'pretty_version' => 'v2.6.0',
-      'version' => '2.6.0.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '4b695a155a8ea3d1b6a7c814f9849762edd4b3a7',
-    ),
     'eleirbag89/telegrambotphp' => 
     array (
       'pretty_version' => '1.3.11',
@@ -83,15 +74,6 @@
       array (
       ),
       'reference' => '08e27c97e4c6ed02f37c5b2b20488046c8d90d75',
-    ),
-    'gebn/brush' => 
-    array (
-      'pretty_version' => 'v1.2.0',
-      'version' => '1.2.0.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => 'b6a53f8d91b675642fc9c3367fc40b2109591442',
     ),
     'guzzlehttp/guzzle' => 
     array (

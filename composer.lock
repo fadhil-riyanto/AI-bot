@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "82af46b3cf475f436a21e0b5b9c0dd9f",
+    "content-hash": "5935cc7c25be0574f60fda21b84d582f",
     "packages": [
         {
             "name": "ammarfaizi2/brainly",
@@ -174,56 +174,6 @@
             "time": "2017-02-14T19:40:03+00:00"
         },
         {
-            "name": "crackle/crackle",
-            "version": "v2.6.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/gebn/Crackle.git",
-                "reference": "4b695a155a8ea3d1b6a7c814f9849762edd4b3a7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/gebn/Crackle/zipball/4b695a155a8ea3d1b6a7c814f9849762edd4b3a7",
-                "reference": "4b695a155a8ea3d1b6a7c814f9849762edd4b3a7",
-                "shasum": ""
-            },
-            "require": {
-                "ext-curl": "*",
-                "php": ">=5.3.0"
-            },
-            "suggest": {
-                "ext-fileinfo": "Enables automatic detection of file MIME types."
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Crackle\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "George Brighton",
-                    "homepage": "https://gebn.co.uk/"
-                }
-            ],
-            "description": "Crackle is a powerful yet easy to use object-oriented HTTP client.",
-            "homepage": "https://github.com/gebn/Crackle",
-            "keywords": [
-                "curl",
-                "http",
-                "request"
-            ],
-            "support": {
-                "issues": "https://github.com/gebn/Crackle/issues",
-                "source": "https://github.com/gebn/Crackle/tree/master"
-            },
-            "time": "2016-02-24T23:21:23+00:00"
-        },
-        {
             "name": "eleirbag89/telegrambotphp",
             "version": "1.3.11",
             "source": {
@@ -333,55 +283,6 @@
                 "source": "https://github.com/ezyang/htmlpurifier/tree/master"
             },
             "time": "2020-06-29T00:56:53+00:00"
-        },
-        {
-            "name": "gebn/brush",
-            "version": "v1.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/gebn/Brush.git",
-                "reference": "b6a53f8d91b675642fc9c3367fc40b2109591442"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/gebn/Brush/zipball/b6a53f8d91b675642fc9c3367fc40b2109591442",
-                "reference": "b6a53f8d91b675642fc9c3367fc40b2109591442",
-                "shasum": ""
-            },
-            "require": {
-                "crackle/crackle": "*",
-                "ext-curl": "*",
-                "php": ">=5.3.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Brush\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "George Brighton",
-                    "homepage": "https://gebn.co.uk/"
-                }
-            ],
-            "description": "Brush is a complete object-oriented PHP wrapper for the Pastebin API.",
-            "homepage": "https://github.com/gebn/Brush",
-            "keywords": [
-                "api",
-                "pastebin",
-                "text",
-                "wrapper"
-            ],
-            "support": {
-                "issues": "https://github.com/gebn/Brush/issues",
-                "source": "https://github.com/gebn/Brush/tree/master"
-            },
-            "time": "2019-02-27T21:00:07+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
