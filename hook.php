@@ -74,8 +74,8 @@ function whitelist_check($userID)
 $cek_daftarputih = whitelist_check($userID);
 
 if ($cek_daftarputih == true) {
-} elseif ($cek_daftarputih == null) {
 	exit;
+} elseif ($cek_daftarputih == null) {
 }
 
 if ($usernameBelumdiparse != null) { //Jika user ada usernamenya
