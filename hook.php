@@ -605,12 +605,6 @@ if ($detectReply == true) {
 	}
 
 	if ($koneksi == 1) {
-		$debugwaktu_akhir = microtime(true);
-		$waktueksekusi = ($debugwaktu_awal - $debugwaktu_akhir) * 1000;
-		$content = array('chat_id' => $chat_id, 'text' => $waktueksekusi, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-		$telegram->sendMessage($content);
-
-
 		if ($ai_chatting_decode->affected > 0) {
 			$reply = Emoji::Decode($ai_chatting_decode->respon) . PHP_EOL;
 			$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
