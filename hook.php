@@ -1,7 +1,8 @@
 <?php
-
+$debugwaktu_awal = microtime(true);
 
 require __DIR__ . '/pengaturan/env.php';
+require __DIR__ . '/include/hook_function_core.php';
 // PENJELASAN SINGKAT
 
 // DB_HOST digunakan untuk login ke database, begitu juga username dan password_get_info
@@ -23,22 +24,9 @@ $telegramAPIs   = TG_HTTP_API;
 $api_key_cuttly = CUTLLY_API;
 $id_bot_sendiri = ID_BOT;
 echo 'Ini server 1 bot telegram' . PHP_EOL . '<hr>';
-function SERVER_ALAMAT_addr()
-{
-	$protocol = ((!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') ||
-		$_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
-	$domainName = $_SERVER['HTTP_HOST'];
-	return $protocol . $domainName;
-}
 
-function _is_curl_installed()
-{
-	if (in_array('curl', get_loaded_extensions())) {
-		return true;
-	} else {
-		return false;
-	}
-}
+
+
 
 // Ouput text to user based on test
 if (_is_curl_installed()) {
@@ -47,61 +35,56 @@ if (_is_curl_installed()) {
 	echo "cURL belum <span style=\"color:red\">TERPASANG</span> diserver ini" . PHP_EOL;
 }
 echo '<br>Memory usage : ' . memory_get_usage();
-function waktu_aktif()
-{
-	$ut = strtok(exec("cat /proc/uptime"), ".");
-	$days = sprintf("%2d", ($ut / (3600 * 24)));
-	$hours = sprintf("%2d", (($ut % (3600 * 24)) / 3600));
-	$min = sprintf("%2d", ($ut % (3600 * 24) % 3600) / 60);
-	$sec = sprintf("%2d", ($ut % (3600 * 24) % 3600) % 60);
 
-
-	return array($days, $hours, $min, $sec);
-}
 //include('Telegram.php');
 $host_server   = SERVER_ALAMAT_addr();
 //$host_server   = 'http://server-data.000webhostapp.com';
 
 date_default_timezone_set(TIME_ZONE);
 $telegram = new Telegram($telegramAPIs);
-$koneksi = @mysqli_connect(
-	DB_HOST,
-	DB_USERNAME,
-	DB_PASSWORD,
-	DB_NAME
-);
 
 
 
 
 //use http!!!!
 //akhir wajib diisi
-if ($koneksi == 1) {
-	$text = htmlspecialchars(strtolower(mysqli_real_escape_string($koneksi, $telegram->Text())));
-	$text_plain = htmlspecialchars($telegram->Text());
-	$text_plain_nokarakter = $telegram->Text();
-	$chat_id = $telegram->ChatID();
-	$userID = $telegram->UserID();
-	$message_id = $telegram->MessageID();
-	$usernameBelumdiparse = $telegram->Username();
-	$namaPertama = $telegram->FirstName();
-	$namaTerakhir = $telegram->LastName();
-} else {
-	$text = htmlspecialchars(strtolower($telegram->Text()));
-	$text_plain = htmlspecialchars($telegram->Text());
-	$text_plain_nokarakter = $telegram->Text();
-	$chat_id = $telegram->ChatID();
-	$userID = $telegram->UserID();
-	$message_id = $telegram->MessageID();
-	$usernameBelumdiparse = $telegram->Username();
-	$namaPertama = $telegram->FirstName();
-	$namaTerakhir = $telegram->LastName();
+
+$text = htmlspecialchars(strtolower($telegram->Text()));
+$text_plain = htmlspecialchars($telegram->Text());
+$text_plain_nokarakter = $telegram->Text();
+$chat_id = $telegram->ChatID();
+$userID = $telegram->UserID();
+$message_id = $telegram->MessageID();
+$usernameBelumdiparse = $telegram->Username();
+$namaPertama = $telegram->FirstName();
+$namaTerakhir = $telegram->LastName();
+
+
+function whitelist_check($userID)
+{
+	$file = __DIR__ . "/json_data/whitelist_userid.json";
+	$anggota = file_get_contents($file);
+	$data = json_decode($anggota, true);
+	foreach ($data as $d) {
+		if ($d['userid'] == $userID) {
+			return true;
+		}
+	}
 }
+$cek_daftarputih = whitelist_check($userID);
+
+if ($cek_daftarputih == true) {
+} elseif ($cek_daftarputih == null) {
+	exit;
+}
+
 if ($usernameBelumdiparse != null) { //Jika user ada usernamenya
 	$username = ' @' . $usernameBelumdiparse;
 } else { //ini user aneh, username gaada.....
 	$username = '<a href="tg://user?id=' . $userID . '">' . $namaPertama . ' ' . $namaTerakhir . '</a>';
 }
+
+
 
 $result = $telegram->getData();
 $getreplyianid = $result['message']['reply_to_message']['from']['id'];
@@ -117,6 +100,7 @@ $afklastname = $result['message']['reply_to_message']['from']['last_name'];
 // 		exit;
 // 	}
 // }
+
 if (isset($getreplyianid)) {
 	$db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
 	$db->where("userid", $getreplyianid);
@@ -131,37 +115,24 @@ if (isset($getreplyianid)) {
 	}
 }
 
-$banslistget = file_get_contents(__DIR__ . '/json_data/bans.json');
-$banlistjsondec = json_decode($banslistget);
-foreach ($banlistjsondec as $banuser) {
-	if ($banuser->uid == $userID) {
-		$dumppesan = '#ban_user' . PHP_EOL .
-			'dari : ' . $username . PHP_EOL .
-			'userid : <pre>' . $userID . '</pre>' .  PHP_EOL .
-			'konten : ' . $text_plain_nokarakter;
-		$content = array('chat_id' => '-458987087', 'parse_mode' => 'html', 'text' => $dumppesan, 'disable_web_page_preview' => true);
-		$telegram->sendMessage($content);
-		exit;
-	}
-}
 
-$anggota = file_get_contents(__DIR__ . '/pengaturan/settings.json');
+// $anggota = file_get_contents(__DIR__ . '/pengaturan/settings.json');
 
-$data = json_decode($anggota, true);
-foreach ($data as $key => $d) {
-	if ($d['no'] === 1) {
-		if ($userID == $userid_pemilik) {
-			continue;
-		} elseif ($d['debug'] == true) {
-			$reply = 'maaf, bot ini sedang dalam perbaikan';
-			$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-			$telegram->sendMessage($content);
-			exit;
-		} elseif ($d['debug'] == false) {
-			continue;
-		}
-	}
-}
+// $data = json_decode($anggota, true);
+// foreach ($data as $key => $d) {
+// 	if ($d['no'] === 1) {
+// 		if ($userID == $userid_pemilik) {
+// 			continue;
+// 		} elseif ($d['debug'] == true) {
+// 			$reply = 'maaf, bot ini sedang dalam perbaikan';
+// 			$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+// 			$telegram->sendMessage($content);
+// 			exit;
+// 		} elseif ($d['debug'] == false) {
+// 			continue;
+// 		}
+// 	}
+// }
 
 $adanParse = explode(' ', $text);
 $adanParse_plain = explode(' ', $text_plain);
@@ -171,83 +142,8 @@ $hilangAzan = str_replace('/azan ', '', $text, $hit);
 if ($hit == 0) {
 	$hilangAzan = str_replace('/azan' . USERNAME_BOT . ' ', '', $text);
 }
-function detect_grup()
-{
-	global $chat_id;
-	$pregs = substr($chat_id, 0, 1);
-	if ($pregs == '-') {
-		return true;
-	}
-}
+
 $deteksiApakahGrup = detect_grup();
-function detect_apakah_pesan_reply_ke_bot()
-{
-	global $replyid_replian;
-	global $id_bot_sendiri;
-	global $deteksiApakahGrup;
-	if (isset($replyid_replian)) {
-		if ($replyid_replian == $id_bot_sendiri) {
-			return true;
-		} else {
-			return false;
-		}
-	} elseif ($deteksiApakahGrup == null) {
-		return true;
-	} else {
-		return false;
-	}
-}
-function is_valid_domain_name($domain_name)
-{
-	return (preg_match("/^([a-z\d](-*[a-z\d])*)(\.([a-z\d](-*[a-z\d])*))*$/i", $domain_name) //valid chars check
-		&& preg_match("/^.{1,253}$/", $domain_name) //overall length check
-		&& preg_match("/^[^\.]{1,63}(\.[^\.]{1,63})*$/", $domain_name)); //length of each label
-}
-
-function cek_domain($url)
-{
-	// KEMbalikan BOOL ::
-	$validation = FALSE;
-	/*Parse URL*/
-	$urlparts = parse_url(filter_var($url, FILTER_SANITIZE_URL));
-	/*Check host exist else path assign to host*/
-	if (!isset($urlparts['host'])) {
-		$urlparts['host'] = $urlparts['path'];
-	}
-
-	if ($urlparts['host'] != '') {
-		/*Add scheme if not found*/
-		if (!isset($urlparts['scheme'])) {
-			$urlparts['scheme'] = 'http';
-		}
-		/*Validation*/
-		if (checkdnsrr($urlparts['host'], 'A') && in_array($urlparts['scheme'], array('http', 'https')) && ip2long($urlparts['host']) === FALSE) {
-			$urlparts['host'] = preg_replace('/^www\./', '', $urlparts['host']);
-			$url = $urlparts['scheme'] . '://' . $urlparts['host'] . "/";
-
-			if (filter_var($url, FILTER_VALIDATE_URL) !== false && @get_headers($url)) {
-				$validation = TRUE;
-			}
-		}
-	}
-
-	if (!$validation) {
-		return false;
-	} else {
-		return true;
-	}
-}
-
-function hapus_http($url)
-{
-	$disallowed = array('http://', 'https://');
-	foreach ($disallowed as $d) {
-		if (strpos($url, $d) === 0) {
-			return str_replace($d, '', $url);
-		}
-	}
-	return $url;
-}
 
 $stringPertama = substr($text, 0, 1);
 $stringKedua = substr($text, 0, 2);
@@ -268,34 +164,24 @@ $replyid_replian = $result_getreplyian['message']['reply_to_message']['from']['i
 // 	mysqli_query($koneksi, "INSERT INTO `freedbtech_ai_bot_fadhil_riyanto`.`client_user` (`username`, `userid`, `firstname`, `lastname`) VALUES ('$usernameBelumdiparse', '$userID', '$namaPertama', '$namaTerakhir')");
 // }
 
-function tracking_user($userID)
-{
-	$file = __DIR__ . "/json_data/user_client.json";
-	$anggota = file_get_contents($file);
-	$data = json_decode($anggota, true);
-	foreach ($data as $d) {
-		if ($d['userid'] == $userID) {
-			return true;
-		}
-	}
-}
-$chek = tracking_user($userID);
-if ($chek == true) {
-} elseif ($chek == null) {
-	$file = __DIR__ . "/json_data/user_client.json";
-	$anggota = file_get_contents($file);
-	$data = json_decode($anggota, true);
 
-	$data[] = array(
-		"userid" => $userID,
-		"username" => $usernameBelumdiparse,
-		"firstname" => $namaPertama,
-		"lastname" => $namaTerakhir
-	);
+// $chek = tracking_user($userID);
+// if ($chek == true) {
+// } elseif ($chek == null) {
+// 	$file = __DIR__ . "/json_data/user_client.json";
+// 	$anggota = file_get_contents($file);
+// 	$data = json_decode($anggota, true);
 
-	$jsonfile = json_encode($data, JSON_PRETTY_PRINT);
-	$anggota = file_put_contents($file, $jsonfile);
-}
+// 	$data[] = array(
+// 		"userid" => $userID,
+// 		"username" => $usernameBelumdiparse,
+// 		"firstname" => $namaPertama,
+// 		"lastname" => $namaTerakhir
+// 	);
+
+// 	$jsonfile = json_encode($data, JSON_PRETTY_PRINT);
+// 	$anggota = file_put_contents($file, $jsonfile);
+// }
 
 
 
@@ -318,19 +204,7 @@ if (isset($text)) {
 }
 $deteksiApakahGrupwaktu = detect_grup();
 if ($deteksiApakahGrupwaktu != true) {
-	function tracking_user_forwaktu($userID)
-	{
-		global $useridTime;
-		$file = __DIR__ . "/json_data/user_delay_time.json";
-		$anggota = file_get_contents($file);
-		$data = json_decode($anggota, true);
-		foreach ($data as $d) {
-			if ($d['userid'] == $userID) {
-				$useridTime = $d['userid'];
-				return true;
-			}
-		}
-	}
+
 	$chek = tracking_user_forwaktu($userID);
 	if ($chek == true) {
 		if (
@@ -388,21 +262,21 @@ if ($deteksiApakahGrupwaktu != true) {
 	}
 }
 
-if ($deteksiApakahGrup == true) {
-} elseif ($deteksiApakahGrup == null) {
-	$dumppesan = 'dari : ' . $username . PHP_EOL .
-		'userid : <pre>' . $userID . '</pre>' .  PHP_EOL .
-		'konten : ' . $text_plain_nokarakter;
-	$content = array('chat_id' => '-458987087', 'parse_mode' => 'html', 'text' => $dumppesan, 'disable_web_page_preview' => true);
-	$telegram->sendMessage($content);
-}
+// if ($deteksiApakahGrup == true) {
+// } elseif ($deteksiApakahGrup == null) {
+// 	$dumppesan = 'dari : ' . $username . PHP_EOL .
+// 		'userid : <pre>' . $userID . '</pre>' .  PHP_EOL .
+// 		'konten : ' . $text_plain_nokarakter;
+// 	$content = array('chat_id' => '-458987087', 'parse_mode' => 'html', 'text' => $dumppesan, 'disable_web_page_preview' => true);
+// 	$telegram->sendMessage($content);
+// }
 
 
 
-if (detect_apakah_pesan_reply_ke_bot() == true) {
-	$status = array('chat_id' => $chat_id, 'action' => 'typing');
-	$telegram->sendChatAction($status);
-}
+// if (detect_apakah_pesan_reply_ke_bot() == true) {
+// 	$status = array('chat_id' => $chat_id, 'action' => 'typing');
+// 	$telegram->sendChatAction($status);
+// }
 $memberanyar = $telegram->member_baru();
 if (isset($memberanyar)) {
 	if ($usernameBelumdiparse == ID_BOT) {
@@ -460,8 +334,7 @@ if (isset($memberanyar)) {
 	}
 	exit;
 }
-$content = array('callback_query_id' => '/callback_q', 'text' => 'hmhm', 'show_alert' => true);
-$telegram->answerCallbackQuery($content);
+
 
 // $result = $telegram->getData();
 // $getreplyianid = $result['message']['reply_to_message']['from']['id'];
@@ -712,6 +585,14 @@ if ($text == '/start' || $text == '/start' . USERNAME_BOT . '') {
 // ENCRYPT TOOLS DIAKHIRI
 // LICENSE BY FADHIL
 // PAHAM?
+$koneksi = @mysqli_connect(
+	DB_HOST,
+	DB_USERNAME,
+	DB_PASSWORD,
+	DB_NAME
+);
+
+
 $detectReply = detect_apakah_pesan_reply_ke_bot();
 if ($detectReply == true) {
 	$ai_chatting = robot_artificial_intelegence($text);
@@ -724,6 +605,12 @@ if ($detectReply == true) {
 	}
 
 	if ($koneksi == 1) {
+		$debugwaktu_akhir = microtime(true);
+		$waktueksekusi = ($debugwaktu_awal - $debugwaktu_akhir) * 1000;
+		$content = array('chat_id' => $chat_id, 'text' => $waktueksekusi, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+		$telegram->sendMessage($content);
+
+
 		if ($ai_chatting_decode->affected > 0) {
 			$reply = Emoji::Decode($ai_chatting_decode->respon) . PHP_EOL;
 			$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
