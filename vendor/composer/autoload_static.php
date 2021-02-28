@@ -89,6 +89,7 @@ class ComposerStaticInit37458c04d77e08a184290ff46a23e733
         'S' => 
         array (
             'Symfony\\Polyfill\\Mbstring\\' => 26,
+            'Symfony\\Component\\Finder\\' => 25,
         ),
         'P' => 
         array (
@@ -112,6 +113,7 @@ class ComposerStaticInit37458c04d77e08a184290ff46a23e733
             'GuzzleHttp\\Psr7\\' => 16,
             'GuzzleHttp\\Promise\\' => 19,
             'GuzzleHttp\\' => 11,
+            'Gregwar\\' => 8,
         ),
         'C' => 
         array (
@@ -148,6 +150,10 @@ class ComposerStaticInit37458c04d77e08a184290ff46a23e733
         'Symfony\\Polyfill\\Mbstring\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
+        ),
+        'Symfony\\Component\\Finder\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/finder',
         ),
         'Psr\\SimpleCache\\' => 
         array (
@@ -193,6 +199,10 @@ class ComposerStaticInit37458c04d77e08a184290ff46a23e733
         'GuzzleHttp\\' => 
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
+        ),
+        'Gregwar\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/gregwar/captcha/src/Gregwar',
         ),
         'Complex\\' => 
         array (

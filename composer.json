@@ -11,6 +11,7 @@
         "masokky/quotemaker": "^1.0",
         "sergeytsalkov/meekrodb": "^2.3",
         "thingengineer/mysqli-database-class": "^2.9",
-        "phpoffice/phpspreadsheet": "^1.16"
+        "phpoffice/phpspreadsheet": "^1.16",
+        "gregwar/captcha": "^1.1"
     }
 }

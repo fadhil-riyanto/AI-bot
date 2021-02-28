@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '45e4fb2f143fce9643e4417b5df6758ee15f54cc',
+    'reference' => 'ec47461a92d193779746442055e82c1b93d82068',
     'name' => '__root__',
   ),
   'versions' => 
@@ -18,7 +18,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '45e4fb2f143fce9643e4417b5df6758ee15f54cc',
+      'reference' => 'ec47461a92d193779746442055e82c1b93d82068',
     ),
     'ammarfaizi2/brainly' => 
     array (
@@ -74,6 +74,15 @@
       array (
       ),
       'reference' => '08e27c97e4c6ed02f37c5b2b20488046c8d90d75',
+    ),
+    'gregwar/captcha' => 
+    array (
+      'pretty_version' => 'v1.1.9',
+      'version' => '1.1.9.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '4bb668e6b40e3205a020ca5ee4ca8cff8b8780c5',
     ),
     'guzzlehttp/guzzle' => 
     array (
@@ -302,6 +311,15 @@
       array (
       ),
       'reference' => 'e8c19ca2f8ed6a0fd0012c6c97e78aac80fded30',
+    ),
+    'symfony/finder' => 
+    array (
+      'pretty_version' => 'v5.2.3',
+      'version' => '5.2.3.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '4adc8d172d602008c204c2e16956f99257248e03',
     ),
     'symfony/polyfill-mbstring' => 
     array (
