@@ -90,6 +90,7 @@ $result = $telegram->getData();
 $getreplyianid = $result['message']['reply_to_message']['from']['id'];
 $afkforstname = $result['message']['reply_to_message']['from']['first_name'];
 $afklastname = $result['message']['reply_to_message']['from']['last_name'];
+$entityUserAfk = $result['message']['entities'];
 // $jsongetafk = file_get_contents(__DIR__ . '/json_data/afk.json');
 // $jsonafk = json_decode($jsongetafk, true);
 // foreach ($jsonafk as $daftarafk) {
@@ -114,6 +115,28 @@ if (isset($getreplyianid)) {
 		exit;
 	}
 }
+if (isset($entityUserAfk)) {
+	foreach ($entityUserAfk as $getEntity) {
+		if ($getEntity['type'] == 'text_mention' || $getEntity['type'] == 'mention') {
+			$username_Yang_didapaktkanAFK[] = substr($text_plain_nokarakter, $getEntity['offset'] + 1, $getEntity['length']);
+		}
+	}
+	foreach ($username_Yang_didapaktkanAFK as $uafkdata) {
+		$db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
+		$db->where("username", $uafkdata);
+		$getDataafku = $db->getOne("afk_user_data");
+		if ($getDataafku['username'] != null) {
+			$reply = "Maaf ," . $getDataafku['username'] . ' sedang AFK sejak ' . $getDataafku['time_afk'] . PHP_EOL .
+				'Alasan : ' . $getDataafku['alasan'];
+			$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+			$telegram->sendMessage($content);
+		}
+	}
+}
+// $pregMention = preg_match_all('/@([a-zA-Z0-9_]+)/', $text_plain_nokarakter);
+// if ($pregMention > 0) {
+// 	$db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
+// }
 
 
 // $anggota = file_get_contents(__DIR__ . '/pengaturan/settings.json');
