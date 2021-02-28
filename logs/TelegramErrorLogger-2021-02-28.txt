@@ -532,3 +532,241 @@ ref.disable_web_page_preview= true
 #3 C:\bot telegram\hook.php(355): Telegram->sendMessage(Array)
 #4 {main}
 
+============[Date]============
+[ 2021-02-28 20:26:59  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: field "inline_keyboard" of the InlineKeyboardMarkup must be an Array of Arrays
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804408450
+ref.message.message_id= 30115
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1614518818
+ref.message.text= /debug
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.reply_markup= {"inline_keyboard":[true]}
+ref.text= This is a Keyboard Test
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\debug.php(19): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(414): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-02-28 20:27:39  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse inline keyboard button: InlineKeyboardButton must be an Object
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804408451
+ref.message.message_id= 30116
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1614518858
+ref.message.text= /debug
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.reply_markup= {"inline_keyboard":[[true]]}
+ref.text= This is a Keyboard Test
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\debug.php(19): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(414): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-02-28 20:28:50  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: field "inline_keyboard" of the InlineKeyboardMarkup must be an Array of Arrays
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804408452
+ref.message.message_id= 30117
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1614518929
+ref.message.text= /debug
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.reply_markup= {"inline_keyboard":[true]}
+ref.text= This is a Keyboard Test
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\debug.php(19): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(414): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-02-28 20:59:23  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse inline keyboard button: Text buttons are unallowed in the inline keyboard
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804408504
+ref.message.message_id= 17168
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1614520762
+ref.message.text= /debug
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.reply_markup= {"inline_keyboard":[[{"text":3552},{"text":3375},{"text":4687},{"text":"ini"},{"text":1273}],[{"text":9992},{"text":4855},{"text":6372},{"text":3671},{"text":8264}]]}
+ref.text= This is a Keyboard Test
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\debug.php(49): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(414): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-02-28 20:59:57  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804408506
+ref.callback_query.id= 5984360328619858877
+ref.callback_query.from.id= 1393342467
+ref.callback_query.from.is_bot= false
+ref.callback_query.from.first_name= Fadhil
+ref.callback_query.from.last_name= Riyanto
+ref.callback_query.from.username= fadhil_riyanto
+ref.callback_query.from.language_code= en
+ref.callback_query.message.message_id= 17170
+ref.callback_query.message.from.id= 1489990155
+ref.callback_query.message.from.is_bot= true
+ref.callback_query.message.from.first_name= Fadhil Riyanto Bot
+ref.callback_query.message.from.username= Fadhil_riyanto_bot
+ref.callback_query.message.chat.id= 1393342467
+ref.callback_query.message.chat.first_name= Fadhil
+ref.callback_query.message.chat.last_name= Riyanto
+ref.callback_query.message.chat.username= fadhil_riyanto
+ref.callback_query.message.chat.type= private
+ref.callback_query.message.date= 1614520792
+ref.callback_query.message.text= This is a Keyboard Test
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.text= 3242
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.callback_data= /help
+ref.callback_query.message.reply_markup.inline_keyboard.0.1.text= 7288
+ref.callback_query.message.reply_markup.inline_keyboard.0.1.callback_data= /help
+ref.callback_query.message.reply_markup.inline_keyboard.0.2.text= ini
+ref.callback_query.message.reply_markup.inline_keyboard.0.2.callback_data= /help
+ref.callback_query.message.reply_markup.inline_keyboard.0.3.text= 4277
+ref.callback_query.message.reply_markup.inline_keyboard.0.3.callback_data= /help
+ref.callback_query.message.reply_markup.inline_keyboard.0.4.text= 6768
+ref.callback_query.message.reply_markup.inline_keyboard.0.4.callback_data= /help
+ref.callback_query.message.reply_markup.inline_keyboard.1.0.text= 9792
+ref.callback_query.message.reply_markup.inline_keyboard.1.0.callback_data= /help
+ref.callback_query.message.reply_markup.inline_keyboard.1.1.text= 3370
+ref.callback_query.message.reply_markup.inline_keyboard.1.1.callback_data= /help
+ref.callback_query.message.reply_markup.inline_keyboard.1.2.text= 2390
+ref.callback_query.message.reply_markup.inline_keyboard.1.2.callback_data= /help
+ref.callback_query.message.reply_markup.inline_keyboard.1.3.text= 1097
+ref.callback_query.message.reply_markup.inline_keyboard.1.3.callback_data= /help
+ref.callback_query.message.reply_markup.inline_keyboard.1.4.text= 7358
+ref.callback_query.message.reply_markup.inline_keyboard.1.4.callback_data= /help
+ref.callback_query.chat_instance= -5109722127778484442
+ref.callback_query.data= /help
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Selamat datang di buku panduan bot ini
+Anda dapat membaca panduan di bawah ini, dengan mengklik sebuah tombol dibawah.
+Anda juga dapat mengajukan pertanyaan apa pun di Support group, harap diperhatikan bahwa Anda hanya dapat bertanya setelah membaca panduan, dan hanya bertanya tentang bot ini!
+
+Perintah umum adalah:
+- /start: Mulai bot
+- /help: Berikan pesan ini
+- /admin_help: melihat semua command untuk group management
+
+Semua perintah hanya bekerja dengan / (garis miring)
+ref.message_id= 
+ref.reply_markup= {"inline_keyboard":[[{"text":"perkakas","callback_data":"\/callback_q@fadhil_riyanto_bot perkakas"},{"text":"hash","callback_data":"\/callback_q@fadhil_riyanto_bot hash"},{"text":"hiburan","callback_data":"\/callback_q@fadhil_riyanto_bot hiburan"}],[{"text":"dev tools","callback_data":"\/callback_q@fadhil_riyanto_bot dev_tools"},{"text":"anime","callback_data":"\/callback_q@fadhil_riyanto_bot anime"},{"text":"bot ini","callback_data":"\/callback_q@fadhil_riyanto_bot bot_ini"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(184): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\command\help.php(32): Telegram->editMessageText(Array)
+#4 C:\bot telegram\hook.php(459): require('C:\\bot telegram...')
+#5 {main}
+
