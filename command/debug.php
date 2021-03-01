@@ -16,46 +16,7 @@ function random_angka_digit($digits)
 $jawabanchapcha = $builder->getPhrase();
 
 //JSON penyimpanan
-function getUseridFromeditmessage($userID)
-{
-    global $chat_id;
-    $file = __DIR__ . "/../json_data/chapcha_new_member.json";
-    $anggota = file_get_contents($file);
-    $data = json_decode($anggota, true);
-    foreach ($data as $d) {
-        if ($d['userid'] == $userID && $d['chatid'] == $chat_id) {
-            return true;
-        }
-    }
-}
-$cheker = getUseridFromeditmessage($userID);
-if ($cheker == true) {
-    $file = __DIR__ . "/../json_data/chapcha_new_member.json";
-    $anggota = file_get_contents($file);
-    $data = json_decode($anggota, true);
-    foreach ($data as $key => $d) {
-        if ($d['userid'] === $userID) {
-            $data[$key]['pharse'] = $jawabanchapcha;
-            $data[$key]['percobaan'] = 1;
-        }
-    }
-    $jsonfile = json_encode($data, JSON_PRETTY_PRINT);
-    $anggota = file_put_contents($file, $jsonfile);
-} elseif ($cheker == null) {
-    $file = __DIR__ . "/../json_data/chapcha_new_member.json";
-    $anggota = file_get_contents($file);
-    $data = json_decode($anggota, true);
 
-    $data[] = array(
-        "userid" => $userID,
-        "chatid" => $chat_id,
-        "pharse" => $jawabanchapcha,
-        "percobaan" => 1
-    );
-
-    $jsonfile = json_encode($data, JSON_PRETTY_PRINT);
-    $anggota = file_put_contents($file, $jsonfile);
-}
 
 
 //Keyboard ===================================
@@ -132,6 +93,54 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch, CURLOPT_POSTFIELDS, $post_fields);
 $output = curl_exec($ch);
 
-
-// $content = array('chat_id' => $chat_id, 'reply_markup' => $keyb, 'text' => "This is a Keyboard Test");
+$permissionchat = '{"can_send_messages": false}';
+$restik = array('chat_id' => $chat_id, 'user_id' => $userID, 'permissions' => $permissionchat, 'until_date' => time() + 20);
+$telegram->restrictChatMember($restik);
+// $reply = $output;
+// $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
 // $telegram->sendMessage($content);
+
+$hasiljsonOutputcurl = json_decode($output, true);
+
+function getUseridFromeditmessage($userID)
+{
+    global $chat_id;
+    $file = __DIR__ . "/../json_data/chapcha_new_member.json";
+    $anggota = file_get_contents($file);
+    $data = json_decode($anggota, true);
+    foreach ($data as $d) {
+        if ($d['userid'] == $userID && $d['chatid'] == $chat_id) {
+            return true;
+        }
+    }
+}
+$cheker = getUseridFromeditmessage($userID);
+if ($cheker == true) {
+    $file = __DIR__ . "/../json_data/chapcha_new_member.json";
+    $anggota = file_get_contents($file);
+    $data = json_decode($anggota, true);
+    foreach ($data as $key => $d) {
+        if ($d['userid'] === $userID) {
+            $data[$key]['pharse'] = $jawabanchapcha;
+            $data[$key]['percobaan'] = 1;
+            $data[$key]['msgid'] = $hasiljsonOutputcurl['result']['message_id'];
+        }
+    }
+    $jsonfile = json_encode($data, JSON_PRETTY_PRINT);
+    $anggota = file_put_contents($file, $jsonfile);
+} elseif ($cheker == null) {
+    $file = __DIR__ . "/../json_data/chapcha_new_member.json";
+    $anggota = file_get_contents($file);
+    $data = json_decode($anggota, true);
+
+    $data[] = array(
+        "userid" => $userID,
+        "chatid" => $chat_id,
+        "pharse" => $jawabanchapcha,
+        "percobaan" => 1,
+        "msgid" => $hasiljsonOutputcurl['result']['message_id']
+    );
+
+    $jsonfile = json_encode($data, JSON_PRETTY_PRINT);
+    $anggota = file_put_contents($file, $jsonfile);
+}

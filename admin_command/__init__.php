@@ -91,7 +91,7 @@ if (deteksi_grup() == true) {
 } else {
     if (
         $adanParse[0] == '/pin' || $adanParse[0] == '/unpin' || $adanParse[0] == '/adminlist' ||
-        $adanParse[0] == '/setwelcome' || $adanParse[0] == '/welcome'
+        $adanParse[0] == '/setwelcome' || $adanParse[0] == '/welcome' || $adanParse[0] == '/setchapcha'
     ) {
         $reply = 'Maaf, command ini hanya berlaku di grup saja';
         $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
@@ -129,11 +129,13 @@ if ($kamu_admin == true) {
         require 'setwelcome.php';
     } elseif ($adanParseadmin[0] == '/welcome') {
         require 'welcome.php';
+    } elseif ($adanParseadmin[0] == '/setchapcha') {
+        require 'setchapcha.php';
     }
 } elseif ($kamu_admin == false) {
     if (
         $adanParse[0] == '/pin' || $adanParse[0] == '/unpin' || $adanParse[0] == '/adminlist' ||
-        $adanParse[0] == '/setwelcome' || $adanParse[0] == '/welcome'
+        $adanParse[0] == '/setwelcome' || $adanParse[0] == '/welcome' || $adanParse[0] == '/setchapcha'
     ) {
         $reply = 'ups, kamu bukan admin';
         $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);

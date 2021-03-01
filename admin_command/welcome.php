@@ -7,6 +7,35 @@ if ($user['welcome_text'] == null) {
     $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
     $telegram->sendMessage($content);
 } else {
+    if ($adanParseadmin[1] == 'on') {
+        $data = array(
+            'welcome_set' => 'true',
+        );
+        $db->where('gid', $chat_id);
+        if ($db->update('grup_data', $data)) {
+            $reply = 'pesan selamat datang dinyalakan';
+            $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+            $telegram->sendMessage($content);
+        } else {
+            $reply = 'update failed: ' . $db->getLastError();
+            $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+            $telegram->sendMessage($content);
+        }
+    } elseif ($adanParseadmin[1] == 'off') {
+        $data = array(
+            'welcome_set' => 'false',
+        );
+        $db->where('gid', $chat_id);
+        if ($db->update('grup_data', $data)) {
+            $reply = 'pesan selamat datang dimatikan';
+            $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+            $telegram->sendMessage($content);
+        } else {
+            $reply = 'update failed: ' . $db->getLastError();
+            $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+            $telegram->sendMessage($content);
+        }
+    }
 
     $db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
     $db->where("gid", $chat_id);
