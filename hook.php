@@ -425,6 +425,9 @@ if ($text == '/start' || $text == '/start' . USERNAME_BOT . '') {
 } elseif ($text == '/debug' || $text == '/debug' . USERNAME_BOT . '') {
 	require __DIR__ . '/command/debug.php';
 	exit;
+} elseif ('/chapcha_i' == $adanParse[0] || '/chapcha_i' . USERNAME_BOT . '' == $adanParse[0]) {
+	require __DIR__ . '/command/chapcha_i.php';
+	exit;
 } elseif ('/tr' == $adanParse[0] || '/tr' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/tr.php';
 	exit;
