@@ -103,6 +103,9 @@ $entityUserAfk = $result['message']['entities'];
 // }
 
 if (isset($getreplyianid)) {
+	if ($getreplyianid == $userID) {
+		exit;
+	}
 	$db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
 	$db->where("userid", $getreplyianid);
 	$user = $db->getOne("afk_user_data");
@@ -167,6 +170,7 @@ if ($hit == 0) {
 }
 
 $deteksiApakahGrup = detect_grup();
+$gc_command_verify = detect_grup();
 
 $stringPertama = substr($text, 0, 1);
 $stringKedua = substr($text, 0, 2);
@@ -216,7 +220,9 @@ if (isset($text)) {
 	if ($chek_gc == true) {
 		if ($nama_gc == -1001209274058 || $nama_gc == -1001410961692 || $nama_gc == -458987087 || $nama_gc == -1001433395819) {
 		} else {
-			$reply = 'Maaf, saya diprogram oleh pemilik saya untuk tidak dimasukkan ke grup. Jika anda masih tetap memasukkan saya ke grup. maka otomatis saya akan mengeluarkan diri.';
+			$reply = 'Maaf, saya diprogram oleh pemilik saya untuk tidak dimasukkan ke grup secara sembarangan oleh orang' . PHP_EOL . PHP_EOL .
+				'Jika anda masih tetap ingin memasukkan saya ke grup. silahkan copy angka ini <pre>' . $chat_id . '</pre> lalu pm atau kirimkan ke pembuat bot ini, yaitu ' . PUMBUAT_BOT . PHP_EOL . PHP_EOL .
+				'kenapa saya membuat grup proteksi untuk bot ini? dikarnakan untuk menghemat jumlah hit dan bandwith server';
 			$content1 = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
 			$telegram->sendMessage($content1);
 			$content = array('chat_id' => $chat_id);
@@ -322,8 +328,17 @@ if ($text == '/start' || $text == '/start' . USERNAME_BOT . '') {
 } elseif ('/pantun' == $adanParse[0] || '/pantun' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/pantun.php';
 	exit;
+} elseif ('/callback_q_admin_help' == $adanParse[0] || '/callback_q_admin_help' . USERNAME_BOT . '' == $adanParse[0]) {
+	require __DIR__ . '/admin_help/callback_q_admin_help.php';
+	exit;
+} elseif ('/help_admin' == $adanParse[0] || '/help_admin' . USERNAME_BOT . '' == $adanParse[0]) {
+	require __DIR__ . '/admin_help/help_admin.php';
+	exit;
+} elseif ('/help_admin_i' == $adanParse[0] || '/help_admin_i' . USERNAME_BOT . '' == $adanParse[0]) {
+	require __DIR__ . '/admin_help/help_admin_i.php';
+	exit;
 } elseif ('/afk' == $adanParse[0] || 'afk' == $adanParse[0] || '/afk' . USERNAME_BOT . '' == $adanParse[0]) {
-	require __DIR__ . '/command/afk.php';
+	require __DIR__ . '/group_command/afk.php';
 	exit;
 } elseif ('/adminlist' == $adanParse[0] || '/adminlist' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/adminlist.php';
@@ -335,7 +350,7 @@ if ($text == '/start' || $text == '/start' . USERNAME_BOT . '') {
 	require __DIR__ . '/command/pastebin.php';
 	exit;
 } elseif ('/unafk' == $adanParse[0] || 'unafk' == $adanParse[0] || '/unafk' . USERNAME_BOT . '' == $adanParse[0]) {
-	require __DIR__ . '/command/unafk.php';
+	require __DIR__ . '/group_command/unafk.php';
 	exit;
 } elseif ('/chapcha' == $adanParse[0] || '/chapcha' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/chapcha.php';
@@ -375,10 +390,17 @@ if ($text == '/start' || $text == '/start' . USERNAME_BOT . '') {
 } elseif ('/chapcha_i' == $adanParse[0] || '/chapcha_i' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/chapcha_i.php';
 	exit;
-} elseif ('/tr' == $adanParse[0] || '/tr' . USERNAME_BOT . '' == $adanParse[0]) {
-	require __DIR__ . '/command/tr.php';
+} elseif (
+	'/trs' == $adanParse[0] || '/trs' . USERNAME_BOT . '' == $adanParse[0] ||
+	'/trans' == $adanParse[0] || '/trans' . USERNAME_BOT . '' == $adanParse[0] ||
+	'/tr' == $adanParse[0] || '/tr' . USERNAME_BOT . '' == $adanParse[0]
+) {
+	require __DIR__ . '/command/trs.php';
 	exit;
-} elseif ('/quran' == $adanParse[0] || '/quran' . USERNAME_BOT . '' == $adanParse[0]) {
+} elseif (
+	'/quran' == $adanParse[0] || '/quran' . USERNAME_BOT . '' == $adanParse[0] ||
+	'/qs' == $adanParse[0] || '/qs' . USERNAME_BOT . '' == $adanParse[0]
+) {
 	require __DIR__ . '/command/quran.php';
 	exit;
 } elseif ('/php_doc' == $adanParse[0] || '/php_doc' . USERNAME_BOT . '' == $adanParse[0]) {
@@ -387,7 +409,11 @@ if ($text == '/start' || $text == '/start' . USERNAME_BOT . '') {
 } elseif ('/ping' == $adanParse[0] || '/ping' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/ping.php';
 	exit;
-} elseif ('/run' == $adanParse[0] || '/run' . USERNAME_BOT . '' == $adanParse[0]) {
+} elseif (
+	'/run' == $adanParse[0] || '/run' . USERNAME_BOT . '' == $adanParse[0] ||
+	'/eval' == $adanParse[0] || '/eval' . USERNAME_BOT . '' == $adanParse[0] ||
+	'/exec' == $adanParse[0] || '/exec' . USERNAME_BOT . '' == $adanParse[0]
+) {
 	// jalankan kode memakai rextester
 
 	require __DIR__ . '/command/run.php';
@@ -453,7 +479,10 @@ if ($text == '/start' || $text == '/start' . USERNAME_BOT . '') {
 } elseif ('/tulis' == $adanParse[0] || '/tulis' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/tulis.php';
 	exit;
-} elseif ('/get_github_user' == $adanParse[0] || '/get_github_user' . USERNAME_BOT . '' == $adanParse[0]) {
+} elseif (
+	'/get_github_user' == $adanParse[0] || '/get_github_user' . USERNAME_BOT . '' == $adanParse[0] ||
+	'/gh' == $adanParse[0] || '/gh' . USERNAME_BOT . '' == $adanParse[0]
+) {
 	require __DIR__ . '/command/get_github_user.php';
 	exit;
 } elseif ($text == '/berhenti' || $text == '/berhenti' . USERNAME_BOT . '') {
@@ -531,6 +560,7 @@ if ($text == '/start' || $text == '/start' . USERNAME_BOT . '') {
 	$text === 'info covid sekarang' || $text === 'info covid19 sekarang' || $text === 'info covid 19 sekarang' || $text === 'info covid19 terkini' ||
 	$text === 'info covid 19 terkini' || $text === 'info covid 19 diindonesia' || $text === 'info covid19 diindonesia' || $text === 'info covid 19 di indonesia' ||
 	$text === 'info covid19 di indonesia' || $text === 'update corona gimana?' || $text === 'update corona gimana' ||
+	$text === 'corona gimana infonya?' || $text === 'corona gimana infonya' || $text === 'update corona gimana' ||
 	$text === 'update covid gimana?' || $text === 'update covid19 gimana' || $text === 'update covid 19 gimana' || $text === 'info corona gimana?' || $text === 'info corona gimana' || $text === 'info corona bagaimana?' || $text === 'info corona bagaimana' || $text === 'info covid bagaimana?' || $text === 'info covid bagaimana' || $text === 'info covid 19 bagaimana?' || $text === 'info covid 19 bagaimana' || $text === 'info covid19 bagaimana?' || $text === 'info covid19 bagaimana' || $text === 'info covid19 gimana?' || $text === 'info covid 19 gimana?' ||
 	$text === 'update corona bagaimana?' || $text === 'corona gimana?' || $text === 'status corona' || $text === 'info covid' || $text === 'info covid 19' || $text === 'info covid19' ||
 	//slang teks disini

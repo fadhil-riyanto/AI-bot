@@ -6,7 +6,7 @@ Anda juga dapat mengajukan pertanyaan apa pun di Support group, harap diperhatik
 Perintah umum adalah:
 - /start: Mulai bot
 - /help: Berikan pesan ini
-- /admin_help: melihat semua command untuk group management
+- /help_admin: melihat semua command untuk group management
 
 Semua perintah hanya bekerja dengan / (garis miring)';
 $option = array(
