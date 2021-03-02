@@ -138,9 +138,9 @@ if ($verifikasichapcha == true) {
                 }
             }
         } elseif ($d['userid'] != $userID) {
-            $jawabquery = $telegram->getData();
-            $alswecl = array('callback_query_id' => $jawabquery['callback_query']['id'], 'text' => 'ups, chapcha ini bukan untuk anda', 'show_alert' => true);
-            $telegram->answerCallbackQuery($alswecl);
+            // $jawabquery = $telegram->getData();
+            // $alswecl = array('callback_query_id' => $jawabquery['callback_query']['id'], 'text' => 'ups, chapcha ini bukan untuk anda', 'show_alert' => true);
+            // $telegram->answerCallbackQuery($alswecl);
         }
     }
 }
