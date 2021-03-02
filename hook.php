@@ -441,6 +441,9 @@ if ($text == '/start' || $text == '/start' . USERNAME_BOT . '') {
 } elseif ('/fakta_unik' == $adanParse[0] || '/fakta_unik' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/fakta.php';
 	exit;
+} elseif ('/rules' == $adanParse[0] || '/rules' . USERNAME_BOT . '' == $adanParse[0]) {
+	require __DIR__ . '/command/rules.php';
+	exit;
 } elseif ('/ch_serv' == $adanParse[0] || '/ch_serv' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/ch_serv.php';
 	exit;

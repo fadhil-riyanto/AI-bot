@@ -91,7 +91,9 @@ if (deteksi_grup() == true) {
 } else {
     if (
         $adanParse[0] == '/pin' || $adanParse[0] == '/unpin' || $adanParse[0] == '/adminlist' ||
-        $adanParse[0] == '/setwelcome' || $adanParse[0] == '/welcome' || $adanParse[0] == '/setchapcha'
+        $adanParse[0] == '/set_welcome' || $adanParse[0] == '/test_welcome' || $adanParse[0] == '/set_chapcha_mode' ||
+        $adanParse[0] == '/set_goodbye' || $adanParse[0] == '/set_welcome_mode' || $adanParse[0] == '/set_goodbye_mode' ||
+        $adanParse[0] == '/set_rules'
     ) {
         $reply = 'Maaf, command ini hanya berlaku di grup saja';
         $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
@@ -137,11 +139,15 @@ if ($kamu_admin == true) {
         require 'set_welcome_mode.php';
     } elseif ($adanParseadmin[0] == '/set_goodbye_mode') {
         require 'set_goodbye_mode.php';
+    } elseif ($adanParseadmin[0] == '/set_rules') {
+        require 'set_rules.php';
     }
 } elseif ($kamu_admin == false) {
     if (
         $adanParse[0] == '/pin' || $adanParse[0] == '/unpin' || $adanParse[0] == '/adminlist' ||
-        $adanParse[0] == '/setwelcome' || $adanParse[0] == '/welcome' || $adanParse[0] == '/setchapcha'
+        $adanParse[0] == '/set_welcome' || $adanParse[0] == '/test_welcome' || $adanParse[0] == '/set_chapcha_mode' ||
+        $adanParse[0] == '/set_goodbye' || $adanParse[0] == '/set_welcome_mode' || $adanParse[0] == '/set_goodbye_mode' ||
+        $adanParse[0] == '/set_rules'
     ) {
         $reply = 'ups, kamu bukan admin';
         $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
