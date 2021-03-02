@@ -238,6 +238,7 @@ if ($deteksiApakahGrupwaktu != true) {
 			'/bucin_i' == $adanParse[0] || '/bucin_i' . USERNAME_BOT . '' == $adanParse[0] ||
 			'/berita' == $adanParse[0] || '/berita' . USERNAME_BOT . '' == $adanParse[0] ||
 			'/berita_i' == $adanParse[0] || '/berita_i' . USERNAME_BOT . '' == $adanParse[0] ||
+			'/chapcha_i' == $adanParse[0] || '/chapcha_i' . USERNAME_BOT . '' == $adanParse[0] ||
 			'/brainly' == $adanParse[0] || '/brainly' . USERNAME_BOT . '' == $adanParse[0] ||
 			'/brainly_i' == $adanParse[0] || '/brainly_i' . USERNAME_BOT . '' == $adanParse[0] ||
 			'/callback_q' == $adanParse[0] || '/callback_q' . USERNAME_BOT . '' == $adanParse[0]
@@ -302,6 +303,7 @@ if ($deteksiApakahGrupwaktu != true) {
 // }
 // if ('/wc' == $adanParse[0] || 'wc' == $adanParse[0] || '/wc' . USERNAME_BOT . '' == $adanParse[0]) {
 require __DIR__ . '/include/welcome_system.php';
+require __DIR__ . '/include/leaveuser_system.php';
 // }
 
 // $result = $telegram->getData();
