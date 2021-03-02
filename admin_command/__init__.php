@@ -135,6 +135,8 @@ if ($kamu_admin == true) {
         require 'set_goodbye.php';
     } elseif ($adanParseadmin[0] == '/set_welcome_mode') {
         require 'set_welcome_mode.php';
+    } elseif ($adanParseadmin[0] == '/set_goodbye_mode') {
+        require 'set_goodbye_mode.php';
     }
 } elseif ($kamu_admin == false) {
     if (
