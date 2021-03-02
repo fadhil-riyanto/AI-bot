@@ -125,12 +125,16 @@ if ($kamu_admin == true) {
         require 'unpin.php';
     } elseif ($adanParseadmin[0] == '/adminlist') {
         require 'adminlist.php';
-    } elseif ($adanParseadmin[0] == '/setwelcome') {
-        require 'setwelcome.php';
-    } elseif ($adanParseadmin[0] == '/welcome') {
-        require 'welcome.php';
-    } elseif ($adanParseadmin[0] == '/setchapcha') {
-        require 'setchapcha.php';
+    } elseif ($adanParseadmin[0] == '/set_welcome') {
+        require 'set_welcome.php';
+    } elseif ($adanParseadmin[0] == '/test_welcome') {
+        require 'test_welcome.php';
+    } elseif ($adanParseadmin[0] == '/set_chapcha_mode') {
+        require 'set_chapcha_mode.php';
+    } elseif ($adanParseadmin[0] == '/set_goodbye') {
+        require 'set_goodbye.php';
+    } elseif ($adanParseadmin[0] == '/set_welcome_mode') {
+        require 'set_welcome_mode.php';
     }
 } elseif ($kamu_admin == false) {
     if (
