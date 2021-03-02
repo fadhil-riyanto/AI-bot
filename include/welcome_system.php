@@ -17,8 +17,12 @@ if (isset($memberanyar)) {
     $db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
     $db->where("gid", $chat_id);
     $user = $db->getOne("grup_data");
-    if ($user['welcome_set'] == 'true') {
+    if ($user['set_welcome_mode'] == 'true') {
         if ($user['chapcha'] == 'true') {
+
+            $permissionchat = '{"can_send_messages": false}';
+            $restik = array('chat_id' => $chat_id, 'user_id' => $userID, 'permissions' => $permissionchat, 'until_date' => time() + 20);
+            $telegram->restrictChatMember($restik);
 
             $phraseBuilder = new PhraseBuilder(4, '0123456789');
             $builder = new CaptchaBuilder(null, $phraseBuilder);
@@ -110,9 +114,7 @@ if (isset($memberanyar)) {
             curl_setopt($ch, CURLOPT_POSTFIELDS, $post_fields);
             $output = curl_exec($ch);
 
-            $permissionchat = '{"can_send_messages": false}';
-            $restik = array('chat_id' => $chat_id, 'user_id' => $userID, 'permissions' => $permissionchat, 'until_date' => time() + 20);
-            $telegram->restrictChatMember($restik);
+
             // $reply = $output;
             // $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
             // $telegram->sendMessage($content);

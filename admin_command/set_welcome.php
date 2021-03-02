@@ -3,7 +3,7 @@ require __DIR__ . '/../include/parse_welcome.php';
 $azanHilangcommand = str_replace($adanParse_plain[0], '', $text_plain);
 $udahDiparse = str_replace($adanParse_plain[0] . ' ', '', $text_plain);
 if ($azanHilangcommand == null) {
-    $reply = 'isikan parameter!!';
+    $reply = 'ups, anda harus memasukkan pesan selamat datang.';
     $content = array('chat_id' => $chat_id, 'text' => $reply, 'parse_mode' => 'html', 'reply_to_message_id' => $message_id, 'disable_web_page_preview' => true);
     $telegram->sendMessage($content);
 } else {
