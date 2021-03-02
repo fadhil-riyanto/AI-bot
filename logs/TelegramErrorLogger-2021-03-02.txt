@@ -1,0 +1,49 @@
+============[Date]============
+[ 2021-03-02 12:32:22  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't remove chat owner
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804410198
+ref.message.message_id= 13832
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= en
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= PHP TGdev
+ref.message.chat.username= tgdev_php_group
+ref.message.chat.type= supergroup
+ref.message.date= 1614663138
+ref.message.new_chat_participant.id= 211246197
+ref.message.new_chat_participant.is_bot= true
+ref.message.new_chat_participant.first_name= Telegram Bot Raw
+ref.message.new_chat_participant.username= RawDataBot
+ref.message.new_chat_member.id= 211246197
+ref.message.new_chat_member.is_bot= true
+ref.message.new_chat_member.first_name= Telegram Bot Raw
+ref.message.new_chat_member.username= RawDataBot
+ref.message.new_chat_members.0.id= 211246197
+ref.message.new_chat_members.0.is_bot= true
+ref.message.new_chat_members.0.first_name= Telegram Bot Raw
+ref.message.new_chat_members.0.username= RawDataBot
+
+
+[ref]
+ref.user_id= 1393342467
+ref.permissions= {"can_send_messages": false}
+ref.until_date= 1614663160
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(488): Telegram->endpoint('restrictChatMem...', Array)
+#3 C:\bot telegram\include\welcome_system.php(25): Telegram->restrictChatMember(Array)
+#4 C:\bot telegram\hook.php(304): require('C:\\bot telegram...')
+#5 {main}
+
