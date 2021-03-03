@@ -1,0 +1,1036 @@
+$reply = 'acces denied.';
+    $content = array('chat_id' => $chat_id, 'text' => $reply, 'parse_mode' => 'html', 'reply_to_message_id' => $message_id, 'disable_web_page_preview' => true);
+    $telegram->sendMessage($content);============[Date]============
+[ 2021-03-03 11:26:52  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: RIGHT_FORBIDDEN
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804411236
+ref.message.message_id= 14017
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= PHP TGdev
+ref.message.chat.username= tgdev_php_group
+ref.message.chat.type= supergroup
+ref.message.date= 1614745604
+ref.message.reply_to_message.message_id= 13999
+ref.message.reply_to_message.from.id= 1223173857
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Fadhil riyanto
+ref.message.reply_to_message.from.last_name= (Bot Mode)
+ref.message.reply_to_message.from.username= fadhilriyanto
+ref.message.reply_to_message.from.language_code= ms
+ref.message.reply_to_message.chat.id= -1001410961692
+ref.message.reply_to_message.chat.title= PHP TGdev
+ref.message.reply_to_message.chat.username= tgdev_php_group
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1614739921
+ref.message.reply_to_message.text= ok
+ref.message.text= /promote
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 8
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.user_id= 1223173857
+ref.is_anonymous= false
+ref.can_change_info= true
+ref.can_post_messages= false
+ref.can_edit_messages= true
+ref.can_delete_messages= true
+ref.can_invite_users= true
+ref.can_restrict_members= true
+ref.can_pin_messages= true
+ref.can_promote_members= false
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(492): Telegram->endpoint('promoteChatMemb...', Array)
+#3 C:\bot telegram\admin_command\promote.php(30): Telegram->promoteChatMember(Array)
+#4 C:\bot telegram\admin_command\__init__.php(145): require('C:\\bot telegram...')
+#5 C:\bot telegram\hook.php(581): require('C:\\bot telegram...')
+#6 {main}
+
+============[Date]============
+[ 2021-03-03 11:28:10  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: RIGHT_FORBIDDEN
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804411237
+ref.message.message_id= 14020
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= PHP TGdev
+ref.message.chat.username= tgdev_php_group
+ref.message.chat.type= supergroup
+ref.message.date= 1614745682
+ref.message.reply_to_message.message_id= 13999
+ref.message.reply_to_message.from.id= 1223173857
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Fadhil riyanto
+ref.message.reply_to_message.from.last_name= (Bot Mode)
+ref.message.reply_to_message.from.username= fadhilriyanto
+ref.message.reply_to_message.from.language_code= ms
+ref.message.reply_to_message.chat.id= -1001410961692
+ref.message.reply_to_message.chat.title= PHP TGdev
+ref.message.reply_to_message.chat.username= tgdev_php_group
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1614739921
+ref.message.reply_to_message.text= ok
+ref.message.text= /promote
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 8
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.user_id= 1223173857
+ref.is_anonymous= false
+ref.can_change_info= true
+ref.can_post_messages= false
+ref.can_edit_messages= true
+ref.can_delete_messages= true
+ref.can_invite_users= true
+ref.can_restrict_members= true
+ref.can_pin_messages= true
+ref.can_promote_members= false
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(492): Telegram->endpoint('promoteChatMemb...', Array)
+#3 C:\bot telegram\admin_command\promote.php(30): Telegram->promoteChatMember(Array)
+#4 C:\bot telegram\admin_command\__init__.php(145): require('C:\\bot telegram...')
+#5 C:\bot telegram\hook.php(581): require('C:\\bot telegram...')
+#6 {main}
+
+============[Date]============
+[ 2021-03-03 11:31:34  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804411239
+ref.message.message_id= 17373
+ref.message.from.id= 1480730394
+ref.message.from.is_bot= false
+ref.message.from.first_name= Doge
+ref.message.from.username= Prostinx
+ref.message.from.language_code= en
+ref.message.chat.id= 1480730394
+ref.message.chat.first_name= Doge
+ref.message.chat.username= Prostinx
+ref.message.chat.type= private
+ref.message.date= 1614745893
+ref.message.text= /help
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @Prostinx, Selamat datang di buku panduan bot ini
+Anda dapat membaca panduan di bawah ini, dengan mengklik sebuah tombol dibawah.
+Anda juga dapat mengajukan pertanyaan apa pun di Support group, harap diperhatikan bahwa Anda hanya dapat bertanya setelah membaca panduan, dan hanya bertanya tentang bot ini!
+
+Perintah umum adalah:
+- /start: Mulai bot
+- /help: Berikan pesan ini
+- /help_admin: melihat semua command untuk group management
+
+Semua perintah hanya bekerja dengan / (garis miring)
+ref.message_id= 
+ref.reply_markup= {"inline_keyboard":[[{"text":"perkakas","callback_data":"\/callback_q@fadhil_riyanto_bot perkakas"},{"text":"hash","callback_data":"\/callback_q@fadhil_riyanto_bot hash"},{"text":"hiburan","callback_data":"\/callback_q@fadhil_riyanto_bot hiburan"}],[{"text":"dev tools","callback_data":"\/callback_q@fadhil_riyanto_bot dev_tools"},{"text":"anime","callback_data":"\/callback_q@fadhil_riyanto_bot anime"},{"text":"bot ini","callback_data":"\/callback_q@fadhil_riyanto_bot bot_ini"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(184): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\command\help.php(32): Telegram->editMessageText(Array)
+#4 C:\bot telegram\hook.php(430): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-03 11:31:42  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804411240
+ref.message.message_id= 17375
+ref.message.from.id= 1480730394
+ref.message.from.is_bot= false
+ref.message.from.first_name= Doge
+ref.message.from.username= Prostinx
+ref.message.from.language_code= en
+ref.message.chat.id= 1480730394
+ref.message.chat.first_name= Doge
+ref.message.chat.username= Prostinx
+ref.message.chat.type= private
+ref.message.date= 1614745901
+ref.message.text= /help_admin
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 11
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @Prostinx, Selamat datang di panduan bot management
+
+perlu diperhatikan bahwa bot ini tidak akan bisa di invite ke grup tanpa persetujuan dari pembuat bot. dan, command grup management dibawah ini khusus untuk grup yang sudah diijinkan masuk oleh pembuat bot ini.
+
+jika mau mengivite bot ini ke grup anda, silahkan kirimkan angka chat id grup anda lalu pm (private message) ke pembuat bot ini, yaitu @fadhil_riyanto
+
+note : Semua perintah hanya bekerja dengan / (garis miring)
+ref.message_id= 
+ref.reply_markup= {"inline_keyboard":[[{"text":"Grettings","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot grettings"},{"text":"Rules","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot rules"},{"text":"Admins","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot admins"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(184): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\admin_help\help_admin.php(32): Telegram->editMessageText(Array)
+#4 C:\bot telegram\hook.php(336): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-03 11:53:36  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: bot is not a member of the supergroup chat
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804411244
+ref.message.message_id= 33378
+ref.message.from.id= 1489990155
+ref.message.from.is_bot= true
+ref.message.from.first_name= Fadhil Riyanto Bot
+ref.message.from.username= Fadhil_riyanto_bot
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1614747213
+ref.message.left_chat_participant.id= 1489990155
+ref.message.left_chat_participant.is_bot= true
+ref.message.left_chat_participant.first_name= Fadhil Riyanto Bot
+ref.message.left_chat_participant.username= Fadhil_riyanto_bot
+ref.message.left_chat_member.id= 1489990155
+ref.message.left_chat_member.is_bot= true
+ref.message.left_chat_member.first_name= Fadhil Riyanto Bot
+ref.message.left_chat_member.username= Fadhil_riyanto_bot
+
+
+[ref]
+ref.text= selamat tinggal
+ref.parse_mode= html
+ref.reply_to_message_id= 33378
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\include\leaveuser_system.php(22): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(313): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-03 12:18:43  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: RIGHT_FORBIDDEN
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804411259
+ref.message.message_id= 14025
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= PHP TGdev
+ref.message.chat.username= tgdev_php_group
+ref.message.chat.type= supergroup
+ref.message.date= 1614748714
+ref.message.reply_to_message.message_id= 14023
+ref.message.reply_to_message.from.id= 1223173857
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Fadhil riyanto
+ref.message.reply_to_message.from.last_name= (Bot Mode)
+ref.message.reply_to_message.from.username= fadhilriyanto
+ref.message.reply_to_message.from.language_code= ms
+ref.message.reply_to_message.chat.id= -1001410961692
+ref.message.reply_to_message.chat.title= PHP TGdev
+ref.message.reply_to_message.chat.username= tgdev_php_group
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1614746484
+ref.message.reply_to_message.text= /whoami
+ref.message.reply_to_message.entities.0.offset= 0
+ref.message.reply_to_message.entities.0.length= 7
+ref.message.reply_to_message.entities.0.type= bot_command
+ref.message.text= /promote
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 8
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.user_id= 1223173857
+ref.is_anonymous= false
+ref.can_change_info= true
+ref.can_post_messages= true
+ref.can_edit_messages= true
+ref.can_delete_messages= true
+ref.can_invite_users= true
+ref.can_restrict_members= true
+ref.can_pin_messages= true
+ref.can_promote_members= false
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(492): Telegram->endpoint('promoteChatMemb...', Array)
+#3 C:\bot telegram\admin_command\promote.php(30): Telegram->promoteChatMember(Array)
+#4 C:\bot telegram\admin_command\__init__.php(145): require('C:\\bot telegram...')
+#5 C:\bot telegram\hook.php(581): require('C:\\bot telegram...')
+#6 {main}
+
+============[Date]============
+[ 2021-03-03 12:29:56  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: RIGHT_FORBIDDEN
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804411305
+ref.message.message_id= 14072
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= PHP TGdev
+ref.message.chat.username= tgdev_php_group
+ref.message.chat.type= supergroup
+ref.message.date= 1614749391
+ref.message.reply_to_message.message_id= 14067
+ref.message.reply_to_message.from.id= 1223173857
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Fadhil riyanto
+ref.message.reply_to_message.from.last_name= (Bot Mode)
+ref.message.reply_to_message.from.username= fadhilriyanto
+ref.message.reply_to_message.from.language_code= ms
+ref.message.reply_to_message.chat.id= -1001410961692
+ref.message.reply_to_message.chat.title= PHP TGdev
+ref.message.reply_to_message.chat.username= tgdev_php_group
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1614749239
+ref.message.reply_to_message.text= lah, madeline nya mati
+ref.message.text= /promote
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 8
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.user_id= 1223173857
+ref.is_anonymous= false
+ref.can_change_info= true
+ref.can_post_messages= true
+ref.can_edit_messages= true
+ref.can_delete_messages= true
+ref.can_invite_users= true
+ref.can_restrict_members= true
+ref.can_pin_messages= true
+ref.can_promote_members= false
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(492): Telegram->endpoint('promoteChatMemb...', Array)
+#3 C:\bot telegram\admin_command\promote.php(28): Telegram->promoteChatMember(Array)
+#4 C:\bot telegram\admin_command\__init__.php(145): require('C:\\bot telegram...')
+#5 C:\bot telegram\hook.php(581): require('C:\\bot telegram...')
+#6 {main}
+
+============[Date]============
+[ 2021-03-03 12:58:31  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: RIGHT_FORBIDDEN
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804411309
+ref.message.message_id= 14080
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= PHP TGdev
+ref.message.chat.username= tgdev_php_group
+ref.message.chat.type= supergroup
+ref.message.date= 1614751104
+ref.message.reply_to_message.message_id= 14078
+ref.message.reply_to_message.from.id= 1223173857
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Fadhil riyanto
+ref.message.reply_to_message.from.last_name= (Bot Mode)
+ref.message.reply_to_message.from.username= fadhilriyanto
+ref.message.reply_to_message.from.language_code= ms
+ref.message.reply_to_message.chat.id= -1001410961692
+ref.message.reply_to_message.chat.title= PHP TGdev
+ref.message.reply_to_message.chat.username= tgdev_php_group
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1614749999
+ref.message.reply_to_message.text= /whoami
+ref.message.reply_to_message.entities.0.offset= 0
+ref.message.reply_to_message.entities.0.length= 7
+ref.message.reply_to_message.entities.0.type= bot_command
+ref.message.text= /promote
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 8
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.user_id= 1223173857
+ref.can_change_info= true
+ref.can_post_messages= true
+ref.can_edit_messages= true
+ref.can_delete_messages= true
+ref.can_invite_users= true
+ref.can_restrict_members= true
+ref.can_pin_messages= true
+ref.can_promote_members= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(492): Telegram->endpoint('promoteChatMemb...', Array)
+#3 C:\bot telegram\admin_command\promote.php(27): Telegram->promoteChatMember(Array)
+#4 C:\bot telegram\admin_command\__init__.php(145): require('C:\\bot telegram...')
+#5 C:\bot telegram\hook.php(581): require('C:\\bot telegram...')
+#6 {main}
+
+============[Date]============
+[ 2021-03-03 13:00:23  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: RIGHT_FORBIDDEN
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804411310
+ref.message.message_id= 14083
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= PHP TGdev
+ref.message.chat.username= tgdev_php_group
+ref.message.chat.type= supergroup
+ref.message.date= 1614751216
+ref.message.reply_to_message.message_id= 14078
+ref.message.reply_to_message.from.id= 1223173857
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Fadhil riyanto
+ref.message.reply_to_message.from.last_name= (Bot Mode)
+ref.message.reply_to_message.from.username= fadhilriyanto
+ref.message.reply_to_message.from.language_code= ms
+ref.message.reply_to_message.chat.id= -1001410961692
+ref.message.reply_to_message.chat.title= PHP TGdev
+ref.message.reply_to_message.chat.username= tgdev_php_group
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1614749999
+ref.message.reply_to_message.text= /whoami
+ref.message.reply_to_message.entities.0.offset= 0
+ref.message.reply_to_message.entities.0.length= 7
+ref.message.reply_to_message.entities.0.type= bot_command
+ref.message.text= /promote
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 8
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.user_id= 1223173857
+ref.can_change_info= true
+ref.can_post_messages= true
+ref.can_edit_messages= true
+ref.can_delete_messages= true
+ref.can_invite_users= true
+ref.can_restrict_members= true
+ref.can_pin_messages= true
+ref.can_promote_members= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(492): Telegram->endpoint('promoteChatMemb...', Array)
+#3 C:\bot telegram\admin_command\promote.php(28): Telegram->promoteChatMember(Array)
+#4 C:\bot telegram\admin_command\__init__.php(145): require('C:\\bot telegram...')
+#5 C:\bot telegram\hook.php(581): require('C:\\bot telegram...')
+#6 {main}
+
+============[Date]============
+[ 2021-03-03 13:01:46  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: RIGHT_FORBIDDEN
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804411311
+ref.message.message_id= 14086
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= PHP TGdev
+ref.message.chat.username= tgdev_php_group
+ref.message.chat.type= supergroup
+ref.message.date= 1614751299
+ref.message.reply_to_message.message_id= 14078
+ref.message.reply_to_message.from.id= 1223173857
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Fadhil riyanto
+ref.message.reply_to_message.from.last_name= (Bot Mode)
+ref.message.reply_to_message.from.username= fadhilriyanto
+ref.message.reply_to_message.from.language_code= ms
+ref.message.reply_to_message.chat.id= -1001410961692
+ref.message.reply_to_message.chat.title= PHP TGdev
+ref.message.reply_to_message.chat.username= tgdev_php_group
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1614749999
+ref.message.reply_to_message.text= /whoami
+ref.message.reply_to_message.entities.0.offset= 0
+ref.message.reply_to_message.entities.0.length= 7
+ref.message.reply_to_message.entities.0.type= bot_command
+ref.message.text= /promote
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 8
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.user_id= 1223173857
+ref.can_change_info= True
+ref.can_post_messages= True
+ref.can_edit_messages= True
+ref.can_delete_messages= True
+ref.can_invite_users= True
+ref.can_restrict_members= True
+ref.can_pin_messages= True
+ref.can_promote_members= True
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(492): Telegram->endpoint('promoteChatMemb...', Array)
+#3 C:\bot telegram\admin_command\promote.php(28): Telegram->promoteChatMember(Array)
+#4 C:\bot telegram\admin_command\__init__.php(145): require('C:\\bot telegram...')
+#5 C:\bot telegram\hook.php(581): require('C:\\bot telegram...')
+#6 {main}
+
+============[Date]============
+[ 2021-03-03 13:05:03  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: RIGHT_FORBIDDEN
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804411312
+ref.message.message_id= 14089
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= PHP TGdev
+ref.message.chat.username= tgdev_php_group
+ref.message.chat.type= supergroup
+ref.message.date= 1614751496
+ref.message.reply_to_message.message_id= 14078
+ref.message.reply_to_message.from.id= 1223173857
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Fadhil riyanto
+ref.message.reply_to_message.from.last_name= (Bot Mode)
+ref.message.reply_to_message.from.username= fadhilriyanto
+ref.message.reply_to_message.from.language_code= ms
+ref.message.reply_to_message.chat.id= -1001410961692
+ref.message.reply_to_message.chat.title= PHP TGdev
+ref.message.reply_to_message.chat.username= tgdev_php_group
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1614749999
+ref.message.reply_to_message.text= /whoami
+ref.message.reply_to_message.entities.0.offset= 0
+ref.message.reply_to_message.entities.0.length= 7
+ref.message.reply_to_message.entities.0.type= bot_command
+ref.message.text= /promote
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 8
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.user_id= 1223173857
+ref.can_change_info= True
+ref.can_post_messages= True
+ref.can_edit_messages= True
+ref.can_delete_messages= True
+ref.can_invite_users= True
+ref.can_restrict_members= True
+ref.can_pin_messages= True
+ref.can_promote_members= True
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(492): Telegram->endpoint('promoteChatMemb...', Array)
+#3 C:\bot telegram\admin_command\promote.php(28): Telegram->promoteChatMember(Array)
+#4 C:\bot telegram\admin_command\__init__.php(145): require('C:\\bot telegram...')
+#5 C:\bot telegram\hook.php(581): require('C:\\bot telegram...')
+#6 {main}
+
+============[Date]============
+[ 2021-03-03 13:11:00  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: RIGHT_FORBIDDEN
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804411343
+ref.message.message_id= 14092
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= PHP TGdev
+ref.message.chat.username= tgdev_php_group
+ref.message.chat.type= supergroup
+ref.message.date= 1614751853
+ref.message.reply_to_message.message_id= 14078
+ref.message.reply_to_message.from.id= 1223173857
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Fadhil riyanto
+ref.message.reply_to_message.from.last_name= (Bot Mode)
+ref.message.reply_to_message.from.username= fadhilriyanto
+ref.message.reply_to_message.from.language_code= ms
+ref.message.reply_to_message.chat.id= -1001410961692
+ref.message.reply_to_message.chat.title= PHP TGdev
+ref.message.reply_to_message.chat.username= tgdev_php_group
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1614749999
+ref.message.reply_to_message.text= /whoami
+ref.message.reply_to_message.entities.0.offset= 0
+ref.message.reply_to_message.entities.0.length= 7
+ref.message.reply_to_message.entities.0.type= bot_command
+ref.message.text= /promote
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 8
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.user_id= 1223173857
+ref.can_change_info= True
+ref.can_post_messages= True
+ref.can_edit_messages= True
+ref.can_delete_messages= True
+ref.can_invite_users= True
+ref.can_restrict_members= True
+ref.can_pin_messages= True
+ref.can_promote_members= True
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(492): Telegram->endpoint('promoteChatMemb...', Array)
+#3 C:\bot telegram\admin_command\promote.php(28): Telegram->promoteChatMember(Array)
+#4 C:\bot telegram\admin_command\__init__.php(145): require('C:\\bot telegram...')
+#5 C:\bot telegram\hook.php(581): require('C:\\bot telegram...')
+#6 {main}
+
+============[Date]============
+[ 2021-03-03 13:12:05  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: RIGHT_FORBIDDEN
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804411346
+ref.message.message_id= 14095
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= PHP TGdev
+ref.message.chat.username= tgdev_php_group
+ref.message.chat.type= supergroup
+ref.message.date= 1614751919
+ref.message.reply_to_message.message_id= 14078
+ref.message.reply_to_message.from.id= 1223173857
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Fadhil riyanto
+ref.message.reply_to_message.from.last_name= (Bot Mode)
+ref.message.reply_to_message.from.username= fadhilriyanto
+ref.message.reply_to_message.from.language_code= ms
+ref.message.reply_to_message.chat.id= -1001410961692
+ref.message.reply_to_message.chat.title= PHP TGdev
+ref.message.reply_to_message.chat.username= tgdev_php_group
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1614749999
+ref.message.reply_to_message.text= /whoami
+ref.message.reply_to_message.entities.0.offset= 0
+ref.message.reply_to_message.entities.0.length= 7
+ref.message.reply_to_message.entities.0.type= bot_command
+ref.message.text= /promote
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 8
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.user_id= 1223173857
+ref.can_change_info= True
+ref.can_post_messages= True
+ref.can_edit_messages= True
+ref.can_delete_messages= True
+ref.can_invite_users= True
+ref.can_restrict_members= True
+ref.can_pin_messages= True
+ref.can_promote_members= True
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(492): Telegram->endpoint('promoteChatMemb...', Array)
+#3 C:\bot telegram\admin_command\promote.php(28): Telegram->promoteChatMember(Array)
+#4 C:\bot telegram\admin_command\__init__.php(145): require('C:\\bot telegram...')
+#5 C:\bot telegram\hook.php(581): require('C:\\bot telegram...')
+#6 {main}
+
+============[Date]============
+[ 2021-03-03 13:13:05  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: RIGHT_FORBIDDEN
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804411348
+ref.message.message_id= 14100
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= id
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= PHP TGdev
+ref.message.chat.username= tgdev_php_group
+ref.message.chat.type= supergroup
+ref.message.date= 1614751978
+ref.message.reply_to_message.message_id= 14078
+ref.message.reply_to_message.from.id= 1223173857
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Fadhil riyanto
+ref.message.reply_to_message.from.last_name= (Bot Mode)
+ref.message.reply_to_message.from.username= fadhilriyanto
+ref.message.reply_to_message.from.language_code= ms
+ref.message.reply_to_message.chat.id= -1001410961692
+ref.message.reply_to_message.chat.title= PHP TGdev
+ref.message.reply_to_message.chat.username= tgdev_php_group
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1614749999
+ref.message.reply_to_message.text= /whoami
+ref.message.reply_to_message.entities.0.offset= 0
+ref.message.reply_to_message.entities.0.length= 7
+ref.message.reply_to_message.entities.0.type= bot_command
+ref.message.text= /promote
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 8
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.user_id= 1223173857
+ref.can_change_info= true
+ref.can_post_messages= true
+ref.can_edit_messages= true
+ref.can_delete_messages= true
+ref.can_invite_users= true
+ref.can_restrict_members= true
+ref.can_pin_messages= true
+ref.can_promote_members= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(492): Telegram->endpoint('promoteChatMemb...', Array)
+#3 C:\bot telegram\admin_command\promote.php(28): Telegram->promoteChatMember(Array)
+#4 C:\bot telegram\admin_command\__init__.php(145): require('C:\\bot telegram...')
+#5 C:\bot telegram\hook.php(581): require('C:\\bot telegram...')
+#6 {main}
+
+============[Date]============
+[ 2021-03-03 13:23:51  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: RIGHT_FORBIDDEN
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804411358
+ref.message.message_id= 14103
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= PHP TGdev
+ref.message.chat.username= tgdev_php_group
+ref.message.chat.type= supergroup
+ref.message.date= 1614752624
+ref.message.reply_to_message.message_id= 14078
+ref.message.reply_to_message.from.id= 1223173857
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Fadhil riyanto
+ref.message.reply_to_message.from.last_name= (Bot Mode)
+ref.message.reply_to_message.from.username= fadhilriyanto
+ref.message.reply_to_message.from.language_code= id
+ref.message.reply_to_message.chat.id= -1001410961692
+ref.message.reply_to_message.chat.title= PHP TGdev
+ref.message.reply_to_message.chat.username= tgdev_php_group
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1614749999
+ref.message.reply_to_message.text= /whoami
+ref.message.reply_to_message.entities.0.offset= 0
+ref.message.reply_to_message.entities.0.length= 7
+ref.message.reply_to_message.entities.0.type= bot_command
+ref.message.text= /promote
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 8
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.user_id= 1223173857
+ref.can_change_info= true
+ref.can_post_messages= true
+ref.can_edit_messages= true
+ref.can_delete_messages= true
+ref.can_invite_users= true
+ref.can_restrict_members= true
+ref.can_pin_messages= true
+ref.can_promote_members= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(492): Telegram->endpoint('promoteChatMemb...', Array)
+#3 C:\bot telegram\admin_command\promote.php(26): Telegram->promoteChatMember(Array)
+#4 C:\bot telegram\admin_command\__init__.php(145): require('C:\\bot telegram...')
+#5 C:\bot telegram\hook.php(581): require('C:\\bot telegram...')
+#6 {main}
+
+============[Date]============
+[ 2021-03-03 13:30:44  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: RIGHT_FORBIDDEN
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804411361
+ref.message.message_id= 14108
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= PHP TGdev
+ref.message.chat.username= tgdev_php_group
+ref.message.chat.type= supergroup
+ref.message.date= 1614753036
+ref.message.reply_to_message.message_id= 14106
+ref.message.reply_to_message.from.id= 1223173857
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Fadhil riyanto
+ref.message.reply_to_message.from.last_name= (Bot Mode)
+ref.message.reply_to_message.from.username= fadhilriyanto
+ref.message.reply_to_message.from.language_code= ms
+ref.message.reply_to_message.chat.id= -1001410961692
+ref.message.reply_to_message.chat.title= PHP TGdev
+ref.message.reply_to_message.chat.username= tgdev_php_group
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1614752997
+ref.message.reply_to_message.text= /whoami
+ref.message.reply_to_message.entities.0.offset= 0
+ref.message.reply_to_message.entities.0.length= 7
+ref.message.reply_to_message.entities.0.type= bot_command
+ref.message.text= /promote
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 8
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.user_id= 1223173857
+ref.can_change_info= true
+ref.can_post_messages= true
+ref.can_edit_messages= true
+ref.can_delete_messages= true
+ref.can_invite_users= true
+ref.can_restrict_members= true
+ref.can_pin_messages= true
+ref.can_promote_members= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(492): Telegram->endpoint('promoteChatMemb...', Array)
+#3 C:\bot telegram\admin_command\promote.php(25): Telegram->promoteChatMember(Array)
+#4 C:\bot telegram\admin_command\__init__.php(145): require('C:\\bot telegram...')
+#5 C:\bot telegram\hook.php(581): require('C:\\bot telegram...')
+#6 {main}
+
+============[Date]============
+[ 2021-03-03 13:49:07  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: RIGHT_FORBIDDEN
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804411375
+ref.message.message_id= 14113
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= PHP TGdev
+ref.message.chat.username= tgdev_php_group
+ref.message.chat.type= supergroup
+ref.message.date= 1614754140
+ref.message.reply_to_message.message_id= 14106
+ref.message.reply_to_message.from.id= 1223173857
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Fadhil riyanto
+ref.message.reply_to_message.from.last_name= (Bot Mode)
+ref.message.reply_to_message.from.username= fadhilriyanto
+ref.message.reply_to_message.from.language_code= ms
+ref.message.reply_to_message.chat.id= -1001410961692
+ref.message.reply_to_message.chat.title= PHP TGdev
+ref.message.reply_to_message.chat.username= tgdev_php_group
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1614752997
+ref.message.reply_to_message.text= /whoami
+ref.message.reply_to_message.entities.0.offset= 0
+ref.message.reply_to_message.entities.0.length= 7
+ref.message.reply_to_message.entities.0.type= bot_command
+ref.message.text= /promote
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 8
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.user_id= 1223173857
+ref.can_change_info= true
+ref.can_post_messages= true
+ref.can_edit_messages= true
+ref.can_delete_messages= true
+ref.can_invite_users= true
+ref.can_restrict_members= true
+ref.can_pin_messages= true
+ref.can_promote_members= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(492): Telegram->endpoint('promoteChatMemb...', Array)
+#3 C:\bot telegram\admin_command\promote.php(15): Telegram->promoteChatMember(Array)
+#4 C:\bot telegram\admin_command\__init__.php(145): require('C:\\bot telegram...')
+#5 C:\bot telegram\hook.php(581): require('C:\\bot telegram...')
+#6 {main}
+

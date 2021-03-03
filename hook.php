@@ -103,14 +103,15 @@ $entityUserAfk = $result['message']['entities'];
 // }
 
 if (isset($getreplyianid)) {
-	if ($getreplyianid == $userID) {
-		exit;
-	}
+
 	$db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
 	$db->where("userid", $getreplyianid);
 	$user = $db->getOne("afk_user_data");
 	if ($user['userid'] == null) {
 	} else {
+		if ($getreplyianid == $userID) {
+			exit;
+		}
 		$reply = "Maaf ," . $afkforstname . ' ' . $afklastname . ' sedang AFK sejak ' . $user['time_afk'] . PHP_EOL .
 			'Alasan : ' . $user['alasan'];
 		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
@@ -337,9 +338,6 @@ if ($text == '/start' || $text == '/start' . USERNAME_BOT . '') {
 } elseif ('/help_admin_i' == $adanParse[0] || '/help_admin_i' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/admin_help/help_admin_i.php';
 	exit;
-} elseif ('/afk' == $adanParse[0] || 'afk' == $adanParse[0] || '/afk' . USERNAME_BOT . '' == $adanParse[0]) {
-	require __DIR__ . '/group_command/afk.php';
-	exit;
 } elseif ('/adminlist' == $adanParse[0] || '/adminlist' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/adminlist.php';
 	exit;
@@ -348,9 +346,6 @@ if ($text == '/start' || $text == '/start' . USERNAME_BOT . '') {
 	exit;
 } elseif ('/pastebin' == $adanParse[0] || '/bin' == $adanParse[0] || '/pastebin' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/pastebin.php';
-	exit;
-} elseif ('/unafk' == $adanParse[0] || 'unafk' == $adanParse[0] || '/unafk' . USERNAME_BOT . '' == $adanParse[0]) {
-	require __DIR__ . '/group_command/unafk.php';
 	exit;
 } elseif ('/chapcha' == $adanParse[0] || '/chapcha' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/chapcha.php';
@@ -580,6 +575,7 @@ if ($text == '/start' || $text == '/start' . USERNAME_BOT . '') {
 	require __DIR__ . '/command/base64_decode.php';
 	exit;
 } elseif ($stringPertama == '/') {
+	require __DIR__ . '/group_command/__init__.php';
 	require __DIR__ . '/anime_command/__init__.php';
 	require __DIR__ . '/hash_command/__init__.php';
 	require __DIR__ . '/admin_command/__init__.php';

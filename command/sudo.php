@@ -98,7 +98,7 @@ if ($getStringFromSpasi[0] == 'debug' || $getStringFromSpasi[0] == 'debugmode') 
     $getJsonraw = file_get_contents('php://input');
     $decs = json_decode($getJsonraw);
     $reply = json_encode($decs, JSON_PRETTY_PRINT);
-    $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+    $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'disable_web_page_preview' => true);
     $telegram->sendMessage($content);
 } elseif ($getStringFromSpasi[0] == 'del' || $getStringFromSpasi[0] == 'd') {
     $result = $telegram->getData();
@@ -108,9 +108,9 @@ if ($getStringFromSpasi[0] == 'debug' || $getStringFromSpasi[0] == 'debugmode') 
         $telegram->deleteMessage($content);
     } else {
     }
-}elseif ($getStringFromSpasi[0] == 'fadhil' || $getStringFromSpasi[0] == 'fadhil') {
-	$fadhil_lang = str_replace($adanParse_plain_nokarakter[0] . ' ' . $adanParse_plain_nokarakter[1] . ' ', '', $text_plain_nokarakter);
+} elseif ($getStringFromSpasi[0] == 'fadhil' || $getStringFromSpasi[0] == 'fadhil') {
+    $fadhil_lang = str_replace($adanParse_plain_nokarakter[0] . ' ' . $adanParse_plain_nokarakter[1] . ' ', '', $text_plain_nokarakter);
     $reply = file_get_contents($host_server . '/parser.php?kode=' . urlencode($fadhil_lang));
-	$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+    $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
     $telegram->sendMessage($content);
 }
