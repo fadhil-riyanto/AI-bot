@@ -427,3 +427,79 @@ ref.disable_web_page_preview= true
 #4 C:\bot telegram\hook.php(460): require('C:\\bot telegram...')
 #5 {main}
 
+============[Date]============
+[ 2021-03-04 14:19:17  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804412672
+ref.message.message_id= 17643
+ref.message.from.id= 1080020671
+ref.message.from.is_bot= false
+ref.message.from.first_name= Gtixz
+ref.message.from.username= coldIceee
+ref.message.from.language_code= id
+ref.message.chat.id= 1080020671
+ref.message.chat.first_name= Gtixz
+ref.message.chat.username= coldIceee
+ref.message.chat.type= private
+ref.message.date= 1614842355
+ref.message.text= G ngerti
+
+
+[ref]
+ref.text= 
+
+ref.reply_to_message_id= 17643
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(658): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(614): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-03-04 14:21:46  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804412682
+ref.message.message_id= 17659
+ref.message.from.id= 1080020671
+ref.message.from.is_bot= false
+ref.message.from.first_name= Gtixz
+ref.message.from.username= coldIceee
+ref.message.from.language_code= id
+ref.message.chat.id= 1080020671
+ref.message.chat.first_name= Gtixz
+ref.message.chat.username= coldIceee
+ref.message.chat.type= private
+ref.message.date= 1614842503
+ref.message.text= Ituu Gb nyaa GB apaan?
+
+
+[ref]
+ref.text= 
+
+ref.reply_to_message_id= 17659
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(658): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(623): Telegram->sendMessage(Array)
+#4 {main}
+

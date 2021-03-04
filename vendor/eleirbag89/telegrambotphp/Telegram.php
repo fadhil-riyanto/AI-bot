@@ -74,6 +74,10 @@ class Telegram
 	{
 		return $this->endpoint('sendAudio', $content);
 	}
+	public function setChatPermissions(array $content)
+	{
+		return $this->endpoint('setChatPermissions', $content);
+	}
 	public function sendDocument(array $content)
 	{
 		return $this->endpoint('sendDocument', $content);

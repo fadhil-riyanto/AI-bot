@@ -93,7 +93,8 @@ if (deteksi_grup() == true) {
         $adanParse[0] == '/pin' || $adanParse[0] == '/unpin' || $adanParse[0] == '/adminlist' ||
         $adanParse[0] == '/set_welcome' || $adanParse[0] == '/test_welcome' || $adanParse[0] == '/set_chapcha_mode' ||
         $adanParse[0] == '/set_goodbye' || $adanParse[0] == '/set_welcome_mode' || $adanParse[0] == '/set_goodbye_mode' ||
-        $adanParse[0] == '/set_rules' || $adanParse[0] == '/promote' || $adanParse[0] == '/demote' || $adanParse[0] == '/clear_rules'
+        $adanParse[0] == '/set_rules' || $adanParse[0] == '/promote' || $adanParse[0] == '/demote' || $adanParse[0] == '/clear_rules' ||
+        $adanParse[0] == '/admin_mode'
     ) {
         $reply = 'Maaf, command ini hanya berlaku di grup saja';
         $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
@@ -147,13 +148,16 @@ if ($kamu_admin == true) {
         require 'demote.php';
     } elseif ($adanParseadmin[0] == '/clear_rules') {
         require 'clear_rules.php';
+    } elseif ($adanParseadmin[0] == '/admin_mode') {
+        require 'admin_mode.php';
     }
 } elseif ($kamu_admin == false) {
     if (
         $adanParse[0] == '/pin' || $adanParse[0] == '/unpin' || $adanParse[0] == '/adminlist' ||
         $adanParse[0] == '/set_welcome' || $adanParse[0] == '/test_welcome' || $adanParse[0] == '/set_chapcha_mode' ||
         $adanParse[0] == '/set_goodbye' || $adanParse[0] == '/set_welcome_mode' || $adanParse[0] == '/set_goodbye_mode' ||
-        $adanParse[0] == '/set_rules' || $adanParse[0] == '/promote' || $adanParse[0] == '/demote' || $adanParse[0] == '/clear_rules'
+        $adanParse[0] == '/set_rules' || $adanParse[0] == '/promote' || $adanParse[0] == '/demote' || $adanParse[0] == '/clear_rules' ||
+        $adanParse[0] == '/admin_mode'
     ) {
         $reply = 'ups, kamu bukan admin';
         $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
