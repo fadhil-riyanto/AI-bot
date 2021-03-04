@@ -603,6 +603,7 @@ if ($detectReply == true) {
 		$reply = 'Aku ogah jawab ah, ada kata kata yg tidak sopan soalnya';
 		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
 		$telegram->sendMessage($content);
+		mysqli_close($koneksi);
 		exit;
 	}
 
@@ -611,6 +612,7 @@ if ($detectReply == true) {
 			$reply = Emoji::Decode($ai_chatting_decode->respon) . PHP_EOL;
 			$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
 			$telegram->sendMessage($content);
+			mysqli_close($koneksi);
 			exit;
 			//}
 		} elseif ($ai_chatting_decode->affected === 'simsimi') {
@@ -637,6 +639,7 @@ if ($detectReply == true) {
 		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_markup' => $keyb,  'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
 		$telegram->sendMessage($content);
 	}
+	mysqli_close($koneksi);
 } else {
 }
 // TELEGRAM KELAS

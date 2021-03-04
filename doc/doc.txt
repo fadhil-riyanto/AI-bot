@@ -1,0 +1,5 @@
+hai, ini adalah command khusus untuk admin grup.
+
+- /rules: digunakan untuk melihat rules chat sekarang
+- /set_rules: digunakan untuk mengatur rules
+- /clear_rules: digunakan untuk mengatur rules

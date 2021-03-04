@@ -1,0 +1,429 @@
+============[Date]============
+[ 2021-03-04 11:01:27  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Unsupported start tag "file" at byte offset 113
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804412415
+ref.message.message_id= 34497
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1614830487
+ref.message.text= /sudo use_system git status
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   admin_command/__init__.php
+	modified:   hook.php
+	modified:   json_data/admin_help/editMsgID.json
+	modified:   json_data/admin_help/editMsgIDdelete.json
+	modified:   json_data/admin_help/slangword.json
+	modified:   json_data/group_command/adminlist.json
+	modified:   json_data/user_delay_time.json
+	modified:   logs/TelegramErrorLogger-2021-03-03.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	admin_command/clear_rules.php
+	doc/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ref.reply_to_message_id= 34497
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\sudo.php(74): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(460): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-04 11:01:44  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Unsupported start tag "file" at byte offset 113
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804412417
+ref.message.message_id= 34500
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1614830503
+ref.message.text= /sudo use_system git status
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   admin_command/__init__.php
+	modified:   hook.php
+	modified:   json_data/admin_help/editMsgID.json
+	modified:   json_data/admin_help/editMsgIDdelete.json
+	modified:   json_data/admin_help/slangword.json
+	modified:   json_data/fitur_tambahan_json/brainly.json
+	modified:   json_data/group_command/adminlist.json
+	modified:   json_data/user_delay_time.json
+	modified:   logs/TelegramErrorLogger-2021-03-03.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	admin_command/clear_rules.php
+	brainly/cache/e8484a93b3b2c7c0e6c74ca72836c4822fb4f7a0.json.gz
+	doc/
+	logs/TelegramErrorLogger-2021-03-04.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ref.reply_to_message_id= 34500
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\sudo.php(74): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(460): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-04 11:01:54  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Unsupported start tag "file" at byte offset 113
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804412418
+ref.message.message_id= 34501
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1614830513
+ref.message.text= /sudo use_system git status
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   admin_command/__init__.php
+	modified:   hook.php
+	modified:   json_data/admin_help/editMsgID.json
+	modified:   json_data/admin_help/editMsgIDdelete.json
+	modified:   json_data/admin_help/slangword.json
+	modified:   json_data/fitur_tambahan_json/brainly.json
+	modified:   json_data/group_command/adminlist.json
+	modified:   json_data/user_delay_time.json
+	modified:   logs/TelegramErrorLogger-2021-03-03.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	admin_command/clear_rules.php
+	brainly/cache/e8484a93b3b2c7c0e6c74ca72836c4822fb4f7a0.json.gz
+	doc/
+	logs/TelegramErrorLogger-2021-03-04.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ref.reply_to_message_id= 34501
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\sudo.php(74): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(460): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-04 11:02:00  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Unsupported start tag "file" at byte offset 113
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804412419
+ref.message.message_id= 34502
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1614830520
+ref.message.text= /sudo shell git status
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   admin_command/__init__.php
+	modified:   hook.php
+	modified:   json_data/admin_help/editMsgID.json
+	modified:   json_data/admin_help/editMsgIDdelete.json
+	modified:   json_data/admin_help/slangword.json
+	modified:   json_data/fitur_tambahan_json/brainly.json
+	modified:   json_data/group_command/adminlist.json
+	modified:   json_data/user_delay_time.json
+	modified:   logs/TelegramErrorLogger-2021-03-03.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	admin_command/clear_rules.php
+	brainly/cache/e8484a93b3b2c7c0e6c74ca72836c4822fb4f7a0.json.gz
+	doc/
+	logs/TelegramErrorLogger-2021-03-04.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ref.reply_to_message_id= 34502
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\sudo.php(74): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(460): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-04 11:02:41  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804412423
+ref.message.message_id= 34507
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1614830558
+ref.message.text= /sudo shell git add .
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 
+ref.reply_to_message_id= 34507
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\sudo.php(74): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(460): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-04 11:03:26  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804412424
+ref.message.message_id= 34508
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1614830604
+ref.message.text= /sudo shell git commit -am "tambah command untuk gc mgmt dan fix dokumentasi, dan tambah mysqli close"
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 
+ref.reply_to_message_id= 34508
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\sudo.php(74): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(460): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-04 11:03:58  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804412425
+ref.message.message_id= 34509
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1614830635
+ref.message.text= /sudo shell git push
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 
+ref.reply_to_message_id= 34509
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\sudo.php(74): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(460): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-04 11:04:14  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804412426
+ref.message.message_id= 34510
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1614830650
+ref.message.text= /sudo shell git push heroku master
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 
+ref.reply_to_message_id= 34510
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(654): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\sudo.php(74): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(460): require('C:\\bot telegram...')
+#5 {main}
+
