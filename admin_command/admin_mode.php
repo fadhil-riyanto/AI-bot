@@ -14,8 +14,8 @@ if ($adanParse[1] == 'on') {
         "can_send_messages": true,
         "can_send_media_messages": true,
         "can_send_other_messages": true,
-        "can_invite_users": true,
-        
+        "can_invite_users": true
+
     }';
     $konten = array('chat_id' => $chat_id, 'permissions' => $ijin);
     $telegram->setChatPermissions($konten);
