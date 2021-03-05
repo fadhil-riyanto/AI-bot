@@ -601,16 +601,18 @@ if ($text == '/start' || $text == '/start' . USERNAME_BOT . '') {
 // ENCRYPT TOOLS DIAKHIRI
 // LICENSE BY FADHIL
 // PAHAM?
-$koneksi = @mysqli_connect(
-	DB_HOST,
-	DB_USERNAME,
-	DB_PASSWORD,
-	DB_NAME
-);
+
 
 
 $detectReply = detect_apakah_pesan_reply_ke_bot();
 if ($detectReply == true) {
+	$koneksi = @mysqli_connect(
+		DB_HOST,
+		DB_USERNAME,
+		DB_PASSWORD,
+		DB_NAME
+	);
+
 	$ai_chatting = robot_artificial_intelegence($text);
 	$ai_chatting_decode = json_decode($ai_chatting);
 	if ($ai_chatting_decode->bad_word == true) {
