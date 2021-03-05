@@ -84,18 +84,18 @@ if ($usernameBelumdiparse != null) { //Jika user ada usernamenya
 	$username = '<a href="tg://user?id=' . $userID . '">' . $namaPertama . ' ' . $namaTerakhir . '</a>';
 }
 
-$data_stiker = $telegram->getData();
-$stiker_hapus = $data_stiker['message']['sticker']['file_unique_id'];
-if (isset($stiker_hapus)) {
-	if ($stiker_hapus == 'AgADCQADm23LJA') {
-		$arr = array('chat_id' => $chat_id, 'message_id' => $message_id);
-		$telegram->deleteMessage($arr);
-	}
-	// $reply = $stiker_hapus;
-	// $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-	// $telegram->sendMessage($content);
-} else {
-}
+// $data_stiker = $telegram->getData();
+// $stiker_hapus = $data_stiker['message']['sticker']['file_unique_id'];
+// if (isset($stiker_hapus)) {
+// 	if ($stiker_hapus == 'AgADCQADm23LJA') {
+// 		$arr = array('chat_id' => $chat_id, 'message_id' => $message_id);
+// 		$telegram->deleteMessage($arr);
+// 	}
+// 	// $reply = $stiker_hapus;
+// 	// $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+// 	// $telegram->sendMessage($content);
+// } else {
+// }
 
 
 
