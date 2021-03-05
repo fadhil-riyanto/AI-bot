@@ -1,0 +1,382 @@
+============[Date]============
+[ 2021-03-05 09:23:42  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804413613
+ref.message.message_id= 35952
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1614910933
+ref.message.text= /cc
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 3
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.chat_id= 
+ref.text= ups, fitur ini sedang dalam pengembangan
+ref.reply_to_message_id= 
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(658): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\include\claimmed.php(8): Telegram->sendMessage(Array)
+#4 C:\bot telegram\include\claimmed.php(18): claimcommand('ups, fitur ini ...')
+#5 C:\bot telegram\hook.php(578): require('C:\\bot telegram...')
+#6 {main}
+
+============[Date]============
+[ 2021-03-05 09:23:43  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804413616
+ref.message.message_id= 17699
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1614910994
+ref.message.text= /cc
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 3
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.chat_id= 
+ref.text= ups, fitur ini sedang dalam pengembangan
+ref.reply_to_message_id= 
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(658): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\include\claimmed.php(8): Telegram->sendMessage(Array)
+#4 C:\bot telegram\include\claimmed.php(18): claimcommand('ups, fitur ini ...')
+#5 C:\bot telegram\hook.php(578): require('C:\\bot telegram...')
+#6 {main}
+
+============[Date]============
+[ 2021-03-05 09:23:52  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804413617
+ref.message.message_id= 17700
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1614911032
+ref.message.text= /cc
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 3
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.chat_id= 
+ref.text= ups, fitur ini sedang dalam pengembangan
+ref.reply_to_message_id= 
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(658): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\include\claimmed.php(8): Telegram->sendMessage(Array)
+#4 C:\bot telegram\include\claimmed.php(18): claimcommand('ups, fitur ini ...')
+#5 C:\bot telegram\hook.php(578): require('C:\\bot telegram...')
+#6 {main}
+
+============[Date]============
+[ 2021-03-05 12:15:24  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804413781
+ref.callback_query.id= 5347998959526007853
+ref.callback_query.from.id= 1245178040
+ref.callback_query.from.is_bot= false
+ref.callback_query.from.first_name= Y
+ref.callback_query.from.username= caliph71
+ref.callback_query.from.language_code= id
+ref.callback_query.message.message_id= 36138
+ref.callback_query.message.from.id= 1489990155
+ref.callback_query.message.from.is_bot= true
+ref.callback_query.message.from.first_name= Fadhil Riyanto Bot
+ref.callback_query.message.from.username= Fadhil_riyanto_bot
+ref.callback_query.message.chat.id= -1001209274058
+ref.callback_query.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.callback_query.message.chat.username= scriptiseng
+ref.callback_query.message.chat.type= supergroup
+ref.callback_query.message.date= 1614920429
+ref.callback_query.message.edit_date= 1614921090
+ref.callback_query.message.reply_to_message.message_id= 36137
+ref.callback_query.message.reply_to_message.from.id= 1393342467
+ref.callback_query.message.reply_to_message.from.is_bot= false
+ref.callback_query.message.reply_to_message.from.first_name= Fadhil
+ref.callback_query.message.reply_to_message.from.last_name= Riyanto
+ref.callback_query.message.reply_to_message.from.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.from.language_code= ms
+ref.callback_query.message.reply_to_message.chat.id= -1001209274058
+ref.callback_query.message.reply_to_message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.callback_query.message.reply_to_message.chat.username= scriptiseng
+ref.callback_query.message.reply_to_message.chat.type= supergroup
+ref.callback_query.message.reply_to_message.date= 1614920424
+ref.callback_query.message.reply_to_message.text= /berita
+ref.callback_query.message.reply_to_message.entities.0.offset= 0
+ref.callback_query.message.reply_to_message.entities.0.length= 7
+ref.callback_query.message.reply_to_message.entities.0.type= bot_command
+ref.callback_query.message.text= Judul : Kapal Pesiar Ini Tawarkan Berlayar 140 Hari di 32 Negara, Harganya Nyaris 1 M
+
+Link : https://kumparan.com/kumparantravel/kapal-pesiar-ini-tawarkan-berlayar-140-hari-di-32-negara-harganya-nyaris-1-m-1vIKYmxsBU5
+ref.callback_query.message.entities.0.offset= 94
+ref.callback_query.message.entities.0.length= 124
+ref.callback_query.message.entities.0.type= url
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.text= refres
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.callback_data= /berita_i@fadhil_riyanto_bot
+ref.callback_query.chat_instance= -1698981424917340985
+ref.callback_query.data= /berita_i@fadhil_riyanto_bot
+
+
+[ref]
+ref.text= Judul : Polri Bakal Kirim Berkas Laskar FPI ke Kejaksaan, Minta Petunjuk Penghentian
+
+Link : https://nasional.tempo.co/read/1439019/polri-bakal-kirim-berkas-laskar-fpi-ke-kejaksaan-minta-petunjuk-penghentian
+
+
+ref.message_id= 
+ref.reply_markup= {"inline_keyboard":[[{"text":"refres","callback_data":"\/berita_i@fadhil_riyanto_bot"}]]}
+ref.reply_to_message_id= 36138
+ref.parse_mode= html
+ref.disable_web_page_preview= false
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(658): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(188): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\command\berita_i.php(43): Telegram->editMessageText(Array)
+#4 C:\bot telegram\hook.php(445): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-05 12:15:29  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804413782
+ref.callback_query.id= 5347998962257990290
+ref.callback_query.from.id= 1245178040
+ref.callback_query.from.is_bot= false
+ref.callback_query.from.first_name= Y
+ref.callback_query.from.username= caliph71
+ref.callback_query.from.language_code= id
+ref.callback_query.message.message_id= 36138
+ref.callback_query.message.from.id= 1489990155
+ref.callback_query.message.from.is_bot= true
+ref.callback_query.message.from.first_name= Fadhil Riyanto Bot
+ref.callback_query.message.from.username= Fadhil_riyanto_bot
+ref.callback_query.message.chat.id= -1001209274058
+ref.callback_query.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.callback_query.message.chat.username= scriptiseng
+ref.callback_query.message.chat.type= supergroup
+ref.callback_query.message.date= 1614920429
+ref.callback_query.message.edit_date= 1614921090
+ref.callback_query.message.reply_to_message.message_id= 36137
+ref.callback_query.message.reply_to_message.from.id= 1393342467
+ref.callback_query.message.reply_to_message.from.is_bot= false
+ref.callback_query.message.reply_to_message.from.first_name= Fadhil
+ref.callback_query.message.reply_to_message.from.last_name= Riyanto
+ref.callback_query.message.reply_to_message.from.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.from.language_code= ms
+ref.callback_query.message.reply_to_message.chat.id= -1001209274058
+ref.callback_query.message.reply_to_message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.callback_query.message.reply_to_message.chat.username= scriptiseng
+ref.callback_query.message.reply_to_message.chat.type= supergroup
+ref.callback_query.message.reply_to_message.date= 1614920424
+ref.callback_query.message.reply_to_message.text= /berita
+ref.callback_query.message.reply_to_message.entities.0.offset= 0
+ref.callback_query.message.reply_to_message.entities.0.length= 7
+ref.callback_query.message.reply_to_message.entities.0.type= bot_command
+ref.callback_query.message.text= Judul : Kapal Pesiar Ini Tawarkan Berlayar 140 Hari di 32 Negara, Harganya Nyaris 1 M
+
+Link : https://kumparan.com/kumparantravel/kapal-pesiar-ini-tawarkan-berlayar-140-hari-di-32-negara-harganya-nyaris-1-m-1vIKYmxsBU5
+ref.callback_query.message.entities.0.offset= 94
+ref.callback_query.message.entities.0.length= 124
+ref.callback_query.message.entities.0.type= url
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.text= refres
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.callback_data= /berita_i@fadhil_riyanto_bot
+ref.callback_query.chat_instance= -1698981424917340985
+ref.callback_query.data= /berita_i@fadhil_riyanto_bot
+
+
+[ref]
+ref.text= Judul : Kabareskrim: Jangan Kita Bermasalah Gara-gara Masalah Orang
+
+Link : https://kumparan.com/kumparannews/kabareskrim-jangan-kita-bermasalah-gara-gara-masalah-orang-1vILgrIvnRr
+
+
+ref.message_id= 
+ref.reply_markup= {"inline_keyboard":[[{"text":"refres","callback_data":"\/berita_i@fadhil_riyanto_bot"}]]}
+ref.reply_to_message_id= 36138
+ref.parse_mode= html
+ref.disable_web_page_preview= false
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(658): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(188): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\command\berita_i.php(43): Telegram->editMessageText(Array)
+#4 C:\bot telegram\hook.php(445): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-05 12:53:19  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't remove chat owner
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804413786
+ref.message.message_id= 14223
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= PHP TGdev
+ref.message.chat.username= tgdev_php_group
+ref.message.chat.type= supergroup
+ref.message.date= 1614923594
+ref.message.new_chat_participant.id= 211246197
+ref.message.new_chat_participant.is_bot= true
+ref.message.new_chat_participant.first_name= Telegram Bot Raw
+ref.message.new_chat_participant.username= RawDataBot
+ref.message.new_chat_member.id= 211246197
+ref.message.new_chat_member.is_bot= true
+ref.message.new_chat_member.first_name= Telegram Bot Raw
+ref.message.new_chat_member.username= RawDataBot
+ref.message.new_chat_members.0.id= 211246197
+ref.message.new_chat_members.0.is_bot= true
+ref.message.new_chat_members.0.first_name= Telegram Bot Raw
+ref.message.new_chat_members.0.username= RawDataBot
+
+
+[ref]
+ref.user_id= 1393342467
+ref.permissions= {"can_send_messages": false}
+ref.until_date= 1614923617
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(658): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(492): Telegram->endpoint('restrictChatMem...', Array)
+#3 C:\bot telegram\include\welcome_system.php(25): Telegram->restrictChatMember(Array)
+#4 C:\bot telegram\hook.php(312): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-05 13:03:20  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't remove chat owner
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804413806
+ref.message.message_id= 14238
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= PHP TGdev
+ref.message.chat.username= tgdev_php_group
+ref.message.chat.type= supergroup
+ref.message.date= 1614924197
+ref.message.new_chat_participant.id= 211246197
+ref.message.new_chat_participant.is_bot= true
+ref.message.new_chat_participant.first_name= Telegram Bot Raw
+ref.message.new_chat_participant.username= RawDataBot
+ref.message.new_chat_member.id= 211246197
+ref.message.new_chat_member.is_bot= true
+ref.message.new_chat_member.first_name= Telegram Bot Raw
+ref.message.new_chat_member.username= RawDataBot
+ref.message.new_chat_members.0.id= 211246197
+ref.message.new_chat_members.0.is_bot= true
+ref.message.new_chat_members.0.first_name= Telegram Bot Raw
+ref.message.new_chat_members.0.username= RawDataBot
+
+
+[ref]
+ref.user_id= 1393342467
+ref.permissions= {"can_send_messages": false}
+ref.until_date= 1614924218
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(658): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(492): Telegram->endpoint('restrictChatMem...', Array)
+#3 C:\bot telegram\include\welcome_system.php(25): Telegram->restrictChatMember(Array)
+#4 C:\bot telegram\hook.php(322): require('C:\\bot telegram...')
+#5 {main}
+
