@@ -59,7 +59,8 @@ $usernameBelumdiparse = $telegram->Username();
 $namaPertama = $telegram->FirstName();
 $namaTerakhir = $telegram->LastName();
 
-
+if ($userID != $userid_pemilik)
+	exit;
 function whitelist_check($userID)
 {
 	$file = __DIR__ . "/json_data/whitelist_userid.json";

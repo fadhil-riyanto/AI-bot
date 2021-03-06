@@ -51,3 +51,522 @@ ref.disable_web_page_preview= true
 #4 C:\bot telegram\hook.php(448): require('C:\\bot telegram...')
 #5 {main}
 
+============[Date]============
+[ 2021-03-06 19:57:32  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804415727
+ref.message.message_id= 17843
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1615035450
+ref.message.text= /sudo eval $getlistjsonadmin = DIR . '/../json_data/group_command/adminlist.json';
+    function getUseridFromeditmessageinit($chat_id)
+    {
+        global $grupid;
+        global $getlistjsonadmin;
+        $anggota = file_get_contents($getlistjsonadmin);
+        $data = json_decode($anggota, true);
+        foreach ($data as $d) {
+            if ($d['gid'] == $chat_id) {
+                $grupid = $d['gid'];
+                return true;
+            }
+        }
+    }
+send(var_dump(getUseridFromeditmessageinit($chat_id)));
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+ref.message.entities.1.offset= 31
+ref.message.entities.1.length= 3
+ref.message.entities.1.type= italic
+
+
+[ref]
+ref.text= <pre></pre>
+ref.reply_to_message_id= 17843
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(658): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\include\eval_func.php(8): Telegram->sendMessage(Array)
+#4 C:\bot telegram\command\sudo.php(84) : eval()'d code(15): send(NULL)
+#5 C:\bot telegram\command\sudo.php(84): eval()
+#6 C:\bot telegram\hook.php(479): require('C:\\bot telegram...')
+#7 {main}
+
+============[Date]============
+[ 2021-03-06 19:57:33  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804415727
+ref.message.message_id= 17843
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1615035450
+ref.message.text= /sudo eval $getlistjsonadmin = DIR . '/../json_data/group_command/adminlist.json';
+    function getUseridFromeditmessageinit($chat_id)
+    {
+        global $grupid;
+        global $getlistjsonadmin;
+        $anggota = file_get_contents($getlistjsonadmin);
+        $data = json_decode($anggota, true);
+        foreach ($data as $d) {
+            if ($d['gid'] == $chat_id) {
+                $grupid = $d['gid'];
+                return true;
+            }
+        }
+    }
+send(var_dump(getUseridFromeditmessageinit($chat_id)));
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+ref.message.entities.1.offset= 31
+ref.message.entities.1.length= 3
+ref.message.entities.1.type= italic
+
+
+[ref]
+ref.text= 
+ref.reply_to_message_id= 17843
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(658): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\sudo.php(86): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(479): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-06 21:39:39  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804415822
+ref.message.message_id= 17850
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1615041577
+ref.message.text= /help_admin
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 11
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Selamat datang di panduan bot management
+
+perlu diperhatikan bahwa bot ini tidak akan bisa di invite ke grup tanpa persetujuan dari pembuat bot. dan, command grup management dibawah ini khusus untuk grup yang sudah diijinkan masuk oleh pembuat bot ini.
+
+jika mau mengivite bot ini ke grup anda, silahkan kirimkan angka chat id grup anda lalu pm (private message) ke pembuat bot ini, yaitu @fadhil_riyanto
+
+note : Semua perintah hanya bekerja dengan / (garis miring)
+ref.message_id= 
+ref.reply_markup= {"inline_keyboard":[[{"text":"Grettings","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot grettings"},{"text":"Rules","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot rules"},{"text":"Admins","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot admins"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(658): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(188): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\admin_help\help_admin.php(32): Telegram->editMessageText(Array)
+#4 C:\bot telegram\hook.php(352): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-06 21:41:35  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804415825
+ref.message.message_id= 17852
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1615041694
+ref.message.text= /help_admin
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 11
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Selamat datang di panduan bot management
+
+perlu diperhatikan bahwa bot ini tidak akan bisa di invite ke grup tanpa persetujuan dari pembuat bot. dan, command grup management dibawah ini khusus untuk grup yang sudah diijinkan masuk oleh pembuat bot ini.
+
+jika mau mengivite bot ini ke grup anda, silahkan kirimkan angka chat id grup anda lalu pm (private message) ke pembuat bot ini, yaitu @fadhil_riyanto
+
+note : Semua perintah hanya bekerja dengan / (garis miring)
+ref.message_id= 
+ref.reply_markup= {"inline_keyboard":[[{"text":"Grettings","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot grettings"},{"text":"Rules","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot rules"},{"text":"Admins","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot admins"}],[{"text":"Pin","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot pin"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(658): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(188): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\admin_help\help_admin.php(32): Telegram->editMessageText(Array)
+#4 C:\bot telegram\hook.php(352): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-06 21:55:03  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804415832
+ref.message.message_id= 17857
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1615042502
+ref.message.text= /help_admin
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 11
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Selamat datang di panduan bot management
+
+perlu diperhatikan bahwa bot ini tidak akan bisa di invite ke grup tanpa persetujuan dari pembuat bot. dan, command grup management dibawah ini khusus untuk grup yang sudah diijinkan masuk oleh pembuat bot ini.
+
+jika mau mengivite bot ini ke grup anda, silahkan kirimkan angka chat id grup anda lalu pm (private message) ke pembuat bot ini, yaitu @fadhil_riyanto
+
+note : Semua perintah hanya bekerja dengan / (garis miring)
+ref.message_id= 
+ref.reply_markup= {"inline_keyboard":[[{"text":"Grettings","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot grettings"},{"text":"Rules","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot rules"},{"text":"Admins","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot admins"}],[{"text":"Pin","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot pin"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(658): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(188): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\admin_help\help_admin.php(32): Telegram->editMessageText(Array)
+#4 C:\bot telegram\hook.php(352): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-06 22:00:50  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804415837
+ref.message.message_id= 17859
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1615042769
+ref.message.text= /help_admin
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 11
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Selamat datang di panduan bot management
+
+perlu diperhatikan bahwa bot ini tidak akan bisa di invite ke grup tanpa persetujuan dari pembuat bot. dan, command grup management dibawah ini khusus untuk grup yang sudah diijinkan masuk oleh pembuat bot ini.
+
+jika mau mengivite bot ini ke grup anda, silahkan kirimkan angka chat id grup anda lalu pm (private message) ke pembuat bot ini, yaitu @fadhil_riyanto
+
+note : Semua perintah hanya bekerja dengan / (garis miring)
+ref.message_id= 
+ref.reply_markup= {"inline_keyboard":[[{"text":"Grettings","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot grettings"},{"text":"Rules","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot rules"},{"text":"Admins","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot admins"}],[{"text":"Pin","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot pin"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(658): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(188): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\admin_help\help_admin.php(32): Telegram->editMessageText(Array)
+#4 C:\bot telegram\hook.php(352): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-06 22:00:56  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804415838
+ref.message.message_id= 17860
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1615042778
+ref.message.text= /help_admin
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 11
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Selamat datang di panduan bot management
+
+perlu diperhatikan bahwa bot ini tidak akan bisa di invite ke grup tanpa persetujuan dari pembuat bot. dan, command grup management dibawah ini khusus untuk grup yang sudah diijinkan masuk oleh pembuat bot ini.
+
+jika mau mengivite bot ini ke grup anda, silahkan kirimkan angka chat id grup anda lalu pm (private message) ke pembuat bot ini, yaitu @fadhil_riyanto
+
+note : Semua perintah hanya bekerja dengan / (garis miring)
+ref.message_id= 
+ref.reply_markup= {"inline_keyboard":[[{"text":"Grettings","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot grettings"},{"text":"Rules","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot rules"},{"text":"Admins","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot admins"}],[{"text":"Pin","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot pin"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(658): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(188): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\admin_help\help_admin.php(32): Telegram->editMessageText(Array)
+#4 C:\bot telegram\hook.php(352): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-06 22:01:00  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804415836
+ref.callback_query.id= 5984360331997849878
+ref.callback_query.from.id= 1393342467
+ref.callback_query.from.is_bot= false
+ref.callback_query.from.first_name= Fadhil
+ref.callback_query.from.last_name= Riyanto
+ref.callback_query.from.username= fadhil_riyanto
+ref.callback_query.from.language_code= ms
+ref.callback_query.message.message_id= 17858
+ref.callback_query.message.from.id= 1489990155
+ref.callback_query.message.from.is_bot= true
+ref.callback_query.message.from.first_name= Fadhil Riyanto Bot
+ref.callback_query.message.from.username= Fadhil_riyanto_bot
+ref.callback_query.message.chat.id= 1393342467
+ref.callback_query.message.chat.first_name= Fadhil
+ref.callback_query.message.chat.last_name= Riyanto
+ref.callback_query.message.chat.username= fadhil_riyanto
+ref.callback_query.message.chat.type= private
+ref.callback_query.message.date= 1615042504
+ref.callback_query.message.edit_date= 1615042563
+ref.callback_query.message.reply_to_message.message_id= 17857
+ref.callback_query.message.reply_to_message.from.id= 1393342467
+ref.callback_query.message.reply_to_message.from.is_bot= false
+ref.callback_query.message.reply_to_message.from.first_name= Fadhil
+ref.callback_query.message.reply_to_message.from.last_name= Riyanto
+ref.callback_query.message.reply_to_message.from.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.from.language_code= ms
+ref.callback_query.message.reply_to_message.chat.id= 1393342467
+ref.callback_query.message.reply_to_message.chat.first_name= Fadhil
+ref.callback_query.message.reply_to_message.chat.last_name= Riyanto
+ref.callback_query.message.reply_to_message.chat.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.chat.type= private
+ref.callback_query.message.reply_to_message.date= 1615042502
+ref.callback_query.message.reply_to_message.text= /help_admin
+ref.callback_query.message.reply_to_message.entities.0.offset= 0
+ref.callback_query.message.reply_to_message.entities.0.length= 11
+ref.callback_query.message.reply_to_message.entities.0.type= bot_command
+ref.callback_query.message.text= - /adminlist: lihat siapa saja yang menjadi admin
+- /pin: pin pesan
+- /unpin: lepas pesan sematan
+- /promote: reply pesan member untuk menjadikan dia admin
+- /demote: reply untuk menghapus hak admin (tidak berlaku jika dia creator)
+- /invitelink: dapatkan link obrolan saat ini
+ref.callback_query.message.entities.0.offset= 2
+ref.callback_query.message.entities.0.length= 10
+ref.callback_query.message.entities.0.type= bot_command
+ref.callback_query.message.entities.1.offset= 52
+ref.callback_query.message.entities.1.length= 4
+ref.callback_query.message.entities.1.type= bot_command
+ref.callback_query.message.entities.2.offset= 70
+ref.callback_query.message.entities.2.length= 6
+ref.callback_query.message.entities.2.type= bot_command
+ref.callback_query.message.entities.3.offset= 100
+ref.callback_query.message.entities.3.length= 8
+ref.callback_query.message.entities.3.type= bot_command
+ref.callback_query.message.entities.4.offset= 158
+ref.callback_query.message.entities.4.length= 7
+ref.callback_query.message.entities.4.type= bot_command
+ref.callback_query.message.entities.5.offset= 234
+ref.callback_query.message.entities.5.length= 11
+ref.callback_query.message.entities.5.type= bot_command
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.text= kembali
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.callback_data= /help_admin_i@fadhil_riyanto_bot
+ref.callback_query.chat_instance= -5109722127778484442
+ref.callback_query.data= /help_admin_i@fadhil_riyanto_bot
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Selamat datang di panduan bot management
+
+perlu diperhatikan bahwa bot ini tidak akan bisa di invite ke grup tanpa persetujuan dari pembuat bot. dan, command grup management dibawah ini khusus untuk grup yang sudah diijinkan masuk oleh pembuat bot ini.
+
+jika mau mengivite bot ini ke grup anda, silahkan kirimkan angka chat id grup anda lalu pm (private message) ke pembuat bot ini, yaitu @fadhil_riyanto
+
+note : Semua perintah hanya bekerja dengan / (garis miring)
+ref.message_id= 
+ref.reply_markup= {"inline_keyboard":[[{"text":"Grettings","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot grettings"},{"text":"Rules","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot rules"},{"text":"Admins","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot admins"}],[{"text":"Pin","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot pin"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(658): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(188): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\admin_help\help_admin_i.php(30): Telegram->editMessageText(Array)
+#4 C:\bot telegram\hook.php(355): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-06 22:01:08  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804415839
+ref.message.message_id= 17861
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1615042831
+ref.message.text= /help_admin
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 11
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Selamat datang di panduan bot management
+
+perlu diperhatikan bahwa bot ini tidak akan bisa di invite ke grup tanpa persetujuan dari pembuat bot. dan, command grup management dibawah ini khusus untuk grup yang sudah diijinkan masuk oleh pembuat bot ini.
+
+jika mau mengivite bot ini ke grup anda, silahkan kirimkan angka chat id grup anda lalu pm (private message) ke pembuat bot ini, yaitu @fadhil_riyanto
+
+note : Semua perintah hanya bekerja dengan / (garis miring)
+ref.message_id= 
+ref.reply_markup= {"inline_keyboard":[[{"text":"Grettings","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot grettings"},{"text":"Rules","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot rules"},{"text":"Admins","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot admins"}],[{"text":"Pin","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot pin"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(658): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(188): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\admin_help\help_admin.php(32): Telegram->editMessageText(Array)
+#4 C:\bot telegram\hook.php(352): require('C:\\bot telegram...')
+#5 {main}
+

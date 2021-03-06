@@ -9,7 +9,7 @@ function deteksi_grup()
     }
 }
 if (deteksi_grup() == true) {
-    $delaycached = 20;
+    $delaycached = 60;
     $getlistjsonadmin = __DIR__ . '/../json_data/group_command/adminlist.json';
     function getUseridFromeditmessageinit($chat_id)
     {
@@ -94,7 +94,7 @@ if (deteksi_grup() == true) {
         $adanParse[0] == '/set_welcome' || $adanParse[0] == '/test_welcome' || $adanParse[0] == '/set_chapcha_mode' ||
         $adanParse[0] == '/set_goodbye' || $adanParse[0] == '/set_welcome_mode' || $adanParse[0] == '/set_goodbye_mode' ||
         $adanParse[0] == '/set_rules' || $adanParse[0] == '/promote' || $adanParse[0] == '/demote' || $adanParse[0] == '/clear_rules' ||
-        $adanParse[0] == '/admin_mode'
+        $adanParse[0] == '/admin_mode' || $adanParse[0] == '/unpinall' || $adanParse[0] == '/mute'
     ) {
         $reply = 'Maaf, command ini hanya berlaku di grup saja';
         $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
@@ -150,6 +150,12 @@ if ($kamu_admin == true) {
         require 'clear_rules.php';
     } elseif ($adanParseadmin[0] == '/admin_mode') {
         require 'admin_mode.php';
+    } elseif ($adanParseadmin[0] == '/unpinall') {
+        require 'unpinall.php';
+    } elseif ($adanParseadmin[0] == '/unpinall') {
+        require 'unpinall.php';
+    } elseif ($adanParseadmin[0] == '/mute') {
+        require 'mute.php';
     }
 } elseif ($kamu_admin == false) {
     if (
@@ -157,7 +163,7 @@ if ($kamu_admin == true) {
         $adanParse[0] == '/set_welcome' || $adanParse[0] == '/test_welcome' || $adanParse[0] == '/set_chapcha_mode' ||
         $adanParse[0] == '/set_goodbye' || $adanParse[0] == '/set_welcome_mode' || $adanParse[0] == '/set_goodbye_mode' ||
         $adanParse[0] == '/set_rules' || $adanParse[0] == '/promote' || $adanParse[0] == '/demote' || $adanParse[0] == '/clear_rules' ||
-        $adanParse[0] == '/admin_mode'
+        $adanParse[0] == '/admin_mode' || $adanParse[0] == '/unpinall' || $adanParse[0] == '/mute'
     ) {
         $reply = 'ups, kamu bukan admin';
         $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);

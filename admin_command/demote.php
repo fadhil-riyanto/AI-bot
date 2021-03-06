@@ -25,8 +25,22 @@ if (isset($promote_uid)) {
     // );
     // $dbeug = $telegram->promoteChatMember($content);
 
+    $param_promote = array(
+        'chat_id' => $chat_id,
+        'user_id' => $promote_uid,
+        'can_change_info' => 'False',
+        'can_post_message' => 'False',
+        'can_edit_message' => 'False',
+        'can_delete_messages' => 'False',
+        'can_invite_users' => 'False',
+        'can_restrict_members' => 'False',
+        'can_pin_messages' => 'False',
+        'can_promote_members' => 'False'
+    );
+    $param_jadi = http_build_query($param_promote);
+    $req_params = 'https://api.telegram.org/bot' . TG_HTTP_API . '/promoteChatMember?' . $param_jadi;
     $client = new \GuzzleHttp\Client();
-    $response = $client->request('GET', 'https://api.telegram.org/bot1489990155:AAHJ4-6PcvnNtvZszUeYrfKsAcICxVAfb6A/promoteChatMember?chat_id=' . $chat_id . '&user_id=' . $promote_uid . '&can_change_info=False&can_post_message=False&can_edit_message=False&can_delete_message=False&can_invite_users=False&can_restrict_members=False&can_pin_messages=False&can_promote_members=False');
+    $response = $client->request('GET', $req_params);
 
     $datass = json_decode($response);
     if ($datass->description == 'Bad Request: not enough rights') {
@@ -35,6 +49,7 @@ if (isset($promote_uid)) {
         $telegram->sendMessage($content);
         exit;
     }
+
 
     //debug
     $reply = $unamepromote . ', Diturunkan sebagai admin grup ini.';

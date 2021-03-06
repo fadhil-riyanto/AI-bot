@@ -1,1 +1,1 @@
-hai, ini adalah command khusus untuk admin grup.\r\n\r\n- /rules: digunakan untuk melihat rules chat sekarang\r\n- /set_rules: digunakan untuk mengatur rules\r\n- /clear_rules: digunakan untuk mengatur rules
+Admin, rubah apa saja dengan hak admin\r\n\r\npengguna\r\n- /adminlist: lihat siapa saja yang menjadi admin\r\n\r\nadmin saja\r\n- /promote: reply pesan member untuk menjadikan dia admin\r\n- /demote: reply untuk menghapus hak admin (tidak berlaku jika dia creator)\r\n- /invitelink: dapatkan link obrolan saat ini
