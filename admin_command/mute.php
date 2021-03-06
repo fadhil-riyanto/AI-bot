@@ -29,7 +29,7 @@ if (isset($promote_uid) && isset($udahDiparse)) {
         'chat_id' => $chat_id,
         'user_id' => $promote_uid,
         'permissions' => '{"can_send_messages": false}',
-        'until_date' => time() + $udahDiparse
+        'until_date' => time() + 60
     );
     $param_jadi = http_build_query($param_promote);
     $req_params = 'https://api.telegram.org/bot' . TG_HTTP_API . '/restrictChatMember?' . $param_jadi;
