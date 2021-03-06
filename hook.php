@@ -97,7 +97,7 @@ if (isset($stiker_hapus)) {
 	// $telegram->sendMessage($content);
 } else {
 }
-if ($text == ':v' || $text == ';v' || '/copy') {
+if ($text == ':v' || $text == ';v' || $text == '/copy') {
 	$arr = array('chat_id' => $chat_id, 'message_id' => $message_id);
 	$telegram->deleteMessage($arr);
 }
