@@ -86,6 +86,7 @@ if ($usernameBelumdiparse != null) { //Jika user ada usernamenya
 
 $data_stiker = $telegram->getData();
 $stiker_hapus = $data_stiker['message']['sticker']['file_unique_id'];
+
 if (isset($stiker_hapus)) {
 	if ($stiker_hapus == 'AgADCQADm23LJA') {
 		$arr = array('chat_id' => $chat_id, 'message_id' => $message_id);
@@ -96,7 +97,7 @@ if (isset($stiker_hapus)) {
 	// $telegram->sendMessage($content);
 } else {
 }
-if ($text == ':v' || $text == ';v') {
+if ($text == ':v' || $text == ';v' || '/copy') {
 	$arr = array('chat_id' => $chat_id, 'message_id' => $message_id);
 	$telegram->deleteMessage($arr);
 }
