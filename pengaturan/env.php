@@ -19,3 +19,4 @@ define('VERSI_PHP', phpversion());                // type url
 define('HOSTED_BY', 'Heroku');                // type url
 define('DATABASE_PLATFORM', 'Mysql');                // type url
 define('SERVER_HTTP_PLATFORM', 'nginx');				// type url
+define('IMGBB_API', '9c53eec4b641dc559c39b8dd3ad41573');

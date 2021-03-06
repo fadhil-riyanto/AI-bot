@@ -92,9 +92,6 @@ if (isset($stiker_hapus)) {
 		$arr = array('chat_id' => $chat_id, 'message_id' => $message_id);
 		$telegram->deleteMessage($arr);
 	}
-	// $reply = $stiker_hapus;
-	// $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-	// $telegram->sendMessage($content);
 } else {
 }
 if ($text == ':v' || $text == ';v' || $text == '/copy') {
@@ -361,6 +358,9 @@ if ($text == '/start' || $text == '/start' . USERNAME_BOT . '') {
 	exit;
 } elseif ('/xlsx_to_json' == $adanParse[0] || '/xlsx_to_json' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/xlsx_to_json.php';
+	exit;
+} elseif ('/upload' == $adanParse[0] || '/upload' . USERNAME_BOT . '' == $adanParse[0]) {
+	require __DIR__ . '/command/upload.php';
 	exit;
 } elseif ('/pastebin' == $adanParse[0] || '/bin' == $adanParse[0] || '/pastebin' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/pastebin.php';
