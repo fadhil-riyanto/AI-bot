@@ -9,7 +9,7 @@ function deteksi_grup()
     }
 }
 if (deteksi_grup() == true) {
-    $delaycached = 60;
+    $delaycached = 20;
     $getlistjsonadmin = __DIR__ . '/../json_data/group_command/adminlist.json';
     function getUseridFromeditmessageinit($chat_id)
     {
@@ -44,19 +44,35 @@ if (deteksi_grup() == true) {
                 } elseif ($timedelay < 0) {
                     foreach ($data as $key => $d) {
                         if ($d['gid'] == $grupid) {
-                            $content = array('chat_id' => $chat_id);
-                            $adminlist = $telegram->getChatAdministrators($content);
-                            $endadmin = json_encode($adminlist);
-                            $decadmin = json_decode($endadmin, true);
-                            foreach ($decadmin['result'] as $adminlists) {
-                                $id_admin[] = $adminlists['user']['id'];
-                            }
-                            $data[$key]['timelapsce'] = time() + $delaycached;
-                            $data[$key]['admin'] = $id_admin;
+                            if ($d['admin'] == null) {
+                                $content = array('chat_id' => $chat_id);
+                                $adminlist = $telegram->getChatAdministrators($content);
+                                $endadmin = json_encode($adminlist);
+                                $decadmin = json_decode($endadmin, true);
+                                foreach ($decadmin['result'] as $adminlists) {
+                                    $id_admin[] = $adminlists['user']['id'];
+                                }
+                                $data[$key]['timelapsce'] = time() + $delaycached;
+                                $data[$key]['admin'] = $id_admin;
 
-                            //get data
-                            $gid =  $d['gid'];
-                            $admins =  $id_admin;
+                                //get data
+                                $gid =  $d['gid'];
+                                $admins =  $id_admin;
+                            } else {
+                                $content = array('chat_id' => $chat_id);
+                                $adminlist = $telegram->getChatAdministrators($content);
+                                $endadmin = json_encode($adminlist);
+                                $decadmin = json_decode($endadmin, true);
+                                foreach ($decadmin['result'] as $adminlists) {
+                                    $id_admin[] = $adminlists['user']['id'];
+                                }
+                                $data[$key]['timelapsce'] = time() + $delaycached;
+                                $data[$key]['admin'] = $id_admin;
+
+                                //get data
+                                $gid =  $d['gid'];
+                                $admins =  $id_admin;
+                            }
                         }
                     }
                     $jsonfile = json_encode($data, JSON_PRETTY_PRINT);
@@ -94,7 +110,8 @@ if (deteksi_grup() == true) {
         $adanParse[0] == '/set_welcome' || $adanParse[0] == '/test_welcome' || $adanParse[0] == '/set_chapcha_mode' ||
         $adanParse[0] == '/set_goodbye' || $adanParse[0] == '/set_welcome_mode' || $adanParse[0] == '/set_goodbye_mode' ||
         $adanParse[0] == '/set_rules' || $adanParse[0] == '/promote' || $adanParse[0] == '/demote' || $adanParse[0] == '/clear_rules' ||
-        $adanParse[0] == '/admin_mode' || $adanParse[0] == '/unpinall' || $adanParse[0] == '/mute'
+        $adanParse[0] == '/admin_mode' || $adanParse[0] == '/unpinall' || $adanParse[0] == '/mute' || $adanParse[0] == '/set_admin_title' ||
+        $adanParse[0] == '/unmute'
     ) {
         $reply = 'Maaf, command ini hanya berlaku di grup saja';
         $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
@@ -156,6 +173,10 @@ if ($kamu_admin == true) {
         require 'unpinall.php';
     } elseif ($adanParseadmin[0] == '/mute') {
         require 'mute.php';
+    } elseif ($adanParseadmin[0] == '/set_admin_title') {
+        require 'set_admin_title.php';
+    } elseif ($adanParseadmin[0] == '/unmute') {
+        require 'unmute.php';
     }
 } elseif ($kamu_admin == false) {
     if (
@@ -163,7 +184,8 @@ if ($kamu_admin == true) {
         $adanParse[0] == '/set_welcome' || $adanParse[0] == '/test_welcome' || $adanParse[0] == '/set_chapcha_mode' ||
         $adanParse[0] == '/set_goodbye' || $adanParse[0] == '/set_welcome_mode' || $adanParse[0] == '/set_goodbye_mode' ||
         $adanParse[0] == '/set_rules' || $adanParse[0] == '/promote' || $adanParse[0] == '/demote' || $adanParse[0] == '/clear_rules' ||
-        $adanParse[0] == '/admin_mode' || $adanParse[0] == '/unpinall' || $adanParse[0] == '/mute'
+        $adanParse[0] == '/admin_mode' || $adanParse[0] == '/unpinall' || $adanParse[0] == '/mute' || $adanParse[0] == '/set_admin_title' ||
+        $adanParse[0] == '/unmute'
     ) {
         $reply = 'ups, kamu bukan admin';
         $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
