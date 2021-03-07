@@ -14,7 +14,7 @@ $option = array(
     array(
         $telegram->buildInlineKeyBoardButton("Pin", $url = "", $callback_data = '/callback_q_admin_help@fadhil_riyanto_bot pin'),
         $telegram->buildInlineKeyBoardButton("Mute", $url = "", $callback_data = '/callback_q_admin_help@fadhil_riyanto_bot mute'),
-        $telegram->buildInlineKeyBoardButton("Chapcha", $url = "", $callback_data = '/callback_q_admin_help@fadhil_riyanto_bot chapcha')
+        $telegram->buildInlineKeyBoardButton("Report", $url = "", $callback_data = '/callback_q_admin_help@fadhil_riyanto_bot report')
     ),
     /*array(
         $telegram->buildInlineKeyBoardButton("dev tools", $url = "", $callback_data = '/callback_q_admin_help@fadhil_riyanto_bot dev_tools'),
