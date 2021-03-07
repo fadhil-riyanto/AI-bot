@@ -8,7 +8,7 @@ if ($adanParse[1] == 'on') {
     $content = array('chat_id' => $chat_id, 'text' => $reply, 'parse_mode' => 'html', 'reply_to_message_id' => $message_id, 'disable_web_page_preview' => true);
     $telegram->sendMessage($content);
 } elseif ($adanParse[1] == 'off') {
-    $ijin = '{"can_send_messages": true,"can_send_media_messages": true,"can_send_other_messages": true}';
+    $ijin = '{"can_send_messages": true, "can_send_media_messages": true, "can_send_polls": true, "can_send_other_messages": true, "can_invite_users": true}';
     $konten = array('chat_id' => $chat_id, 'permissions' => $ijin);
     $telegram->setChatPermissions($konten);
 
