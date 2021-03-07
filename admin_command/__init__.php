@@ -106,7 +106,7 @@ if (deteksi_grup() == true) {
     }
 } else {
     if (
-        $adanParse[0] == '/pin' || $adanParse[0] == '/unpin' || $adanParse[0] == '/adminlist' ||
+        $adanParse[0] == '/pin' || $adanParse[0] == '/unpin' ||
         $adanParse[0] == '/set_welcome' || $adanParse[0] == '/test_welcome' || $adanParse[0] == '/set_chapcha_mode' ||
         $adanParse[0] == '/set_goodbye' || $adanParse[0] == '/set_welcome_mode' || $adanParse[0] == '/set_goodbye_mode' ||
         $adanParse[0] == '/set_rules' || $adanParse[0] == '/promote' || $adanParse[0] == '/demote' || $adanParse[0] == '/clear_rules' ||
@@ -143,8 +143,6 @@ if ($kamu_admin == true) {
         require 'pin.php';
     } elseif ($adanParseadmin[0] == '/unpin') {
         require 'unpin.php';
-    } elseif ($adanParseadmin[0] == '/adminlist') {
-        require 'adminlist.php';
     } elseif ($adanParseadmin[0] == '/set_welcome') {
         require 'set_welcome.php';
     } elseif ($adanParseadmin[0] == '/test_welcome') {
@@ -180,7 +178,7 @@ if ($kamu_admin == true) {
     }
 } elseif ($kamu_admin == false) {
     if (
-        $adanParse[0] == '/pin' || $adanParse[0] == '/unpin' || $adanParse[0] == '/adminlist' ||
+        $adanParse[0] == '/pin' || $adanParse[0] == '/unpin' ||
         $adanParse[0] == '/set_welcome' || $adanParse[0] == '/test_welcome' || $adanParse[0] == '/set_chapcha_mode' ||
         $adanParse[0] == '/set_goodbye' || $adanParse[0] == '/set_welcome_mode' || $adanParse[0] == '/set_goodbye_mode' ||
         $adanParse[0] == '/set_rules' || $adanParse[0] == '/promote' || $adanParse[0] == '/demote' || $adanParse[0] == '/clear_rules' ||
