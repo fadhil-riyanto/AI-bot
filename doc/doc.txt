@@ -1,8 +1,0 @@
-bans
-
-- /ban: digunakan untuk mengeluarkan pengguna (dia masih bisa bergabung lagi)
-- /sban: sama dengan yang diatas, hanya aja bot tidak akan mention ke orang yang dikeluarkan
-
-- /kick: digunakan untuk mengeluarkan pengguna (dia tidak bisa bergabung lagi selama nya)
-- /skick: sama dengan kick, hanya aja dia bot tidak akan mention ke orang yang dikeluarkan
-- /unban: membolehkan user yang di kick kembali lagi ke grup
