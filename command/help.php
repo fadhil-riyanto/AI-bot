@@ -7,14 +7,14 @@ if (detect_grup() == true) {
         // //Second row 
         // array($telegram->buildInlineKeyBoardButton("Button 3", $url = "http://link3.com"), $telegram->buildInlineKeyBoardButton("Button 4", $url = "http://link4.com"), $telegram->buildInlineKeyBoardButton("Button 5", $url = "http://link5.com")),
         // //Third row
-        array($telegram->buildInlineKeyBoardButton("PM", $url = 'https://t.me/fadhil_riyanto_bot'))
+        array($telegram->buildInlineKeyBoardButton("PM", $url = 'http://t.me/' . USERNAME_BOT_NON_AT . '?start=help'))
     );
     $keyb = $telegram->buildInlineKeyBoard($option);
 
     $content = array('chat_id' => $chat_id, 'text' => $reply, 'disable_web_page_preview' => true, 'reply_markup' => $keyb, 'reply_to_message_id' => $message_id, 'disable_web_page_preview' => true);
     $telegram->sendMessage($content);
     exit;
-} else{
+} else {
     require __DIR__ . '/../include/help_menu.php';
 
     $file = __DIR__ . "/../json_data/editMsgIDdelete.json";

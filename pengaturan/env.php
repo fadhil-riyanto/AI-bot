@@ -13,6 +13,7 @@ define('PASTEBIN_API', '8HPm65nBCWQV0pfOH3PLNFNTSkdiAkQD');                //WAJ
 define('ID_BOT', '1489990155');                                                  //WAJIB
 define('MAX_EXECUTE_SCRIPT', 100);                                            //SUNNAH_ROSUL
 define('USERNAME_BOT', '@fadhil_riyanto_bot');                                // pakai at@
+define('USERNAME_BOT_NON_AT', 'fadhil_riyanto_bot');                                // pakai at@
 define('PUMBUAT_BOT', '@fadhil_riyanto');                                // pakai at@
 define('SUPPORT_GROUP', 'https://t.me/tgdev_php_group');                // type url
 define('VERSI_PHP', phpversion());                // type url
