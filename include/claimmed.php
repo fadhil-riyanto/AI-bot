@@ -2,7 +2,6 @@
 
 if (
     '/admin' == $adanParse[0] || '/admin' . USERNAME_BOT . '' == $adanParse[0] ||
-    '/report' == $adanParse[0] || '/report' . USERNAME_BOT . '' == $adanParse[0] ||
     '/c' == $adanParse[0] || '/c' . USERNAME_BOT . '' == $adanParse[0] ||
     '/price' == $adanParse[0] || '/price' . USERNAME_BOT . '' == $adanParse[0] ||
     '/cc' == $adanParse[0] || '/cc' . USERNAME_BOT . '' == $adanParse[0] ||
