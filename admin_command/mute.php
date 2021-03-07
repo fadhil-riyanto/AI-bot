@@ -97,10 +97,25 @@ if (isset($promote_uid) && isset($udahDiparse)) {
     $response = $client->request('GET', $req_params);
 
     //debug
-    $reply = $unamepromote . ', dimute.';
+    $reply = $unamepromote . ', dimute sampai ' . date('Y-m-d h:i:s', $waktu_mute);
     $content = array('chat_id' => $chat_id, 'text' => $reply, 'parse_mode' => 'html', 'reply_to_message_id' => $message_id, 'disable_web_page_preview' => true);
     $telegram->sendMessage($content);
 } elseif (isset($promote_uid) == true && isset($udahDiparse) == false) {
+    $param_promote = array(
+        'chat_id' => $chat_id,
+        'user_id' => $promote_uid,
+        'permissions' => '{"can_send_messages": false}',
+        'until_date' => time() + 300
+    );
+    $param_jadi = http_build_query($param_promote);
+    $req_params = 'https://api.telegram.org/bot' . TG_HTTP_API . '/restrictChatMember?' . $param_jadi;
+    $client = new \GuzzleHttp\Client();
+    $response = $client->request('GET', $req_params);
+
+    //debug
+    $reply = $unamepromote . ', dimute selama 5 menit.';
+    $content = array('chat_id' => $chat_id, 'text' => $reply, 'parse_mode' => 'html', 'reply_to_message_id' => $message_id, 'disable_web_page_preview' => true);
+    $telegram->sendMessage($content);
 } else {
 
     $reply = 'ups, anda harus mereply user yang ingin dimute.';
