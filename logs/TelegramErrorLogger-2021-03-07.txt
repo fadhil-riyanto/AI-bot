@@ -1862,3 +1862,570 @@ ref.disable_web_page_preview= true
 #4 C:\bot telegram\hook.php(456): require('C:\\bot telegram...')
 #5 {main}
 
+============[Date]============
+[ 2021-03-07 14:23:04  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't restrict self
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804416606
+ref.message.message_id= 14406
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= PHP TGdev
+ref.message.chat.username= tgdev_php_group
+ref.message.chat.type= supergroup
+ref.message.date= 1615101216
+ref.message.reply_to_message.message_id= 14405
+ref.message.reply_to_message.from.id= 1489990155
+ref.message.reply_to_message.from.is_bot= true
+ref.message.reply_to_message.from.first_name= Fadhil Riyanto Bot
+ref.message.reply_to_message.from.username= Fadhil_riyanto_bot
+ref.message.reply_to_message.chat.id= -1001410961692
+ref.message.reply_to_message.chat.title= PHP TGdev
+ref.message.reply_to_message.chat.username= tgdev_php_group
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1615101153
+ref.message.reply_to_message.text= selamat datang fadhil riyanto (bot mode)
+ref.message.reply_to_message.entities.0.offset= 15
+ref.message.reply_to_message.entities.0.length= 25
+ref.message.reply_to_message.entities.0.type= text_mention
+ref.message.reply_to_message.entities.0.user.id= 1223173857
+ref.message.reply_to_message.entities.0.user.is_bot= false
+ref.message.reply_to_message.entities.0.user.first_name= Fadhil
+ref.message.reply_to_message.entities.0.user.last_name= riyanto (bot mode)
+ref.message.reply_to_message.entities.0.user.username= fadhilriyanto
+ref.message.reply_to_message.entities.0.user.language_code= ms
+ref.message.text= /mute 1 menit
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.user_id= 1489990155
+ref.permissions= {"can_send_messages": false}
+ref.until_date= 1615101842
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(496): Telegram->endpoint('restrictChatMem...', Array)
+#3 C:\bot telegram\admin_command\mute.php(95): Telegram->restrictChatMember(Array)
+#4 C:\bot telegram\admin_command\__init__.php(174): require('C:\\bot telegram...')
+#5 C:\bot telegram\hook.php(606): require('C:\\bot telegram...')
+#6 {main}
+
+============[Date]============
+[ 2021-03-07 14:23:14  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: user is an administrator of the chat
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804416582
+ref.message.message_id= 39713
+ref.message.from.id= 1195226552
+ref.message.from.is_bot= false
+ref.message.from.first_name= Raffi
+ref.message.from.last_name= Fadlika
+ref.message.from.username= mrfadlika
+ref.message.from.language_code= id
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1615100484
+ref.message.reply_to_message.message_id= 39707
+ref.message.reply_to_message.from.id= 1393342467
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Fadhil
+ref.message.reply_to_message.from.last_name= Riyanto
+ref.message.reply_to_message.from.username= fadhil_riyanto
+ref.message.reply_to_message.from.language_code= ms
+ref.message.reply_to_message.chat.id= -1001209274058
+ref.message.reply_to_message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.reply_to_message.chat.username= scriptiseng
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1615100178
+ref.message.reply_to_message.text= /mute 200 hari
+ref.message.reply_to_message.entities.0.offset= 0
+ref.message.reply_to_message.entities.0.length= 5
+ref.message.reply_to_message.entities.0.type= bot_command
+ref.message.text= /mute 1 menit
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.user_id= 1393342467
+ref.permissions= {"can_send_messages": false}
+ref.until_date= 1615101852
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(496): Telegram->endpoint('restrictChatMem...', Array)
+#3 C:\bot telegram\admin_command\mute.php(95): Telegram->restrictChatMember(Array)
+#4 C:\bot telegram\admin_command\__init__.php(174): require('C:\\bot telegram...')
+#5 C:\bot telegram\hook.php(606): require('C:\\bot telegram...')
+#6 {main}
+
+============[Date]============
+[ 2021-03-07 14:23:22  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: replied message not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804416610
+ref.message.message_id= 14408
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= PHP TGdev
+ref.message.chat.username= tgdev_php_group
+ref.message.chat.type= supergroup
+ref.message.date= 1615101644
+ref.message.reply_to_message.message_id= 14407
+ref.message.reply_to_message.from.id= 1223173857
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Fadhil
+ref.message.reply_to_message.from.last_name= riyanto (bot mode)
+ref.message.reply_to_message.from.username= fadhilriyanto
+ref.message.reply_to_message.from.language_code= ms
+ref.message.reply_to_message.chat.id= -1001410961692
+ref.message.reply_to_message.chat.title= PHP TGdev
+ref.message.reply_to_message.chat.username= tgdev_php_group
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1615101632
+ref.message.reply_to_message.text= test
+ref.message.text= /mute 1 menit
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= <a href="tg://user?id=1223173857">Fadhil riyanto (bot mode)</a>, dimute sampai 2021-03-07 02:24:19
+ref.parse_mode= html
+ref.reply_to_message_id= 14408
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\admin_command\mute.php(100): Telegram->sendMessage(Array)
+#4 C:\bot telegram\admin_command\__init__.php(174): require('C:\\bot telegram...')
+#5 C:\bot telegram\hook.php(606): require('C:\\bot telegram...')
+#6 {main}
+
+============[Date]============
+[ 2021-03-07 14:23:30  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: replied message not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804416611
+ref.message.message_id= 14409
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= PHP TGdev
+ref.message.chat.username= tgdev_php_group
+ref.message.chat.type= supergroup
+ref.message.date= 1615101663
+ref.message.reply_to_message.message_id= 14407
+ref.message.reply_to_message.from.id= 1223173857
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Fadhil
+ref.message.reply_to_message.from.last_name= riyanto (bot mode)
+ref.message.reply_to_message.from.username= fadhilriyanto
+ref.message.reply_to_message.from.language_code= ms
+ref.message.reply_to_message.chat.id= -1001410961692
+ref.message.reply_to_message.chat.title= PHP TGdev
+ref.message.reply_to_message.chat.username= tgdev_php_group
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1615101632
+ref.message.reply_to_message.text= test
+ref.message.text= /mute 1 menit
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= <a href="tg://user?id=1223173857">Fadhil riyanto (bot mode)</a>, dimute sampai 2021-03-07 02:24:26
+ref.parse_mode= html
+ref.reply_to_message_id= 14409
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\admin_command\mute.php(100): Telegram->sendMessage(Array)
+#4 C:\bot telegram\admin_command\__init__.php(174): require('C:\\bot telegram...')
+#5 C:\bot telegram\hook.php(606): require('C:\\bot telegram...')
+#6 {main}
+
+============[Date]============
+[ 2021-03-07 14:24:16  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: replied message not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804416591
+ref.message.message_id= 39722
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1615100548
+ref.message.reply_to_message.message_id= 39719
+ref.message.reply_to_message.from.id= 1455250320
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Fadhil Riyanto
+ref.message.reply_to_message.from.last_name= (Mirror 1)
+ref.message.reply_to_message.from.username= id_fadhil_riyanto
+ref.message.reply_to_message.from.language_code= ms
+ref.message.reply_to_message.chat.id= -1001209274058
+ref.message.reply_to_message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.reply_to_message.chat.username= scriptiseng
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1615100531
+ref.message.reply_to_message.text= test
+ref.message.text= /mute 1 m
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= <a href="tg://user?id=1455250320">Fadhil Riyanto (Mirror 1)</a>, dimute sampai 2021-03-07 02:25:14
+ref.parse_mode= html
+ref.reply_to_message_id= 39722
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\admin_command\mute.php(100): Telegram->sendMessage(Array)
+#4 C:\bot telegram\admin_command\__init__.php(174): require('C:\\bot telegram...')
+#5 C:\bot telegram\hook.php(606): require('C:\\bot telegram...')
+#6 {main}
+
+============[Date]============
+[ 2021-03-07 14:24:26  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: replied message not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804416592
+ref.message.message_id= 39723
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1615100554
+ref.message.reply_to_message.message_id= 39719
+ref.message.reply_to_message.from.id= 1455250320
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Fadhil Riyanto
+ref.message.reply_to_message.from.last_name= (Mirror 1)
+ref.message.reply_to_message.from.username= id_fadhil_riyanto
+ref.message.reply_to_message.from.language_code= ms
+ref.message.reply_to_message.chat.id= -1001209274058
+ref.message.reply_to_message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.reply_to_message.chat.username= scriptiseng
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1615100531
+ref.message.reply_to_message.text= test
+ref.message.text= /mute 1m
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= <a href="tg://user?id=1455250320">Fadhil Riyanto (Mirror 1)</a>, dimute sampai 2021-03-07 02:25:24
+ref.parse_mode= html
+ref.reply_to_message_id= 39723
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\admin_command\mute.php(100): Telegram->sendMessage(Array)
+#4 C:\bot telegram\admin_command\__init__.php(174): require('C:\\bot telegram...')
+#5 C:\bot telegram\hook.php(606): require('C:\\bot telegram...')
+#6 {main}
+
+============[Date]============
+[ 2021-03-07 14:24:36  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: replied message not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804416595
+ref.message.message_id= 39726
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1615100614
+ref.message.reply_to_message.message_id= 39719
+ref.message.reply_to_message.from.id= 1455250320
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Fadhil Riyanto
+ref.message.reply_to_message.from.last_name= (Mirror 1)
+ref.message.reply_to_message.from.username= id_fadhil_riyanto
+ref.message.reply_to_message.from.language_code= ms
+ref.message.reply_to_message.chat.id= -1001209274058
+ref.message.reply_to_message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.reply_to_message.chat.username= scriptiseng
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1615100531
+ref.message.reply_to_message.text= test
+ref.message.text= /mute 300 hari
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= <a href="tg://user?id=1455250320">Fadhil Riyanto (Mirror 1)</a>, dimute sampai 2022-01-01 02:24:33
+ref.parse_mode= html
+ref.reply_to_message_id= 39726
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\admin_command\mute.php(100): Telegram->sendMessage(Array)
+#4 C:\bot telegram\admin_command\__init__.php(174): require('C:\\bot telegram...')
+#5 C:\bot telegram\hook.php(606): require('C:\\bot telegram...')
+#6 {main}
+
+============[Date]============
+[ 2021-03-07 14:24:47  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: replied message not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804416596
+ref.message.message_id= 39727
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1615100681
+ref.message.reply_to_message.message_id= 39719
+ref.message.reply_to_message.from.id= 1455250320
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Fadhil Riyanto
+ref.message.reply_to_message.from.last_name= (Mirror 1)
+ref.message.reply_to_message.from.username= id_fadhil_riyanto
+ref.message.reply_to_message.from.language_code= ms
+ref.message.reply_to_message.chat.id= -1001209274058
+ref.message.reply_to_message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.reply_to_message.chat.username= scriptiseng
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1615100531
+ref.message.reply_to_message.text= test
+ref.message.text= /unmute
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 7
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= <a href="tg://user?id=1455250320">Fadhil Riyanto (Mirror 1)</a>, dibunyikan. Selamat!!!.
+ref.parse_mode= html
+ref.reply_to_message_id= 39727
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\admin_command\unmute.php(31): Telegram->sendMessage(Array)
+#4 C:\bot telegram\admin_command\__init__.php(178): require('C:\\bot telegram...')
+#5 C:\bot telegram\hook.php(606): require('C:\\bot telegram...')
+#6 {main}
+
+============[Date]============
+[ 2021-03-07 14:25:03  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: replied message not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804416600
+ref.message.message_id= 39731
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1615100998
+ref.message.reply_to_message.message_id= 39719
+ref.message.reply_to_message.from.id= 1455250320
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Fadhil Riyanto
+ref.message.reply_to_message.from.last_name= (Mirror 1)
+ref.message.reply_to_message.from.username= id_fadhil_riyanto
+ref.message.reply_to_message.from.language_code= ms
+ref.message.reply_to_message.chat.id= -1001209274058
+ref.message.reply_to_message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.reply_to_message.chat.username= scriptiseng
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1615100531
+ref.message.reply_to_message.text= test
+ref.message.text= /demote
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 7
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= <a href="tg://user?id=1455250320">Fadhil Riyanto (Mirror 1)</a>, Diturunkan sebagai admin grup ini.
+ref.parse_mode= html
+ref.reply_to_message_id= 39731
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\admin_command\demote.php(57): Telegram->sendMessage(Array)
+#4 C:\bot telegram\admin_command\__init__.php(164): require('C:\\bot telegram...')
+#5 C:\bot telegram\hook.php(606): require('C:\\bot telegram...')
+#6 {main}
+
+============[Date]============
+[ 2021-03-07 14:25:22  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804416602
+ref.message.message_id= 39733
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1615101044
+ref.message.reply_to_message.message_id= 39732
+ref.message.reply_to_message.from.id= 1393342467
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Fadhil
+ref.message.reply_to_message.from.last_name= Riyanto
+ref.message.reply_to_message.from.username= fadhil_riyanto
+ref.message.reply_to_message.from.language_code= ms
+ref.message.reply_to_message.chat.id= -1001209274058
+ref.message.reply_to_message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.reply_to_message.chat.username= scriptiseng
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1615101038
+ref.message.reply_to_message.text= Bad Request: user is an administrator of the chat
+ref.message.text= /tr id
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 3
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 
+ref.reply_to_message_id= 39733
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\trs.php(19): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(417): require('C:\\bot telegram...')
+#5 {main}
+

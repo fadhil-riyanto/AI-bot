@@ -91,10 +91,8 @@ if (isset($promote_uid) && isset($udahDiparse)) {
         'permissions' => '{"can_send_messages": false}',
         'until_date' => $waktu_mute
     );
-    $param_jadi = http_build_query($param_promote);
-    $req_params = 'https://api.telegram.org/bot' . TG_HTTP_API . '/restrictChatMember?' . $param_jadi;
-    $client = new \GuzzleHttp\Client();
-    $response = $client->request('GET', $req_params);
+    //$content = array('chat_id' => $chat_id, 'text' => $reply, 'parse_mode' => 'html', 'reply_to_message_id' => $message_id, 'disable_web_page_preview' => true);
+    $telegram->restrictChatMember($param_promote);
 
     //debug
     $reply = $unamepromote . ', dimute sampai ' . date('Y-m-d h:i:s', $waktu_mute);
@@ -107,10 +105,8 @@ if (isset($promote_uid) && isset($udahDiparse)) {
         'permissions' => '{"can_send_messages": false}',
         'until_date' => time() + 300
     );
-    $param_jadi = http_build_query($param_promote);
-    $req_params = 'https://api.telegram.org/bot' . TG_HTTP_API . '/restrictChatMember?' . $param_jadi;
-    $client = new \GuzzleHttp\Client();
-    $response = $client->request('GET', $req_params);
+    //$content = array('chat_id' => $chat_id, 'text' => $reply, 'parse_mode' => 'html', 'reply_to_message_id' => $message_id, 'disable_web_page_preview' => true);
+    $telegram->restrictChatMember($param_promote);
 
     //debug
     $reply = $unamepromote . ', dimute selama 5 menit.';
