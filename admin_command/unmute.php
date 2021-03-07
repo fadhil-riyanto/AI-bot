@@ -20,10 +20,7 @@ if (isset($promote_uid) && isset($udahDiparse)) {
         'user_id' => $promote_uid,
         'permissions' => '{"can_send_messages": true, "can_send_media_messages": true, "can_send_polls": true, "can_send_other_messages": true, "can_invite_users": true}'
     );
-    $param_jadi = http_build_query($param_promote);
-    $req_params = 'https://api.telegram.org/bot' . TG_HTTP_API . '/restrictChatMember?' . $param_jadi;
-    $client = new \GuzzleHttp\Client();
-    $response = $client->request('GET', $req_params);
+    $telegram->restrictChatMember($param_promote);
 
     //debug
     $reply = $unamepromote . ', dibunyikan. Selamat!!!.';
