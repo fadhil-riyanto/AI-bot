@@ -26,7 +26,7 @@ if (isset($promote_uid) && isset($udahDiparse)) {
     $response = $client->request('GET', $req_params);
 
     //debug
-    $reply = $unamepromote . ', dimute.';
+    $reply = $unamepromote . ', dibunyikan. Selamat!!!.';
     $content = array('chat_id' => $chat_id, 'text' => $reply, 'parse_mode' => 'html', 'reply_to_message_id' => $message_id, 'disable_web_page_preview' => true);
     $telegram->sendMessage($content);
 } else {
