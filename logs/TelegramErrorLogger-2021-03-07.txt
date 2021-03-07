@@ -1,0 +1,1222 @@
+============[Date]============
+[ 2021-03-07 08:05:51  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+curl_error_code:		6
+curl_error:		Could not resolve host: api.telegram.org
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804416249
+ref.message.message_id= 39389
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1615079137
+ref.message.text= /run php <?php 
+echo strlen("okok");
+//result harus 4
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 4
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Warning : tidak ada warning
+Error : tidak ada error
+hasil : 4
+ref.reply_to_message_id= 39389
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(658): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\run.php(191): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(433): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-07 09:35:18  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+curl_error_code:		28
+curl_error:		Failed to connect to api.telegram.org port 443: Timed out
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804416272
+ref.message.message_id= 14318
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= PHP TGdev
+ref.message.chat.username= tgdev_php_group
+ref.message.chat.type= supergroup
+ref.message.date= 1615084491
+ref.message.reply_to_message.message_id= 14317
+ref.message.reply_to_message.from.id= 1223173857
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Fadhil
+ref.message.reply_to_message.from.last_name= riyanto (bot mode)
+ref.message.reply_to_message.from.username= fadhilriyanto
+ref.message.reply_to_message.from.language_code= ms
+ref.message.reply_to_message.chat.id= -1001410961692
+ref.message.reply_to_message.chat.title= PHP TGdev
+ref.message.reply_to_message.chat.username= tgdev_php_group
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1615084455
+ref.message.reply_to_message.text= test
+ref.message.text= /mute 1 menit
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(168): Telegram->endpoint('getChatAdminist...', Array)
+#3 C:\bot telegram\admin_command\__init__.php(48): Telegram->getChatAdministrators(Array)
+#4 C:\bot telegram\hook.php(601): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-07 09:35:39  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+curl_error_code:		28
+curl_error:		Failed to connect to api.telegram.org port 443: Timed out
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804416272
+ref.message.message_id= 14318
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= PHP TGdev
+ref.message.chat.username= tgdev_php_group
+ref.message.chat.type= supergroup
+ref.message.date= 1615084491
+ref.message.reply_to_message.message_id= 14317
+ref.message.reply_to_message.from.id= 1223173857
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Fadhil
+ref.message.reply_to_message.from.last_name= riyanto (bot mode)
+ref.message.reply_to_message.from.username= fadhilriyanto
+ref.message.reply_to_message.from.language_code= ms
+ref.message.reply_to_message.chat.id= -1001410961692
+ref.message.reply_to_message.chat.title= PHP TGdev
+ref.message.reply_to_message.chat.username= tgdev_php_group
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1615084455
+ref.message.reply_to_message.text= test
+ref.message.text= /mute 1 menit
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= ups, kamu bukan admin
+ref.reply_to_message_id= 14318
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\admin_command\__init__.php(172): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(601): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-07 09:36:49  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+curl_error_code:		28
+curl_error:		Failed to connect to api.telegram.org port 443: Timed out
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804416273
+ref.message.message_id= 14319
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= PHP TGdev
+ref.message.chat.username= tgdev_php_group
+ref.message.chat.type= supergroup
+ref.message.date= 1615084585
+ref.message.reply_to_message.message_id= 14317
+ref.message.reply_to_message.from.id= 1223173857
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Fadhil
+ref.message.reply_to_message.from.last_name= riyanto (bot mode)
+ref.message.reply_to_message.from.username= fadhilriyanto
+ref.message.reply_to_message.from.language_code= ms
+ref.message.reply_to_message.chat.id= -1001410961692
+ref.message.reply_to_message.chat.title= PHP TGdev
+ref.message.reply_to_message.chat.username= tgdev_php_group
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1615084455
+ref.message.reply_to_message.text= test
+ref.message.text= /mute 1m
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= ups, kamu bukan admin
+ref.reply_to_message_id= 14319
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\admin_command\__init__.php(172): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(601): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-07 09:40:50  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+curl_error_code:		6
+curl_error:		Could not resolve host: api.telegram.org
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804416275
+ref.message.message_id= 14322
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= PHP TGdev
+ref.message.chat.username= tgdev_php_group
+ref.message.chat.type= supergroup
+ref.message.date= 1615084835
+ref.message.reply_to_message.message_id= 14317
+ref.message.reply_to_message.from.id= 1223173857
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Fadhil
+ref.message.reply_to_message.from.last_name= riyanto (bot mode)
+ref.message.reply_to_message.from.username= fadhilriyanto
+ref.message.reply_to_message.from.language_code= ms
+ref.message.reply_to_message.chat.id= -1001410961692
+ref.message.reply_to_message.chat.title= PHP TGdev
+ref.message.reply_to_message.chat.username= tgdev_php_group
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1615084455
+ref.message.reply_to_message.text= test
+ref.message.text= /mute 6m
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(168): Telegram->endpoint('getChatAdminist...', Array)
+#3 C:\bot telegram\admin_command\__init__.php(48): Telegram->getChatAdministrators(Array)
+#4 C:\bot telegram\hook.php(601): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-07 09:46:12  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+curl_error_code:		28
+curl_error:		Failed to connect to api.telegram.org port 443: Timed out
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804416281
+ref.message.message_id= 14334
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= PHP TGdev
+ref.message.chat.username= tgdev_php_group
+ref.message.chat.type= supergroup
+ref.message.date= 1615085148
+ref.message.reply_to_message.message_id= 14317
+ref.message.reply_to_message.from.id= 1223173857
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Fadhil
+ref.message.reply_to_message.from.last_name= riyanto (bot mode)
+ref.message.reply_to_message.from.username= fadhilriyanto
+ref.message.reply_to_message.from.language_code= ms
+ref.message.reply_to_message.chat.id= -1001410961692
+ref.message.reply_to_message.chat.title= PHP TGdev
+ref.message.reply_to_message.chat.username= tgdev_php_group
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1615084455
+ref.message.reply_to_message.text= test
+ref.message.text= /mute gggggggg
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(168): Telegram->endpoint('getChatAdminist...', Array)
+#3 C:\bot telegram\admin_command\__init__.php(48): Telegram->getChatAdministrators(Array)
+#4 C:\bot telegram\hook.php(601): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-07 10:37:06  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+curl_error_code:		6
+curl_error:		Could not resolve host: api.telegram.org
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804416283
+ref.message.message_id= 14338
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001410961692
+ref.message.chat.title= PHP TGdev
+ref.message.chat.username= tgdev_php_group
+ref.message.chat.type= supergroup
+ref.message.date= 1615088208
+ref.message.reply_to_message.message_id= 14317
+ref.message.reply_to_message.from.id= 1223173857
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Fadhil
+ref.message.reply_to_message.from.last_name= riyanto (bot mode)
+ref.message.reply_to_message.from.username= fadhilriyanto
+ref.message.reply_to_message.from.language_code= ms
+ref.message.reply_to_message.chat.id= -1001410961692
+ref.message.reply_to_message.chat.title= PHP TGdev
+ref.message.reply_to_message.chat.username= tgdev_php_group
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1615084455
+ref.message.reply_to_message.text= test
+ref.message.text= /mute test
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(168): Telegram->endpoint('getChatAdminist...', Array)
+#3 C:\bot telegram\admin_command\__init__.php(48): Telegram->getChatAdministrators(Array)
+#4 C:\bot telegram\hook.php(601): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-07 11:15:56  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804416300
+ref.message.message_id= 17874
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1615090554
+ref.message.text= /help_admin
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 11
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Selamat datang di panduan bot management
+
+perlu diperhatikan bahwa bot ini tidak akan bisa di invite ke grup tanpa persetujuan dari pembuat bot. dan, command grup management dibawah ini khusus untuk grup yang sudah diijinkan masuk oleh pembuat bot ini.
+
+jika mau mengivite bot ini ke grup anda, silahkan kirimkan angka chat id grup anda lalu pm (private message) ke pembuat bot ini, yaitu @fadhil_riyanto
+
+note : Semua perintah hanya bekerja dengan / (garis miring)
+ref.message_id= 
+ref.reply_markup= {"inline_keyboard":[[{"text":"Grettings","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot grettings"},{"text":"Rules","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot rules"},{"text":"Admins","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot admins"}],[{"text":"Pin","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot pin"},{"text":"Mute","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot mute"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(192): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\admin_help\help_admin.php(32): Telegram->editMessageText(Array)
+#4 C:\bot telegram\hook.php(352): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-07 11:21:05  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Unsupported start tag "on/off" at byte offset 388
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804416305
+ref.callback_query.id= 5984360329310336289
+ref.callback_query.from.id= 1393342467
+ref.callback_query.from.is_bot= false
+ref.callback_query.from.first_name= Fadhil
+ref.callback_query.from.last_name= Riyanto
+ref.callback_query.from.username= fadhil_riyanto
+ref.callback_query.from.language_code= ms
+ref.callback_query.message.message_id= 17875
+ref.callback_query.message.from.id= 1489990155
+ref.callback_query.message.from.is_bot= true
+ref.callback_query.message.from.first_name= Fadhil Riyanto Bot
+ref.callback_query.message.from.username= Fadhil_riyanto_bot
+ref.callback_query.message.chat.id= 1393342467
+ref.callback_query.message.chat.first_name= Fadhil
+ref.callback_query.message.chat.last_name= Riyanto
+ref.callback_query.message.chat.username= fadhil_riyanto
+ref.callback_query.message.chat.type= private
+ref.callback_query.message.date= 1615090563
+ref.callback_query.message.edit_date= 1615090833
+ref.callback_query.message.reply_to_message.message_id= 17874
+ref.callback_query.message.reply_to_message.from.id= 1393342467
+ref.callback_query.message.reply_to_message.from.is_bot= false
+ref.callback_query.message.reply_to_message.from.first_name= Fadhil
+ref.callback_query.message.reply_to_message.from.last_name= Riyanto
+ref.callback_query.message.reply_to_message.from.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.from.language_code= ms
+ref.callback_query.message.reply_to_message.chat.id= 1393342467
+ref.callback_query.message.reply_to_message.chat.first_name= Fadhil
+ref.callback_query.message.reply_to_message.chat.last_name= Riyanto
+ref.callback_query.message.reply_to_message.chat.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.chat.type= private
+ref.callback_query.message.reply_to_message.date= 1615090554
+ref.callback_query.message.reply_to_message.text= /help_admin
+ref.callback_query.message.reply_to_message.entities.0.offset= 0
+ref.callback_query.message.reply_to_message.entities.0.length= 11
+ref.callback_query.message.reply_to_message.entities.0.type= bot_command
+ref.callback_query.message.text= Hai  @fadhil_riyanto, Selamat datang di panduan bot management
+
+perlu diperhatikan bahwa bot ini tidak akan bisa di invite ke grup tanpa persetujuan dari pembuat bot. dan, command grup management dibawah ini khusus untuk grup yang sudah diijinkan masuk oleh pembuat bot ini.
+
+jika mau mengivite bot ini ke grup anda, silahkan kirimkan angka chat id grup anda lalu pm (private message) ke pembuat bot ini, yaitu @fadhil_riyanto
+
+note : Semua perintah hanya bekerja dengan / (garis miring)
+ref.callback_query.message.entities.0.offset= 5
+ref.callback_query.message.entities.0.length= 15
+ref.callback_query.message.entities.0.type= mention
+ref.callback_query.message.entities.1.offset= 411
+ref.callback_query.message.entities.1.length= 15
+ref.callback_query.message.entities.1.type= mention
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.text= Grettings
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.callback_data= /callback_q_admin_help@fadhil_riyanto_bot grettings
+ref.callback_query.message.reply_markup.inline_keyboard.0.1.text= Rules
+ref.callback_query.message.reply_markup.inline_keyboard.0.1.callback_data= /callback_q_admin_help@fadhil_riyanto_bot rules
+ref.callback_query.message.reply_markup.inline_keyboard.0.2.text= Admins
+ref.callback_query.message.reply_markup.inline_keyboard.0.2.callback_data= /callback_q_admin_help@fadhil_riyanto_bot admins
+ref.callback_query.message.reply_markup.inline_keyboard.1.0.text= Pin
+ref.callback_query.message.reply_markup.inline_keyboard.1.0.callback_data= /callback_q_admin_help@fadhil_riyanto_bot pin
+ref.callback_query.message.reply_markup.inline_keyboard.1.1.text= Mute
+ref.callback_query.message.reply_markup.inline_keyboard.1.1.callback_data= /callback_q_admin_help@fadhil_riyanto_bot mute
+ref.callback_query.message.reply_markup.inline_keyboard.1.2.text= Chapcha
+ref.callback_query.message.reply_markup.inline_keyboard.1.2.callback_data= /callback_q_admin_help@fadhil_riyanto_bot chapcha
+ref.callback_query.chat_instance= -5109722127778484442
+ref.callback_query.data= /callback_q_admin_help@fadhil_riyanto_bot grettings
+
+
+[ref]
+ref.text= hai, ini adalah command khusus untuk admin grup.
+
+- /set_welcome: untuk mengatur pesan sambutan
+- /test_welcome: untuk melihat hasil contoh pesan sambutan
+- /set_chapcha_mode: digunakan untuk memberi teks sambutan beserta chapcha untuk menghindari userbot
+- /set_goodbye: digunakan untuk mengatur pesan selamat tinggal ketika ada pengguna yang mengeluarkan diri
+- /set_welcome_mode <on/off>: digunakan untuk menyalakan atau mematikan pesan selamat datang (ini berguna jika sudah ada bot lain yang mengucapkan selamat datang. biar ga bentrok aja)
+- /set_goodbye_mode <on/of>: ini hampir sama dengan welcome, hanya aja ini digunakan untuk mematikan dan menyalakan pesan selamat tinggal ketika ada user keluar grup
+ref.message_id= 17875
+ref.reply_markup= {"inline_keyboard":[[{"text":"kembali","callback_data":"\/help_admin_i@fadhil_riyanto_bot"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(192): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\admin_help\callback_q_admin_help.php(25): Telegram->editMessageText(Array)
+#4 C:\bot telegram\hook.php(349): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-07 11:21:15  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804416306
+ref.message.message_id= 17876
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1615090874
+ref.message.text= /help_admin
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 11
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Selamat datang di panduan bot management
+
+perlu diperhatikan bahwa bot ini tidak akan bisa di invite ke grup tanpa persetujuan dari pembuat bot. dan, command grup management dibawah ini khusus untuk grup yang sudah diijinkan masuk oleh pembuat bot ini.
+
+jika mau mengivite bot ini ke grup anda, silahkan kirimkan angka chat id grup anda lalu pm (private message) ke pembuat bot ini, yaitu @fadhil_riyanto
+
+note : Semua perintah hanya bekerja dengan / (garis miring)
+ref.message_id= 
+ref.reply_markup= {"inline_keyboard":[[{"text":"Grettings","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot grettings"},{"text":"Rules","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot rules"},{"text":"Admins","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot admins"}],[{"text":"Pin","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot pin"},{"text":"Mute","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot mute"},{"text":"Chapcha","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot chapcha"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(192): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\admin_help\help_admin.php(32): Telegram->editMessageText(Array)
+#4 C:\bot telegram\hook.php(352): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-07 11:21:22  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Unsupported start tag "on/off" at byte offset 388
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804416307
+ref.callback_query.id= 5984360328291322229
+ref.callback_query.from.id= 1393342467
+ref.callback_query.from.is_bot= false
+ref.callback_query.from.first_name= Fadhil
+ref.callback_query.from.last_name= Riyanto
+ref.callback_query.from.username= fadhil_riyanto
+ref.callback_query.from.language_code= ms
+ref.callback_query.message.message_id= 17877
+ref.callback_query.message.from.id= 1489990155
+ref.callback_query.message.from.is_bot= true
+ref.callback_query.message.from.first_name= Fadhil Riyanto Bot
+ref.callback_query.message.from.username= Fadhil_riyanto_bot
+ref.callback_query.message.chat.id= 1393342467
+ref.callback_query.message.chat.first_name= Fadhil
+ref.callback_query.message.chat.last_name= Riyanto
+ref.callback_query.message.chat.username= fadhil_riyanto
+ref.callback_query.message.chat.type= private
+ref.callback_query.message.date= 1615090878
+ref.callback_query.message.reply_to_message.message_id= 17876
+ref.callback_query.message.reply_to_message.from.id= 1393342467
+ref.callback_query.message.reply_to_message.from.is_bot= false
+ref.callback_query.message.reply_to_message.from.first_name= Fadhil
+ref.callback_query.message.reply_to_message.from.last_name= Riyanto
+ref.callback_query.message.reply_to_message.from.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.from.language_code= ms
+ref.callback_query.message.reply_to_message.chat.id= 1393342467
+ref.callback_query.message.reply_to_message.chat.first_name= Fadhil
+ref.callback_query.message.reply_to_message.chat.last_name= Riyanto
+ref.callback_query.message.reply_to_message.chat.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.chat.type= private
+ref.callback_query.message.reply_to_message.date= 1615090874
+ref.callback_query.message.reply_to_message.text= /help_admin
+ref.callback_query.message.reply_to_message.entities.0.offset= 0
+ref.callback_query.message.reply_to_message.entities.0.length= 11
+ref.callback_query.message.reply_to_message.entities.0.type= bot_command
+ref.callback_query.message.text= Hai  @fadhil_riyanto, Selamat datang di panduan bot management
+
+perlu diperhatikan bahwa bot ini tidak akan bisa di invite ke grup tanpa persetujuan dari pembuat bot. dan, command grup management dibawah ini khusus untuk grup yang sudah diijinkan masuk oleh pembuat bot ini.
+
+jika mau mengivite bot ini ke grup anda, silahkan kirimkan angka chat id grup anda lalu pm (private message) ke pembuat bot ini, yaitu @fadhil_riyanto
+
+note : Semua perintah hanya bekerja dengan / (garis miring)
+ref.callback_query.message.entities.0.offset= 5
+ref.callback_query.message.entities.0.length= 15
+ref.callback_query.message.entities.0.type= mention
+ref.callback_query.message.entities.1.offset= 411
+ref.callback_query.message.entities.1.length= 15
+ref.callback_query.message.entities.1.type= mention
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.text= Grettings
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.callback_data= /callback_q_admin_help@fadhil_riyanto_bot grettings
+ref.callback_query.message.reply_markup.inline_keyboard.0.1.text= Rules
+ref.callback_query.message.reply_markup.inline_keyboard.0.1.callback_data= /callback_q_admin_help@fadhil_riyanto_bot rules
+ref.callback_query.message.reply_markup.inline_keyboard.0.2.text= Admins
+ref.callback_query.message.reply_markup.inline_keyboard.0.2.callback_data= /callback_q_admin_help@fadhil_riyanto_bot admins
+ref.callback_query.message.reply_markup.inline_keyboard.1.0.text= Pin
+ref.callback_query.message.reply_markup.inline_keyboard.1.0.callback_data= /callback_q_admin_help@fadhil_riyanto_bot pin
+ref.callback_query.message.reply_markup.inline_keyboard.1.1.text= Mute
+ref.callback_query.message.reply_markup.inline_keyboard.1.1.callback_data= /callback_q_admin_help@fadhil_riyanto_bot mute
+ref.callback_query.message.reply_markup.inline_keyboard.1.2.text= Chapcha
+ref.callback_query.message.reply_markup.inline_keyboard.1.2.callback_data= /callback_q_admin_help@fadhil_riyanto_bot chapcha
+ref.callback_query.chat_instance= -5109722127778484442
+ref.callback_query.data= /callback_q_admin_help@fadhil_riyanto_bot grettings
+
+
+[ref]
+ref.text= hai, ini adalah command khusus untuk admin grup.
+
+- /set_welcome: untuk mengatur pesan sambutan
+- /test_welcome: untuk melihat hasil contoh pesan sambutan
+- /set_chapcha_mode: digunakan untuk memberi teks sambutan beserta chapcha untuk menghindari userbot
+- /set_goodbye: digunakan untuk mengatur pesan selamat tinggal ketika ada pengguna yang mengeluarkan diri
+- /set_welcome_mode <on/off>: digunakan untuk menyalakan atau mematikan pesan selamat datang (ini berguna jika sudah ada bot lain yang mengucapkan selamat datang. biar ga bentrok aja)
+- /set_goodbye_mode <on/of>: ini hampir sama dengan welcome, hanya aja ini digunakan untuk mematikan dan menyalakan pesan selamat tinggal ketika ada user keluar grup
+ref.message_id= 17877
+ref.reply_markup= {"inline_keyboard":[[{"text":"kembali","callback_data":"\/help_admin_i@fadhil_riyanto_bot"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(192): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\admin_help\callback_q_admin_help.php(25): Telegram->editMessageText(Array)
+#4 C:\bot telegram\hook.php(349): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-07 11:22:11  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Unsupported start tag "on/off" at byte offset 388
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804416310
+ref.callback_query.id= 5984360329669465006
+ref.callback_query.from.id= 1393342467
+ref.callback_query.from.is_bot= false
+ref.callback_query.from.first_name= Fadhil
+ref.callback_query.from.last_name= Riyanto
+ref.callback_query.from.username= fadhil_riyanto
+ref.callback_query.from.language_code= ms
+ref.callback_query.message.message_id= 17877
+ref.callback_query.message.from.id= 1489990155
+ref.callback_query.message.from.is_bot= true
+ref.callback_query.message.from.first_name= Fadhil Riyanto Bot
+ref.callback_query.message.from.username= Fadhil_riyanto_bot
+ref.callback_query.message.chat.id= 1393342467
+ref.callback_query.message.chat.first_name= Fadhil
+ref.callback_query.message.chat.last_name= Riyanto
+ref.callback_query.message.chat.username= fadhil_riyanto
+ref.callback_query.message.chat.type= private
+ref.callback_query.message.date= 1615090878
+ref.callback_query.message.edit_date= 1615090900
+ref.callback_query.message.reply_to_message.message_id= 17876
+ref.callback_query.message.reply_to_message.from.id= 1393342467
+ref.callback_query.message.reply_to_message.from.is_bot= false
+ref.callback_query.message.reply_to_message.from.first_name= Fadhil
+ref.callback_query.message.reply_to_message.from.last_name= Riyanto
+ref.callback_query.message.reply_to_message.from.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.from.language_code= ms
+ref.callback_query.message.reply_to_message.chat.id= 1393342467
+ref.callback_query.message.reply_to_message.chat.first_name= Fadhil
+ref.callback_query.message.reply_to_message.chat.last_name= Riyanto
+ref.callback_query.message.reply_to_message.chat.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.chat.type= private
+ref.callback_query.message.reply_to_message.date= 1615090874
+ref.callback_query.message.reply_to_message.text= /help_admin
+ref.callback_query.message.reply_to_message.entities.0.offset= 0
+ref.callback_query.message.reply_to_message.entities.0.length= 11
+ref.callback_query.message.reply_to_message.entities.0.type= bot_command
+ref.callback_query.message.text= Hai  @fadhil_riyanto, Selamat datang di panduan bot management
+
+perlu diperhatikan bahwa bot ini tidak akan bisa di invite ke grup tanpa persetujuan dari pembuat bot. dan, command grup management dibawah ini khusus untuk grup yang sudah diijinkan masuk oleh pembuat bot ini.
+
+jika mau mengivite bot ini ke grup anda, silahkan kirimkan angka chat id grup anda lalu pm (private message) ke pembuat bot ini, yaitu @fadhil_riyanto
+
+note : Semua perintah hanya bekerja dengan / (garis miring)
+ref.callback_query.message.entities.0.offset= 5
+ref.callback_query.message.entities.0.length= 15
+ref.callback_query.message.entities.0.type= mention
+ref.callback_query.message.entities.1.offset= 411
+ref.callback_query.message.entities.1.length= 15
+ref.callback_query.message.entities.1.type= mention
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.text= Grettings
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.callback_data= /callback_q_admin_help@fadhil_riyanto_bot grettings
+ref.callback_query.message.reply_markup.inline_keyboard.0.1.text= Rules
+ref.callback_query.message.reply_markup.inline_keyboard.0.1.callback_data= /callback_q_admin_help@fadhil_riyanto_bot rules
+ref.callback_query.message.reply_markup.inline_keyboard.0.2.text= Admins
+ref.callback_query.message.reply_markup.inline_keyboard.0.2.callback_data= /callback_q_admin_help@fadhil_riyanto_bot admins
+ref.callback_query.message.reply_markup.inline_keyboard.1.0.text= Pin
+ref.callback_query.message.reply_markup.inline_keyboard.1.0.callback_data= /callback_q_admin_help@fadhil_riyanto_bot pin
+ref.callback_query.message.reply_markup.inline_keyboard.1.1.text= Mute
+ref.callback_query.message.reply_markup.inline_keyboard.1.1.callback_data= /callback_q_admin_help@fadhil_riyanto_bot mute
+ref.callback_query.message.reply_markup.inline_keyboard.1.2.text= Chapcha
+ref.callback_query.message.reply_markup.inline_keyboard.1.2.callback_data= /callback_q_admin_help@fadhil_riyanto_bot chapcha
+ref.callback_query.chat_instance= -5109722127778484442
+ref.callback_query.data= /callback_q_admin_help@fadhil_riyanto_bot grettings
+
+
+[ref]
+ref.text= hai, ini adalah command khusus untuk admin grup.
+
+- /set_welcome: untuk mengatur pesan sambutan
+- /test_welcome: untuk melihat hasil contoh pesan sambutan
+- /set_chapcha_mode: digunakan untuk memberi teks sambutan beserta chapcha untuk menghindari userbot
+- /set_goodbye: digunakan untuk mengatur pesan selamat tinggal ketika ada pengguna yang mengeluarkan diri
+- /set_welcome_mode <on/off>: digunakan untuk menyalakan atau mematikan pesan selamat datang (ini berguna jika sudah ada bot lain yang mengucapkan selamat datang. biar ga bentrok aja)
+- /set_goodbye_mode <on/of>: ini hampir sama dengan welcome, hanya aja ini digunakan untuk mematikan dan menyalakan pesan selamat tinggal ketika ada user keluar grup
+ref.message_id= 17877
+ref.reply_markup= {"inline_keyboard":[[{"text":"kembali","callback_data":"\/help_admin_i@fadhil_riyanto_bot"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(192): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\admin_help\callback_q_admin_help.php(25): Telegram->editMessageText(Array)
+#4 C:\bot telegram\hook.php(349): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-07 11:23:34  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804416311
+ref.callback_query.id= 5984360329869215933
+ref.callback_query.from.id= 1393342467
+ref.callback_query.from.is_bot= false
+ref.callback_query.from.first_name= Fadhil
+ref.callback_query.from.last_name= Riyanto
+ref.callback_query.from.username= fadhil_riyanto
+ref.callback_query.from.language_code= ms
+ref.callback_query.message.message_id= 17877
+ref.callback_query.message.from.id= 1489990155
+ref.callback_query.message.from.is_bot= true
+ref.callback_query.message.from.first_name= Fadhil Riyanto Bot
+ref.callback_query.message.from.username= Fadhil_riyanto_bot
+ref.callback_query.message.chat.id= 1393342467
+ref.callback_query.message.chat.first_name= Fadhil
+ref.callback_query.message.chat.last_name= Riyanto
+ref.callback_query.message.chat.username= fadhil_riyanto
+ref.callback_query.message.chat.type= private
+ref.callback_query.message.date= 1615090878
+ref.callback_query.message.edit_date= 1615090900
+ref.callback_query.message.reply_to_message.message_id= 17876
+ref.callback_query.message.reply_to_message.from.id= 1393342467
+ref.callback_query.message.reply_to_message.from.is_bot= false
+ref.callback_query.message.reply_to_message.from.first_name= Fadhil
+ref.callback_query.message.reply_to_message.from.last_name= Riyanto
+ref.callback_query.message.reply_to_message.from.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.from.language_code= ms
+ref.callback_query.message.reply_to_message.chat.id= 1393342467
+ref.callback_query.message.reply_to_message.chat.first_name= Fadhil
+ref.callback_query.message.reply_to_message.chat.last_name= Riyanto
+ref.callback_query.message.reply_to_message.chat.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.chat.type= private
+ref.callback_query.message.reply_to_message.date= 1615090874
+ref.callback_query.message.reply_to_message.text= /help_admin
+ref.callback_query.message.reply_to_message.entities.0.offset= 0
+ref.callback_query.message.reply_to_message.entities.0.length= 11
+ref.callback_query.message.reply_to_message.entities.0.type= bot_command
+ref.callback_query.message.text= Hai  @fadhil_riyanto, Selamat datang di panduan bot management
+
+perlu diperhatikan bahwa bot ini tidak akan bisa di invite ke grup tanpa persetujuan dari pembuat bot. dan, command grup management dibawah ini khusus untuk grup yang sudah diijinkan masuk oleh pembuat bot ini.
+
+jika mau mengivite bot ini ke grup anda, silahkan kirimkan angka chat id grup anda lalu pm (private message) ke pembuat bot ini, yaitu @fadhil_riyanto
+
+note : Semua perintah hanya bekerja dengan / (garis miring)
+ref.callback_query.message.entities.0.offset= 5
+ref.callback_query.message.entities.0.length= 15
+ref.callback_query.message.entities.0.type= mention
+ref.callback_query.message.entities.1.offset= 411
+ref.callback_query.message.entities.1.length= 15
+ref.callback_query.message.entities.1.type= mention
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.text= Grettings
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.callback_data= /callback_q_admin_help@fadhil_riyanto_bot grettings
+ref.callback_query.message.reply_markup.inline_keyboard.0.1.text= Rules
+ref.callback_query.message.reply_markup.inline_keyboard.0.1.callback_data= /callback_q_admin_help@fadhil_riyanto_bot rules
+ref.callback_query.message.reply_markup.inline_keyboard.0.2.text= Admins
+ref.callback_query.message.reply_markup.inline_keyboard.0.2.callback_data= /callback_q_admin_help@fadhil_riyanto_bot admins
+ref.callback_query.message.reply_markup.inline_keyboard.1.0.text= Pin
+ref.callback_query.message.reply_markup.inline_keyboard.1.0.callback_data= /callback_q_admin_help@fadhil_riyanto_bot pin
+ref.callback_query.message.reply_markup.inline_keyboard.1.1.text= Mute
+ref.callback_query.message.reply_markup.inline_keyboard.1.1.callback_data= /callback_q_admin_help@fadhil_riyanto_bot mute
+ref.callback_query.message.reply_markup.inline_keyboard.1.2.text= Chapcha
+ref.callback_query.message.reply_markup.inline_keyboard.1.2.callback_data= /callback_q_admin_help@fadhil_riyanto_bot chapcha
+ref.callback_query.chat_instance= -5109722127778484442
+ref.callback_query.data= /callback_q_admin_help@fadhil_riyanto_bot mute
+
+
+[ref]
+ref.text= 
+ref.message_id= 17877
+ref.reply_markup= {"inline_keyboard":[[{"text":"kembali","callback_data":"\/help_admin_i@fadhil_riyanto_bot"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(192): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\admin_help\callback_q_admin_help.php(25): Telegram->editMessageText(Array)
+#4 C:\bot telegram\hook.php(349): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-07 11:23:42  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804416312
+ref.callback_query.id= 5984360331189239991
+ref.callback_query.from.id= 1393342467
+ref.callback_query.from.is_bot= false
+ref.callback_query.from.first_name= Fadhil
+ref.callback_query.from.last_name= Riyanto
+ref.callback_query.from.username= fadhil_riyanto
+ref.callback_query.from.language_code= ms
+ref.callback_query.message.message_id= 17877
+ref.callback_query.message.from.id= 1489990155
+ref.callback_query.message.from.is_bot= true
+ref.callback_query.message.from.first_name= Fadhil Riyanto Bot
+ref.callback_query.message.from.username= Fadhil_riyanto_bot
+ref.callback_query.message.chat.id= 1393342467
+ref.callback_query.message.chat.first_name= Fadhil
+ref.callback_query.message.chat.last_name= Riyanto
+ref.callback_query.message.chat.username= fadhil_riyanto
+ref.callback_query.message.chat.type= private
+ref.callback_query.message.date= 1615090878
+ref.callback_query.message.edit_date= 1615090900
+ref.callback_query.message.reply_to_message.message_id= 17876
+ref.callback_query.message.reply_to_message.from.id= 1393342467
+ref.callback_query.message.reply_to_message.from.is_bot= false
+ref.callback_query.message.reply_to_message.from.first_name= Fadhil
+ref.callback_query.message.reply_to_message.from.last_name= Riyanto
+ref.callback_query.message.reply_to_message.from.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.from.language_code= ms
+ref.callback_query.message.reply_to_message.chat.id= 1393342467
+ref.callback_query.message.reply_to_message.chat.first_name= Fadhil
+ref.callback_query.message.reply_to_message.chat.last_name= Riyanto
+ref.callback_query.message.reply_to_message.chat.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.chat.type= private
+ref.callback_query.message.reply_to_message.date= 1615090874
+ref.callback_query.message.reply_to_message.text= /help_admin
+ref.callback_query.message.reply_to_message.entities.0.offset= 0
+ref.callback_query.message.reply_to_message.entities.0.length= 11
+ref.callback_query.message.reply_to_message.entities.0.type= bot_command
+ref.callback_query.message.text= Hai  @fadhil_riyanto, Selamat datang di panduan bot management
+
+perlu diperhatikan bahwa bot ini tidak akan bisa di invite ke grup tanpa persetujuan dari pembuat bot. dan, command grup management dibawah ini khusus untuk grup yang sudah diijinkan masuk oleh pembuat bot ini.
+
+jika mau mengivite bot ini ke grup anda, silahkan kirimkan angka chat id grup anda lalu pm (private message) ke pembuat bot ini, yaitu @fadhil_riyanto
+
+note : Semua perintah hanya bekerja dengan / (garis miring)
+ref.callback_query.message.entities.0.offset= 5
+ref.callback_query.message.entities.0.length= 15
+ref.callback_query.message.entities.0.type= mention
+ref.callback_query.message.entities.1.offset= 411
+ref.callback_query.message.entities.1.length= 15
+ref.callback_query.message.entities.1.type= mention
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.text= Grettings
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.callback_data= /callback_q_admin_help@fadhil_riyanto_bot grettings
+ref.callback_query.message.reply_markup.inline_keyboard.0.1.text= Rules
+ref.callback_query.message.reply_markup.inline_keyboard.0.1.callback_data= /callback_q_admin_help@fadhil_riyanto_bot rules
+ref.callback_query.message.reply_markup.inline_keyboard.0.2.text= Admins
+ref.callback_query.message.reply_markup.inline_keyboard.0.2.callback_data= /callback_q_admin_help@fadhil_riyanto_bot admins
+ref.callback_query.message.reply_markup.inline_keyboard.1.0.text= Pin
+ref.callback_query.message.reply_markup.inline_keyboard.1.0.callback_data= /callback_q_admin_help@fadhil_riyanto_bot pin
+ref.callback_query.message.reply_markup.inline_keyboard.1.1.text= Mute
+ref.callback_query.message.reply_markup.inline_keyboard.1.1.callback_data= /callback_q_admin_help@fadhil_riyanto_bot mute
+ref.callback_query.message.reply_markup.inline_keyboard.1.2.text= Chapcha
+ref.callback_query.message.reply_markup.inline_keyboard.1.2.callback_data= /callback_q_admin_help@fadhil_riyanto_bot chapcha
+ref.callback_query.chat_instance= -5109722127778484442
+ref.callback_query.data= /callback_q_admin_help@fadhil_riyanto_bot chapcha
+
+
+[ref]
+ref.text= 
+ref.message_id= 17877
+ref.reply_markup= {"inline_keyboard":[[{"text":"kembali","callback_data":"\/help_admin_i@fadhil_riyanto_bot"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(192): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\admin_help\callback_q_admin_help.php(25): Telegram->editMessageText(Array)
+#4 C:\bot telegram\hook.php(349): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-07 11:24:07  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804416313
+ref.message.message_id= 17878
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1615091043
+ref.message.text= /help_admin
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 11
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Selamat datang di panduan bot management
+
+perlu diperhatikan bahwa bot ini tidak akan bisa di invite ke grup tanpa persetujuan dari pembuat bot. dan, command grup management dibawah ini khusus untuk grup yang sudah diijinkan masuk oleh pembuat bot ini.
+
+jika mau mengivite bot ini ke grup anda, silahkan kirimkan angka chat id grup anda lalu pm (private message) ke pembuat bot ini, yaitu @fadhil_riyanto
+
+note : Semua perintah hanya bekerja dengan / (garis miring)
+ref.message_id= 
+ref.reply_markup= {"inline_keyboard":[[{"text":"Grettings","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot grettings"},{"text":"Rules","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot rules"},{"text":"Admins","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot admins"}],[{"text":"Pin","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot pin"},{"text":"Mute","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot mute"},{"text":"Chapcha","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot chapcha"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(192): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\admin_help\help_admin.php(32): Telegram->editMessageText(Array)
+#4 C:\bot telegram\hook.php(352): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-07 11:25:00  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Unsupported start tag "on/off" at byte offset 388
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804416318
+ref.callback_query.id= 5984360328748564773
+ref.callback_query.from.id= 1393342467
+ref.callback_query.from.is_bot= false
+ref.callback_query.from.first_name= Fadhil
+ref.callback_query.from.last_name= Riyanto
+ref.callback_query.from.username= fadhil_riyanto
+ref.callback_query.from.language_code= ms
+ref.callback_query.message.message_id= 17879
+ref.callback_query.message.from.id= 1489990155
+ref.callback_query.message.from.is_bot= true
+ref.callback_query.message.from.first_name= Fadhil Riyanto Bot
+ref.callback_query.message.from.username= Fadhil_riyanto_bot
+ref.callback_query.message.chat.id= 1393342467
+ref.callback_query.message.chat.first_name= Fadhil
+ref.callback_query.message.chat.last_name= Riyanto
+ref.callback_query.message.chat.username= fadhil_riyanto
+ref.callback_query.message.chat.type= private
+ref.callback_query.message.date= 1615091051
+ref.callback_query.message.edit_date= 1615091097
+ref.callback_query.message.reply_to_message.message_id= 17878
+ref.callback_query.message.reply_to_message.from.id= 1393342467
+ref.callback_query.message.reply_to_message.from.is_bot= false
+ref.callback_query.message.reply_to_message.from.first_name= Fadhil
+ref.callback_query.message.reply_to_message.from.last_name= Riyanto
+ref.callback_query.message.reply_to_message.from.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.from.language_code= ms
+ref.callback_query.message.reply_to_message.chat.id= 1393342467
+ref.callback_query.message.reply_to_message.chat.first_name= Fadhil
+ref.callback_query.message.reply_to_message.chat.last_name= Riyanto
+ref.callback_query.message.reply_to_message.chat.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.chat.type= private
+ref.callback_query.message.reply_to_message.date= 1615091043
+ref.callback_query.message.reply_to_message.text= /help_admin
+ref.callback_query.message.reply_to_message.entities.0.offset= 0
+ref.callback_query.message.reply_to_message.entities.0.length= 11
+ref.callback_query.message.reply_to_message.entities.0.type= bot_command
+ref.callback_query.message.text= Hai  @fadhil_riyanto, Selamat datang di panduan bot management
+
+perlu diperhatikan bahwa bot ini tidak akan bisa di invite ke grup tanpa persetujuan dari pembuat bot. dan, command grup management dibawah ini khusus untuk grup yang sudah diijinkan masuk oleh pembuat bot ini.
+
+jika mau mengivite bot ini ke grup anda, silahkan kirimkan angka chat id grup anda lalu pm (private message) ke pembuat bot ini, yaitu @fadhil_riyanto
+
+note : Semua perintah hanya bekerja dengan / (garis miring)
+ref.callback_query.message.entities.0.offset= 5
+ref.callback_query.message.entities.0.length= 15
+ref.callback_query.message.entities.0.type= mention
+ref.callback_query.message.entities.1.offset= 411
+ref.callback_query.message.entities.1.length= 15
+ref.callback_query.message.entities.1.type= mention
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.text= Grettings
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.callback_data= /callback_q_admin_help@fadhil_riyanto_bot grettings
+ref.callback_query.message.reply_markup.inline_keyboard.0.1.text= Rules
+ref.callback_query.message.reply_markup.inline_keyboard.0.1.callback_data= /callback_q_admin_help@fadhil_riyanto_bot rules
+ref.callback_query.message.reply_markup.inline_keyboard.0.2.text= Admins
+ref.callback_query.message.reply_markup.inline_keyboard.0.2.callback_data= /callback_q_admin_help@fadhil_riyanto_bot admins
+ref.callback_query.message.reply_markup.inline_keyboard.1.0.text= Pin
+ref.callback_query.message.reply_markup.inline_keyboard.1.0.callback_data= /callback_q_admin_help@fadhil_riyanto_bot pin
+ref.callback_query.message.reply_markup.inline_keyboard.1.1.text= Mute
+ref.callback_query.message.reply_markup.inline_keyboard.1.1.callback_data= /callback_q_admin_help@fadhil_riyanto_bot mute
+ref.callback_query.message.reply_markup.inline_keyboard.1.2.text= Chapcha
+ref.callback_query.message.reply_markup.inline_keyboard.1.2.callback_data= /callback_q_admin_help@fadhil_riyanto_bot chapcha
+ref.callback_query.chat_instance= -5109722127778484442
+ref.callback_query.data= /callback_q_admin_help@fadhil_riyanto_bot grettings
+
+
+[ref]
+ref.text= hai, ini adalah command khusus untuk admin grup.
+
+- /set_welcome: untuk mengatur pesan sambutan
+- /test_welcome: untuk melihat hasil contoh pesan sambutan
+- /set_chapcha_mode: digunakan untuk memberi teks sambutan beserta chapcha untuk menghindari userbot
+- /set_goodbye: digunakan untuk mengatur pesan selamat tinggal ketika ada pengguna yang mengeluarkan diri
+- /set_welcome_mode <on/off>: digunakan untuk menyalakan atau mematikan pesan selamat datang (ini berguna jika sudah ada bot lain yang mengucapkan selamat datang. biar ga bentrok aja)
+- /set_goodbye_mode <on/of>: ini hampir sama dengan welcome, hanya aja ini digunakan untuk mematikan dan menyalakan pesan selamat tinggal ketika ada user keluar grup
+ref.message_id= 17879
+ref.reply_markup= {"inline_keyboard":[[{"text":"kembali","callback_data":"\/help_admin_i@fadhil_riyanto_bot"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(192): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\admin_help\callback_q_admin_help.php(25): Telegram->editMessageText(Array)
+#4 C:\bot telegram\hook.php(349): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-07 11:29:13  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+curl_error_code:		6
+curl_error:		Could not resolve host: api.telegram.org
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804416319
+ref.callback_query.id= 5984360330407694697
+ref.callback_query.from.id= 1393342467
+ref.callback_query.from.is_bot= false
+ref.callback_query.from.first_name= Fadhil
+ref.callback_query.from.last_name= Riyanto
+ref.callback_query.from.username= fadhil_riyanto
+ref.callback_query.from.language_code= ms
+ref.callback_query.message.message_id= 17879
+ref.callback_query.message.from.id= 1489990155
+ref.callback_query.message.from.is_bot= true
+ref.callback_query.message.from.first_name= Fadhil Riyanto Bot
+ref.callback_query.message.from.username= Fadhil_riyanto_bot
+ref.callback_query.message.chat.id= 1393342467
+ref.callback_query.message.chat.first_name= Fadhil
+ref.callback_query.message.chat.last_name= Riyanto
+ref.callback_query.message.chat.username= fadhil_riyanto
+ref.callback_query.message.chat.type= private
+ref.callback_query.message.date= 1615091051
+ref.callback_query.message.edit_date= 1615091097
+ref.callback_query.message.reply_to_message.message_id= 17878
+ref.callback_query.message.reply_to_message.from.id= 1393342467
+ref.callback_query.message.reply_to_message.from.is_bot= false
+ref.callback_query.message.reply_to_message.from.first_name= Fadhil
+ref.callback_query.message.reply_to_message.from.last_name= Riyanto
+ref.callback_query.message.reply_to_message.from.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.from.language_code= ms
+ref.callback_query.message.reply_to_message.chat.id= 1393342467
+ref.callback_query.message.reply_to_message.chat.first_name= Fadhil
+ref.callback_query.message.reply_to_message.chat.last_name= Riyanto
+ref.callback_query.message.reply_to_message.chat.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.chat.type= private
+ref.callback_query.message.reply_to_message.date= 1615091043
+ref.callback_query.message.reply_to_message.text= /help_admin
+ref.callback_query.message.reply_to_message.entities.0.offset= 0
+ref.callback_query.message.reply_to_message.entities.0.length= 11
+ref.callback_query.message.reply_to_message.entities.0.type= bot_command
+ref.callback_query.message.text= Hai  @fadhil_riyanto, Selamat datang di panduan bot management
+
+perlu diperhatikan bahwa bot ini tidak akan bisa di invite ke grup tanpa persetujuan dari pembuat bot. dan, command grup management dibawah ini khusus untuk grup yang sudah diijinkan masuk oleh pembuat bot ini.
+
+jika mau mengivite bot ini ke grup anda, silahkan kirimkan angka chat id grup anda lalu pm (private message) ke pembuat bot ini, yaitu @fadhil_riyanto
+
+note : Semua perintah hanya bekerja dengan / (garis miring)
+ref.callback_query.message.entities.0.offset= 5
+ref.callback_query.message.entities.0.length= 15
+ref.callback_query.message.entities.0.type= mention
+ref.callback_query.message.entities.1.offset= 411
+ref.callback_query.message.entities.1.length= 15
+ref.callback_query.message.entities.1.type= mention
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.text= Grettings
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.callback_data= /callback_q_admin_help@fadhil_riyanto_bot grettings
+ref.callback_query.message.reply_markup.inline_keyboard.0.1.text= Rules
+ref.callback_query.message.reply_markup.inline_keyboard.0.1.callback_data= /callback_q_admin_help@fadhil_riyanto_bot rules
+ref.callback_query.message.reply_markup.inline_keyboard.0.2.text= Admins
+ref.callback_query.message.reply_markup.inline_keyboard.0.2.callback_data= /callback_q_admin_help@fadhil_riyanto_bot admins
+ref.callback_query.message.reply_markup.inline_keyboard.1.0.text= Pin
+ref.callback_query.message.reply_markup.inline_keyboard.1.0.callback_data= /callback_q_admin_help@fadhil_riyanto_bot pin
+ref.callback_query.message.reply_markup.inline_keyboard.1.1.text= Mute
+ref.callback_query.message.reply_markup.inline_keyboard.1.1.callback_data= /callback_q_admin_help@fadhil_riyanto_bot mute
+ref.callback_query.message.reply_markup.inline_keyboard.1.2.text= Chapcha
+ref.callback_query.message.reply_markup.inline_keyboard.1.2.callback_data= /callback_q_admin_help@fadhil_riyanto_bot chapcha
+ref.callback_query.chat_instance= -5109722127778484442
+ref.callback_query.data= /callback_q_admin_help@fadhil_riyanto_bot grettings
+
+
+[ref]
+ref.text= hai, ini adalah command khusus untuk admin grup.
+
+- /set_welcome: untuk mengatur pesan sambutan
+- /test_welcome: untuk melihat hasil contoh pesan sambutan
+- /set_goodbye: digunakan untuk mengatur pesan selamat tinggal ketika ada pengguna yang mengeluarkan diri
+- /set_welcome_mode: digunakan untuk menyalakan atau mematikan pesan selamat datang (ini berguna jika sudah ada bot lain yang mengucapkan selamat datang. biar ga bentrok aja)
+- /set_goodbye_mode: ini hampir sama dengan welcome, hanya aja ini digunakan untuk mematikan dan menyalakan pesan selamat tinggal ketika ada user keluar grup
+ref.message_id= 17879
+ref.reply_markup= {"inline_keyboard":[[{"text":"kembali","callback_data":"\/help_admin_i@fadhil_riyanto_bot"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(192): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\admin_help\callback_q_admin_help.php(25): Telegram->editMessageText(Array)
+#4 C:\bot telegram\hook.php(349): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-07 11:29:26  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804416320
+ref.message.message_id= 17880
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1615091365
+ref.message.text= /help_admin
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 11
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Selamat datang di panduan bot management
+
+perlu diperhatikan bahwa bot ini tidak akan bisa di invite ke grup tanpa persetujuan dari pembuat bot. dan, command grup management dibawah ini khusus untuk grup yang sudah diijinkan masuk oleh pembuat bot ini.
+
+jika mau mengivite bot ini ke grup anda, silahkan kirimkan angka chat id grup anda lalu pm (private message) ke pembuat bot ini, yaitu @fadhil_riyanto
+
+note : Semua perintah hanya bekerja dengan / (garis miring)
+ref.message_id= 
+ref.reply_markup= {"inline_keyboard":[[{"text":"Grettings","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot grettings"},{"text":"Rules","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot rules"},{"text":"Admins","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot admins"}],[{"text":"Pin","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot pin"},{"text":"Mute","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot mute"},{"text":"Chapcha","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot chapcha"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(192): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\admin_help\help_admin.php(32): Telegram->editMessageText(Array)
+#4 C:\bot telegram\hook.php(352): require('C:\\bot telegram...')
+#5 {main}
+

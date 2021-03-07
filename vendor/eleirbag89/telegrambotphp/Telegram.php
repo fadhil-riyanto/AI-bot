@@ -62,6 +62,10 @@ class Telegram
 	{
 		return $this->endpoint('sendMessage', $content);
 	}
+	public function setChatAdministratorCustomTitle(array $content)
+	{
+		return $this->endpoint('setChatAdministratorCustomTitle', $content);
+	}
 	public function forwardMessage(array $content)
 	{
 		return $this->endpoint('forwardMessage', $content);
