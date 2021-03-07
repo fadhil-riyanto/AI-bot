@@ -111,7 +111,8 @@ if (deteksi_grup() == true) {
         $adanParse[0] == '/set_goodbye' || $adanParse[0] == '/set_welcome_mode' || $adanParse[0] == '/set_goodbye_mode' ||
         $adanParse[0] == '/set_rules' || $adanParse[0] == '/promote' || $adanParse[0] == '/demote' || $adanParse[0] == '/clear_rules' ||
         $adanParse[0] == '/admin_mode' || $adanParse[0] == '/unpinall' || $adanParse[0] == '/mute' || $adanParse[0] == '/set_admin_title' ||
-        $adanParse[0] == '/unmute'
+        $adanParse[0] == '/unmute' || $adanParse[0] == '/ban' || $adanParse[0] == '/sban' || $adanParse[0] == '/kick' ||
+        $adanParse[0] == '/skick' || $adanParse[0] == '/unban'
     ) {
         $reply = 'Maaf, command ini hanya berlaku di grup saja';
         $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
@@ -175,6 +176,16 @@ if ($kamu_admin == true) {
         require 'set_admin_title.php';
     } elseif ($adanParseadmin[0] == '/unmute') {
         require 'unmute.php';
+    } elseif ($adanParseadmin[0] == '/ban') {
+        require 'ban.php';
+    } elseif ($adanParseadmin[0] == '/sban') {
+        require 'sban.php';
+    } elseif ($adanParseadmin[0] == '/kick') {
+        require 'kick.php';
+    } elseif ($adanParseadmin[0] == '/skick') {
+        require 'skick.php';
+    } elseif ($adanParseadmin[0] == '/unban') {
+        require 'unban.php';
     }
 } elseif ($kamu_admin == false) {
     if (
@@ -183,7 +194,10 @@ if ($kamu_admin == true) {
         $adanParse[0] == '/set_goodbye' || $adanParse[0] == '/set_welcome_mode' || $adanParse[0] == '/set_goodbye_mode' ||
         $adanParse[0] == '/set_rules' || $adanParse[0] == '/promote' || $adanParse[0] == '/demote' || $adanParse[0] == '/clear_rules' ||
         $adanParse[0] == '/admin_mode' || $adanParse[0] == '/unpinall' || $adanParse[0] == '/mute' || $adanParse[0] == '/set_admin_title' ||
-        $adanParse[0] == '/unmute'
+        $adanParse[0] == '/unmute' || $adanParse[0] == '/ban' || $adanParse[0] == '/sban' ||
+        $adanParse[0] == '/ban' || $adanParse[0] == '/sban' || $adanParse[0] == '/kick' || $adanParse[0] == '/skick' ||
+        $adanParse[0] == '/unban'
+
     ) {
         $reply = 'ups, kamu bukan admin';
         $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);

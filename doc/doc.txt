@@ -1,11 +1,8 @@
-Admin
+bans
 
-untuk pengguna
-- /adminlist: lihat siapa saja yang menjadi admin
+- /ban: digunakan untuk mengeluarkan pengguna (dia masih bisa bergabung lagi)
+- /sban: sama dengan yang diatas, hanya aja bot tidak akan mention ke orang yang dikeluarkan
 
-admin saja
-- /promote: reply pesan member untuk menjadikan dia admin
-- /demote: reply untuk menghapus hak admin (tidak berlaku jika dia creator)
-- /invitelink: dapatkan link obrolan saat ini
-- /set_admin_title: ubah judul untuk admin, ini hanya berlaku untuk creator. dan tidak diperbolehkan melebihi 16 karakter
-- /admin_mode: berisi on atau off, ketika on. semua member akan dimute.
+- /kick: digunakan untuk mengeluarkan pengguna (dia tidak bisa bergabung lagi selama nya)
+- /skick: sama dengan kick, hanya aja dia bot tidak akan mention ke orang yang dikeluarkan
+- /unban: membolehkan user yang di kick kembali lagi ke grup

@@ -16,6 +16,11 @@ $option = array(
         $telegram->buildInlineKeyBoardButton("Mute", $url = "", $callback_data = '/callback_q_admin_help@fadhil_riyanto_bot mute'),
         $telegram->buildInlineKeyBoardButton("Report", $url = "", $callback_data = '/callback_q_admin_help@fadhil_riyanto_bot report')
     ),
+    array(
+        $telegram->buildInlineKeyBoardButton("Bans", $url = "", $callback_data = '/callback_q_admin_help@fadhil_riyanto_bot bans'),
+        //$telegram->buildInlineKeyBoardButton("Mute", $url = "", $callback_data = '/callback_q_admin_help@fadhil_riyanto_bot mute'),
+        //$telegram->buildInlineKeyBoardButton("Report", $url = "", $callback_data = '/callback_q_admin_help@fadhil_riyanto_bot report')
+    ),
     /*array(
         $telegram->buildInlineKeyBoardButton("dev tools", $url = "", $callback_data = '/callback_q_admin_help@fadhil_riyanto_bot dev_tools'),
         //$telegram->buildInlineKeyBoardButton("admins", $url = "", $callback_data = '/transformasi_help@fadhil_riyanto_bot'),

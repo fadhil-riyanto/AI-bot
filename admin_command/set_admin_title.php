@@ -18,6 +18,10 @@ if (isset($promote_uid) && isset($udahDiparse)) {
     } else {
         $content = array('chat_id' => $chat_id, 'user_id' => $promote_uid, 'custom_title' => $udahDiparse);
         $telegram->setChatAdministratorCustomTitle($content);
+
+        $reply = 'judul admin telah diubah';
+        $content = array('chat_id' => $chat_id, 'text' => $reply, 'parse_mode' => 'html', 'reply_to_message_id' => $message_id, 'disable_web_page_preview' => true);
+        $telegram->sendMessage($content);
     }
     // $param_promote = array(
     //     'chat_id' => $chat_id,
