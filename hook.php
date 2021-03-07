@@ -85,9 +85,21 @@ if ($usernameBelumdiparse != null) { //Jika user ada usernamenya
 
 $data_stiker = $telegram->getData();
 $stiker_hapus = $data_stiker['message']['sticker']['file_unique_id'];
+$stiker_hapus2 = $data_stiker['message']['sticker']['thumb']['file_id']['file_unique_id'];
+if (isset($stiker_hapus2)) {
+	if (
+		$stiker_hapus2 == 'AgADWAEAAmrOKEY'
+	) {
+		$arr = array('chat_id' => $chat_id, 'message_id' => $message_id);
+		$telegram->deleteMessage($arr);
+	}
+}
 
 if (isset($stiker_hapus)) {
-	if ($stiker_hapus == 'AgADCQADm23LJA') {
+	if (
+		$stiker_hapus == 'AgADCQADm23LJA' || $stiker_hapus == 'AgADZQEAAoGHIEY' || $stiker_hapus == 'AgADAwEAAt84IUY'
+		||  $stiker_hapus == 'AgADZQEAAoGHIEY'
+	) {
 		$arr = array('chat_id' => $chat_id, 'message_id' => $message_id);
 		$telegram->deleteMessage($arr);
 	}
