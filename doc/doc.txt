@@ -1,5 +1,11 @@
-cara mute pengguna
+Admin
 
-/mute: digunakan untuk memute user, isi kan parameter mis 3m (3 menit) atau 4 jam, atau mungkin 30 hari (1 bulan)
+untuk pengguna
+- /adminlist: lihat siapa saja yang menjadi admin
 
-/unmute: buka agar pengguna dapat berbicara, kamu harus reply ke pesan orang yang ingin dimute
+admin saja
+- /promote: reply pesan member untuk menjadikan dia admin
+- /demote: reply untuk menghapus hak admin (tidak berlaku jika dia creator)
+- /invitelink: dapatkan link obrolan saat ini
+- /set_admin_title: ubah judul untuk admin, ini hanya berlaku untuk creator. dan tidak diperbolehkan melebihi 16 karakter
+- /admin_mode: berisi on atau off, ketika on. semua member akan dimute.
