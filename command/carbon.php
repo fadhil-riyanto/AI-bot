@@ -44,6 +44,6 @@ if ($adanParse[1] == null) {
     $output = curl_exec($ch);
 
     $content = array('chat_id' => $chat_id, 'message_id' => $editmsg['result']['message_id']);
-    $telegram->editMessageText($content);
+    $telegram->deleteMessage($content);
     exit;
 }
