@@ -25,6 +25,7 @@ if ($adanParse[1] == null) {
     $url        = $bot_url . "sendDocument?chat_id=" . $chat_id;
 
     $post_fields = array(
+        'chat_id'   => $chat_id,
         'reply_to_message_id' => $message_id,
         'document'     => new CURLFile(realpath('tmp/carbonimg.png'))
     );
