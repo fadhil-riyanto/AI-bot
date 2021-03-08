@@ -21,6 +21,12 @@ if ($azanHilangcommand == null) {
     $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
     $telegram->sendMessage($content);
 } else {
+    if (strlen($udahDiparse) > 4094) {
+        $reply = "ups, jumlah karakter diperbolehkan hanya 4096 huruf.";
+        $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+        $telegram->sendMessage($content);
+        exit;
+    }
     $paste_id = generateRandomString($length = 10);
     $db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
     $data = array(
