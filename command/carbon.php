@@ -8,7 +8,7 @@ if ($adanParse[1] == null) {
     exit;
 } else {
 
-    $data = array("backgroundColor" => "rgba(144, 19, 254, 100)", "code" => urlencode($udahDiparse), "theme" => "dracula");
+    $data = array("backgroundColor" => "rgba(144, 19, 254, 100)", "code" => urlencode(htmlspecialchars_decode($udahDiparse)), "theme" => "dracula");
     $data_string = json_encode($data);
 
     $ch = curl_init('https://carbonnowsh.herokuapp.com');
