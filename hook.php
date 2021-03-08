@@ -136,13 +136,17 @@ if (isset($getreplyianid)) {
 	if ($user['userid'] == null) {
 	} else {
 		if ($getreplyianid == $userID) {
+			if (substr($text_plain_nokarakter, 0, 1) == '/') {
+			} else {
+				exit;
+			}
+		} else {
+			$reply = "Maaf ," . $afkforstname . ' ' . $afklastname . ' sedang AFK sejak ' . $user['time_afk'] . PHP_EOL .
+				'Alasan : ' . $user['alasan'];
+			$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+			$telegram->sendMessage($content);
 			exit;
 		}
-		$reply = "Maaf ," . $afkforstname . ' ' . $afklastname . ' sedang AFK sejak ' . $user['time_afk'] . PHP_EOL .
-			'Alasan : ' . $user['alasan'];
-		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-		$telegram->sendMessage($content);
-		exit;
 	}
 }
 if (isset($entityUserAfk)) {
@@ -361,6 +365,12 @@ if ('/start' == $adanParse[0] || '/start' . USERNAME_BOT . '' == $adanParse[0]) 
 	exit;
 } elseif ('/pantun' == $adanParse[0] || '/pantun' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/pantun.php';
+	exit;
+} elseif ('/calc' == $adanParse[0] || '/calc' . USERNAME_BOT . '' == $adanParse[0]) {
+	require __DIR__ . '/apps/calculator/calc.php';
+	exit;
+} elseif ('/calc_i' == $adanParse[0] || '/calc_i' . USERNAME_BOT . '' == $adanParse[0]) {
+	require __DIR__ . '/apps/calculator/calc_i.php';
 	exit;
 } elseif ('/callback_q_admin_help' == $adanParse[0] || '/callback_q_admin_help' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/admin_help/callback_q_admin_help.php';

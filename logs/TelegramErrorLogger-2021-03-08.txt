@@ -1,0 +1,2089 @@
+============[Date]============
+[ 2021-03-08 08:05:24  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse inline keyboard button: Text buttons are unallowed in the inline keyboard
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804417319
+ref.message.message_id= 17955
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1615165523
+ref.message.text= /calc
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.reply_markup= {"inline_keyboard":[[{"text":"Button 1"},{"text":"Button 2"}],[{"text":"Button 3"},{"text":"Button 4"},{"text":"Button 5"}],[{"text":"Button 6"}]]}
+ref.text= This is a Keyboard Test
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\apps\calculator\gui_form.php(10): Telegram->sendMessage(Array)
+#4 C:\bot telegram\apps\calculator\calc.php(2): require('C:\\bot telegram...')
+#5 C:\bot telegram\hook.php(366): require('C:\\bot telegram...')
+#6 {main}
+
+============[Date]============
+[ 2021-03-08 08:05:32  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse inline keyboard button: Text buttons are unallowed in the inline keyboard
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804417320
+ref.message.message_id= 17956
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1615165530
+ref.message.text= /calc
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.reply_markup= {"inline_keyboard":[[{"text":"Button 1"},{"text":"Button 2"}],[{"text":"Button 3"},{"text":"Button 4"},{"text":"Button 5"}],[{"text":"Button 6"}]]}
+ref.text= This is a Keyboard Test
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\apps\calculator\gui_form.php(10): Telegram->sendMessage(Array)
+#4 C:\bot telegram\apps\calculator\calc.php(2): require('C:\\bot telegram...')
+#5 C:\bot telegram\hook.php(366): require('C:\\bot telegram...')
+#6 {main}
+
+============[Date]============
+[ 2021-03-08 08:46:06  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804417338
+ref.callback_query.id= 5984360331489103249
+ref.callback_query.from.id= 1393342467
+ref.callback_query.from.is_bot= false
+ref.callback_query.from.first_name= Fadhil
+ref.callback_query.from.last_name= Riyanto
+ref.callback_query.from.username= fadhil_riyanto
+ref.callback_query.from.language_code= ms
+ref.callback_query.message.message_id= 17988
+ref.callback_query.message.from.id= 1489990155
+ref.callback_query.message.from.is_bot= true
+ref.callback_query.message.from.first_name= Fadhil Riyanto Bot
+ref.callback_query.message.from.username= Fadhil_riyanto_bot
+ref.callback_query.message.chat.id= 1393342467
+ref.callback_query.message.chat.first_name= Fadhil
+ref.callback_query.message.chat.last_name= Riyanto
+ref.callback_query.message.chat.username= fadhil_riyanto
+ref.callback_query.message.chat.type= private
+ref.callback_query.message.date= 1615167962
+ref.callback_query.message.text= This is a Keyboard Test
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.text= del
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.callback_data= /calc_i
+ref.callback_query.message.reply_markup.inline_keyboard.0.1.text= ac
+ref.callback_query.message.reply_markup.inline_keyboard.0.1.callback_data= /calc_i
+ref.callback_query.message.reply_markup.inline_keyboard.1.0.text= 7
+ref.callback_query.message.reply_markup.inline_keyboard.1.0.callback_data= /calc_i
+ref.callback_query.message.reply_markup.inline_keyboard.1.1.text= 8
+ref.callback_query.message.reply_markup.inline_keyboard.1.1.callback_data= /calc_i
+ref.callback_query.message.reply_markup.inline_keyboard.1.2.text= 9
+ref.callback_query.message.reply_markup.inline_keyboard.1.2.callback_data= /calc_i
+ref.callback_query.message.reply_markup.inline_keyboard.1.3.text= /
+ref.callback_query.message.reply_markup.inline_keyboard.1.3.callback_data= /calc_i
+ref.callback_query.message.reply_markup.inline_keyboard.2.0.text= 4
+ref.callback_query.message.reply_markup.inline_keyboard.2.0.callback_data= /calc_i
+ref.callback_query.message.reply_markup.inline_keyboard.2.1.text= 5
+ref.callback_query.message.reply_markup.inline_keyboard.2.1.callback_data= /calc_i
+ref.callback_query.message.reply_markup.inline_keyboard.2.2.text= 6
+ref.callback_query.message.reply_markup.inline_keyboard.2.2.callback_data= /calc_i
+ref.callback_query.message.reply_markup.inline_keyboard.2.3.text= *
+ref.callback_query.message.reply_markup.inline_keyboard.2.3.callback_data= /calc_i
+ref.callback_query.message.reply_markup.inline_keyboard.3.0.text= 1
+ref.callback_query.message.reply_markup.inline_keyboard.3.0.callback_data= /calc_i
+ref.callback_query.message.reply_markup.inline_keyboard.3.1.text= 2
+ref.callback_query.message.reply_markup.inline_keyboard.3.1.callback_data= /calc_i
+ref.callback_query.message.reply_markup.inline_keyboard.3.2.text= 3
+ref.callback_query.message.reply_markup.inline_keyboard.3.2.callback_data= /calc_i
+ref.callback_query.message.reply_markup.inline_keyboard.3.3.text= -
+ref.callback_query.message.reply_markup.inline_keyboard.3.3.callback_data= /calc_i
+ref.callback_query.message.reply_markup.inline_keyboard.4.0.text= .
+ref.callback_query.message.reply_markup.inline_keyboard.4.0.callback_data= /calc_i
+ref.callback_query.message.reply_markup.inline_keyboard.4.1.text= 0
+ref.callback_query.message.reply_markup.inline_keyboard.4.1.callback_data= /calc_i
+ref.callback_query.message.reply_markup.inline_keyboard.4.2.text= =
+ref.callback_query.message.reply_markup.inline_keyboard.4.2.callback_data= /calc_i
+ref.callback_query.message.reply_markup.inline_keyboard.4.3.text= +
+ref.callback_query.message.reply_markup.inline_keyboard.4.3.callback_data= /calc_i
+ref.callback_query.chat_instance= -5109722127778484442
+ref.callback_query.data= /calc_i
+
+
+[ref]
+ref.text= test
+ref.message_id= 
+ref.reply_markup= {"inline_keyboard":[[{"text":"del","callback_data":"\/calc_i"},{"text":"ac","callback_data":"\/calc_i"}],[{"text":"7","callback_data":"\/calc_i"},{"text":"8","callback_data":"\/calc_i"},{"text":"9","callback_data":"\/calc_i"},{"text":"\/","callback_data":"\/calc_i"}],[{"text":"4","callback_data":"\/calc_i"},{"text":"5","callback_data":"\/calc_i"},{"text":"6","callback_data":"\/calc_i"},{"text":"*","callback_data":"\/calc_i"}],[{"text":"1","callback_data":"\/calc_i"},{"text":"2","callback_data":"\/calc_i"},{"text":"3","callback_data":"\/calc_i"},{"text":"-","callback_data":"\/calc_i"}],[{"text":".","callback_data":"\/calc_i"},{"text":"0","callback_data":"\/calc_i"},{"text":"=","callback_data":"\/calc_i"},{"text":"+","callback_data":"\/calc_i"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(192): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\apps\calculator\calc_i.php(15): Telegram->editMessageText(Array)
+#4 C:\bot telegram\hook.php(369): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-08 08:49:07  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message is too long
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804417342
+ref.message.message_id= 17994
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1615168141
+ref.message.reply_to_message.message_id= 17993
+ref.message.reply_to_message.from.id= 1489990155
+ref.message.reply_to_message.from.is_bot= true
+ref.message.reply_to_message.from.first_name= Fadhil Riyanto Bot
+ref.message.reply_to_message.from.username= Fadhil_riyanto_bot
+ref.message.reply_to_message.chat.id= 1393342467
+ref.message.reply_to_message.chat.first_name= Fadhil
+ref.message.reply_to_message.chat.last_name= Riyanto
+ref.message.reply_to_message.chat.username= fadhil_riyanto
+ref.message.reply_to_message.chat.type= private
+ref.message.reply_to_message.date= 1615168138
+ref.message.reply_to_message.text= This is a Keyboard Test
+ref.message.reply_to_message.reply_markup.inline_keyboard.0.0.text= del
+ref.message.reply_to_message.reply_markup.inline_keyboard.0.0.callback_data= /calc_i##1393342467##del
+ref.message.reply_to_message.reply_markup.inline_keyboard.0.1.text= ac
+ref.message.reply_to_message.reply_markup.inline_keyboard.0.1.callback_data= /calc_i##1393342467##ac
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.0.text= 7
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.0.callback_data= /calc_i##1393342467##7
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.1.text= 8
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.1.callback_data= /calc_i##1393342467##8
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.2.text= 9
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.2.callback_data= /calc_i##1393342467##9
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.3.text= /
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.3.callback_data= /calc_i##1393342467##/
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.0.text= 4
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.0.callback_data= /calc_i##1393342467##4
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.1.text= 5
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.1.callback_data= /calc_i##1393342467##5
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.2.text= 6
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.2.callback_data= /calc_i##1393342467##6
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.3.text= *
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.3.callback_data= /calc_i##1393342467##*
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.0.text= 1
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.0.callback_data= /calc_i##1393342467##1
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.1.text= 2
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.1.callback_data= /calc_i##1393342467##2
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.2.text= 3
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.2.callback_data= /calc_i##1393342467##3
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.3.text= -
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.3.callback_data= /calc_i##1393342467##-
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.0.text= .
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.0.callback_data= /calc_i##1393342467##.
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.1.text= 0
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.1.callback_data= /calc_i##1393342467##0
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.2.text= =
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.2.callback_data= /calc_i##1393342467##=
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.3.text= +
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.3.callback_data= /calc_i##1393342467##+
+ref.message.text= /sudo json
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= {
+    "update_id": 804417342,
+    "message": {
+        "message_id": 17994,
+        "from": {
+            "id": 1393342467,
+            "is_bot": false,
+            "first_name": "Fadhil",
+            "last_name": "Riyanto",
+            "username": "fadhil_riyanto",
+            "language_code": "ms"
+        },
+        "chat": {
+            "id": 1393342467,
+            "first_name": "Fadhil",
+            "last_name": "Riyanto",
+            "username": "fadhil_riyanto",
+            "type": "private"
+        },
+        "date": 1615168141,
+        "reply_to_message": {
+            "message_id": 17993,
+            "from": {
+                "id": 1489990155,
+                "is_bot": true,
+                "first_name": "Fadhil Riyanto Bot",
+                "username": "Fadhil_riyanto_bot"
+            },
+            "chat": {
+                "id": 1393342467,
+                "first_name": "Fadhil",
+                "last_name": "Riyanto",
+                "username": "fadhil_riyanto",
+                "type": "private"
+            },
+            "date": 1615168138,
+            "text": "This is a Keyboard Test",
+            "reply_markup": {
+                "inline_keyboard": [
+                    [
+                        {
+                            "text": "del",
+                            "callback_data": "\/calc_i##1393342467##del"
+                        },
+                        {
+                            "text": "ac",
+                            "callback_data": "\/calc_i##1393342467##ac"
+                        }
+                    ],
+                    [
+                        {
+                            "text": "7",
+                            "callback_data": "\/calc_i##1393342467##7"
+                        },
+                        {
+                            "text": "8",
+                            "callback_data": "\/calc_i##1393342467##8"
+                        },
+                        {
+                            "text": "9",
+                            "callback_data": "\/calc_i##1393342467##9"
+                        },
+                        {
+                            "text": "\/",
+                            "callback_data": "\/calc_i##1393342467##\/"
+                        }
+                    ],
+                    [
+                        {
+                            "text": "4",
+                            "callback_data": "\/calc_i##1393342467##4"
+                        },
+                        {
+                            "text": "5",
+                            "callback_data": "\/calc_i##1393342467##5"
+                        },
+                        {
+                            "text": "6",
+                            "callback_data": "\/calc_i##1393342467##6"
+                        },
+                        {
+                            "text": "*",
+                            "callback_data": "\/calc_i##1393342467##*"
+                        }
+                    ],
+                    [
+                        {
+                            "text": "1",
+                            "callback_data": "\/calc_i##1393342467##1"
+                        },
+                        {
+                            "text": "2",
+                            "callback_data": "\/calc_i##1393342467##2"
+                        },
+                        {
+                            "text": "3",
+                            "callback_data": "\/calc_i##1393342467##3"
+                        },
+                        {
+                            "text": "-",
+                            "callback_data": "\/calc_i##1393342467##-"
+                        }
+                    ],
+                    [
+                        {
+                            "text": ".",
+                            "callback_data": "\/calc_i##1393342467##."
+                        },
+                        {
+                            "text": "0",
+                            "callback_data": "\/calc_i##1393342467##0"
+                        },
+                        {
+                            "text": "=",
+                            "callback_data": "\/calc_i##1393342467##="
+                        },
+                        {
+                            "text": "+",
+                            "callback_data": "\/calc_i##1393342467##+"
+                        }
+                    ]
+                ]
+            }
+        },
+        "text": "\/sudo json",
+        "entities": [
+            {
+                "offset": 0,
+                "length": 5,
+                "type": "bot_command"
+            }
+        ]
+    }
+}
+ref.reply_to_message_id= 17994
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\sudo.php(102): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(502): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-08 08:49:22  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message is too long
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804417343
+ref.message.message_id= 17995
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1615168158
+ref.message.reply_to_message.message_id= 17993
+ref.message.reply_to_message.from.id= 1489990155
+ref.message.reply_to_message.from.is_bot= true
+ref.message.reply_to_message.from.first_name= Fadhil Riyanto Bot
+ref.message.reply_to_message.from.username= Fadhil_riyanto_bot
+ref.message.reply_to_message.chat.id= 1393342467
+ref.message.reply_to_message.chat.first_name= Fadhil
+ref.message.reply_to_message.chat.last_name= Riyanto
+ref.message.reply_to_message.chat.username= fadhil_riyanto
+ref.message.reply_to_message.chat.type= private
+ref.message.reply_to_message.date= 1615168138
+ref.message.reply_to_message.text= This is a Keyboard Test
+ref.message.reply_to_message.reply_markup.inline_keyboard.0.0.text= del
+ref.message.reply_to_message.reply_markup.inline_keyboard.0.0.callback_data= /calc_i##1393342467##del
+ref.message.reply_to_message.reply_markup.inline_keyboard.0.1.text= ac
+ref.message.reply_to_message.reply_markup.inline_keyboard.0.1.callback_data= /calc_i##1393342467##ac
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.0.text= 7
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.0.callback_data= /calc_i##1393342467##7
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.1.text= 8
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.1.callback_data= /calc_i##1393342467##8
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.2.text= 9
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.2.callback_data= /calc_i##1393342467##9
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.3.text= /
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.3.callback_data= /calc_i##1393342467##/
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.0.text= 4
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.0.callback_data= /calc_i##1393342467##4
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.1.text= 5
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.1.callback_data= /calc_i##1393342467##5
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.2.text= 6
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.2.callback_data= /calc_i##1393342467##6
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.3.text= *
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.3.callback_data= /calc_i##1393342467##*
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.0.text= 1
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.0.callback_data= /calc_i##1393342467##1
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.1.text= 2
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.1.callback_data= /calc_i##1393342467##2
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.2.text= 3
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.2.callback_data= /calc_i##1393342467##3
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.3.text= -
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.3.callback_data= /calc_i##1393342467##-
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.0.text= .
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.0.callback_data= /calc_i##1393342467##.
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.1.text= 0
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.1.callback_data= /calc_i##1393342467##0
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.2.text= =
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.2.callback_data= /calc_i##1393342467##=
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.3.text= +
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.3.callback_data= /calc_i##1393342467##+
+ref.message.text= /sudo json
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= {
+    "update_id": 804417343,
+    "message": {
+        "message_id": 17995,
+        "from": {
+            "id": 1393342467,
+            "is_bot": false,
+            "first_name": "Fadhil",
+            "last_name": "Riyanto",
+            "username": "fadhil_riyanto",
+            "language_code": "ms"
+        },
+        "chat": {
+            "id": 1393342467,
+            "first_name": "Fadhil",
+            "last_name": "Riyanto",
+            "username": "fadhil_riyanto",
+            "type": "private"
+        },
+        "date": 1615168158,
+        "reply_to_message": {
+            "message_id": 17993,
+            "from": {
+                "id": 1489990155,
+                "is_bot": true,
+                "first_name": "Fadhil Riyanto Bot",
+                "username": "Fadhil_riyanto_bot"
+            },
+            "chat": {
+                "id": 1393342467,
+                "first_name": "Fadhil",
+                "last_name": "Riyanto",
+                "username": "fadhil_riyanto",
+                "type": "private"
+            },
+            "date": 1615168138,
+            "text": "This is a Keyboard Test",
+            "reply_markup": {
+                "inline_keyboard": [
+                    [
+                        {
+                            "text": "del",
+                            "callback_data": "\/calc_i##1393342467##del"
+                        },
+                        {
+                            "text": "ac",
+                            "callback_data": "\/calc_i##1393342467##ac"
+                        }
+                    ],
+                    [
+                        {
+                            "text": "7",
+                            "callback_data": "\/calc_i##1393342467##7"
+                        },
+                        {
+                            "text": "8",
+                            "callback_data": "\/calc_i##1393342467##8"
+                        },
+                        {
+                            "text": "9",
+                            "callback_data": "\/calc_i##1393342467##9"
+                        },
+                        {
+                            "text": "\/",
+                            "callback_data": "\/calc_i##1393342467##\/"
+                        }
+                    ],
+                    [
+                        {
+                            "text": "4",
+                            "callback_data": "\/calc_i##1393342467##4"
+                        },
+                        {
+                            "text": "5",
+                            "callback_data": "\/calc_i##1393342467##5"
+                        },
+                        {
+                            "text": "6",
+                            "callback_data": "\/calc_i##1393342467##6"
+                        },
+                        {
+                            "text": "*",
+                            "callback_data": "\/calc_i##1393342467##*"
+                        }
+                    ],
+                    [
+                        {
+                            "text": "1",
+                            "callback_data": "\/calc_i##1393342467##1"
+                        },
+                        {
+                            "text": "2",
+                            "callback_data": "\/calc_i##1393342467##2"
+                        },
+                        {
+                            "text": "3",
+                            "callback_data": "\/calc_i##1393342467##3"
+                        },
+                        {
+                            "text": "-",
+                            "callback_data": "\/calc_i##1393342467##-"
+                        }
+                    ],
+                    [
+                        {
+                            "text": ".",
+                            "callback_data": "\/calc_i##1393342467##."
+                        },
+                        {
+                            "text": "0",
+                            "callback_data": "\/calc_i##1393342467##0"
+                        },
+                        {
+                            "text": "=",
+                            "callback_data": "\/calc_i##1393342467##="
+                        },
+                        {
+                            "text": "+",
+                            "callback_data": "\/calc_i##1393342467##+"
+                        }
+                    ]
+                ]
+            }
+        },
+        "text": "\/sudo json",
+        "entities": [
+            {
+                "offset": 0,
+                "length": 5,
+                "type": "bot_command"
+            }
+        ]
+    }
+}
+ref.reply_to_message_id= 17995
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\sudo.php(102): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(502): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-08 08:50:08  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message is too long
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804417345
+ref.message.message_id= 17996
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1615168205
+ref.message.reply_to_message.message_id= 17993
+ref.message.reply_to_message.from.id= 1489990155
+ref.message.reply_to_message.from.is_bot= true
+ref.message.reply_to_message.from.first_name= Fadhil Riyanto Bot
+ref.message.reply_to_message.from.username= Fadhil_riyanto_bot
+ref.message.reply_to_message.chat.id= 1393342467
+ref.message.reply_to_message.chat.first_name= Fadhil
+ref.message.reply_to_message.chat.last_name= Riyanto
+ref.message.reply_to_message.chat.username= fadhil_riyanto
+ref.message.reply_to_message.chat.type= private
+ref.message.reply_to_message.date= 1615168138
+ref.message.reply_to_message.text= This is a Keyboard Test
+ref.message.reply_to_message.reply_markup.inline_keyboard.0.0.text= del
+ref.message.reply_to_message.reply_markup.inline_keyboard.0.0.callback_data= /calc_i##1393342467##del
+ref.message.reply_to_message.reply_markup.inline_keyboard.0.1.text= ac
+ref.message.reply_to_message.reply_markup.inline_keyboard.0.1.callback_data= /calc_i##1393342467##ac
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.0.text= 7
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.0.callback_data= /calc_i##1393342467##7
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.1.text= 8
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.1.callback_data= /calc_i##1393342467##8
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.2.text= 9
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.2.callback_data= /calc_i##1393342467##9
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.3.text= /
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.3.callback_data= /calc_i##1393342467##/
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.0.text= 4
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.0.callback_data= /calc_i##1393342467##4
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.1.text= 5
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.1.callback_data= /calc_i##1393342467##5
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.2.text= 6
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.2.callback_data= /calc_i##1393342467##6
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.3.text= *
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.3.callback_data= /calc_i##1393342467##*
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.0.text= 1
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.0.callback_data= /calc_i##1393342467##1
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.1.text= 2
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.1.callback_data= /calc_i##1393342467##2
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.2.text= 3
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.2.callback_data= /calc_i##1393342467##3
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.3.text= -
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.3.callback_data= /calc_i##1393342467##-
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.0.text= .
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.0.callback_data= /calc_i##1393342467##.
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.1.text= 0
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.1.callback_data= /calc_i##1393342467##0
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.2.text= =
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.2.callback_data= /calc_i##1393342467##=
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.3.text= +
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.3.callback_data= /calc_i##1393342467##+
+ref.message.text= /sudo json
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= {
+    "update_id": 804417345,
+    "message": {
+        "message_id": 17996,
+        "from": {
+            "id": 1393342467,
+            "is_bot": false,
+            "first_name": "Fadhil",
+            "last_name": "Riyanto",
+            "username": "fadhil_riyanto",
+            "language_code": "ms"
+        },
+        "chat": {
+            "id": 1393342467,
+            "first_name": "Fadhil",
+            "last_name": "Riyanto",
+            "username": "fadhil_riyanto",
+            "type": "private"
+        },
+        "date": 1615168205,
+        "reply_to_message": {
+            "message_id": 17993,
+            "from": {
+                "id": 1489990155,
+                "is_bot": true,
+                "first_name": "Fadhil Riyanto Bot",
+                "username": "Fadhil_riyanto_bot"
+            },
+            "chat": {
+                "id": 1393342467,
+                "first_name": "Fadhil",
+                "last_name": "Riyanto",
+                "username": "fadhil_riyanto",
+                "type": "private"
+            },
+            "date": 1615168138,
+            "text": "This is a Keyboard Test",
+            "reply_markup": {
+                "inline_keyboard": [
+                    [
+                        {
+                            "text": "del",
+                            "callback_data": "\/calc_i##1393342467##del"
+                        },
+                        {
+                            "text": "ac",
+                            "callback_data": "\/calc_i##1393342467##ac"
+                        }
+                    ],
+                    [
+                        {
+                            "text": "7",
+                            "callback_data": "\/calc_i##1393342467##7"
+                        },
+                        {
+                            "text": "8",
+                            "callback_data": "\/calc_i##1393342467##8"
+                        },
+                        {
+                            "text": "9",
+                            "callback_data": "\/calc_i##1393342467##9"
+                        },
+                        {
+                            "text": "\/",
+                            "callback_data": "\/calc_i##1393342467##\/"
+                        }
+                    ],
+                    [
+                        {
+                            "text": "4",
+                            "callback_data": "\/calc_i##1393342467##4"
+                        },
+                        {
+                            "text": "5",
+                            "callback_data": "\/calc_i##1393342467##5"
+                        },
+                        {
+                            "text": "6",
+                            "callback_data": "\/calc_i##1393342467##6"
+                        },
+                        {
+                            "text": "*",
+                            "callback_data": "\/calc_i##1393342467##*"
+                        }
+                    ],
+                    [
+                        {
+                            "text": "1",
+                            "callback_data": "\/calc_i##1393342467##1"
+                        },
+                        {
+                            "text": "2",
+                            "callback_data": "\/calc_i##1393342467##2"
+                        },
+                        {
+                            "text": "3",
+                            "callback_data": "\/calc_i##1393342467##3"
+                        },
+                        {
+                            "text": "-",
+                            "callback_data": "\/calc_i##1393342467##-"
+                        }
+                    ],
+                    [
+                        {
+                            "text": ".",
+                            "callback_data": "\/calc_i##1393342467##."
+                        },
+                        {
+                            "text": "0",
+                            "callback_data": "\/calc_i##1393342467##0"
+                        },
+                        {
+                            "text": "=",
+                            "callback_data": "\/calc_i##1393342467##="
+                        },
+                        {
+                            "text": "+",
+                            "callback_data": "\/calc_i##1393342467##+"
+                        }
+                    ]
+                ]
+            }
+        },
+        "text": "\/sudo json",
+        "entities": [
+            {
+                "offset": 0,
+                "length": 5,
+                "type": "bot_command"
+            }
+        ]
+    }
+}
+ref.reply_to_message_id= 17996
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\sudo.php(102): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(502): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-08 08:53:38  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message is too long
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804417346
+ref.message.message_id= 17997
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1615168413
+ref.message.reply_to_message.message_id= 17993
+ref.message.reply_to_message.from.id= 1489990155
+ref.message.reply_to_message.from.is_bot= true
+ref.message.reply_to_message.from.first_name= Fadhil Riyanto Bot
+ref.message.reply_to_message.from.username= Fadhil_riyanto_bot
+ref.message.reply_to_message.chat.id= 1393342467
+ref.message.reply_to_message.chat.first_name= Fadhil
+ref.message.reply_to_message.chat.last_name= Riyanto
+ref.message.reply_to_message.chat.username= fadhil_riyanto
+ref.message.reply_to_message.chat.type= private
+ref.message.reply_to_message.date= 1615168138
+ref.message.reply_to_message.text= This is a Keyboard Test
+ref.message.reply_to_message.reply_markup.inline_keyboard.0.0.text= del
+ref.message.reply_to_message.reply_markup.inline_keyboard.0.0.callback_data= /calc_i##1393342467##del
+ref.message.reply_to_message.reply_markup.inline_keyboard.0.1.text= ac
+ref.message.reply_to_message.reply_markup.inline_keyboard.0.1.callback_data= /calc_i##1393342467##ac
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.0.text= 7
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.0.callback_data= /calc_i##1393342467##7
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.1.text= 8
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.1.callback_data= /calc_i##1393342467##8
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.2.text= 9
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.2.callback_data= /calc_i##1393342467##9
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.3.text= /
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.3.callback_data= /calc_i##1393342467##/
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.0.text= 4
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.0.callback_data= /calc_i##1393342467##4
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.1.text= 5
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.1.callback_data= /calc_i##1393342467##5
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.2.text= 6
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.2.callback_data= /calc_i##1393342467##6
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.3.text= *
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.3.callback_data= /calc_i##1393342467##*
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.0.text= 1
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.0.callback_data= /calc_i##1393342467##1
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.1.text= 2
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.1.callback_data= /calc_i##1393342467##2
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.2.text= 3
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.2.callback_data= /calc_i##1393342467##3
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.3.text= -
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.3.callback_data= /calc_i##1393342467##-
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.0.text= .
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.0.callback_data= /calc_i##1393342467##.
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.1.text= 0
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.1.callback_data= /calc_i##1393342467##0
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.2.text= =
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.2.callback_data= /calc_i##1393342467##=
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.3.text= +
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.3.callback_data= /calc_i##1393342467##+
+ref.message.text= /sudo json
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= {
+    "update_id": 804417346,
+    "message": {
+        "message_id": 17997,
+        "from": {
+            "id": 1393342467,
+            "is_bot": false,
+            "first_name": "Fadhil",
+            "last_name": "Riyanto",
+            "username": "fadhil_riyanto",
+            "language_code": "ms"
+        },
+        "chat": {
+            "id": 1393342467,
+            "first_name": "Fadhil",
+            "last_name": "Riyanto",
+            "username": "fadhil_riyanto",
+            "type": "private"
+        },
+        "date": 1615168413,
+        "reply_to_message": {
+            "message_id": 17993,
+            "from": {
+                "id": 1489990155,
+                "is_bot": true,
+                "first_name": "Fadhil Riyanto Bot",
+                "username": "Fadhil_riyanto_bot"
+            },
+            "chat": {
+                "id": 1393342467,
+                "first_name": "Fadhil",
+                "last_name": "Riyanto",
+                "username": "fadhil_riyanto",
+                "type": "private"
+            },
+            "date": 1615168138,
+            "text": "This is a Keyboard Test",
+            "reply_markup": {
+                "inline_keyboard": [
+                    [
+                        {
+                            "text": "del",
+                            "callback_data": "\/calc_i##1393342467##del"
+                        },
+                        {
+                            "text": "ac",
+                            "callback_data": "\/calc_i##1393342467##ac"
+                        }
+                    ],
+                    [
+                        {
+                            "text": "7",
+                            "callback_data": "\/calc_i##1393342467##7"
+                        },
+                        {
+                            "text": "8",
+                            "callback_data": "\/calc_i##1393342467##8"
+                        },
+                        {
+                            "text": "9",
+                            "callback_data": "\/calc_i##1393342467##9"
+                        },
+                        {
+                            "text": "\/",
+                            "callback_data": "\/calc_i##1393342467##\/"
+                        }
+                    ],
+                    [
+                        {
+                            "text": "4",
+                            "callback_data": "\/calc_i##1393342467##4"
+                        },
+                        {
+                            "text": "5",
+                            "callback_data": "\/calc_i##1393342467##5"
+                        },
+                        {
+                            "text": "6",
+                            "callback_data": "\/calc_i##1393342467##6"
+                        },
+                        {
+                            "text": "*",
+                            "callback_data": "\/calc_i##1393342467##*"
+                        }
+                    ],
+                    [
+                        {
+                            "text": "1",
+                            "callback_data": "\/calc_i##1393342467##1"
+                        },
+                        {
+                            "text": "2",
+                            "callback_data": "\/calc_i##1393342467##2"
+                        },
+                        {
+                            "text": "3",
+                            "callback_data": "\/calc_i##1393342467##3"
+                        },
+                        {
+                            "text": "-",
+                            "callback_data": "\/calc_i##1393342467##-"
+                        }
+                    ],
+                    [
+                        {
+                            "text": ".",
+                            "callback_data": "\/calc_i##1393342467##."
+                        },
+                        {
+                            "text": "0",
+                            "callback_data": "\/calc_i##1393342467##0"
+                        },
+                        {
+                            "text": "=",
+                            "callback_data": "\/calc_i##1393342467##="
+                        },
+                        {
+                            "text": "+",
+                            "callback_data": "\/calc_i##1393342467##+"
+                        }
+                    ]
+                ]
+            }
+        },
+        "text": "\/sudo json",
+        "entities": [
+            {
+                "offset": 0,
+                "length": 5,
+                "type": "bot_command"
+            }
+        ]
+    }
+}
+ref.reply_to_message_id= 17997
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\sudo.php(102): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(506): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-08 08:53:55  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message is too long
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804417347
+ref.message.message_id= 17998
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1615168431
+ref.message.reply_to_message.message_id= 17993
+ref.message.reply_to_message.from.id= 1489990155
+ref.message.reply_to_message.from.is_bot= true
+ref.message.reply_to_message.from.first_name= Fadhil Riyanto Bot
+ref.message.reply_to_message.from.username= Fadhil_riyanto_bot
+ref.message.reply_to_message.chat.id= 1393342467
+ref.message.reply_to_message.chat.first_name= Fadhil
+ref.message.reply_to_message.chat.last_name= Riyanto
+ref.message.reply_to_message.chat.username= fadhil_riyanto
+ref.message.reply_to_message.chat.type= private
+ref.message.reply_to_message.date= 1615168138
+ref.message.reply_to_message.text= This is a Keyboard Test
+ref.message.reply_to_message.reply_markup.inline_keyboard.0.0.text= del
+ref.message.reply_to_message.reply_markup.inline_keyboard.0.0.callback_data= /calc_i##1393342467##del
+ref.message.reply_to_message.reply_markup.inline_keyboard.0.1.text= ac
+ref.message.reply_to_message.reply_markup.inline_keyboard.0.1.callback_data= /calc_i##1393342467##ac
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.0.text= 7
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.0.callback_data= /calc_i##1393342467##7
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.1.text= 8
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.1.callback_data= /calc_i##1393342467##8
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.2.text= 9
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.2.callback_data= /calc_i##1393342467##9
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.3.text= /
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.3.callback_data= /calc_i##1393342467##/
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.0.text= 4
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.0.callback_data= /calc_i##1393342467##4
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.1.text= 5
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.1.callback_data= /calc_i##1393342467##5
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.2.text= 6
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.2.callback_data= /calc_i##1393342467##6
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.3.text= *
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.3.callback_data= /calc_i##1393342467##*
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.0.text= 1
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.0.callback_data= /calc_i##1393342467##1
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.1.text= 2
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.1.callback_data= /calc_i##1393342467##2
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.2.text= 3
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.2.callback_data= /calc_i##1393342467##3
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.3.text= -
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.3.callback_data= /calc_i##1393342467##-
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.0.text= .
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.0.callback_data= /calc_i##1393342467##.
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.1.text= 0
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.1.callback_data= /calc_i##1393342467##0
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.2.text= =
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.2.callback_data= /calc_i##1393342467##=
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.3.text= +
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.3.callback_data= /calc_i##1393342467##+
+ref.message.text= /sudo json
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= {
+    "update_id": 804417347,
+    "message": {
+        "message_id": 17998,
+        "from": {
+            "id": 1393342467,
+            "is_bot": false,
+            "first_name": "Fadhil",
+            "last_name": "Riyanto",
+            "username": "fadhil_riyanto",
+            "language_code": "ms"
+        },
+        "chat": {
+            "id": 1393342467,
+            "first_name": "Fadhil",
+            "last_name": "Riyanto",
+            "username": "fadhil_riyanto",
+            "type": "private"
+        },
+        "date": 1615168431,
+        "reply_to_message": {
+            "message_id": 17993,
+            "from": {
+                "id": 1489990155,
+                "is_bot": true,
+                "first_name": "Fadhil Riyanto Bot",
+                "username": "Fadhil_riyanto_bot"
+            },
+            "chat": {
+                "id": 1393342467,
+                "first_name": "Fadhil",
+                "last_name": "Riyanto",
+                "username": "fadhil_riyanto",
+                "type": "private"
+            },
+            "date": 1615168138,
+            "text": "This is a Keyboard Test",
+            "reply_markup": {
+                "inline_keyboard": [
+                    [
+                        {
+                            "text": "del",
+                            "callback_data": "\/calc_i##1393342467##del"
+                        },
+                        {
+                            "text": "ac",
+                            "callback_data": "\/calc_i##1393342467##ac"
+                        }
+                    ],
+                    [
+                        {
+                            "text": "7",
+                            "callback_data": "\/calc_i##1393342467##7"
+                        },
+                        {
+                            "text": "8",
+                            "callback_data": "\/calc_i##1393342467##8"
+                        },
+                        {
+                            "text": "9",
+                            "callback_data": "\/calc_i##1393342467##9"
+                        },
+                        {
+                            "text": "\/",
+                            "callback_data": "\/calc_i##1393342467##\/"
+                        }
+                    ],
+                    [
+                        {
+                            "text": "4",
+                            "callback_data": "\/calc_i##1393342467##4"
+                        },
+                        {
+                            "text": "5",
+                            "callback_data": "\/calc_i##1393342467##5"
+                        },
+                        {
+                            "text": "6",
+                            "callback_data": "\/calc_i##1393342467##6"
+                        },
+                        {
+                            "text": "*",
+                            "callback_data": "\/calc_i##1393342467##*"
+                        }
+                    ],
+                    [
+                        {
+                            "text": "1",
+                            "callback_data": "\/calc_i##1393342467##1"
+                        },
+                        {
+                            "text": "2",
+                            "callback_data": "\/calc_i##1393342467##2"
+                        },
+                        {
+                            "text": "3",
+                            "callback_data": "\/calc_i##1393342467##3"
+                        },
+                        {
+                            "text": "-",
+                            "callback_data": "\/calc_i##1393342467##-"
+                        }
+                    ],
+                    [
+                        {
+                            "text": ".",
+                            "callback_data": "\/calc_i##1393342467##."
+                        },
+                        {
+                            "text": "0",
+                            "callback_data": "\/calc_i##1393342467##0"
+                        },
+                        {
+                            "text": "=",
+                            "callback_data": "\/calc_i##1393342467##="
+                        },
+                        {
+                            "text": "+",
+                            "callback_data": "\/calc_i##1393342467##+"
+                        }
+                    ]
+                ]
+            }
+        },
+        "text": "\/sudo json",
+        "entities": [
+            {
+                "offset": 0,
+                "length": 5,
+                "type": "bot_command"
+            }
+        ]
+    }
+}
+ref.reply_to_message_id= 17998
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\sudo.php(102): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(500): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-08 08:55:25  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message is too long
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804417351
+ref.message.message_id= 18005
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1615168520
+ref.message.reply_to_message.message_id= 17993
+ref.message.reply_to_message.from.id= 1489990155
+ref.message.reply_to_message.from.is_bot= true
+ref.message.reply_to_message.from.first_name= Fadhil Riyanto Bot
+ref.message.reply_to_message.from.username= Fadhil_riyanto_bot
+ref.message.reply_to_message.chat.id= 1393342467
+ref.message.reply_to_message.chat.first_name= Fadhil
+ref.message.reply_to_message.chat.last_name= Riyanto
+ref.message.reply_to_message.chat.username= fadhil_riyanto
+ref.message.reply_to_message.chat.type= private
+ref.message.reply_to_message.date= 1615168138
+ref.message.reply_to_message.text= This is a Keyboard Test
+ref.message.reply_to_message.reply_markup.inline_keyboard.0.0.text= del
+ref.message.reply_to_message.reply_markup.inline_keyboard.0.0.callback_data= /calc_i##1393342467##del
+ref.message.reply_to_message.reply_markup.inline_keyboard.0.1.text= ac
+ref.message.reply_to_message.reply_markup.inline_keyboard.0.1.callback_data= /calc_i##1393342467##ac
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.0.text= 7
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.0.callback_data= /calc_i##1393342467##7
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.1.text= 8
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.1.callback_data= /calc_i##1393342467##8
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.2.text= 9
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.2.callback_data= /calc_i##1393342467##9
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.3.text= /
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.3.callback_data= /calc_i##1393342467##/
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.0.text= 4
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.0.callback_data= /calc_i##1393342467##4
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.1.text= 5
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.1.callback_data= /calc_i##1393342467##5
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.2.text= 6
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.2.callback_data= /calc_i##1393342467##6
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.3.text= *
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.3.callback_data= /calc_i##1393342467##*
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.0.text= 1
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.0.callback_data= /calc_i##1393342467##1
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.1.text= 2
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.1.callback_data= /calc_i##1393342467##2
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.2.text= 3
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.2.callback_data= /calc_i##1393342467##3
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.3.text= -
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.3.callback_data= /calc_i##1393342467##-
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.0.text= .
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.0.callback_data= /calc_i##1393342467##.
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.1.text= 0
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.1.callback_data= /calc_i##1393342467##0
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.2.text= =
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.2.callback_data= /calc_i##1393342467##=
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.3.text= +
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.3.callback_data= /calc_i##1393342467##+
+ref.message.text= /sudo json
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= {
+    "update_id": 804417351,
+    "message": {
+        "message_id": 18005,
+        "from": {
+            "id": 1393342467,
+            "is_bot": false,
+            "first_name": "Fadhil",
+            "last_name": "Riyanto",
+            "username": "fadhil_riyanto",
+            "language_code": "ms"
+        },
+        "chat": {
+            "id": 1393342467,
+            "first_name": "Fadhil",
+            "last_name": "Riyanto",
+            "username": "fadhil_riyanto",
+            "type": "private"
+        },
+        "date": 1615168520,
+        "reply_to_message": {
+            "message_id": 17993,
+            "from": {
+                "id": 1489990155,
+                "is_bot": true,
+                "first_name": "Fadhil Riyanto Bot",
+                "username": "Fadhil_riyanto_bot"
+            },
+            "chat": {
+                "id": 1393342467,
+                "first_name": "Fadhil",
+                "last_name": "Riyanto",
+                "username": "fadhil_riyanto",
+                "type": "private"
+            },
+            "date": 1615168138,
+            "text": "This is a Keyboard Test",
+            "reply_markup": {
+                "inline_keyboard": [
+                    [
+                        {
+                            "text": "del",
+                            "callback_data": "\/calc_i##1393342467##del"
+                        },
+                        {
+                            "text": "ac",
+                            "callback_data": "\/calc_i##1393342467##ac"
+                        }
+                    ],
+                    [
+                        {
+                            "text": "7",
+                            "callback_data": "\/calc_i##1393342467##7"
+                        },
+                        {
+                            "text": "8",
+                            "callback_data": "\/calc_i##1393342467##8"
+                        },
+                        {
+                            "text": "9",
+                            "callback_data": "\/calc_i##1393342467##9"
+                        },
+                        {
+                            "text": "\/",
+                            "callback_data": "\/calc_i##1393342467##\/"
+                        }
+                    ],
+                    [
+                        {
+                            "text": "4",
+                            "callback_data": "\/calc_i##1393342467##4"
+                        },
+                        {
+                            "text": "5",
+                            "callback_data": "\/calc_i##1393342467##5"
+                        },
+                        {
+                            "text": "6",
+                            "callback_data": "\/calc_i##1393342467##6"
+                        },
+                        {
+                            "text": "*",
+                            "callback_data": "\/calc_i##1393342467##*"
+                        }
+                    ],
+                    [
+                        {
+                            "text": "1",
+                            "callback_data": "\/calc_i##1393342467##1"
+                        },
+                        {
+                            "text": "2",
+                            "callback_data": "\/calc_i##1393342467##2"
+                        },
+                        {
+                            "text": "3",
+                            "callback_data": "\/calc_i##1393342467##3"
+                        },
+                        {
+                            "text": "-",
+                            "callback_data": "\/calc_i##1393342467##-"
+                        }
+                    ],
+                    [
+                        {
+                            "text": ".",
+                            "callback_data": "\/calc_i##1393342467##."
+                        },
+                        {
+                            "text": "0",
+                            "callback_data": "\/calc_i##1393342467##0"
+                        },
+                        {
+                            "text": "=",
+                            "callback_data": "\/calc_i##1393342467##="
+                        },
+                        {
+                            "text": "+",
+                            "callback_data": "\/calc_i##1393342467##+"
+                        }
+                    ]
+                ]
+            }
+        },
+        "text": "\/sudo json",
+        "entities": [
+            {
+                "offset": 0,
+                "length": 5,
+                "type": "bot_command"
+            }
+        ]
+    }
+}
+ref.reply_to_message_id= 18005
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\sudo.php(102): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(502): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-08 09:10:41  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message is too long
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804417352
+ref.message.message_id= 18006
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1615169437
+ref.message.reply_to_message.message_id= 17993
+ref.message.reply_to_message.from.id= 1489990155
+ref.message.reply_to_message.from.is_bot= true
+ref.message.reply_to_message.from.first_name= Fadhil Riyanto Bot
+ref.message.reply_to_message.from.username= Fadhil_riyanto_bot
+ref.message.reply_to_message.chat.id= 1393342467
+ref.message.reply_to_message.chat.first_name= Fadhil
+ref.message.reply_to_message.chat.last_name= Riyanto
+ref.message.reply_to_message.chat.username= fadhil_riyanto
+ref.message.reply_to_message.chat.type= private
+ref.message.reply_to_message.date= 1615168138
+ref.message.reply_to_message.text= This is a Keyboard Test
+ref.message.reply_to_message.reply_markup.inline_keyboard.0.0.text= del
+ref.message.reply_to_message.reply_markup.inline_keyboard.0.0.callback_data= /calc_i##1393342467##del
+ref.message.reply_to_message.reply_markup.inline_keyboard.0.1.text= ac
+ref.message.reply_to_message.reply_markup.inline_keyboard.0.1.callback_data= /calc_i##1393342467##ac
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.0.text= 7
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.0.callback_data= /calc_i##1393342467##7
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.1.text= 8
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.1.callback_data= /calc_i##1393342467##8
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.2.text= 9
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.2.callback_data= /calc_i##1393342467##9
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.3.text= /
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.3.callback_data= /calc_i##1393342467##/
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.0.text= 4
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.0.callback_data= /calc_i##1393342467##4
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.1.text= 5
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.1.callback_data= /calc_i##1393342467##5
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.2.text= 6
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.2.callback_data= /calc_i##1393342467##6
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.3.text= *
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.3.callback_data= /calc_i##1393342467##*
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.0.text= 1
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.0.callback_data= /calc_i##1393342467##1
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.1.text= 2
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.1.callback_data= /calc_i##1393342467##2
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.2.text= 3
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.2.callback_data= /calc_i##1393342467##3
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.3.text= -
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.3.callback_data= /calc_i##1393342467##-
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.0.text= .
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.0.callback_data= /calc_i##1393342467##.
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.1.text= 0
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.1.callback_data= /calc_i##1393342467##0
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.2.text= =
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.2.callback_data= /calc_i##1393342467##=
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.3.text= +
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.3.callback_data= /calc_i##1393342467##+
+ref.message.text= /sudo json
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= {
+    "update_id": 804417352,
+    "message": {
+        "message_id": 18006,
+        "from": {
+            "id": 1393342467,
+            "is_bot": false,
+            "first_name": "Fadhil",
+            "last_name": "Riyanto",
+            "username": "fadhil_riyanto",
+            "language_code": "ms"
+        },
+        "chat": {
+            "id": 1393342467,
+            "first_name": "Fadhil",
+            "last_name": "Riyanto",
+            "username": "fadhil_riyanto",
+            "type": "private"
+        },
+        "date": 1615169437,
+        "reply_to_message": {
+            "message_id": 17993,
+            "from": {
+                "id": 1489990155,
+                "is_bot": true,
+                "first_name": "Fadhil Riyanto Bot",
+                "username": "Fadhil_riyanto_bot"
+            },
+            "chat": {
+                "id": 1393342467,
+                "first_name": "Fadhil",
+                "last_name": "Riyanto",
+                "username": "fadhil_riyanto",
+                "type": "private"
+            },
+            "date": 1615168138,
+            "text": "This is a Keyboard Test",
+            "reply_markup": {
+                "inline_keyboard": [
+                    [
+                        {
+                            "text": "del",
+                            "callback_data": "\/calc_i##1393342467##del"
+                        },
+                        {
+                            "text": "ac",
+                            "callback_data": "\/calc_i##1393342467##ac"
+                        }
+                    ],
+                    [
+                        {
+                            "text": "7",
+                            "callback_data": "\/calc_i##1393342467##7"
+                        },
+                        {
+                            "text": "8",
+                            "callback_data": "\/calc_i##1393342467##8"
+                        },
+                        {
+                            "text": "9",
+                            "callback_data": "\/calc_i##1393342467##9"
+                        },
+                        {
+                            "text": "\/",
+                            "callback_data": "\/calc_i##1393342467##\/"
+                        }
+                    ],
+                    [
+                        {
+                            "text": "4",
+                            "callback_data": "\/calc_i##1393342467##4"
+                        },
+                        {
+                            "text": "5",
+                            "callback_data": "\/calc_i##1393342467##5"
+                        },
+                        {
+                            "text": "6",
+                            "callback_data": "\/calc_i##1393342467##6"
+                        },
+                        {
+                            "text": "*",
+                            "callback_data": "\/calc_i##1393342467##*"
+                        }
+                    ],
+                    [
+                        {
+                            "text": "1",
+                            "callback_data": "\/calc_i##1393342467##1"
+                        },
+                        {
+                            "text": "2",
+                            "callback_data": "\/calc_i##1393342467##2"
+                        },
+                        {
+                            "text": "3",
+                            "callback_data": "\/calc_i##1393342467##3"
+                        },
+                        {
+                            "text": "-",
+                            "callback_data": "\/calc_i##1393342467##-"
+                        }
+                    ],
+                    [
+                        {
+                            "text": ".",
+                            "callback_data": "\/calc_i##1393342467##."
+                        },
+                        {
+                            "text": "0",
+                            "callback_data": "\/calc_i##1393342467##0"
+                        },
+                        {
+                            "text": "=",
+                            "callback_data": "\/calc_i##1393342467##="
+                        },
+                        {
+                            "text": "+",
+                            "callback_data": "\/calc_i##1393342467##+"
+                        }
+                    ]
+                ]
+            }
+        },
+        "text": "\/sudo json",
+        "entities": [
+            {
+                "offset": 0,
+                "length": 5,
+                "type": "bot_command"
+            }
+        ]
+    }
+}
+ref.reply_to_message_id= 18006
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\sudo.php(103): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(502): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-08 09:11:05  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message is too long
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804417353
+ref.message.message_id= 18007
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1615169461
+ref.message.reply_to_message.message_id= 17993
+ref.message.reply_to_message.from.id= 1489990155
+ref.message.reply_to_message.from.is_bot= true
+ref.message.reply_to_message.from.first_name= Fadhil Riyanto Bot
+ref.message.reply_to_message.from.username= Fadhil_riyanto_bot
+ref.message.reply_to_message.chat.id= 1393342467
+ref.message.reply_to_message.chat.first_name= Fadhil
+ref.message.reply_to_message.chat.last_name= Riyanto
+ref.message.reply_to_message.chat.username= fadhil_riyanto
+ref.message.reply_to_message.chat.type= private
+ref.message.reply_to_message.date= 1615168138
+ref.message.reply_to_message.text= This is a Keyboard Test
+ref.message.reply_to_message.reply_markup.inline_keyboard.0.0.text= del
+ref.message.reply_to_message.reply_markup.inline_keyboard.0.0.callback_data= /calc_i##1393342467##del
+ref.message.reply_to_message.reply_markup.inline_keyboard.0.1.text= ac
+ref.message.reply_to_message.reply_markup.inline_keyboard.0.1.callback_data= /calc_i##1393342467##ac
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.0.text= 7
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.0.callback_data= /calc_i##1393342467##7
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.1.text= 8
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.1.callback_data= /calc_i##1393342467##8
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.2.text= 9
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.2.callback_data= /calc_i##1393342467##9
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.3.text= /
+ref.message.reply_to_message.reply_markup.inline_keyboard.1.3.callback_data= /calc_i##1393342467##/
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.0.text= 4
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.0.callback_data= /calc_i##1393342467##4
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.1.text= 5
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.1.callback_data= /calc_i##1393342467##5
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.2.text= 6
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.2.callback_data= /calc_i##1393342467##6
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.3.text= *
+ref.message.reply_to_message.reply_markup.inline_keyboard.2.3.callback_data= /calc_i##1393342467##*
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.0.text= 1
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.0.callback_data= /calc_i##1393342467##1
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.1.text= 2
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.1.callback_data= /calc_i##1393342467##2
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.2.text= 3
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.2.callback_data= /calc_i##1393342467##3
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.3.text= -
+ref.message.reply_to_message.reply_markup.inline_keyboard.3.3.callback_data= /calc_i##1393342467##-
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.0.text= .
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.0.callback_data= /calc_i##1393342467##.
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.1.text= 0
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.1.callback_data= /calc_i##1393342467##0
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.2.text= =
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.2.callback_data= /calc_i##1393342467##=
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.3.text= +
+ref.message.reply_to_message.reply_markup.inline_keyboard.4.3.callback_data= /calc_i##1393342467##+
+ref.message.text= /sudo json
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= {
+    "update_id": 804417353,
+    "message": {
+        "message_id": 18007,
+        "from": {
+            "id": 1393342467,
+            "is_bot": false,
+            "first_name": "Fadhil",
+            "last_name": "Riyanto",
+            "username": "fadhil_riyanto",
+            "language_code": "ms"
+        },
+        "chat": {
+            "id": 1393342467,
+            "first_name": "Fadhil",
+            "last_name": "Riyanto",
+            "username": "fadhil_riyanto",
+            "type": "private"
+        },
+        "date": 1615169461,
+        "reply_to_message": {
+            "message_id": 17993,
+            "from": {
+                "id": 1489990155,
+                "is_bot": true,
+                "first_name": "Fadhil Riyanto Bot",
+                "username": "Fadhil_riyanto_bot"
+            },
+            "chat": {
+                "id": 1393342467,
+                "first_name": "Fadhil",
+                "last_name": "Riyanto",
+                "username": "fadhil_riyanto",
+                "type": "private"
+            },
+            "date": 1615168138,
+            "text": "This is a Keyboard Test",
+            "reply_markup": {
+                "inline_keyboard": [
+                    [
+                        {
+                            "text": "del",
+                            "callback_data": "\/calc_i##1393342467##del"
+                        },
+                        {
+                            "text": "ac",
+                            "callback_data": "\/calc_i##1393342467##ac"
+                        }
+                    ],
+                    [
+                        {
+                            "text": "7",
+                            "callback_data": "\/calc_i##1393342467##7"
+                        },
+                        {
+                            "text": "8",
+                            "callback_data": "\/calc_i##1393342467##8"
+                        },
+                        {
+                            "text": "9",
+                            "callback_data": "\/calc_i##1393342467##9"
+                        },
+                        {
+                            "text": "\/",
+                            "callback_data": "\/calc_i##1393342467##\/"
+                        }
+                    ],
+                    [
+                        {
+                            "text": "4",
+                            "callback_data": "\/calc_i##1393342467##4"
+                        },
+                        {
+                            "text": "5",
+                            "callback_data": "\/calc_i##1393342467##5"
+                        },
+                        {
+                            "text": "6",
+                            "callback_data": "\/calc_i##1393342467##6"
+                        },
+                        {
+                            "text": "*",
+                            "callback_data": "\/calc_i##1393342467##*"
+                        }
+                    ],
+                    [
+                        {
+                            "text": "1",
+                            "callback_data": "\/calc_i##1393342467##1"
+                        },
+                        {
+                            "text": "2",
+                            "callback_data": "\/calc_i##1393342467##2"
+                        },
+                        {
+                            "text": "3",
+                            "callback_data": "\/calc_i##1393342467##3"
+                        },
+                        {
+                            "text": "-",
+                            "callback_data": "\/calc_i##1393342467##-"
+                        }
+                    ],
+                    [
+                        {
+                            "text": ".",
+                            "callback_data": "\/calc_i##1393342467##."
+                        },
+                        {
+                            "text": "0",
+                            "callback_data": "\/calc_i##1393342467##0"
+                        },
+                        {
+                            "text": "=",
+                            "callback_data": "\/calc_i##1393342467##="
+                        },
+                        {
+                            "text": "+",
+                            "callback_data": "\/calc_i##1393342467##+"
+                        }
+                    ]
+                ]
+            }
+        },
+        "text": "\/sudo json",
+        "entities": [
+            {
+                "offset": 0,
+                "length": 5,
+                "type": "bot_command"
+            }
+        ]
+    }
+}
+ref.reply_to_message_id= 18007
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\sudo.php(103): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(502): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-08 09:29:34  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: bot is not a member of the supergroup chat
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804417355
+ref.message.message_id= 134
+ref.message.from.id= 1489990155
+ref.message.from.is_bot= true
+ref.message.from.first_name= Fadhil Riyanto Bot
+ref.message.from.username= Fadhil_riyanto_bot
+ref.message.chat.id= -1001311491747
+ref.message.chat.title= Spam Link here
+ref.message.chat.type= supergroup
+ref.message.date= 1615170570
+ref.message.left_chat_participant.id= 1489990155
+ref.message.left_chat_participant.is_bot= true
+ref.message.left_chat_participant.first_name= Fadhil Riyanto Bot
+ref.message.left_chat_participant.username= Fadhil_riyanto_bot
+ref.message.left_chat_member.id= 1489990155
+ref.message.left_chat_member.is_bot= true
+ref.message.left_chat_member.first_name= Fadhil Riyanto Bot
+ref.message.left_chat_member.username= Fadhil_riyanto_bot
+
+
+[ref]
+ref.text= Maaf, saya diprogram oleh pemilik saya untuk tidak dimasukkan ke grup secara sembarangan oleh orang
+
+Jika anda masih tetap ingin memasukkan saya ke grup. silahkan copy angka ini <pre>-1001311491747</pre> lalu pm atau kirimkan ke pembuat bot ini, yaitu @fadhil_riyanto
+
+kenapa saya membuat grup proteksi untuk bot ini? dikarnakan untuk menghemat jumlah hit dan bandwith server
+ref.reply_to_message_id= 134
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(254): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-03-08 09:29:35  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: bot is not a member of the supergroup chat
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804417355
+ref.message.message_id= 134
+ref.message.from.id= 1489990155
+ref.message.from.is_bot= true
+ref.message.from.first_name= Fadhil Riyanto Bot
+ref.message.from.username= Fadhil_riyanto_bot
+ref.message.chat.id= -1001311491747
+ref.message.chat.title= Spam Link here
+ref.message.chat.type= supergroup
+ref.message.date= 1615170570
+ref.message.left_chat_participant.id= 1489990155
+ref.message.left_chat_participant.is_bot= true
+ref.message.left_chat_participant.first_name= Fadhil Riyanto Bot
+ref.message.left_chat_participant.username= Fadhil_riyanto_bot
+ref.message.left_chat_member.id= 1489990155
+ref.message.left_chat_member.is_bot= true
+ref.message.left_chat_member.first_name= Fadhil Riyanto Bot
+ref.message.left_chat_member.username= Fadhil_riyanto_bot
+
+
+[ref]
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(156): Telegram->endpoint('leaveChat', Array)
+#3 C:\bot telegram\hook.php(256): Telegram->leaveChat(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-03-08 09:54:30  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804417356
+ref.message.message_id= 18008
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1615172067
+ref.message.text= /help
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Selamat datang di buku panduan bot ini
+Anda dapat membaca panduan di bawah ini, dengan mengklik sebuah tombol dibawah.
+Anda juga dapat mengajukan pertanyaan apa pun di Support group, harap diperhatikan bahwa Anda hanya dapat bertanya setelah membaca panduan, dan hanya bertanya tentang bot ini!
+
+Perintah umum adalah:
+- /start: Mulai bot
+- /help: Berikan pesan ini
+- /help_admin: melihat semua command untuk group management
+
+Semua perintah hanya bekerja dengan / (garis miring)
+ref.message_id= 
+ref.reply_markup= {"inline_keyboard":[[{"text":"perkakas","callback_data":"\/callback_q@fadhil_riyanto_bot perkakas"},{"text":"hash","callback_data":"\/callback_q@fadhil_riyanto_bot hash"},{"text":"hiburan","callback_data":"\/callback_q@fadhil_riyanto_bot hiburan"}],[{"text":"dev tools","callback_data":"\/callback_q@fadhil_riyanto_bot dev_tools"},{"text":"anime","callback_data":"\/callback_q@fadhil_riyanto_bot anime"},{"text":"bot ini","callback_data":"\/callback_q@fadhil_riyanto_bot bot_ini"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(192): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\command\help.php(32): Telegram->editMessageText(Array)
+#4 C:\bot telegram\hook.php(476): require('C:\\bot telegram...')
+#5 {main}
+

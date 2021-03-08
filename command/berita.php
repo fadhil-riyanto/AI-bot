@@ -27,7 +27,7 @@ if ($randomintberita == 1) {
     $reply = $reply_tempo;
 }
 $option = array(
-    array($telegram->buildInlineKeyBoardButton("refres", $url = "", $callback_data = '/berita_i@fadhil_riyanto_bot'))
+    array($telegram->buildInlineKeyBoardButton("refresh", $url = "", $callback_data = '/berita_i@fadhil_riyanto_bot'))
 );
 $keyb = $telegram->buildInlineKeyBoard($option);
 $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_markup' => $keyb, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => false);
