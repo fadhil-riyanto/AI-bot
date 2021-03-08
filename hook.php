@@ -351,21 +351,39 @@ require __DIR__ . '/include/leaveuser_system.php';
 // $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
 // $telegram->sendMessage($content);
 if ('/start' == $adanParse[0] || '/start' . USERNAME_BOT . '' == $adanParse[0]) {
-	if (isset($adanParse[1])) {
-		$explodeparse_pastebin = explode('_', $adanParse[1]);
-		if ($adanParse[1] == 'help_admin') {
-			require __DIR__ . '/admin_help/help_admin.php';
-			exit;
-		} elseif ($adanParse[1] == 'help') {
-			require __DIR__ . '/command/help.php';
-			exit;
-		} elseif ($explodeparse_pastebin[0] == 'paste') {
-			require __DIR__ . '/include/paste_resolve.php';
-			exit;
-		}
-	}
+
 	if (detect_grup() == true) {
 	} else {
+		//track user
+		$db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
+		$db->where("userid", $userID);
+		$user = $db->getOne("members");
+		if ($user['userid'] == null) {
+			//insert
+			$data = array(
+				"userid" => $userID,
+				"username" =>  $usernameBelumdiparse,
+				"first_name" => $namaPertama,
+				"lastname" => $namaTerakhir
+			);
+			$id = $db->insert('members', $data);
+		} else {
+		}
+
+
+		if (isset($adanParse[1])) {
+			$explodeparse_pastebin = explode('_', $adanParse[1]);
+			if ($adanParse[1] == 'help_admin') {
+				require __DIR__ . '/admin_help/help_admin.php';
+				exit;
+			} elseif ($adanParse[1] == 'help') {
+				require __DIR__ . '/command/help.php';
+				exit;
+			} elseif ($explodeparse_pastebin[0] == 'paste') {
+				require __DIR__ . '/include/paste_resolve.php';
+				exit;
+			}
+		}
 		require __DIR__ . '/command/start.php';
 	}
 	exit;
