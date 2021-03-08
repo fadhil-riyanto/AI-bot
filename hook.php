@@ -597,7 +597,7 @@ if ('/start' == $adanParse[0] || '/start' . USERNAME_BOT . '' == $adanParse[0]) 
 } elseif ($text == null) {
 	exit;
 } elseif (
-	$text === '/corona' || $text === 'info corona' || $text === 'info corona terkini' || $text === 'info corona sekarang' ||
+	$text === '/corona' || $text === '/cv19' || $text === 'info corona' || $text === 'info corona terkini' || $text === 'info corona sekarang' ||
 	$text === 'info covid sekarang' || $text === 'info covid19 sekarang' || $text === 'info covid 19 sekarang' || $text === 'info covid19 terkini' ||
 	$text === 'info covid 19 terkini' || $text === 'info covid 19 diindonesia' || $text === 'info covid19 diindonesia' || $text === 'info covid 19 di indonesia' ||
 	$text === 'info covid19 di indonesia' || $text === 'update corona gimana?' || $text === 'update corona gimana' ||
