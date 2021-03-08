@@ -352,10 +352,16 @@ require __DIR__ . '/include/leaveuser_system.php';
 // $telegram->sendMessage($content);
 if ('/start' == $adanParse[0] || '/start' . USERNAME_BOT . '' == $adanParse[0]) {
 	if (isset($adanParse[1])) {
+		$explodeparse_pastebin = explode('_', $adanParse[1]);
 		if ($adanParse[1] == 'help_admin') {
 			require __DIR__ . '/admin_help/help_admin.php';
+			exit;
 		} elseif ($adanParse[1] == 'help') {
 			require __DIR__ . '/command/help.php';
+			exit;
+		} elseif ($explodeparse_pastebin[0] == 'paste') {
+			require __DIR__ . '/include/paste_resolve.php';
+			exit;
 		}
 	}
 	if (detect_grup() == true) {
