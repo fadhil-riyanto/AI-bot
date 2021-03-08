@@ -390,8 +390,8 @@ if ('/start' == $adanParse[0] || '/start' . USERNAME_BOT . '' == $adanParse[0]) 
 } elseif ('/pantun' == $adanParse[0] || '/pantun' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/pantun.php';
 	exit;
-} elseif ('/calc' == $adanParse[0] || '/calc' . USERNAME_BOT . '' == $adanParse[0]) {
-	require __DIR__ . '/apps/calculator/calc.php';
+} elseif ('/carbon' == $adanParse[0] || '/carbon' . USERNAME_BOT . '' == $adanParse[0]) {
+	require __DIR__ . '/command/carbon.php';
 	exit;
 } elseif ('/calc_i' == $adanParse[0] || '/calc_i' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/apps/calculator/calc_i.php';
