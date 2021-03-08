@@ -7,6 +7,10 @@ if ($adanParse[1] == null) {
     $telegram->sendMessage($content);
     exit;
 } else {
+    $reply = 'Tunggu sebentar, kami sedang meng-generate image (sync)';
+    $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+    $editmsg = $telegram->sendMessage($content);
+
     $data = array("backgroundColor" => "rgba(144, 19, 254, 100)", "code" => urlencode(htmlspecialchars_decode($udahDiparse)), "theme" => "dracula");
     $data_string = json_encode($data);
     $ch = curl_init('https://carbonnowsh.herokuapp.com');
@@ -38,5 +42,8 @@ if ($adanParse[1] == null) {
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
     curl_setopt($ch, CURLOPT_POSTFIELDS, $post_fields);
     $output = curl_exec($ch);
+
+    $content = array('chat_id' => $chat_id, 'message_id' => $editmsg['result']['message_id']);
+    $telegram->editMessageText($content);
     exit;
 }
