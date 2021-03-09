@@ -393,6 +393,9 @@ if ('/start' == $adanParse[0] || '/start' . USERNAME_BOT . '' == $adanParse[0]) 
 } elseif ('/carbon' == $adanParse[0] || '/carbon' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/carbon.php';
 	exit;
+} elseif ('/resi' == $adanParse[0] || '/resi' . USERNAME_BOT . '' == $adanParse[0]) {
+	require __DIR__ . '/command/resi.php';
+	exit;
 } elseif ('/calc_i' == $adanParse[0] || '/calc_i' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/apps/calculator/calc_i.php';
 	exit;
