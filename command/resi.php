@@ -13,6 +13,12 @@ if ($adanParse[1] == null) {
 } else {
     preg_match('/([a-zA-Z_+\- ]+)\s([a-zA-Z0-9_+\- ]+)/i', $udahDiparse, $hasilresi);
     $resichecker = resi_chek_apakah_tersedia($strorange, $hasilresi[1], $hasilresi[2]);
+    if ($resichecker == 'error') {
+        $reply = 'maaf ada masalah sistem, mohon hubungi ' . PUMBUAT_BOT . ' sekarang juga';
+        $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+        $telegram->sendMessage($content);
+        exit;
+    }
 
     if ($resichecker == 'courier null') {
         $reply = 'maaf, expedisi tidak ditemukan';

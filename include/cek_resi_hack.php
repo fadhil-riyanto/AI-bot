@@ -45,7 +45,7 @@ function resi_chek_apakah_tersedia($file_json, $kurir, $awb)
 {
     $getjsonapis = file_get_contents($file_json);
     $getjsonapis_dec = json_decode($getjsonapis);
-    if (count($getjsonapis_dec == 0)) {
+    if (count($getjsonapis_dec) == 0) {
         return 'error';
     }
     //coba 1
