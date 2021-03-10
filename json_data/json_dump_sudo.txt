@@ -1,7 +1,7 @@
 {
-    "update_id": 804420776,
+    "update_id": 804421352,
     "message": {
-        "message_id": 45014,
+        "message_id": 45713,
         "from": {
             "id": 1393342467,
             "is_bot": false,
@@ -16,9 +16,9 @@
             "username": "scriptiseng",
             "type": "supergroup"
         },
-        "date": 1615363983,
+        "date": 1615386753,
         "reply_to_message": {
-            "message_id": 45013,
+            "message_id": 45712,
             "from": {
                 "id": 1393342467,
                 "is_bot": false,
@@ -33,28 +33,13 @@
                 "username": "scriptiseng",
                 "type": "supergroup"
             },
-            "date": 1615363778,
-            "photo": [
+            "date": 1615386741,
+            "text": "\/sudo json tes \ud83d\ude02\ud83d\ude02\ud83d\ude02\ud83d\ude18\ud83d\ude18\ud83e\udd23\ud83e\udd23\ud83e\udd23",
+            "entities": [
                 {
-                    "file_id": "AgACAgUAAx0CSBQOygACr9VgSH7CL6UHFPe-nbjsafUqoXdo1gACMqwxG4pBQFZMgGku5c4rAAEIs2JxdAADAQADAgADbQADS-YAAh4E",
-                    "file_unique_id": "AQADCLNicXQAA0vmAAI",
-                    "file_size": 11288,
-                    "width": 320,
-                    "height": 165
-                },
-                {
-                    "file_id": "AgACAgUAAx0CSBQOygACr9VgSH7CL6UHFPe-nbjsafUqoXdo1gACMqwxG4pBQFZMgGku5c4rAAEIs2JxdAADAQADAgADeAADTOYAAh4E",
-                    "file_unique_id": "AQADCLNicXQAA0zmAAI",
-                    "file_size": 47070,
-                    "width": 800,
-                    "height": 413
-                },
-                {
-                    "file_id": "AgACAgUAAx0CSBQOygACr9VgSH7CL6UHFPe-nbjsafUqoXdo1gACMqwxG4pBQFZMgGku5c4rAAEIs2JxdAADAQADAgADeQADTeYAAh4E",
-                    "file_unique_id": "AQADCLNicXQAA03mAAI",
-                    "file_size": 78106,
-                    "width": 1280,
-                    "height": 661
+                    "offset": 0,
+                    "length": 5,
+                    "type": "bot_command"
                 }
             ]
         },
