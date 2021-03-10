@@ -458,11 +458,7 @@ if ('/start' == $adanParse[0] || '/start' . USERNAME_BOT . '' == $adanParse[0]) 
 } elseif ('/chapcha_i' == $adanParse[0] || '/chapcha_i' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/chapcha_i.php';
 	exit;
-} elseif (
-	'/trs' == $adanParse[0] || '/trs' . USERNAME_BOT . '' == $adanParse[0] ||
-	'/trans' == $adanParse[0] || '/trans' . USERNAME_BOT . '' == $adanParse[0] ||
-	'/tr' == $adanParse[0] || '/tr' . USERNAME_BOT . '' == $adanParse[0]
-) {
+} elseif ('/trs' == $adanParse[0] || '/trs' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/trs.php';
 	exit;
 } elseif (
