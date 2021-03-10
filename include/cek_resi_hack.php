@@ -81,4 +81,4 @@ function resi_chek_apakah_tersedia($file_json, $kurir, $awb)
     }
 }
 
-echo resi_chek_apakah_tersedia('api_list.json', 'sicepat', '000482798704');
+//echo resi_chek_apakah_tersedia('api_list.json', 'sicepat', '000482798704');

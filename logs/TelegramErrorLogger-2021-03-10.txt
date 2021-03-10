@@ -1,0 +1,2359 @@
+============[Date]============
+[ 2021-03-10 13:25:31  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: strings must be encoded in UTF-8
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804420569
+ref.message.message_id= 18451
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1615357529
+ref.message.text= /resi pos 18374204072
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 📦 Ekspedisi Pos Indonesia
+
+📮 Status
+├ Ybs - (YBS) Yang Bersangkutan
+├ 2021-03-08 16:43:57
+└ DELIVERED
+
+📃 Resi
+├ 18374204072
+└ Service: POS KILAT KHUSUS
+
+💁🏼 Pengirim
+├ CHELSEA SHOP
+└ MALANG
+
+🎯 Penerima
+🚧 POD Detail
+
+⏰ 2021-03-08 16:43:57
+└ Selesai Antar Di Loceret
+Diterima Oleh Diana
+
+⏰ 2021-03-08 15:43:44
+└ Proses Antar Di Loceret
+
+⏰ 2021-03-07 08:07:23
+└ Diteruskan Ke Hub Loceret
+
+⏰ 2021-03-06 21:38:42
+└ Tiba Di Kantor Antaran Nganjuk
+
+⏰ 2021-03-05 20:40:16
+└ Diteruskan Ke Kantor Antaran Nganjuk
+
+⏰ 2021-03-05 17:33:43
+└ Tiba Di Hub Malang
+
+⏰ 2021-03-05 16:56:01
+└ Diteruskan Ke Hub Malang
+
+⏰ 2021-03-05 13:30:02
+└ - Barcode : 18374204072
+- Penerimaan Di Loket : Jaya Abadi 1��kantor Pos Jaya Abadi 1 65136c5
+- Pengirim : Chelsea Shop
+ ��malang
+- Penerima : Diana Agustina
+ ��kab. Nganjuk
+- Produk : Paket Kilat Khusus
+ref.reply_to_message_id= 18451
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\resi.php(79): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(397): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-10 13:25:50  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: strings must be encoded in UTF-8
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804420570
+ref.message.message_id= 18452
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1615357550
+ref.message.text= /resi pos 18374204072
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 📦 Ekspedisi Pos Indonesia
+
+📮 Status
+├ Ybs - (YBS) Yang Bersangkutan
+├ 2021-03-08 16:43:57
+└ DELIVERED
+
+📃 Resi
+├ 18374204072
+└ Service: POS KILAT KHUSUS
+
+💁🏼 Pengirim
+├ CHELSEA SHOP
+└ MALANG
+
+🎯 Penerima
+🚧 POD Detail
+
+⏰ 2021-03-08 16:43:57
+└ Selesai Antar Di Loceret
+Diterima Oleh Diana
+
+⏰ 2021-03-08 15:43:44
+└ Proses Antar Di Loceret
+
+⏰ 2021-03-07 08:07:23
+└ Diteruskan Ke Hub Loceret
+
+⏰ 2021-03-06 21:38:42
+└ Tiba Di Kantor Antaran Nganjuk
+
+⏰ 2021-03-05 20:40:16
+└ Diteruskan Ke Kantor Antaran Nganjuk
+
+⏰ 2021-03-05 17:33:43
+└ Tiba Di Hub Malang
+
+⏰ 2021-03-05 16:56:01
+└ Diteruskan Ke Hub Malang
+
+⏰ 2021-03-05 13:30:02
+└ - Barcode : 18374204072
+- Penerimaan Di Loket : Jaya Abadi 1��kantor Pos Jaya Abadi 1 65136c5
+- Pengirim : Chelsea Shop
+ ��malang
+- Penerima : Diana Agustina
+ ��kab. Nganjuk
+- Produk : Paket Kilat Khusus
+ref.reply_to_message_id= 18452
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\resi.php(79): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(397): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-10 13:31:32  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: strings must be encoded in UTF-8
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804420584
+ref.message.message_id= 18457
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1615357891
+ref.message.text= /resi pos 18374204072
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 📦 Ekspedisi Pos Indonesia
+
+📮 Status
+├ Ybs - (YBS) Yang Bersangkutan
+├ 2021-03-08 16:43:57
+└ DELIVERED
+
+📃 Resi
+├ 18374204072
+└ Service: POS KILAT KHUSUS
+
+💁🏼 Pengirim
+├ CHELSEA SHOP
+└ MALANG
+
+🎯 Penerima
+├ DIANA AGUSTINA
+└ DUSUN MUSU RT 02 KAB. NGANJUK
+
+🚧 POD Detail
+
+⏰ 2021-03-08 16:43:57
+└ Selesai Antar Di Loceret
+Diterima Oleh Diana
+
+⏰ 2021-03-08 15:43:44
+└ Proses Antar Di Loceret
+
+⏰ 2021-03-07 08:07:23
+└ Diteruskan Ke Hub Loceret
+
+⏰ 2021-03-06 21:38:42
+└ Tiba Di Kantor Antaran Nganjuk
+
+⏰ 2021-03-05 20:40:16
+└ Diteruskan Ke Kantor Antaran Nganjuk
+
+⏰ 2021-03-05 17:33:43
+└ Tiba Di Hub Malang
+
+⏰ 2021-03-05 16:56:01
+└ Diteruskan Ke Hub Malang
+
+⏰ 2021-03-05 13:30:02
+└ - Barcode : 18374204072
+- Penerimaan Di Loket : Jaya Abadi 1��kantor Pos Jaya Abadi 1 65136c5
+- Pengirim : Chelsea Shop
+ ��malang
+- Penerima : Diana Agustina
+ ��kab. Nganjuk
+- Produk : Paket Kilat Khusus
+ref.reply_to_message_id= 18457
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\resi.php(79): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(397): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-10 13:46:05  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: strings must be encoded in UTF-8
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804420635
+ref.message.message_id= 18460
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1615358764
+ref.message.text= /resi pos 18374204072
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 📦 Ekspedisi Pos Indonesia
+
+📮 Status
+├ Ybs - (YBS) Yang Bersangkutan
+├ 2021-03-08 16:43:57
+└ DELIVERED
+
+📃 Resi
+├ 18374204072
+└ Service: POS KILAT KHUSUS
+
+💁🏼 Pengirim
+├ CHELSEA SHOP
+└ MALANG
+
+🎯 Penerima
+├ DIANA AGUSTINA
+└ DUSUN MUSU RT 02 KAB. NGANJUK
+
+🚧 POD Detail
+
+⏰ 2021-03-08 16:43:57
+└ Selesai Antar Di Loceret
+Diterima Oleh Diana
+
+⏰ 2021-03-08 15:43:44
+└ Proses Antar Di Loceret
+
+⏰ 2021-03-07 08:07:23
+└ Diteruskan Ke Hub Loceret
+
+⏰ 2021-03-06 21:38:42
+└ Tiba Di Kantor Antaran Nganjuk
+
+⏰ 2021-03-05 20:40:16
+└ Diteruskan Ke Kantor Antaran Nganjuk
+
+⏰ 2021-03-05 17:33:43
+└ Tiba Di Hub Malang
+
+⏰ 2021-03-05 16:56:01
+└ Diteruskan Ke Hub Malang
+
+⏰ 2021-03-05 13:30:02
+└ - Barcode : 18374204072
+- Penerimaan Di Loket : Jaya Abadi 1��kantor Pos Jaya Abadi 1 65136c5
+- Pengirim : Chelsea Shop
+ ��malang
+- Penerima : Diana Agustina
+ ��kab. Nganjuk
+- Produk : Paket Kilat Khusus
+ref.reply_to_message_id= 18460
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\resi.php(79): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(397): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-10 13:46:36  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: strings must be encoded in UTF-8
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804420641
+ref.message.message_id= 18461
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1615358795
+ref.message.text= /resi pos 18374204072
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 📦 Ekspedisi Pos Indonesia
+
+📮 Status
+├ Ybs - (YBS) Yang Bersangkutan
+├ 2021-03-08 16:43:57
+└ DELIVERED
+
+📃 Resi
+├ 18374204072
+└ Service: POS KILAT KHUSUS
+
+💁🏼 Pengirim
+├ CHELSEA SHOP
+└ MALANG
+
+🎯 Penerima
+├ DIANA AGUSTINA
+└ DUSUN MUSU RT 02 KAB. NGANJUK
+
+🚧 POD Detail
+
+⏰ 2021-03-08 16:43:57
+└ Selesai Antar Di Loceret
+Diterima Oleh Diana
+
+⏰ 2021-03-08 15:43:44
+└ Proses Antar Di Loceret
+
+⏰ 2021-03-07 08:07:23
+└ Diteruskan Ke Hub Loceret
+
+⏰ 2021-03-06 21:38:42
+└ Tiba Di Kantor Antaran Nganjuk
+
+⏰ 2021-03-05 20:40:16
+└ Diteruskan Ke Kantor Antaran Nganjuk
+
+⏰ 2021-03-05 17:33:43
+└ Tiba Di Hub Malang
+
+⏰ 2021-03-05 16:56:01
+└ Diteruskan Ke Hub Malang
+
+⏰ 2021-03-05 13:30:02
+└ - Barcode : 18374204072
+- Penerimaan Di Loket : Jaya Abadi 1��kantor Pos Jaya Abadi 1 65136c5
+- Pengirim : Chelsea Shop
+ ��malang
+- Penerima : Diana Agustina
+ ��kab. Nganjuk
+- Produk : Paket Kilat Khusus
+ref.reply_to_message_id= 18461
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\resi.php(79): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(397): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-10 13:47:25  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: strings must be encoded in UTF-8
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804420661
+ref.message.message_id= 18464
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1615358845
+ref.message.text= /resi pos 18374204072
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 📦 Ekspedisi Pos Indonesia
+
+📮 Status
+├ Ybs - (YBS) Yang Bersangkutan
+├ 2021-03-08 16:43:57
+└ DELIVERED
+
+📃 Resi
+├ 18374204072
+└ Service: POS KILAT KHUSUS
+
+💁🏼 Pengirim
+├ CHELSEA SHOP
+└ MALANG
+
+🎯 Penerima
+├ DIANA AGUSTINA
+└ DUSUN MUSU RT 02 KAB. NGANJUK
+
+🚧 POD Detail
+
+⏰ 2021-03-08 16:43:57
+└ Selesai Antar Di Loceret
+Diterima Oleh Diana
+
+⏰ 2021-03-08 15:43:44
+└ Proses Antar Di Loceret
+
+⏰ 2021-03-07 08:07:23
+└ Diteruskan Ke Hub Loceret
+
+⏰ 2021-03-06 21:38:42
+└ Tiba Di Kantor Antaran Nganjuk
+
+⏰ 2021-03-05 20:40:16
+└ Diteruskan Ke Kantor Antaran Nganjuk
+
+⏰ 2021-03-05 17:33:43
+└ Tiba Di Hub Malang
+
+⏰ 2021-03-05 16:56:01
+└ Diteruskan Ke Hub Malang
+
+⏰ 2021-03-05 13:30:02
+└ - Barcode : 18374204072
+- Penerimaan Di Loket : Jaya Abadi 1��kantor Pos Jaya Abadi 1 65136c5
+- Pengirim : Chelsea Shop
+ ��malang
+- Penerima : Diana Agustina
+ ��kab. Nganjuk
+- Produk : Paket Kilat Khusus
+ref.reply_to_message_id= 18464
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\resi.php(79): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(397): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-10 13:49:21  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: strings must be encoded in UTF-8
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804420688
+ref.message.message_id= 18465
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1615358959
+ref.message.text= /resi pos 18374204072
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 📦 Ekspedisi Pos Indonesia
+
+📮 Status
+├ Ybs - (YBS) Yang Bersangkutan
+├ 2021-03-08 16:43:57
+└ DELIVERED
+
+📃 Resi
+├ 18374204072
+└ Service: POS KILAT KHUSUS
+
+💁🏼 Pengirim
+├ CHELSEA SHOP
+└ MALANG
+
+🎯 Penerima
+├ DIANA AGUSTINA
+└ DUSUN MUSU RT 02 KAB. NGANJUK
+
+🚧 POD Detail
+
+⏰ 2021-03-08 16:43:57
+└ Selesai Antar Di Loceret
+Diterima Oleh Diana
+
+⏰ 2021-03-08 15:43:44
+└ Proses Antar Di Loceret
+
+⏰ 2021-03-07 08:07:23
+└ Diteruskan Ke Hub Loceret
+
+⏰ 2021-03-06 21:38:42
+└ Tiba Di Kantor Antaran Nganjuk
+
+⏰ 2021-03-05 20:40:16
+└ Diteruskan Ke Kantor Antaran Nganjuk
+
+⏰ 2021-03-05 17:33:43
+└ Tiba Di Hub Malang
+
+⏰ 2021-03-05 16:56:01
+└ Diteruskan Ke Hub Malang
+
+⏰ 2021-03-05 13:30:02
+└ - Barcode : 18374204072
+- Penerimaan Di Loket : Jaya Abadi 1��kantor Pos Jaya Abadi 1 65136c5
+- Pengirim : Chelsea Shop
+ ��malang
+- Penerima : Diana Agustina
+ ��kab. Nganjuk
+- Produk : Paket Kilat Khusus
+ref.reply_to_message_id= 18465
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\resi.php(78): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(397): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-10 13:53:20  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: strings must be encoded in UTF-8
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804420705
+ref.message.message_id= 18468
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1615359198
+ref.message.text= /resi pos 18374204072
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 📦 Ekspedisi Pos Indonesia
+
+📮 Status
+├ Ybs - (YBS) Yang Bersangkutan
+├ 2021-03-08 16:43:57
+└ DELIVERED
+
+📃 Resi
+├ 18374204072
+└ Service: POS KILAT KHUSUS
+
+💁🏼 Pengirim
+├ CHELSEA SHOP
+└ MALANG
+
+🎯 Penerima
+├ DIANA AGUSTINA
+└ DUSUN MUSU RT 02 KAB. NGANJUK
+
+🚧 POD Detail
+
+⏰ 2021-03-08 16:43:57
+└ Selesai Antar Di Loceret
+Diterima Oleh Diana
+
+⏰ 2021-03-08 15:43:44
+└ Proses Antar Di Loceret
+
+⏰ 2021-03-07 08:07:23
+└ Diteruskan Ke Hub Loceret
+
+⏰ 2021-03-06 21:38:42
+└ Tiba Di Kantor Antaran Nganjuk
+
+⏰ 2021-03-05 20:40:16
+└ Diteruskan Ke Kantor Antaran Nganjuk
+
+⏰ 2021-03-05 17:33:43
+└ Tiba Di Hub Malang
+
+⏰ 2021-03-05 16:56:01
+└ Diteruskan Ke Hub Malang
+
+⏰ 2021-03-05 13:30:02
+└ - Barcode : 18374204072
+- Penerimaan Di Loket : Jaya Abadi 1��kantor Pos Jaya Abadi 1 65136c5
+- Pengirim : Chelsea Shop
+ ��malang
+- Penerima : Diana Agustina
+ ��kab. Nganjuk
+- Produk : Paket Kilat Khusus
+ref.reply_to_message_id= 18468
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\resi.php(78): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(397): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-10 13:53:36  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: strings must be encoded in UTF-8
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804420706
+ref.message.message_id= 18469
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1615359214
+ref.message.text= /resi pos 18374204072
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 📦 Ekspedisi Pos Indonesia
+
+📮 Status
+├ Ybs - (YBS) Yang Bersangkutan
+├ 2021-03-08 16:43:57
+└ DELIVERED
+
+📃 Resi
+├ 18374204072
+└ Service: POS KILAT KHUSUS
+
+💁🏼 Pengirim
+├ CHELSEA SHOP
+└ MALANG
+
+🎯 Penerima
+├ DIANA AGUSTINA
+└ DUSUN MUSU RT 02 KAB. NGANJUK
+
+🚧 POD Detail
+
+⏰ 2021-03-08 16:43:57
+└ Selesai Antar Di Loceret
+Diterima Oleh Diana
+
+⏰ 2021-03-08 15:43:44
+└ Proses Antar Di Loceret
+
+⏰ 2021-03-07 08:07:23
+└ Diteruskan Ke Hub Loceret
+
+⏰ 2021-03-06 21:38:42
+└ Tiba Di Kantor Antaran Nganjuk
+
+⏰ 2021-03-05 20:40:16
+└ Diteruskan Ke Kantor Antaran Nganjuk
+
+⏰ 2021-03-05 17:33:43
+└ Tiba Di Hub Malang
+
+⏰ 2021-03-05 16:56:01
+└ Diteruskan Ke Hub Malang
+
+⏰ 2021-03-05 13:30:02
+└ - Barcode : 18374204072
+- Penerimaan Di Loket : Jaya Abadi 1��kantor Pos Jaya Abadi 1 65136c5
+- Pengirim : Chelsea Shop
+ ��malang
+- Penerima : Diana Agustina
+ ��kab. Nganjuk
+- Produk : Paket Kilat Khusus
+ref.reply_to_message_id= 18469
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\resi.php(78): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(397): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-10 13:54:51  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: strings must be encoded in UTF-8
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804420707
+ref.message.message_id= 18470
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1615359289
+ref.message.text= /resi pos 18374204072
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 📦 Ekspedisi Pos Indonesia
+
+📮 Status
+├ Ybs - (YBS) Yang Bersangkutan
+├ 2021-03-08 16:43:57
+└ DELIVERED
+
+📃 Resi
+├ 18374204072
+└ Service: POS KILAT KHUSUS
+
+💁🏼 Pengirim
+├ CHELSEA SHOP
+└ MALANG
+
+🎯 Penerima
+├ DIANA AGUSTINA
+└ DUSUN MUSU RT 02 KAB. NGANJUK
+
+🚧 POD Detail
+
+⏰ 2021-03-08 16:43:57
+└ Selesai Antar Di Loceret
+Diterima Oleh Diana
+
+⏰ 2021-03-08 15:43:44
+└ Proses Antar Di Loceret
+
+⏰ 2021-03-07 08:07:23
+└ Diteruskan Ke Hub Loceret
+
+⏰ 2021-03-06 21:38:42
+└ Tiba Di Kantor Antaran Nganjuk
+
+⏰ 2021-03-05 20:40:16
+└ Diteruskan Ke Kantor Antaran Nganjuk
+
+⏰ 2021-03-05 17:33:43
+└ Tiba Di Hub Malang
+
+⏰ 2021-03-05 16:56:01
+└ Diteruskan Ke Hub Malang
+
+⏰ 2021-03-05 13:30:02
+└ - Barcode : 18374204072
+- Penerimaan Di Loket : Jaya Abadi 1��kantor Pos Jaya Abadi 1 65136c5
+- Pengirim : Chelsea Shop
+ ��malang
+- Penerima : Diana Agustina
+ ��kab. Nganjuk
+- Produk : Paket Kilat Khusus
+ref.reply_to_message_id= 18470
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\resi.php(78): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(397): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-10 14:10:09  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: strings must be encoded in UTF-8
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804420719
+ref.message.message_id= 18481
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1615360207
+ref.message.text= /resi pos 18374204072
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 📦 Ekspedisi Pos Indonesia
+
+📮 Status
+├ Ybs - (YBS) Yang Bersangkutan
+├ 2021-03-08 16:43:57
+└ DELIVERED
+
+📃 Resi
+├ 18374204072
+└ Service: POS KILAT KHUSUS
+
+💁🏼 Pengirim
+├ CHELSEA SHOP
+└ MALANG
+
+🎯 Penerima
+├ DIANA AGUSTINA
+└ DUSUN MUSU RT 02 KAB. NGANJUK
+
+🚧 POD Detail
+
+⏰ 2021-03-08 16:43:57
+└ Selesai Antar Di Loceret
+Diterima Oleh Diana
+
+⏰ 2021-03-08 15:43:44
+└ Proses Antar Di Loceret
+
+⏰ 2021-03-07 08:07:23
+└ Diteruskan Ke Hub Loceret
+
+⏰ 2021-03-06 21:38:42
+└ Tiba Di Kantor Antaran Nganjuk
+
+⏰ 2021-03-05 20:40:16
+└ Diteruskan Ke Kantor Antaran Nganjuk
+
+⏰ 2021-03-05 17:33:43
+└ Tiba Di Hub Malang
+
+⏰ 2021-03-05 16:56:01
+└ Diteruskan Ke Hub Malang
+
+⏰ 2021-03-05 13:30:02
+└ - Barcode : 18374204072
+- Penerimaan Di Loket : Jaya Abadi 1��kantor Pos Jaya Abadi 1 65136c5
+- Pengirim : Chelsea Shop
+ ��malang
+- Penerima : Diana Agustina
+ ��kab. Nganjuk
+- Produk : Paket Kilat Khusus
+ref.reply_to_message_id= 18481
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\resi.php(79): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(397): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-10 14:16:55  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: strings must be encoded in UTF-8
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804420728
+ref.message.message_id= 18484
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1615360615
+ref.message.text= /resi pos 18374204072
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= tets : ⏰ 2021-03-08 16:43:57
+└ Selesai Antar Di Loceret
+Diterima Oleh Diana
+
+⏰ 2021-03-08 15:43:44
+└ Proses Antar Di Loceret
+
+⏰ 2021-03-07 08:07:23
+└ Diteruskan Ke Hub Loceret
+
+⏰ 2021-03-06 21:38:42
+└ Tiba Di Kantor Antaran Nganjuk
+
+⏰ 2021-03-05 20:40:16
+└ Diteruskan Ke Kantor Antaran Nganjuk
+
+⏰ 2021-03-05 17:33:43
+└ Tiba Di Hub Malang
+
+⏰ 2021-03-05 16:56:01
+└ Diteruskan Ke Hub Malang
+
+⏰ 2021-03-05 13:30:02
+└ - Barcode : 18374204072
+- Penerimaan Di Loket : Jaya Abadi 1��kantor Pos Jaya Abadi 1 65136c5
+- Pengirim : Chelsea Shop
+ ��malang
+- Penerima : Diana Agustina
+ ��kab. Nganjuk
+- Produk : Paket Kilat Khusus
+ref.reply_to_message_id= 18484
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\resi.php(79): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(397): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-10 14:17:17  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: strings must be encoded in UTF-8
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804420729
+ref.message.message_id= 18485
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1615360636
+ref.message.text= /resi pos 18374204072
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= tets : ⏰ 2021-03-08 16:43:57
+└ Selesai Antar Di Loceret
+Diterima Oleh Diana
+
+⏰ 2021-03-08 15:43:44
+└ Proses Antar Di Loceret
+
+⏰ 2021-03-07 08:07:23
+└ Diteruskan Ke Hub Loceret
+
+⏰ 2021-03-06 21:38:42
+└ Tiba Di Kantor Antaran Nganjuk
+
+⏰ 2021-03-05 20:40:16
+└ Diteruskan Ke Kantor Antaran Nganjuk
+
+⏰ 2021-03-05 17:33:43
+└ Tiba Di Hub Malang
+
+⏰ 2021-03-05 16:56:01
+└ Diteruskan Ke Hub Malang
+
+⏰ 2021-03-05 13:30:02
+└ - Barcode : 18374204072
+- Penerimaan Di Loket : Jaya Abadi 1��kantor Pos Jaya Abadi 1 65136c5
+- Pengirim : Chelsea Shop
+ ��malang
+- Penerima : Diana Agustina
+ ��kab. Nganjuk
+- Produk : Paket Kilat Khusus
+ref.reply_to_message_id= 18485
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\resi.php(79): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(397): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-10 14:17:23  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: strings must be encoded in UTF-8
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804420730
+ref.message.message_id= 18486
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1615360642
+ref.message.text= /resi pos 18374204072
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= tets : ⏰ 2021-03-08 16:43:57
+└ Selesai Antar Di Loceret
+Diterima Oleh Diana
+
+⏰ 2021-03-08 15:43:44
+└ Proses Antar Di Loceret
+
+⏰ 2021-03-07 08:07:23
+└ Diteruskan Ke Hub Loceret
+
+⏰ 2021-03-06 21:38:42
+└ Tiba Di Kantor Antaran Nganjuk
+
+⏰ 2021-03-05 20:40:16
+└ Diteruskan Ke Kantor Antaran Nganjuk
+
+⏰ 2021-03-05 17:33:43
+└ Tiba Di Hub Malang
+
+⏰ 2021-03-05 16:56:01
+└ Diteruskan Ke Hub Malang
+
+⏰ 2021-03-05 13:30:02
+└ - Barcode : 18374204072
+- Penerimaan Di Loket : Jaya Abadi 1��kantor Pos Jaya Abadi 1 65136c5
+- Pengirim : Chelsea Shop
+ ��malang
+- Penerima : Diana Agustina
+ ��kab. Nganjuk
+- Produk : Paket Kilat Khusus
+ref.reply_to_message_id= 18486
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\resi.php(79): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(397): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-10 14:20:56  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: strings must be encoded in UTF-8
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804420734
+ref.message.message_id= 18493
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1615360855
+ref.message.text= /resi pos 18374204072
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 📦 Ekspedisi Pos Indonesia
+
+📮 Status
+├ Ybs - (YBS) Yang Bersangkutan
+├ 2021-03-08 16:43:57
+└ DELIVERED
+
+📃 Resi
+├ 18374204072
+└ Service: POS KILAT KHUSUS
+
+💁🏼 Pengirim
+├ CHELSEA SHOP
+└ MALANG
+
+🎯 Penerima
+├ DIANA AGUSTINA
+└ DUSUN MUSU RT 02 KAB. NGANJUK
+
+🚧 POD Detail
+
+⏰ 2021-03-08 16:43:57
+└ Selesai Antar Di Loceret
+Diterima Oleh Diana
+
+⏰ 2021-03-08 15:43:44
+└ Proses Antar Di Loceret
+
+⏰ 2021-03-07 08:07:23
+└ Diteruskan Ke Hub Loceret
+
+⏰ 2021-03-06 21:38:42
+└ Tiba Di Kantor Antaran Nganjuk
+
+⏰ 2021-03-05 20:40:16
+└ Diteruskan Ke Kantor Antaran Nganjuk
+
+⏰ 2021-03-05 17:33:43
+└ Tiba Di Hub Malang
+
+⏰ 2021-03-05 16:56:01
+└ Diteruskan Ke Hub Malang
+
+⏰ 2021-03-05 13:30:02
+└ - Barcode : 18374204072
+- Penerimaan Di Loket : Jaya Abadi 1��kantor Pos Jaya Abadi 1 65136c5
+- Pengirim : Chelsea Shop
+ ��malang
+- Penerima : Diana Agustina
+ ��kab. Nganjuk
+- Produk : Paket Kilat Khusus
+ref.reply_to_message_id= 18493
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\resi.php(79): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(397): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-10 14:21:58  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: strings must be encoded in UTF-8
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804420736
+ref.message.message_id= 18496
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1615360917
+ref.message.text= /resi pos 18374204072
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= ⏰ 2021-03-08 16:43:57
+└ Selesai Antar Di Loceret
+Diterima Oleh Diana
+
+⏰ 2021-03-08 15:43:44
+└ Proses Antar Di Loceret
+
+⏰ 2021-03-07 08:07:23
+└ Diteruskan Ke Hub Loceret
+
+⏰ 2021-03-06 21:38:42
+└ Tiba Di Kantor Antaran Nganjuk
+
+⏰ 2021-03-05 20:40:16
+└ Diteruskan Ke Kantor Antaran Nganjuk
+
+⏰ 2021-03-05 17:33:43
+└ Tiba Di Hub Malang
+
+⏰ 2021-03-05 16:56:01
+└ Diteruskan Ke Hub Malang
+
+⏰ 2021-03-05 13:30:02
+└ - Barcode : 18374204072
+- Penerimaan Di Loket : Jaya Abadi 1��kantor Pos Jaya Abadi 1 65136c5
+- Pengirim : Chelsea Shop
+ ��malang
+- Penerima : Diana Agustina
+ ��kab. Nganjuk
+- Produk : Paket Kilat Khusus
+ref.reply_to_message_id= 18496
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\resi.php(79): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(397): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-10 14:27:23  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: strings must be encoded in UTF-8
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804420745
+ref.message.message_id= 18505
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1615361242
+ref.message.text= /resi pos 18374204072
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= ⏰ 2021-03-08 16:43:57
+└ Selesai Antar Di Loceret
+Diterima Oleh Diana
+
+⏰ 2021-03-08 15:43:44
+└ Proses Antar Di Loceret
+
+⏰ 2021-03-07 08:07:23
+└ Diteruskan Ke Hub Loceret
+
+⏰ 2021-03-06 21:38:42
+└ Tiba Di Kantor Antaran Nganjuk
+
+⏰ 2021-03-05 20:40:16
+└ Diteruskan Ke Kantor Antaran Nganjuk
+
+⏰ 2021-03-05 17:33:43
+└ Tiba Di Hub Malang
+
+⏰ 2021-03-05 16:56:01
+└ Diteruskan Ke Hub Malang
+
+⏰ 2021-03-05 13:30:02
+└ - Barcode : 18374204072
+- Penerimaan Di Loket : Jaya Abadi 1��kantor Pos Jaya Abadi 1 65136c5
+- Pengirim : Chelsea Shop
+ ��malang
+
+ref.reply_to_message_id= 18505
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\resi.php(80): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(397): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-10 14:27:37  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: strings must be encoded in UTF-8
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804420746
+ref.message.message_id= 18506
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1615361256
+ref.message.text= /resi pos 18374204072
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= ⏰ 2021-03-08 16:43:57
+└ Selesai Antar Di Loceret
+Diterima Oleh Diana
+
+⏰ 2021-03-08 15:43:44
+└ Proses Antar Di Loceret
+
+⏰ 2021-03-07 08:07:23
+└ Diteruskan Ke Hub Loceret
+
+⏰ 2021-03-06 21:38:42
+└ Tiba Di Kantor Antaran Nganjuk
+
+⏰ 2021-03-05 20:40:16
+└ Diteruskan Ke Kantor Antaran Nganjuk
+
+⏰ 2021-03-05 17:33:43
+└ Tiba Di Hub Malang
+
+⏰ 2021-03-05 16:56:01
+└ Diteruskan Ke Hub Malang
+
+⏰ 2021-03-05 13:30:02
+└ - Barcode : 18374204072
+- Penerimaan Di Loket : Jaya Abadi 1��kantor Pos Jaya Abadi 1 
+ref.reply_to_message_id= 18506
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\resi.php(80): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(397): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-10 14:28:55  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: strings must be encoded in UTF-8
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804420748
+ref.message.message_id= 18507
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1615361335
+ref.message.text= /resi pos 18374204072
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= ⏰ 2021-03-08 16:43:57
+└ Selesai Antar Di Loceret
+Diterima Oleh Diana
+
+⏰ 2021-03-08 15:43:44
+└ Proses Antar Di Loceret
+
+⏰ 2021-03-07 08:07:23
+└ Diteruskan Ke Hub Loceret
+
+⏰ 2021-03-06 21:38:42
+└ Tiba Di Kantor Antaran Nganjuk
+
+⏰ 2021-03-05 20:40:16
+└ Diteruskan Ke Kantor Antaran Nganjuk
+
+⏰ 2021-03-05 17:33:43
+└ Tiba Di Hub Malang
+
+⏰ 2021-03-05 16:56:01
+└ Diteruskan Ke Hub Malang
+
+⏰ 2021-03-05 13:30:02
+└ - Barcode : 18374204072
+- Penerimaan Di Loket : Jaya Abadi 1��kantor Pos Jay
+ref.reply_to_message_id= 18507
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\resi.php(80): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(397): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-10 14:29:05  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: strings must be encoded in UTF-8
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804420749
+ref.message.message_id= 18508
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1615361342
+ref.message.text= /resi pos 18374204072
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= ⏰ 2021-03-08 16:43:57
+└ Selesai Antar Di Loceret
+Diterima Oleh Diana
+
+⏰ 2021-03-08 15:43:44
+└ Proses Antar Di Loceret
+
+⏰ 2021-03-07 08:07:23
+└ Diteruskan Ke Hub Loceret
+
+⏰ 2021-03-06 21:38:42
+└ Tiba Di Kantor Antaran Nganjuk
+
+⏰ 2021-03-05 20:40:16
+└ Diteruskan Ke Kantor Antaran Nganjuk
+
+⏰ 2021-03-05 17:33:43
+└ Tiba Di Hub Malang
+
+⏰ 2021-03-05 16:56:01
+└ Diteruskan Ke Hub Malang
+
+⏰ 2021-03-05 13:30:02
+└ - Barcode : 18374204072
+- Penerimaan Di Loket : Jaya Abadi 1��kant
+ref.reply_to_message_id= 18508
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\resi.php(80): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(397): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-10 14:35:39  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: strings must be encoded in UTF-8
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804420753
+ref.message.message_id= 18513
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1615361738
+ref.message.text= /resi pos 18374204072
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= ⏰ 2021-03-08 16:43:57
+└ Selesai Antar Di Loceret
+Diterima Oleh Diana
+
+⏰ 2021-03-08 15:43:44
+└ Proses Antar Di Loceret
+
+⏰ 2021-03-07 08:07:23
+└ Diteruskan Ke Hub Loceret
+
+⏰ 2021-03-06 21:38:42
+└ Tiba Di Kantor Antaran Nganjuk
+
+⏰ 2021-03-05 20:40:16
+└ Diteruskan Ke Kantor Antaran Nganjuk
+
+⏰ 2021-03-05 17:33:43
+└ Tiba Di Hub Malang
+
+⏰ 2021-03-05 16:56:01
+└ Diteruskan Ke Hub Malang
+
+⏰ 2021-03-05 13:30:02
+└ - Barcode : 18374204072
+- Penerimaan Di Loket : Jaya Abadi 1��kant
+ref.reply_to_message_id= 18513
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\resi.php(87): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(397): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-10 14:36:23  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: strings must be encoded in UTF-8
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804420754
+ref.message.message_id= 18514
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1615361782
+ref.message.text= /resi pos 18374204072
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= ⏰ 2021-03-08 16:43:57
+└ Selesai Antar Di Loceretditerima Oleh Diana
+
+⏰ 2021-03-08 15:43:44
+└ Proses Antar Di Loceret
+
+⏰ 2021-03-07 08:07:23
+└ Diteruskan Ke Hub Loceret
+
+⏰ 2021-03-06 21:38:42
+└ Tiba Di Kantor Antaran Nganjuk
+
+⏰ 2021-03-05 20:40:16
+└ Diteruskan Ke Kantor Antaran Nganjuk
+
+⏰ 2021-03-05 17:33:43
+└ Tiba Di Hub Malang
+
+⏰ 2021-03-05 16:56:01
+└ Diteruskan Ke Hub Malang
+
+⏰ 2021-03-05 13:30:02
+└ - Barcode : 18374204072- Penerimaan Di Loket : Jaya Abadi 1��kantor P
+ref.reply_to_message_id= 18514
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\resi.php(87): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(397): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-10 14:37:52  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: strings must be encoded in UTF-8
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804420756
+ref.message.message_id= 18517
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1615361871
+ref.message.text= /resi pos 18374204072
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= ⏰ 2021-03-08 16:43:57
+└ Selesai Antar Di Loceret
+Diterima Oleh Diana
+
+⏰ 2021-03-08 15:43:44
+└ Proses Antar Di Loceret
+
+⏰ 2021-03-07 08:07:23
+└ Diteruskan Ke Hub Loceret
+
+⏰ 2021-03-06 21:38:42
+└ Tiba Di Kantor Antaran Nganjuk
+
+⏰ 2021-03-05 20:40:16
+└ Diteruskan Ke Kantor Antaran Nganjuk
+
+⏰ 2021-03-05 17:33:43
+└ Tiba Di Hub Malang
+
+⏰ 2021-03-05 16:56:01
+└ Diteruskan Ke Hub Malang
+
+⏰ 2021-03-05 13:30:02
+└ - Barcode : 18374204072
+- Penerimaan Di Loket : Jaya Abadi 1��kant
+ref.reply_to_message_id= 18517
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\resi.php(87): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(397): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-10 14:38:26  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: strings must be encoded in UTF-8
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804420757
+ref.message.message_id= 18518
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1615361904
+ref.message.text= /resi pos 18374204072
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= ⏰ 2021-03-08 16:43:57
+└ Selesai Antar Di Loceret
+Diterima Oleh Diana
+
+⏰ 2021-03-08 15:43:44
+└ Proses Antar Di Loceret
+
+⏰ 2021-03-07 08:07:23
+└ Diteruskan Ke Hub Loceret
+
+⏰ 2021-03-06 21:38:42
+└ Tiba Di Kantor Antaran Nganjuk
+
+⏰ 2021-03-05 20:40:16
+└ Diteruskan Ke Kantor Antaran Nganjuk
+
+⏰ 2021-03-05 17:33:43
+└ Tiba Di Hub Malang
+
+⏰ 2021-03-05 16:56:01
+└ Diteruskan Ke Hub Malang
+
+⏰ 2021-03-05 13:30:02
+└ - Barcode : 18374204072
+- Penerimaan Di Loket : Jaya Abadi 1��ka
+ref.reply_to_message_id= 18518
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\resi.php(87): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(397): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-10 14:38:37  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: strings must be encoded in UTF-8
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804420758
+ref.message.message_id= 18519
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1615361915
+ref.message.text= /resi pos 18374204072
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= ⏰ 2021-03-08 16:43:57
+└ Selesai Antar Di Loceret
+Diterima Oleh Diana
+
+⏰ 2021-03-08 15:43:44
+└ Proses Antar Di Loceret
+
+⏰ 2021-03-07 08:07:23
+└ Diteruskan Ke Hub Loceret
+
+⏰ 2021-03-06 21:38:42
+└ Tiba Di Kantor Antaran Nganjuk
+
+⏰ 2021-03-05 20:40:16
+└ Diteruskan Ke Kantor Antaran Nganjuk
+
+⏰ 2021-03-05 17:33:43
+└ Tiba Di Hub Malang
+
+⏰ 2021-03-05 16:56:01
+└ Diteruskan Ke Hub Malang
+
+⏰ 2021-03-05 13:30:02
+└ - Barcode : 18374204072
+- Penerimaan Di Loket : Jaya Abadi 1��
+ref.reply_to_message_id= 18519
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\resi.php(87): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(397): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-10 14:39:09  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: strings must be encoded in UTF-8
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804420759
+ref.message.message_id= 18520
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1615361945
+ref.message.text= /resi pos 18374204072
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= ⏰ 2021-03-08 16:43:57
+└ Selesai Antar Di Loceret
+Diterima Oleh Diana
+
+⏰ 2021-03-08 15:43:44
+└ Proses Antar Di Loceret
+
+⏰ 2021-03-07 08:07:23
+└ Diteruskan Ke Hub Loceret
+
+⏰ 2021-03-06 21:38:42
+└ Tiba Di Kantor Antaran Nganjuk
+
+⏰ 2021-03-05 20:40:16
+└ Diteruskan Ke Kantor Antaran Nganjuk
+
+⏰ 2021-03-05 17:33:43
+└ Tiba Di Hub Malang
+
+⏰ 2021-03-05 16:56:01
+└ Diteruskan Ke Hub Malang
+
+⏰ 2021-03-05 13:30:02
+└ - Barcode : 18374204072
+- Penerimaan Di Loket : Jaya Abadi 1��
+ref.reply_to_message_id= 18520
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\resi.php(87): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(397): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-10 14:40:52  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: strings must be encoded in UTF-8
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804420762
+ref.message.message_id= 18525
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1615362051
+ref.message.text= /resi pos 18374204072
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= ⏰ 2021-03-08 16:43:57
+└ Selesai Antar Di Loceret
+Diterima Oleh Diana
+
+⏰ 2021-03-08 15:43:44
+└ Proses Antar Di Loceret
+
+⏰ 2021-03-07 08:07:23
+└ Diteruskan Ke Hub Loceret
+
+⏰ 2021-03-06 21:38:42
+└ Tiba Di Kantor Antaran Nganjuk
+
+⏰ 2021-03-05 20:40:16
+└ Diteruskan Ke Kantor Antaran Nganjuk
+
+⏰ 2021-03-05 17:33:43
+└ Tiba Di Hub Malang
+
+⏰ 2021-03-05 16:56:01
+└ Diteruskan Ke Hub Malang
+
+⏰ 2021-03-05 13:30:02
+└ - Barcode : 18374204072
+- Penerimaan Di Loket : Jaya Abadi 1�
+ref.reply_to_message_id= 18525
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\resi.php(87): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(397): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-10 14:41:11  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: strings must be encoded in UTF-8
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804420763
+ref.message.message_id= 18526
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1615362067
+ref.message.text= /resi pos 18374204072
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= ⏰ 2021-03-08 16:43:57
+└ Selesai Antar Di Loceret
+Diterima Oleh Diana
+
+⏰ 2021-03-08 15:43:44
+└ Proses Antar Di Loceret
+
+⏰ 2021-03-07 08:07:23
+└ Diteruskan Ke Hub Loceret
+
+⏰ 2021-03-06 21:38:42
+└ Tiba Di Kantor Antaran Nganjuk
+
+⏰ 2021-03-05 20:40:16
+└ Diteruskan Ke Kantor Antaran Nganjuk
+
+⏰ 2021-03-05 17:33:43
+└ Tiba Di Hub Malang
+
+⏰ 2021-03-05 16:56:01
+└ Diteruskan Ke Hub Malang
+
+⏰ 2021-03-05 13:30:02
+└ - Barcode : 18374204072
+- Penerimaan Di Loket : Jaya Abadi 1�
+ref.reply_to_message_id= 18526
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\resi.php(87): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(397): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-10 14:49:07  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: strings must be encoded in UTF-8
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804420770
+ref.message.message_id= 18539
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1615362546
+ref.message.text= /resi pos 18374204072
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 📦 Ekspedisi Pos Indonesia
+
+📮 Status
+├ Ybs - (YBS) Yang Bersangkutan
+├ 2021-03-08 16:43:57
+└ DELIVERED
+
+📃 Resi
+├ 18374204072
+└ Service: POS KILAT KHUSUS
+
+💁🏼 Pengirim
+├ CHELSEA SHOP
+└ MALANG
+
+🎯 Penerima
+├ DIANA AGUSTINA
+└ DUSUN MUSU RT 02 KAB. NGANJUK
+
+🚧 POD Detail
+
+� 2021-03-08 16:43:57
+� Selesai Antar Di Loceret
+Diterima Oleh Diana
+
+� 2021-03-08 15:43:44
+� Proses Antar Di Loceret
+
+� 2021-03-07 08:07:23
+� Diteruskan Ke Hub Loceret
+
+� 2021-03-06 21:38:42
+� Tiba Di Kantor Antaran Nganjuk
+
+� 2021-03-05 20:40:16
+� Diteruskan Ke Kantor Antaran Nganjuk
+
+� 2021-03-05 17:33:43
+� Tiba Di Hub Malang
+
+� 2021-03-05 16:56:01
+� Diteruskan Ke Hub Malang
+
+� 2021-03-05 13:30:02
+� - Barcode : 18374204072
+- Penerimaan Di Loket : Jaya Abadi 1��kantor Pos Jaya Abadi 1 65136c5
+- Pengirim : Chelsea Shop
+ ��malang
+- Penerima : Diana Agustina
+ ��kab. Nganjuk
+- Produk : Paket Kilat Khusus
+ref.reply_to_message_id= 18539
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\resi.php(80): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(397): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-10 14:49:29  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: strings must be encoded in UTF-8
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804420771
+ref.message.message_id= 18540
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1615362568
+ref.message.text= /resi pos 18374204072
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 📦 Ekspedisi Pos Indonesia
+
+📮 Status
+├ Ybs - (YBS) Yang Bersangkutan
+├ 2021-03-08 16:43:57
+└ DELIVERED
+
+📃 Resi
+├ 18374204072
+└ Service: POS KILAT KHUSUS
+
+💁🏼 Pengirim
+├ CHELSEA SHOP
+└ MALANG
+
+🎯 Penerima
+├ DIANA AGUSTINA
+└ DUSUN MUSU RT 02 KAB. NGANJUK
+
+🚧 POD Detail
+
+⏰ 2021-03-08 16:43:57
+└ selesai antar di loceret
+diterima oleh diana
+
+⏰ 2021-03-08 15:43:44
+└ proses antar di loceret
+
+⏰ 2021-03-07 08:07:23
+└ diteruskan ke hub loceret
+
+⏰ 2021-03-06 21:38:42
+└ tiba di kantor antaran nganjuk
+
+⏰ 2021-03-05 20:40:16
+└ diteruskan ke kantor antaran nganjuk
+
+⏰ 2021-03-05 17:33:43
+└ tiba di hub malang
+
+⏰ 2021-03-05 16:56:01
+└ diteruskan ke hub malang
+
+⏰ 2021-03-05 13:30:02
+└ - barcode : 18374204072
+- penerimaan di loket : jaya abadi 1��kantor pos jaya abadi 1 65136c5
+- pengirim : chelsea shop
+���malang
+- penerima : diana agustina
+���kab. nganjuk
+- produk : paket kilat khusus
+ref.reply_to_message_id= 18540
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\resi.php(80): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(397): require('C:\\bot telegram...')
+#5 {main}
+

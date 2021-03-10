@@ -1,5 +1,70 @@
-$reply = "Maaf ," . $afkforstname . ' ' . $afklastname . ' sedang AFK sejak ' . $user['time_afk'] . PHP_EOL .
-			'Alasan : ' . $user['alasan'];
-		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-		$telegram->sendMessage($content);
-		exit;
+{
+    "update_id": 804420776,
+    "message": {
+        "message_id": 45014,
+        "from": {
+            "id": 1393342467,
+            "is_bot": false,
+            "first_name": "Fadhil",
+            "last_name": "Riyanto",
+            "username": "fadhil_riyanto",
+            "language_code": "ms"
+        },
+        "chat": {
+            "id": -1001209274058,
+            "title": "\ud835\udd44\ud835\udd52\ud835\udd64\ud835\udd6a\ud835\udd52\ud835\udd63\ud835\udd52\ud835\udd5c\ud835\udd52\ud835\udd65 \ud835\udd40\ud835\udd64\ud835\udd56\ud835\udd5f\ud835\udd58\u00a9",
+            "username": "scriptiseng",
+            "type": "supergroup"
+        },
+        "date": 1615363983,
+        "reply_to_message": {
+            "message_id": 45013,
+            "from": {
+                "id": 1393342467,
+                "is_bot": false,
+                "first_name": "Fadhil",
+                "last_name": "Riyanto",
+                "username": "fadhil_riyanto",
+                "language_code": "ms"
+            },
+            "chat": {
+                "id": -1001209274058,
+                "title": "\ud835\udd44\ud835\udd52\ud835\udd64\ud835\udd6a\ud835\udd52\ud835\udd63\ud835\udd52\ud835\udd5c\ud835\udd52\ud835\udd65 \ud835\udd40\ud835\udd64\ud835\udd56\ud835\udd5f\ud835\udd58\u00a9",
+                "username": "scriptiseng",
+                "type": "supergroup"
+            },
+            "date": 1615363778,
+            "photo": [
+                {
+                    "file_id": "AgACAgUAAx0CSBQOygACr9VgSH7CL6UHFPe-nbjsafUqoXdo1gACMqwxG4pBQFZMgGku5c4rAAEIs2JxdAADAQADAgADbQADS-YAAh4E",
+                    "file_unique_id": "AQADCLNicXQAA0vmAAI",
+                    "file_size": 11288,
+                    "width": 320,
+                    "height": 165
+                },
+                {
+                    "file_id": "AgACAgUAAx0CSBQOygACr9VgSH7CL6UHFPe-nbjsafUqoXdo1gACMqwxG4pBQFZMgGku5c4rAAEIs2JxdAADAQADAgADeAADTOYAAh4E",
+                    "file_unique_id": "AQADCLNicXQAA0zmAAI",
+                    "file_size": 47070,
+                    "width": 800,
+                    "height": 413
+                },
+                {
+                    "file_id": "AgACAgUAAx0CSBQOygACr9VgSH7CL6UHFPe-nbjsafUqoXdo1gACMqwxG4pBQFZMgGku5c4rAAEIs2JxdAADAQADAgADeQADTeYAAh4E",
+                    "file_unique_id": "AQADCLNicXQAA03mAAI",
+                    "file_size": 78106,
+                    "width": 1280,
+                    "height": 661
+                }
+            ]
+        },
+        "text": "\/sudo json",
+        "entities": [
+            {
+                "offset": 0,
+                "length": 5,
+                "type": "bot_command"
+            }
+        ]
+    }
+}
