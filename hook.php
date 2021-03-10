@@ -379,7 +379,7 @@ if ('/start' == $adanParse[0] || '/start' . USERNAME_BOT . '' == $adanParse[0]) 
 			} elseif ($adanParse[1] == 'help') {
 				require __DIR__ . '/command/help.php';
 				exit;
-			} elseif ($explodeparse_pastebin[0] == 'paste') {
+			} elseif ($explodeparse_pastebin[0] == 'ps') {
 				require __DIR__ . '/include/paste_resolve.php';
 				exit;
 			}
