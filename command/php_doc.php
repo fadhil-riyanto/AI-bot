@@ -27,8 +27,8 @@ function removespasikelebihan($str)
     return $ro;
 }
 if ($azanHilangcommand == null) {
-    $reply = 'Hai ' . $username . PHP_EOL . 'Untuk menggunakan phpdocs, gunakan command <pre>/php_docs {teks atau kata}</pre>' . PHP_EOL . PHP_EOL .
-        'Contoh : <pre>/quotes kamu bagaikan bunga dipagi hari</pre>';
+    $reply = 'Hai ' . $username . PHP_EOL . 'Untuk menggunakan phpdocs, gunakan command <pre>/php_doc {teks atau kata}</pre>' . PHP_EOL . PHP_EOL .
+        'Contoh : <pre>/php_doc microtime</pre>';
     $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
     $telegram->sendMessage($content);
 } else {

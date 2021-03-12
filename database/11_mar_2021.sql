@@ -24,8 +24,10 @@ CREATE TABLE IF NOT EXISTS `afk_user_data` (
   `username` longtext
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
--- Dumping data for table b8rkwqqp7tbpt89flosy.afk_user_data: ~0 rows (approximately)
+-- Dumping data for table b8rkwqqp7tbpt89flosy.afk_user_data: ~1 rows (approximately)
 /*!40000 ALTER TABLE `afk_user_data` DISABLE KEYS */;
+INSERT INTO `afk_user_data` (`userid`, `time_afk`, `alasan`, `username`) VALUES
+	('1393342467', '20:44:26', '1 hari, ada ujian praktik. hm', 'fadhil_riyanto');
 /*!40000 ALTER TABLE `afk_user_data` ENABLE KEYS */;
 
 -- Dumping structure for table b8rkwqqp7tbpt89flosy.data_ai
@@ -34,7 +36,7 @@ CREATE TABLE IF NOT EXISTS `data_ai` (
   `data_res_ai` longtext NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
--- Dumping data for table b8rkwqqp7tbpt89flosy.data_ai: ~5.357 rows (approximately)
+-- Dumping data for table b8rkwqqp7tbpt89flosy.data_ai: ~5.375 rows (approximately)
 /*!40000 ALTER TABLE `data_ai` DISABLE KEYS */;
 INSERT INTO `data_ai` (`data_key_ai`, `data_res_ai`) VALUES
 	('foo', '\\ud83d\\ude04, bar'),
@@ -5359,7 +5361,32 @@ INSERT INTO `data_ai` (`data_key_ai`, `data_res_ai`) VALUES
 	('macem yang ada di', 'ya aku minta maaf'),
 	('pke api kah', 'klw kamu isinkn psti bsa krn itu jg bsa jg dia di jln'),
 	('ga tanya elo', 'harusnya kakak tanya '),
-	('post jam 4 pagi besok wkwk', 'iyh');
+	('post jam 4 pagi besok wkwk', 'iyh'),
+	('masih gelap', 'ga usah takut kak tuhan selalu bersama kita kok'),
+	('masih ngantuk', 'kalau kamu aku masih ngantuk'),
+	('pacar', 'dosa ih'),
+	('banyak bet', 'iya donk... met jepe canti '),
+	('marah gw', 'jgn marah dong kk cantik'),
+	('makanya blajar', 'makanya blajar'),
+	('buset jadi biologi', 'pelajarannya si atun'),
+	('hm baca nya gimana njir', 'caranya adalah bla bla black pk lem pk gom pk pewarna dll'),
+	('emang kenapa y', 'g tau kenapa kok marah'),
+	('modus', 'said dans la modus grosse branlette a la lacrim braaah'),
+	('gk nyambung', 'emank hahahahaa '),
+	('wah kamu lagi ajar ngaji', 'iya dong kakak .kan fadhil rajin..'),
+	('agama apa', 'agama kristen protestan'),
+	('tapi kok bisa baca surat', 'gk'),
+	('pw gamerz', 'bili'),
+	('robot bodoh', 'cari robot lain'),
+	('gak mau mau kamu', 'mau banget'),
+	('emang udah pernah lihat aku', 'pernah'),
+	('nama kmu siapa', 'yoona tiffani jessica'),
+	('bukan fadhil', 'syang awk'),
+	('kamu punya pacar', 'punya dari sabang sampai meraukekenapa'),
+	('banyak banget', 'iya kk banyak banget'),
+	('kamu ganteng', 'ah masa sih'),
+	('tuben nulisnya dikit', 'jul'),
+	('jul', 'jul fuck dig jeg er muslim haradam din klamme grise spiser fuck kristendommen allah allah allah');
 /*!40000 ALTER TABLE `data_ai` ENABLE KEYS */;
 
 -- Dumping structure for table b8rkwqqp7tbpt89flosy.grup_data
@@ -5389,7 +5416,7 @@ CREATE TABLE IF NOT EXISTS `members` (
   `lastname` char(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table b8rkwqqp7tbpt89flosy.members: ~2 rows (approximately)
+-- Dumping data for table b8rkwqqp7tbpt89flosy.members: ~9 rows (approximately)
 /*!40000 ALTER TABLE `members` DISABLE KEYS */;
 INSERT INTO `members` (`userid`, `username`, `first_name`, `lastname`) VALUES
 	('1393342467', 'fadhil_riyanto', 'Fadhil', 'Riyanto'),
@@ -5397,17 +5424,21 @@ INSERT INTO `members` (`userid`, `username`, `first_name`, `lastname`) VALUES
 	('960805181', 'Fernans1', '(っ˘з(˘⌣˘ )', NULL),
 	('466284462', 'AdZkYy', 'Ahmad', 'Dzaky'),
 	('1455250320', NULL, 'ㅤㅤ', 'ㅤㅤ'),
-	('1195226552', 'mrfadlika', 'Raffi', 'Fadlika');
+	('1195226552', 'mrfadlika', 'Raffi', 'Fadlika'),
+	('1253079946', 'LoLHumen', 'LoL', 'Human'),
+	('388685359', 'Sakurasyasya', '#####', 'ππππππ'),
+	('1416099345', 'rusakbro', 'nope', NULL),
+	('1355798219', 'nekoha', 'Kee', NULL);
 /*!40000 ALTER TABLE `members` ENABLE KEYS */;
 
 -- Dumping structure for table b8rkwqqp7tbpt89flosy.pastebin
 CREATE TABLE IF NOT EXISTS `pastebin` (
   `userid` tinytext,
-  `paste_id` text,
-  `data` text
+  `paste_id` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `data` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table b8rkwqqp7tbpt89flosy.pastebin: ~3 rows (approximately)
+-- Dumping data for table b8rkwqqp7tbpt89flosy.pastebin: ~11 rows (approximately)
 /*!40000 ALTER TABLE `pastebin` DISABLE KEYS */;
 INSERT INTO `pastebin` (`userid`, `paste_id`, `data`) VALUES
 	('1393342467', '10616c0fe9fc62714816ab2b7ab2829c1109b29a', 'if (!$text) return \'\';\n    $text = $text[0];\n    $decode = json_decode($text, true);\n    if ($decode) return $decode;\n    $text = \'[&quot;\' . $text . \'&quot;]\';\n    $decode = json_decode($text);\n    if (count($decode) == 1) {\n      return $decode[0];\n    }\n    return $text;'),
@@ -5420,7 +5451,12 @@ INSERT INTO `pastebin` (`userid`, `paste_id`, `data`) VALUES
 	('1416099345', '100e25769c', ':v'),
 	('466284462', '94d0bb1694', 'ngeng~'),
 	('1393342467', 'b3107587b1', 'i love sandwich. let me tell you how to make it. let’s prepare the ingredients. we need two slices of bread, a slice of cheddar cheese, some lettuce, a tomato, a cucumber, smoked beef or beef sausage, chili sauce, and   two spoonful of margarine.\nthis is the way how to make it. firstly, clean and slice the tomato , cucumber and lettuce.. put a slice of bread on the plate. then, spread margarine onto  two slices of bread. put the smoked beef on it. after that pour the chili  sauce over beef. next, add lettuce, cheese , sliced tomato and cucumber . place  another slice of bread on top. finally ,cut the sandwich in a half. now, the sandwich is ready to be served.'),
-	('1393342467', '7adb9a59fe', 'test');
+	('1393342467', '7adb9a59fe', 'test'),
+	('1393342467', '01cc30f5b6', 'i love sandwich. let me tell you how to make it. let’s prepare the ingredients. we need two slices of bread, a slice of cheddar cheese, some lettuce, a tomato, a cucumber, smoked beef or beef sausage, chili sauce, and   two spoonful of margarine.\nthis is the way how to make it. firstly, clean and slice the tomato , cucumber and lettuce.. put a slice of bread on the plate. then, spread margarine onto  two slices of bread. put the smoked beef on it. after that pour the chili  sauce over beef. next, add lettuce, cheese , sliced tomato and cucumber . place  another slice of bread on top. finally ,cut the sandwich in a half. now, the sandwich is ready to be served.'),
+	('1393342467', 'ec5d0aca16', 'tesssss'),
+	('1416099345', 'd1d4b6951d', '⚽️'),
+	('1393342467', '59bf36b2aa', 'i love san\'dwuhch\n\nlet me tell you how to make it. \n\nlet’s prepare the uhn·gree·dee·unts\n\nwe need two slais of bread, a slais of cheddar chez\n\nsome lehtes\n\na tumeito, a kakamber, smoked beef or beef sosij, chi lee saas and  two spoonful of maar\'jarin\n\nthis is the way how to make it. furst lee, clean and slais the tumeito , kakamber and lehtes. put a slais of bred on the plate. \n\nthen, spread maar\'jarin on to  two slasi of bred. put the smoked beef on it. after that por the chi lee saas over beef. \n\nnext, add lehtes, cheese , slais tumeito and kakamber. place another slais of bred on top. finally ,cut the sandwich in a half.\n\nnow, the sandwich is ready to be served.'),
+	('1393342467', 'deced04773', 'at tahiyyaatul mubaarakaatush shalawaatuth thoyyibaatulillaah. as salaamu\'alaika ayyuhan nabiyyu wa rahmatullaahi wabarakaatuh, assalaamu\'alaina wa\'alaa ibaadillaahishaalihiin. asyhaduallaa ilaaha illallaah, wa asyhadu anna muhammad rasuulullaah.\n\nallaahumma shalli\'alaa muhammad, wa\'alaa aali muhammad. kamaa shallaita alaa ibraahiim wa alaa aali ibraahiim. wabaarik\'alaa muhammad wa alaa aali muhammad. kamaa baarakta alaa ibraahiim wa alaa aali ibraahiim, fil\'aalamiina innaka hamiidum majiid.');
 /*!40000 ALTER TABLE `pastebin` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
