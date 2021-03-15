@@ -513,7 +513,7 @@ if ('/start' == $adanParse[0] || '/start' . USERNAME_BOT . '' == $adanParse[0]) 
 } elseif ('/berita_i' == $adanParse[0] || '/berita_i' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/berita_i.php';
 	exit;
-} elseif ('/wiki' == $adanParse[0] || '/wiki' . USERNAME_BOT . '' == $adanParse[0]) {
+} elseif ('/wiki' == $adanParse[0] || '/wiki' . USERNAME_BOT . '' == $adanParse[0] || '/w' == $adanParse[0] || '/w' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/wiki.php';
 	exit;
 } elseif ('/kata_bijak' == $adanParse[0] || '/kata_bijak' . USERNAME_BOT . '' == $adanParse[0]) {
