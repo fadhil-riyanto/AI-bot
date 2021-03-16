@@ -59,6 +59,20 @@ $usernameBelumdiparse = $telegram->Username();
 $namaPertama = $telegram->FirstName();
 $namaTerakhir = $telegram->LastName();
 
+$adanParse = explode(' ', $text);
+$adanParse_plain = explode(' ', $text_plain);
+$adanParse_plain_nokarakter = explode(' ', $text_plain_nokarakter);
+
+$hilangAzan = str_replace('/azan ', '', $text, $hit);
+if ($hit == 0) {
+	$hilangAzan = str_replace('/azan' . USERNAME_BOT . ' ', '', $text);
+}
+
+if ('/ping' == $adanParse[0] || '/ping' . USERNAME_BOT . '' == $adanParse[0]) {
+	require __DIR__ . '/command/ping.php';
+	exit;
+} 
+
 function whitelist_check($userID)
 {
 	$file = __DIR__ . "/json_data/whitelist_userid.json";
@@ -191,14 +205,7 @@ if (isset($entityUserAfk)) {
 // 	}
 // }
 
-$adanParse = explode(' ', $text);
-$adanParse_plain = explode(' ', $text_plain);
-$adanParse_plain_nokarakter = explode(' ', $text_plain_nokarakter);
 
-$hilangAzan = str_replace('/azan ', '', $text, $hit);
-if ($hit == 0) {
-	$hilangAzan = str_replace('/azan' . USERNAME_BOT . ' ', '', $text);
-}
 
 $deteksiApakahGrup = detect_grup();
 $gc_command_verify = detect_grup();
@@ -469,9 +476,6 @@ if ('/start' == $adanParse[0] || '/start' . USERNAME_BOT . '' == $adanParse[0]) 
 	exit;
 } elseif ('/php_doc' == $adanParse[0] || '/php_doc' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/php_doc.php';
-	exit;
-} elseif ('/ping' == $adanParse[0] || '/ping' . USERNAME_BOT . '' == $adanParse[0]) {
-	require __DIR__ . '/command/ping.php';
 	exit;
 } elseif (
 	'/run' == $adanParse[0] || '/run' . USERNAME_BOT . '' == $adanParse[0] ||
