@@ -136,6 +136,8 @@ if ($isadmin == true) {
     $kamu_admin = true;
 } elseif ($isadmin == false) {
     $kamu_admin = false;
+}elseif ($userID == $userid_pemilik) {
+    $kamu_admin = true;
 }
 
 if ($kamu_admin == true) {
