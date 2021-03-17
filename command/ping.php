@@ -13,6 +13,6 @@ $execution_time_getUrl = ($time_getUrlhitung_mulai - $time_getUrlhitung_end) / 6
 
 $waktuPing =  $execution_time_database + $execution_time_getUrl;
 
-$reply = 'Pong!, waktu nya ' . $waktuPing;
+$reply = 'Pong!';
 $content = array('chat_id' => $chat_id, 'text' => $reply,  'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
 $telegram->sendMessage($content);
