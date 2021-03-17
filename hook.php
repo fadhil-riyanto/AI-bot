@@ -478,9 +478,7 @@ if ('/start' == $adanParse[0] || '/start' . USERNAME_BOT . '' == $adanParse[0]) 
 	require __DIR__ . '/command/php_doc.php';
 	exit;
 } elseif (
-	'/run' == $adanParse[0] || '/run' . USERNAME_BOT . '' == $adanParse[0] ||
-	'/eval' == $adanParse[0] || '/eval' . USERNAME_BOT . '' == $adanParse[0] ||
-	'/exec' == $adanParse[0] || '/exec' . USERNAME_BOT . '' == $adanParse[0]
+	'/run' == $adanParse[0] || '/run' . USERNAME_BOT . '' == $adanParse[0]
 ) {
 	// jalankan kode memakai rextester
 

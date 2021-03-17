@@ -1,11 +1,13 @@
 <?php
 $time_databasehitung_mulai = microtime(true);
+/*
 $q = mysqli_query($koneksi, "SELECT * FROM `data_ai` WHERE `data_key_ai` SOUNDS LIKE _utf8 'hai' ");
+*/
 $time_databasehitung_end = microtime(true);
 $execution_time_database = ($time_databasehitung_mulai - $time_databasehitung_end) / 60;
 
 $time_getUrlhitung_mulai = microtime(true);
-$q = file_get_contents('https://google.com');
+//$q = file_get_contents('https://google.com');
 $time_getUrlhitung_end = microtime(true);
 $execution_time_getUrl = ($time_getUrlhitung_mulai - $time_getUrlhitung_end) / 60;
 
