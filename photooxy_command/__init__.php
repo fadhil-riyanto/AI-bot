@@ -290,4 +290,130 @@ if ($adanParse[0] == '/shadow_sky' ||  '/shadow_sky' . USERNAME_BOT . '' == $ada
         $konten = array('chat_id' => $chat_id, 'photo' => $urlss, 'caption' => 'Hai ' . $username . ', Gambar berhasil dibuat!', 'reply_to_message_id' => $message_id,);
         $telegram->sendPhoto($konten);
     }
+} elseif ($adanParse[0] == '/3d_summer' ||  '/3d_summer' . USERNAME_BOT . '' == $adanParse[0]) {
+    $azanHilangcommand = str_replace($adanParse_plain_nokarakter[0], '', $text_plain_nokarakter);
+    $udahDiparse = str_replace($adanParse_plain_nokarakter[0] . ' ', '', $text_plain_nokarakter);
+    if ($azanHilangcommand == null) {
+        $reply = "maaf, anda harus memasukkan teks.";
+        $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+        $telegram->sendMessage($content);
+    } else {
+        $ngab = array(
+            'base' => 'https://photooxy.com/',
+            'theme' => 'logo-and-text-effects/3d-summer-text-effect-367.html',
+            'text_1' => $udahDiparse
+        );
+
+        $urlss = photo_oxy_class($ngab);
+        $konten = array('chat_id' => $chat_id, 'photo' => $urlss, 'caption' => 'Hai ' . $username . ', Gambar berhasil dibuat!', 'reply_to_message_id' => $message_id,);
+        $telegram->sendPhoto($konten);
+    }
+} elseif ($adanParse[0] == '/wolf_metal' ||  '/wolf_metal' . USERNAME_BOT . '' == $adanParse[0]) {
+    $azanHilangcommand = str_replace($adanParse_plain_nokarakter[0], '', $text_plain_nokarakter);
+    $udahDiparse = str_replace($adanParse_plain_nokarakter[0] . ' ', '', $text_plain_nokarakter);
+    if ($azanHilangcommand == null) {
+        $reply = "maaf, anda harus memasukkan teks.";
+        $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+        $telegram->sendMessage($content);
+    } else {
+        $ngab = array(
+            'base' => 'https://photooxy.com/',
+            'theme' => 'logo-and-text-effects/create-a-wolf-metal-text-effect-365.html',
+            'text_1' => $udahDiparse
+        );
+
+        $urlss = photo_oxy_class($ngab);
+        $konten = array('chat_id' => $chat_id, 'photo' => $urlss, 'caption' => 'Hai ' . $username . ', Gambar berhasil dibuat!', 'reply_to_message_id' => $message_id,);
+        $telegram->sendPhoto($konten);
+    }
+} elseif ($adanParse[0] == '/nature_3d' ||  '/nature_3d' . USERNAME_BOT . '' == $adanParse[0]) {
+    $azanHilangcommand = str_replace($adanParse_plain_nokarakter[0], '', $text_plain_nokarakter);
+    $udahDiparse = str_replace($adanParse_plain_nokarakter[0] . ' ', '', $text_plain_nokarakter);
+    if ($azanHilangcommand == null) {
+        $reply = "maaf, anda harus memasukkan teks.";
+        $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+        $telegram->sendMessage($content);
+    } else {
+        $ngab = array(
+            'base' => 'https://photooxy.com/',
+            'theme' => 'logo-and-text-effects/make-nature-3d-text-effects-364.html',
+            'text_1' => $udahDiparse
+        );
+
+        $urlss = photo_oxy_class($ngab);
+        $konten = array('chat_id' => $chat_id, 'photo' => $urlss, 'caption' => 'Hai ' . $username . ', Gambar berhasil dibuat!', 'reply_to_message_id' => $message_id,);
+        $telegram->sendPhoto($konten);
+    }
+} elseif ($adanParse[0] == '/underwater' ||  '/underwater' . USERNAME_BOT . '' == $adanParse[0]) {
+    $azanHilangcommand = str_replace($adanParse_plain_nokarakter[0], '', $text_plain_nokarakter);
+    $udahDiparse = str_replace($adanParse_plain_nokarakter[0] . ' ', '', $text_plain_nokarakter);
+    if ($azanHilangcommand == null) {
+        $reply = "maaf, anda harus memasukkan teks.";
+        $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+        $telegram->sendMessage($content);
+    } else {
+        $ngab = array(
+            'base' => 'https://photooxy.com/',
+            'theme' => 'logo-and-text-effects/creating-an-underwater-ocean-363.html',
+            'text_1' => $udahDiparse
+        );
+
+        $urlss = photo_oxy_class($ngab);
+        $konten = array('chat_id' => $chat_id, 'photo' => $urlss, 'caption' => 'Hai ' . $username . ', Gambar berhasil dibuat!', 'reply_to_message_id' => $message_id,);
+        $telegram->sendPhoto($konten);
+    }
+} elseif ($adanParse[0] == '/golden_rose' ||  '/golden_rose' . USERNAME_BOT . '' == $adanParse[0]) {
+    $azanHilangcommand = str_replace($adanParse_plain_nokarakter[0], '', $text_plain_nokarakter);
+    $udahDiparse = str_replace($adanParse_plain_nokarakter[0] . ' ', '', $text_plain_nokarakter);
+    if ($azanHilangcommand == null) {
+        $reply = "maaf, anda harus memasukkan teks.";
+        $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+        $telegram->sendMessage($content);
+    } else {
+        $ngab = array(
+            'base' => 'https://photooxy.com/',
+            'theme' => 'logo-and-text-effects/yellow-roses-text-360.html',
+            'text_1' => $udahDiparse
+        );
+
+        $urlss = photo_oxy_class($ngab);
+        $konten = array('chat_id' => $chat_id, 'photo' => $urlss, 'caption' => 'Hai ' . $username . ', Gambar berhasil dibuat!', 'reply_to_message_id' => $message_id,);
+        $telegram->sendPhoto($konten);
+    }
+} elseif ($adanParse[0] == '/summer_nature' ||  '/summer_nature' . USERNAME_BOT . '' == $adanParse[0]) {
+    $azanHilangcommand = str_replace($adanParse_plain_nokarakter[0], '', $text_plain_nokarakter);
+    $udahDiparse = str_replace($adanParse_plain_nokarakter[0] . ' ', '', $text_plain_nokarakter);
+    if ($azanHilangcommand == null) {
+        $reply = "maaf, anda harus memasukkan teks.";
+        $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+        $telegram->sendMessage($content);
+    } else {
+        $ngab = array(
+            'base' => 'https://photooxy.com/',
+            'theme' => 'logo-and-text-effects/create-vector-nature-typography-355.html',
+            'text_1' => $udahDiparse
+        );
+
+        $urlss = photo_oxy_class($ngab);
+        $konten = array('chat_id' => $chat_id, 'photo' => $urlss, 'caption' => 'Hai ' . $username . ', Gambar berhasil dibuat!', 'reply_to_message_id' => $message_id,);
+        $telegram->sendPhoto($konten);
+    }
+} elseif ($adanParse[0] == '/typography_letters' ||  '/typography_letters' . USERNAME_BOT . '' == $adanParse[0]) {
+    $azanHilangcommand = str_replace($adanParse_plain_nokarakter[0], '', $text_plain_nokarakter);
+    $udahDiparse = str_replace($adanParse_plain_nokarakter[0] . ' ', '', $text_plain_nokarakter);
+    if ($azanHilangcommand == null) {
+        $reply = "maaf, anda harus memasukkan teks.";
+        $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+        $telegram->sendMessage($content);
+    } else {
+        $ngab = array(
+            'base' => 'https://photooxy.com/',
+            'theme' => 'logo-and-text-effects/create-a-layered-leaves-typography-text-effect-354.html',
+            'text_1' => $udahDiparse
+        );
+
+        $urlss = photo_oxy_class($ngab);
+        $konten = array('chat_id' => $chat_id, 'photo' => $urlss, 'caption' => 'Hai ' . $username . ', Gambar berhasil dibuat!', 'reply_to_message_id' => $message_id,);
+        $telegram->sendPhoto($konten);
+    }
 }
