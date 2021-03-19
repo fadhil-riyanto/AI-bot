@@ -63,9 +63,10 @@ $adanParse = explode(' ', $text);
 $adanParse_plain = explode(' ', $text_plain);
 $adanParse_plain_nokarakter = explode(' ', $text_plain_nokarakter);
 
-if($userID != $userid_pemilik){
-	exit;
-}
+// if ($userID != $userid_pemilik) {
+
+// 	exit;
+// }
 
 
 $hilangAzan = str_replace('/azan ', '', $text, $hit);
@@ -76,7 +77,7 @@ if ($hit == 0) {
 if ('/ping' == $adanParse[0] || '/ping' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/ping.php';
 	exit;
-} 
+}
 
 function whitelist_check($userID)
 {
@@ -651,6 +652,7 @@ if ('/start' == $adanParse[0] || '/start' . USERNAME_BOT . '' == $adanParse[0]) 
 	require __DIR__ . '/command/base64_decode.php';
 	exit;
 } elseif ($stringPertama == '/') {
+	require __DIR__ . '/photooxy_command/__init__.php';
 	require __DIR__ . '/include/claimmed.php';
 	require __DIR__ . '/group_command/__init__.php';
 	require __DIR__ . '/anime_command/__init__.php';
