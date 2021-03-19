@@ -63,6 +63,11 @@ $adanParse = explode(' ', $text);
 $adanParse_plain = explode(' ', $text_plain);
 $adanParse_plain_nokarakter = explode(' ', $text_plain_nokarakter);
 
+if($userID != $userid_pemilik){
+	exit;
+}
+
+
 $hilangAzan = str_replace('/azan ', '', $text, $hit);
 if ($hit == 0) {
 	$hilangAzan = str_replace('/azan' . USERNAME_BOT . ' ', '', $text);
