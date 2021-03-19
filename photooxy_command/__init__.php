@@ -3,16 +3,22 @@ function themeddatas($string)
 {
     $string = strtolower($string);
     $dict = array(
-        'shadow' => 'logo-and-text-effects/shadow-text-effect-in-the-sky-394.html',
-        'csharp' => '1',
-        'vb_net' => '2',
-        'vb' => '2',
-        'visual_basic_dotnet' => '2',
-        'fpc' => '9',
-        'objective_c' => '10',
-        'objective-c' => '10',
-        'objc' => '10',
-        'clojure' => '47'
+        '/shadow' => 'logo-and-text-effects/shadow-text-effect-in-the-sky-394.html',
+        '/flower_cup' => 'logo-and-text-effects/write-text-on-the-cup-392.html',
+        '/romantic_messages' => 'logo-and-text-effects/romantic-messages-for-your-loved-one-391.html',
+        '/burn_paper' => 'logo-and-text-effects/write-text-on-burn-paper-388.html',
+        '' => '',
+        '' => '',
+        '' => '',
+        '/underwater' => 'logo-and-text-effects/creating-an-underwater-ocean-363.html',
+        '/vb_net' => '2',
+        '/vb' => '2',
+        '/visual_basic_dotnet' => '2',
+        '/fpc' => '9',
+        '/objective_c' => '10',
+        '/objective-c' => '10',
+        '/objc' => '10',
+        '/clojure' => '47'
     );
     if (isset($dict[$string])) {
         return $dict[$string];
@@ -77,15 +83,22 @@ if ($azanHilangcommand == null) {
 } else {
     $konf = themeddatas($adanParse_plain_nokarakter[0]);
     if ($konf == false) {
+        $exuser = explode('@', $text_plain_nokarakter);
+        $konf = themeddatas($exuser[0]);
+        if ($konf == false) {
+        } else {
+            $datas_url = $konf;
+        }
     } else {
-        $ngab = array(
-            'base' => 'https://photooxy.com/',
-            'theme' => $konf,
-            'text_1' => $udahDiparse
-        );
-
-        $urlss = photo_oxy_class($ngab);
-        $konten = array('chat_id' => $chat_id, 'photo' => $urlss, 'caption' => 'Hai ' . $username . ', Gambar berhasil dibuat!', 'reply_to_message_id' => $message_id,);
-        $telegram->sendPhoto($konten);
+        $datas_url = $konf;
     }
+    $ngab = array(
+        'base' => 'https://photooxy.com/',
+        'theme' => $datas_url,
+        'text_1' => $udahDiparse
+    );
+
+    $urlss = photo_oxy_class($ngab);
+    $konten = array('chat_id' => $chat_id, 'photo' => $urlss, 'caption' => 'Hai ' . $username . ', Gambar berhasil dibuat!', 'reply_to_message_id' => $message_id,);
+    $telegram->sendPhoto($konten);
 }

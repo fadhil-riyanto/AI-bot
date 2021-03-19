@@ -11,7 +11,7 @@ define('TIME_ZONE', 'Asia/Jakarta');                                        //WA
 define('API_WEATHER_KEY', '7cf7252c68d3473681054158212501');                //WAJIB
 define('PASTEBIN_API', '8HPm65nBCWQV0pfOH3PLNFNTSkdiAkQD');                //WAJIB
 define('ID_BOT', '1489990155');                                                  //WAJIB
-define('MAX_EXECUTE_SCRIPT', 10);                                            //SUNNAH_ROSUL
+define('MAX_EXECUTE_SCRIPT', 20);                                            //SUNNAH_ROSUL
 define('USERNAME_BOT', '@fadhil_riyanto_bot');                                // pakai at@
 define('USERNAME_BOT_NON_AT', 'fadhil_riyanto_bot');                                // pakai at@
 define('PUMBUAT_BOT', '@fadhil_riyanto');                                // pakai at@
