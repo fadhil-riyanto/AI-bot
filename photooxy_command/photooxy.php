@@ -1,7 +1,6 @@
-theme yang disupport di photooxy
-short command : /photooxy untuk melihat semua theme yang ada
-
-/shadow
+<?php
+$reply = 'theme yang disupport di photooxy' . PHP_EOL . PHP_EOL .
+    '/shadow
 /flower_cup
 /romantic_messages
 /burn_paper
@@ -58,4 +57,6 @@ short command : /photooxy untuk melihat semua theme yang ada
 /orchids_flower
 /flower
 /party_neon
-/dark_metal
+/dark_metal';
+$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+$telegram->sendMessage($content);

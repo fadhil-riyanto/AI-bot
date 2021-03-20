@@ -63,10 +63,10 @@ $adanParse = explode(' ', $text);
 $adanParse_plain = explode(' ', $text_plain);
 $adanParse_plain_nokarakter = explode(' ', $text_plain_nokarakter);
 
-if ($userID != $userid_pemilik) {
+// if ($userID != $userid_pemilik) {
 
-	exit;
-}
+// 	exit;
+// }
 
 
 $hilangAzan = str_replace('/azan ', '', $text, $hit);
@@ -74,6 +74,10 @@ if ($hit == 0) {
 	$hilangAzan = str_replace('/azan' . USERNAME_BOT . ' ', '', $text);
 }
 
+if ('/ping_detail' == $adanParse[0] || '/ping_detail' . USERNAME_BOT . '' == $adanParse[0]) {
+	require __DIR__ . '/command/ping_detail.php';
+	exit;
+}
 if ('/ping' == $adanParse[0] || '/ping' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/ping.php';
 	exit;
@@ -148,6 +152,9 @@ $entityUserAfk = $result['message']['entities'];
 // 	}
 // }
 
+// if (isset($text)) {
+// 	require __DIR__ . '/include/autounafk.php';
+// }
 if (isset($getreplyianid)) {
 
 	$db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
@@ -453,6 +460,9 @@ if ('/start' == $adanParse[0] || '/start' . USERNAME_BOT . '' == $adanParse[0]) 
 } elseif ('/brainly_i' == $adanParse[0] || '/brainly_i' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/brainly_i.php';
 	exit;
+} elseif ('/photooxy' == $adanParse[0] || '/photooxy' . USERNAME_BOT . '' == $adanParse[0]) {
+	require __DIR__ . '/photooxy_command/photooxy.php';
+	exit;
 } elseif ('/debug' == $adanParse[0] || '/debug' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/debug.php';
 	exit;
@@ -584,6 +594,18 @@ if ('/start' == $adanParse[0] || '/start' . USERNAME_BOT . '' == $adanParse[0]) 
 } elseif ('/get_cname' == $adanParse[0] || '/get_cname' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/get_cname.php';
 	exit;
+} elseif ('/http' == $adanParse[0] || '/http' . USERNAME_BOT . '' == $adanParse[0]) {
+	require __DIR__ . '/command/http.php';
+	exit;
+} elseif ('/header' == $adanParse[0] || '/header' . USERNAME_BOT . '' == $adanParse[0]) {
+	require __DIR__ . '/command/header.php';
+	exit;
+} elseif ('/media' == $adanParse[0] || '/media' . USERNAME_BOT . '' == $adanParse[0]) {
+	require __DIR__ . '/command/media.php';
+	exit;
+} elseif ('/method' == $adanParse[0] || '/method' . USERNAME_BOT . '' == $adanParse[0]) {
+	require __DIR__ . '/command/method.php';
+	exit;
 } elseif ($text == '/donate' || $text == '/donate' . USERNAME_BOT . '') {
 	require __DIR__ . '/command/donate.php';
 	exit;
@@ -645,10 +667,16 @@ if ('/start' == $adanParse[0] || '/start' . USERNAME_BOT . '' == $adanParse[0]) 
 	// exit;
 	require __DIR__ . '/command/corona_provinsi.php';
 	exit;
-} elseif ('/base64_encode' == $adanParse[0] || '/base64_encode' . USERNAME_BOT . '' == $adanParse[0]) {
+} elseif (
+	'/base64_encode' == $adanParse[0] || '/base64_encode' . USERNAME_BOT . '' == $adanParse[0] ||
+	'/b64_enc' == $adanParse[0] || '/b64_enc' . USERNAME_BOT . '' == $adanParse[0]
+) {
 	require __DIR__ . '/command/base64_encode.php';
 	exit;
-} elseif ('/base64_decode' == $adanParse[0] || '/base64_decode' . USERNAME_BOT . '' == $adanParse[0]) {
+} elseif (
+	'/base64_decode' == $adanParse[0] || '/base64_decode' . USERNAME_BOT . '' == $adanParse[0] ||
+	'/b64_dec' == $adanParse[0] || '/b64_dec' . USERNAME_BOT . '' == $adanParse[0]
+) {
 	require __DIR__ . '/command/base64_decode.php';
 	exit;
 } elseif ($stringPertama == '/') {

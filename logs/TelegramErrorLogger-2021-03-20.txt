@@ -1035,3 +1035,361 @@ ref.disable_web_page_preview= true
 #4 C:\bot telegram\hook.php(419): require('C:\\bot telegram...')
 #5 {main}
 
+============[Date]============
+[ 2021-03-20 12:43:07  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804432815
+ref.message.message_id= 20128
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1616218986
+ref.message.text= /help
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Selamat datang di buku panduan bot ini
+Anda dapat membaca panduan di bawah ini, dengan mengklik sebuah tombol dibawah.
+Anda juga dapat mengajukan pertanyaan apa pun di Support group, harap diperhatikan bahwa Anda hanya dapat bertanya setelah membaca panduan, dan hanya bertanya tentang bot ini!
+
+Perintah umum adalah:
+- /start: Mulai bot
+- /help: Berikan pesan ini
+- /help_admin: melihat semua command untuk group management
+
+Semua perintah hanya bekerja dengan / (garis miring)
+ref.message_id= 
+ref.reply_markup= {"inline_keyboard":[[{"text":"perkakas","callback_data":"\/callback_q@fadhil_riyanto_bot perkakas"},{"text":"hash","callback_data":"\/callback_q@fadhil_riyanto_bot hash"},{"text":"hiburan","callback_data":"\/callback_q@fadhil_riyanto_bot hiburan"}],[{"text":"dev tools","callback_data":"\/callback_q@fadhil_riyanto_bot dev_tools"},{"text":"anime","callback_data":"\/callback_q@fadhil_riyanto_bot anime"},{"text":"bot ini","callback_data":"\/callback_q@fadhil_riyanto_bot bot_ini"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(192): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\command\help.php(32): Telegram->editMessageText(Array)
+#4 C:\bot telegram\hook.php(514): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-20 12:43:10  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804432816
+ref.message.message_id= 20129
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1616218987
+ref.message.text= /help_admin
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 11
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Selamat datang di panduan bot management
+
+perlu diperhatikan bahwa bot ini tidak akan bisa di invite ke grup tanpa persetujuan dari pembuat bot. dan, command grup management dibawah ini khusus untuk grup yang sudah diijinkan masuk oleh pembuat bot ini.
+
+jika mau mengivite bot ini ke grup anda, silahkan kirimkan angka chat id grup anda lalu pm (private message) ke pembuat bot ini, yaitu @fadhil_riyanto
+
+note : Semua perintah hanya bekerja dengan / (garis miring)
+ref.message_id= 
+ref.reply_markup= {"inline_keyboard":[[{"text":"Grettings","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot grettings"},{"text":"Rules","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot rules"},{"text":"Admins","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot admins"}],[{"text":"Pin","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot pin"},{"text":"Mute","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot mute"},{"text":"Report","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot report"}],[{"text":"Bans","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot bans"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(192): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\admin_help\help_admin.php(32): Telegram->editMessageText(Array)
+#4 C:\bot telegram\hook.php(423): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-20 12:45:55  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804432817
+ref.message.message_id= 20132
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1616219154
+ref.message.text= /help
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Selamat datang di buku panduan bot ini
+Anda dapat membaca panduan di bawah ini, dengan mengklik sebuah tombol dibawah.
+Anda juga dapat mengajukan pertanyaan apa pun di Support group, harap diperhatikan bahwa Anda hanya dapat bertanya setelah membaca panduan, dan hanya bertanya tentang bot ini!
+
+Perintah umum adalah:
+- /start: Mulai bot
+- /help: Berikan pesan ini
+- /help_admin: melihat semua command untuk group management
+
+Semua perintah hanya bekerja dengan / (garis miring)
+ref.message_id= 
+ref.reply_markup= {"inline_keyboard":[[{"text":"perkakas","callback_data":"\/callback_q@fadhil_riyanto_bot perkakas"},{"text":"hash","callback_data":"\/callback_q@fadhil_riyanto_bot hash"},{"text":"hiburan","callback_data":"\/callback_q@fadhil_riyanto_bot hiburan"}],[{"text":"dev tools","callback_data":"\/callback_q@fadhil_riyanto_bot dev_tools"},{"text":"anime","callback_data":"\/callback_q@fadhil_riyanto_bot anime"},{"text":"bot ini","callback_data":"\/callback_q@fadhil_riyanto_bot bot_ini"}],[{"text":"Grettings","callback_data":"\/callback_q@fadhil_riyanto_bot grettings"},{"text":"Rules","callback_data":"\/callback_q@fadhil_riyanto_bot rules"},{"text":"Admins","callback_data":"\/callback_q@fadhil_riyanto_bot admins"}],[{"text":"Pin","callback_data":"\/callback_q@fadhil_riyanto_bot pin"},{"text":"Mute","callback_data":"\/callback_q@fadhil_riyanto_bot mute"},{"text":"Report","callback_data":"\/callback_q@fadhil_riyanto_bot report"}],[{"text":"Bans","callback_data":"\/callback_q@fadhil_riyanto_bot bans"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(192): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\command\help.php(32): Telegram->editMessageText(Array)
+#4 C:\bot telegram\hook.php(514): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-20 13:03:38  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804432830
+ref.message.message_id= 20139
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1616220216
+ref.message.text= /help
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Selamat datang di buku panduan bot ini
+Anda dapat membaca panduan di bawah ini, dengan mengklik sebuah tombol dibawah.
+Anda juga dapat mengajukan pertanyaan apa pun di Support group, harap diperhatikan bahwa Anda hanya dapat bertanya setelah membaca panduan, dan hanya bertanya tentang bot ini!
+
+Perintah umum adalah:
+- /start: Mulai bot
+- /help: Berikan pesan ini
+- /help_admin: melihat semua command untuk group management
+
+Semua perintah hanya bekerja dengan / (garis miring)
+ref.message_id= 
+ref.reply_markup= {"inline_keyboard":[[{"text":"perkakas","callback_data":"\/callback_q@fadhil_riyanto_bot perkakas"},{"text":"hash","callback_data":"\/callback_q@fadhil_riyanto_bot hash"},{"text":"hiburan","callback_data":"\/callback_q@fadhil_riyanto_bot hiburan"}],[{"text":"dev tools","callback_data":"\/callback_q@fadhil_riyanto_bot dev_tools"},{"text":"anime","callback_data":"\/callback_q@fadhil_riyanto_bot anime"},{"text":"bot ini","callback_data":"\/callback_q@fadhil_riyanto_bot bot_ini"}],[{"text":"Photooxy","callback_data":"\/callback_q@fadhil_riyanto_bot photooxy"},{"text":"Rules","callback_data":"\/callback_q@fadhil_riyanto_bot rules"},{"text":"Admins","callback_data":"\/callback_q@fadhil_riyanto_bot admins"}],[{"text":"Pin","callback_data":"\/callback_q@fadhil_riyanto_bot pin"},{"text":"Mute","callback_data":"\/callback_q@fadhil_riyanto_bot mute"},{"text":"Report","callback_data":"\/callback_q@fadhil_riyanto_bot report"}],[{"text":"Bans","callback_data":"\/callback_q@fadhil_riyanto_bot bans"},{"text":"Grettings","callback_data":"\/callback_q@fadhil_riyanto_bot grettings"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(192): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\command\help.php(32): Telegram->editMessageText(Array)
+#4 C:\bot telegram\hook.php(514): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-20 13:44:53  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't restrict self
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804432900
+ref.message.message_id= 27096
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001310420564
+ref.message.chat.title= GAS Testing Grup
+ref.message.chat.username= GasTestingGroup
+ref.message.chat.type= supergroup
+ref.message.date= 1616222677
+ref.message.reply_to_message.message_id= 27094
+ref.message.reply_to_message.from.id= 1489990155
+ref.message.reply_to_message.from.is_bot= true
+ref.message.reply_to_message.from.first_name= Fadhil Riyanto Bot
+ref.message.reply_to_message.from.username= Fadhil_riyanto_bot
+ref.message.reply_to_message.chat.id= -1001310420564
+ref.message.reply_to_message.chat.title= GAS Testing Grup
+ref.message.reply_to_message.chat.username= GasTestingGroup
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1616222659
+ref.message.reply_to_message.text= Maaf ,  sedang AFK sejak 13:42:05
+Alasan : hehe
+ref.message.text= /sban
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.user_id= 1489990155
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(152): Telegram->endpoint('kickChatMember', Array)
+#3 C:\bot telegram\admin_command\sban.php(18): Telegram->kickChatMember(Array)
+#4 C:\bot telegram\admin_command\__init__.php(184): require('C:\\bot telegram...')
+#5 C:\bot telegram\hook.php(691): require('C:\\bot telegram...')
+#6 {main}
+
+============[Date]============
+[ 2021-03-20 13:44:56  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: bot is not a member of the supergroup chat
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804432901
+ref.message.message_id= 27097
+ref.message.from.id= 1394335657
+ref.message.from.is_bot= false
+ref.message.from.first_name= HAZMI
+ref.message.from.last_name= 101
+ref.message.from.username= hazmi101
+ref.message.from.language_code= id
+ref.message.chat.id= -1001310420564
+ref.message.chat.title= GAS Testing Grup
+ref.message.chat.username= GasTestingGroup
+ref.message.chat.type= supergroup
+ref.message.date= 1616222683
+ref.message.sticker.width= 512
+ref.message.sticker.height= 512
+ref.message.sticker.emoji= 😭
+ref.message.sticker.set_name= HotCherry
+ref.message.sticker.is_animated= true
+ref.message.sticker.thumb.file_id= AAMCAgADHQJOG25UAAJp2WBVmdu8Y8R8A42nYxtzKgh73tsQAAIOAAPANk8TI1cURIdu1mVszIUPAAQBAAdtAAMspAACHgQ
+ref.message.sticker.thumb.file_unique_id= AQADbMyFDwAELKQAAg
+ref.message.sticker.thumb.file_size= 5066
+ref.message.sticker.thumb.width= 128
+ref.message.sticker.thumb.height= 128
+ref.message.sticker.file_id= CAACAgIAAx0CThtuVAACadlgVZnbvGPEfAONp2MbcyoIe97bEAACDgADwDZPEyNXFESHbtZlHgQ
+ref.message.sticker.file_unique_id= AgADDgADwDZPEw
+ref.message.sticker.file_size= 14446
+
+
+[ref]
+ref.text= Maaf ,  sedang AFK sejak 13:42:05
+Alasan : hehe
+ref.reply_to_message_id= 27097
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\include\autounafk.php(34): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(155): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-20 13:44:57  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: bot is not a member of the supergroup chat
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804432903
+ref.message.message_id= 27098
+ref.message.from.id= 1489990155
+ref.message.from.is_bot= true
+ref.message.from.first_name= Fadhil Riyanto Bot
+ref.message.from.username= Fadhil_riyanto_bot
+ref.message.chat.id= -1001310420564
+ref.message.chat.title= GAS Testing Grup
+ref.message.chat.username= GasTestingGroup
+ref.message.chat.type= supergroup
+ref.message.date= 1616222694
+ref.message.left_chat_participant.id= 1489990155
+ref.message.left_chat_participant.is_bot= true
+ref.message.left_chat_participant.first_name= Fadhil Riyanto Bot
+ref.message.left_chat_participant.username= Fadhil_riyanto_bot
+ref.message.left_chat_member.id= 1489990155
+ref.message.left_chat_member.is_bot= true
+ref.message.left_chat_member.first_name= Fadhil Riyanto Bot
+ref.message.left_chat_member.username= Fadhil_riyanto_bot
+
+
+[ref]
+ref.text= Maaf ,  sedang AFK sejak 13:42:05
+Alasan : hehe
+ref.reply_to_message_id= 27098
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\include\autounafk.php(34): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(155): require('C:\\bot telegram...')
+#5 {main}
+
