@@ -63,10 +63,10 @@ $adanParse = explode(' ', $text);
 $adanParse_plain = explode(' ', $text_plain);
 $adanParse_plain_nokarakter = explode(' ', $text_plain_nokarakter);
 
-// if ($userID != $userid_pemilik) {
+if ($userID != $userid_pemilik) {
 
-// 	exit;
-// }
+	exit;
+}
 
 
 $hilangAzan = str_replace('/azan ', '', $text, $hit);
@@ -653,12 +653,20 @@ if ('/start' == $adanParse[0] || '/start' . USERNAME_BOT . '' == $adanParse[0]) 
 	exit;
 } elseif ($stringPertama == '/') {
 
+	require __DIR__ . '/photooxy_command/__init__.php';
+
 	require __DIR__ . '/include/claimmed.php';
 	require __DIR__ . '/group_command/__init__.php';
+
 	require __DIR__ . '/anime_command/__init__.php';
+
 	require __DIR__ . '/hash_command/__init__.php';
+
 	require __DIR__ . '/admin_command/__init__.php';
-	require __DIR__ . '/photooxy_command/__init__.php';
+
+
+
+
 
 	// Jika ditemukan data dengan awalan coommand telegram, maka dia ngga akan diinsert ke database
 	// kita menggunakan exit agar dia keluar dari konsol

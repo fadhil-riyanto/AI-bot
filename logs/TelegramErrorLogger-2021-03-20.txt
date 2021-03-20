@@ -1,0 +1,1037 @@
+============[Date]============
+[ 2021-03-20 08:51:16  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804432440
+ref.message.message_id= 19885
+ref.message.from.id= 617426792
+ref.message.from.is_bot= false
+ref.message.from.first_name= Yasir Aris
+ref.message.from.username= YasirArisM
+ref.message.from.language_code= id
+ref.message.chat.id= 617426792
+ref.message.chat.first_name= Yasir Aris
+ref.message.chat.username= YasirArisM
+ref.message.chat.type= private
+ref.message.date= 1616199354
+ref.message.text= /help_admin
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 11
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @YasirArisM, Selamat datang di panduan bot management
+
+perlu diperhatikan bahwa bot ini tidak akan bisa di invite ke grup tanpa persetujuan dari pembuat bot. dan, command grup management dibawah ini khusus untuk grup yang sudah diijinkan masuk oleh pembuat bot ini.
+
+jika mau mengivite bot ini ke grup anda, silahkan kirimkan angka chat id grup anda lalu pm (private message) ke pembuat bot ini, yaitu @fadhil_riyanto
+
+note : Semua perintah hanya bekerja dengan / (garis miring)
+ref.message_id= 
+ref.reply_markup= {"inline_keyboard":[[{"text":"Grettings","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot grettings"},{"text":"Rules","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot rules"},{"text":"Admins","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot admins"}],[{"text":"Pin","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot pin"},{"text":"Mute","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot mute"},{"text":"Report","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot report"}],[{"text":"Bans","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot bans"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(192): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\admin_help\help_admin.php(32): Telegram->editMessageText(Array)
+#4 C:\bot telegram\hook.php(419): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-20 08:51:46  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804432399
+ref.message.message_id= 19884
+ref.message.from.id= 889830379
+ref.message.from.is_bot= false
+ref.message.from.first_name= Aᴠɪsᴀᴅɪᴜs Aᴢᴀᴢᴇᴇʟ Jᴀᴄᴋᴀʟs
+ref.message.from.last_name= Sᴀsᴀᴇ Hᴀᴛsᴜʜɪᴍᴀ
+ref.message.from.username= avisadius
+ref.message.from.language_code= en
+ref.message.chat.id= 889830379
+ref.message.chat.first_name= Aᴠɪsᴀᴅɪᴜs Aᴢᴀᴢᴇᴇʟ Jᴀᴄᴋᴀʟs
+ref.message.chat.last_name= Sᴀsᴀᴇ Hᴀᴛsᴜʜɪᴍᴀ
+ref.message.chat.username= avisadius
+ref.message.chat.type= private
+ref.message.date= 1616186858
+ref.message.text= /help
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @avisadius, Selamat datang di buku panduan bot ini
+Anda dapat membaca panduan di bawah ini, dengan mengklik sebuah tombol dibawah.
+Anda juga dapat mengajukan pertanyaan apa pun di Support group, harap diperhatikan bahwa Anda hanya dapat bertanya setelah membaca panduan, dan hanya bertanya tentang bot ini!
+
+Perintah umum adalah:
+- /start: Mulai bot
+- /help: Berikan pesan ini
+- /help_admin: melihat semua command untuk group management
+
+Semua perintah hanya bekerja dengan / (garis miring)
+ref.message_id= 
+ref.reply_markup= {"inline_keyboard":[[{"text":"perkakas","callback_data":"\/callback_q@fadhil_riyanto_bot perkakas"},{"text":"hash","callback_data":"\/callback_q@fadhil_riyanto_bot hash"},{"text":"hiburan","callback_data":"\/callback_q@fadhil_riyanto_bot hiburan"}],[{"text":"dev tools","callback_data":"\/callback_q@fadhil_riyanto_bot dev_tools"},{"text":"anime","callback_data":"\/callback_q@fadhil_riyanto_bot anime"},{"text":"bot ini","callback_data":"\/callback_q@fadhil_riyanto_bot bot_ini"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(192): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\command\help.php(32): Telegram->editMessageText(Array)
+#4 C:\bot telegram\hook.php(507): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-20 08:51:48  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804432441
+ref.message.message_id= 19886
+ref.message.from.id= 617426792
+ref.message.from.is_bot= false
+ref.message.from.first_name= Yasir Aris
+ref.message.from.username= YasirArisM
+ref.message.from.language_code= id
+ref.message.chat.id= 617426792
+ref.message.chat.first_name= Yasir Aris
+ref.message.chat.username= YasirArisM
+ref.message.chat.type= private
+ref.message.date= 1616199357
+ref.message.text= /help
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @YasirArisM, Selamat datang di buku panduan bot ini
+Anda dapat membaca panduan di bawah ini, dengan mengklik sebuah tombol dibawah.
+Anda juga dapat mengajukan pertanyaan apa pun di Support group, harap diperhatikan bahwa Anda hanya dapat bertanya setelah membaca panduan, dan hanya bertanya tentang bot ini!
+
+Perintah umum adalah:
+- /start: Mulai bot
+- /help: Berikan pesan ini
+- /help_admin: melihat semua command untuk group management
+
+Semua perintah hanya bekerja dengan / (garis miring)
+ref.message_id= 
+ref.reply_markup= {"inline_keyboard":[[{"text":"perkakas","callback_data":"\/callback_q@fadhil_riyanto_bot perkakas"},{"text":"hash","callback_data":"\/callback_q@fadhil_riyanto_bot hash"},{"text":"hiburan","callback_data":"\/callback_q@fadhil_riyanto_bot hiburan"}],[{"text":"dev tools","callback_data":"\/callback_q@fadhil_riyanto_bot dev_tools"},{"text":"anime","callback_data":"\/callback_q@fadhil_riyanto_bot anime"},{"text":"bot ini","callback_data":"\/callback_q@fadhil_riyanto_bot bot_ini"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(192): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\command\help.php(32): Telegram->editMessageText(Array)
+#4 C:\bot telegram\hook.php(507): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-20 08:51:56  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804432478
+ref.message.message_id= 19889
+ref.message.from.id= 617426792
+ref.message.from.is_bot= false
+ref.message.from.first_name= Yasir Aris
+ref.message.from.username= YasirArisM
+ref.message.from.language_code= id
+ref.message.chat.id= 617426792
+ref.message.chat.first_name= Yasir Aris
+ref.message.chat.username= YasirArisM
+ref.message.chat.type= private
+ref.message.date= 1616205103
+ref.message.text= /help
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @YasirArisM, Selamat datang di buku panduan bot ini
+Anda dapat membaca panduan di bawah ini, dengan mengklik sebuah tombol dibawah.
+Anda juga dapat mengajukan pertanyaan apa pun di Support group, harap diperhatikan bahwa Anda hanya dapat bertanya setelah membaca panduan, dan hanya bertanya tentang bot ini!
+
+Perintah umum adalah:
+- /start: Mulai bot
+- /help: Berikan pesan ini
+- /help_admin: melihat semua command untuk group management
+
+Semua perintah hanya bekerja dengan / (garis miring)
+ref.message_id= 
+ref.reply_markup= {"inline_keyboard":[[{"text":"perkakas","callback_data":"\/callback_q@fadhil_riyanto_bot perkakas"},{"text":"hash","callback_data":"\/callback_q@fadhil_riyanto_bot hash"},{"text":"hiburan","callback_data":"\/callback_q@fadhil_riyanto_bot hiburan"}],[{"text":"dev tools","callback_data":"\/callback_q@fadhil_riyanto_bot dev_tools"},{"text":"anime","callback_data":"\/callback_q@fadhil_riyanto_bot anime"},{"text":"bot ini","callback_data":"\/callback_q@fadhil_riyanto_bot bot_ini"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(192): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\command\help.php(32): Telegram->editMessageText(Array)
+#4 C:\bot telegram\hook.php(507): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-20 08:54:53  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		429
+description:		Too Many Requests: retry after 15
+parameters:		Array
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804432475
+ref.message.message_id= 26689
+ref.message.from.id= 1241805547
+ref.message.from.is_bot= false
+ref.message.from.first_name= 𝗜𝗰𝗲 𝗕𝗲𝗮𝗿 :)
+ref.message.from.username= butthx
+ref.message.from.language_code= id
+ref.message.chat.id= -1001310420564
+ref.message.chat.title= GAS Testing Grup
+ref.message.chat.username= GasTestingGroup
+ref.message.chat.type= supergroup
+ref.message.date= 1616205075
+ref.message.text= /ping
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.message_id= 26702
+ref.text= Pong!
+
+Mysql query: 3.504753112793E-5
+Scrappe: 0.70243096351624
+API (get): 0.64556288719177
+API (post): 0.26985287666321
+send msg: 0.93635702133179
+
+ref.reply_to_message_id= 26689
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(192): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\command\ping.php(60): Telegram->editMessageText(Array)
+#4 C:\bot telegram\hook.php(78): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-20 08:54:54  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		429
+description:		Too Many Requests: retry after 14
+parameters:		Array
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804432475
+ref.message.message_id= 26689
+ref.message.from.id= 1241805547
+ref.message.from.is_bot= false
+ref.message.from.first_name= 𝗜𝗰𝗲 𝗕𝗲𝗮𝗿 :)
+ref.message.from.username= butthx
+ref.message.from.language_code= id
+ref.message.chat.id= -1001310420564
+ref.message.chat.title= GAS Testing Grup
+ref.message.chat.username= GasTestingGroup
+ref.message.chat.type= supergroup
+ref.message.date= 1616205075
+ref.message.text= /ping
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.message_id= 26702
+ref.text= Pong!
+
+Mysql query: 3.504753112793E-5
+Scrappe: 0.70243096351624
+API (get): 0.64556288719177
+API (post): 0.26985287666321
+send msg: 0.93635702133179
+
+total: 2.5542387962341
+ref.reply_to_message_id= 26689
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(192): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\command\ping.php(81): Telegram->editMessageText(Array)
+#4 C:\bot telegram\hook.php(78): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-20 08:54:56  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		429
+description:		Too Many Requests: retry after 12
+parameters:		Array
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804432476
+ref.message.message_id= 26693
+ref.message.from.id= 1241805547
+ref.message.from.is_bot= false
+ref.message.from.first_name= 𝗜𝗰𝗲 𝗕𝗲𝗮𝗿 :)
+ref.message.from.username= butthx
+ref.message.from.language_code= id
+ref.message.chat.id= -1001310420564
+ref.message.chat.title= GAS Testing Grup
+ref.message.chat.username= GasTestingGroup
+ref.message.chat.type= supergroup
+ref.message.date= 1616205080
+ref.message.text= /ping
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Pong!
+ref.reply_to_message_id= 26693
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\ping.php(5): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(78): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-20 08:54:57  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804432476
+ref.message.message_id= 26693
+ref.message.from.id= 1241805547
+ref.message.from.is_bot= false
+ref.message.from.first_name= 𝗜𝗰𝗲 𝗕𝗲𝗮𝗿 :)
+ref.message.from.username= butthx
+ref.message.from.language_code= id
+ref.message.chat.id= -1001310420564
+ref.message.chat.title= GAS Testing Grup
+ref.message.chat.username= GasTestingGroup
+ref.message.chat.type= supergroup
+ref.message.date= 1616205080
+ref.message.text= /ping
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.message_id= 
+ref.text= Pong!
+
+Mysql query: 4.7206878662109E-5
+ref.reply_to_message_id= 26693
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(192): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\command\ping.php(18): Telegram->editMessageText(Array)
+#4 C:\bot telegram\hook.php(78): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-20 08:54:58  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804432476
+ref.message.message_id= 26693
+ref.message.from.id= 1241805547
+ref.message.from.is_bot= false
+ref.message.from.first_name= 𝗜𝗰𝗲 𝗕𝗲𝗮𝗿 :)
+ref.message.from.username= butthx
+ref.message.from.language_code= id
+ref.message.chat.id= -1001310420564
+ref.message.chat.title= GAS Testing Grup
+ref.message.chat.username= GasTestingGroup
+ref.message.chat.type= supergroup
+ref.message.date= 1616205080
+ref.message.text= /ping
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.message_id= 
+ref.text= Pong!
+
+Mysql query: 4.7206878662109E-5
+Scrappe: 0.74731707572937
+ref.reply_to_message_id= 26693
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(192): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\command\ping.php(32): Telegram->editMessageText(Array)
+#4 C:\bot telegram\hook.php(78): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-20 08:54:59  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804432476
+ref.message.message_id= 26693
+ref.message.from.id= 1241805547
+ref.message.from.is_bot= false
+ref.message.from.first_name= 𝗜𝗰𝗲 𝗕𝗲𝗮𝗿 :)
+ref.message.from.username= butthx
+ref.message.from.language_code= id
+ref.message.chat.id= -1001310420564
+ref.message.chat.title= GAS Testing Grup
+ref.message.chat.username= GasTestingGroup
+ref.message.chat.type= supergroup
+ref.message.date= 1616205080
+ref.message.text= /ping
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.message_id= 
+ref.text= Pong!
+
+Mysql query: 4.7206878662109E-5
+Scrappe: 0.74731707572937
+API (get): 0.34098315238953
+ref.reply_to_message_id= 26693
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(192): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\command\ping.php(45): Telegram->editMessageText(Array)
+#4 C:\bot telegram\hook.php(78): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-20 08:55:00  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804432476
+ref.message.message_id= 26693
+ref.message.from.id= 1241805547
+ref.message.from.is_bot= false
+ref.message.from.first_name= 𝗜𝗰𝗲 𝗕𝗲𝗮𝗿 :)
+ref.message.from.username= butthx
+ref.message.from.language_code= id
+ref.message.chat.id= -1001310420564
+ref.message.chat.title= GAS Testing Grup
+ref.message.chat.username= GasTestingGroup
+ref.message.chat.type= supergroup
+ref.message.date= 1616205080
+ref.message.text= /ping
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.message_id= 
+ref.text= Pong!
+
+Mysql query: 4.7206878662109E-5
+Scrappe: 0.74731707572937
+API (get): 0.34098315238953
+API (post): 0.23311710357666
+send msg: 1.2773008346558
+
+ref.reply_to_message_id= 26693
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(192): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\command\ping.php(60): Telegram->editMessageText(Array)
+#4 C:\bot telegram\hook.php(78): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-20 08:55:01  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804432476
+ref.message.message_id= 26693
+ref.message.from.id= 1241805547
+ref.message.from.is_bot= false
+ref.message.from.first_name= 𝗜𝗰𝗲 𝗕𝗲𝗮𝗿 :)
+ref.message.from.username= butthx
+ref.message.from.language_code= id
+ref.message.chat.id= -1001310420564
+ref.message.chat.title= GAS Testing Grup
+ref.message.chat.username= GasTestingGroup
+ref.message.chat.type= supergroup
+ref.message.date= 1616205080
+ref.message.text= /ping
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.message_id= 
+ref.text= Pong!
+
+Mysql query: 4.7206878662109E-5
+Scrappe: 0.74731707572937
+API (get): 0.34098315238953
+API (post): 0.23311710357666
+send msg: 1.2773008346558
+
+total: 2.59876537323
+ref.reply_to_message_id= 26693
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(192): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\command\ping.php(81): Telegram->editMessageText(Array)
+#4 C:\bot telegram\hook.php(78): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-20 09:07:05  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: there is no photo in the request
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804432495
+ref.message.message_id= 53053
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1616206001
+ref.message.text= /shadow h
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 7
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.photo= 
+ref.caption= Hai  @fadhil_riyanto, Gambar berhasil dibuat!
+ref.reply_to_message_id= 53053
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(75): Telegram->endpoint('sendPhoto', Array)
+#3 C:\bot telegram\photooxy_command\__init__.php(118): Telegram->sendPhoto(Array)
+#4 C:\bot telegram\hook.php(661): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-20 09:07:55  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: replied message not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804432497
+ref.message.message_id= 26718
+ref.message.from.id= 1397251966
+ref.message.from.is_bot= false
+ref.message.from.first_name= hai
+ref.message.from.username= takedowndmca
+ref.message.from.language_code= id
+ref.message.chat.id= -1001310420564
+ref.message.chat.title= GAS Testing Grup
+ref.message.chat.username= GasTestingGroup
+ref.message.chat.type= supergroup
+ref.message.date= 1616206017
+ref.message.reply_to_message.message_id= 26716
+ref.message.reply_to_message.from.id= 1489990155
+ref.message.reply_to_message.from.is_bot= true
+ref.message.reply_to_message.from.first_name= Fadhil Riyanto Bot
+ref.message.reply_to_message.from.username= Fadhil_riyanto_bot
+ref.message.reply_to_message.chat.id= -1001310420564
+ref.message.reply_to_message.chat.title= GAS Testing Grup
+ref.message.reply_to_message.chat.username= GasTestingGroup
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1616205990
+ref.message.reply_to_message.text= Aku ogah jawab ah, ada kata kata yg tidak sopan soalnya
+ref.message.text= pakai
+
+
+[ref]
+ref.text= pagi juga
+
+ref.reply_to_message_id= 26718
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(696): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-03-20 09:09:23  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804432519
+ref.message.message_id= 19899
+ref.message.from.id= 617426792
+ref.message.from.is_bot= false
+ref.message.from.first_name= Yasir Aris
+ref.message.from.username= YasirArisM
+ref.message.from.language_code= id
+ref.message.chat.id= 617426792
+ref.message.chat.first_name= Yasir Aris
+ref.message.chat.username= YasirArisM
+ref.message.chat.type= private
+ref.message.date= 1616206146
+ref.message.text= /help
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @YasirArisM, Selamat datang di buku panduan bot ini
+Anda dapat membaca panduan di bawah ini, dengan mengklik sebuah tombol dibawah.
+Anda juga dapat mengajukan pertanyaan apa pun di Support group, harap diperhatikan bahwa Anda hanya dapat bertanya setelah membaca panduan, dan hanya bertanya tentang bot ini!
+
+Perintah umum adalah:
+- /start: Mulai bot
+- /help: Berikan pesan ini
+- /help_admin: melihat semua command untuk group management
+
+Semua perintah hanya bekerja dengan / (garis miring)
+ref.message_id= 
+ref.reply_markup= {"inline_keyboard":[[{"text":"perkakas","callback_data":"\/callback_q@fadhil_riyanto_bot perkakas"},{"text":"hash","callback_data":"\/callback_q@fadhil_riyanto_bot hash"},{"text":"hiburan","callback_data":"\/callback_q@fadhil_riyanto_bot hiburan"}],[{"text":"dev tools","callback_data":"\/callback_q@fadhil_riyanto_bot dev_tools"},{"text":"anime","callback_data":"\/callback_q@fadhil_riyanto_bot anime"},{"text":"bot ini","callback_data":"\/callback_q@fadhil_riyanto_bot bot_ini"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(192): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\command\help.php(32): Telegram->editMessageText(Array)
+#4 C:\bot telegram\hook.php(507): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-20 09:09:31  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: replied message not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804432513
+ref.message.message_id= 26730
+ref.message.from.id= 1397251966
+ref.message.from.is_bot= false
+ref.message.from.first_name= hai
+ref.message.from.username= takedowndmca
+ref.message.from.language_code= id
+ref.message.chat.id= -1001310420564
+ref.message.chat.title= GAS Testing Grup
+ref.message.chat.username= GasTestingGroup
+ref.message.chat.type= supergroup
+ref.message.date= 1616206080
+ref.message.reply_to_message.message_id= 26714
+ref.message.reply_to_message.from.id= 1489990155
+ref.message.reply_to_message.from.is_bot= true
+ref.message.reply_to_message.from.first_name= Fadhil Riyanto Bot
+ref.message.reply_to_message.from.username= Fadhil_riyanto_bot
+ref.message.reply_to_message.chat.id= -1001310420564
+ref.message.reply_to_message.chat.title= GAS Testing Grup
+ref.message.reply_to_message.chat.username= GasTestingGroup
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1616205967
+ref.message.reply_to_message.edit_date= 1616205974
+ref.message.reply_to_message.text= Pong!
+
+Mysql query: 2.0027160644531E-5
+Scrappe: 1.2307851314545
+API (get): 0.62694621086121
+API (post): 0.24639511108398
+send msg: 1.3416309356689
+
+total: 3.4457774162292
+ref.message.text= hhh
+
+
+[ref]
+ref.text= hai juga apa kabar
+
+ref.reply_to_message_id= 26730
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(696): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-03-20 09:12:34  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: there is no photo in the request
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804432532
+ref.message.message_id= 53061
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1616206350
+ref.message.text= /shadow hm
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 7
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.photo= 
+ref.caption= Hai  @fadhil_riyanto, Gambar berhasil dibuat!
+ref.reply_to_message_id= 53061
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(75): Telegram->endpoint('sendPhoto', Array)
+#3 C:\bot telegram\photooxy_command\__init__.php(118): Telegram->sendPhoto(Array)
+#4 C:\bot telegram\hook.php(661): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-20 10:14:19  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804432620
+ref.message.message_id= 19921
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1616210057
+ref.message.text= /shadow hehehe
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 7
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.photo= ok
+ref.caption= Hai  @fadhil_riyanto, Gambar berhasil dibuat!
+ref.reply_to_message_id= 19921
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(658): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-03-20 10:18:37  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: there is no photo in the request
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804432631
+ref.message.message_id= 19938
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1616210315
+ref.message.text= /burn_paper hm
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 11
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.photo= 
+ref.caption= Hai  @fadhil_riyanto, Gambar berhasil dibuat!
+ref.reply_to_message_id= 19938
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(75): Telegram->endpoint('sendPhoto', Array)
+#3 C:\bot telegram\photooxy_command\__init__.php(103): Telegram->sendPhoto(Array)
+#4 C:\bot telegram\hook.php(656): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-20 10:25:31  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: there is no photo in the request
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804432645
+ref.message.message_id= 19950
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1616210729
+ref.message.text= /burn_paper hm
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 11
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.photo= 
+ref.caption= Hai  @fadhil_riyanto, Gambar berhasil dibuat!
+ref.reply_to_message_id= 19950
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(75): Telegram->endpoint('sendPhoto', Array)
+#3 C:\bot telegram\photooxy_command\__init__.php(118): Telegram->sendPhoto(Array)
+#4 C:\bot telegram\hook.php(656): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-20 10:30:21  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: there is no photo in the request
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804432650
+ref.message.message_id= 19959
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1616211018
+ref.message.text= /grass hm
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.photo= 
+ref.caption= Hai  @fadhil_riyanto, Gambar berhasil dibuat!
+ref.reply_to_message_id= 19959
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(75): Telegram->endpoint('sendPhoto', Array)
+#3 C:\bot telegram\photooxy_command\__init__.php(130): Telegram->sendPhoto(Array)
+#4 C:\bot telegram\hook.php(656): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-20 10:47:19  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804432675
+ref.message.message_id= 19981
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1616212038
+ref.message.text= /help_admin
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 11
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Selamat datang di panduan bot management
+
+perlu diperhatikan bahwa bot ini tidak akan bisa di invite ke grup tanpa persetujuan dari pembuat bot. dan, command grup management dibawah ini khusus untuk grup yang sudah diijinkan masuk oleh pembuat bot ini.
+
+jika mau mengivite bot ini ke grup anda, silahkan kirimkan angka chat id grup anda lalu pm (private message) ke pembuat bot ini, yaitu @fadhil_riyanto
+
+note : Semua perintah hanya bekerja dengan / (garis miring)
+ref.message_id= 
+ref.reply_markup= {"inline_keyboard":[[{"text":"Grettings","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot grettings"},{"text":"Rules","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot rules"},{"text":"Admins","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot admins"}],[{"text":"Pin","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot pin"},{"text":"Mute","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot mute"},{"text":"Report","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot report"}],[{"text":"Bans","callback_data":"\/callback_q_admin_help@fadhil_riyanto_bot bans"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(192): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\admin_help\help_admin.php(32): Telegram->editMessageText(Array)
+#4 C:\bot telegram\hook.php(419): require('C:\\bot telegram...')
+#5 {main}
+

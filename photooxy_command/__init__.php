@@ -7,6 +7,18 @@ function themeddatas($string)
         '/flower_cup' => 'logo-and-text-effects/write-text-on-the-cup-392.html',
         '/romantic_messages' => 'logo-and-text-effects/romantic-messages-for-your-loved-one-391.html',
         '/burn_paper' => 'logo-and-text-effects/write-text-on-burn-paper-388.html',
+        '/funny_cup' => 'logo-and-text-effects/put-text-on-the-cup-387.html',
+        '/hand_love' => 'logo-and-text-effects/create-a-picture-of-love-message-377.html',
+        '/grass' => 'logo-and-text-effects/make-quotes-under-grass-376.html',
+        '/tiktok' => 'logo-and-text-effects/make-tik-tok-text-effect-375.html',
+        '/red_heart' => 'logo-and-text-effects/love-text-effect-372.html',
+        '' => '',
+        '' => '',
+        '' => '',
+        '' => '',
+        '' => '',
+        '' => '',
+        '' => '',
         '' => '',
         '' => '',
         '' => '',
@@ -73,32 +85,88 @@ function photo_oxy_class(array $data)
     }
 }
 
-
 $azanHilangcommand = str_replace($adanParse_plain_nokarakter[0], '', $text_plain_nokarakter);
 $udahDiparse = str_replace($adanParse_plain_nokarakter[0] . ' ', '', $text_plain_nokarakter);
-if ($azanHilangcommand == null) {
-    $reply = "maaf, anda harus memasukkan teks.";
-    $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-    $telegram->sendMessage($content);
-} else {
-    $konf = themeddatas($adanParse_plain_nokarakter[0]);
+
+$konf = themeddatas($adanParse_plain_nokarakter[0]);
+if ($konf == false) {
+    $exuser = explode('@', strtolower($adanParse_plain_nokarakter[0]));
+    $konf = themeddatas($exuser[0]);
     if ($konf == false) {
-        $exuser = explode('@', $text_plain_nokarakter);
-        $konf = themeddatas($exuser[0]);
-        if ($konf == false) {
-        } else {
-            $datas_url = $konf;
-        }
+        $nemu_tema = false;
     } else {
+        $query_tema = $exuser[0];
+        $nemu_tema = true;
         $datas_url = $konf;
     }
-    $ngab = array(
-        'base' => 'https://photooxy.com/',
-        'theme' => $datas_url,
-        'text_1' => $udahDiparse
-    );
+} else {
+    $query_tema = strtolower($adanParse_plain_nokarakter[0]);
+    $nemu_tema = true;
+    $datas_url = $konf;
+}
 
-    $urlss = photo_oxy_class($ngab);
-    $konten = array('chat_id' => $chat_id, 'photo' => $urlss, 'caption' => 'Hai ' . $username . ', Gambar berhasil dibuat!', 'reply_to_message_id' => $message_id,);
-    $telegram->sendPhoto($konten);
+
+if ($nemu_tema == true) {
+    if ($azanHilangcommand == null) {
+        $reply = "maaf, anda harus memasukkan teks.";
+        $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+        $telegram->sendMessage($content);
+    } else {
+        if ($query_tema == '/tiktok') {
+            $azanHilangcommand = str_replace($adanParse_plain_nokarakter[0], '', $text_plain_nokarakter);
+            $udahDiparse = str_replace($adanParse_plain_nokarakter[0] . ' ', '', $text_plain_nokarakter);
+            if ($azanHilangcommand == null) {
+                $reply = "maaf, anda harus memasukkan teks.";
+                $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+                $telegram->sendMessage($content);
+            } else {
+                $toktokparse = explode('|', $udahDiparse);
+                if ($toktokparse[1] == '') {
+                    $tek2 = 'by fadhil riyanto bot';
+                } elseif (!isset($toktokparse[1])) {
+                    $tek2 = 'by fadhil riyanto bot';
+                } else {
+                    $tek2 = $toktokparse[1];
+                }
+                //cek length
+                if (strlen($toktokparse[0]) <= 3) {
+                    $dibawah = true;
+                } elseif (strlen($toktokparse[1]) <= 3) {
+                    $dibawah = true;
+                } elseif (strlen($toktokparse[0]) <= 3 || strlen($toktokparse[1]) <= 3) {
+                    $dibawah = true;
+                } elseif (strlen($toktokparse[0]) <= 3 && strlen($toktokparse[1]) <= 3) {
+                    $dibawah = true;
+                }
+                if ($dibawah == true) {
+                    $reply = "maaf, anda harus memasukkan lebih dari 3 karakter di parameter nya.";
+                    $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+                    $telegram->sendMessage($content);
+                } else {
+                    $ngab = array(
+                        'base' => 'https://photooxy.com/',
+                        'theme' => 'logo-and-text-effects/make-tik-tok-text-effect-375.html',
+                        'text_1' => $toktokparse[0],
+                        'text_2' => $tek2
+                    );
+
+                    $urlss = photo_oxy_class($ngab);
+                    $konten = array('chat_id' => $chat_id, 'photo' => $urlss, 'caption' => 'Hai ' . $username . ', Gambar berhasil dibuat!', 'reply_to_message_id' => $message_id,);
+                    $telegram->sendPhoto($konten);
+                }
+            }
+            exit;
+        }
+
+        $ngab = array(
+            'base' => 'https://photooxy.com/',
+            'theme' => $datas_url,
+            'text_1' => $udahDiparse
+        );
+
+        $urlss = photo_oxy_class($ngab);
+        $konten = array('chat_id' => $chat_id, 'photo' => $urlss, 'caption' => 'Hai ' . $username . ', Gambar berhasil dibuat!', 'reply_to_message_id' => $message_id,);
+        $telegram->sendPhoto($konten);
+    }
+} else {
 }
