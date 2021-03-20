@@ -12,12 +12,12 @@ if (deteksi_grupP() == true) {
     $getlistjsonadmin = __DIR__ . '/../json_data/afkstatus.json';
     function GETuseridafk($userID)
     {
-        global $getlistjsonadmin, $timed, $alasan;
+        global $getlistjsonadmin, $timed, $alasan, $uid_afk;
         $anggota = file_get_contents($getlistjsonadmin);
         $data = json_decode($anggota, true);
         foreach ($data as $d) {
             if ($d['userid'] == $userID) {
-                $userID = $d['gid'];
+                $uid_afk = $d['userid'];
                 $timed = $d['time_afk'];
                 $alasan = $d['alasan'];
                 return true;

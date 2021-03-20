@@ -16,18 +16,6 @@ if ($azanHilangcommand == null) {
     $st = new Brainly($udahDiparse_hash);
     $result = $st->exec();
     if (count($result) === 0) {
-
-        $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, 'https://afara.my.id/api/brainly-scraper?q=' . urlencode($udahDiparse_hash));
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-        $a = curl_exec($ch);
-        curl_close($ch);
-
-        $result = json_decode($a, true);
-    } else {
-    }
-
-    if (count($result) === 0) {
         $reply = "tidak ditemukan!";
         $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => false);
         $urlCall = $telegram->sendMessage($content);
