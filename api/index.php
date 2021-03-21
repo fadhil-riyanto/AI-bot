@@ -15,10 +15,11 @@ if (isset($_GET['key']) && isset($_GET['tipe'])) {
     }
     if ($tipe == "brainly") {
         if (isset($_GET['query'])) {
-            $st = new Brainly($_GET['query']);
+            $q = $_GET['query'];
+            $st = new Brainly($q);
             $results = $st->exec();
             header('Content-Type: application/json');
-            echo json_encode($results);
+            echo json_encode($results, true);
         }
     }
 }
