@@ -15,7 +15,7 @@ if (isset($_GET['key']) && isset($_GET['query'])) {
     }
 
     $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, "https://server-data.000webhostapp.com/brainly.php?query=" . $query);
+    curl_setopt($ch, CURLOPT_URL, "https://server-data.000webhostapp.com/brainly.php?query=" . urlencode($query));
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
     $output = curl_exec($ch);
     curl_close($ch);
