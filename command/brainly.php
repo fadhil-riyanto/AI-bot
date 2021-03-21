@@ -13,8 +13,12 @@ if ($azanHilangcommand == null) {
     $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
     $telegram->sendMessage($content);
 } else {
-    $st = new Brainly($udahDiparse_hash);
-    $result = $st->exec();
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, "https://server-data.000webhostapp.com/brainly.php?query=" . $udahDiparse);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    $output = curl_exec($ch);
+    curl_close($ch);
+    $result = json_decode($output);
     if (count($result) === 0) {
         $reply = "tidak ditemukan!";
         $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => false);

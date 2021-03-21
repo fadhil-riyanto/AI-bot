@@ -14,7 +14,11 @@ if (isset($_GET['key']) && isset($_GET['query'])) {
         }
     }
 
-    $st = new Brainly($query);
-    $results = $st->exec();
-    echo json_encode($results, true);
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, "https://server-data.000webhostapp.com/brainly.php?query=" . $query);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    $output = curl_exec($ch);
+    curl_close($ch);
+    header('Content-Type: application/json');
+    echo $output;
 }
