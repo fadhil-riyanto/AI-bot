@@ -16,6 +16,5 @@ if (isset($_GET['key']) && isset($_GET['query'])) {
 
     $st = new Brainly($query);
     $results = $st->exec();
-    header('Content-Type: application/json');
     echo json_encode($results, true);
 }
