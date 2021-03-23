@@ -473,6 +473,9 @@ if ('/start' == $adanParse[0] || '/start' . USERNAME_BOT . '' == $adanParse[0]) 
 } elseif ('/kalimat_quotes' == $adanParse[0] || '/kalimat_quotes' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/kalimat_quotes.php';
 	exit;
+} elseif ('/whois' == $adanParse[0] || '/whois' . USERNAME_BOT . '' == $adanParse[0]) {
+	require __DIR__ . '/command/whois.php';
+	exit;
 } elseif ('/q' == $adanParse[0] || '/q' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/q.php';
 	exit;
