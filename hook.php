@@ -438,6 +438,9 @@ if ('/start' == $adanParse[0] || '/start' . USERNAME_BOT . '' == $adanParse[0]) 
 } elseif ('/xlsx_to_json' == $adanParse[0] || '/xlsx_to_json' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/xlsx_to_json.php';
 	exit;
+} elseif ('/get_header' == $adanParse[0] || '/get_header' . USERNAME_BOT . '' == $adanParse[0]) {
+	require __DIR__ . '/command/get_header.php';
+	exit;
 } elseif ('/upload' == $adanParse[0] || '/upload' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/upload.php';
 	exit;
