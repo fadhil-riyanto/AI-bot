@@ -1,7 +1,5 @@
 <?php
 
-
-
 $azanHilangcommand = str_replace($adanParse[0], '', $text);
 $udahDiparse = str_replace($adanParse[0] . ' ', '', $text);
 if ($azanHilangcommand == null) {
@@ -15,7 +13,7 @@ if ($azanHilangcommand == null) {
         $telegram->sendMessage($content);
         exit;
     }
-	include __DIR__ . '/../src_ppwhois/Phois/Whois/Whois.php';
+	include __DIR__ . '/../include/src_ppwhois/Phois/Whois/Whois.php';
 	$sld = $udahDiparse;
 	$domain = new Phois\Whois\Whois($sld);
 	$whois_answer = $domain->info();
