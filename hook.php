@@ -151,6 +151,10 @@ $entityUserAfk = $result['message']['entities'];
 // 		exit;
 // 	}
 // }
+require __DIR__ . '/include/autounafk.php';
+// $reply = "1";
+// $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+// $telegram->sendMessage($content);
 
 
 if (isset($getreplyianid)) {
@@ -195,9 +199,8 @@ if (isset($entityUserAfk)) {
 	}
 }
 
-if (isset($text)) {
-	require __DIR__ . '/include/autounafk.php';
-}
+
+
 // $pregMention = preg_match_all('/@([a-zA-Z0-9_]+)/', $text_plain_nokarakter);
 // if ($pregMention > 0) {
 // 	$db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);

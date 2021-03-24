@@ -10,5 +10,5 @@ $a = curl_exec($ch); // $a will contain all headers
 
 $url = curl_getinfo($ch, CURLINFO_EFFECTIVE_URL); // This is what you need, it will return you the last effective URL
 
-$content = array('chat_id' => $chat_id, 'caption' => 'enjoy dengan wallpaper barunya' . PHP_EOL . 'source : unsplash', 'photo' => $url, 'reply_to_message_id' => $message_id, 'disable_web_page_preview' => true);
+$content = array('chat_id' => $chat_id, 'caption' => 'enjoy dengan wallpaper barunya' , 'photo' => $url, 'reply_to_message_id' => $message_id, 'disable_web_page_preview' => true);
 $telegram->sendPhoto($content);

@@ -26,21 +26,23 @@ if ($azanHilangcommand == null) {
             "username" => $usernameBelumdiparse
         );
 
-        $file = __DIR__ . '/../json_data/afkstatus.json';
-        $anggota = file_get_contents($file);
-        $datass = json_decode($anggota, true);
 
-        $datass[] = array(
-            "userid" => $userID,
-            "time_afk" =>  $timed,
-            "alasan" => $udahDiparse,
-            "username" => $usernameBelumdiparse
-        );
-
-        $jsonfile = json_encode($datass, JSON_PRETTY_PRINT);
-        $anggota = file_put_contents($file, $jsonfile);
         $id = $db->insert('afk_user_data', $data);
         if ($id) {
+            $file = __DIR__ . '/../json_data/afkstatus.json';
+            $anggota = file_get_contents($file);
+            $datass = json_decode($anggota, true);
+
+            $datass[] = array(
+                "userid" => $userID,
+                "time_afk" =>  $timed,
+                "alasan" => $udahDiparse,
+                "username" => $usernameBelumdiparse
+            );
+
+            $jsonfile = json_encode($datass, JSON_PRETTY_PRINT);
+            $anggota = file_put_contents($file, $jsonfile);
+
             $reply = "anda sedang afk!" . PHP_EOL . 'gunakan /unafk untuk melepas status afk!';
             $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
             $telegram->sendMessage($content);
@@ -59,6 +61,20 @@ if ($azanHilangcommand == null) {
         );
         $db->where('userid', $userID);
         if ($db->update('afk_user_data', $data)) {
+
+            $file = __DIR__ . '/../json_data/afkstatus.json';
+            $anggota = file_get_contents($file);
+            $datass = json_decode($anggota, true);
+
+            $datass[] = array(
+                "userid" => $userID,
+                "time_afk" =>  $timed,
+                "alasan" => $udahDiparse,
+                "username" => $usernameBelumdiparse
+            );
+
+            $jsonfile = json_encode($datass, JSON_PRETTY_PRINT);
+            $anggota = file_put_contents($file, $jsonfile);
             $reply = "anda sedang afk!" . PHP_EOL . 'gunakan /unafk untuk melepas status afk!';
             $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
             $telegram->sendMessage($content);
