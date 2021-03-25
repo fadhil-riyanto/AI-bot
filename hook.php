@@ -466,6 +466,9 @@ if ('/start' == $adanParse[0] || '/start' . USERNAME_BOT . '' == $adanParse[0]) 
 } elseif ('/read_qr' == $adanParse[0] || '/read_qr' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/read_qr.php';
 	exit;
+} elseif ('/resolve' == $adanParse[0] || '/resolve' . USERNAME_BOT . '' == $adanParse[0]) {
+	require __DIR__ . '/command/resolve.php';
+	exit;
 } elseif (
 	'/br' == $adanParse[0] || '/br' . USERNAME_BOT . '' == $adanParse[0]
 ) {
@@ -699,15 +702,12 @@ if ('/start' == $adanParse[0] || '/start' . USERNAME_BOT . '' == $adanParse[0]) 
 } elseif ($stringPertama == '/') {
 
 	require __DIR__ . '/photooxy_command/__init__.php';
-
 	require __DIR__ . '/include/claimmed.php';
 	require __DIR__ . '/group_command/__init__.php';
-
+	require __DIR__ . '/admin_command/__init__.php';
 	require __DIR__ . '/anime_command/__init__.php';
-
 	require __DIR__ . '/hash_command/__init__.php';
 
-	require __DIR__ . '/admin_command/__init__.php';
 
 
 

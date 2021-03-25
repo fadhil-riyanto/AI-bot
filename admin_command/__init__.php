@@ -9,6 +9,40 @@ function deteksi_grup()
     }
 }
 if (deteksi_grup() == true) {
+    // function apakah_bot_ini_admin()
+    // {
+    //     global $chat_id;
+    //     $anggota = file_get_contents(__DIR__ . '/../json_data/group_command/adminlist.json');
+    //     $data = json_decode($anggota, true);
+    //     foreach ($data as $d) {
+    //         if ($d['gid'] == $chat_id) {
+    //             foreach ($d['admin'] as $admins) {
+    //                 if ($admins == ID_BOT) {
+    //                     return true;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+    // $cekadmin = apakah_bot_ini_admin();
+    // if ($cekadmin != true) {
+    //     $reply = 'maaf, saya bukan admin disini';
+    //     $content1 = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+    //     $telegram->sendMessage($content1);
+    //     exit;
+    // }
+
+    // $db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
+    // $db->where("gid", $chat_id);
+    // $user = $db->getOne("grup_data");
+    // if ($user == null) {
+    //     $reply = 'maaf, database untuk penyimpanan data konfigurasi grup ini belum dibuat. mohon jalankan command /init untuk membuat nya';
+    //     $content1 = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+    //     $telegram->sendMessage($content1);
+    //     exit;
+    // }
+
+
     $delaycached = 20;
     $getlistjsonadmin = __DIR__ . '/../json_data/group_command/adminlist.json';
     function getUseridFromeditmessageinit($chat_id)
@@ -112,7 +146,7 @@ if (deteksi_grup() == true) {
         $adanParse[0] == '/set_rules' || $adanParse[0] == '/promote' || $adanParse[0] == '/demote' || $adanParse[0] == '/clear_rules' ||
         $adanParse[0] == '/admin_mode' || $adanParse[0] == '/unpinall' || $adanParse[0] == '/mute' || $adanParse[0] == '/set_admin_title' ||
         $adanParse[0] == '/unmute' || $adanParse[0] == '/ban' || $adanParse[0] == '/sban' || $adanParse[0] == '/kick' ||
-        $adanParse[0] == '/skick' || $adanParse[0] == '/unban'
+        $adanParse[0] == '/skick' || $adanParse[0] == '/unban' || $adanParse[0] == '/init'
     ) {
         $reply = 'Maaf, command ini hanya berlaku di grup saja';
         $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
@@ -188,6 +222,8 @@ if ($kamu_admin == true) {
         require 'skick.php';
     } elseif ($adanParseadmin[0] == '/unban') {
         require 'unban.php';
+    } elseif ($adanParseadmin[0] == '/init') {
+        require 'init.php';
     }
 } elseif ($kamu_admin == false) {
     if (
@@ -198,7 +234,7 @@ if ($kamu_admin == true) {
         $adanParse[0] == '/admin_mode' || $adanParse[0] == '/unpinall' || $adanParse[0] == '/mute' || $adanParse[0] == '/set_admin_title' ||
         $adanParse[0] == '/unmute' || $adanParse[0] == '/ban' || $adanParse[0] == '/sban' ||
         $adanParse[0] == '/ban' || $adanParse[0] == '/sban' || $adanParse[0] == '/kick' || $adanParse[0] == '/skick' ||
-        $adanParse[0] == '/unban'
+        $adanParse[0] == '/unban' || $adanParse[0] == '/init'
 
     ) {
         $reply = 'ups, kamu bukan admin';
