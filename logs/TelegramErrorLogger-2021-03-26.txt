@@ -1,0 +1,84 @@
+============[Date]============
+[ 2021-03-26 12:32:15  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: failed to get HTTP URL content
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804443424
+ref.message.message_id= 21989
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1616736725
+ref.message.text= /neko
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.photo= https://i.waifu.pics/hd-3qtP.jpg
+ref.reply_to_message_id= 21989
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(75): Telegram->endpoint('sendPhoto', Array)
+#3 C:\bot telegram\anime_command\__init__.php(22): Telegram->sendPhoto(Array)
+#4 C:\bot telegram\hook.php(702): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-26 13:06:21  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: wrong file identifier/HTTP URL specified
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804443446
+ref.message.message_id= 22000
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1616738717
+ref.message.text= /neko
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.photo= https://i.waifu.pics/L6NFl2g.png
+ref.reply_to_message_id= 22000
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(75): Telegram->endpoint('sendPhoto', Array)
+#3 C:\bot telegram\anime_command\__init__.php(22): Telegram->sendPhoto(Array)
+#4 C:\bot telegram\hook.php(702): require('C:\\bot telegram...')
+#5 {main}
+

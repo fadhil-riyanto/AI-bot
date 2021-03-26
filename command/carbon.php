@@ -7,6 +7,19 @@ if ($adanParse[1] == null) {
     $telegram->sendMessage($content);
     exit;
 } else {
+
+    function generateRandomString_files($length = 10)
+    {
+        $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        $charactersLength = strlen($characters);
+        $randomString = '';
+        for ($i = 0; $i < $length; $i++) {
+            $randomString .= $characters[rand(0, $charactersLength - 1)];
+        }
+        return $randomString;
+    }
+
+
     $reply = 'Tunggu sebentar, kami sedang meng-generate image (sync)';
     $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
     $editmsg = $telegram->sendMessage($content);
@@ -23,7 +36,8 @@ if ($adanParse[1] == null) {
     ));
 
     $result = curl_exec($ch);
-    $output = __DIR__ . '/../tmp/carbonimg.png';
+    $randomstrings = generateRandomString_files(40);
+    $output = __DIR__ . '/../tmp/' . $randomstrings . '.png';
     file_put_contents($output, $result);
     $bot_url    = "https://api.telegram.org/bot" . TG_HTTP_API . "/";
     $url        = $bot_url . "sendDocument?chat_id=" . $chat_id;
@@ -31,7 +45,7 @@ if ($adanParse[1] == null) {
     $post_fields = array(
         'chat_id'   => $chat_id,
         'reply_to_message_id' => $message_id,
-        'document'     => new CURLFile(realpath('tmp/carbonimg.png'))
+        'document'     => new CURLFile(realpath('tmp/' . $randomstrings . '.png'))
     );
 
     $ch = curl_init();
