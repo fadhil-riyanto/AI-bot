@@ -9,6 +9,7 @@ if ($hasil['message']['from']['is_bot'] == true) {
 $reply = '
 👤 You' . PHP_EOL .
 	'├ id: ' .  $hasil['message']['from']['id'] . PHP_EOL .
+	'├ id grup: ' .  $chat_id . PHP_EOL .
 	'├ kamu bot: ' . $inibotWhoami . PHP_EOL .
 	'├ nama pertama: ' . $hasil['message']['from']['first_name'] . PHP_EOL .
 	'├ nama terakhir: ' . $hasil['message']['from']['last_name'] . PHP_EOL .

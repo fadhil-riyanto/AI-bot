@@ -1,0 +1,645 @@
+============[Date]============
+[ 2021-03-27 22:52:51  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804446624
+ref.message.message_id= 22187
+ref.message.from.id= 239432921
+ref.message.from.is_bot= false
+ref.message.from.first_name= andyTris
+ref.message.from.last_name= @telegram
+ref.message.from.username= andyTris
+ref.message.from.language_code= id
+ref.message.chat.id= 239432921
+ref.message.chat.first_name= andyTris
+ref.message.chat.last_name= @telegram
+ref.message.chat.username= andyTris
+ref.message.chat.type= private
+ref.message.date= 1616848150
+ref.message.text= /help
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @andyTris, Selamat datang di buku panduan bot ini
+Anda dapat membaca panduan di bawah ini, dengan mengklik sebuah tombol dibawah.
+Anda juga dapat mengajukan pertanyaan apa pun di Support group, harap diperhatikan bahwa Anda hanya dapat bertanya setelah membaca panduan, dan hanya bertanya tentang bot ini!
+
+Perintah umum adalah:
+- /start: Mulai bot
+- /help: Berikan pesan ini
+- /help_admin: melihat semua command untuk group management
+
+Semua perintah hanya bekerja dengan / (garis miring)
+ref.message_id= 
+ref.reply_markup= {"inline_keyboard":[[{"text":"perkakas","callback_data":"\/callback_q@fadhil_riyanto_bot perkakas"},{"text":"hash","callback_data":"\/callback_q@fadhil_riyanto_bot hash"},{"text":"hiburan","callback_data":"\/callback_q@fadhil_riyanto_bot hiburan"}],[{"text":"dev tools","callback_data":"\/callback_q@fadhil_riyanto_bot dev_tools"},{"text":"anime","callback_data":"\/callback_q@fadhil_riyanto_bot anime"},{"text":"bot ini","callback_data":"\/callback_q@fadhil_riyanto_bot bot_ini"}],[{"text":"Photooxy","callback_data":"\/callback_q@fadhil_riyanto_bot photooxy"},{"text":"Rules","callback_data":"\/callback_q@fadhil_riyanto_bot rules"},{"text":"Admins","callback_data":"\/callback_q@fadhil_riyanto_bot admins"}],[{"text":"Pin","callback_data":"\/callback_q@fadhil_riyanto_bot pin"},{"text":"Mute","callback_data":"\/callback_q@fadhil_riyanto_bot mute"},{"text":"Report","callback_data":"\/callback_q@fadhil_riyanto_bot report"}],[{"text":"Bans","callback_data":"\/callback_q@fadhil_riyanto_bot bans"},{"text":"Grettings","callback_data":"\/callback_q@fadhil_riyanto_bot grettings"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(192): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot telegram\command\help.php(32): Telegram->editMessageText(Array)
+#4 C:\bot telegram\hook.php(505): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-27 23:01:22  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Unsupported start tag "!doctype" at byte offset 0
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804447102
+ref.message.message_id= 22194
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1616860880
+ref.message.text= /php <?php
+echo 'hehe';
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 4
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= <!doctype html><head><meta charset="UTF-8"><title>Method Not Supported</title><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="https://glot.io/static/lib/font-awesome/css/font-awesome.min.css?etag=BEJbvcYk"><link rel="stylesheet" href="https://glot.io/static/lib/bootstrap/bootstrap.min.css?etag=7t-e6Awv"><link rel="stylesheet" href="https://glot.io/static/tmp/autogen-BE5cUT7_.css"></head><body><h1>Method Not Supported</h1>
+<p>Method <code>POST</code> not supported</p>
+<script src="https://glot.io/static/lib/jquery/jquery.min.js?etag=MgFd1C6V"></script><script src="https://glot.io/static/lib/moment/moment.min.js?etag=A8HTrQrP"></script><script src="https://glot.io/static/lib/bootstrap/bootstrap.min.js?etag=jCNzEoZN"></script><script src="https://glot.io/static/js/location.js?etag=4GZ-hhuP"></script><script src="https://glot.io/static/js/xhr.js?etag=DJYsQk-v"></script><script src="https://glot.io/static/tmp/autogen-y8fTmlVy.js"></script></body>
+ref.reply_to_message_id= 22194
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\glotio.php(98): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(671): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-27 23:02:11  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Unsupported start tag "!doctype" at byte offset 0
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804447104
+ref.message.message_id= 22195
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1616860930
+ref.message.text= /php <?php
+echo 'hehe';
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 4
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= <!doctype html><head><meta charset="UTF-8"><title>Method Not Supported</title><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="https://glot.io/static/lib/font-awesome/css/font-awesome.min.css?etag=BEJbvcYk"><link rel="stylesheet" href="https://glot.io/static/lib/bootstrap/bootstrap.min.css?etag=7t-e6Awv"><link rel="stylesheet" href="https://glot.io/static/tmp/autogen-BE5cUT7_.css"></head><body><h1>Method Not Supported</h1>
+<p>Method <code>POST</code> not supported</p>
+<script src="https://glot.io/static/lib/jquery/jquery.min.js?etag=MgFd1C6V"></script><script src="https://glot.io/static/lib/moment/moment.min.js?etag=A8HTrQrP"></script><script src="https://glot.io/static/lib/bootstrap/bootstrap.min.js?etag=jCNzEoZN"></script><script src="https://glot.io/static/js/location.js?etag=4GZ-hhuP"></script><script src="https://glot.io/static/js/xhr.js?etag=DJYsQk-v"></script><script src="https://glot.io/static/tmp/autogen-y8fTmlVy.js"></script></body>
+ref.reply_to_message_id= 22195
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\glotio.php(98): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(671): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-27 23:02:31  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Unsupported start tag "!doctype" at byte offset 0
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804447106
+ref.message.message_id= 22196
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1616860950
+ref.message.text= /php <?php
+echo 'hehe';
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 4
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= <!doctype html><head><meta charset="UTF-8"><title>Method Not Supported</title><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="https://glot.io/static/lib/font-awesome/css/font-awesome.min.css?etag=BEJbvcYk"><link rel="stylesheet" href="https://glot.io/static/lib/bootstrap/bootstrap.min.css?etag=7t-e6Awv"><link rel="stylesheet" href="https://glot.io/static/tmp/autogen-BE5cUT7_.css"></head><body><h1>Method Not Supported</h1>
+<p>Method <code>POST</code> not supported</p>
+<script src="https://glot.io/static/lib/jquery/jquery.min.js?etag=MgFd1C6V"></script><script src="https://glot.io/static/lib/moment/moment.min.js?etag=A8HTrQrP"></script><script src="https://glot.io/static/lib/bootstrap/bootstrap.min.js?etag=jCNzEoZN"></script><script src="https://glot.io/static/js/location.js?etag=4GZ-hhuP"></script><script src="https://glot.io/static/js/xhr.js?etag=DJYsQk-v"></script><script src="https://glot.io/static/tmp/autogen-y8fTmlVy.js"></script></body>
+ref.reply_to_message_id= 22196
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\glotio.php(98): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(671): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-27 23:03:19  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Unsupported start tag "!doctype" at byte offset 0
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804447107
+ref.message.message_id= 22197
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1616860996
+ref.message.text= /php <?php
+echo 'hehe
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 4
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= <!doctype html><head><meta charset="UTF-8"><title>Method Not Supported</title><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="https://glot.io/static/lib/font-awesome/css/font-awesome.min.css?etag=BEJbvcYk"><link rel="stylesheet" href="https://glot.io/static/lib/bootstrap/bootstrap.min.css?etag=7t-e6Awv"><link rel="stylesheet" href="https://glot.io/static/tmp/autogen-BE5cUT7_.css"></head><body><h1>Method Not Supported</h1>
+<p>Method <code>POST</code> not supported</p>
+<script src="https://glot.io/static/lib/jquery/jquery.min.js?etag=MgFd1C6V"></script><script src="https://glot.io/static/lib/moment/moment.min.js?etag=A8HTrQrP"></script><script src="https://glot.io/static/lib/bootstrap/bootstrap.min.js?etag=jCNzEoZN"></script><script src="https://glot.io/static/js/location.js?etag=4GZ-hhuP"></script><script src="https://glot.io/static/js/xhr.js?etag=DJYsQk-v"></script><script src="https://glot.io/static/tmp/autogen-y8fTmlVy.js"></script></body>
+ref.reply_to_message_id= 22197
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\glotio.php(101): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(671): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-27 23:04:42  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Unsupported start tag "!doctype" at byte offset 0
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804447112
+ref.message.message_id= 22199
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1616861079
+ref.message.text= /php <?php
+echo 'hehe
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 4
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= <!doctype html><head><meta charset="UTF-8"><title>Method Not Supported</title><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="https://glot.io/static/lib/font-awesome/css/font-awesome.min.css?etag=BEJbvcYk"><link rel="stylesheet" href="https://glot.io/static/lib/bootstrap/bootstrap.min.css?etag=7t-e6Awv"><link rel="stylesheet" href="https://glot.io/static/tmp/autogen-BE5cUT7_.css"></head><body><h1>Method Not Supported</h1>
+<p>Method <code>POST</code> not supported</p>
+<script src="https://glot.io/static/lib/jquery/jquery.min.js?etag=MgFd1C6V"></script><script src="https://glot.io/static/lib/moment/moment.min.js?etag=A8HTrQrP"></script><script src="https://glot.io/static/lib/bootstrap/bootstrap.min.js?etag=jCNzEoZN"></script><script src="https://glot.io/static/js/location.js?etag=4GZ-hhuP"></script><script src="https://glot.io/static/js/xhr.js?etag=DJYsQk-v"></script><script src="https://glot.io/static/tmp/autogen-y8fTmlVy.js"></script></body>
+ref.reply_to_message_id= 22199
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\glotio.php(101): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(671): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-27 23:05:29  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Unsupported start tag "!doctype" at byte offset 0
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804447117
+ref.message.message_id= 22201
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1616861126
+ref.message.text= /php <?php
+echo 'hehe
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 4
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= <!doctype html><head><meta charset="UTF-8"><title>Method Not Supported</title><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="https://glot.io/static/lib/font-awesome/css/font-awesome.min.css?etag=BEJbvcYk"><link rel="stylesheet" href="https://glot.io/static/lib/bootstrap/bootstrap.min.css?etag=7t-e6Awv"><link rel="stylesheet" href="https://glot.io/static/tmp/autogen-BE5cUT7_.css"></head><body><h1>Method Not Supported</h1>
+<p>Method <code>POST</code> not supported</p>
+<script src="https://glot.io/static/lib/jquery/jquery.min.js?etag=MgFd1C6V"></script><script src="https://glot.io/static/lib/moment/moment.min.js?etag=A8HTrQrP"></script><script src="https://glot.io/static/lib/bootstrap/bootstrap.min.js?etag=jCNzEoZN"></script><script src="https://glot.io/static/js/location.js?etag=4GZ-hhuP"></script><script src="https://glot.io/static/js/xhr.js?etag=DJYsQk-v"></script><script src="https://glot.io/static/tmp/autogen-y8fTmlVy.js"></script></body>
+ref.reply_to_message_id= 22201
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\glotio.php(101): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(671): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-27 23:14:56  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Unsupported start tag "!doctype" at byte offset 0
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804447132
+ref.message.message_id= 22203
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1616861694
+ref.message.text= /php <?php
+echo 'hehe';
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 4
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= <!doctype html><head><meta charset="UTF-8"><title>Method Not Supported</title><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="https://glot.io/static/lib/font-awesome/css/font-awesome.min.css?etag=BEJbvcYk"><link rel="stylesheet" href="https://glot.io/static/lib/bootstrap/bootstrap.min.css?etag=7t-e6Awv"><link rel="stylesheet" href="https://glot.io/static/tmp/autogen-BE5cUT7_.css"></head><body><h1>Method Not Supported</h1>
+<p>Method <code>POST</code> not supported</p>
+<script src="https://glot.io/static/lib/jquery/jquery.min.js?etag=MgFd1C6V"></script><script src="https://glot.io/static/lib/moment/moment.min.js?etag=A8HTrQrP"></script><script src="https://glot.io/static/lib/bootstrap/bootstrap.min.js?etag=jCNzEoZN"></script><script src="https://glot.io/static/js/location.js?etag=4GZ-hhuP"></script><script src="https://glot.io/static/js/xhr.js?etag=DJYsQk-v"></script><script src="https://glot.io/static/tmp/autogen-y8fTmlVy.js"></script></body>
+ref.reply_to_message_id= 22203
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\glotio.php(103): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(671): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-27 23:24:13  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Unsupported start tag "!doctype" at byte offset 0
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804447177
+ref.message.message_id= 22214
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1616862195
+ref.message.text= /python print('ok')
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 7
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= <!doctype html><head><meta charset="UTF-8"><title>Method Not Supported</title><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="https://glot.io/static/lib/font-awesome/css/font-awesome.min.css?etag=BEJbvcYk"><link rel="stylesheet" href="https://glot.io/static/lib/bootstrap/bootstrap.min.css?etag=7t-e6Awv"><link rel="stylesheet" href="https://glot.io/static/tmp/autogen-BE5cUT7_.css"></head><body><h1>Method Not Supported</h1>
+<p>Method <code>POST</code> not supported</p>
+<script src="https://glot.io/static/lib/jquery/jquery.min.js?etag=MgFd1C6V"></script><script src="https://glot.io/static/lib/moment/moment.min.js?etag=A8HTrQrP"></script><script src="https://glot.io/static/lib/bootstrap/bootstrap.min.js?etag=jCNzEoZN"></script><script src="https://glot.io/static/js/location.js?etag=4GZ-hhuP"></script><script src="https://glot.io/static/js/xhr.js?etag=DJYsQk-v"></script><script src="https://glot.io/static/tmp/autogen-y8fTmlVy.js"></script></body>
+ref.reply_to_message_id= 22214
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\glotio.php(103): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(671): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-27 23:24:28  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Unsupported start tag "!doctype" at byte offset 0
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804447184
+ref.message.message_id= 22217
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1616862265
+ref.message.text= /python print('ok');
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 7
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= <!doctype html><head><meta charset="UTF-8"><title>Method Not Supported</title><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="https://glot.io/static/lib/font-awesome/css/font-awesome.min.css?etag=BEJbvcYk"><link rel="stylesheet" href="https://glot.io/static/lib/bootstrap/bootstrap.min.css?etag=7t-e6Awv"><link rel="stylesheet" href="https://glot.io/static/tmp/autogen-BE5cUT7_.css"></head><body><h1>Method Not Supported</h1>
+<p>Method <code>POST</code> not supported</p>
+<script src="https://glot.io/static/lib/jquery/jquery.min.js?etag=MgFd1C6V"></script><script src="https://glot.io/static/lib/moment/moment.min.js?etag=A8HTrQrP"></script><script src="https://glot.io/static/lib/bootstrap/bootstrap.min.js?etag=jCNzEoZN"></script><script src="https://glot.io/static/js/location.js?etag=4GZ-hhuP"></script><script src="https://glot.io/static/js/xhr.js?etag=DJYsQk-v"></script><script src="https://glot.io/static/tmp/autogen-y8fTmlVy.js"></script></body>
+ref.reply_to_message_id= 22217
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\glotio.php(103): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(671): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-27 23:31:12  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Unsupported start tag "!doctype" at byte offset 0
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804447208
+ref.message.message_id= 22219
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1616862669
+ref.message.text= /python print('ok');
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 7
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= <!doctype html><head><meta charset="UTF-8"><title>Method Not Supported</title><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="https://glot.io/static/lib/font-awesome/css/font-awesome.min.css?etag=BEJbvcYk"><link rel="stylesheet" href="https://glot.io/static/lib/bootstrap/bootstrap.min.css?etag=7t-e6Awv"><link rel="stylesheet" href="https://glot.io/static/tmp/autogen-BE5cUT7_.css"></head><body><h1>Method Not Supported</h1>
+<p>Method <code>POST</code> not supported</p>
+<script src="https://glot.io/static/lib/jquery/jquery.min.js?etag=MgFd1C6V"></script><script src="https://glot.io/static/lib/moment/moment.min.js?etag=A8HTrQrP"></script><script src="https://glot.io/static/lib/bootstrap/bootstrap.min.js?etag=jCNzEoZN"></script><script src="https://glot.io/static/js/location.js?etag=4GZ-hhuP"></script><script src="https://glot.io/static/js/xhr.js?etag=DJYsQk-v"></script><script src="https://glot.io/static/tmp/autogen-y8fTmlVy.js"></script></body>
+ref.reply_to_message_id= 22219
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\glotio.php(103): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(671): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-27 23:31:21  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Unsupported start tag "!doctype" at byte offset 0
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804447209
+ref.message.message_id= 22221
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1616862679
+ref.message.text= /python print('ok');
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 7
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= <!doctype html><head><meta charset="UTF-8"><title>Method Not Supported</title><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="https://glot.io/static/lib/font-awesome/css/font-awesome.min.css?etag=BEJbvcYk"><link rel="stylesheet" href="https://glot.io/static/lib/bootstrap/bootstrap.min.css?etag=7t-e6Awv"><link rel="stylesheet" href="https://glot.io/static/tmp/autogen-BE5cUT7_.css"></head><body><h1>Method Not Supported</h1>
+<p>Method <code>POST</code> not supported</p>
+<script src="https://glot.io/static/lib/jquery/jquery.min.js?etag=MgFd1C6V"></script><script src="https://glot.io/static/lib/moment/moment.min.js?etag=A8HTrQrP"></script><script src="https://glot.io/static/lib/bootstrap/bootstrap.min.js?etag=jCNzEoZN"></script><script src="https://glot.io/static/js/location.js?etag=4GZ-hhuP"></script><script src="https://glot.io/static/js/xhr.js?etag=DJYsQk-v"></script><script src="https://glot.io/static/tmp/autogen-y8fTmlVy.js"></script></body>
+ref.reply_to_message_id= 22221
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\glotio.php(103): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(671): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-27 23:34:08  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Unsupported start tag "!doctype" at byte offset 0
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804447217
+ref.message.message_id= 22225
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1616862845
+ref.message.text= /python print('ok')
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 7
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= <!doctype html><head><meta charset="UTF-8"><title>Method Not Supported</title><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="https://glot.io/static/lib/font-awesome/css/font-awesome.min.css?etag=BEJbvcYk"><link rel="stylesheet" href="https://glot.io/static/lib/bootstrap/bootstrap.min.css?etag=7t-e6Awv"><link rel="stylesheet" href="https://glot.io/static/tmp/autogen-BE5cUT7_.css"></head><body><h1>Method Not Supported</h1>
+<p>Method <code>POST</code> not supported</p>
+<script src="https://glot.io/static/lib/jquery/jquery.min.js?etag=MgFd1C6V"></script><script src="https://glot.io/static/lib/moment/moment.min.js?etag=A8HTrQrP"></script><script src="https://glot.io/static/lib/bootstrap/bootstrap.min.js?etag=jCNzEoZN"></script><script src="https://glot.io/static/js/location.js?etag=4GZ-hhuP"></script><script src="https://glot.io/static/js/xhr.js?etag=DJYsQk-v"></script><script src="https://glot.io/static/tmp/autogen-y8fTmlVy.js"></script></body>
+ref.reply_to_message_id= 22225
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\glotio.php(104): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(671): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-03-27 23:34:32  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Unsupported start tag "!doctype" at byte offset 0
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804447218
+ref.message.message_id= 22227
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= Fadhil
+ref.message.chat.last_name= Riyanto
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1616862872
+ref.message.text= /python print('ok')
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 7
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= <!doctype html><head><meta charset="UTF-8"><title>Method Not Supported</title><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="https://glot.io/static/lib/font-awesome/css/font-awesome.min.css?etag=BEJbvcYk"><link rel="stylesheet" href="https://glot.io/static/lib/bootstrap/bootstrap.min.css?etag=7t-e6Awv"><link rel="stylesheet" href="https://glot.io/static/tmp/autogen-BE5cUT7_.css"></head><body><h1>Method Not Supported</h1>
+<p>Method <code>POST</code> not supported</p>
+<script src="https://glot.io/static/lib/jquery/jquery.min.js?etag=MgFd1C6V"></script><script src="https://glot.io/static/lib/moment/moment.min.js?etag=A8HTrQrP"></script><script src="https://glot.io/static/lib/bootstrap/bootstrap.min.js?etag=jCNzEoZN"></script><script src="https://glot.io/static/js/location.js?etag=4GZ-hhuP"></script><script src="https://glot.io/static/js/xhr.js?etag=DJYsQk-v"></script><script src="https://glot.io/static/tmp/autogen-y8fTmlVy.js"></script></body>
+ref.reply_to_message_id= 22227
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\glotio.php(102): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(671): require('C:\\bot telegram...')
+#5 {main}
+
