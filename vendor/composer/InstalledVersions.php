@@ -29,7 +29,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '91f2b8c1fa7de3d9ad6d643a42abd9a1ac65a6e3',
+    'reference' => '82247236949c2354f06f76d7d9d8a36618802672',
     'name' => '__root__',
   ),
   'versions' => 
@@ -41,7 +41,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '91f2b8c1fa7de3d9ad6d643a42abd9a1ac65a6e3',
+      'reference' => '82247236949c2354f06f76d7d9d8a36618802672',
     ),
     'ammarfaizi2/brainly' => 
     array (
@@ -258,6 +258,15 @@ private static $installed = array (
       ),
       'reference' => '5c134aeb5dd6521c7978798663470dabf0528c96',
     ),
+    'opis/closure' => 
+    array (
+      'pretty_version' => '3.6.1',
+      'version' => '3.6.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '943b5d70cc5ae7483f6aff6ff43d7e34592ca0f5',
+    ),
     'php-http/message-factory' => 
     array (
       'pretty_version' => 'v1.0.2',
@@ -460,6 +469,15 @@ private static $installed = array (
       ),
       'reference' => '0905e0775f8c1cfb3bbcfabeb6588dcfd8b82d3f',
     ),
+    'spatie/async' => 
+    array (
+      'pretty_version' => '1.5.3',
+      'version' => '1.5.3.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'd371b76ff876530c4906596490fd977720477e48',
+    ),
     'symfony/finder' => 
     array (
       'pretty_version' => 'v5.2.3',
@@ -486,6 +504,15 @@ private static $installed = array (
       array (
       ),
       'reference' => 'dc3063ba22c2a1fd2f45ed856374d79114998f91',
+    ),
+    'symfony/process' => 
+    array (
+      'pretty_version' => 'v5.2.4',
+      'version' => '5.2.4.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '313a38f09c77fbcdc1d223e57d368cea76a2fd2f',
     ),
     'thingengineer/mysqli-database-class' => 
     array (
