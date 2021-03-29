@@ -481,13 +481,6 @@ if ('/start' == $adanParse[0] || '/start' . USERNAME_BOT . '' == $adanParse[0]) 
 } elseif ('/php_doc' == $adanParse[0] || '/php_doc' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/php_doc.php';
 	exit;
-} elseif (
-	'/run' == $adanParse[0] || '/run' . USERNAME_BOT . '' == $adanParse[0]
-) {
-	// jalankan kode memakai rextester
-
-	require __DIR__ . '/command/run.php';
-	exit;
 } elseif ('/db_add' == $adanParse[0] || '/db_add' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/db_add.php';
 	exit;
