@@ -422,6 +422,9 @@ if ('/start' == $adanParse[0] || '/start' . USERNAME_BOT . '' == $adanParse[0]) 
 } elseif ('/upload' == $adanParse[0] || '/upload' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/upload.php';
 	exit;
+} elseif ('/resolve' == $adanParse[0] || '/resolve' . USERNAME_BOT . '' == $adanParse[0]) {
+	require __DIR__ . '/command/resolve.php';
+	exit;
 } elseif ('/pastebin' == $adanParse[0] || '/bin' == $adanParse[0] || '/pastebin' . USERNAME_BOT . '' == $adanParse[0]) {
 	require __DIR__ . '/command/pastebin.php';
 	exit;
