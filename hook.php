@@ -149,7 +149,7 @@ if (isset($getreplyianid)) {
 				'Alasan : ' . $user['alasan'];
 			$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
 			$telegram->sendMessage($content);
-			exit;
+			// exit;
 		}
 	}
 }
@@ -251,7 +251,12 @@ if (isset($text)) {
 	$chek_gc = detect_grup();
 	$nama_gc = $chat_id;
 	if ($chek_gc == true) {
-		if ($nama_gc == -1001209274058 || $nama_gc == -1001410961692 || $nama_gc == -458987087 || $nama_gc == -1001433395819 || $nama_gc == -1001310420564 || $nama_gc == -1001182246595) {
+		if (
+			$nama_gc == -1001209274058 || $nama_gc == -1001410961692 ||
+			$nama_gc == -458987087 || $nama_gc == -1001433395819 ||
+			$nama_gc == -1001310420564 || $nama_gc == -1001182246595 ||
+			$nama_gc == -1001422713507
+		) {
 		} else {
 			$reply = 'Maaf, saya diprogram oleh pemilik saya untuk tidak dimasukkan ke grup secara sembarangan oleh orang' . PHP_EOL . PHP_EOL .
 				'Jika anda masih tetap ingin memasukkan saya ke grup. silahkan copy angka ini <pre>' . $chat_id . '</pre> lalu pm atau kirimkan ke pembuat bot ini, yaitu ' . PUMBUAT_BOT . PHP_EOL . PHP_EOL .
@@ -658,12 +663,9 @@ if ('/start' == $adanParse[0] || '/start' . USERNAME_BOT . '' == $adanParse[0]) 
 	exit;
 } elseif ($stringPertama == '/') {
 	require __DIR__ . '/command/glotio.php';
-
 	require __DIR__ . '/photooxy_command/__init__.php';
-
 	require __DIR__ . '/include/claimmed.php';
 	require __DIR__ . '/group_command/__init__.php';
-
 	require __DIR__ . '/anime_command/__init__.php';
 
 	require __DIR__ . '/hash_command/__init__.php';

@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS `data_ai` (
   `data_res_ai` longtext NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
--- Dumping data for table b8rkwqqp7tbpt89flosy.data_ai: ~5.364 rows (approximately)
+-- Dumping data for table b8rkwqqp7tbpt89flosy.data_ai: ~5.357 rows (approximately)
 /*!40000 ALTER TABLE `data_ai` DISABLE KEYS */;
 INSERT INTO `data_ai` (`data_key_ai`, `data_res_ai`) VALUES
 	('foo', '\\ud83d\\ude04, bar'),
@@ -5552,7 +5552,17 @@ INSERT INTO `data_ai` (`data_key_ai`, `data_res_ai`) VALUES
 	('ini masih afk benerin wakakaka', ''),
 	('udah gitu doang', ''),
 	('owh api key g ada', ''),
-	('ini saya liat bayar yah api nya', '');
+	('ini saya liat bayar yah api nya', ''),
+	('an u bukan aneh', ''),
+	('emg susah sih bkin chatbot', ''),
+	('ini brp njir 8 3 30008 brp', ''),
+	('brantakan', ''),
+	('pilih 3584', ''),
+	('sholat belum', ''),
+	('fadhil', ''),
+	('bingung ya', ''),
+	('nih jam segituan', ''),
+	('total ga salah nih', '');
 /*!40000 ALTER TABLE `data_ai` ENABLE KEYS */;
 
 -- Dumping structure for table b8rkwqqp7tbpt89flosy.grup_data
@@ -5569,11 +5579,11 @@ CREATE TABLE IF NOT EXISTS `grup_data` (
 -- Dumping data for table b8rkwqqp7tbpt89flosy.grup_data: ~5 rows (approximately)
 /*!40000 ALTER TABLE `grup_data` DISABLE KEYS */;
 INSERT INTO `grup_data` (`gid`, `welcome_text`, `leaveuser_text`, `rules_group`, `chapcha`, `set_welcome_mode`, `set_leaveuser_mode`) VALUES
-	('-1001209274058', 'selamat datang [[username]] di gc penuh berkah ini.\njangan lupa baca rules dgn cara klik /rules', 'selamat tinggal', 'jangan spam.\nngirim link spam.\njangan kirim stiker koceng yg itu.\njangan nulis :v (auto hapus)\njangan ngomong kasar', 'false', 'false', 'true'),
+	('-1001209274058', 'hai, selamat datang. Jangan lupa taati peraturan yah', 'selamat tinggal', 'jangan spam.\nngirim link spam.\njangan kirim stiker koceng yg itu.\njangan nulis :v (auto hapus)\njangan ngomong kasar', 'true', 'true', 'true'),
 	('-1001410961692', 'selamat datang [[username]]', 'selamat tinggal', NULL, 'true', 'true', 'true'),
 	(NULL, NULL, NULL, 'test apakah rules berubah njir?', NULL, NULL, NULL),
 	('-1001433395819', 'test', NULL, NULL, NULL, NULL, NULL),
-	('-1001310420564', 'selamat datang...hehe', NULL, NULL, 'false', 'false', NULL);
+	('-1001310420564', 'test  welcome', NULL, NULL, 'true', 'true', NULL);
 /*!40000 ALTER TABLE `grup_data` ENABLE KEYS */;
 
 -- Dumping structure for table b8rkwqqp7tbpt89flosy.members
@@ -5629,7 +5639,11 @@ INSERT INTO `members` (`userid`, `username`, `first_name`, `lastname`) VALUES
 	('1154989698', 'bugsToys', 'BugToys', NULL),
 	('831666755', 'ahmadbaehaqi', 'Ahmad', 'Baehaqi'),
 	('1582208820', 'CeoPatrickStar', 'TIRAMISSYUU', '- Iky'),
-	('1468853576', 'Klewerklewer', 'Mix', 'Max');
+	('1468853576', 'Klewerklewer', 'Mix', 'Max'),
+	('1394335657', 'hazmi101', 'HAZMI', '101'),
+	('874922966', 'hudzdha', 'Hud\'z', NULL),
+	('1184720056', 'Aisyah763', 'ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ #thiefwithoutlimits', NULL),
+	('938740797', 'YamamMustaqil', 'Imam', 'Beh');
 /*!40000 ALTER TABLE `members` ENABLE KEYS */;
 
 -- Dumping structure for table b8rkwqqp7tbpt89flosy.pastebin
@@ -5667,7 +5681,13 @@ INSERT INTO `pastebin` (`userid`, `paste_id`, `data`) VALUES
 	('1393342467', '81f1fbd678', 'https://i.ibb.co/f0ktny6/fadhil-riyanto.jpg'),
 	('1393342467', '6952a6f0d7', '889129242'),
 	('1393342467', 'c6e6d9910b', '-1001182246595'),
-	('1393342467', '52b222d5ea', 'misi');
+	('1393342467', '52b222d5ea', 'misi'),
+	('1349919799', '600845c856', 'misi'),
+	('1394335657', '387f740a0c', 'titan'),
+	('1393342467', '71e0fe9a4b', '1 . pendahuan\n==========\n[salam pembuka]\nassalamualaikum wr. wb. \n\n[salam hormat]\nsalam sejahtera bagi kita semua. \nkepada bapak guru yang saya hormati dan teman teman yang\nberbahagia. \n\n[ucapan terimakasi kepada hadirin]\nterimakasi semua para hadirin yang telah datang disini\n\n[ucapan syukur kepada tuhan yme]\npertama-tama marilah kita panjatkan puja dan puji syukur atas kehadirat\nallah swt yang telah melimpahkan nikmat dan rahmatnya, sehingga kita\ndapat berkumpul di tempat ini dalam keadaan sehat wal\'afiat. \n\n[ucapan terimakasi atas waktu yang diberikan]\nterimakasi atas waktu nya, para hadirin semua\n\n[informasi awal tentang topik yang akan disampaikan]\npada kesempatan kali ini saya akan berpidato dengan tema cinta tanah\nair. \n\n2. isi\n==========\n\n[uraian]\nteman-teman yang berbahagia, seperti yang kita ketahui, indonesia\nadalah negeri yang terkenal dengan keanekaragamannya. terdapat\nratusan bahkan ribuan suku bangsa ada disini. setiap suku memiliki\nbudaya yang berbeda-beda. di era globalisasi ini, budaya-budaya barat perlahan-lahan masuk ke\nindonesia dan berkembang dengan pesat. kita sebagai generasi muda\nseakan lebih menyukai budaya barat daripada budaya asli kita sendiri. kita seakan lebih percaya diri dan merasa lebih gaul jika meniru budaya\nbarat.\n\n[harapan]\nteman-teman yang berbahagia, banyak cara yang dapat kita lakukan\nuntuk mewujudkan rasa cinta kita terhadap bangsa indonesia ini, \n\n3. penutup\n==========\n[kesimpulan isi pidato]\nsalah satunya yaitu melestarikan budayanya dengan lebih mengenal dan\nmemahami budaya yang dimiliki bangsa indonesia ini. indonesia telah\nmemberikan banyak sesuatu kepada kita, sekarang giliran kita untuk\nmemberi sesuuatu kepadanya.\n\n[saran]\nmarilah kita didik anak anak kita agar cinta tanah air dan mampu menyaring arus globalisasi\n\n[ucapan terimakasih]\nakhir kata dan terima kasih para hadirin telah mengikuti acara ini,  sekian yang dapat saya sampaikan, semoga bermanfaat. \n\n[mohon maaf]\nkurang lebihnya saya mohon maaf. \n\n[salam]\nwaasalamualaikum wr wb'),
+	('1393342467', '8baff93c4f', 'ass wr wb, anak-anak kls ix g semoga sehat selalu, dan selalu dalam lindungan allah swt aamiinx3 yra. patuhi protokol kesehatan ya. \n materi pembelajaran daring jj mapel b indonesia hari ini selasa,  23 februari 2021 \ntentang bab 6 menyusun cerita inspiratif \na. aspek mendengarkan. \nmaterinya : baca dan pahami buku paket b indonesia kls ix smp halaman 148-151 setelah selesai kalian pahami, buat :\n1. catatan materi\n     belajarnya \n2. kerjakan tugasnya.\n\nurutan catatan dari materi tersebut sbb\nb. aspek berbicara \n    1. k.d. \n            menyimpulkan isi\n            informasi cerita\n            inspiratif \n     2.  indikator \n            a. siswa mampu\n                menentukan\n                struktur cerita\n                inspiratif \n           b. siswa mampu\n               menyimpulkan\n               informasi cerita\n               inspiratif \nmateri belajar \n  1. struktur teks\n      cerita inspiratif \n       .....................................\n       ..................................... \n 2.  cara\n       menyimpulkan isi\n       cerita (silakan\n       mencari di google) \n       ..................................... \n       ..................................... \ntugas \n kerjakan buku paket b indonesia kls ix hal152-153\n\nsusunan dalam membuat catatan materi belajar sbb \nc. aspek membaca \n   1. k.d. \n           menelaah  cerita\n           inspiratif \n  2. indikator \n        a. siswa mampu\n            menentukan\n            langkah-langkah\n            menelaah certa\n            inspiratif \n      b. siswa mampu\n           menelaah cerita\n           inspiratif \nmateri belajar \n  1.  pengertian\n       menelaah model\n      cerita inspiratif \n           adalah  .................. \n2. langkah -langkah\n     menelaah model    \n     cerita inspiratif\n     (cari di google) \n3.cara menyusun\n   cerita inspiratif \n   (silakan cari di google\n   +baca buku paket hal\n   154-155)\ntugas \n1. buatlah cerita inspiratif\n2. telaah strukturnya \nlangsung saja buat badannya.\n\nass wr wb, anak-anak kls ix g semoga sehat selalu dan selalu dalam lindungan allah swt aamiinx3 yra. pada hari ini selasa, 23 maret 2021 pembelajaran siang ini tentang bab 6 menyusun cerita inspiratif \nb. aspek menulis silakan baca dan pelajari buku paket b indonesia hal 156-158!\nsetelah kalian baca dan pahami silakan buat\n1. catatan materi\n     belajarnya \n2. kerjakan tugasnya \nsusunan catatan materi belajar sbb. \nd. aspek menulis \n    1. k.d. \n            mengungkapkan\n            gagasan dalam\n            bentuk cerita\n            inspiratif \n     2. indikator \n          a. siswa mampu\n              menentukan\n              pengertian\n              menulis cerita\n              inspiratif \n           b. siswa mampu\n              menentukan\n              langkah-langkah\n              menulis cerita\n              inspiratif. \n          c. siswa mampu\n              menulis cerita\n              inspiratif sesuai\n              langkah-langkah\n              menulis cerita\n              inspiratif. \nmateri belajar \n  1. pengertian\n      menulis cerita\n      inspiratif \n        adalah  ...... \n  2. langkah -\n      langkah menulis\n      cerita inspiratif \n         adalah  ...... \ntugas \n   buatlah cerita inspiratif berdasarkan pengamatan\nfakta botol jika diisi..... \n.......'),
+	('1393342467', '7cdb13c664', 'ass wr wb, anak-anak kls ix g semoga sehat selalu, dan selalu dalam lindungan allah swt aamiinx3 yra. patuhi protokol kesehatan ya. \n materi pembelajaran daring jj mapel b indonesia hari ini selasa,  23 februari 2021 \ntentang bab 6 menyusun cerita inspiratif \na. aspek mendengarkan. \nmaterinya : baca dan pahami buku paket b indonesia kls ix smp halaman 148-151 setelah selesai kalian pahami, buat :\n1. catatan materi\n     belajarnya \n2. kerjakan tugasnya.\n\nurutan catatan dari materi tersebut sbb\nb. aspek berbicara \n    1. k.d. \n            menyimpulkan isi\n            informasi cerita\n            inspiratif \n     2.  indikator \n            a. siswa mampu\n                menentukan\n                struktur cerita\n                inspiratif \n           b. siswa mampu\n               menyimpulkan\n               informasi cerita\n               inspiratif \nmateri belajar \n  1. struktur teks\n      cerita inspiratif \n       .....................................\n       ..................................... \n 2.  cara\n       menyimpulkan isi\n       cerita (silakan\n       mencari di google) \n       ..................................... \n       ..................................... \ntugas \n kerjakan buku paket b indonesia kls ix hal152-153\n\nsusunan dalam membuat catatan materi belajar sbb \nc. aspek membaca \n   1. k.d. \n           menelaah  cerita\n           inspiratif \n  2. indikator \n        a. siswa mampu\n            menentukan\n            langkah-langkah\n            menelaah certa\n            inspiratif \n      b. siswa mampu\n           menelaah cerita\n           inspiratif \nmateri belajar \n  1.  pengertian\n       menelaah model\n      cerita inspiratif \n           adalah  .................. \n2. langkah -langkah\n     menelaah model    \n     cerita inspiratif\n     (cari di google) \n3.cara menyusun\n   cerita inspiratif \n   (silakan cari di google\n   +baca buku paket hal\n   154-155)\ntugas \n1. buatlah cerita inspiratif\n2. telaah strukturnya \nlangsung saja buat badannya.\n\nass wr wb, anak-anak kls ix g semoga sehat selalu dan selalu dalam lindungan allah swt aamiinx3 yra. pada hari ini selasa, 23 maret 2021 pembelajaran siang ini tentang bab 6 menyusun cerita inspiratif \nb. aspek menulis silakan baca dan pelajari buku paket b indonesia hal 156-158!\nsetelah kalian baca dan pahami silakan buat\n1. catatan materi\n     belajarnya \n2. kerjakan tugasnya \nsusunan catatan materi belajar sbb. \nd. aspek menulis \n    1. k.d. \n            mengungkapkan\n            gagasan dalam\n            bentuk cerita\n            inspiratif \n     2. indikator \n          a. siswa mampu\n              menentukan\n              pengertian\n              menulis cerita\n              inspiratif \n           b. siswa mampu\n              menentukan\n              langkah-langkah\n              menulis cerita\n              inspiratif. \n          c. siswa mampu\n              menulis cerita\n              inspiratif sesuai\n              langkah-langkah\n              menulis cerita\n              inspiratif. \nmateri belajar \n  1. pengertian\n      menulis cerita\n      inspiratif \n        adalah  ...... \n  2. langkah -\n      langkah menulis\n      cerita inspiratif \n         adalah  ...... \ntugas \n   buatlah cerita inspiratif berdasarkan pengamatan\nfakta botol jika diisi..... \n.......'),
+	('1393342467', '2d67f1f58c', 'tepat sebelum keyword for terluar, terdapat baris kode outerloop:. maksud dari kode tersebut adalah disiapkan sebuah label bernama outerloop untuk for dibawahnya. nama label bisa diganti dengan nama lain (dan harus diakhiri dengan tanda titik dua atau colon (:) ).\n\npada for bagian dalam, terdapat seleksi kondisi untuk pengecekan nilai i. ketika nilai tersebut sama dengan 3, maka break dipanggil dengan target adalah perulangan yang dilabeli outerloop, perulangan tersebut akan dihentikan');
 /*!40000 ALTER TABLE `pastebin` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
