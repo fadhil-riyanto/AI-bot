@@ -1,0 +1,3 @@
+ParseError: syntax error, unexpected '$responglo' (T_VARIABLE) in C:\bot telegram\command\glotio.php:103
+Stack trace:
+#0 {main}

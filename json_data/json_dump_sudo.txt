@@ -1,7 +1,7 @@
 {
-    "update_id": 804421352,
+    "update_id": 804454535,
     "message": {
-        "message_id": 45713,
+        "message_id": 69319,
         "from": {
             "id": 1393342467,
             "is_bot": false,
@@ -16,33 +16,7 @@
             "username": "scriptiseng",
             "type": "supergroup"
         },
-        "date": 1615386753,
-        "reply_to_message": {
-            "message_id": 45712,
-            "from": {
-                "id": 1393342467,
-                "is_bot": false,
-                "first_name": "Fadhil",
-                "last_name": "Riyanto",
-                "username": "fadhil_riyanto",
-                "language_code": "ms"
-            },
-            "chat": {
-                "id": -1001209274058,
-                "title": "\ud835\udd44\ud835\udd52\ud835\udd64\ud835\udd6a\ud835\udd52\ud835\udd63\ud835\udd52\ud835\udd5c\ud835\udd52\ud835\udd65 \ud835\udd40\ud835\udd64\ud835\udd56\ud835\udd5f\ud835\udd58\u00a9",
-                "username": "scriptiseng",
-                "type": "supergroup"
-            },
-            "date": 1615386741,
-            "text": "\/sudo json tes \ud83d\ude02\ud83d\ude02\ud83d\ude02\ud83d\ude18\ud83d\ude18\ud83e\udd23\ud83e\udd23\ud83e\udd23",
-            "entities": [
-                {
-                    "offset": 0,
-                    "length": 5,
-                    "type": "bot_command"
-                }
-            ]
-        },
+        "date": 1617186658,
         "text": "\/sudo json",
         "entities": [
             {

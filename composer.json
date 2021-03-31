@@ -17,9 +17,10 @@
         "slim/psr7": "^1.3",
         "nyholm/psr7": "^1.4",
         "nyholm/psr7-server": "^1.0",
-        "guzzlehttp/psr7": "^1.7",
+        "guzzlehttp/psr7": "^1.8",
         "http-interop/http-factory-guzzle": "^1.0",
         "laminas/laminas-diactoros": "^2.5",
-        "spatie/async": "^1.5"
+        "spatie/async": "^1.5",
+        "pecee/simple-router": "^4.3"
     }
 }

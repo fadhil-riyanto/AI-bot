@@ -29,7 +29,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '82247236949c2354f06f76d7d9d8a36618802672',
+    'reference' => 'b89351759192574636c8e6d659b70e185db9e5dd',
     'name' => '__root__',
   ),
   'versions' => 
@@ -41,7 +41,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '82247236949c2354f06f76d7d9d8a36618802672',
+      'reference' => 'b89351759192574636c8e6d659b70e185db9e5dd',
     ),
     'ammarfaizi2/brainly' => 
     array (
@@ -136,12 +136,12 @@ private static $installed = array (
     ),
     'guzzlehttp/psr7' => 
     array (
-      'pretty_version' => '1.7.0',
-      'version' => '1.7.0.0',
+      'pretty_version' => '1.8.1',
+      'version' => '1.8.1.0',
       'aliases' => 
       array (
       ),
-      'reference' => '53330f47520498c0ae1f61f7e2c90f55690c06a3',
+      'reference' => '35ea11d335fd638b5882ff1725228b3d35496ab1',
     ),
     'http-interop/http-factory-guzzle' => 
     array (
@@ -266,6 +266,15 @@ private static $installed = array (
       array (
       ),
       'reference' => '943b5d70cc5ae7483f6aff6ff43d7e34592ca0f5',
+    ),
+    'pecee/simple-router' => 
+    array (
+      'pretty_version' => '4.3.1.0',
+      'version' => '4.3.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'd0c34255b57b675ba3f28b8d3f430812c9793300',
     ),
     'php-http/message-factory' => 
     array (

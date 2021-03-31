@@ -92,7 +92,7 @@ return array(
     '538ca81a9a966a6716601ecf48f4eaef' => $vendorDir . '/opis/closure/functions.php',
     '547f39254e5312c66b30c9b6a7d3570f' => $vendorDir . '/eleirbag89/telegrambotphp/Telegram.php',
     '221a7c0887f892e44dd08191321d3815' => $vendorDir . '/eleirbag89/telegrambotphp/TelegramErrorLogger.php',
+    '7dd996d98a91d095f100c75e0b9e2391' => $vendorDir . '/spatie/async/src/helpers.php',
     '71ecd0286a4e74fd8732297fb587023c' => $vendorDir . '/thingengineer/mysqli-database-class/MysqliDb.php',
     'd383f1ec7b1e54a09cb53eb6fcf751e0' => $vendorDir . '/thingengineer/mysqli-database-class/dbObject.php',
-    '7dd996d98a91d095f100c75e0b9e2391' => $vendorDir . '/spatie/async/src/helpers.php',
 );

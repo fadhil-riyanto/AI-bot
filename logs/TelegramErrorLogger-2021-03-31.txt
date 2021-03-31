@@ -1,0 +1,2202 @@
+============[Date]============
+[ 2021-03-31 17:30:18  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804454534
+ref.message.message_id= 69317
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1617186615
+ref.message.text= /addword ngetes
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 8
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 69317
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(730): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-03-31 17:51:45  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804454575
+ref.message.message_id= 69364
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1617187902
+ref.message.text= /help@NekohaShzkBot
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 19
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 69364
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(730): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-03-31 17:51:50  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804454576
+ref.message.message_id= 69366
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1617187905
+ref.message.text= /games@NekohaShzkBot
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 20
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 69366
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(730): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-03-31 17:51:54  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804454577
+ref.message.message_id= 69368
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1617187908
+ref.message.text= /games@NekohaShzkBot
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 20
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 69368
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(730): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-03-31 17:51:58  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804454578
+ref.message.message_id= 69370
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1617187911
+ref.message.text= /bagels@NekohaShzkBot
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 21
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 69370
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(730): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-03-31 17:52:03  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804454579
+ref.message.message_id= 69372
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1617187914
+ref.message.text= /bagels@NekohaShzkBot
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 21
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 69372
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(730): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-03-31 17:52:07  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804454580
+ref.message.message_id= 69373
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1617187918
+ref.message.text= /bagels@NekohaShzkBot
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 21
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 69373
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(730): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-03-31 17:52:12  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804454581
+ref.message.message_id= 69375
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1617187922
+ref.message.text= /startbagels@NekohaShzkBot
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 26
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 69375
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(730): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-03-31 17:52:16  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804454582
+ref.message.message_id= 69377
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1617187927
+ref.message.text= /startbagels@NekohaShzkBot
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 26
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 69377
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(730): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-03-31 18:13:21  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804454605
+ref.message.message_id= 69414
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1617189198
+ref.message.text= /tr id has_emojis
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 3
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 69414
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(730): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-03-31 18:13:34  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804454607
+ref.message.message_id= 69418
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1617189209
+ref.message.reply_to_message.message_id= 69417
+ref.message.reply_to_message.from.id= 1393342467
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Fadhil
+ref.message.reply_to_message.from.last_name= Riyanto
+ref.message.reply_to_message.from.username= fadhil_riyanto
+ref.message.reply_to_message.from.language_code= ms
+ref.message.reply_to_message.chat.id= -1001209274058
+ref.message.reply_to_message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.reply_to_message.chat.username= scriptiseng
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1617189204
+ref.message.reply_to_message.text= has_emojis
+ref.message.text= /tr id
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 3
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 69418
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(730): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-03-31 18:13:45  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804454608
+ref.message.message_id= 69423
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1617189222
+ref.message.text= /tr id has emojis
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 3
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 69423
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(730): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-03-31 19:42:59  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804455383
+ref.message.message_id= 70320
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1617194575
+ref.message.text= /addword test
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 8
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 70320
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(733): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-03-31 19:44:10  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804455386
+ref.message.message_id= 70325
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1617194645
+ref.message.reply_to_message.message_id= 69446
+ref.message.reply_to_message.from.id= 1472669471
+ref.message.reply_to_message.from.is_bot= true
+ref.message.reply_to_message.from.first_name= Groups Music Bot
+ref.message.reply_to_message.from.username= GroupsMusicBot
+ref.message.reply_to_message.chat.id= -1001209274058
+ref.message.reply_to_message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.reply_to_message.chat.username= scriptiseng
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1617189896
+ref.message.reply_to_message.text= ✅ Bot berhasil dimulai ulang!
+
+• Daftar admin telah diperbarui.
+ref.message.reply_to_message.entities.0.offset= 6
+ref.message.reply_to_message.entities.0.length= 8
+ref.message.reply_to_message.entities.0.type= bold
+ref.message.reply_to_message.entities.1.offset= 15
+ref.message.reply_to_message.entities.1.length= 14
+ref.message.reply_to_message.entities.1.type= bold
+ref.message.reply_to_message.entities.2.offset= 33
+ref.message.reply_to_message.entities.2.length= 12
+ref.message.reply_to_message.entities.2.type= bold
+ref.message.reply_to_message.entities.3.offset= 52
+ref.message.reply_to_message.entities.3.length= 10
+ref.message.reply_to_message.entities.3.type= bold
+ref.message.text= /ban
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 4
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 70325
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(733): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-03-31 19:44:12  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: user is an administrator of the chat
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804455386
+ref.message.message_id= 70325
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1617194645
+ref.message.reply_to_message.message_id= 69446
+ref.message.reply_to_message.from.id= 1472669471
+ref.message.reply_to_message.from.is_bot= true
+ref.message.reply_to_message.from.first_name= Groups Music Bot
+ref.message.reply_to_message.from.username= GroupsMusicBot
+ref.message.reply_to_message.chat.id= -1001209274058
+ref.message.reply_to_message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.reply_to_message.chat.username= scriptiseng
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1617189896
+ref.message.reply_to_message.text= ✅ Bot berhasil dimulai ulang!
+
+• Daftar admin telah diperbarui.
+ref.message.reply_to_message.entities.0.offset= 6
+ref.message.reply_to_message.entities.0.length= 8
+ref.message.reply_to_message.entities.0.type= bold
+ref.message.reply_to_message.entities.1.offset= 15
+ref.message.reply_to_message.entities.1.length= 14
+ref.message.reply_to_message.entities.1.type= bold
+ref.message.reply_to_message.entities.2.offset= 33
+ref.message.reply_to_message.entities.2.length= 12
+ref.message.reply_to_message.entities.2.type= bold
+ref.message.reply_to_message.entities.3.offset= 52
+ref.message.reply_to_message.entities.3.length= 10
+ref.message.reply_to_message.entities.3.type= bold
+ref.message.text= /ban
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 4
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.user_id= 1472669471
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(152): Telegram->endpoint('kickChatMember', Array)
+#3 C:\bot telegram\admin_command\ban.php(20): Telegram->kickChatMember(Array)
+#4 C:\bot telegram\admin_command\__init__.php(217): require('C:\\bot telegram...')
+#5 C:\bot telegram\hook.php(734): require('C:\\bot telegram...')
+#6 {main}
+
+============[Date]============
+[ 2021-03-31 19:44:16  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: user is an administrator of the chat
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804455386
+ref.message.message_id= 70325
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1617194645
+ref.message.reply_to_message.message_id= 69446
+ref.message.reply_to_message.from.id= 1472669471
+ref.message.reply_to_message.from.is_bot= true
+ref.message.reply_to_message.from.first_name= Groups Music Bot
+ref.message.reply_to_message.from.username= GroupsMusicBot
+ref.message.reply_to_message.chat.id= -1001209274058
+ref.message.reply_to_message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.reply_to_message.chat.username= scriptiseng
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1617189896
+ref.message.reply_to_message.text= ✅ Bot berhasil dimulai ulang!
+
+• Daftar admin telah diperbarui.
+ref.message.reply_to_message.entities.0.offset= 6
+ref.message.reply_to_message.entities.0.length= 8
+ref.message.reply_to_message.entities.0.type= bold
+ref.message.reply_to_message.entities.1.offset= 15
+ref.message.reply_to_message.entities.1.length= 14
+ref.message.reply_to_message.entities.1.type= bold
+ref.message.reply_to_message.entities.2.offset= 33
+ref.message.reply_to_message.entities.2.length= 12
+ref.message.reply_to_message.entities.2.type= bold
+ref.message.reply_to_message.entities.3.offset= 52
+ref.message.reply_to_message.entities.3.length= 10
+ref.message.reply_to_message.entities.3.type= bold
+ref.message.text= /ban
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 4
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.user_id= 1472669471
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(160): Telegram->endpoint('unbanChatMember', Array)
+#3 C:\bot telegram\admin_command\ban.php(36): Telegram->unbanChatMember(Array)
+#4 C:\bot telegram\admin_command\__init__.php(217): require('C:\\bot telegram...')
+#5 C:\bot telegram\hook.php(734): require('C:\\bot telegram...')
+#6 {main}
+
+============[Date]============
+[ 2021-03-31 19:44:40  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804455387
+ref.message.message_id= 70327
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1617194676
+ref.message.reply_to_message.message_id= 69446
+ref.message.reply_to_message.from.id= 1472669471
+ref.message.reply_to_message.from.is_bot= true
+ref.message.reply_to_message.from.first_name= Groups Music Bot
+ref.message.reply_to_message.from.username= GroupsMusicBot
+ref.message.reply_to_message.chat.id= -1001209274058
+ref.message.reply_to_message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.reply_to_message.chat.username= scriptiseng
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1617189896
+ref.message.reply_to_message.text= ✅ Bot berhasil dimulai ulang!
+
+• Daftar admin telah diperbarui.
+ref.message.reply_to_message.entities.0.offset= 6
+ref.message.reply_to_message.entities.0.length= 8
+ref.message.reply_to_message.entities.0.type= bold
+ref.message.reply_to_message.entities.1.offset= 15
+ref.message.reply_to_message.entities.1.length= 14
+ref.message.reply_to_message.entities.1.type= bold
+ref.message.reply_to_message.entities.2.offset= 33
+ref.message.reply_to_message.entities.2.length= 12
+ref.message.reply_to_message.entities.2.type= bold
+ref.message.reply_to_message.entities.3.offset= 52
+ref.message.reply_to_message.entities.3.length= 10
+ref.message.reply_to_message.entities.3.type= bold
+ref.message.text= /demote
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 7
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 70327
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(733): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-03-31 19:49:54  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804455391
+ref.message.message_id= 70337
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1617194989
+ref.message.reply_to_message.message_id= 69446
+ref.message.reply_to_message.from.id= 1472669471
+ref.message.reply_to_message.from.is_bot= true
+ref.message.reply_to_message.from.first_name= Groups Music Bot
+ref.message.reply_to_message.from.username= GroupsMusicBot
+ref.message.reply_to_message.chat.id= -1001209274058
+ref.message.reply_to_message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.reply_to_message.chat.username= scriptiseng
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1617189896
+ref.message.reply_to_message.text= ✅ Bot berhasil dimulai ulang!
+
+• Daftar admin telah diperbarui.
+ref.message.reply_to_message.entities.0.offset= 6
+ref.message.reply_to_message.entities.0.length= 8
+ref.message.reply_to_message.entities.0.type= bold
+ref.message.reply_to_message.entities.1.offset= 15
+ref.message.reply_to_message.entities.1.length= 14
+ref.message.reply_to_message.entities.1.type= bold
+ref.message.reply_to_message.entities.2.offset= 33
+ref.message.reply_to_message.entities.2.length= 12
+ref.message.reply_to_message.entities.2.type= bold
+ref.message.reply_to_message.entities.3.offset= 52
+ref.message.reply_to_message.entities.3.length= 10
+ref.message.reply_to_message.entities.3.type= bold
+ref.message.text= /demote
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 7
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 70337
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(733): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-03-31 19:52:56  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804455397
+ref.message.message_id= 39264
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001182246595
+ref.message.chat.title= [c]oretan Script
+ref.message.chat.username= cScript
+ref.message.chat.type= supergroup
+ref.message.date= 1617195173
+ref.message.text= /demote
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 7
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 39264
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(733): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-03-31 19:54:01  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804455402
+ref.message.message_id= 39270
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001182246595
+ref.message.chat.title= [c]oretan Script
+ref.message.chat.username= cScript
+ref.message.chat.type= supergroup
+ref.message.date= 1617195237
+ref.message.reply_to_message.message_id= 39269
+ref.message.reply_to_message.from.id= 1223173857
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Fadhil Riyanto
+ref.message.reply_to_message.from.last_name= (MTproto DC 3)
+ref.message.reply_to_message.from.username= fadhilriyanto
+ref.message.reply_to_message.from.language_code= ms
+ref.message.reply_to_message.chat.id= -1001182246595
+ref.message.reply_to_message.chat.title= [c]oretan Script
+ref.message.reply_to_message.chat.username= cScript
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1617195226
+ref.message.reply_to_message.text= test
+ref.message.text= /demote
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 7
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 39270
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(733): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-03-31 19:59:31  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804455413
+ref.my_chat_member.chat.id= -467148565
+ref.my_chat_member.chat.title= Fadhil Riyanto Logs
+ref.my_chat_member.chat.type= group
+ref.my_chat_member.chat.all_members_are_administrators= true
+ref.my_chat_member.from.id= 1393342467
+ref.my_chat_member.from.is_bot= false
+ref.my_chat_member.from.first_name= Fadhil
+ref.my_chat_member.from.last_name= Riyanto
+ref.my_chat_member.from.username= fadhil_riyanto
+ref.my_chat_member.from.language_code= ms
+ref.my_chat_member.date= 1617195570
+ref.my_chat_member.old_chat_member.user.id= 1489990155
+ref.my_chat_member.old_chat_member.user.is_bot= true
+ref.my_chat_member.old_chat_member.user.first_name= Fadhil Riyanto Bot
+ref.my_chat_member.old_chat_member.user.username= Fadhil_riyanto_bot
+ref.my_chat_member.old_chat_member.status= left
+ref.my_chat_member.new_chat_member.user.id= 1489990155
+ref.my_chat_member.new_chat_member.user.is_bot= true
+ref.my_chat_member.new_chat_member.user.first_name= Fadhil Riyanto Bot
+ref.my_chat_member.new_chat_member.user.username= Fadhil_riyanto_bot
+ref.my_chat_member.new_chat_member.status= member
+
+
+[ref]
+ref.chat_id= 
+ref.text= Maaf, bot ini sedang dalam pengembangan lebih lanjut oleh @fadhil_riyanto
+Coba lagi nanti
+ref.reply_to_message_id= 
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(74): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-03-31 19:59:38  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804455415
+ref.my_chat_member.chat.id= -467148565
+ref.my_chat_member.chat.title= Fadhil Riyanto Logs
+ref.my_chat_member.chat.type= group
+ref.my_chat_member.chat.all_members_are_administrators= true
+ref.my_chat_member.from.id= 1489990155
+ref.my_chat_member.from.is_bot= true
+ref.my_chat_member.from.first_name= Fadhil Riyanto Bot
+ref.my_chat_member.from.username= Fadhil_riyanto_bot
+ref.my_chat_member.date= 1617195577
+ref.my_chat_member.old_chat_member.user.id= 1489990155
+ref.my_chat_member.old_chat_member.user.is_bot= true
+ref.my_chat_member.old_chat_member.user.first_name= Fadhil Riyanto Bot
+ref.my_chat_member.old_chat_member.user.username= Fadhil_riyanto_bot
+ref.my_chat_member.old_chat_member.status= member
+ref.my_chat_member.new_chat_member.user.id= 1489990155
+ref.my_chat_member.new_chat_member.user.is_bot= true
+ref.my_chat_member.new_chat_member.user.first_name= Fadhil Riyanto Bot
+ref.my_chat_member.new_chat_member.user.username= Fadhil_riyanto_bot
+ref.my_chat_member.new_chat_member.status= left
+
+
+[ref]
+ref.chat_id= 
+ref.text= Maaf, bot ini sedang dalam pengembangan lebih lanjut oleh @fadhil_riyanto
+Coba lagi nanti
+ref.reply_to_message_id= 
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(74): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-03-31 20:00:45  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804455419
+ref.my_chat_member.chat.id= -467148565
+ref.my_chat_member.chat.title= Fadhil Riyanto Logs
+ref.my_chat_member.chat.type= group
+ref.my_chat_member.chat.all_members_are_administrators= true
+ref.my_chat_member.from.id= 1393342467
+ref.my_chat_member.from.is_bot= false
+ref.my_chat_member.from.first_name= Fadhil
+ref.my_chat_member.from.last_name= Riyanto
+ref.my_chat_member.from.username= fadhil_riyanto
+ref.my_chat_member.from.language_code= ms
+ref.my_chat_member.date= 1617195644
+ref.my_chat_member.old_chat_member.user.id= 1489990155
+ref.my_chat_member.old_chat_member.user.is_bot= true
+ref.my_chat_member.old_chat_member.user.first_name= Fadhil Riyanto Bot
+ref.my_chat_member.old_chat_member.user.username= Fadhil_riyanto_bot
+ref.my_chat_member.old_chat_member.status= left
+ref.my_chat_member.new_chat_member.user.id= 1489990155
+ref.my_chat_member.new_chat_member.user.is_bot= true
+ref.my_chat_member.new_chat_member.user.first_name= Fadhil Riyanto Bot
+ref.my_chat_member.new_chat_member.user.username= Fadhil_riyanto_bot
+ref.my_chat_member.new_chat_member.status= member
+
+
+[ref]
+ref.chat_id= 
+ref.text= Maaf, bot ini sedang dalam pengembangan lebih lanjut oleh @fadhil_riyanto
+Coba lagi nanti
+ref.reply_to_message_id= 
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(74): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-03-31 20:02:09  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804455424
+ref.message.message_id= 70348
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1617195724
+ref.message.reply_to_message.message_id= 69446
+ref.message.reply_to_message.from.id= 1472669471
+ref.message.reply_to_message.from.is_bot= true
+ref.message.reply_to_message.from.first_name= Groups Music Bot
+ref.message.reply_to_message.from.username= GroupsMusicBot
+ref.message.reply_to_message.chat.id= -1001209274058
+ref.message.reply_to_message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.reply_to_message.chat.username= scriptiseng
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1617189896
+ref.message.reply_to_message.text= ✅ Bot berhasil dimulai ulang!
+
+• Daftar admin telah diperbarui.
+ref.message.reply_to_message.entities.0.offset= 6
+ref.message.reply_to_message.entities.0.length= 8
+ref.message.reply_to_message.entities.0.type= bold
+ref.message.reply_to_message.entities.1.offset= 15
+ref.message.reply_to_message.entities.1.length= 14
+ref.message.reply_to_message.entities.1.type= bold
+ref.message.reply_to_message.entities.2.offset= 33
+ref.message.reply_to_message.entities.2.length= 12
+ref.message.reply_to_message.entities.2.type= bold
+ref.message.reply_to_message.entities.3.offset= 52
+ref.message.reply_to_message.entities.3.length= 10
+ref.message.reply_to_message.entities.3.type= bold
+ref.message.text= /demote
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 7
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 70348
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(733): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-03-31 20:02:19  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: replied message not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804455424
+ref.message.message_id= 70348
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1617195724
+ref.message.reply_to_message.message_id= 69446
+ref.message.reply_to_message.from.id= 1472669471
+ref.message.reply_to_message.from.is_bot= true
+ref.message.reply_to_message.from.first_name= Groups Music Bot
+ref.message.reply_to_message.from.username= GroupsMusicBot
+ref.message.reply_to_message.chat.id= -1001209274058
+ref.message.reply_to_message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.reply_to_message.chat.username= scriptiseng
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1617189896
+ref.message.reply_to_message.text= ✅ Bot berhasil dimulai ulang!
+
+• Daftar admin telah diperbarui.
+ref.message.reply_to_message.entities.0.offset= 6
+ref.message.reply_to_message.entities.0.length= 8
+ref.message.reply_to_message.entities.0.type= bold
+ref.message.reply_to_message.entities.1.offset= 15
+ref.message.reply_to_message.entities.1.length= 14
+ref.message.reply_to_message.entities.1.type= bold
+ref.message.reply_to_message.entities.2.offset= 33
+ref.message.reply_to_message.entities.2.length= 12
+ref.message.reply_to_message.entities.2.type= bold
+ref.message.reply_to_message.entities.3.offset= 52
+ref.message.reply_to_message.entities.3.length= 10
+ref.message.reply_to_message.entities.3.type= bold
+ref.message.text= /demote
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 7
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= error program Fadhil Bot Framework : 
+
+GuzzleHttp\Exception\ClientException: Client error: `GET https://api.telegram.org/bot1489990155:AAH3t_yI4u6pYDsqlvB0f_S_f2CJlkPQGmQ/promoteChatMember?chat_id=-1001209274058&user_id=1472669471&can_change_info=False&can_post_message=False&can_edit_message=False&can_delete_messages=False&can_invite_users=False&can_restrict_members=False&can_pin_messages=False&can_promote_members=False` resulted in a `400 Bad Request` response:
+{"ok":false,"error_code":400,"description":"Bad Request: CHAT_ADMIN_REQUIRED"}
+ in C:\bot telegram\vendor\guzzlehttp\guzzle\src\Exception\RequestException.php:113
+Stack trace:
+#0 C:\bot telegram\vendor\guzzlehttp\guzzle\src\Middleware.php(69): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 C:\bot telegram\vendor\guzzlehttp\promises\src\Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 C:\bot telegram\vendor\guzzlehttp\promises\src\Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 C:\bot telegram\vendor\guzzlehttp\promises\src\TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 C:\bot telegram\vendor\guzzlehttp\promises\src\Promise.php(248): GuzzleHttp\Promise\TaskQueue->run(true)
+#5 C:\bot telegram\vendor\guzzlehttp\promises\src\Promise.php(224): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 C:\bot telegram\vendor\guzzlehttp\promises\src\Promise.php(269): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 C:\bot telegram\vendor\guzzlehttp\promises\src\Promise.php(226): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 C:\bot telegram\vendor\guzzlehttp\promises\src\Promise.php(62): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 C:\bot telegram\vendor\guzzlehttp\guzzle\src\Client.php(187): GuzzleHttp\Promise\Promise->wait()
+#10 C:\bot telegram\admin_command\demote.php(43): GuzzleHttp\Client->request('GET', 'https://api.tel...')
+#11 C:\bot telegram\admin_command\__init__.php(201): require('C:\\bot telegram...')
+#12 C:\bot telegram\hook.php(734): require('C:\\bot telegram...')
+#13 {main}
+ref.reply_to_message_id= 70348
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(878): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-03-31 20:05:01  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804455431
+ref.message.message_id= 70349
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1617195896
+ref.message.reply_to_message.message_id= 69446
+ref.message.reply_to_message.from.id= 1472669471
+ref.message.reply_to_message.from.is_bot= true
+ref.message.reply_to_message.from.first_name= Groups Music Bot
+ref.message.reply_to_message.from.username= GroupsMusicBot
+ref.message.reply_to_message.chat.id= -1001209274058
+ref.message.reply_to_message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.reply_to_message.chat.username= scriptiseng
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1617189896
+ref.message.reply_to_message.text= ✅ Bot berhasil dimulai ulang!
+
+• Daftar admin telah diperbarui.
+ref.message.reply_to_message.entities.0.offset= 6
+ref.message.reply_to_message.entities.0.length= 8
+ref.message.reply_to_message.entities.0.type= bold
+ref.message.reply_to_message.entities.1.offset= 15
+ref.message.reply_to_message.entities.1.length= 14
+ref.message.reply_to_message.entities.1.type= bold
+ref.message.reply_to_message.entities.2.offset= 33
+ref.message.reply_to_message.entities.2.length= 12
+ref.message.reply_to_message.entities.2.type= bold
+ref.message.reply_to_message.entities.3.offset= 52
+ref.message.reply_to_message.entities.3.length= 10
+ref.message.reply_to_message.entities.3.type= bold
+ref.message.text= /demote
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 7
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 70349
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(733): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-03-31 20:19:46  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804455445
+ref.message.message_id= 70353
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1617196781
+ref.message.reply_to_message.message_id= 69446
+ref.message.reply_to_message.from.id= 1472669471
+ref.message.reply_to_message.from.is_bot= true
+ref.message.reply_to_message.from.first_name= Groups Music Bot
+ref.message.reply_to_message.from.username= GroupsMusicBot
+ref.message.reply_to_message.chat.id= -1001209274058
+ref.message.reply_to_message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.reply_to_message.chat.username= scriptiseng
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1617189896
+ref.message.reply_to_message.text= ✅ Bot berhasil dimulai ulang!
+
+• Daftar admin telah diperbarui.
+ref.message.reply_to_message.entities.0.offset= 6
+ref.message.reply_to_message.entities.0.length= 8
+ref.message.reply_to_message.entities.0.type= bold
+ref.message.reply_to_message.entities.1.offset= 15
+ref.message.reply_to_message.entities.1.length= 14
+ref.message.reply_to_message.entities.1.type= bold
+ref.message.reply_to_message.entities.2.offset= 33
+ref.message.reply_to_message.entities.2.length= 12
+ref.message.reply_to_message.entities.2.type= bold
+ref.message.reply_to_message.entities.3.offset= 52
+ref.message.reply_to_message.entities.3.length= 10
+ref.message.reply_to_message.entities.3.type= bold
+ref.message.text= /demote
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 7
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 70353
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(733): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-03-31 20:20:32  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804455446
+ref.message.message_id= 70354
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1617196827
+ref.message.reply_to_message.message_id= 69446
+ref.message.reply_to_message.from.id= 1472669471
+ref.message.reply_to_message.from.is_bot= true
+ref.message.reply_to_message.from.first_name= Groups Music Bot
+ref.message.reply_to_message.from.username= GroupsMusicBot
+ref.message.reply_to_message.chat.id= -1001209274058
+ref.message.reply_to_message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.reply_to_message.chat.username= scriptiseng
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1617189896
+ref.message.reply_to_message.text= ✅ Bot berhasil dimulai ulang!
+
+• Daftar admin telah diperbarui.
+ref.message.reply_to_message.entities.0.offset= 6
+ref.message.reply_to_message.entities.0.length= 8
+ref.message.reply_to_message.entities.0.type= bold
+ref.message.reply_to_message.entities.1.offset= 15
+ref.message.reply_to_message.entities.1.length= 14
+ref.message.reply_to_message.entities.1.type= bold
+ref.message.reply_to_message.entities.2.offset= 33
+ref.message.reply_to_message.entities.2.length= 12
+ref.message.reply_to_message.entities.2.type= bold
+ref.message.reply_to_message.entities.3.offset= 52
+ref.message.reply_to_message.entities.3.length= 10
+ref.message.reply_to_message.entities.3.type= bold
+ref.message.text= /demote
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 7
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 70354
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(733): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-03-31 20:22:50  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804455447
+ref.message.message_id= 70355
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1617196965
+ref.message.reply_to_message.message_id= 69446
+ref.message.reply_to_message.from.id= 1472669471
+ref.message.reply_to_message.from.is_bot= true
+ref.message.reply_to_message.from.first_name= Groups Music Bot
+ref.message.reply_to_message.from.username= GroupsMusicBot
+ref.message.reply_to_message.chat.id= -1001209274058
+ref.message.reply_to_message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.reply_to_message.chat.username= scriptiseng
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1617189896
+ref.message.reply_to_message.text= ✅ Bot berhasil dimulai ulang!
+
+• Daftar admin telah diperbarui.
+ref.message.reply_to_message.entities.0.offset= 6
+ref.message.reply_to_message.entities.0.length= 8
+ref.message.reply_to_message.entities.0.type= bold
+ref.message.reply_to_message.entities.1.offset= 15
+ref.message.reply_to_message.entities.1.length= 14
+ref.message.reply_to_message.entities.1.type= bold
+ref.message.reply_to_message.entities.2.offset= 33
+ref.message.reply_to_message.entities.2.length= 12
+ref.message.reply_to_message.entities.2.type= bold
+ref.message.reply_to_message.entities.3.offset= 52
+ref.message.reply_to_message.entities.3.length= 10
+ref.message.reply_to_message.entities.3.type= bold
+ref.message.text= /demote
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 7
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 70355
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(733): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-03-31 20:24:30  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804455449
+ref.message.message_id= 70357
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1617197067
+ref.message.text= /addword test
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 8
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 70357
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(733): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-03-31 20:26:33  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804455451
+ref.message.message_id= 70358
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1617197191
+ref.message.text= /addword test
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 8
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 70358
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(733): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-03-31 20:26:51  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804455452
+ref.message.message_id= 70360
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1617197207
+ref.message.reply_to_message.message_id= 69446
+ref.message.reply_to_message.from.id= 1472669471
+ref.message.reply_to_message.from.is_bot= true
+ref.message.reply_to_message.from.first_name= Groups Music Bot
+ref.message.reply_to_message.from.username= GroupsMusicBot
+ref.message.reply_to_message.chat.id= -1001209274058
+ref.message.reply_to_message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.reply_to_message.chat.username= scriptiseng
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1617189896
+ref.message.reply_to_message.text= ✅ Bot berhasil dimulai ulang!
+
+• Daftar admin telah diperbarui.
+ref.message.reply_to_message.entities.0.offset= 6
+ref.message.reply_to_message.entities.0.length= 8
+ref.message.reply_to_message.entities.0.type= bold
+ref.message.reply_to_message.entities.1.offset= 15
+ref.message.reply_to_message.entities.1.length= 14
+ref.message.reply_to_message.entities.1.type= bold
+ref.message.reply_to_message.entities.2.offset= 33
+ref.message.reply_to_message.entities.2.length= 12
+ref.message.reply_to_message.entities.2.type= bold
+ref.message.reply_to_message.entities.3.offset= 52
+ref.message.reply_to_message.entities.3.length= 10
+ref.message.reply_to_message.entities.3.type= bold
+ref.message.text= /demote
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 7
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 70360
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(733): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-03-31 20:29:11  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804455453
+ref.message.message_id= 70361
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1617197346
+ref.message.reply_to_message.message_id= 69446
+ref.message.reply_to_message.from.id= 1472669471
+ref.message.reply_to_message.from.is_bot= true
+ref.message.reply_to_message.from.first_name= Groups Music Bot
+ref.message.reply_to_message.from.username= GroupsMusicBot
+ref.message.reply_to_message.chat.id= -1001209274058
+ref.message.reply_to_message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.reply_to_message.chat.username= scriptiseng
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1617189896
+ref.message.reply_to_message.text= ✅ Bot berhasil dimulai ulang!
+
+• Daftar admin telah diperbarui.
+ref.message.reply_to_message.entities.0.offset= 6
+ref.message.reply_to_message.entities.0.length= 8
+ref.message.reply_to_message.entities.0.type= bold
+ref.message.reply_to_message.entities.1.offset= 15
+ref.message.reply_to_message.entities.1.length= 14
+ref.message.reply_to_message.entities.1.type= bold
+ref.message.reply_to_message.entities.2.offset= 33
+ref.message.reply_to_message.entities.2.length= 12
+ref.message.reply_to_message.entities.2.type= bold
+ref.message.reply_to_message.entities.3.offset= 52
+ref.message.reply_to_message.entities.3.length= 10
+ref.message.reply_to_message.entities.3.type= bold
+ref.message.text= /demote
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 7
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 70361
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(733): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-03-31 20:29:58  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804455454
+ref.message.message_id= 70362
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1617197394
+ref.message.reply_to_message.message_id= 69446
+ref.message.reply_to_message.from.id= 1472669471
+ref.message.reply_to_message.from.is_bot= true
+ref.message.reply_to_message.from.first_name= Groups Music Bot
+ref.message.reply_to_message.from.username= GroupsMusicBot
+ref.message.reply_to_message.chat.id= -1001209274058
+ref.message.reply_to_message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.reply_to_message.chat.username= scriptiseng
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1617189896
+ref.message.reply_to_message.text= ✅ Bot berhasil dimulai ulang!
+
+• Daftar admin telah diperbarui.
+ref.message.reply_to_message.entities.0.offset= 6
+ref.message.reply_to_message.entities.0.length= 8
+ref.message.reply_to_message.entities.0.type= bold
+ref.message.reply_to_message.entities.1.offset= 15
+ref.message.reply_to_message.entities.1.length= 14
+ref.message.reply_to_message.entities.1.type= bold
+ref.message.reply_to_message.entities.2.offset= 33
+ref.message.reply_to_message.entities.2.length= 12
+ref.message.reply_to_message.entities.2.type= bold
+ref.message.reply_to_message.entities.3.offset= 52
+ref.message.reply_to_message.entities.3.length= 10
+ref.message.reply_to_message.entities.3.type= bold
+ref.message.text= /demote
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 7
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 70362
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(733): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-03-31 20:31:05  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804455455
+ref.message.message_id= 70363
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1617197461
+ref.message.reply_to_message.message_id= 69446
+ref.message.reply_to_message.from.id= 1472669471
+ref.message.reply_to_message.from.is_bot= true
+ref.message.reply_to_message.from.first_name= Groups Music Bot
+ref.message.reply_to_message.from.username= GroupsMusicBot
+ref.message.reply_to_message.chat.id= -1001209274058
+ref.message.reply_to_message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.reply_to_message.chat.username= scriptiseng
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1617189896
+ref.message.reply_to_message.text= ✅ Bot berhasil dimulai ulang!
+
+• Daftar admin telah diperbarui.
+ref.message.reply_to_message.entities.0.offset= 6
+ref.message.reply_to_message.entities.0.length= 8
+ref.message.reply_to_message.entities.0.type= bold
+ref.message.reply_to_message.entities.1.offset= 15
+ref.message.reply_to_message.entities.1.length= 14
+ref.message.reply_to_message.entities.1.type= bold
+ref.message.reply_to_message.entities.2.offset= 33
+ref.message.reply_to_message.entities.2.length= 12
+ref.message.reply_to_message.entities.2.type= bold
+ref.message.reply_to_message.entities.3.offset= 52
+ref.message.reply_to_message.entities.3.length= 10
+ref.message.reply_to_message.entities.3.type= bold
+ref.message.text= /demote
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 7
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 70363
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(733): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-03-31 20:32:26  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804455456
+ref.message.message_id= 70364
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1617197541
+ref.message.reply_to_message.message_id= 69446
+ref.message.reply_to_message.from.id= 1472669471
+ref.message.reply_to_message.from.is_bot= true
+ref.message.reply_to_message.from.first_name= Groups Music Bot
+ref.message.reply_to_message.from.username= GroupsMusicBot
+ref.message.reply_to_message.chat.id= -1001209274058
+ref.message.reply_to_message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.reply_to_message.chat.username= scriptiseng
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1617189896
+ref.message.reply_to_message.text= ✅ Bot berhasil dimulai ulang!
+
+• Daftar admin telah diperbarui.
+ref.message.reply_to_message.entities.0.offset= 6
+ref.message.reply_to_message.entities.0.length= 8
+ref.message.reply_to_message.entities.0.type= bold
+ref.message.reply_to_message.entities.1.offset= 15
+ref.message.reply_to_message.entities.1.length= 14
+ref.message.reply_to_message.entities.1.type= bold
+ref.message.reply_to_message.entities.2.offset= 33
+ref.message.reply_to_message.entities.2.length= 12
+ref.message.reply_to_message.entities.2.type= bold
+ref.message.reply_to_message.entities.3.offset= 52
+ref.message.reply_to_message.entities.3.length= 10
+ref.message.reply_to_message.entities.3.type= bold
+ref.message.text= /demote
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 7
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 70364
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(733): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-03-31 20:34:09  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804455457
+ref.message.message_id= 70366
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1617197645
+ref.message.reply_to_message.message_id= 69446
+ref.message.reply_to_message.from.id= 1472669471
+ref.message.reply_to_message.from.is_bot= true
+ref.message.reply_to_message.from.first_name= Groups Music Bot
+ref.message.reply_to_message.from.username= GroupsMusicBot
+ref.message.reply_to_message.chat.id= -1001209274058
+ref.message.reply_to_message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.reply_to_message.chat.username= scriptiseng
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1617189896
+ref.message.reply_to_message.text= ✅ Bot berhasil dimulai ulang!
+
+• Daftar admin telah diperbarui.
+ref.message.reply_to_message.entities.0.offset= 6
+ref.message.reply_to_message.entities.0.length= 8
+ref.message.reply_to_message.entities.0.type= bold
+ref.message.reply_to_message.entities.1.offset= 15
+ref.message.reply_to_message.entities.1.length= 14
+ref.message.reply_to_message.entities.1.type= bold
+ref.message.reply_to_message.entities.2.offset= 33
+ref.message.reply_to_message.entities.2.length= 12
+ref.message.reply_to_message.entities.2.type= bold
+ref.message.reply_to_message.entities.3.offset= 52
+ref.message.reply_to_message.entities.3.length= 10
+ref.message.reply_to_message.entities.3.type= bold
+ref.message.text= /demote
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 7
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 70366
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(733): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-03-31 20:37:07  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804455463
+ref.message.message_id= 70369
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1617197822
+ref.message.reply_to_message.message_id= 69446
+ref.message.reply_to_message.from.id= 1472669471
+ref.message.reply_to_message.from.is_bot= true
+ref.message.reply_to_message.from.first_name= Groups Music Bot
+ref.message.reply_to_message.from.username= GroupsMusicBot
+ref.message.reply_to_message.chat.id= -1001209274058
+ref.message.reply_to_message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.reply_to_message.chat.username= scriptiseng
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1617189896
+ref.message.reply_to_message.text= ✅ Bot berhasil dimulai ulang!
+
+• Daftar admin telah diperbarui.
+ref.message.reply_to_message.entities.0.offset= 6
+ref.message.reply_to_message.entities.0.length= 8
+ref.message.reply_to_message.entities.0.type= bold
+ref.message.reply_to_message.entities.1.offset= 15
+ref.message.reply_to_message.entities.1.length= 14
+ref.message.reply_to_message.entities.1.type= bold
+ref.message.reply_to_message.entities.2.offset= 33
+ref.message.reply_to_message.entities.2.length= 12
+ref.message.reply_to_message.entities.2.type= bold
+ref.message.reply_to_message.entities.3.offset= 52
+ref.message.reply_to_message.entities.3.length= 10
+ref.message.reply_to_message.entities.3.type= bold
+ref.message.text= /demote
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 7
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 70369
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(733): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-03-31 20:38:13  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804455464
+ref.message.message_id= 70371
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1617197889
+ref.message.reply_to_message.message_id= 69446
+ref.message.reply_to_message.from.id= 1472669471
+ref.message.reply_to_message.from.is_bot= true
+ref.message.reply_to_message.from.first_name= Groups Music Bot
+ref.message.reply_to_message.from.username= GroupsMusicBot
+ref.message.reply_to_message.chat.id= -1001209274058
+ref.message.reply_to_message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.reply_to_message.chat.username= scriptiseng
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1617189896
+ref.message.reply_to_message.text= ✅ Bot berhasil dimulai ulang!
+
+• Daftar admin telah diperbarui.
+ref.message.reply_to_message.entities.0.offset= 6
+ref.message.reply_to_message.entities.0.length= 8
+ref.message.reply_to_message.entities.0.type= bold
+ref.message.reply_to_message.entities.1.offset= 15
+ref.message.reply_to_message.entities.1.length= 14
+ref.message.reply_to_message.entities.1.type= bold
+ref.message.reply_to_message.entities.2.offset= 33
+ref.message.reply_to_message.entities.2.length= 12
+ref.message.reply_to_message.entities.2.type= bold
+ref.message.reply_to_message.entities.3.offset= 52
+ref.message.reply_to_message.entities.3.length= 10
+ref.message.reply_to_message.entities.3.type= bold
+ref.message.text= /DEMOTE
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 7
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 70371
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(733): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-03-31 20:53:50  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804455511
+ref.message.message_id= 70385
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1617198826
+ref.message.reply_to_message.message_id= 69446
+ref.message.reply_to_message.from.id= 1472669471
+ref.message.reply_to_message.from.is_bot= true
+ref.message.reply_to_message.from.first_name= Groups Music Bot
+ref.message.reply_to_message.from.username= GroupsMusicBot
+ref.message.reply_to_message.chat.id= -1001209274058
+ref.message.reply_to_message.chat.title= 𝕄𝕒𝕤𝕪𝕒𝕣𝕒𝕜𝕒𝕥 𝕀𝕤𝕖𝕟𝕘©
+ref.message.reply_to_message.chat.username= scriptiseng
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1617189896
+ref.message.reply_to_message.text= ✅ Bot berhasil dimulai ulang!
+
+• Daftar admin telah diperbarui.
+ref.message.reply_to_message.entities.0.offset= 6
+ref.message.reply_to_message.entities.0.length= 8
+ref.message.reply_to_message.entities.0.type= bold
+ref.message.reply_to_message.entities.1.offset= 15
+ref.message.reply_to_message.entities.1.length= 14
+ref.message.reply_to_message.entities.1.type= bold
+ref.message.reply_to_message.entities.2.offset= 33
+ref.message.reply_to_message.entities.2.length= 12
+ref.message.reply_to_message.entities.2.type= bold
+ref.message.reply_to_message.entities.3.offset= 52
+ref.message.reply_to_message.entities.3.length= 10
+ref.message.reply_to_message.entities.3.type= bold
+ref.message.text= /demote
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 7
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 70385
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(733): Telegram->sendMessage(Array)
+#4 {main}
+

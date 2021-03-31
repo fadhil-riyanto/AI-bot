@@ -203,6 +203,7 @@ if ($nemu_tema == true) {
         $urlss = photo_oxy_class($ngab);
         $konten = array('chat_id' => $chat_id, 'photo' => $urlss, 'caption' => 'Hai ' . $username . ', Gambar berhasil dibuat!', 'reply_to_message_id' => $message_id,);
         $telegram->sendPhoto($konten);
+        exit;
     }
 } else {
 }

@@ -23,9 +23,7 @@ function downloadUrlToFile($url, $outFileName)
         curl_close($ch);
     }
 }
-$reply = 'Tunggu sebentar, kami sedang mengupload image (sync)';
-$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-$editmsg = $telegram->sendMessage($content);
+
 $result = $telegram->getData();
 $fileid = $result['message']['reply_to_message']['document']['file_id'];
 if (isset($fileid)) {
@@ -34,9 +32,18 @@ if (isset($fileid)) {
     $fileid = $getResolutionfileid['file_id'];
 }
 if (isset($fileid)) {
+    $reply = 'Tunggu sebentar, kami sedang mengupload image (sync)';
+    $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+    $editmsg = $telegram->sendMessage($content);
+
     $getinfoDir = $telegram->getFile($fileid);
     $dirTgid = $getinfoDir['result']['file_path'];
     $downloadingimg = downloadUrlToFile('https://api.telegram.org/file/bot' . TG_HTTP_API . '/' . $dirTgid, 'tmp/pict_uploader.png');
+} else {
+    $reply = 'maaf, anda harus mereply photo untuk di upload';
+    $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+    $editmsg = $telegram->sendMessage($content);
+    exit;
 }
 
 //$bot_url    = "https://api.telegram.org/bot" . TG_HTTP_API . "/";

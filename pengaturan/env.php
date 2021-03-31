@@ -4,7 +4,7 @@ define('DB_HOST', 'b8rkwqqp7tbpt89flosy-mysql.services.clever-cloud.com');      
 define('DB_USERNAME', 'uqirurwvstycdqcb');                    //WAJIB
 define('DB_PASSWORD', 'Xsvy2C4BGmuDCqI3fSoa');        //WAJIB
 define('DB_NAME', 'b8rkwqqp7tbpt89flosy');                        //WAJIB
-define('TG_HTTP_API', '1489990155:AAH-HkTYrORyWbKq_xmAaHFU0Jxj27ZW0HQ');    //WAJIB
+define('TG_HTTP_API', '1489990155:AAH3t_yI4u6pYDsqlvB0f_S_f2CJlkPQGmQ');    //WAJIB
 define('USER_ID_TG_ME', '1393342467');                                        //WAJIB
 define('CUTLLY_API', 'fa1d93ba90dedd2ceb7d01e9bade271653373');                //WAJIB
 define('TIME_ZONE', 'Asia/Jakarta');                                        //WAJIB
@@ -22,3 +22,4 @@ define('HOSTED_BY', 'Heroku');                // type url
 define('DATABASE_PLATFORM', 'Mysql');                // type url
 define('SERVER_HTTP_PLATFORM', 'nginx');                // type url
 define('IMGBB_API', '9c53eec4b641dc559c39b8dd3ad41573');
+define('GROUP_LOGS', -467148565);
