@@ -1,39 +1,7 @@
-bahasa pemrograman yang bisa dijalankan di bot ini ialah
+Filters digunakan untuk menyaring kata kata.
 
-/assembly
-/ats
-/bash
-/c
-/clojure
-/cobol
-/coffeescript
-/cpp
-/crystal
-/csharp
-/d
-/elixir
-/elm
-/erlang
-/fsharp
-/go
-/groovy
-/haskell
-/idris
-/java
-/javascript
-/julia
-/kotlin
-/lua
-/mercury
-/nim
-/nix
-/ocaml
-/perl
-/php
-/python
-/raku
-/ruby
-/rust
-/scala
-/swift
-/typescript
+/addword {kata}: untuk memblokir kata
+/delword {kata}: untuk membabebaskan kata yang di blokir
+/filter_action_mode: untuk mengnonaktifkan dan mengaktifkan filter
+/filter_action: untuk melakukan aksi jika kata yang di blokir terdeteksi
+/filter_notify: untuk menyalakan pesan notifikasi ke pelanggar, off kan jika anda ingin mode silent (tanpa memberi alasan)
