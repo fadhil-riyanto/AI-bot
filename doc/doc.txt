@@ -1,7 +1,21 @@
-Filters digunakan untuk menyaring kata kata.
-
-/addword {kata}: untuk memblokir kata
-/delword {kata}: untuk membabebaskan kata yang di blokir
-/filter_action_mode: untuk mengnonaktifkan dan mengaktifkan filter
-/filter_action: untuk melakukan aksi jika kata yang di blokir terdeteksi
-/filter_notify: untuk menyalakan pesan notifikasi ke pelanggar, off kan jika anda ingin mode silent (tanpa memberi alasan)
+- /wiki: dapatkan isi wikipedia
+- /azan: cek jadwal azan.
+- /tanggal: lupa tanggal? tenang...
+- /tr: ini bisa untuk translate
+- /tulis: digunakan untuk menulis buku
+- /waktu: cek jam yuk
+- /berita: agar update yuk baca berita
+- /brainly: cari jawaban di brainly
+- /capture: untuk screenshot halaman web
+- /corona: info corona terkini
+- /corona_provinsi: info corona di tiap tiap provinsi
+- /cuaca: cek cuaca
+- /gempa: cek gempa
+- /q: buat quotes kamu jadi gambar!
+- /quran:  kitab quran sekarang ada di telegram (aliases /qs)
+- /short: pendekkan link biar rapi
+- /xlsx_to_json: convert xlsx excel ke format json
+- /resi: cek resi
+- /upload: reply gambarmu untuk diupload ke web
+- /ts: convert image ke stiker
+- /tf: convert stiker ke image
