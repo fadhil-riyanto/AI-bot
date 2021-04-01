@@ -1,7 +1,7 @@
 {
-    "update_id": 804454535,
+    "update_id": 804456924,
     "message": {
-        "message_id": 69319,
+        "message_id": 71030,
         "from": {
             "id": 1393342467,
             "is_bot": false,
@@ -16,7 +16,42 @@
             "username": "scriptiseng",
             "type": "supergroup"
         },
-        "date": 1617186658,
+        "date": 1617255936,
+        "reply_to_message": {
+            "message_id": 71029,
+            "from": {
+                "id": 1393342467,
+                "is_bot": false,
+                "first_name": "Fadhil",
+                "last_name": "Riyanto",
+                "username": "fadhil_riyanto",
+                "language_code": "ms"
+            },
+            "chat": {
+                "id": -1001209274058,
+                "title": "\ud835\udd44\ud835\udd52\ud835\udd64\ud835\udd6a\ud835\udd52\ud835\udd63\ud835\udd52\ud835\udd5c\ud835\udd52\ud835\udd65 \ud835\udd40\ud835\udd64\ud835\udd56\ud835\udd5f\ud835\udd58\u00a9",
+                "username": "scriptiseng",
+                "type": "supergroup"
+            },
+            "date": 1617255934,
+            "animation": {
+                "file_name": "mp4.mp4",
+                "mime_type": "video\/mp4",
+                "duration": 2,
+                "width": 320,
+                "height": 402,
+                "file_id": "CgACAgQAAx0CSBQOygABARV1YGVd_g4-iqLfazvjsEdN2u1CGgwAAmwCAAI_CpRSQ3MVrsnds3AeBA",
+                "file_unique_id": "AgADbAIAAj8KlFI",
+                "file_size": 92713
+            },
+            "document": {
+                "file_name": "mp4.mp4",
+                "mime_type": "video\/mp4",
+                "file_id": "CgACAgQAAx0CSBQOygABARV1YGVd_g4-iqLfazvjsEdN2u1CGgwAAmwCAAI_CpRSQ3MVrsnds3AeBA",
+                "file_unique_id": "AgADbAIAAj8KlFI",
+                "file_size": 92713
+            }
+        },
         "text": "\/sudo json",
         "entities": [
             {

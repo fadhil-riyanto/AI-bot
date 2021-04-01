@@ -245,10 +245,56 @@ try {
 			if (strtolower($aa) == strtolower($katablock['word'])) {
 				if (substr($text_plain_nokarakter, 0, 1) == '/') {
 				} else {
-					$reply = 'filter detect';
+					$deteksi_filter = true;
+				}
+			}
+		}
+	}
+
+	if ($deteksi_filter == true) {
+
+		$db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
+		$db->where("gid", $chat_id);
+		$user = $db->getOne("grup_data");
+
+		if ($user['act_filters_detect'] == true) {
+			if ($user['filters_hukuman'] == 'delete') {
+				$arr = array('chat_id' => $chat_id, 'message_id' => $message_id);
+				$telegram->deleteMessage($arr);
+			} elseif ($user['filters_hukuman'] == 'mute') {
+				$arr = array('chat_id' => $chat_id, 'user_id' => $userID, 'permissions' => '{"can_send_messages": false}', 'until_date' => time() + 300);
+				$telegram->restrictChatMember($arr);
+			} elseif ($user['filters_hukuman'] == 'ban') {
+				$param_promote = array(
+					'chat_id' => $chat_id,
+					'user_id' => $promote_uid
+				);
+
+				$telegram->kickChatMember($param_promote);
+
+				$param_promote = array(
+					'chat_id' => $chat_id,
+					'user_id' => $promote_uid
+				);
+				$telegram->unbanChatMember($param_promote);
+			}
+
+			if ($user['act_filters_detect'] == true) {
+
+				if ($user['filters_hukuman'] == 'delete') {
+					$reply = 'maaf, ' . $username . ' dihukum ' . 'hapus pesan karna mengirim kata kata yang diblockir.';
+					$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+					$telegram->sendMessage($content);
+				} elseif ($user['filters_hukuman'] == 'mute') {
+					$reply = 'maaf, ' . $username . ' dihukum ' . ' mute 5 menit karna mengirim kata kata yang diblockir.';
+					$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+					$telegram->sendMessage($content);
+				} elseif ($user['filters_hukuman'] == 'ban') {
+					$reply = 'maaf, ' . $username . ' dihukum ' . ' banned karna mengirim kata kata yang diblockir.';
 					$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
 					$telegram->sendMessage($content);
 				}
+			} else {
 			}
 		}
 	}
