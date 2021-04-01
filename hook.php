@@ -850,7 +850,7 @@ try {
 
 		if ($koneksi == 1) {
 			if ($ai_chatting_decode->affected > 0) {
-				$reply = Emoji::Decode($ai_chatting_decode->respon) . PHP_EOL;
+				$reply = $ai_chatting_decode->respon . PHP_EOL;
 				$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
 				$telegram->sendMessage($content);
 				mysqli_close($koneksi);
@@ -858,7 +858,7 @@ try {
 				//}
 			} elseif ($ai_chatting_decode->affected === 'simsimi') {
 
-				$reply = Emoji::Decode($ai_chatting_decode->respon) . PHP_EOL;
+				$reply = $ai_chatting_decode->respon . PHP_EOL;
 				//mysqli_query($koneksi, "INSERT INTO `data_ai` (`data_key_ai`, `data_res_ai`) VALUES ('$teksTerfilter', 'hmhm')");
 				$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
 				$telegram->sendMessage($content);
