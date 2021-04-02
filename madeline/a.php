@@ -14,7 +14,8 @@ $MadelineProto->loop(function () use ($MadelineProto) {
 
     if (!$me['bot']) {
 
-        yield $MadelineProto->messages->sendMessage(['peer' => '@scriptiseng', 'message' => 'test userge']);
+        yield $Vector_of_User = $MadelineProto->users->getUsers(['id' => [$_GET['u']],]);
+        echo json_encode($Vector_of_User);
     }
     yield $MadelineProto->echo('OK, done!');
 });
