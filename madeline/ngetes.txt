@@ -1,0 +1,40 @@
+[
+    {
+        "_": "user",
+        "self": false,
+        "contact": false,
+        "mutual_contact": false,
+        "deleted": false,
+        "bot": false,
+        "bot_chat_history": false,
+        "bot_nochats": false,
+        "verified": false,
+        "restricted": false,
+        "min": false,
+        "bot_inline_geo": false,
+        "support": false,
+        "scam": false,
+        "id": 1355798219,
+        "access_hash": 8200520991104208938,
+        "first_name": "Kee",
+        "username": "nekoha",
+        "photo": {
+            "_": "userProfilePhoto",
+            "photo_id": 6276117293557722082,
+            "photo_small": {
+                "_": "fileLocationToBeDeprecated",
+                "volume_id": 500028000259,
+                "local_id": 520282
+            },
+            "photo_big": {
+                "_": "fileLocationToBeDeprecated",
+                "volume_id": 500028000259,
+                "local_id": 520284
+            },
+            "dc_id": 5
+        },
+        "status": {
+            "_": "userStatusRecently"
+        }
+    }
+]

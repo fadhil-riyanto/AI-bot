@@ -1,7 +1,10 @@
 <?php
-
-
-require __DIR__ .  '/madeline.php';
+if(isset($_GET['u'])){
+	
+if (!file_exists('madeline.php')) {
+    copy('https://phar.madelineproto.xyz/madeline.php', 'madeline.php');
+}
+include 'madeline.php';
 
 $MadelineProto = new \danog\MadelineProto\API('session.madeline');
 $MadelineProto->async(true);
@@ -13,9 +16,12 @@ $MadelineProto->loop(function () use ($MadelineProto) {
     $MadelineProto->logger($me);
 
     if (!$me['bot']) {
-
-        yield $Vector_of_User = $MadelineProto->users->getUsers(['id' => [$_GET['u']],]);
-        echo json_encode($Vector_of_User);
+			$Vector_of_User = yield $MadelineProto->users->getUsers(['id' => $_GET['u']]);
+			//file_put_contents('ngetes.txt', );
+			echo json_encode($Vector_of_User, JSON_PRETTY_PRINT);
     }
-    yield $MadelineProto->echo('OK, done!');
+    //yield $MadelineProto->echo('OK, done!');
 });
+
+
+}
