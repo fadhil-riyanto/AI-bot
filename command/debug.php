@@ -1,25 +1,11 @@
 <?php
 $udahDiparse = str_replace($adanParse[0] . ' ', '', $text);
-$reply = 'DEBUG :  ' .  $udahDiparse;
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, $host_server . '/madeline/a.php?u=' . $udahDiparse);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+$output = curl_exec($ch);
+curl_close($ch);
+
+$reply = $output;
 $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
 $telegram->sendMessage($content);
-
-
-
-require __DIR__ .  '/../madeline/madeline.php';
-
-$MadelineProto = new \danog\MadelineProto\API('session.madeline');
-$MadelineProto->async(true);
-$MadelineProto->loop(function () use ($MadelineProto) {
-    yield $MadelineProto->start();
-
-    $me = yield $MadelineProto->getSelf();
-
-    $MadelineProto->logger($me);
-
-    if (!$me['bot']) {
-
-        yield $MadelineProto->messages->sendMessage(['peer' => '@scriptiseng', 'message' => 'test userge']);
-    }
-    yield $MadelineProto->echo('OK, done!');
-});
