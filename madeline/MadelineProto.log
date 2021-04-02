@@ -64,3 +64,67 @@ Serialization:  	Shared lock acquired, deserializing...
 [02-Apr-2021 02:40:24 UTC] Enabled PHP logging
 [02-Apr-2021 02:40:24 UTC] Enabled PHP logging
 [02-Apr-2021 02:40:25 UTC] Enabled PHP logging
+[02-Apr-2021 12:09:49 UTC] Enabled PHP logging
+[02-Apr-2021 12:09:51 UTC] Enabled PHP logging
+Logger:         	MadelineProto
+Logger:         	Copyright (C) 2016-2020 Daniil Gentili
+Logger:         	Licensed under AGPLv3
+Logger:         	https://github.com/danog/MadelineProto
+Serialization:  	Waiting for shared lock of serialization lockfile...
+Serialization:  	Shared lock acquired, deserializing...
+[02-Apr-2021 12:09:51 UTC] Enabled PHP logging
+[02-Apr-2021 12:09:51 UTC] Enabled PHP logging
+[02-Apr-2021 12:09:52 UTC] Enabled PHP logging
+[02-Apr-2021 12:10:09 UTC] Enabled PHP logging
+Exception:      	danog\MadelineProto\TL\Exception: You didn't provide a valid array<br>
+Revision: 979d7575fc4bdee37c10b3d17fc2be90c3fed88c (AN UPDATE IS REQUIRED)<br>
+TL Trace (YOU ABSOLUTELY MUST READ THE TEXT BELOW):<br>
+<br>
+<br><br>
+AbstractAPIFactory.php(176):	{closure}()<br><br>
+AbstractAPIFactory.php(176):	loop({},[])<br><br>
+__call_async()<br><br>
+<br><br>
+Previous TL trace:<br><br>
+While serializing:  	users.getUsers['id']<br><br>
+Connection.php(419):	serializeMethod("users.getUsers",{"id":"nekoha"})<br><br>
+CallHandler.php(176):	sendMessage({"apifactory":true,"datacenter":5,"_":"users.getUsers","type":"Vector<User>","contentRelated":true,"promise":{},"method":true,"unencrypted":false,"body":{"id":"nekoha"}},true)<br><br>
+CallHandler.php(87):	methodCallAsyncWrite("users.getUsers",{"id":"nekoha"},{"apifactory":true,"datacenter":5,"postpone":false})<br><br>
+CallHandler.php(53):	methodCallAsyncRead("users.getUsers",{"id":"nekoha"},{"apifactory":true,"datacenter":5})<br><br>
+AbstractAPIFactory.php(173):	methodCallAsyncRead("users.getUsers",{"id":"nekoha"},{"apifactory":true,"datacenter":5})<br><br>
+__call_async("users.getUsers",[{"id":"nekoha"}])<br><br>
+Coroutine.php(70):  	current()<br><br>
+Tools.php(397):     	__construct({})<br><br>
+AbstractAPIFactory.php(119):	call({})<br><br>
+a.php(19):          	__call("getUsers",[{"id":"nekoha"}])<br><br>
+{closure}()<br><br>
+Coroutine.php(116): 	send({"_":"user","self":true,"contact":true,"mutual_contact":true,"deleted":false,"bot":false,"bot_chat_history":false,"bot_nochats":false,"verified":false,"restricted":false,"min":false,"bot_inline_geo":false,"support":false,"scam":false,"id":1393342467,"access_hash":370036455688111851,"first_name":"Fadhil","last_name":"Riyanto","username":"fadhil_riyanto","phone":"62895391634433","photo":{"_":"userProfilePhoto","photo_id":6264575913274485611,"photo_small":{"_":"fileLocationToBeDeprecated","volume_id":500079700297,"local_id":215922},"photo_big":{"_":"fileLocationToBeDeprecated","volume_id":500079700297,"local_id":215924},"dc_id":5},"status":{"_":"userStatusOffline","was_online":1617365372}})<br><br>
+Placeholder.php(149):	danog\MadelineProto\{closure}(null,{"_":"user","self":true,"contact":true,"mutual_contact":true,"deleted":false,"bot":false,"bot_chat_history":false,"bot_nochats":false,"verified":false,"restricted":false,"min":false,"bot_inline_geo":false,"support":false,"scam":false,"id":1393342467,"access_hash":370036455688111851,"first_name":"Fadhil","last_name":"Riyanto","username":"fadhil_riyanto","phone":"62895391634433","photo":{"_":"userProfilePhoto","photo_id":6264575913274485611,"photo_small":{"_":"fileLocationToBeDeprecated","volume_id":500079700297,"local_id":215922},"photo_big":{"_":"fileLocationToBeDeprecated","volume_id":500079700297,"local_id":215924},"dc_id":5},"status":{"_":"userStatusOffline","was_online":1617365372}})<br><br>
+Coroutine.php(127): 	resolve({"_":"user","self":true,"contact":true,"mutual_contact":true,"deleted":false,"bot":false,"bot_chat_history":false,"bot_nochats":false,"verified":false,"restricted":false,"min":false,"bot_inline_geo":false,"support":false,"scam":false,"id":1393342467,"access_hash":370036455688111851,"first_name":"Fadhil","last_name":"Riyanto","username":"fadhil_riyanto","phone":"62895391634433","photo":{"_":"userProfilePhoto","photo_id":6264575913274485611,"photo_small":{"_":"fileLocationToBeDeprecated","volume_id":500079700297,"local_id":215922},"photo_big":{"_":"fileLocationToBeDeprecated","volume_id":500079700297,"local_id":215924},"dc_id":5},"status":{"_":"userStatusOffline","was_online":1617365372}})<br><br>
+Placeholder.php(149):	danog\MadelineProto\{closure}(null,[{"_":"user","self":true,"contact":true,"mutual_contact":true,"deleted":false,"bot":false,"bot_chat_history":false,"bot_nochats":false,"verified":false,"restricted":false,"min":false,"bot_inline_geo":false,"support":false,"scam":false,"id":1393342467,"access_hash":370036455688111851,"first_name":"Fadhil","last_name":"Riyanto","username":"fadhil_riyanto","phone":"62895391634433","photo":{"_":"userProfilePhoto","photo_id":6264575913274485611,"photo_small":{"_":"fileLocationToBeDeprecated","volume_id":500079700297,"local_id":215922},"photo_big":{"_":"fileLocationToBeDeprecated","volume_id":500079700297,"local_id":215924},"dc_id":5},"status":{"_":"userStatusOffline","was_online":1617365372}}])<br><br>
+Deferred.php(48):   	resolve([{"_":"user","self":true,"contact":true,"mutual_contact":true,"deleted":false,"bot":false,"bot_chat_history":false,"bot_nochats":false,"verified":false,"restricted":false,"min":false,"bot_inline_geo":false,"support":false,"scam":false,"id":1393342467,"access_hash":370036455688111851,"first_name":"Fadhil","last_name":"Riyanto","username":"fadhil_riyanto","phone":"62895391634433","photo":{"_":"userProfilePhoto","photo_id":6264575913274485611,"photo_small":{"_":"fileLocationToBeDeprecated","volume_id":500079700297,"local_id":215922},"photo_big":{"_":"fileLocationToBeDeprecated","volume_id":500079700297,"local_id":215924},"dc_id":5},"status":{"_":"userStatusOffline","was_online":1617365372}}])<br><br>
+ResponseHandler.php(523):	resolve([{"_":"user","self":true,"contact":true,"mutual_contact":true,"deleted":false,"bot":false,"bot_chat_history":false,"bot_nochats":false,"verified":false,"restricted":false,"min":false,"bot_inline_geo":false,"support":false,"scam":false,"id":1393342467,"access_hash":370036455688111851,"first_name":"Fadhil","last_name":"Riyanto","username":"fadhil_riyanto","phone":"62895391634433","photo":{"_":"userProfilePhoto","photo_id":6264575913274485611,"photo_small":{"_":"fileLocationToBeDeprecated","volume_id":500079700297,"local_id":215922},"photo_big":{"_":"fileLocationToBeDeprecated","volume_id":500079700297,"local_id":215924},"dc_id":5},"status":{"_":"userStatusOffline","was_online":1617365372}}])<br><br>
+danog\MadelineProto\MTProtoSession\{closure}()<br><br>
+Coroutine.php(70):  	current()<br><br>
+Tools.php(418):     	__construct({})<br><br>
+ResponseHandler.php(531):	callFork({})<br><br>
+ResponseHandler.php(88):	handleResponse()<br><br>
+Driver.php(119):    	handleMessages("ib",null)<br><br>
+Driver.php(72):     	tick()<br><br>
+Loop.php(95):       	run()<br><br>
+Tools.php(305):     	run({})<br><br>
+AbstractAPIFactory.php(126):	wait({})<br><br>
+InternalDoc.php(5897):	__call("loop",[{},[]])<br><br>
+a.php(24):          	loop({})<br>
+
+[02-Apr-2021 12:10:49 UTC] Enabled PHP logging
+[02-Apr-2021 12:10:50 UTC] Enabled PHP logging
+Logger:         	MadelineProto
+Logger:         	Copyright (C) 2016-2020 Daniil Gentili
+Logger:         	Licensed under AGPLv3
+Logger:         	https://github.com/danog/MadelineProto
+Serialization:  	Waiting for shared lock of serialization lockfile...
+Serialization:  	Shared lock acquired, deserializing...
+[02-Apr-2021 12:10:50 UTC] Enabled PHP logging
+[02-Apr-2021 12:10:50 UTC] Enabled PHP logging
+[02-Apr-2021 12:10:53 UTC] Enabled PHP logging
