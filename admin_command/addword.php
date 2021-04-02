@@ -28,35 +28,41 @@ if ($azanHilangcommand == null) {
         $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
         $telegram->sendMessage($content);
     } else {
-        ran:
-        $required_length = 40;
-        $limit_one = rand();
-        $limit_two = rand();
-        $randomID = @substr(uniqid(sha1(crypt(md5(rand(min($limit_one, $limit_two), max($limit_one, $limit_two)))))), 0, $required_length);
-
-        $db->where("uniq_id", $randomID);
-        $user = $db->getOne("filters_word_data");
-        if ($user['uniq_id'] == null) {
-            $data = array(
-                "chat_id" => $chat_id,
-                "word" =>  $udahDiparse,
-                "uniq_id" => $randomID
-            );
-
-            $id = $db->insert('filters_word_data', $data);
-
-            if ($id) {
-                $reply = "kata berhasil ditambahkan ke database!";
-                $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-                $telegram->sendMessage($content);
-            } else {
-                $reply = "ups ada kesalahan internal. Reason : " . $db->getLastError();
-                $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-                $telegram->sendMessage($content);
-            }
+        if (str_word_count($udahDiparse) > 1) {
+            $reply = "maaf, anda hanya boleh memasukkan 1 kata saja";
+            $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+            $telegram->sendMessage($content);
         } else {
-            unset($randomID);
-            goto ran;
+            ran:
+            $required_length = 40;
+            $limit_one = rand();
+            $limit_two = rand();
+            $randomID = @substr(uniqid(sha1(crypt(md5(rand(min($limit_one, $limit_two), max($limit_one, $limit_two)))))), 0, $required_length);
+
+            $db->where("uniq_id", $randomID);
+            $user = $db->getOne("filters_word_data");
+            if ($user['uniq_id'] == null) {
+                $data = array(
+                    "chat_id" => $chat_id,
+                    "word" =>  $udahDiparse,
+                    "uniq_id" => $randomID
+                );
+
+                $id = $db->insert('filters_word_data', $data);
+
+                if ($id) {
+                    $reply = "kata berhasil ditambahkan ke database!";
+                    $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+                    $telegram->sendMessage($content);
+                } else {
+                    $reply = "ups ada kesalahan internal. Reason : " . $db->getLastError();
+                    $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+                    $telegram->sendMessage($content);
+                }
+            } else {
+                unset($randomID);
+                goto ran;
+            }
         }
     }
 }
