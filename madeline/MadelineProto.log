@@ -139,3 +139,14 @@ Serialization:  	Shared lock acquired, deserializing...
 [02-Apr-2021 12:24:07 UTC] Enabled PHP logging
 [02-Apr-2021 12:24:07 UTC] Enabled PHP logging
 [02-Apr-2021 12:24:08 UTC] Enabled PHP logging
+[02-Apr-2021 12:41:54 UTC] Enabled PHP logging
+[02-Apr-2021 12:41:56 UTC] Enabled PHP logging
+Logger:         	MadelineProto
+Logger:         	Copyright (C) 2016-2020 Daniil Gentili
+Logger:         	Licensed under AGPLv3
+Logger:         	https://github.com/danog/MadelineProto
+Serialization:  	Waiting for shared lock of serialization lockfile...
+Serialization:  	Shared lock acquired, deserializing...
+[02-Apr-2021 12:41:56 UTC] Enabled PHP logging
+[02-Apr-2021 12:41:56 UTC] Enabled PHP logging
+[02-Apr-2021 12:41:57 UTC] Enabled PHP logging
