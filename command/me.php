@@ -102,7 +102,15 @@ $img->save('tmp/' . $randomstrings . '.png', IMAGETYPE_PNG);
 $bot_url    = "https://api.telegram.org/bot" . TG_HTTP_API . "/";
 $url        = $bot_url . "sendPhoto?chat_id=" . $chat_id;
 
+$lang = $telegram->getData();
+$l = $lang['message']['from']['language_code'];
+$capt = 'Profile saya' . PHP_EOL . PHP_EOL .
+    '🔖 ID User : ' . $userID . PHP_EOL .
+    '├Nama : ' . $namaPertama . ' ' . $namaTerakhir . PHP_EOL .
+    '├Username : ' . $username . PHP_EOL .
+    '└Bahasa : ' . $l;
 $post_fields = array(
+    'caption' => $capt,
     'chat_id'   => $chat_id,
     'reply_to_message_id' => $message_id,
     'photo'     => new CURLFile(realpath('tmp/' . $randomstrings . '.png'))

@@ -1,7 +1,7 @@
 <?php
 $udahDiparse = str_replace($adanParse[0] . ' ', '', $text);
 $ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, 'https://serv2-fadhilbot.herokuapp.com/madeline/a.php?u=' . $udahDiparse);
+curl_setopt($ch, CURLOPT_URL, $host_server . '/madeline/a.php?u=' . $udahDiparse);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 $output = curl_exec($ch);
 curl_close($ch);
