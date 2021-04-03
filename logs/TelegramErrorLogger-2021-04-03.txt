@@ -208,3 +208,448 @@ ref.disable_web_page_preview= true
 #3 C:\bot telegram\hook.php(811): Telegram->sendMessage(Array)
 #4 {main}
 
+============[Date]============
+[ 2021-04-03 22:02:46  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: there are no administrators in the private chat
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804464757
+ref.message.message_id= 28207
+ref.message.from.id= 1386887236
+ref.message.from.is_bot= false
+ref.message.from.first_name= ©Mr.X-HUNTER
+ref.message.from.username= MrXHUNTER
+ref.message.from.language_code= id
+ref.message.chat.id= 1386887236
+ref.message.chat.first_name= ©Mr.X-HUNTER
+ref.message.chat.username= MrXHUNTER
+ref.message.chat.type= private
+ref.message.date= 1617437134
+ref.message.text= /adminlist
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 10
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(168): Telegram->endpoint('getChatAdminist...', Array)
+#3 C:\bot telegram\command\adminlist.php(7): Telegram->getChatAdministrators(Array)
+#4 C:\bot telegram\hook.php(552): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-04-03 22:02:47  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804464757
+ref.message.message_id= 28207
+ref.message.from.id= 1386887236
+ref.message.from.is_bot= false
+ref.message.from.first_name= ©Mr.X-HUNTER
+ref.message.from.username= MrXHUNTER
+ref.message.from.language_code= id
+ref.message.chat.id= 1386887236
+ref.message.chat.first_name= ©Mr.X-HUNTER
+ref.message.chat.username= MrXHUNTER
+ref.message.chat.type= private
+ref.message.date= 1617437134
+ref.message.text= /adminlist
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 10
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 
+ref.parse_mode= html
+ref.reply_to_message_id= 28207
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\adminlist.php(16): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(552): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-04-03 22:18:10  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: file_id not specified
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804465851
+ref.message.message_id= 75771
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= Masyarakat Iseng©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1617463085
+ref.message.text= /me
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 3
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.file_id= 
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(148): Telegram->endpoint('getFile', Array)
+#3 C:\bot telegram\command\me.php(53): Telegram->getFile(NULL)
+#4 C:\bot telegram\hook.php(549): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-04-03 22:20:02  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: file_id not specified
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804465856
+ref.message.message_id= 75774
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= Masyarakat Iseng©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1617463199
+ref.message.text= /me
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 3
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.file_id= 
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(148): Telegram->endpoint('getFile', Array)
+#3 C:\bot telegram\command\me.php(53): Telegram->getFile(NULL)
+#4 C:\bot telegram\hook.php(549): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-04-03 22:21:38  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804465859
+ref.message.message_id= 75775
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= Masyarakat Iseng©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1617463293
+ref.message.text= /me
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 3
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 
+ref.reply_to_message_id= 75775
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\me.php(23): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(549): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-04-03 22:22:58  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message is too long
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804465863
+ref.message.message_id= 75777
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= Masyarakat Iseng©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1617463365
+ref.message.text= /me
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 3
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= {"ok":true,"result":{"total_count":18,"photos":[[{"file_id":"AgACAgUAAxUAAWBmvXGoZSjaKG2auXwVNNEtB7iCAAJrqzEbmj7wVh9ZHokxX5MYSakSb3QAAwEAAwIAA2EAA3JLAwABHgQ","file_unique_id":"AQADSakSb3QAA3JLAwAB","file_size":11764,"width":160,"height":160},{"file_id":"AgACAgUAAxUAAWBmvXGoZSjaKG2auXwVNNEtB7iCAAJrqzEbmj7wVh9ZHokxX5MYSakSb3QAAwEAAwIAA2IAA3NLAwABHgQ","file_unique_id":"AQADSakSb3QAA3NLAwAB","file_size":35617,"width":320,"height":320},{"file_id":"AgACAgUAAxUAAWBmvXGoZSjaKG2auXwVNNEtB7iCAAJrqzEbmj7wVh9ZHokxX5MYSakSb3QAAwEAAwIAA2MAA3RLAwABHgQ","file_unique_id":"AQADSakSb3QAA3RLAwAB","file_size":83656,"width":640,"height":640}],[{"file_id":"AgACAgUAAxUAAWBlvhlJPg0iNMyKeFk4JsLcMmtWAAIyrDEbKt_wVlwc97Nd2SXclKtVc3QAAwEAAwIAA2EAA3U_AAIeBA","file_unique_id":"AQADlKtVc3QAA3U_AAI","file_size":6148,"width":160,"height":160},{"file_id":"AgACAgUAAxUAAWBlvhlJPg0iNMyKeFk4JsLcMmtWAAIyrDEbKt_wVlwc97Nd2SXclKtVc3QAAwEAAwIAA2IAA3Y_AAIeBA","file_unique_id":"AQADlKtVc3QAA3Y_AAI","file_size":18229,"width":320,"height":320},{"file_id":"AgACAgUAAxUAAWBlvhlJPg0iNMyKeFk4JsLcMmtWAAIyrDEbKt_wVlwc97Nd2SXclKtVc3QAAwEAAwIAA2MAA3c_AAIeBA","file_unique_id":"AQADlKtVc3QAA3c_AAI","file_size":50612,"width":640,"height":640}],[{"file_id":"AgACAgUAAx0ESBQOygABARdOYGW-WMvmC1iTW9LQtpreSfkdUzoAAr-sMRuOsdlW-WZGRzeSqgABY-61b3QAAwEAAwIAA2EAA3saAgABHgQ","file_unique_id":"AQADY-61b3QAA3saAgAB","file_size":12310,"width":160,"height":160},{"file_id":"AgACAgUAAx0ESBQOygABARdOYGW-WMvmC1iTW9LQtpreSfkdUzoAAr-sMRuOsdlW-WZGRzeSqgABY-61b3QAAwEAAwIAA2IAA3waAgABHgQ","file_unique_id":"AQADY-61b3QAA3waAgAB","file_size":35549,"width":320,"height":320},{"file_id":"AgACAgUAAx0ESBQOygABARdOYGW-WMvmC1iTW9LQtpreSfkdUzoAAr-sMRuOsdlW-WZGRzeSqgABY-61b3QAAwEAAwIAA2MAA30aAgABHgQ","file_unique_id":"AQADY-61b3QAA30aAgAB","file_size":99842,"width":640,"height":640}],[{"file_id":"AgACAgUAAxUAAWBlvhkmw-UQmFClK3rV-MnbhKGnAAIrrDEb2O_QVlGU52dsvWj6jj00b3QAAwEAAwIAA2EAAx4jAwABHgQ","file_unique_id":"AQADjj00b3QAAx4jAwAB","file_size":13110,"width":160,"height":160},{"file_id":"AgACAgUAAxUAAWBlvhkmw-UQmFClK3rV-MnbhKGnAAIrrDEb2O_QVlGU52dsvWj6jj00b3QAAwEAAwIAA2IAAx8jAwABHgQ","file_unique_id":"AQADjj00b3QAAx8jAwAB","file_size":40916,"width":320,"height":320},{"file_id":"AgACAgUAAxUAAWBlvhkmw-UQmFClK3rV-MnbhKGnAAIrrDEb2O_QVlGU52dsvWj6jj00b3QAAwEAAwIAA2MAAyAjAwABHgQ","file_unique_id":"AQADjj00b3QAAyAjAwAB","file_size":120717,"width":640,"height":640}],[{"file_id":"AgACAgUAAxUAAWBlvhkL6IkNR93Ce0bjmC9_WvVVAALbqjEboA6RVq4tRBxrcJW9p8isb3QAAwEAAwIAA2EAA0vQAgABHgQ","file_unique_id":"AQADp8isb3QAA0vQAgAB","file_size":12385,"width":160,"height":160},{"file_id":"AgACAgUAAxUAAWBlvhkL6IkNR93Ce0bjmC9_WvVVAALbqjEboA6RVq4tRBxrcJW9p8isb3QAAwEAAwIAA2IAA0zQAgABHgQ","file_unique_id":"AQADp8isb3QAA0zQAgAB","file_size":38804,"width":320,"height":320},{"file_id":"AgACAgUAAxUAAWBlvhkL6IkNR93Ce0bjmC9_WvVVAALbqjEboA6RVq4tRBxrcJW9p8isb3QAAwEAAwIAA2MAA03QAgABHgQ","file_unique_id":"AQADp8isb3QAA03QAgAB","file_size":117713,"width":640,"height":640}],[{"file_id":"AgACAgUAAxUAAWBlvhlIu1q3BKO1Xbqs5AJqcHj2AAJiqzEbF-OQVtCJcu6hgfKDw8MYb3QAAwEAAwIAA2EAA4fmAgABHgQ","file_unique_id":"AQADw8MYb3QAA4fmAgAB","file_size":12431,"width":160,"height":160},{"file_id":"AgACAgUAAxUAAWBlvhlIu1q3BKO1Xbqs5AJqcHj2AAJiqzEbF-OQVtCJcu6hgfKDw8MYb3QAAwEAAwIAA2IAA4jmAgABHgQ","file_unique_id":"AQADw8MYb3QAA4jmAgAB","file_size":39149,"width":320,"height":320},{"file_id":"AgACAgUAAxUAAWBlvhlIu1q3BKO1Xbqs5AJqcHj2AAJiqzEbF-OQVtCJcu6hgfKDw8MYb3QAAwEAAwIAA2MAA4nmAgABHgQ","file_unique_id":"AQADw8MYb3QAA4nmAgAB","file_size":114553,"width":640,"height":640}],[{"file_id":"AgACAgUAAxUAAWBlvhkswy2aHfaFshS1s0bcNgq_AALbqjEb9qtgVpEXhbhjxu9hARrxbnQAAwEAAwIAA2EAA-rNAgABHgQ","file_unique_id":"AQADARrxbnQAA-rNAgAB","file_size":12882,"width":160,"height":160},{"file_id":"AgACAgUAAxUAAWBlvhkswy2aHfaFshS1s0bcNgq_AALbqjEb9qtgVpEXhbhjxu9hARrxbnQAAwEAAwIAA2IAA-vNAgABHgQ","file_unique_id":"AQADARrxbnQAA-vNAgAB","file_size":41083,"width":320,"height":320},{"file_id":"AgACAgUAAxUAAWBlvhkswy2aHfaFshS1s0bcNgq_AALbqjEb9qtgVpEXhbhjxu9hARrxbnQAAwEAAwIAA2MAA-zNAgABHgQ","file_unique_id":"AQADARrxbnQAA-zNAgAB","file_size":135484,"width":640,"height":640}],[{"file_id":"AgACAgUAAxUAAWBlvhlN8hXabPqTziVKit2Iq_IIAAIarDEbvBxAVoN8iIOPKgYBRwrubnQAAwEAAwIAA2EAA52tAgABHgQ","file_unique_id":"AQADRwrubnQAA52tAgAB","file_size":11139,"width":160,"height":160},{"file_id":"AgACAgUAAxUAAWBlvhlN8hXabPqTziVKit2Iq_IIAAIarDEbvBxAVoN8iIOPKgYBRwrubnQAAwEAAwIAA2IAA56tAgABHgQ","file_unique_id":"AQADRwrubnQAA56tAgAB","file_size":37444,"width":320,"height":320},{"file_id":"AgACAgUAAxUAAWBlvhlN8hXabPqTziVKit2Iq_IIAAIarDEbvBxAVoN8iIOPKgYBRwrubnQAAwEAAwIAA2MAA5-tAgABHgQ","file_unique_id":"AQADRwrubnQAA5-tAgAB","file_size":131128,"width":640,"height":640}],[{"file_id":"AgACAgUAAxUAAWBlvhl2O9a6CJCVW29esUVq-zBTAALRqjEb87iZVUXC0dsRf2WhDqdObHQAAwEAAwIAA2EAA8KUBwABHgQ","file_unique_id":"AQADDqdObHQAA8KUBwAB","file_size":13019,"width":160,"height":160},{"file_id":"AgACAgUAAxUAAWBlvhl2O9a6CJCVW29esUVq-zBTAALRqjEb87iZVUXC0dsRf2WhDqdObHQAAwEAAwIAA2IAA8OUBwABHgQ","file_unique_id":"AQADDqdObHQAA8OUBwAB","file_size":40032,"width":320,"height":320},{"file_id":"AgACAgUAAxUAAWBlvhl2O9a6CJCVW29esUVq-zBTAALRqjEb87iZVUXC0dsRf2WhDqdObHQAAwEAAwIAA2MAA8SUBwABHgQ","file_unique_id":"AQADDqdObHQAA8SUBwAB","file_size":116425,"width":640,"height":640}],[{"file_id":"AgACAgUAAxUAAWBlvhnTtJxn0KrXo2rIsaG5tvR8AAKzqjEbiB94VWailgprqpG0wMT7bnQAAwEAAwIAA2EAA698AAIeBA","file_unique_id":"AQADwMT7bnQAA698AAI","file_size":12972,"width":160,"height":160},{"file_id":"AgACAgUAAxUAAWBlvhnTtJxn0KrXo2rIsaG5tvR8AAKzqjEbiB94VWailgprqpG0wMT7bnQAAwEAAwIAA2IAA7B8AAIeBA","file_unique_id":"AQADwMT7bnQAA7B8AAI","file_size":41934,"width":320,"height":320},{"file_id":"AgACAgUAAxUAAWBlvhnTtJxn0KrXo2rIsaG5tvR8AAKzqjEbiB94VWailgprqpG0wMT7bnQAAwEAAwIAA2MAA7F8AAIeBA","file_unique_id":"AQADwMT7bnQAA7F8AAI","file_size":95918,"width":640,"height":640}],[{"file_id":"AgACAgUAAxUAAWBlvhnLduoGiU0nWnHUxiDvL87iAAKqqjEbbTZ4Vdp-M-kkR1ol7Esab3QAAwEAAwIAA2EAA7xYAgABHgQ","file_unique_id":"AQAD7Esab3QAA7xYAgAB","file_size":13710,"width":160,"height":160},{"file_id":"AgACAgUAAxUAAWBlvhnLduoGiU0nWnHUxiDvL87iAAKqqjEbbTZ4Vdp-M-kkR1ol7Esab3QAAwEAAwIAA2IAA71YAgABHgQ","file_unique_id":"AQAD7Esab3QAA71YAgAB","file_size":47003,"width":320,"height":320},{"file_id":"AgACAgUAAxUAAWBlvhnLduoGiU0nWnHUxiDvL87iAAKqqjEbbTZ4Vdp-M-kkR1ol7Esab3QAAwEAAwIAA2MAA75YAgABHgQ","file_unique_id":"AQAD7Esab3QAA75YAgAB","file_size":129214,"width":640,"height":640}],[{"file_id":"AgACAgUAAxUAAWBlvhmPkJ6FP0NcctxQJxOXt6ZjAAKqqzEb0sJxVS3m8dRDh1n5CImybnQAAwEAAwIAA2EAA6phAgABHgQ","file_unique_id":"AQADCImybnQAA6phAgAB","file_size":11736,"width":160,"height":160},{"file_id":"AgACAgUAAxUAAWBlvhmPkJ6FP0NcctxQJxOXt6ZjAAKqqzEb0sJxVS3m8dRDh1n5CImybnQAAwEAAwIAA2IAA6thAgABHgQ","file_unique_id":"AQADCImybnQAA6thAgAB","file_size":35711,"width":320,"height":320},{"file_id":"AgACAgUAAxUAAWBlvhmPkJ6FP0NcctxQJxOXt6ZjAAKqqzEb0sJxVS3m8dRDh1n5CImybnQAAwEAAwIAA2MAA6xhAgABHgQ","file_unique_id":"AQADCImybnQAA6xhAgAB","file_size":104345,"width":640,"height":640}],[{"file_id":"AgACAgUAAxUAAWBlvhnRz6Paa7qXRyrWUAvTB4p8AAL8qjEbcxhwVfhk7FRQdQABOKqD7G50AAMBAAMCAANhAAMvLAIAAR4E","file_unique_id":"AQADqoPsbnQAAy8sAgAB","file_size":15201,"width":160,"height":160},{"file_id":"AgACAgUAAxUAAWBlvhnRz6Paa7qXRyrWUAvTB4p8AAL8qjEbcxhwVfhk7FRQdQABOKqD7G50AAMBAAMCAANiAAMwLAIAAR4E","file_unique_id":"AQADqoPsbnQAAzAsAgAB","file_size":46374,"width":320,"height":320},{"file_id":"AgACAgUAAxUAAWBlvhnRz6Paa7qXRyrWUAvTB4p8AAL8qjEbcxhwVfhk7FRQdQABOKqD7G50AAMBAAMCAANjAAMxLAIAAR4E","file_unique_id":"AQADqoPsbnQAAzEsAgAB","file_size":133650,"width":640,"height":640}],[{"file_id":"AgACAgUAAxUAAWBlvhlv8PZWOygjM3mLa1hZlOUGAAIjrDEbf2RpVd-yiPhTw2t0IAg7cXQAAwEAAwIAA2EAA1lwAAIeBA","file_unique_id":"AQADIAg7cXQAA1lwAAI","file_size":12031,"width":160,"height":160},{"file_id":"AgACAgUAAxUAAWBlvhlv8PZWOygjM3mLa1hZlOUGAAIjrDEbf2RpVd-yiPhTw2t0IAg7cXQAAwEAAwIAA2IAA1pwAAIeBA","file_unique_id":"AQADIAg7cXQAA1pwAAI","file_size":38211,"width":320,"height":320},{"file_id":"AgACAgUAAxUAAWBlvhlv8PZWOygjM3mLa1hZlOUGAAIjrDEbf2RpVd-yiPhTw2t0IAg7cXQAAwEAAwIAA2MAA1twAAIeBA","file_unique_id":"AQADIAg7cXQAA1twAAI","file_size":94798,"width":640,"height":640}],[{"file_id":"AgACAgUAAxUAAWBlvhnKcRnj-PyEOcEi2g5t2iFJAAKbqzEbhaVpVaAeXDgIuSG_SVOmbnQAAwEAAwIAA2EAA7I9AgABHgQ","file_unique_id":"AQADSVOmbnQAA7I9AgAB","file_size":9885,"width":160,"height":160},{"file_id":"AgACAgUAAxUAAWBlvhnKcRnj-PyEOcEi2g5t2iFJAAKbqzEbhaVpVaAeXDgIuSG_SVOmbnQAAwEAAwIAA2IAA7M9AgABHgQ","file_unique_id":"AQADSVOmbnQAA7M9AgAB","file_size":27118,"width":320,"height":320},{"file_id":"AgACAgUAAxUAAWBlvhnKcRnj-PyEOcEi2g5t2iFJAAKbqzEbhaVpVaAeXDgIuSG_SVOmbnQAAwEAAwIAA2MAA7Q9AgABHgQ","file_unique_id":"AQADSVOmbnQAA7Q9AgAB","file_size":74005,"width":640,"height":640}],[{"file_id":"AgACAgUAAxUAAWBlvhknmlqL_byLXrKt2eFptLvtAALBqzEbN_NoVeJgKCG-qmbJvc8lbXQAAwEAAwIAA2EAA_hkAwABHgQ","file_unique_id":"AQADvc8lbXQAA_hkAwAB","file_size":15183,"width":160,"height":160},{"file_id":"AgACAgUAAxUAAWBlvhknmlqL_byLXrKt2eFptLvtAALBqzEbN_NoVeJgKCG-qmbJvc8lbXQAAwEAAwIAA2IAA_lkAwABHgQ","file_unique_id":"AQADvc8lbXQAA_lkAwAB","file_size":50610,"width":320,"height":320},{"file_id":"AgACAgUAAxUAAWBlvhknmlqL_byLXrKt2eFptLvtAALBqzEbN_NoVeJgKCG-qmbJvc8lbXQAAwEAAwIAA2MAA_pkAwABHgQ","file_unique_id":"AQADvc8lbXQAA_pkAwAB","file_size":137368,"width":640,"height":640}],[{"file_id":"AgACAgUAAxUAAWBlvhnZhm5xUVPKSNeRx2A6vhpdAALVqzEbOJxZVVZnS0Mh6N8IVbMyb3QAAwEAAwIAA2EAA2ztAQABHgQ","file_unique_id":"AQADVbMyb3QAA2ztAQAB","file_size":15147,"width":160,"height":160},{"file_id":"AgACAgUAAxUAAWBlvhnZhm5xUVPKSNeRx2A6vhpdAALVqzEbOJxZVVZnS0Mh6N8IVbMyb3QAAwEAAwIAA2IAA23tAQABHgQ","file_unique_id":"AQADVbMyb3QAA23tAQAB","file_size":51029,"width":320,"height":320},{"file_id":"AgACAgUAAxUAAWBlvhnZhm5xUVPKSNeRx2A6vhpdAALVqzEbOJxZVVZnS0Mh6N8IVbMyb3QAAwEAAwIAA2MAA27tAQABHgQ","file_unique_id":"AQADVbMyb3QAA27tAQAB","file_size":136177,"width":640,"height":640}],[{"file_id":"AgACAgUAAxUAAWBlvhlo4vFTxd27AAFLSMQ62OaDVwACdasxG5veYFXIxxjU7BS9ij6dD290AAMBAAMCAANhAAP4OwIAAR4E","file_unique_id":"AQADPp0Pb3QAA_g7AgAB","file_size":12986,"width":160,"height":160},{"file_id":"AgACAgUAAxUAAWBlvhlo4vFTxd27AAFLSMQ62OaDVwACdasxG5veYFXIxxjU7BS9ij6dD290AAMBAAMCAANiAAP5OwIAAR4E","file_unique_id":"AQADPp0Pb3QAA_k7AgAB","file_size":45579,"width":320,"height":320},{"file_id":"AgACAgUAAxUAAWBlvhlo4vFTxd27AAFLSMQ62OaDVwACdasxG5veYFXIxxjU7BS9ij6dD290AAMBAAMCAANjAAP6OwIAAR4E","file_unique_id":"AQADPp0Pb3QAA_o7AgAB","file_size":126996,"width":640,"height":640}]]}}
+ref.reply_to_message_id= 75777
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\me.php(23): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(549): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-04-03 22:23:34  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message is too long
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804465865
+ref.message.message_id= 75779
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= Masyarakat Iseng©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1617463409
+ref.message.text= /me
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 3
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= {"ok":true,"result":{"total_count":18,"photos":[[{"file_id":"AgACAgUAAxUAAWBmvXGoZSjaKG2auXwVNNEtB7iCAAJrqzEbmj7wVh9ZHokxX5MYSakSb3QAAwEAAwIAA2EAA3JLAwABHgQ","file_unique_id":"AQADSakSb3QAA3JLAwAB","file_size":11764,"width":160,"height":160},{"file_id":"AgACAgUAAxUAAWBmvXGoZSjaKG2auXwVNNEtB7iCAAJrqzEbmj7wVh9ZHokxX5MYSakSb3QAAwEAAwIAA2IAA3NLAwABHgQ","file_unique_id":"AQADSakSb3QAA3NLAwAB","file_size":35617,"width":320,"height":320},{"file_id":"AgACAgUAAxUAAWBmvXGoZSjaKG2auXwVNNEtB7iCAAJrqzEbmj7wVh9ZHokxX5MYSakSb3QAAwEAAwIAA2MAA3RLAwABHgQ","file_unique_id":"AQADSakSb3QAA3RLAwAB","file_size":83656,"width":640,"height":640}],[{"file_id":"AgACAgUAAxUAAWBlvhlJPg0iNMyKeFk4JsLcMmtWAAIyrDEbKt_wVlwc97Nd2SXclKtVc3QAAwEAAwIAA2EAA3U_AAIeBA","file_unique_id":"AQADlKtVc3QAA3U_AAI","file_size":6148,"width":160,"height":160},{"file_id":"AgACAgUAAxUAAWBlvhlJPg0iNMyKeFk4JsLcMmtWAAIyrDEbKt_wVlwc97Nd2SXclKtVc3QAAwEAAwIAA2IAA3Y_AAIeBA","file_unique_id":"AQADlKtVc3QAA3Y_AAI","file_size":18229,"width":320,"height":320},{"file_id":"AgACAgUAAxUAAWBlvhlJPg0iNMyKeFk4JsLcMmtWAAIyrDEbKt_wVlwc97Nd2SXclKtVc3QAAwEAAwIAA2MAA3c_AAIeBA","file_unique_id":"AQADlKtVc3QAA3c_AAI","file_size":50612,"width":640,"height":640}],[{"file_id":"AgACAgUAAx0ESBQOygABARdOYGW-WMvmC1iTW9LQtpreSfkdUzoAAr-sMRuOsdlW-WZGRzeSqgABY-61b3QAAwEAAwIAA2EAA3saAgABHgQ","file_unique_id":"AQADY-61b3QAA3saAgAB","file_size":12310,"width":160,"height":160},{"file_id":"AgACAgUAAx0ESBQOygABARdOYGW-WMvmC1iTW9LQtpreSfkdUzoAAr-sMRuOsdlW-WZGRzeSqgABY-61b3QAAwEAAwIAA2IAA3waAgABHgQ","file_unique_id":"AQADY-61b3QAA3waAgAB","file_size":35549,"width":320,"height":320},{"file_id":"AgACAgUAAx0ESBQOygABARdOYGW-WMvmC1iTW9LQtpreSfkdUzoAAr-sMRuOsdlW-WZGRzeSqgABY-61b3QAAwEAAwIAA2MAA30aAgABHgQ","file_unique_id":"AQADY-61b3QAA30aAgAB","file_size":99842,"width":640,"height":640}],[{"file_id":"AgACAgUAAxUAAWBlvhkmw-UQmFClK3rV-MnbhKGnAAIrrDEb2O_QVlGU52dsvWj6jj00b3QAAwEAAwIAA2EAAx4jAwABHgQ","file_unique_id":"AQADjj00b3QAAx4jAwAB","file_size":13110,"width":160,"height":160},{"file_id":"AgACAgUAAxUAAWBlvhkmw-UQmFClK3rV-MnbhKGnAAIrrDEb2O_QVlGU52dsvWj6jj00b3QAAwEAAwIAA2IAAx8jAwABHgQ","file_unique_id":"AQADjj00b3QAAx8jAwAB","file_size":40916,"width":320,"height":320},{"file_id":"AgACAgUAAxUAAWBlvhkmw-UQmFClK3rV-MnbhKGnAAIrrDEb2O_QVlGU52dsvWj6jj00b3QAAwEAAwIAA2MAAyAjAwABHgQ","file_unique_id":"AQADjj00b3QAAyAjAwAB","file_size":120717,"width":640,"height":640}],[{"file_id":"AgACAgUAAxUAAWBlvhkL6IkNR93Ce0bjmC9_WvVVAALbqjEboA6RVq4tRBxrcJW9p8isb3QAAwEAAwIAA2EAA0vQAgABHgQ","file_unique_id":"AQADp8isb3QAA0vQAgAB","file_size":12385,"width":160,"height":160},{"file_id":"AgACAgUAAxUAAWBlvhkL6IkNR93Ce0bjmC9_WvVVAALbqjEboA6RVq4tRBxrcJW9p8isb3QAAwEAAwIAA2IAA0zQAgABHgQ","file_unique_id":"AQADp8isb3QAA0zQAgAB","file_size":38804,"width":320,"height":320},{"file_id":"AgACAgUAAxUAAWBlvhkL6IkNR93Ce0bjmC9_WvVVAALbqjEboA6RVq4tRBxrcJW9p8isb3QAAwEAAwIAA2MAA03QAgABHgQ","file_unique_id":"AQADp8isb3QAA03QAgAB","file_size":117713,"width":640,"height":640}],[{"file_id":"AgACAgUAAxUAAWBlvhlIu1q3BKO1Xbqs5AJqcHj2AAJiqzEbF-OQVtCJcu6hgfKDw8MYb3QAAwEAAwIAA2EAA4fmAgABHgQ","file_unique_id":"AQADw8MYb3QAA4fmAgAB","file_size":12431,"width":160,"height":160},{"file_id":"AgACAgUAAxUAAWBlvhlIu1q3BKO1Xbqs5AJqcHj2AAJiqzEbF-OQVtCJcu6hgfKDw8MYb3QAAwEAAwIAA2IAA4jmAgABHgQ","file_unique_id":"AQADw8MYb3QAA4jmAgAB","file_size":39149,"width":320,"height":320},{"file_id":"AgACAgUAAxUAAWBlvhlIu1q3BKO1Xbqs5AJqcHj2AAJiqzEbF-OQVtCJcu6hgfKDw8MYb3QAAwEAAwIAA2MAA4nmAgABHgQ","file_unique_id":"AQADw8MYb3QAA4nmAgAB","file_size":114553,"width":640,"height":640}],[{"file_id":"AgACAgUAAxUAAWBlvhkswy2aHfaFshS1s0bcNgq_AALbqjEb9qtgVpEXhbhjxu9hARrxbnQAAwEAAwIAA2EAA-rNAgABHgQ","file_unique_id":"AQADARrxbnQAA-rNAgAB","file_size":12882,"width":160,"height":160},{"file_id":"AgACAgUAAxUAAWBlvhkswy2aHfaFshS1s0bcNgq_AALbqjEb9qtgVpEXhbhjxu9hARrxbnQAAwEAAwIAA2IAA-vNAgABHgQ","file_unique_id":"AQADARrxbnQAA-vNAgAB","file_size":41083,"width":320,"height":320},{"file_id":"AgACAgUAAxUAAWBlvhkswy2aHfaFshS1s0bcNgq_AALbqjEb9qtgVpEXhbhjxu9hARrxbnQAAwEAAwIAA2MAA-zNAgABHgQ","file_unique_id":"AQADARrxbnQAA-zNAgAB","file_size":135484,"width":640,"height":640}],[{"file_id":"AgACAgUAAxUAAWBlvhlN8hXabPqTziVKit2Iq_IIAAIarDEbvBxAVoN8iIOPKgYBRwrubnQAAwEAAwIAA2EAA52tAgABHgQ","file_unique_id":"AQADRwrubnQAA52tAgAB","file_size":11139,"width":160,"height":160},{"file_id":"AgACAgUAAxUAAWBlvhlN8hXabPqTziVKit2Iq_IIAAIarDEbvBxAVoN8iIOPKgYBRwrubnQAAwEAAwIAA2IAA56tAgABHgQ","file_unique_id":"AQADRwrubnQAA56tAgAB","file_size":37444,"width":320,"height":320},{"file_id":"AgACAgUAAxUAAWBlvhlN8hXabPqTziVKit2Iq_IIAAIarDEbvBxAVoN8iIOPKgYBRwrubnQAAwEAAwIAA2MAA5-tAgABHgQ","file_unique_id":"AQADRwrubnQAA5-tAgAB","file_size":131128,"width":640,"height":640}],[{"file_id":"AgACAgUAAxUAAWBlvhl2O9a6CJCVW29esUVq-zBTAALRqjEb87iZVUXC0dsRf2WhDqdObHQAAwEAAwIAA2EAA8KUBwABHgQ","file_unique_id":"AQADDqdObHQAA8KUBwAB","file_size":13019,"width":160,"height":160},{"file_id":"AgACAgUAAxUAAWBlvhl2O9a6CJCVW29esUVq-zBTAALRqjEb87iZVUXC0dsRf2WhDqdObHQAAwEAAwIAA2IAA8OUBwABHgQ","file_unique_id":"AQADDqdObHQAA8OUBwAB","file_size":40032,"width":320,"height":320},{"file_id":"AgACAgUAAxUAAWBlvhl2O9a6CJCVW29esUVq-zBTAALRqjEb87iZVUXC0dsRf2WhDqdObHQAAwEAAwIAA2MAA8SUBwABHgQ","file_unique_id":"AQADDqdObHQAA8SUBwAB","file_size":116425,"width":640,"height":640}],[{"file_id":"AgACAgUAAxUAAWBlvhnTtJxn0KrXo2rIsaG5tvR8AAKzqjEbiB94VWailgprqpG0wMT7bnQAAwEAAwIAA2EAA698AAIeBA","file_unique_id":"AQADwMT7bnQAA698AAI","file_size":12972,"width":160,"height":160},{"file_id":"AgACAgUAAxUAAWBlvhnTtJxn0KrXo2rIsaG5tvR8AAKzqjEbiB94VWailgprqpG0wMT7bnQAAwEAAwIAA2IAA7B8AAIeBA","file_unique_id":"AQADwMT7bnQAA7B8AAI","file_size":41934,"width":320,"height":320},{"file_id":"AgACAgUAAxUAAWBlvhnTtJxn0KrXo2rIsaG5tvR8AAKzqjEbiB94VWailgprqpG0wMT7bnQAAwEAAwIAA2MAA7F8AAIeBA","file_unique_id":"AQADwMT7bnQAA7F8AAI","file_size":95918,"width":640,"height":640}],[{"file_id":"AgACAgUAAxUAAWBlvhnLduoGiU0nWnHUxiDvL87iAAKqqjEbbTZ4Vdp-M-kkR1ol7Esab3QAAwEAAwIAA2EAA7xYAgABHgQ","file_unique_id":"AQAD7Esab3QAA7xYAgAB","file_size":13710,"width":160,"height":160},{"file_id":"AgACAgUAAxUAAWBlvhnLduoGiU0nWnHUxiDvL87iAAKqqjEbbTZ4Vdp-M-kkR1ol7Esab3QAAwEAAwIAA2IAA71YAgABHgQ","file_unique_id":"AQAD7Esab3QAA71YAgAB","file_size":47003,"width":320,"height":320},{"file_id":"AgACAgUAAxUAAWBlvhnLduoGiU0nWnHUxiDvL87iAAKqqjEbbTZ4Vdp-M-kkR1ol7Esab3QAAwEAAwIAA2MAA75YAgABHgQ","file_unique_id":"AQAD7Esab3QAA75YAgAB","file_size":129214,"width":640,"height":640}],[{"file_id":"AgACAgUAAxUAAWBlvhmPkJ6FP0NcctxQJxOXt6ZjAAKqqzEb0sJxVS3m8dRDh1n5CImybnQAAwEAAwIAA2EAA6phAgABHgQ","file_unique_id":"AQADCImybnQAA6phAgAB","file_size":11736,"width":160,"height":160},{"file_id":"AgACAgUAAxUAAWBlvhmPkJ6FP0NcctxQJxOXt6ZjAAKqqzEb0sJxVS3m8dRDh1n5CImybnQAAwEAAwIAA2IAA6thAgABHgQ","file_unique_id":"AQADCImybnQAA6thAgAB","file_size":35711,"width":320,"height":320},{"file_id":"AgACAgUAAxUAAWBlvhmPkJ6FP0NcctxQJxOXt6ZjAAKqqzEb0sJxVS3m8dRDh1n5CImybnQAAwEAAwIAA2MAA6xhAgABHgQ","file_unique_id":"AQADCImybnQAA6xhAgAB","file_size":104345,"width":640,"height":640}],[{"file_id":"AgACAgUAAxUAAWBlvhnRz6Paa7qXRyrWUAvTB4p8AAL8qjEbcxhwVfhk7FRQdQABOKqD7G50AAMBAAMCAANhAAMvLAIAAR4E","file_unique_id":"AQADqoPsbnQAAy8sAgAB","file_size":15201,"width":160,"height":160},{"file_id":"AgACAgUAAxUAAWBlvhnRz6Paa7qXRyrWUAvTB4p8AAL8qjEbcxhwVfhk7FRQdQABOKqD7G50AAMBAAMCAANiAAMwLAIAAR4E","file_unique_id":"AQADqoPsbnQAAzAsAgAB","file_size":46374,"width":320,"height":320},{"file_id":"AgACAgUAAxUAAWBlvhnRz6Paa7qXRyrWUAvTB4p8AAL8qjEbcxhwVfhk7FRQdQABOKqD7G50AAMBAAMCAANjAAMxLAIAAR4E","file_unique_id":"AQADqoPsbnQAAzEsAgAB","file_size":133650,"width":640,"height":640}],[{"file_id":"AgACAgUAAxUAAWBlvhlv8PZWOygjM3mLa1hZlOUGAAIjrDEbf2RpVd-yiPhTw2t0IAg7cXQAAwEAAwIAA2EAA1lwAAIeBA","file_unique_id":"AQADIAg7cXQAA1lwAAI","file_size":12031,"width":160,"height":160},{"file_id":"AgACAgUAAxUAAWBlvhlv8PZWOygjM3mLa1hZlOUGAAIjrDEbf2RpVd-yiPhTw2t0IAg7cXQAAwEAAwIAA2IAA1pwAAIeBA","file_unique_id":"AQADIAg7cXQAA1pwAAI","file_size":38211,"width":320,"height":320},{"file_id":"AgACAgUAAxUAAWBlvhlv8PZWOygjM3mLa1hZlOUGAAIjrDEbf2RpVd-yiPhTw2t0IAg7cXQAAwEAAwIAA2MAA1twAAIeBA","file_unique_id":"AQADIAg7cXQAA1twAAI","file_size":94798,"width":640,"height":640}],[{"file_id":"AgACAgUAAxUAAWBlvhnKcRnj-PyEOcEi2g5t2iFJAAKbqzEbhaVpVaAeXDgIuSG_SVOmbnQAAwEAAwIAA2EAA7I9AgABHgQ","file_unique_id":"AQADSVOmbnQAA7I9AgAB","file_size":9885,"width":160,"height":160},{"file_id":"AgACAgUAAxUAAWBlvhnKcRnj-PyEOcEi2g5t2iFJAAKbqzEbhaVpVaAeXDgIuSG_SVOmbnQAAwEAAwIAA2IAA7M9AgABHgQ","file_unique_id":"AQADSVOmbnQAA7M9AgAB","file_size":27118,"width":320,"height":320},{"file_id":"AgACAgUAAxUAAWBlvhnKcRnj-PyEOcEi2g5t2iFJAAKbqzEbhaVpVaAeXDgIuSG_SVOmbnQAAwEAAwIAA2MAA7Q9AgABHgQ","file_unique_id":"AQADSVOmbnQAA7Q9AgAB","file_size":74005,"width":640,"height":640}],[{"file_id":"AgACAgUAAxUAAWBlvhknmlqL_byLXrKt2eFptLvtAALBqzEbN_NoVeJgKCG-qmbJvc8lbXQAAwEAAwIAA2EAA_hkAwABHgQ","file_unique_id":"AQADvc8lbXQAA_hkAwAB","file_size":15183,"width":160,"height":160},{"file_id":"AgACAgUAAxUAAWBlvhknmlqL_byLXrKt2eFptLvtAALBqzEbN_NoVeJgKCG-qmbJvc8lbXQAAwEAAwIAA2IAA_lkAwABHgQ","file_unique_id":"AQADvc8lbXQAA_lkAwAB","file_size":50610,"width":320,"height":320},{"file_id":"AgACAgUAAxUAAWBlvhknmlqL_byLXrKt2eFptLvtAALBqzEbN_NoVeJgKCG-qmbJvc8lbXQAAwEAAwIAA2MAA_pkAwABHgQ","file_unique_id":"AQADvc8lbXQAA_pkAwAB","file_size":137368,"width":640,"height":640}],[{"file_id":"AgACAgUAAxUAAWBlvhnZhm5xUVPKSNeRx2A6vhpdAALVqzEbOJxZVVZnS0Mh6N8IVbMyb3QAAwEAAwIAA2EAA2ztAQABHgQ","file_unique_id":"AQADVbMyb3QAA2ztAQAB","file_size":15147,"width":160,"height":160},{"file_id":"AgACAgUAAxUAAWBlvhnZhm5xUVPKSNeRx2A6vhpdAALVqzEbOJxZVVZnS0Mh6N8IVbMyb3QAAwEAAwIAA2IAA23tAQABHgQ","file_unique_id":"AQADVbMyb3QAA23tAQAB","file_size":51029,"width":320,"height":320},{"file_id":"AgACAgUAAxUAAWBlvhnZhm5xUVPKSNeRx2A6vhpdAALVqzEbOJxZVVZnS0Mh6N8IVbMyb3QAAwEAAwIAA2MAA27tAQABHgQ","file_unique_id":"AQADVbMyb3QAA27tAQAB","file_size":136177,"width":640,"height":640}],[{"file_id":"AgACAgUAAxUAAWBlvhlo4vFTxd27AAFLSMQ62OaDVwACdasxG5veYFXIxxjU7BS9ij6dD290AAMBAAMCAANhAAP4OwIAAR4E","file_unique_id":"AQADPp0Pb3QAA_g7AgAB","file_size":12986,"width":160,"height":160},{"file_id":"AgACAgUAAxUAAWBlvhlo4vFTxd27AAFLSMQ62OaDVwACdasxG5veYFXIxxjU7BS9ij6dD290AAMBAAMCAANiAAP5OwIAAR4E","file_unique_id":"AQADPp0Pb3QAA_k7AgAB","file_size":45579,"width":320,"height":320},{"file_id":"AgACAgUAAxUAAWBlvhlo4vFTxd27AAFLSMQ62OaDVwACdasxG5veYFXIxxjU7BS9ij6dD290AAMBAAMCAANjAAP6OwIAAR4E","file_unique_id":"AQADPp0Pb3QAA_o7AgAB","file_size":126996,"width":640,"height":640}]]}}
+ref.reply_to_message_id= 75779
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\me.php(23): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(549): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-04-03 22:24:54  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804465874
+ref.message.message_id= 75785
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= Masyarakat Iseng©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1617463491
+ref.message.text= /id
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 3
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 75785
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(811): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-04-03 22:37:57  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804465907
+ref.message.message_id= 41076
+ref.message.from.id= 724677596
+ref.message.from.is_bot= false
+ref.message.from.first_name= ⁣
+ref.message.from.last_name= cScript
+ref.message.from.username= ScriptGoogle
+ref.message.chat.id= -1001182246595
+ref.message.chat.title= [c]oretan Script
+ref.message.chat.username= cScript
+ref.message.chat.type= supergroup
+ref.message.date= 1617464229
+ref.message.text= /a Lemburrrrrrrrrr
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 2
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 41076
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(811): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-04-03 22:38:48  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804465911
+ref.message.message_id= 75817
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= Masyarakat Iseng©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1617464325
+ref.message.text= /p
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 2
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 75817
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(811): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-04-03 22:42:23  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804465927
+ref.message.message_id= 75834
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil
+ref.message.from.last_name= Riyanto
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= Masyarakat Iseng©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1617464540
+ref.message.text= /p
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 2
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 75834
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(811): Telegram->sendMessage(Array)
+#4 {main}
+

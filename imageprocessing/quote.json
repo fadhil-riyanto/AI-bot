@@ -1,0 +1,631 @@
+{
+  "quote": {
+    "id": [
+      {
+        "by": "E.E. Cummings",
+        "quote": "undefined"
+      },
+      {
+        "by": "Mark Twain",
+        "quote": "“The trouble is not in dying for a friend, but in finding a friend worth dying for.”"
+      },
+      {
+        "by": "Terry Pratchett,",
+        "quote": "“It is said that your life flashes before your eyes just before you die. That is true, it's called Life.”"
+      },
+      {
+        "by": "Thomas Babington Macaulay,",
+        "quote": "“What a blessing it is to love books as I love them;- to be able to converse with the dead, and to live amidst the unreal!”"
+      },
+      {
+        "by": "David Sedaris,",
+        "quote": "“If you're looking for sympathy you'll find it between shit and syphilis in the dictionary.”"
+      },
+      {
+        "by": "Ken Kesey,",
+        "quote": "“Man, when you lose your laugh you lose your footing.”"
+      },
+      {
+        "by": "Mahatma Gandhi",
+        "quote": "“Hate the sin, love the sinner.”"
+      },
+      {
+        "by": "Charlotte Brontë,",
+        "quote": "“I am no bird; and no net ensnares me: I am a free human being with an independent will.”"
+      },
+      {
+        "by": "Isaac Asimov",
+        "quote": "“If my doctor told me I had only six minutes to live, I wouldn't brood. I'd type a little faster.”"
+      },
+      {
+        "by": "Oscar Wilde,",
+        "quote": "“We are all in the gutter, but some of us are looking at the stars.”"
+      },
+      {
+        "by": "Hermann Hesse,",
+        "quote": "“If you hate a person, you hate something in him that is part of yourself. What isn't part of ourselves doesn't disturb us.”"
+      },
+      {
+        "by": "J.R.R. Tolkien,",
+        "quote": "“The Road goes ever on and onDown from the door where it began.Now far ahead the Road has gone,And I must follow, if I can,Pursuing it with eager feet,Until it joins some larger wayWhere many paths and errands meet.And whither then? I cannot say”"
+      },
+      {
+        "by": "George Eliot",
+        "quote": "“It is never too late to be what you might have been.”"
+      },
+      {
+        "by": "Ray Bradbury,",
+        "quote": "“There must be something in books, something we can’t imagine, to make a woman stay in a burning house; there must be something there. You don’t stay for nothing.”"
+      },
+      {
+        "by": "Paulo Coelho,",
+        "quote": "“The two hardest tests on the spiritual road are the patience to wait for the right moment and the courage not to be disappointed with what we encounter.”"
+      },
+      {
+        "by": "Marcus Aurelius,",
+        "quote": "“The happiness of your life depends upon the quality of your thoughts.”"
+      },
+      {
+        "by": "Socrates",
+        "quote": "“The unexamined life is not worth living.”"
+      },
+      {
+        "by": "Emily Jane Brontë ,",
+        "quote": "“If all else perished, and he remained, I should still continue to be; and if all else remained, and he were annihilated, the universe would turn to a mighty stranger.”"
+      },
+      {
+        "by": "E.E. Cummings",
+        "quote": "“It takes courage to grow up and become who you really are.”"
+      },
+      {
+        "by": "Nicholas Klein",
+        "quote": "“First they ignore you. Then they ridicule you. And then they attack you and want to burn you. And then they build monuments to you.”"
+      },
+      {
+        "by": "Ralph Ellison,",
+        "quote": "“When I discover who I am, I’ll be free.”"
+      },
+      {
+        "by": "Cassandra Clare,",
+        "quote": "“Trains are great dirty smoky things,\" said Will. \"You won't like it.\" Tessa was unmoved. \"I won't know if I like it until I try it, will I?\" \"I've never swum naked in the Thames before, but I know I wouldn't like it.\" \"But think how entertaining for sightseers,\" said Tessa, and she saw Jem duck his head to hide the quick flash of his grin.”"
+      },
+      {
+        "by": "J.K. Rowling,",
+        "quote": "“It matters not what someone is born, but what they grow to be.”"
+      },
+      {
+        "by": "Sarah Dessen,",
+        "quote": "“Some things don't last forever, but some things do. Like a good song, or a good book, or a good memory you can take out and unfold in your darkest times, pressing down on the corners and peering in close, hoping you still recognize the person you see there.”"
+      },
+      {
+        "by": "Nicholas Sparks,",
+        "quote": "“We sit silently and watch the world around us. This has taken a lifetime to learn. It seems only the old are able to sit next to one another and not say anything and still feel content. The young, brash and impatient, must always break the silence. It is a waste, for silence is pure. Silence is holy. It draws people together because only those who are comfortable with each other can sit without speaking. This is the great paradox.”"
+      },
+      {
+        "by": "Carlos Ruiz Zafón,",
+        "quote": "“Every book, every volume you see here, has a soul. The soul of the person who wrote it and of those who read it and lived and dreamed with it. Every time a book changes hands, every time someone runs his eyes down its pages, its spirit grows and strengthens.”"
+      },
+      {
+        "by": "Albert Einstein",
+        "quote": "“You never fail until you stop trying.”"
+      },
+      {
+        "by": "Paulo Coelho",
+        "quote": "“We can never judge the lives of others, because each person knows only their own pain and renunciation. It's one thing to feel that you are on the right path, but it's another to think that yours is the only path.”"
+      },
+      {
+        "by": "Fyodor Dostoevsky,",
+        "quote": "“Man only likes to count his troubles; he doesn't calculate his happiness.”"
+      },
+      {
+        "by": "Roy T. Bennett,",
+        "quote": "“Let the improvement of yourself keep you so busy that you have no time to criticize others.”"
+      },
+      {
+        "by": "Fran Lebowitz,",
+        "quote": "“Think before you speak. Read before you think.”"
+      },
+      {
+        "by": "Albert Camus,",
+        "quote": "“Real generosity towards the future lies in giving all to the present.”"
+      },
+      {
+        "by": "Fyodor Dostoevsky,",
+        "quote": "“I say let the world go to hell, but I should always have my tea.”"
+      },
+      {
+        "by": "Zig Ziglar,",
+        "quote": "“Of course motivation is not permanent. But then, neither is bathing; but it is something you should do on a regular basis.”"
+      },
+      {
+        "by": "Aldous Huxley,",
+        "quote": "“But I don't want comfort. I want God, I want poetry, I want real danger, I want freedom, I want goodness. I want sin.”"
+      },
+      {
+        "by": "Mae West",
+        "quote": "“When I'm good, I'm very good, but when I'm bad, I'm better. ”"
+      },
+      {
+        "by": "Brian Andreas,",
+        "quote": "“I read once that the ancient Egyptians had fifty words for sand & the Eskimos had a hundred words for snow. I wish I had a thousand words for love, but all that comes to mind is the way you move against me while you sleep & there are no words for that.”"
+      },
+      {
+        "by": "Christopher Paolini",
+        "quote": "“Books should go where they will be most appreciated, and not sit unread, gathering dust on a forgotten shelf, don't you agree?”"
+      },
+      {
+        "by": "John Green,",
+        "quote": "“When I look at my room, I see a girl who loves books.”"
+      },
+      {
+        "by": "Lance Armstrong Sally Jenkins,",
+        "quote": "“Pain is temporary. Quitting lasts forever.”"
+      },
+      {
+        "by": "William Golding,",
+        "quote": "“Maybe there is a beast… maybe it's only us.”"
+      },
+      {
+        "by": "Brian Selznick,",
+        "quote": "“I address you all tonight for who you truly are: wizards, mermaids, travelers, adventurers, and magicians. You are the true dreamers.”"
+      },
+      {
+        "by": "A.A. Milne,",
+        "quote": "“You can't stay in your corner of the Forest waiting for others to come to you. You have to go to them sometimes.”"
+      },
+      {
+        "by": "Markus Zusak,",
+        "quote": "“Usually we walk around constantly believing ourselves. \"I'm okay\" we say. \"I'm alright\". But sometimes the truth arrives on you and you can't get it off. That's when you realize that sometimes it isn't even an answer--it's a question. Even now, I wonder how much of my life is convinced.”"
+      },
+      {
+        "by": "Albert Einstein",
+        "quote": "“Gravitation is not responsible for people falling in love.”"
+      },
+      {
+        "by": "Shel Silverstein",
+        "quote": "“Listen to the mustn'ts, child. Listen to the don'ts. Listen to the shouldn'ts, the impossibles, the won'ts. Listen to the never haves, then listen close to me... Anything can happen, child. Anything can be.”"
+      },
+      {
+        "by": "Marcel Proust",
+        "quote": "“The real voyage of discovery consists not in seeking new landscapes, but in having new eyes.”"
+      },
+      {
+        "by": "Friedrich Nietzsche",
+        "quote": "“Sometimes people don't want to hear the truth because they don't want their illusions destroyed.”"
+      },
+      {
+        "by": "Terry Pratchett,",
+        "quote": "“It is said that your life flashes before your eyes just before you die. That is true, it's called Life.”"
+      },
+      {
+        "by": "Bertrand Russell",
+        "quote": "“There are two motives for reading a book; one, that you enjoy it; the other, that you can boast about it.”"
+      },
+      {
+        "by": "Winston Churchill",
+        "quote": "“You have enemies? Good. That means you've stood up for something, sometime in your life.”"
+      },
+      {
+        "by": "J.R.R. Tolkien,",
+        "quote": "“Not all those who wander are lost.”"
+      },
+      {
+        "by": "Roy T. Bennett,",
+        "quote": "“More smiling, less worrying. More compassion, less judgment. More blessed, less stressed. More love, less hate.”"
+      },
+      {
+        "by": "Albert Einstein",
+        "quote": "“Anyone who has never made a mistake has never tried anything new.”"
+      },
+      {
+        "by": "Oscar Wilde",
+        "quote": "“A cynic is a man who knows the price of everything, and the value of nothing.”"
+      },
+      {
+        "by": "Barbara Kingsolver,",
+        "quote": "“The very least you can do in your life is figure out what you hope for. And the most you can do is live inside that hope. Not admire it from a distance but live right in it, under its roof.”"
+      },
+      {
+        "by": "Mother Teresa",
+        "quote": "“Kind words can be short and easy to speak, but their echoes are truly endless.”"
+      },
+      {
+        "by": "J.M. Barrie,",
+        "quote": "“All the world is made of faith, and trust, and pixie dust.”"
+      },
+      {
+        "by": "Charles Bukowski,",
+        "quote": "“My ambition is handicapped by laziness”"
+      },
+      {
+        "by": "Edward Albee",
+        "quote": "“You're alive only once, as far as we know, and what could be worse than getting to the end of your life and realizing you hadn't lived it?”"
+      },
+      {
+        "by": "John Green",
+        "quote": "“Saying 'I notice you're a nerd' is like saying, 'Hey, I notice that you'd rather be intelligent than be stupid, that you'd rather be thoughtful than be vapid, that you believe that there are things that matter more than the arrest record of Lindsay Lohan. Why is that?' In fact, it seems to me that most contemporary insults are pretty lame. Even 'lame' is kind of lame. Saying 'You're lame' is like saying 'You walk with a limp.' Yeah, whatever, so does 50 Cent, and he's done all right for himself.”"
+      },
+      {
+        "by": "Patrick Rothfuss,",
+        "quote": "“It's the questions we can't answer that teach us the most. They teach us how to think. If you give a man an answer, all he gains is a little fact. But give him a question and he'll look for his own answers.”"
+      },
+      {
+        "by": "Socrates",
+        "quote": "“The only true wisdom is in knowing you know nothing.”"
+      },
+      {
+        "by": "Carl Sagan,",
+        "quote": "“Look again at that dot. That's here. That's home. That's us. On it everyone you love, everyone you know, everyone you ever heard of, every human being who ever was, lived out their lives. The aggregate of our joy and suffering, thousands of confident religions, ideologies, and economic doctrines, every hunter and forager, every hero and coward, every creator and destroyer of civilization, every king and peasant, every young couple in love, every mother and father, hopeful child, inventor and explorer, every teacher of morals, every corrupt politician, every \"superstar,\" every \"supreme leader,\" every saint and sinner in the history of our species lived there-on a mote of dust suspended in a sunbeam.The Earth is a very small stage in a vast cosmic arena. Think of the endless cruelties visited by the inhabitants of one corner of this pixel on the scarcely distinguishable inhabitants of some other corner, how frequent their misunderstandings, how eager they are to kill one another, how fervent their hatreds. Think of the rivers of blood spilled by all those generals and emperors so that, in glory and triumph, they could become the momentary masters of a fraction of a dot.Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light. Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.The Earth is the only world known so far to harbor life. There is nowhere else, at least in the near future, to which our species could migrate. Visit, yes. Settle, not yet. Like it or not, for the moment the Earth is where we make our stand.It has been said that astronomy is a humbling and character-building experience. There is perhaps no better demonstration of the folly of human conceits than this distant image of our tiny world. To me, it underscores our responsibility to deal more kindly with one another, and to preserve and cherish the pale blue dot, the only home we've ever known.”"
+      },
+      {
+        "by": "Marilyn Monroe",
+        "quote": "“We are all born sexual creatures,thank God, but it's a pity so many people despise and crush this natural gift.”"
+      },
+      {
+        "by": "Suzanne Collins,",
+        "quote": "“Finnick?\" I say, \"Maybe some pants?\"He looks down at his legs as if noticing his outfit for the first time. Then he whips off his hospital gown leaving him in just his underwear. \"Why? Do you find this\" -- he strikes a ridiculously provocative pose -- \"distracting?\"I laugh. Boggs looks embarrassed and Finnick looks more like the guy I met at the Quarter Quell”"
+      },
+      {
+        "by": "Cassandra Clare,",
+        "quote": "“We came to see Jace. Is he alright?\"\"I don't know,\" Magnus said. \"Does he normally just lie on the floor like that without moving?”"
+      },
+      {
+        "by": "Douglas Adams,",
+        "quote": "“For instance, on the planet Earth, man had always assumed that he was more intelligent than dolphins because he had achieved so much—the wheel, New York, wars and so on—whilst all the dolphins had ever done was muck about in the water having a good time. But conversely, the dolphins had always believed that they were far more intelligent than man—for precisely the same reasons.”"
+      },
+      {
+        "by": "Cassandra Clare,",
+        "quote": "“Have you fallen in love with the wrong person yet?'Jace said, \"Unfortunately, Lady of the Haven, my one true love remains myself.\"...\"At least,\" she said, \"you don't have to worry about rejection, Jace Wayland.\"\"Not necessarily. I turn myself down occasionally, just to keep it interesting.”"
+      },
+      {
+        "by": "Katherine Mansfield",
+        "quote": "“The mind I love must have wild places.”"
+      },
+      {
+        "by": "Milan Kundera,",
+        "quote": "“When the heart speaks, the mind finds it indecent to object.”"
+      },
+      {
+        "by": "Alysha Speer",
+        "quote": "“Laugh, even when you feel too sick or too worn out or tired. Smile, even when you're trying not to cry and the tears are blurring your vision. Sing, even when people stare at you and tell you your voice is crappy. Trust, even when your heart begs you not to. Twirl, even when your mind makes no sense of what you see. Frolick, even when you are made fun of. Kiss, even when others are watching. Sleep, even when you're afraid of what the dreams might bring. Run, even when it feels like you can't run any more.And, always, remember, even when the memories pinch your heart. Because the pain of all your experience is what makes you the person you are now. And without your experience---you are an empty page, a blank notebook, a missing lyric. What makes you brave is your willingness to live through your terrible life and hold your head up high the next day. So don't live life in fear. Because you are stronger now, after all the crap has happened, than you ever were back before it started.”"
+      },
+      {
+        "by": "David Foster Wallace",
+        "quote": "“The so-called ‘psychotically depressed’ person who tries to kill herself doesn’t do so out of quote ‘hopelessness’ or any abstract conviction that life’s assets and debits do not square. And surely not because death seems suddenly appealing. The person in whom Its invisible agony reaches a certain unendurable level will kill herself the same way a trapped person will eventually jump from the window of a burning high-rise. Make no mistake about people who leap from burning windows. Their terror of falling from a great height is still just as great as it would be for you or me standing speculatively at the same window just checking out the view; i.e. the fear of falling remains a constant. The variable here is the other terror, the fire’s flames: when the flames get close enough, falling to death becomes the slightly less terrible of two terrors. It’s not desiring the fall; it’s terror of the flames. And yet nobody down on the sidewalk, looking up and yelling ‘Don’t!’ and ‘Hang on!’, can understand the jump. Not really. You’d have to have personally been trapped and felt flames to really understand a terror way beyond falling.”"
+      },
+      {
+        "by": "Mitch Albom,",
+        "quote": "“So many people walk around with a meaningless life. They seem half-asleep, even when they're busy doing things they think are important. This is because they're chasing the wrong things. The way you get meaning into your life is to devote yourself to loving others, devote yourself to your community around you, and devote yourself to creating something that gives you purpose and meaning.”"
+      },
+      {
+        "by": "Voltaire",
+        "quote": "“Judge a man by his questions rather than by his answers.”"
+      },
+      {
+        "by": "Keri Hulme,",
+        "quote": "“You want to know about anybody? See what books they read, and how they've been read...”"
+      },
+      {
+        "by": "Mark Twain",
+        "quote": "“God created war so that Americans would learn geography.”"
+      },
+      {
+        "by": "L. M. Montgomery,",
+        "quote": "“I'm so glad I live in a world where there are Octobers.”"
+      },
+      {
+        "by": "Jonathan Swift",
+        "quote": "“May you live every day of your life.”"
+      },
+      {
+        "by": "J.R.R. Tolkien",
+        "quote": "“I sit beside the fire and think Of all that I have seenOf meadow flowers and butterfliesIn summers that have beenOf yellow leaves and gossamerIn autumns that there wereWith morning mist and silver sunAnd wind upon my hairI sit beside the fire and thinkOf how the world will beWhen winter comes without a spring That I shall ever seeFor still there are so many thingsThat I have never seenIn every wood in every springThere is a different greenI sit beside the fire and thinkOf people long agoAnd people that will see a worldThat I shall never knowBut all the while I sit and thinkOf times there were beforeI listen for returning feet And voices at the door”"
+      },
+      {
+        "by": "Sarah J. Maas,",
+        "quote": "“No. I can survive well enough on my own— if given the proper reading material.”"
+      },
+      {
+        "by": "Terry Pratchett,",
+        "quote": "“Five exclamation marks, the sure sign of an insane mind.”"
+      },
+      {
+        "by": "Abraham Lincoln",
+        "quote": "“America will never be destroyed from the outside. If we falter and lose our freedoms, it will be because we destroyed ourselves.”"
+      },
+      {
+        "by": "Nicole Krauss,",
+        "quote": "“When will you learn that there isn't a word for everything?”"
+      },
+      {
+        "by": "Mother Teresa",
+        "quote": "“Every time you smile at someone, it is an action of love, a gift to that person, a beautiful thing.”"
+      },
+      {
+        "by": "George R.R. Martin",
+        "quote": "“The best fantasy is written in the language of dreams. It is alive as dreams are alive, more real than real ... for a moment at least ... that long magic moment before we wake. Fantasy is silver and scarlet, indigo and azure, obsidian veined with gold and lapis lazuli. Reality is plywood and plastic, done up in mud brown and olive drab. Fantasy tastes of habaneros and honey, cinnamon and cloves, rare red meat and wines as sweet as summer. Reality is beans and tofu, and ashes at the end. Reality is the strip malls of Burbank, the smokestacks of Cleveland, a parking garage in Newark. Fantasy is the towers of Minas Tirith, the ancient stones of Gormenghast, the halls of Camelot. Fantasy flies on the wings of Icarus, reality on Southwest Airlines. Why do our dreams become so much smaller when they finally come true? We read fantasy to find the colors again, I think. To taste strong spices and hear the songs the sirens sang. There is something old and true in fantasy that speaks to something deep within us, to the child who dreamt that one day he would hunt the forests of the night, and feast beneath the hollow hills, and find a love to last forever somewhere south of Oz and north of Shangri-La. They can keep their heaven. When I die, I'd sooner go to middle Earth.”"
+      },
+      {
+        "by": "Paulo Coelho,",
+        "quote": "“So, I love you because the entire universe conspired to help me find you.”"
+      },
+      {
+        "by": "Desmond Tutu",
+        "quote": "“Do your little bit of good where you are; it's those little bits of good put together that overwhelm the world.”"
+      },
+      {
+        "by": "Robert Frost",
+        "quote": "“Forgive, O Lord, my little jokes on TheeAnd I'll forgive Thy great big one on me.”"
+      },
+      {
+        "by": "Dylan Thomas,",
+        "quote": "“Do not go gentle into that good night.Rage, rage against the dying of the light.”"
+      },
+      {
+        "by": "Veronica Roth,",
+        "quote": "“It must require bravery to be honest all the time.”"
+      },
+      {
+        "by": "Sylvia Plath,",
+        "quote": "“If you expect nothing from somebody you are never disappointed.”"
+      },
+      {
+        "by": "Martin Luther King Jr.",
+        "quote": "“Intelligence plus character-that is the goal of true education.”"
+      },
+      {
+        "by": "Martin Luther King Jr.,",
+        "quote": "“There comes a time when one must take a position that is neither safe, nor politic, nor popular, but he must take it because conscience tells him it is right.”"
+      },
+      {
+        "by": "Alexandre Dumas-fils",
+        "quote": "“The difference between genius and stupidity is: genius has its limits.”"
+      },
+      {
+        "by": "Cassandra Clare,",
+        "quote": "“Did you ever think that in a past life Alec was an old woman with ninety cats who was always yelling at the neighborhood kids to get off her lawn? Because I do,”"
+      },
+      {
+        "by": "Charles bukowski",
+        "quote": "“there is a place in the heart thatwill never be filleda spaceand even during thebest momentsandthe greatest timestimeswe will know itwe will know itmore thaneverthere is a place in the heart thatwill never be filledandwe will waitandwaitin that space.”"
+      },
+      {
+        "by": "Marilyn Monroe",
+        "quote": "“I restore myself when I'm alone.”"
+      },
+      {
+        "by": "Thomas Szasz",
+        "quote": "“Two wrongs don't make a right, but they make a good excuse.”"
+      },
+      {
+        "by": "Neil Jordan,",
+        "quote": "“Is it fair to have given us the memory of what was and the desire of what could be when we must suffer what is?”"
+      },
+      {
+        "by": "George Burns",
+        "quote": "“Happiness is having a large, loving, caring, close-knit family in another city.”"
+      },
+      {
+        "by": "J.K. Rowling,",
+        "quote": "“The truth.\" Dumbledore sighed. \"It is a beautiful and terrible thing, and should therefore be treated with great caution.”"
+      },
+      {
+        "by": "Cassandra Clare,",
+        "quote": "“I'll just have them change the entry in the demonology textbook from 'almost extinct' to 'not extinct enough for Alec. He prefers his monsters really, really extinct.' Will that make you happy?”"
+      },
+      {
+        "by": "Marilyn Monroe",
+        "quote": "“I don't mind making jokes, but I don't want to look like one.”"
+      },
+      {
+        "by": "Gillian Anderson",
+        "quote": "“Well, it seems to me that the best relationships - the ones that last - are frequently the ones that are rooted in friendship. You know, one day you look at the person and you see something more than you did the night before. Like a switch has been flicked somewhere. And the person who was just a friend is... suddenly the only person you can ever imagine yourself with.”"
+      },
+      {
+        "by": "J.K. Rowling,",
+        "quote": "“Why were you lurking under our window?\"\"Yes - yes, good point, Petunia! What were you doing under our windows, boy?\"\"Listening to the news,\" said Harry in a resigned voice.His aunt and uncle exchanged looks of outrage.\"Listening to the news! Again?\"\"Well, it changes every day, you see,\" said Harry.”"
+      },
+      {
+        "by": "Lemony Snicket,",
+        "quote": "“If you are allergic to a thing, it is best not to put that thing in your mouth, particularly if the thing is cats.”"
+      },
+      {
+        "by": "C.S. Lewis,",
+        "quote": "“Friendship ... is born at the moment when one man says to another \"What! You too? I thought that no one but myself . . .”"
+      },
+      {
+        "by": "George R.R. Martin,",
+        "quote": "“The man who passes the sentence should swing the sword. If you would take a man's life, you owe it to him to look into his eyes and hear his final words. And if you cannot bear to do that, then perhaps the man does not deserve to die.”"
+      },
+      {
+        "by": "Allen Saunders",
+        "quote": "“Life is what happens to us while we are making other plans.”"
+      },
+      {
+        "by": "Yann Martel,",
+        "quote": "“It is true that those we meet can change us, sometimes so profoundly that we are not the same afterwards, even unto our names.”"
+      },
+      {
+        "by": "Paulo Coelho",
+        "quote": "“We can never judge the lives of others, because each person knows only their own pain and renunciation. It's one thing to feel that you are on the right path, but it's another to think that yours is the only path.”"
+      },
+      {
+        "by": "Mark A. Cooper,",
+        "quote": "“Life has no remote....get up and change it yourself!”"
+      },
+      {
+        "by": "Winston S. Churchill",
+        "quote": "“My tastes are simple: I am easily satisfied with the best.”"
+      },
+      {
+        "by": "George Bernard Shaw",
+        "quote": "“If you want to tell people the truth, make them laugh, otherwise they'll kill you.”"
+      },
+      {
+        "by": "Ralph Waldo Emerson",
+        "quote": "“It is not the length of life, but the depth.”"
+      },
+      {
+        "by": "Roy T. Bennett,",
+        "quote": "“Believe in your infinite potential. Your only limitations are those you set upon yourself.”"
+      },
+      {
+        "by": "Alfred Tennyson",
+        "quote": "“If I had a flower for every time I thought of you...I could walk through my garden forever.”"
+      },
+      {
+        "by": "Stephanie Perkins,",
+        "quote": "“For the two of us, home isn't a place. It is a person. And we are finally home.”"
+      },
+      {
+        "by": "Margaret Atwood,",
+        "quote": "“Another belief of mine: that everyone else my age is an adult, whereas I am merely in disguise.”"
+      },
+      {
+        "by": "Suzanne Collins,",
+        "quote": "“You're a painter. You're a baker. You like to sleep with the windows open. You never take sugar in your tea. And you always double-knot your shoelaces.”"
+      },
+      {
+        "by": "Cassandra Clare,",
+        "quote": "“I figured all your classes were stuff like Slaughter 101 and Beheading for Beginners.\"Jace flipped a page. \"Very funny, Fray.”"
+      },
+      {
+        "by": "John Green,",
+        "quote": "“He was gone, and I did not have time to tell him what I had just now realized: that I forgave him, and that she forgave us, and that we had to forgive to survive in the labyrinth. There were so many of us who would have to live with things done and things left undone that day. Things that did not go right, things that seemed okay at the time because we could not see the future. If only we could see the endless string of consequences that result from our smallest actions. But we can’t know better until knowing better is useless. And as I walked back to give Takumi’s note to the Colonel, I saw that I would never know. I would never know her well enough to know her thoughts in those last minutes, would never know if she left us on purpose. But the not-knowing would not keep me from caring, and I would always love Alaska Young, my crooked neighbor, with all my crooked heart.”"
+      },
+      {
+        "by": "François de La Rochefoucauld",
+        "quote": "“No persons are more frequently wrong, than those who will not admit they are wrong.”"
+      },
+      {
+        "by": "Roy T. Bennett",
+        "quote": "“You never change your life until you step out of your comfort zone; change begins at the end of your comfort zone.”"
+      },
+      {
+        "by": "J.R.R. Tolkien,",
+        "quote": "“All that is gold does not glitter,Not all those who wander are lost;The old that is strong does not wither,Deep roots are not reached by the frost.From the ashes a fire shall be woken,A light from the shadows shall spring;Renewed shall be blade that was broken,The crownless again shall be king.”"
+      },
+      {
+        "by": "Paulo Coelho",
+        "quote": "“Don't waste your time with explanations: people only hear what they want to hear.”"
+      },
+      {
+        "by": "George Carlin",
+        "quote": "“If you try to fail, and succeed, which have you done?”"
+      },
+      {
+        "by": "Emily Jane Brontë ,",
+        "quote": "“If all else perished, and he remained, I should still continue to be; and if all else remained, and he were annihilated, the universe would turn to a mighty stranger.”"
+      },
+      {
+        "by": "Margaret Mead",
+        "quote": "“Children must be taught how to think, not what to think.”"
+      },
+      {
+        "by": "J. D. Salinger,",
+        "quote": "“Anyway, I keep picturing all these little kids playing some game in this big field of rye and all. Thousands of little kids, and nobody's around - nobody big, I mean - except me. And I'm standing on the edge of some crazy cliff. What I have to do, I have to catch everybody if they start to go over the cliff - I mean if they're running and they don't look where they're going I have to come out from somewhere and catch them. That's all I do all day. I'd just be the catcher in the rye and all. I know it's crazy, but that's the only thing I'd really like to be.”"
+      },
+      {
+        "by": "George Orwell",
+        "quote": "“In a time of deceit telling the truth is a revolutionary act.”"
+      },
+      {
+        "by": "Oscar Wilde",
+        "quote": "“A man's face is his autobiography. A woman's face is her work of fiction.”"
+      },
+      {
+        "by": "Frederick Douglass",
+        "quote": "“Once you learn to read, you will be forever free.”"
+      },
+      {
+        "by": "John Green,",
+        "quote": "“I’m on a roller coaster that only goes up, my friend.”"
+      },
+      {
+        "by": "Dorothy Parker",
+        "quote": "“Beauty is only skin deep, but ugly goes clean to the bone.”"
+      },
+      {
+        "by": "David Foster Wallace,",
+        "quote": "“Everybody is identical in their secret unspoken belief that way deep down they are different from everyone else.”"
+      },
+      {
+        "by": "Jojo Moyes,",
+        "quote": "“Push yourself. Don't Settle. Just live well. Just LIVE.”"
+      },
+      {
+        "by": "J.R.R. Tolkien,",
+        "quote": "“The Road goes ever on and onDown from the door where it began.Now far ahead the Road has gone,And I must follow, if I can,Pursuing it with eager feet,Until it joins some larger wayWhere many paths and errands meet.And whither then? I cannot say”"
+      },
+      {
+        "by": "Anne Rice",
+        "quote": "“You do have a story inside you; it lies articulate and waiting to be written — behind your silence and your suffering.”"
+      },
+      {
+        "by": "George Carlin",
+        "quote": "“May the forces of evil become confused on the way to your house.”"
+      },
+      {
+        "by": "Erin Morgenstern,",
+        "quote": "“The finest of pleasures are always the unexpected ones.”"
+      },
+      {
+        "by": "Nicholas Sparks,",
+        "quote": "“Mom says it's because she has PMS.Do you even know what that means?\"I'm not a little kid anymore. It means pissed-at- men syndrome”"
+      },
+      {
+        "by": "William Shakespeare,",
+        "quote": "“Love all, trust a few, do wrong to none.”"
+      },
+      {
+        "by": "Ralph Waldo Emerson",
+        "quote": "“Whatever you do, you need courage. Whatever course you decide upon, there is always someone to tell you that you are wrong. There are always difficulties arising that tempt you to believe your critics are right. To map out a course of action and follow it to an end requires some of the same courage that a soldier needs. Peace has its victories, but it takes brave men and women to win them.”"
+      },
+      {
+        "by": "Alan Moore,",
+        "quote": "“Behind this mask there is more than just flesh. Beneath this mask there is an idea... and ideas are bulletproof.”"
+      },
+      {
+        "by": "G.K. Chesterton",
+        "quote": "“Literature is a luxury; fiction is a necessity.”"
+      },
+      {
+        "by": "Paulo Coelho",
+        "quote": "“We can never judge the lives of others, because each person knows only their own pain and renunciation. It's one thing to feel that you are on the right path, but it's another to think that yours is the only path.”"
+      },
+      {
+        "by": "Neil Gaiman,",
+        "quote": "“She seems so cool, so focused, so quiet, yet her eyes remain fixed upon the horizon. You think you know all there is to know about her immediately upon meeting her, but everything you think you know is wrong. Passion flows through her like a river of blood. She only looked away for a moment, and the mask slipped, and you fell. All your tomorrows start here.”"
+      },
+      {
+        "by": "Cornelia Funke,",
+        "quote": "“Isn't it odd how much fatter a book gets when you've read it several times?\" Mo had said...\"As if something were left between the pages every time you read it. Feelings, thoughts, sounds, smells...and then, when you look at the book again many years later, you find yourself there, too, a slightly younger self, slightly different, as if the book had preserved you like a pressed flower...both strange and familiar.”"
+      },
+      {
+        "by": "Anne Frank",
+        "quote": "“Parents can only give good advice or put them on the right paths, but the final forming of a person's character lies in their own hands.”"
+      },
+      {
+        "by": "Lorraine Hansberry",
+        "quote": "“The thing that makes you exceptional, if you are at all, is inevitably that which must also make you lonely.”"
+      },
+      {
+        "by": "Mahatma Gandhi",
+        "quote": "“Be the change that you wish to see in the world.”"
+      },
+      {
+        "by": "Zig Ziglar",
+        "quote": "“Lack of direction, not lack of time, is the problem. We all have twenty-four hour days.”"
+      },
+      {
+        "by": "Rainer Maria Rilke",
+        "quote": "“Be patient toward all that is unsolved in your heart and try to love the questions themselves, like locked rooms and like books that are now written in a very foreign tongue. Do not now seek the answers, which cannot be given you because you would not be able to live them. And the point is, to live everything. Live the questions now. Perhaps you will then gradually, without noticing it, live along some distant day into the answer.”"
+      },
+      {
+        "by": "Moliere",
+        "quote": "“Trees that are slow to grow bear the best fruit.”"
+      }
+    ],
+    "en": []
+  }
+}

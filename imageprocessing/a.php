@@ -50,6 +50,6 @@ $textBox->setSize(20);
 $textBox->setMargin(2);
 $img->setTextBox($textBox, ($img->getWidth() - $textBox->getWidth()) / 2, $img->getHeight() * (5 / 7));
 
-//$img->dump();
-$img->convertTo(IMAGETYPE_PNG);
-$img->save("./newImage.jpg", IMAGETYPE_PNG);
+$img->dump();
+// $img->convertTo(IMAGETYPE_PNG);
+// $img->save("./newImage.jpg", IMAGETYPE_PNG);
