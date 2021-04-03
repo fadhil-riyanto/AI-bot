@@ -25,6 +25,27 @@ function waktu_aktif()
 
 	return array($days, $hours, $min, $sec);
 }
+function username_resolver($input)
+{
+	global $host_server;
+	$regexp = '/\@[a-zA-Z0-9_]+/';
+	preg_match_all($regexp, $input, $hasil);
+	$username = $hasil[0][0];
+
+	$checkat = substr($username, 0, 1);
+	if ($checkat == '@') {
+		$replaceusername = str_replace('@', '', $username);
+	} else {
+		$replaceusername = $username;
+	}
+
+	$ch = curl_init();
+	curl_setopt($ch, CURLOPT_URL, $host_server . '/madeline/a.php?u=' . $replaceusername);
+	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+	$output = curl_exec($ch);
+	curl_close($ch);
+	return $output;
+}
 function detect_grup()
 {
 	global $chat_id;
@@ -111,17 +132,15 @@ function tracking_user($userID)
 	}
 }
 function tracking_user_forwaktu($userID)
-	{
-		global $useridTime;
-		$file = __DIR__ . "/json_data/user_delay_time.json";
-		$anggota = file_get_contents($file);
-		$data = json_decode($anggota, true);
-		foreach ($data as $d) {
-			if ($d['userid'] == $userID) {
-				$useridTime = $d['userid'];
-				return true;
-			}
+{
+	global $useridTime;
+	$file = __DIR__ . "/json_data/user_delay_time.json";
+	$anggota = file_get_contents($file);
+	$data = json_decode($anggota, true);
+	foreach ($data as $d) {
+		if ($d['userid'] == $userID) {
+			$useridTime = $d['userid'];
+			return true;
 		}
 	}
-	
-	
+}

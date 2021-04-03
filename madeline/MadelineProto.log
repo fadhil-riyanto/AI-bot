@@ -150,3 +150,87 @@ Serialization:  	Shared lock acquired, deserializing...
 [02-Apr-2021 12:41:56 UTC] Enabled PHP logging
 [02-Apr-2021 12:41:56 UTC] Enabled PHP logging
 [02-Apr-2021 12:41:57 UTC] Enabled PHP logging
+[03-Apr-2021 16:03:03 UTC] Enabled PHP logging
+[03-Apr-2021 16:03:03 UTC] Enabled PHP logging
+Logger:         	MadelineProto
+Logger:         	Copyright (C) 2016-2020 Daniil Gentili
+Logger:         	Licensed under AGPLv3
+Logger:         	https://github.com/danog/MadelineProto
+Serialization:  	Waiting for shared lock of serialization lockfile...
+Serialization:  	Shared lock acquired, deserializing...
+[03-Apr-2021 16:03:03 UTC] Enabled PHP logging
+[03-Apr-2021 16:03:03 UTC] Enabled PHP logging
+[03-Apr-2021 16:03:06 UTC] Enabled PHP logging
+Exception:      	Telegram returned an RPC error: The provided username is not valid (400) (USERNAME_INVALID), caused by phar://C:/bot telegram/madeline/madeline.phar/vendor/danog/madelineproto/src/danog/MadelineProto/MTProtoSession/ResponseHandler.php:462<br>
+Revision: 979d7575fc4bdee37c10b3d17fc2be90c3fed88c (AN UPDATE IS REQUIRED)<br>
+<br>
+TL trace:<br>
+['contacts.resolveUsername']<br><br>
+CallHandler.php(53):	methodCallAsyncRead("contacts.resolveUsername",{"username":"\/debug"},{"datacenter":5})<br><br>
+PeerHandler.php(1027):	methodCallAsyncRead("contacts.resolveUsername",{"username":"\/debug"},{"datacenter":5})<br><br>
+PeerHandler.php(591):	resolveUsername("\/debug")<br><br>
+TL.php(533):        	getInfo("\/debug")<br><br>
+While serializing:  	users.getUsers['id']['0']<br><br>
+Connection.php(419):	serializeMethod("users.getUsers",{"id":["\/debug"]})<br><br>
+CallHandler.php(176):	sendMessage({"apifactory":true,"datacenter":5,"_":"users.getUsers","type":"Vector<User>","contentRelated":true,"promise":{},"method":true,"unencrypted":false,"body":{"id":["\/debug"]}},true)<br><br>
+CallHandler.php(87):	methodCallAsyncWrite("users.getUsers",{"id":["\/debug"]},{"apifactory":true,"datacenter":5,"postpone":false})<br><br>
+CallHandler.php(53):	methodCallAsyncRead("users.getUsers",{"id":["\/debug"]},{"apifactory":true,"datacenter":5})<br><br>
+AbstractAPIFactory.php(173):	methodCallAsyncRead("users.getUsers",{"id":["\/debug"]},{"apifactory":true,"datacenter":5})<br><br>
+a.php(19):          	__call_async()<br><br>
+AbstractAPIFactory.php(176):	{closure}()<br><br>
+AbstractAPIFactory.php(176):	loop({},[])<br><br>
+__call_async()<br><br>
+<br><br>
+Previous TL trace:<br><br>
+['contacts.resolveUsername']<br><br>
+ResponseHandler.php(88):	handleResponse()<br><br>
+Driver.php(119):    	handleMessages("dy",null)<br><br>
+Driver.php(72):     	tick()<br><br>
+Loop.php(95):       	run()<br><br>
+Tools.php(305):     	run({})<br><br>
+AbstractAPIFactory.php(126):	wait({})<br><br>
+InternalDoc.php(5897):	__call("loop",[{},[]])<br><br>
+a.php(24):          	loop({})<br>
+
+[03-Apr-2021 16:08:15 UTC] Enabled PHP logging
+[03-Apr-2021 16:08:15 UTC] Enabled PHP logging
+Logger:         	MadelineProto
+Logger:         	Copyright (C) 2016-2020 Daniil Gentili
+Logger:         	Licensed under AGPLv3
+Logger:         	https://github.com/danog/MadelineProto
+Serialization:  	Waiting for shared lock of serialization lockfile...
+Serialization:  	Shared lock acquired, deserializing...
+[03-Apr-2021 16:08:15 UTC] Enabled PHP logging
+[03-Apr-2021 16:08:15 UTC] Enabled PHP logging
+[03-Apr-2021 16:08:17 UTC] Enabled PHP logging
+Exception:      	Telegram returned an RPC error: The provided username is not valid (400) (USERNAME_INVALID), caused by phar://C:/bot telegram/madeline/madeline.phar/vendor/danog/madelineproto/src/danog/MadelineProto/MTProtoSession/ResponseHandler.php:462<br>
+Revision: 979d7575fc4bdee37c10b3d17fc2be90c3fed88c (AN UPDATE IS REQUIRED)<br>
+<br>
+TL trace:<br>
+['contacts.resolveUsername']<br><br>
+CallHandler.php(53):	methodCallAsyncRead("contacts.resolveUsername",{"username":"\/debug"},{"datacenter":5})<br><br>
+PeerHandler.php(1027):	methodCallAsyncRead("contacts.resolveUsername",{"username":"\/debug"},{"datacenter":5})<br><br>
+PeerHandler.php(591):	resolveUsername("\/debug")<br><br>
+TL.php(533):        	getInfo("\/debug")<br><br>
+While serializing:  	users.getUsers['id']['0']<br><br>
+Connection.php(419):	serializeMethod("users.getUsers",{"id":["\/debug"]})<br><br>
+CallHandler.php(176):	sendMessage({"apifactory":true,"datacenter":5,"_":"users.getUsers","type":"Vector<User>","contentRelated":true,"promise":{},"method":true,"unencrypted":false,"body":{"id":["\/debug"]}},true)<br><br>
+CallHandler.php(87):	methodCallAsyncWrite("users.getUsers",{"id":["\/debug"]},{"apifactory":true,"datacenter":5,"postpone":false})<br><br>
+CallHandler.php(53):	methodCallAsyncRead("users.getUsers",{"id":["\/debug"]},{"apifactory":true,"datacenter":5})<br><br>
+AbstractAPIFactory.php(173):	methodCallAsyncRead("users.getUsers",{"id":["\/debug"]},{"apifactory":true,"datacenter":5})<br><br>
+a.php(19):          	__call_async()<br><br>
+AbstractAPIFactory.php(176):	{closure}()<br><br>
+AbstractAPIFactory.php(176):	loop({},[])<br><br>
+__call_async()<br><br>
+<br><br>
+Previous TL trace:<br><br>
+['contacts.resolveUsername']<br><br>
+ResponseHandler.php(88):	handleResponse()<br><br>
+Driver.php(119):    	handleMessages("ek",null)<br><br>
+Driver.php(72):     	tick()<br><br>
+Loop.php(95):       	run()<br><br>
+Tools.php(305):     	run({})<br><br>
+AbstractAPIFactory.php(126):	wait({})<br><br>
+InternalDoc.php(5897):	__call("loop",[{},[]])<br><br>
+a.php(24):          	loop({})<br>
+
