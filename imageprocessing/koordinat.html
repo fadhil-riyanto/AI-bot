@@ -1,0 +1,17 @@
+<script src='jquery.min.js'></script>
+
+<img src="http://localhost/imageprocessing/a.php" /><br />
+Position: <span id="info"></span>
+
+
+<script>
+$(document).ready(function(){
+    $('img').mousedown(function(e){
+        var offset = {
+            x: e.pageX - $(this).offset().left,
+            y: e.pageY - $(this).offset().top
+        }
+            $('#info').html('{'+offset.x+'; '+offset.y+'}');
+    });
+});
+</script>

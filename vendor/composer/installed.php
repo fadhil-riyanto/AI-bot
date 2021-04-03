@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => 'b89351759192574636c8e6d659b70e185db9e5dd',
+    'reference' => '3b13a6b5fd1f0b6d43eb25cc5a91dd8ae043e1e8',
     'name' => '__root__',
   ),
   'versions' => 
@@ -18,7 +18,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => 'b89351759192574636c8e6d659b70e185db9e5dd',
+      'reference' => '3b13a6b5fd1f0b6d43eb25cc5a91dd8ae043e1e8',
     ),
     'ammarfaizi2/brainly' => 
     array (
@@ -508,6 +508,15 @@
       array (
       ),
       'reference' => '03dbce1c7f1c9def315ad8ef52e1f5c0a806d6ed',
+    ),
+    'treinetic/imageartist' => 
+    array (
+      'pretty_version' => '1.0.1',
+      'version' => '1.0.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '483b966dca51eb809aeb048df460e26311c23db1',
     ),
     'zendframework/zend-diactoros' => 
     array (

@@ -128,7 +128,7 @@ try {
 	$stiker_hapus2 = $data_stiker['message']['sticker']['thumb']['file_id']['file_unique_id'];
 	if (isset($stiker_hapus2)) {
 		if (
-			$stiker_hapus2 == 'AgADWAEAAmrOKEY'
+			$stiker_hapus2 == 'AgADWAEAAmrOKEY' || $stiker_hapus2 == 'AQADGYcvc3QAA3xJAAI' 
 		) {
 			$arr = array('chat_id' => $chat_id, 'message_id' => $message_id);
 			$telegram->deleteMessage($arr);
@@ -138,7 +138,7 @@ try {
 	if (isset($stiker_hapus)) {
 		if (
 			$stiker_hapus == 'AgADCQADm23LJA' || $stiker_hapus == 'AgADZQEAAoGHIEY' || $stiker_hapus == 'AgADAwEAAt84IUY'
-			||  $stiker_hapus == 'AgADZQEAAoGHIEY'
+			||  $stiker_hapus == 'AgADZQEAAoGHIEY'|| $stiker_hapus == 'AgADZQEAAoGHIEY'||$stiker_hapus == 'AgADKwIAAlzJMFc'
 		) {
 			$arr = array('chat_id' => $chat_id, 'message_id' => $message_id);
 			$telegram->deleteMessage($arr);
@@ -544,6 +544,9 @@ try {
 		exit;
 	} elseif ('/help_admin_i' == $adanParse[0] || '/help_admin_i' . USERNAME_BOT . '' == $adanParse[0]) {
 		require __DIR__ . '/admin_help/help_admin_i.php';
+		exit;
+	} elseif ('/me' == $adanParse[0] || '/me' . USERNAME_BOT . '' == $adanParse[0]) {
+		require __DIR__ . '/command/me.php';
 		exit;
 	} elseif ('/adminlist' == $adanParse[0] || '/adminlist' . USERNAME_BOT . '' == $adanParse[0]) {
 		require __DIR__ . '/command/adminlist.php';

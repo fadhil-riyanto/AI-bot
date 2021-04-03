@@ -107,6 +107,10 @@ class ComposerStaticInit37458c04d77e08a184290ff46a23e733
             'Zend\\Stdlib\\' => 12,
             'Zend\\Escaper\\' => 13,
         ),
+        'T' => 
+        array (
+            'Treinetic\\ImageArtist\\' => 22,
+        ),
         'S' => 
         array (
             'Symfony\\Polyfill\\Php80\\' => 23,
@@ -199,6 +203,10 @@ class ComposerStaticInit37458c04d77e08a184290ff46a23e733
         'Zend\\Escaper\\' => 
         array (
             0 => __DIR__ . '/..' . '/zendframework/zend-escaper/src',
+        ),
+        'Treinetic\\ImageArtist\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/treinetic/imageartist/src',
         ),
         'Symfony\\Polyfill\\Php80\\' => 
         array (

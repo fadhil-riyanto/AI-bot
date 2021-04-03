@@ -21,6 +21,8 @@
         "http-interop/http-factory-guzzle": "^1.0",
         "laminas/laminas-diactoros": "^2.5",
         "spatie/async": "^1.5",
-        "pecee/simple-router": "^4.3"
+        "pecee/simple-router": "^4.3",
+        "claviska/simpleimage": "^3.6",
+        "treinetic/imageartist": "^1.0"
     }
 }
