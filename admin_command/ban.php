@@ -32,7 +32,7 @@ if ($noreply == null) {
 
     $telegram->kickChatMember($param_promote);
 
-    $reply = $unamepromote . ', dibanned!!.';
+    $reply = 'user telah dibanned!!.';
     $content = array('chat_id' => $chat_id, 'text' => $reply, 'parse_mode' => 'html', 'reply_to_message_id' => $message_id, 'disable_web_page_preview' => true);
     $telegram->sendMessage($content);
 
@@ -44,7 +44,7 @@ if ($noreply == null) {
     //unban lagi
     $param_promote = array(
         'chat_id' => $chat_id,
-        'user_id' => $promote_uid
+        'user_id' => $noreply
     );
     $telegram->unbanChatMember($param_promote);
 }
