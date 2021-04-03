@@ -44,7 +44,13 @@ function username_resolver($input)
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 	$output = curl_exec($ch);
 	curl_close($ch);
-	return $output;
+
+	$hehe = json_decode($output);
+	$arr = array(
+		'id' => $hehe[0]->id,
+		'verified' => $hehe[0]->verified
+	);
+	return $arr;
 }
 function detect_grup()
 {
