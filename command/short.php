@@ -9,7 +9,7 @@ if ($adanParse_plain_nokarakter[1] != null) {
 				$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
 				$telegram->sendMessage($content);
 			} elseif ($json_shorturl["url"]["status"] == 1) {
-				$reply = 'Hai ' . $username . PHP_EOL . PHP_EOL . 'Maaf, link telah sebelumnya';
+				$reply = 'Hai ' . $username . PHP_EOL . PHP_EOL . 'Maaf, link telah sebelumnya dipendekkan';
 				$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
 				$telegram->sendMessage($content);
 			} elseif ($json_shorturl["url"]["status"] == 2) {
