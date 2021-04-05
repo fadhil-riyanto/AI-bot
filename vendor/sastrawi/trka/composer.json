@@ -1,0 +1,50 @@
+{
+    "name": "sastrawi/trka",
+    "type": "library",
+    "description": "PHP library that guess entity in Bahasa Indonesia.",
+    "keywords": [
+        "named entity detector",
+        "indonesian",
+        "bahasa",
+        "indonesia",
+        "nlp",
+        "natural language processing"
+    ],
+    "homepage": "https://github.com/sastrawi/trka",
+    "authors": [
+        {
+            "name": "Andy Librian",
+            "email": "andylibrian@gmail.com",
+            "homepage": "http://andylibrian.pro",
+            "role": "Lead Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3",
+        "sastrawi/string-span": "~1",
+        "zendframework/zend-validator": "~2",
+        "zendframework/zend-uri": "~2"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "~1",
+        "behat/behat": "~3",
+        "phpunit/phpunit": "~4"
+    },
+    "prefer-stable": true,
+    "autoload": {
+        "psr-0": {
+            "Sastrawi\\Trka": "src"
+        }
+    },
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://github.com/sastrawi/trka/issues",
+        "source": "https://github.com/sastrawi/trka"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        }
+    }
+}

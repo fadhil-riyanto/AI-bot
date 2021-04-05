@@ -1,0 +1,44 @@
+{
+    "name": "sastrawi/string-span",
+    "type": "library",
+    "description": "String span utility.",
+    "keywords": [
+        "string",
+        "string span",
+        "nlp",
+        "natural language processing"
+    ],
+    "homepage": "https://github.com/sastrawi/string-span",
+    "authors": [
+        {
+            "name": "Andy Librian",
+            "email": "andylibrian@gmail.com",
+            "homepage": "http://andylibrian.pro",
+            "role": "Lead Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "~1",
+        "phpunit/phpunit": "~4"
+    },
+    "autoload": {
+        "psr-0": {
+            "Sastrawi\\String\\Span": "src"
+        }
+    },
+    "license": "MIT",
+    "prefer-stable": true,
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://github.com/sastrawi/string-span/issues",
+        "source": "https://github.com/sastrawi/string-span"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
