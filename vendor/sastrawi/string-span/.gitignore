@@ -1,7 +1,0 @@
-build
-vendor
-composer.lock
-composer.phar
-phpunit.phar
-php-cs-fixer.phar
-cache.properties

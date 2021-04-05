@@ -1,6 +1,0 @@
-/vendor/
-*.lock
-*.tmp
-/test.php
-/brainly/
-/.phpintel/
