@@ -1,4 +1,5 @@
 <?php
+require __DIR__ . '/middleware.php';
 berita:
 $xmlparseTempo = simplexml_load_file('https://rss.tempo.co/nasional');
 $jsonTempo = json_encode($xmlparseTempo, JSON_PRETTY_PRINT);
@@ -32,5 +33,5 @@ if ($randomintberita == 1) {
 } elseif ($randomintberita == 0) {
     $reply = $reply_tempo;
 }
-header('Content-Type: application/json');
+
 echo json_encode($reply, JSON_PRETTY_PRINT);

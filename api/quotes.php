@@ -1,4 +1,5 @@
 <?php
+require __DIR__ . '/middleware.php';
 require __DIR__ . '/../vendor/autoload.php';
 
 use masokky\QuoteMaker;
@@ -13,7 +14,6 @@ if (isset($_GET['kata'])) {
             ->setQuoteFontSize(60)
             ->toScreen();
     } catch (Exception $e) {
-        header('Content-Type: application/json');
         echo json_encode(array(
             'error' => 'internal sistem'
         ), JSON_PRETTY_PRINT);

@@ -1,4 +1,5 @@
 <?php
+require __DIR__ . '/middleware.php';
 function themeddatas($string)
 {
     $string = strtolower($string);
@@ -77,7 +78,6 @@ function photo_oxy_class(array $data)
     $text1 = $data['text_1'];
     $text2 = $data['text_2'];
     if (strlen($text1) <= 3) {
-        header('Content-Type: application/json');
         echo json_encode(array(
             'error' => 'karakter dibawah 3'
         ), JSON_PRETTY_PRINT);
@@ -113,14 +113,14 @@ function photo_oxy_class(array $data)
         preg_match_all('@src="([^"]+)"@', $text, $match);
         //var_dump($match);
         if ($match[1][0] == '') {
-            header('Content-Type: application/json');
+
             echo json_encode(array(
                 'error' => 'internal sistem'
             ), JSON_PRETTY_PRINT);
             exit;
         }
         $urls = $baseurldata . $match[1][0];
-        header('Content-Type: application/json');
+
         echo json_encode(array(
             'error' => 'tidak',
             'image' => $urls

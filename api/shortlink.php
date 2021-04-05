@@ -1,4 +1,5 @@
 <?php
+require __DIR__ . '/middleware.php';
 require __DIR__ . '/../pengaturan/env.php';
 if (isset($_GET['query'])) {
     $br = $_GET['query'];
@@ -55,6 +56,6 @@ if (isset($_GET['query'])) {
             'url' => null
         );
     }
-    //header('Content-Type: application/json');
+
     echo json_encode($res, JSON_PRETTY_PRINT);
 }
