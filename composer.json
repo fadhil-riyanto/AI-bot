@@ -23,6 +23,7 @@
         "spatie/async": "^1.5",
         "pecee/simple-router": "^4.3",
         "claviska/simpleimage": "^3.6",
-        "treinetic/imageartist": "^1.0"
+        "treinetic/imageartist": "^1.0",
+        "yzalis/identicon": "^2.0"
     }
 }

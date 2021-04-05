@@ -154,6 +154,7 @@ class ComposerStaticInit37458c04d77e08a184290ff46a23e733
         'I' => 
         array (
             'Interop\\Container\\' => 18,
+            'Identicon\\' => 10,
         ),
         'H' => 
         array (
@@ -301,6 +302,10 @@ class ComposerStaticInit37458c04d77e08a184290ff46a23e733
         'Interop\\Container\\' => 
         array (
             0 => __DIR__ . '/..' . '/container-interop/container-interop/src/Interop/Container',
+        ),
+        'Identicon\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yzalis/identicon/src/Identicon',
         ),
         'Http\\Message\\' => 
         array (

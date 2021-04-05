@@ -29,7 +29,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => 'e1caf9f99d2ae4de2b48746f1f45af72e4396c1b',
+    'reference' => '53ab123923fed115233fca5a7d24a729a7215897',
     'name' => '__root__',
   ),
   'versions' => 
@@ -41,7 +41,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => 'e1caf9f99d2ae4de2b48746f1f45af72e4396c1b',
+      'reference' => '53ab123923fed115233fca5a7d24a729a7215897',
     ),
     'ammarfaizi2/brainly' => 
     array (
@@ -540,6 +540,15 @@ private static $installed = array (
       array (
       ),
       'reference' => '483b966dca51eb809aeb048df460e26311c23db1',
+    ),
+    'yzalis/identicon' => 
+    array (
+      'pretty_version' => '2.0.0',
+      'version' => '2.0.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'ff5ed090129cab9bfa2a322857d4a01d107aa0ae',
     ),
     'zendframework/zend-diactoros' => 
     array (
