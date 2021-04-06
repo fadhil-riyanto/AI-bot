@@ -129,4 +129,8 @@ try {
         }
     }
 } catch (GuzzleHttp\Exception\ClientException $e) {
+    render_json(array(
+        'error' => 'tidak',
+        'image' => $urls
+    ));
 }
