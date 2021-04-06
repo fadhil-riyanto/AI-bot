@@ -45,7 +45,7 @@ $colors =  random_color();
             width: 80%;
             margin: 40px auto;
             color: #fff;
-            border-left: 3px solid #ed1f24;
+            border-left: 3px solid #a54bed;
             padding: 20px;
         }
 
@@ -153,14 +153,11 @@ $colors =  random_color();
         <a id="m">00</a>:
         <a id="s">00</a>:
         <a id="mi">000</a>
-        <div id="Fadhils">(c) 2010 -
-            2021 | Mengunjungi
+        <div id="Fadhils">(c)
             <?php echo $_SERVER['SERVER_NAME']; ?>
         </div>
     </div>
     <script>
-        // START CLOCK SCRIPT
-
         Number.prototype.pad = function(n) {
             for (var r = this.toString(); r.length < n; r = 0 + r);
             return r;

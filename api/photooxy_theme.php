@@ -78,9 +78,9 @@ function photo_oxy_class(array $data)
     $text1 = $data['text_1'];
     $text2 = $data['text_2'];
     if (strlen($text1) <= 3) {
-        echo json_encode(array(
+        render_json(array(
             'error' => 'karakter dibawah 3'
-        ), JSON_PRETTY_PRINT);
+        ));
     } else {
         if (isset($text2)) {
             $query1 = array(
@@ -114,16 +114,16 @@ function photo_oxy_class(array $data)
         //var_dump($match);
         if ($match[1][0] == '') {
 
-            echo json_encode(array(
+            render_json(array(
                 'error' => 'internal sistem'
-            ), JSON_PRETTY_PRINT);
+            ));
             exit;
         }
         $urls = $baseurldata . $match[1][0];
 
-        echo json_encode(array(
+        render_json(array(
             'error' => 'tidak',
             'image' => $urls
-        ), JSON_PRETTY_PRINT);
+        ));
     }
 }

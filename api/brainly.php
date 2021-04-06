@@ -7,5 +7,5 @@ if (isset($_GET['query'])) {
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
     $output = curl_exec($ch);
     curl_close($ch);
-    echo json_encode(json_decode($output), JSON_PRETTY_PRINT);
+    render_json(json_decode($output));
 }

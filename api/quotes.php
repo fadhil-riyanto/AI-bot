@@ -14,8 +14,8 @@ if (isset($_GET['kata'])) {
             ->setQuoteFontSize(60)
             ->toScreen();
     } catch (Exception $e) {
-        echo json_encode(array(
+        render_json(array(
             'error' => 'internal sistem'
-        ), JSON_PRETTY_PRINT);
+        ));
     }
 }

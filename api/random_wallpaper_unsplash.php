@@ -11,6 +11,6 @@ $a = curl_exec($ch); // $a will contain all headers
 
 $url = curl_getinfo($ch, CURLINFO_EFFECTIVE_URL); // This is what you need, it will return you the last effective URL
 
-echo json_encode(array(
+render_json(array(
     'image' => $url
-), JSON_PRETTY_PRINT);
+));

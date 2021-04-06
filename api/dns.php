@@ -35,8 +35,5 @@ if (isset($_GET['query']) && isset($_GET['method'])) {
         );
     }
 
-    
-    echo json_encode(array(
-        'data' => $m
-    ), JSON_PRETTY_PRINT);
+    render_json($m);
 }

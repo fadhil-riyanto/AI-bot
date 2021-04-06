@@ -34,4 +34,4 @@ if ($randomintberita == 1) {
     $reply = $reply_tempo;
 }
 
-echo json_encode($reply, JSON_PRETTY_PRINT);
+echo render_json($reply);
