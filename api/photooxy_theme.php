@@ -1,5 +1,5 @@
 <?php
-require __DIR__ . '/middleware.php';
+//require __DIR__ . '/middleware.php';
 function themeddatas($string)
 {
     $string = strtolower($string);

@@ -24,7 +24,7 @@ if (isset($_GET['theme'])) {
                         'text_2' => $_GET['kata2']
                     );
                     $urlss = photo_oxy_class($ngab);
-                    exit;
+                    
                 }
 
 

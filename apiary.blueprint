@@ -1,0 +1,142 @@
+FORMAT: 1A
+HOST: https://fadhilapisss.herokuapp.com/api
+
+# fadhil apis
+
+Siapa yang suka barang free? disini kenalin. namaku fadhil, asal dari semarang. api ini free tanpa apikey.
+Mohon jangan membuat flood server atau membuat banjir yang berlebihan.
+
+Jika kamu suka api ini, boleh dong follow akun github saya. Makasi 😘
+
+
+## Dapatkan info berita terkini [/berita.php]
+### Get berita [GET]
+Ini akan memberikan result berita dan linknya
++ Response 200 (application/json)
+
+## Dapatkan jawaban dari brainly [/brainly.php]
+### Get data brainly [GET]
+Ini akan memberikan jawaban dari web brainly. parameter dibutuhkan
+query => pertanyaan
++ Response 200 (application/json)
+
+## Dapatkan data dns [/dns.php]
+### Get data dns [GET]
+Ini akan memberikan info dns seperti DNS_MX, DNS_MX, DNS_NAPTR dan lain lain. 
+parameter dibutuhkan
+query => domain <br>
+method => berisi (A, CNAME, HINFO, CAA, MX, NS, PTR, SOA, TXT, AAAA, SRV, NAPTR, A6)
++ Response 200 (application/json)
+
+## Dapatkan data dns [/kisah_nabi.php]
+### Get kisah_nabi [GET]
+Ini akan memberikan info kisah nabi.
+parameter dibutuhkan
+query => nama nabi
++ Response 200 (application/json)
+
+## Dapatkan data npm [/npm_info.php]
+### Get npm_info [GET]
+parameter dibutuhkan
+
+query => data yang mau dicari dari npm (node package manager) 
++ Response 200 (application/json)
+
+
+## Generate quotes [/quotes.php]
+### Get quotes [GET]
+parameter dibutuhkan<br><br>
+kata => kata yang mau dijadikan quotes
++ Response 200 (application/json)
+
+
+## Generate random bucin [/random_bucin.php]
+### Get random_bucin [GET]
+parameter dibutuhkan<br><br>
+tidak diperlukan parameter apapun untuk ini
++ Response 200 (application/json)
+
+
+## Generate random bucin [/random_faktaunik.php]
+### Get random_faktaunik [GET]
+parameter dibutuhkan<br><br>
+tidak diperlukan parameter apapun untuk ini
++ Response 200 (application/json)
+
+
+## Generate random bucin [/random_kata_bijak.php]
+### Get random_kata_bijak [GET]
+parameter dibutuhkan<br><br>
+tidak diperlukan parameter apapun untuk ini
++ Response 200 (application/json)
+
+
+## Generate random bucin [/random_pantun.php]
+### Get random_pantun [GET]
+parameter dibutuhkan<br><br>
+tidak diperlukan parameter apapun untuk ini
++ Response 200 (application/json)
+
+
+## Generate random bucin [/random_quotes.php]
+### Get random_quotes [GET]
+parameter dibutuhkan<br><br>
+tidak diperlukan parameter apapun untuk ini
++ Response 200 (application/json)
+
+
+## Generate random bucin [/random_wallpaper.php]
+### Get random_wallpaper [GET]
+parameter dibutuhkan<br><br>
+tidak diperlukan parameter apapun untuk ini
++ Response 200 (application/json)
+
+
+## pendekkan link [/shortlink.php]
+### Get shortlink [GET]
+parameter dibutuhkan<br><br>
+query => link yang akan dipendekkan
++ Response 200 (application/json)
+
+
+## buat text menjadi gambar [/text_maker.php]
+### Get text_maker [GET]
+parameter dibutuhkan<br><br>
+theme => tema yang digunakan <br>
+kata1 => kata kata yang mau dijadikan <br>
+kata2 => kata kata yang mau dijadikan <br>
+
+Note : parameter kata2 digunakan untuk data yang diperlukan 2 parameter, contohnya tiktok
+
++ Response 200 (application/json)
+
+
+## Generate random wallpaper cyber [/wallpaper_cyber.php]
+### Get random_wallpaper [GET]
+parameter dibutuhkan<br><br>
+tidak diperlukan parameter apapun untuk ini
++ Response 200 (application/json)
+
+## Generate random wallpaper game [/wallpaper_game.php]
+### Get random_wallpaper [GET]
+parameter dibutuhkan<br><br>
+tidak diperlukan parameter apapun untuk ini
++ Response 200 (application/json)
+
+## Generate random wallpaper islami [/wallpaper_islami.php]
+### Get random_wallpaper [GET]
+parameter dibutuhkan<br><br>
+tidak diperlukan parameter apapun untuk ini
++ Response 200 (application/json)
+
+## Generate random wallpaper programming [/wallpaper_programming.php]
+### Get random_wallpaper [GET]
+parameter dibutuhkan<br><br>
+tidak diperlukan parameter apapun untuk ini
++ Response 200 (application/json)
+
+## Generate random wallpaper tech [/wallpaper_tech.php]
+### Get random_wallpaper [GET]
+parameter dibutuhkan<br><br>
+tidak diperlukan parameter apapun untuk ini
++ Response 200 (application/json)
