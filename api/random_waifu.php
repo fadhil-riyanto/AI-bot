@@ -82,8 +82,8 @@ if (isset($_GET['type'])) {
                 curl_close($ch);
                 $hasil = json_decode($output);
                 // render_json($hasil);
-                $typed = image_type_to_mime_type(exif_imagetype($hasil->url));
-                header('Content-type: ' . $typed);
+                //$typed = image_type_to_mime_type(exif_imagetype($hasil->url));
+                header('Content-type: image/png');
                 echo readfile($hasil->url);
             }
         }
