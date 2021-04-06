@@ -125,10 +125,6 @@ class ComposerStaticInit37458c04d77e08a184290ff46a23e733
             'GuzzleHttp\\' => 11,
             'Gregwar\\' => 8,
         ),
-        'F' => 
-        array (
-            'Faker\\' => 6,
-        ),
         'C' => 
         array (
             'Complex\\' => 8,
@@ -233,10 +229,6 @@ class ComposerStaticInit37458c04d77e08a184290ff46a23e733
         'Gregwar\\' => 
         array (
             0 => __DIR__ . '/..' . '/gregwar/captcha/src/Gregwar',
-        ),
-        'Faker\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker',
         ),
         'Complex\\' => 
         array (

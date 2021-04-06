@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '397f099bfa60ce51b83c7f395112a5fe2bda36c4',
+    'reference' => 'd6be401a21cb299c202316a1f7dafa3ea7b144ee',
     'name' => '__root__',
   ),
   'versions' => 
@@ -18,7 +18,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '397f099bfa60ce51b83c7f395112a5fe2bda36c4',
+      'reference' => 'd6be401a21cb299c202316a1f7dafa3ea7b144ee',
     ),
     'ammarfaizi2/brainly' => 
     array (
@@ -74,15 +74,6 @@
       array (
       ),
       'reference' => '08e27c97e4c6ed02f37c5b2b20488046c8d90d75',
-    ),
-    'fzaninotto/faker' => 
-    array (
-      'pretty_version' => 'v1.9.2',
-      'version' => '1.9.2.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '848d8125239d7dbf8ab25cb7f054f1a630e68c2e',
     ),
     'gregwar/captcha' => 
     array (

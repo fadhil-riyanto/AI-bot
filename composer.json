@@ -18,7 +18,6 @@
         "pecee/simple-router": "^4.3",
         "claviska/simpleimage": "^3.6",
         "treinetic/imageartist": "^1.0",
-        "yzalis/identicon": "^2.0",
-        "fzaninotto/faker": "^1.9"
+        "yzalis/identicon": "^2.0"
     }
 }
