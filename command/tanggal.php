@@ -35,6 +35,6 @@ function tanggal_indo($tanggal, $cetak_hari = false)
 	return $tgl_indo;
 }
 
-$reply = 'Hai ' . $username . PHP_EOL . PHP_EOL . 'sekarang tanggal ' . tanggal_indo(date('Y-m-d'));
+$reply = 'Hai ' . $username . PHP_EOL . PHP_EOL . 'sekarang tanggal ' . tanggal_indo(date('Y-m-d', true));
 $content = array('chat_id' => $chat_id, 'text' => $reply,  'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
 $telegram->sendMessage($content);
