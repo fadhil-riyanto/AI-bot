@@ -8,6 +8,8 @@ Mohon jangan membuat flood server atau membuat banjir yang berlebihan.
 
 Jika kamu suka api ini, boleh dong follow akun github saya. Makasi 😘
 
+BaseURL : https://fadhilapisss.herokuapp.com/api
+
 
 ## Dapatkan info berita terkini [/berita.php]
 ### Get berita [GET]
@@ -57,35 +59,35 @@ tidak diperlukan parameter apapun untuk ini
 + Response 200 (application/json)
 
 
-## Generate random bucin [/random_faktaunik.php]
+## Generate random faktaunik [/random_faktaunik.php]
 ### Get random_faktaunik [GET]
 parameter dibutuhkan<br><br>
 tidak diperlukan parameter apapun untuk ini
 + Response 200 (application/json)
 
 
-## Generate random bucin [/random_kata_bijak.php]
+## Generate random kata bijak [/random_kata_bijak.php]
 ### Get random_kata_bijak [GET]
 parameter dibutuhkan<br><br>
 tidak diperlukan parameter apapun untuk ini
 + Response 200 (application/json)
 
 
-## Generate random bucin [/random_pantun.php]
+## Generate random pantun [/random_pantun.php]
 ### Get random_pantun [GET]
 parameter dibutuhkan<br><br>
 tidak diperlukan parameter apapun untuk ini
 + Response 200 (application/json)
 
 
-## Generate random bucin [/random_quotes.php]
+## Generate random quotes [/random_quotes.php]
 ### Get random_quotes [GET]
 parameter dibutuhkan<br><br>
 tidak diperlukan parameter apapun untuk ini
 + Response 200 (application/json)
 
 
-## Generate random bucin [/random_wallpaper.php]
+## Generate random wallpaper [/random_wallpaper.php]
 ### Get random_wallpaper [GET]
 parameter dibutuhkan<br><br>
 tidak diperlukan parameter apapun untuk ini
@@ -203,6 +205,12 @@ tidak diperlukan parameter apapun untuk ini
 + Response 200 (application/json)
 
 ## Get domain geolocation [/ip_geo.php]
+### Get domain geolocation [GET]
+parameter dibutuhkan<br><br>
+domain => isi dengan domain yang akan di querykan
++ Response 200 (application/json)
+
+## Get random vaifo [/ip_geo.php]
 ### Get domain geolocation [GET]
 parameter dibutuhkan<br><br>
 domain => isi dengan domain yang akan di querykan
