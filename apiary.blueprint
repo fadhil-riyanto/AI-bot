@@ -23,7 +23,7 @@ query => pertanyaan
 ## Dapatkan data dns [/dns.php]
 ### Get data dns [GET]
 Ini akan memberikan info dns seperti DNS_MX, DNS_MX, DNS_NAPTR dan lain lain. 
-parameter dibutuhkan
+parameter dibutuhkan <br><br>
 query => domain <br>
 method => berisi (A, CNAME, HINFO, CAA, MX, NS, PTR, SOA, TXT, AAAA, SRV, NAPTR, A6)
 + Response 200 (application/json)
@@ -31,13 +31,13 @@ method => berisi (A, CNAME, HINFO, CAA, MX, NS, PTR, SOA, TXT, AAAA, SRV, NAPTR,
 ## Dapatkan data dns [/kisah_nabi.php]
 ### Get kisah_nabi [GET]
 Ini akan memberikan info kisah nabi.
-parameter dibutuhkan
+parameter dibutuhkan<br><br>
 query => nama nabi
 + Response 200 (application/json)
 
 ## Dapatkan data npm [/npm_info.php]
 ### Get npm_info [GET]
-parameter dibutuhkan
+parameter dibutuhkan<br><br>
 
 query => data yang mau dicari dari npm (node package manager) 
 + Response 200 (application/json)
