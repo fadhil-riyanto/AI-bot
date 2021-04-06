@@ -29,7 +29,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '8485856071c7cb89e01719530e909f20b804d8ad',
+    'reference' => '397f099bfa60ce51b83c7f395112a5fe2bda36c4',
     'name' => '__root__',
   ),
   'versions' => 
@@ -41,7 +41,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '8485856071c7cb89e01719530e909f20b804d8ad',
+      'reference' => '397f099bfa60ce51b83c7f395112a5fe2bda36c4',
     ),
     'ammarfaizi2/brainly' => 
     array (
@@ -97,6 +97,15 @@ private static $installed = array (
       array (
       ),
       'reference' => '08e27c97e4c6ed02f37c5b2b20488046c8d90d75',
+    ),
+    'fzaninotto/faker' => 
+    array (
+      'pretty_version' => 'v1.9.2',
+      'version' => '1.9.2.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '848d8125239d7dbf8ab25cb7f054f1a630e68c2e',
     ),
     'gregwar/captcha' => 
     array (

@@ -1,0 +1,32 @@
+[
+    {
+        "year": "2016",
+        "title": "Berkenalan dengan Programming",
+        "mini_title": "Noob"
+    },
+    {
+        "year": "2017",
+        "title": "Berkenalan dan Mempelajari PHP",
+        "mini_title": "Dengan windows"
+    },
+    {
+        "year": "2018",
+        "title": "Mempelajari PHP lebih dalam lagi, dan berkenalan dengan nodejs dan golang",
+        "mini_title": "Dengan windows dan linux"
+    },
+    {
+        "year": "2019",
+        "title": "Mempelajari nodejs dan membuat bot telegram @Fadhil_riyanto_bot",
+        "mini_title": "Dengan windows dan pastinya linux"
+    },
+    {
+        "year": "2020",
+        "title": "Mengembangkan bot telegram @Fadhil_riyanto_bot dan membuat rest api",
+        "mini_title": "Dengan windows dan pastinya linux"
+    },
+    {
+        "year": "2021",
+        "title": "Terus mengembangkan rest api dan bot telegram",
+        "mini_title": "Dengan windows dan pastinya linux"
+    }
+]

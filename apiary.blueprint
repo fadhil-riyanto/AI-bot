@@ -108,6 +108,67 @@ kata2 => kata kata yang mau dijadikan <br>
 
 Note : parameter kata2 digunakan untuk data yang diperlukan 2 parameter, contohnya tiktok
 
+<br><br>
+<b>list theme</b>
+<br>shadow
+<br>flower_cup
+<br>romantic_messages
+<br>burn_paper
+<br>funny_cup
+<br>hand_love
+<br>grass
+<br>tiktok
+<br>red_heart
+<br>coffe
+<br>wood_heart
+<br>wooden_board
+<br>3d_summer
+<br>wolf_metal
+<br>nature_3d
+<br>underwater
+<br>golden_rose
+<br>summer_nature
+<br>leaf
+<br>fall_leaves
+<br>neon
+<br>rainbow
+<br>army_camouflage_fabric
+<br>3d_glowing
+<br>vintage
+<br>candy_text
+<br>white_cube
+<br>green_leaves
+<br>avatar_gradient
+<br>glow_rainbow
+<br>stars
+<br>fur
+<br>flaming
+<br>chrome
+<br>embroidery
+<br>3d_rainbow_background
+<br>metalic
+<br>striking
+<br>watermelon
+<br>web_matrix
+<br>multi_material
+<br>butter_fly
+<br>wooden_3d
+<br>modern_metal
+<br>harry_poter
+<br>3bit
+<br>coffe_cup
+<br>luxury_royal
+<br>scary
+<br>woodblock
+<br>smoke
+<br>sweet_candy
+<br>silk
+<br>royal
+<br>orchids_flower
+<br>flower
+<br>party_neon
+<br>dark_metal
+
 + Response 200 (application/json)
 
 
@@ -139,4 +200,10 @@ tidak diperlukan parameter apapun untuk ini
 ### Get random_wallpaper [GET]
 parameter dibutuhkan<br><br>
 tidak diperlukan parameter apapun untuk ini
++ Response 200 (application/json)
+
+## Get domain geolocation [/ip_geo.php]
+### Get domain geolocation [GET]
+parameter dibutuhkan<br><br>
+domain => isi dengan domain yang akan di querykan
 + Response 200 (application/json)

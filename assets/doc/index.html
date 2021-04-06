@@ -1,201 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Project Description">
-    <title>My Project</title>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/railscasts.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'>
-    <link href="css/main.css" rel="stylesheet">
-  </head>
-  <body>
-    <header class="navbar navbar-inverse navbar-fixed-top docs-nav" role="banner">
-      <div class="container">
-        <div class="navbar-header">
-          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a href="#" class="navbar-brand">
-            My Project
-          </a>
-        </div>
-        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-          <ul class="nav navbar-nav">
-            <li><a href="#">Page 1</a></li>
-            <li><a href="#">Page 2</a></li>
-            <li><a href="#">Page 3</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">GitHub <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li> <a href="#">Repo</a> </li>
-                <li> <a href="#">Issues</a> </li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <div class="docs-header" id="content">
-      <div class="container">
-        <h1>Getting Started</h1>
-        <p>Overview, how to download and use, and features.</p>
-      </div>
-    </div>
-    <div class="banner">
-      <div class="container">
-        My Project v0.5 has been released -
-        <strong>
-          <a href="#">See what's new</a>
-        </strong>
-      </div>
-    </div>    
-    <div class="container docs-container">
-      <div class="row">
-        <div class="col-xs-3">
-          <div class="sidebar affix-top">
-            <ul id="sidebar" class="nav nav-stacked">
-              <li>
-                <a href="#getting-standard">Getting Started</a>
-                <ul class="nav nav-stacked">
-                  <li><a href="#why-my-project">Why My Project?</a></li>
-                  <li><a href="#installation">Installation</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#api">API</a>
-                <ul class="nav nav-stacked">
-                  <li><a href="#receive">receive()</a></li>
-                  <li><a href="#send">send()</a></li>
-                  <li><a href="#wait">wait()</a></li>
-                  <li><a href="#listen">listen()</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-9" role="main">
-          <div class="panel docs-content">
-            <div class="docs-section">
-              <div class="page-header">
-                <h1 class="docs-heading">Getting Started<span class="anchor-target" id="getting-started"></span>
-                  <a href="#getting-started" name="getting-started" class="anchor glyphicon glyphicon-link"></a>
-                </h1>
-              </div>
-              <p>My Project does this and that and can be useful to you in many ways.</p>
-              <p><strong>For example:</strong></p>
-              <pre><code class="lang-python">def main():
-    pass
+<head>
+	<title>Fadhil Riyanto</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/themify-icons.css"/>
+	<link rel="stylesheet" href="css/animate.min.css"/>
+	<link rel="stylesheet" href="css/magnific-popup.css"/>
+	<link rel="stylesheet" href="css/owl.carousel.min.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+	<header class="header-section">
+		<div class="container">
+			<div class="header-warp">
+				<a href="#" class="site-logo">
+					<img src="/img/Fadhil.png" >
+				</a>
+				<div class="responsive-switch"><i class="fa fa-bars"></i></div>
+				<nav class="site-menu">
+					<div class="sm-close"><i class="ti-close"></i></div>
+					<ul class="menu-list">
+						<li><a href="#home">Home</a></li>
+						<li><a href="https://www.fadhilriyanto.eu.org">Website</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="https://fadhil-riyanto.github.io/api.html">API</a></li>
+						<li><a href="#resume">History</a></li>
+						<li><a href="#works">Proyek</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<section class="hero-section hero-style-three" id="home">
+		<div id="bubble"></div>
+		<div class="typed-area">
+			<div class="container">
+				<!-- typed text -->
+				<h2><span id="typed-text"></span></h2>
+			</div>
+		</div>
+		<figure class="shap-image">
+			<img src="img/hero-shap.png" alt="">
+		</figure>
+	</section>
+	<section class="about-section spad" id="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+					<figure>
+						<img src="img/home.png" alt="Foto">
+					</figure>
+				</div>
+				<div class="col-lg-6 about-text wow fadeInDown" data-wow-delay="0.5s">
+					<div class="about-title">
+						<h2>Introduce Myself</h2>
+						<h5>Who I am</h5>
+					</div>
+					<p>Saya <span>Fadhil Riyanto</span> dan nama ini adalah nama samaran saya di internet, alamat saya di 103.106.57.38 dan saya suka ngoding, blogging, youtube, dan membuat percobaan percobaan lainya </p>
+					<div class="skills mt-5">
+						<!-- Skill item -->
+						<div class="single-progress-item">
+							<p>Web Developer (PHP, HTML, CSS, Javascripts)</p>
+							<div class="progress-bar-style" data-progress="80"></div>
+						</div>
+						<!-- Skill item -->
+						<div class="single-progress-item">
+							<p>Blogging</p>
+							<div class="progress-bar-style" data-progress="74"></div>
+						</div>
+						<!-- Skill item -->
+						<div class="single-progress-item">
+							<p>Youtube</p>
+							<div class="progress-bar-style" data-progress="90"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- services -->
+			<div class="service-slider owl-carousel spad pb-0">
+				<!-- item -->
+				<div class="service">
+					<i class="ti-settings"></i>
+					<div class="service-text">
+						<h3>Development</h3>
+						<p>Saya suka bahasa pemrograman yang tidak sulit, dan menengah. dan saya suka sekali backend developers</p>
+					</div>
+				</div>
+				<!-- item -->
+				<div class="service">
+					<i class="ti-medall"></i>
+					<div class="service-text">
+						<h3>Best</h3>
+						<p>Dan sekarang saya mulai berkembang ke ranah digital</p>
+					</div>
+				</div>
+				<!-- item -->
+				<div class="service">
+					<i class="ti-heart"></i>
+					<div class="service-text">
+						<h3>Love</h3>
+						<p>build with love and care for programming languange</p>
+					</div>
+				</div>
+				<!-- item -->
+				<div class="service">
+					<i class="ti-key"></i>
+					<div class="service-text">
+						<h3>Security</h3>
+						<p>Saya suka keamanan yang bagus dan lengkap</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- About section end -->
 
-if __name__ == "__main__":
-    main()
-</code></pre>
 
-              <h3 class="docs-heading">Why My Project?<span class="anchor-target" id="why-my-project"></span>
-                <a href="#why-my-project" name="why-my-project" class="anchor glyphicon glyphicon-link"></a>
-              </h3>
 
-              <p>Lorem ipsum dolor sit amet, ne nusquam lobortis dissentiet mei, an est enim regione delicatissimi. Quo at falli aliquam verterem, vel ad primis postulant mnesarchum. Quo cotidieque complectitur id. Etiam erant duo eu, vel ea atqui timeam electram, ad pro paulo quaerendum disputando.</p>
+	<!-- Resume section start -->
+	<section class="resume-section spad" id="resume">
+		<div class="container">
+			<div class="section-title">
+				<p>History</p>
+			</div>
+			<div class="row">
+				<div class="col-lg-10 col-xl-9 offset-lg-2 offset-xl-2">
+					<!-- Review item -->
+					<div class="resume-item wow fadeInUp" data-wow-delay="0.2s">
+						<div class="resume-year">
+							<h2>2015</h2>
+						</div>
+						<div class="resume-text">
+							<h3>Berkenalan dengan komputer</h3>
+							<p>mempelajari windows dan word</p>
+						</div>
+					</div>
+					<!-- Review item -->
+					<div class="resume-item wow fadeInUp" data-wow-delay="0.4s">
+						<div class="resume-year">
+							<h2>20117</h2>
+						</div>
+						<div class="resume-text">
+							<h3>mulai berkenalan dengan programming</h3>
+							<p>Bahasa pertama "PHP"</p>
+						</div>
+					</div>
+					<!-- Review item -->
+					<div class="resume-item wow fadeInUp" data-wow-delay="0.6s">
+						<div class="resume-year">
+							<h2>2020 - sekarang</h2>
+						</div>
+						<div class="resume-text">
+							<h3>Memperdalam PHP, mempelajari Java, Python.</h3>
+							<p>Kesulitan 80%</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Resume section end -->
 
-              <p>Et mazim philosophia eum, cu agam debitis sapientem nec. Te duo amet urbanitas, sit ad phaedrum scriptorem, eum ea consul audire disputando. Ex suas verear has, id mel nostrud propriae. Mea mollis instructior in. Ut has tibique definitiones, an mea bonorum impedit voluptua. Quod quaestio concludaturque vis cu.</p>
-              <pre><code class="lang-python">def main():
-    pass
 
-if __name__ == "__main__":
-    main()
-</code></pre>
-              <p>Vel no lucilius evertitur, his no natum vocent, no quo quod cetero vocibus. In feugiat omittam deseruisse sea, in quas postea volumus vel, ad lorem appetere sea. No vis laudem impedit, mandamus periculis has cu. Ei vide putant imperdiet pri, sumo impetus eam ad, est et aeterno virtute. Id his meliore similique. Et odio fastidii ius, fastidii complectitur eu mel. Eu partem soluta utroque ius, vis id omnis maiestatis liberavisse, phaedrum vituperatoribus eam at.</p>
 
-              <p>Vel at nostrud habemus, per omnes numquam concludaturque an. Cetero feugait dissentias ea nec, mea te numquam moderatius signiferumque. Idque possim laoreet te his. Eleifend concludaturque mel at, novum libris est in. Nec fabulas recteque tractatos ei, per ea nulla solet graece.</p>
+	<!-- Portfolio section start -->
+	<section class="portfolio-section spad" id="works">
+		<div class="container">
+			<div class="section-title">
+				<p>Proyek</p>
+				<h2>Bisa kalian lihat di github</h2>
+			</div>
+			<div class="text-center mt-5">
+				<a href="https://github.com/fadhil-riyanto/" class="site-btn wow fadeInUp" data-wow-delay="0.2s">More Projects</a>
+			</div>
+		</div>
+	</section>
+	<!-- Portfolio section end -->
 
-              <p>Id prompta phaedrum mel, sed at scaevola voluptatum, vide omittantur sea id. Malorum iuvaret scaevola ei mei, cu per erat iudico interesset, per te nisl urbanitas omittantur. Ut velit periculis cum, case ferri tibique nam an. Viris noster has cu, pro in duis animal contentiones, ad labore singulis has.</p>
 
-              <h3 class="docs-heading">Installation<span class="anchor-target" id="installation"></span>
-                <a href="#installation" name="installation" class="anchor glyphicon glyphicon-link"></a>
-              </h3>
+	<!-- Contact section start -->
+	<section class="contact-section spad" id="contact">
+		<div class="container">
+			<div class="section-title">
+				<p>Contact</p>
+				<h2>Get in touch</h2>
+			</div>
+			<div class="row">
+				<div class="col-lg-8 offset-lg-2">
+					<div class="row">
+						<!-- contact info -->
+						<div class="col-sm-4 cont-info wow fadeInUp" data-wow-delay="0.6s">
+							<i class="ti-themify-favicon"></i>
+							<span><a href="http://t.me/fadhil_riyanto">@fadhil_riyanto</span>
+							<p>Telegram</p>
+						</div>
+						<!-- contact info -->
+						<div class="col-sm-4 cont-info wow fadeInUp" data-wow-delay="0.2s">
+							<i class="ti-email"></i>
+							<a href="mailto:hi@fadhilriyanto.eu.org" onclick="this.href=this.href.replace(/AT/,'&#64;').replace(/DOT/,'&#46;')"><span style="unicode-bidi:bidi-override; direction: rtl;">moc.liamg@lanekkatgnisagnaro</span></a>
+							<p>email</p>
+						</div>
+						<!-- contact info -->
+						<div class="col-sm-4 cont-info wow fadeInUp" data-wow-delay="0.4s">
+							<i class="ti-facebook"></i>
+							<span>+62895-3916-34433</span>
+							<p>Phone</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Contact section end -->
 
-              <p>Lorem ipsum dolor sit amet, ne nusquam lobortis dissentiet mei, an est enim regione delicatissimi. Quo at falli aliquam verterem, vel ad primis postulant mnesarchum. Quo cotidieque complectitur id. Etiam erant duo eu, vel ea atqui timeam electram, ad pro paulo quaerendum disputando.</p>
 
-              <p>Et mazim philosophia eum, cu agam debitis sapientem nec. Te duo amet urbanitas, sit ad phaedrum scriptorem, eum ea consul audire disputando. Ex suas verear has, id mel nostrud propriae. Mea mollis instructior in. Ut has tibique definitiones, an mea bonorum impedit voluptua. Quod quaestio concludaturque vis cu.</p>
-              <pre><code class="lang-python">def main():
-    pass
+	<!-- Footer section start -->
+	<footer class="footer-section spad set-bg" data-setbg="img/footer-bg.svg">
+		<div class="container">
+			<div class="social-links">
+				<a href="https://www.facebook.com/Internsial.node" target="_blank" class="facebook wow fadeInDown" data-wow-delay="0.2s"><i class="fa fa-github"></i></a>
+				<a href="https://www.youtube.com/channel/UCAsLxojK9_BwimOWnO2u4_w" target="_blank" class="facebook wow fadeInDown" data-wow-delay="0.6s"><i class="fa fa-instagram"></i></a>
+			<a href="https://www.youtube.com/channel/UCAsLxojK9_BwimOWnO2u4_w" target="_blank" class="facebook wow fadeInDown" data-wow-delay="0.6s"><i class="fa fa-instagram"></i></a>
+			</div>
+			<!-- copyright -->
+			<p class="copyright">Copyright &copy; 2020 Fadhil Riyanto<br/>All rights Reserved</p>
+		</div>
+	</footer>
+	<!-- Footer section end -->
 
-if __name__ == "__main__":
-    main()
-</code></pre>
-              <p>Vel no lucilius evertitur, his no natum vocent, no quo quod cetero vocibus. In feugiat omittam deseruisse sea, in quas postea volumus vel, ad lorem appetere sea. No vis laudem impedit, mandamus periculis has cu. Ei vide putant imperdiet pri, sumo impetus eam ad, est et aeterno virtute. Id his meliore similique. Et odio fastidii ius, fastidii complectitur eu mel. Eu partem soluta utroque ius, vis id omnis maiestatis liberavisse, phaedrum vituperatoribus eam at.</p>
 
-              <p>Vel at nostrud habemus, per omnes numquam concludaturque an. Cetero feugait dissentias ea nec, mea te numquam moderatius signiferumque. Idque possim laoreet te his. Eleifend concludaturque mel at, novum libris est in. Nec fabulas recteque tractatos ei, per ea nulla solet graece.</p>
+	<!--====== Jquery & Javascripts files  ======-->
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/jquery.nav.min.js"></script>
+	<script src="js/isotope.pkgd.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/magnific-popup.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/typed.min.js"></script>
+	<script src="js/scripts.js"></script>
 
-              <p>Id prompta phaedrum mel, sed at scaevola voluptatum, vide omittantur sea id. Malorum iuvaret scaevola ei mei, cu per erat iudico interesset, per te nisl urbanitas omittantur. Ut velit periculis cum, case ferri tibique nam an. Viris noster has cu, pro in duis animal contentiones, ad labore singulis has.</p>              
-            </div>
-            <div class="docs-section">
-              <div class="page-header">
-                <h1 class="docs-heading">API<span class="anchor-target" id="api"></span>
-                  <a href="#api" name="api" class="anchor glyphicon glyphicon-link"></a>
-                </h1>
-              </div>
-              <h3 class="docs-heading">receive()<span class="anchor-target" id="receive"></span>
-                <a href="#receive" name="receive" class="anchor glyphicon glyphicon-link"></a>
-              </h3>
-              <p>API description, remarks</p>
-              <strong>Code example:</strong>
-              <pre><code class="lang-python">def main():
-    pass
+	<!-- For bubble style -->
+	<script src="js/bubble.js"></script>
+	<script src="js/init-bubble.js"></script>
 
-if __name__ == "__main__":
-    main()
-</code></pre>
-              <h3 class="docs-heading">send()<span class="anchor-target" id="send"></span>
-                <a href="#send" name="send" class="anchor glyphicon glyphicon-link"></a>
-              </h3>
-              <p>API description, remarks</p>
-              <strong>Code example:</strong>
-              <pre><code class="lang-python">def main():
-    pass
-
-if __name__ == "__main__":
-    main()
-</code></pre>              
-              <h3 class="docs-heading">wait()<span class="anchor-target" id="wait"></span>
-                <a href="#wait" name="wait" class="anchor glyphicon glyphicon-link"></a>
-              </h3>
-              <p>API description, remarks</p>
-              <strong>Code example:</strong>
-              <pre><code class="lang-python">def main():
-    pass
-
-if __name__ == "__main__":
-    main()
-</code></pre>              
-              <h3 class="docs-heading">listen()<span class="anchor-target" id="listen"></span>
-                <a href="#listen" name="listen" class="anchor glyphicon glyphicon-link"></a>
-              </h3>  
-              <p>API description, remarks</p>
-              <strong>Code example:</strong>
-              <pre><code class="lang-python">def main():
-    pass
-
-if __name__ == "__main__":
-    main()
-</code></pre>                          
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/highlight.pack.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+</body>
 </html>
