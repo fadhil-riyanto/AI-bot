@@ -101,7 +101,7 @@ try {
             require __DIR__ . '/../vendor/autoload.php';
             require __DIR__ . '/../include/simple_html_dom.php';
             $baseurldata = 'https://photooxy.com';
-            $client = new GuzzleHttp\Client(['base_uri' => $baseurl]);
+            $client = new GuzzleHttp\Client(['base_uri' => $baseurl, 'http_errors' => false]);
             $res = $client->request('POST', $themed . '?' . $query_build_1, ['allow_redirects' => false]);
             $htmls = $res->getBody();
             // echo $htmls;
@@ -129,8 +129,4 @@ try {
         }
     }
 } catch (GuzzleHttp\Exception\ClientException $e) {
-    render_json(array(
-        'error' => 'tidak',
-        'image' => $urls
-    ));
 }
