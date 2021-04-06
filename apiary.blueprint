@@ -210,8 +210,51 @@ parameter dibutuhkan<br><br>
 domain => isi dengan domain yang akan di querykan
 + Response 200 (application/json)
 
-## Get random vaifo [/ip_geo.php]
-### Get domain geolocation [GET]
+## Get random waifu [/random_waifu.php]
+### Get random waifu [GET]
 parameter dibutuhkan<br><br>
-domain => isi dengan domain yang akan di querykan
+type => isi dengan nsfw atau sfw<br>
+kategori => isi list kategori dibawah ini<br><br>
+Mengembalikan "image gambar"
+<br>
+<pre>sfw</pre>
+<br>waifu
+<br>neko
+<br>shinobu
+<br>megumin
+<br>bully
+<br>cuddle
+<br>cry
+<br>hug
+<br>awoo
+<br>kiss
+<br>lick
+<br>pat
+<br>smug
+<br>bonk
+<br>yeet
+<br>blush
+<br>smile
+<br>wave
+<br>smile
+<br>wave
+<br>highfive
+<br>handhold
+<br>nom
+<br>bite
+<br>glomp
+<br>kill
+<br>slap
+<br>happy
+<br>wink
+<br>poke
+<br>dance
+<br>cringe
+<br>blush
+
+<pre>nsfw</pre>
+<br>waifu
+<br>neko
+<br>trap
+<br>blowjob
 + Response 200 (application/json)
