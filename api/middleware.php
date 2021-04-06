@@ -63,7 +63,7 @@ $anggota = file_put_contents($file, $jsonfile);
 
 function render_json($array)
 {
-    header('Content-Type: application/json');
+    header('Content-Type: application/json', true, 200);
     $rend = array(
         "by" => "fadhil_riyanto",
         "telegram" => "@fadhil_riyanto",

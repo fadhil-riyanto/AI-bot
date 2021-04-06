@@ -1,3 +1,3 @@
 <?php
-require __DIR__ . '/middleware.php';
-echo "hello world";
+header("location: index.php", true, 301);
+exit();
