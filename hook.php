@@ -756,7 +756,7 @@ try {
 	) {
 		require __DIR__ . '/command/info.php';
 		exit;
-	} elseif ($text == '/tanggal' || $text == '/tanggal' . USERNAME_BOT . '') {
+	} elseif ($text == '/tanggal' || $text == '/tanggal' . USERNAME_BOT . '' || $text == '/t' || $text == '/t' . USERNAME_BOT . '') {
 		require __DIR__ . '/command/tanggal.php';
 		exit;
 	} elseif ($text == '/bug' || $text == '/bug' . USERNAME_BOT . '') {
