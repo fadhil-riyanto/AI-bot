@@ -1,5 +1,4 @@
 <?php
-header("HTTP/1.1 200 OK");
 error_reporting(0);
 
 // function get_client_ip()
