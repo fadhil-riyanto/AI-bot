@@ -17,23 +17,22 @@ if (isset($_GET['theme'])) {
         } else {
             if (isset($_GET['kata1'])) {
                 if (isset($_GET['kata2'])) {
-                    $ngab = array(
-                        'base' => 'https://photooxy.com/',
-                        'theme' => $ngecek,
-                        'text_1' => $_GET['kata1'],
-                        'text_2' => $_GET['kata2']
-                    );
-                    $urlss = photo_oxy_class($ngab);
-                    
+                    $ch = curl_init();
+                    curl_setopt($ch, CURLOPT_URL, "https://textmakes.anonymoususer18.repl.co/index_text_maker.php?theme=" . $_GET['theme'] . "&kata1=" . $_GET['kata1'] . "&kata2=" . $_GET['kata2']);
+                    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+                    $output = curl_exec($ch);
+                    curl_close($ch);
+                    render_json(json_decode($output));
+                    exit;
                 }
 
 
-                $ngab = array(
-                    'base' => 'https://photooxy.com/',
-                    'theme' => $ngecek,
-                    'text_1' => $_GET['kata1']
-                );
-                $urlss = photo_oxy_class($ngab);
+                $ch = curl_init();
+                curl_setopt($ch, CURLOPT_URL, "https://textmakes.anonymoususer18.repl.co/index_text_maker.php?theme=" . $_GET['theme'] . "&kata1=" . $_GET['kata1']);
+                curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+                $output = curl_exec($ch);
+                curl_close($ch);
+                render_json(json_decode($output));
             }
         }
     }
