@@ -68,6 +68,76 @@ function themeddatas($string)
         return false;
     }
 }
+
+function themeddatas_verify($string)
+{
+    $string = strtolower($string);
+    $dict = array(
+        '/shadow' => 'shadow',
+        '/flower_cup' => 'flower_cup',
+        '/romantic_messages' => 'romantic_messages',
+        '/burn_paper' => 'burn_paper',
+        '/funny_cup' => 'funny_cup',
+        '/hand_love' => 'hand_love',
+        '/grass' => 'grass',
+        '/tiktok' => 'tiktok',
+        '/red_heart' => 'red_heart',
+        '/coffe' => 'coffe',
+        '/wood_heart' => 'wood_heart',
+        '/wooden_board' => 'wooden_board',
+        '/3d_summer' => '3d_summer',
+        '/wolf_metal' => 'wolf_metal',
+        '/nature_3d' => 'nature_3d',
+        '/underwater' => 'underwater',
+        '/golden_rose' => 'golden_rose',
+        '/summer_nature' => 'summer_nature',
+        '/leaf' => 'leaf',
+        '/fall_leaves' => 'fall_leaves',
+        '/neon' => 'neon',
+        '/rainbow' => 'rainbow',
+        '/army_camouflage_fabric' => 'army_camouflage_fabric',
+        '/3d_glowing' => '3d_glowing',
+        '/vintage' => 'vintage',
+        '/candy_text' => 'candy_text',
+        '/white_cube' => 'white_cube',
+        '/green_leaves' => 'green_leaves',
+        '/avatar_gradient' => 'avatar_gradient',
+        '/glow_rainbow' => 'glow_rainbow',
+        '/stars' => 'stars',
+        '/fur' => 'fur',
+        '/flaming' => 'flaming',
+        '/chrome' => 'chrome',
+        '/embroidery' => 'embroidery',
+        '/3d_rainbow_background' => '3d_rainbow_background',
+        '/metalic' => 'metalic',
+        '/striking' => 'striking',
+        '/watermelon' => 'watermelon',
+        '/web_matrix' => 'web_matrix',
+        '/multi_material' => 'multi_material',
+        '/butter_fly' => 'butter_fly',
+        '/wooden_3d' => 'wooden_3d',
+        '/modern_metal' => 'modern_metal',
+        '/harry_poter' => 'harry_poter',
+        '/3bit' => '3bit',
+        '/coffe_cup' => 'coffe_cup',
+        '/luxury_royal' => 'luxury_royal',
+        '/scary' => 'scary',
+        '/woodblock' => 'woodblock',
+        '/smoke' => 'smoke',
+        '/sweet_candy' => 'sweet_candy',
+        '/silk' => 'silk',
+        '/royal' => 'royal',
+        '/orchids_flower' => 'orchids_flower',
+        '/flower' => 'flower',
+        '/party_neon' => 'party_neon',
+        '/dark_metal' => 'dark_metal'
+    );
+    if (isset($dict[$string])) {
+        return $dict[$string];
+    } else {
+        return false;
+    }
+}
 function photo_oxy_class(array $data)
 {
     global $adanParse_plain, $text_plain, $adanParse, $telegram, $chat_id, $message_id;
@@ -124,10 +194,10 @@ function photo_oxy_class(array $data)
 $azanHilangcommand = str_replace($adanParse_plain_nokarakter[0], '', $text_plain_nokarakter);
 $udahDiparse = str_replace($adanParse_plain_nokarakter[0] . ' ', '', $text_plain_nokarakter);
 
-$konf = themeddatas($adanParse_plain_nokarakter[0]);
+$konf = themeddatas_verify($adanParse_plain_nokarakter[0]);
 if ($konf == false) {
     $exuser = explode('@', strtolower($adanParse_plain_nokarakter[0]));
-    $konf = themeddatas($exuser[0]);
+    $konf = themeddatas_verify($exuser[0]);
     if ($konf == false) {
         $nemu_tema = false;
     } else {
@@ -179,29 +249,44 @@ if ($nemu_tema == true) {
                     $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
                     $telegram->sendMessage($content);
                 } else {
-                    $ngab = array(
-                        'base' => 'https://photooxy.com/',
-                        'theme' => 'logo-and-text-effects/make-tik-tok-text-effect-375.html',
-                        'text_1' => $toktokparse[0],
-                        'text_2' => $tek2
-                    );
+                    // $ngab = array(
+                    //     'base' => 'https://photooxy.com/',
+                    //     'theme' => 'logo-and-text-effects/make-tik-tok-text-effect-375.html',
+                    //     'text_1' => $toktokparse[0],
+                    //     'text_2' => $tek2
+                    // );
 
-                    $urlss = photo_oxy_class($ngab);
-                    $konten = array('chat_id' => $chat_id, 'photo' => $urlss, 'caption' => 'Hai ' . $username . ', Gambar berhasil dibuat!', 'reply_to_message_id' => $message_id,);
+                    // $urlss = photo_oxy_class($ngab);
+                    $ch = curl_init();
+                    curl_setopt($ch, CURLOPT_URL, "https://textmakes.anonymoususer18.repl.co/index_text_maker.php?theme=tiktok&kata1=" . $toktokparse[0] . "&kata2=" . $tek2);
+                    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+                    $output = curl_exec($ch);
+                    curl_close($ch);
+                    $getjson = json_decode($output);
+
+                    $konten = array('chat_id' => $chat_id, 'photo' => $getjson->data->image, 'caption' => 'Hai ' . $username . ', Gambar berhasil dibuat!', 'reply_to_message_id' => $message_id,);
                     $telegram->sendPhoto($konten);
                 }
             }
             exit;
         }
 
-        $ngab = array(
-            'base' => 'https://photooxy.com/',
-            'theme' => $datas_url,
-            'text_1' => $udahDiparse
-        );
+        // $ngab = array(
+        //     'base' => 'https://photooxy.com/',
+        //     'theme' => $datas_url,
+        //     'text_1' => $udahDiparse
+        // );
 
-        $urlss = photo_oxy_class($ngab);
-        $konten = array('chat_id' => $chat_id, 'photo' => $urlss, 'caption' => 'Hai ' . $username . ', Gambar berhasil dibuat!', 'reply_to_message_id' => $message_id,);
+        // $urlss = photo_oxy_class($ngab);
+        // $cekimage = themeddatas_verify()
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, "https://textmakes.anonymoususer18.repl.co/index_text_maker.php?theme=" . $datas_url . "&kata1=" . $udahDiparse);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        $output = curl_exec($ch);
+        curl_close($ch);
+        $getjson = json_decode($output);
+
+        $konten = array('chat_id' => $chat_id, 'photo' => $getjson->data->image, 'caption' => 'Hai ' . $username . ', Gambar berhasil dibuat!', 'reply_to_message_id' => $message_id,);
         $telegram->sendPhoto($konten);
         exit;
     }
