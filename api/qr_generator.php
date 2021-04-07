@@ -6,9 +6,9 @@ if (isset($_GET['data'])) {
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
     $output = curl_exec($ch);
     curl_close($ch);
-    $hasil = json_decode($output);
+    // $hasil = json_decode($output);
     // render_json($hasil);
-    $typed = image_type_to_mime_type(exif_imagetype($hasil->url));
+    $typed = image_type_to_mime_type(exif_imagetype($output));
     header('Content-type: ' . $typed);
-    echo readfile($hasil->url);
+    echo readfile($output);
 }
