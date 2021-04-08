@@ -25,8 +25,8 @@ Makasi 😘<br><br>
  <li>Allah SWT.</li>
  <li>HP 430 intel i3 ram 4 gb</li>
  <li>Heroku</li>
- <li><a href='http://lolhuman.herokuapp.com/docs'>@lolhuman</li>
-                </ul>
+ <li>Google</li>
+</ul>
 EOF;
 
 $profilenames = 'Fadhil riyanto';
