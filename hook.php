@@ -382,6 +382,7 @@ try {
 				$nama_gc == -458987087 || $nama_gc == -1001433395819 ||
 				$nama_gc == -1001310420564 || $nama_gc == -1001182246595 ||
 				$nama_gc == -1001422713507 || $nama_gc == -467148565
+
 			) {
 			} else {
 				$reply = 'Maaf, saya diprogram oleh pemilik saya untuk tidak dimasukkan ke grup secara sembarangan oleh orang' . PHP_EOL . PHP_EOL .

@@ -1,0 +1,30 @@
+[
+    {
+        "group": "informasi",
+        "get_load": "informasi"
+    },
+    {
+        "group": "Network",
+        "get_load": "network"
+    },
+    {
+        "group": "Text Maker",
+        "get_load": "text_maker"
+    },
+    {
+        "group": "Random text",
+        "get_load": "random"
+    },
+    {
+        "group": "Random wallpaper",
+        "get_load": "random_wallpaper"
+    },
+    {
+        "group": "Random Waifu",
+        "get_load": "random_waifu"
+    },
+    {
+        "group": "other",
+        "get_load": "other"
+    }
+]

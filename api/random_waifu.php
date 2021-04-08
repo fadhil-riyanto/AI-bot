@@ -71,7 +71,8 @@ if (isset($_GET['type'])) {
             $check = animecheck($category);
             if ($check == false) {
                 $arr = array(
-                    "error" => "kategori tidak ditemukan"
+
+                    "error" => "kategori tidak ditemukan dan " . $_GET['apikey']
                 );
                 render_json($arr);
             } else {

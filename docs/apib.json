@@ -1,0 +1,703 @@
+[
+    {
+        "apiname": "informasi",
+        "tabel": [
+            {
+                "namaapi": "berita",
+                "metode": "GET",
+                "param": "apikey",
+                "linkapi": "berita.php"
+            },
+            {
+                "namaapi": "Brainly",
+                "metode": "GET",
+                "param": "apikey, query",
+                "linkapi": "brainly.php"
+            },
+            {
+                "namaapi": "NPM info",
+                "metode": "GET",
+                "param": "apikey, query",
+                "linkapi": "npm_info.php"
+            }
+        ]
+    },
+    {
+        "apiname": "network",
+        "tabel": [
+            {
+                "namaapi": "DNS lookup",
+                "metode": "GET",
+                "param": "apikey, query, method",
+                "linkapi": "dns.php"
+            },
+            {
+                "namaapi": "Whois lookup",
+                "metode": "GET",
+                "param": "apikey, domain",
+                "linkapi": "whois.php"
+            },
+            {
+                "namaapi": "IP/Domain geo",
+                "metode": "GET",
+                "param": "apikey, domain",
+                "linkapi": "ip_geo.php"
+            }
+        ]
+    },
+    {
+        "apiname": "text_maker",
+        "tabel": [
+            {
+                "namaapi": "Generate quotes",
+                "metode": "GET",
+                "param": "apikey, kata",
+                "linkapi": "quotes.php"
+            },
+            {
+                "namaapi": "shadow",
+                "metode": "GET",
+                "param": "apikey, kata1",
+                "linkapi": "text_maker/shadow"
+            },
+            {
+                "namaapi": "flower_cup",
+                "metode": "GET",
+                "param": "apikey, kata1",
+                "linkapi": "text_maker/flower_cup"
+            },
+            {
+                "namaapi": "romantic_messages",
+                "metode": "GET",
+                "param": "apikey, kata1",
+                "linkapi": "text_maker/romantic_messages"
+            },
+            {
+                "namaapi": "burn_paper",
+                "metode": "GET",
+                "param": "apikey, kata1",
+                "linkapi": "text_maker/burn_paper"
+            },
+            {
+                "namaapi": "funny_cup",
+                "metode": "GET",
+                "param": "apikey, kata1",
+                "linkapi": "text_maker/funny_cup"
+            },
+            {
+                "namaapi": "hand_love",
+                "metode": "GET",
+                "param": "apikey, kata1",
+                "linkapi": "text_maker/hand_love"
+            },
+            {
+                "namaapi": "grass",
+                "metode": "GET",
+                "param": "apikey, kata1",
+                "linkapi": "text_maker/grass"
+            },
+            {
+                "namaapi": "red_heart",
+                "metode": "GET",
+                "param": "apikey, kata1",
+                "linkapi": "text_maker/red_heart"
+            },
+            {
+                "namaapi": "coffe",
+                "metode": "GET",
+                "param": "apikey, kata1",
+                "linkapi": "text_maker/coffe"
+            },
+            {
+                "namaapi": "wood_heart",
+                "metode": "GET",
+                "param": "apikey, kata1",
+                "linkapi": "text_maker/wood_heart"
+            },
+            {
+                "namaapi": "wooden_board",
+                "metode": "GET",
+                "param": "apikey, kata1",
+                "linkapi": "text_maker/wooden_board"
+            },
+            {
+                "namaapi": "3d_summer",
+                "metode": "GET",
+                "param": "apikey, kata1",
+                "linkapi": "text_maker/3d_summer"
+            },
+            {
+                "namaapi": "wolf_metal",
+                "metode": "GET",
+                "param": "apikey, kata1",
+                "linkapi": "text_maker/wolf_metal"
+            },
+            {
+                "namaapi": "nature_3d",
+                "metode": "GET",
+                "param": "apikey, kata1",
+                "linkapi": "text_maker/nature_3d"
+            },
+            {
+                "namaapi": "underwater",
+                "metode": "GET",
+                "param": "apikey, kata1",
+                "linkapi": "text_maker/underwater"
+            },
+            {
+                "namaapi": "golden_rose",
+                "metode": "GET",
+                "param": "apikey, kata1",
+                "linkapi": "text_maker/golden_rose"
+            },
+            {
+                "namaapi": "summer_nature",
+                "metode": "GET",
+                "param": "apikey, kata1",
+                "linkapi": "text_maker/summer_nature"
+            },
+            {
+                "namaapi": "leaf",
+                "metode": "GET",
+                "param": "apikey, kata1",
+                "linkapi": "text_maker/leaf"
+            },
+            {
+                "namaapi": "fall_leaves",
+                "metode": "GET",
+                "param": "apikey, kata1",
+                "linkapi": "text_maker/fall_leaves"
+            },
+            {
+                "namaapi": "neon",
+                "metode": "GET",
+                "param": "apikey, kata1",
+                "linkapi": "text_maker/neon"
+            },
+            {
+                "namaapi": "rainbow",
+                "metode": "GET",
+                "param": "apikey, kata1",
+                "linkapi": "text_maker/rainbow"
+            },
+            {
+                "namaapi": "army_camouflage_fabric",
+                "metode": "GET",
+                "param": "apikey, kata1",
+                "linkapi": "text_maker/army_camouflage_fabric"
+            },
+            {
+                "namaapi": "3d_glowing",
+                "metode": "GET",
+                "param": "apikey, kata1",
+                "linkapi": "text_maker/3d_glowing"
+            },
+            {
+                "namaapi": "vintage",
+                "metode": "GET",
+                "param": "apikey, kata1",
+                "linkapi": "text_maker/vintage"
+            },
+            {
+                "namaapi": "candy_text",
+                "metode": "GET",
+                "param": "apikey, kata1",
+                "linkapi": "text_maker/candy_text"
+            },
+            {
+                "namaapi": "white_cube",
+                "metode": "GET",
+                "param": "apikey, kata1",
+                "linkapi": "text_maker/white_cube"
+            },
+            {
+                "namaapi": "green_leaves",
+                "metode": "GET",
+                "param": "apikey, kata1",
+                "linkapi": "text_maker/green_leaves"
+            },
+            {
+                "namaapi": "avatar_gradient",
+                "metode": "GET",
+                "param": "apikey, kata1",
+                "linkapi": "text_maker/avatar_gradient"
+            },
+            {
+                "namaapi": "glow_rainbow",
+                "metode": "GET",
+                "param": "apikey, kata1",
+                "linkapi": "text_maker/glow_rainbow"
+            },
+            {
+                "namaapi": "stars",
+                "metode": "GET",
+                "param": "apikey, kata1",
+                "linkapi": "text_maker/stars"
+            },
+            {
+                "namaapi": "fur",
+                "metode": "GET",
+                "param": "apikey, kata1",
+                "linkapi": "text_maker/fur"
+            },
+            {
+                "namaapi": "flaming",
+                "metode": "GET",
+                "param": "apikey, kata1",
+                "linkapi": "text_maker/flaming"
+            },
+            {
+                "namaapi": "chrome",
+                "metode": "GET",
+                "param": "apikey, kata1",
+                "linkapi": "text_maker/chrome"
+            },
+            {
+                "namaapi": "embroidery",
+                "metode": "GET",
+                "param": "apikey, kata1",
+                "linkapi": "text_maker/embroidery"
+            },
+            {
+                "namaapi": "3d_rainbow_background",
+                "metode": "GET",
+                "param": "apikey, kata1",
+                "linkapi": "text_maker/3d_rainbow_background"
+            },
+            {
+                "namaapi": "metalic",
+                "metode": "GET",
+                "param": "apikey, kata1",
+                "linkapi": "text_maker/metalic"
+            },
+            {
+                "namaapi": "striking",
+                "metode": "GET",
+                "param": "apikey, kata1",
+                "linkapi": "text_maker/striking"
+            },
+            {
+                "namaapi": "watermelon",
+                "metode": "GET",
+                "param": "apikey, kata1",
+                "linkapi": "text_maker/watermelon"
+            },
+            {
+                "namaapi": "web_matrix",
+                "metode": "GET",
+                "param": "apikey, kata1",
+                "linkapi": "text_maker/web_matrix"
+            },
+            {
+                "namaapi": "multi_material",
+                "metode": "GET",
+                "param": "apikey, kata1",
+                "linkapi": "text_maker/multi_material"
+            },
+            {
+                "namaapi": "butter_fly",
+                "metode": "GET",
+                "param": "apikey, kata1",
+                "linkapi": "text_maker/butter_fly"
+            },
+            {
+                "namaapi": "wooden_3d",
+                "metode": "GET",
+                "param": "apikey, kata1",
+                "linkapi": "text_maker/wooden_3d"
+            },
+            {
+                "namaapi": "modern_metal",
+                "metode": "GET",
+                "param": "apikey, kata1",
+                "linkapi": "text_maker/modern_metal"
+            },
+            {
+                "namaapi": "harry_poter",
+                "metode": "GET",
+                "param": "apikey, kata1",
+                "linkapi": "text_maker/harry_poter"
+            },
+            {
+                "namaapi": "3bit",
+                "metode": "GET",
+                "param": "apikey, kata1",
+                "linkapi": "text_maker/3bit"
+            },
+            {
+                "namaapi": "coffe_cup",
+                "metode": "GET",
+                "param": "apikey, kata1",
+                "linkapi": "text_maker/coffe_cup"
+            },
+            {
+                "namaapi": "luxury_royal",
+                "metode": "GET",
+                "param": "apikey, kata1",
+                "linkapi": "text_maker/luxury_royal"
+            },
+            {
+                "namaapi": "scary",
+                "metode": "GET",
+                "param": "apikey, kata1",
+                "linkapi": "text_maker/scary"
+            },
+            {
+                "namaapi": "woodblock",
+                "metode": "GET",
+                "param": "apikey, kata1",
+                "linkapi": "text_maker/woodblock"
+            },
+            {
+                "namaapi": "smoke",
+                "metode": "GET",
+                "param": "apikey, kata1",
+                "linkapi": "text_maker/smoke"
+            },
+            {
+                "namaapi": "sweet_candy",
+                "metode": "GET",
+                "param": "apikey, kata1",
+                "linkapi": "text_maker/sweet_candy"
+            },
+            {
+                "namaapi": "silk",
+                "metode": "GET",
+                "param": "apikey, kata1",
+                "linkapi": "text_maker/silk"
+            },
+            {
+                "namaapi": "royal",
+                "metode": "GET",
+                "param": "apikey, kata1",
+                "linkapi": "text_maker/royal"
+            },
+            {
+                "namaapi": "orchids_flower",
+                "metode": "GET",
+                "param": "apikey, kata1",
+                "linkapi": "text_maker/orchids_flower"
+            },
+            {
+                "namaapi": "flower",
+                "metode": "GET",
+                "param": "apikey, kata1",
+                "linkapi": "text_maker/flower"
+            },
+            {
+                "namaapi": "party_neon",
+                "metode": "GET",
+                "param": "apikey, kata1",
+                "linkapi": "text_maker/party_neon"
+            },
+            {
+                "namaapi": "dark_metal",
+                "metode": "GET",
+                "param": "apikey, kata1",
+                "linkapi": "text_maker/dark_metal"
+            }
+        ]
+    },
+    {
+        "apiname": "random",
+        "tabel": [
+            {
+                "namaapi": "bucin",
+                "metode": "GET",
+                "param": "apikey",
+                "linkapi": "random_bucin.php"
+            },
+            {
+                "namaapi": "fakta unik",
+                "metode": "GET",
+                "param": "apikey",
+                "linkapi": "random_faktaunik.php"
+            },
+            {
+                "namaapi": "Kata bijak",
+                "metode": "GET",
+                "param": "apikey",
+                "linkapi": "random_kata_bijak.php"
+            },
+            {
+                "namaapi": "pantun",
+                "metode": "GET",
+                "param": "apikey",
+                "linkapi": "random_pantun.php"
+            },
+            {
+                "namaapi": "quotes",
+                "metode": "GET",
+                "param": "apikey",
+                "linkapi": "random_quotes.php"
+            }
+        ]
+    },
+    {
+        "apiname": "random_wallpaper",
+        "tabel": [
+            {
+                "namaapi": "wallpaper",
+                "metode": "GET",
+                "param": "apikey",
+                "linkapi": "random_wallpaper_unsplash.php"
+            },
+            {
+                "namaapi": "cyber",
+                "metode": "GET",
+                "param": "apikey",
+                "linkapi": "wallpaper_cyber.php"
+            },
+            {
+                "namaapi": "game",
+                "metode": "GET",
+                "param": "apikey",
+                "linkapi": "wallpaper_game.php"
+            },
+            {
+                "namaapi": "islami",
+                "metode": "GET",
+                "param": "apikey",
+                "linkapi": "wallpaper_islami.php"
+            },
+            {
+                "namaapi": "programming",
+                "metode": "GET",
+                "param": "apikey",
+                "linkapi": "wallpaper_programming.php"
+            },
+            {
+                "namaapi": "tech",
+                "metode": "GET",
+                "param": "apikey",
+                "linkapi": "wallpaper_tech.php"
+            }
+        ]
+    },
+    {
+        "apiname": "random_waifu",
+        "tabel": [
+            {
+                "namaapi": "waifu",
+                "metode": "GET",
+                "param": "apikey",
+                "linkapi": "waifu_sfw/waifu"
+            },
+            {
+                "namaapi": "neko",
+                "metode": "GET",
+                "param": "apikey",
+                "linkapi": "waifu_sfw/neko"
+            },
+            {
+                "namaapi": "shinobu",
+                "metode": "GET",
+                "param": "apikey",
+                "linkapi": "waifu_sfw/shinobu"
+            },
+            {
+                "namaapi": "megumin",
+                "metode": "GET",
+                "param": "apikey",
+                "linkapi": "waifu_sfw/megumin"
+            },
+            {
+                "namaapi": "cuddle",
+                "metode": "GET",
+                "param": "apikey",
+                "linkapi": "waifu_sfw/cuddle"
+            },
+            {
+                "namaapi": "cry",
+                "metode": "GET",
+                "param": "apikey",
+                "linkapi": "waifu_sfw/cry"
+            },
+            {
+                "namaapi": "hug",
+                "metode": "GET",
+                "param": "apikey",
+                "linkapi": "waifu_sfw/hug"
+            },
+            {
+                "namaapi": "awoo",
+                "metode": "GET",
+                "param": "apikey",
+                "linkapi": "waifu_sfw/awoo"
+            },
+            {
+                "namaapi": "kiss",
+                "metode": "GET",
+                "param": "apikey",
+                "linkapi": "waifu_sfw/kiss"
+            },
+            {
+                "namaapi": "lick",
+                "metode": "GET",
+                "param": "apikey",
+                "linkapi": "waifu_sfw/lick"
+            },
+            {
+                "namaapi": "pat",
+                "metode": "GET",
+                "param": "apikey",
+                "linkapi": "waifu_sfw/pat"
+            },
+            {
+                "namaapi": "smug",
+                "metode": "GET",
+                "param": "apikey",
+                "linkapi": "waifu_sfw/smug"
+            },
+            {
+                "namaapi": "bonk",
+                "metode": "GET",
+                "param": "apikey",
+                "linkapi": "waifu_sfw/bonk"
+            },
+            {
+                "namaapi": "yeet",
+                "metode": "GET",
+                "param": "apikey",
+                "linkapi": "waifu_sfw/yeet"
+            },
+            {
+                "namaapi": "blush",
+                "metode": "GET",
+                "param": "apikey",
+                "linkapi": "waifu_sfw/blush"
+            },
+            {
+                "namaapi": "smile",
+                "metode": "GET",
+                "param": "apikey",
+                "linkapi": "waifu_sfw/smile"
+            },
+            {
+                "namaapi": "wave",
+                "metode": "GET",
+                "param": "apikey",
+                "linkapi": "waifu_sfw/wave"
+            },
+            {
+                "namaapi": "highfive",
+                "metode": "GET",
+                "param": "apikey",
+                "linkapi": "waifu_sfw/highfive"
+            },
+            {
+                "namaapi": "handhold",
+                "metode": "GET",
+                "param": "apikey",
+                "linkapi": "waifu_sfw/handhold"
+            },
+            {
+                "namaapi": "nom",
+                "metode": "GET",
+                "param": "apikey",
+                "linkapi": "waifu_sfw/nom"
+            },
+            {
+                "namaapi": "bite",
+                "metode": "GET",
+                "param": "apikey",
+                "linkapi": "waifu_sfw/bite"
+            },
+            {
+                "namaapi": "glomp",
+                "metode": "GET",
+                "param": "apikey",
+                "linkapi": "waifu_sfw/glomp"
+            },
+            {
+                "namaapi": "kill",
+                "metode": "GET",
+                "param": "apikey",
+                "linkapi": "waifu_sfw/kill"
+            },
+            {
+                "namaapi": "slap",
+                "metode": "GET",
+                "param": "apikey",
+                "linkapi": "waifu_sfw/slap"
+            },
+            {
+                "namaapi": "happy",
+                "metode": "GET",
+                "param": "apikey",
+                "linkapi": "waifu_sfw/happy"
+            },
+            {
+                "namaapi": "wink",
+                "metode": "GET",
+                "param": "apikey",
+                "linkapi": "waifu_sfw/wink"
+            },
+            {
+                "namaapi": "poke",
+                "metode": "GET",
+                "param": "apikey",
+                "linkapi": "waifu_sfw/poke"
+            },
+            {
+                "namaapi": "dance",
+                "metode": "GET",
+                "param": "apikey",
+                "linkapi": "waifu_sfw/dance"
+            },
+            {
+                "namaapi": "cringe",
+                "metode": "GET",
+                "param": "apikey",
+                "linkapi": "waifu_sfw/cringe"
+            },
+            {
+                "namaapi": "blush",
+                "metode": "GET",
+                "param": "apikey",
+                "linkapi": "waifu_sfw/blush"
+            },
+            {
+                "namaapi": "[NSFW] waifu",
+                "metode": "GET",
+                "param": "apikey",
+                "linkapi": "waifu_nsfw/waifu"
+            },
+            {
+                "namaapi": "[NSFW] neko",
+                "metode": "GET",
+                "param": "apikey",
+                "linkapi": "waifu_nsfw/neko"
+            },
+            {
+                "namaapi": "[NSFW] trap",
+                "metode": "GET",
+                "param": "apikey",
+                "linkapi": "waifu_nsfw/trap"
+            },
+            {
+                "namaapi": "[NSFW] blowjob",
+                "metode": "GET",
+                "param": "apikey",
+                "linkapi": "waifu_nsfw/blowjob"
+            }
+        ]
+    },
+    {
+        "apiname": "other",
+        "tabel": [
+            {
+                "namaapi": "short link",
+                "metode": "GET",
+                "param": "apikey, query",
+                "linkapi": "shortlink.php"
+            },
+            {
+                "namaapi": "short link",
+                "metode": "GET",
+                "param": "apikey, query",
+                "linkapi": "shortlink.php"
+            }
+        ]
+    }
+]
