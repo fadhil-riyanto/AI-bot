@@ -4,7 +4,7 @@ $imagelink = 'assets/doc/img/home.png';
 $history = json_decode(file_get_contents('webdata.json'), true);
 $ghlink = 'https://github.com/fadhil-riyanto';
 $email = 'hi@fadhilriyanto.eu.org';
-$apilink = 'https://fadhilapisss.docs.apiary.io/';
+$apilink = 'https://fadhilapisss.herokuapp.com/docs';
 ?>
 
 <!DOCTYPE html>
