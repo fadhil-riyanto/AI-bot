@@ -8,4 +8,8 @@ if (isset($_GET['domain'])) {
     render_json(array(
         "data" => $whois_answer
     ));
+} else {
+    render_json(array(
+        'error' => 'parameter tidak lengkap, dibutuhkan domain'
+    ));
 }

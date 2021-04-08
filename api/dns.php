@@ -36,4 +36,8 @@ if (isset($_GET['query']) && isset($_GET['method'])) {
     }
 
     render_json($m);
+} else {
+    render_json(array(
+        'error' => 'parameter tidak lengkap, dibutuhkan query dan method'
+    ));
 }

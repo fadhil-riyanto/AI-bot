@@ -10,8 +10,8 @@ class ComposerStaticInit37458c04d77e08a184290ff46a23e733
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
         'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
-        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
+        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '2cffec82183ee1cea088009cef9a6fc3' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier.composer.php',
         'abede361264e2ae69ec1eee813a101af' => __DIR__ . '/..' . '/markbaker/complex/classes/src/functions/abs.php',
         '21a5860fbef5be28db5ddfbc3cca67c4' => __DIR__ . '/..' . '/markbaker/complex/classes/src/functions/acos.php',
@@ -86,6 +86,10 @@ class ComposerStaticInit37458c04d77e08a184290ff46a23e733
             'Zend\\Stdlib\\' => 12,
             'Zend\\Escaper\\' => 13,
         ),
+        'Y' => 
+        array (
+            'YouTube\\' => 8,
+        ),
         'T' => 
         array (
             'Treinetic\\ImageArtist\\' => 22,
@@ -127,6 +131,8 @@ class ComposerStaticInit37458c04d77e08a184290ff46a23e733
         ),
         'C' => 
         array (
+            'Curl\\' => 5,
+            'CurlDownloader\\' => 15,
             'Complex\\' => 8,
         ),
         'B' => 
@@ -156,6 +162,10 @@ class ComposerStaticInit37458c04d77e08a184290ff46a23e733
         'Zend\\Escaper\\' => 
         array (
             0 => __DIR__ . '/..' . '/zendframework/zend-escaper/src',
+        ),
+        'YouTube\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/athlon1600/youtube-downloader/src',
         ),
         'Treinetic\\ImageArtist\\' => 
         array (
@@ -229,6 +239,14 @@ class ComposerStaticInit37458c04d77e08a184290ff46a23e733
         'Gregwar\\' => 
         array (
             0 => __DIR__ . '/..' . '/gregwar/captcha/src/Gregwar',
+        ),
+        'Curl\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/athlon1600/php-curl-client/src',
+        ),
+        'CurlDownloader\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/athlon1600/php-curl-file-downloader/src',
         ),
         'Complex\\' => 
         array (

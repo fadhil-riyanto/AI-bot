@@ -58,4 +58,8 @@ if (isset($_GET['query'])) {
     }
 
     render_json($res);
+} else {
+    render_json(array(
+        'error' => 'parameter tidak lengkap, dibutuhkan query'
+    ));
 }

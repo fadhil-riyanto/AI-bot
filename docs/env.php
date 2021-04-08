@@ -12,8 +12,10 @@ $githublinkdev = 'https://github.com/fadhil-riyanto/AI-bot';
 $selamatdatang = 'Selamat datang!!!';
 $titleindex = 'Fadhil Rest Api';
 $body = <<<EOF
-kenalin, namaku fadhil, asal dari semarang. api ini free tanpa apikey.<br>
-Mohon jangan membuat flood server atau membuat banjir yang berlebihan.<br><br>
+kenalin, namaku fadhil, asal dari semarang. api ini free dengan apikey.<br>
+utk dapet apikeynya kamu bisa kontak saya.<br>
+
+Mohon jangan membuat flood server dan membuat banjir yang berlebihan.<br><br>
 Jika kamu suka api ini, boleh dong follow akun github saya. <br>
 <br>
 Makasi 😘<br><br>
@@ -23,6 +25,7 @@ Makasi 😘<br><br>
  <li>Allah SWT.</li>
  <li>HP 430 intel i3 ram 4 gb</li>
  <li>Heroku</li>
+ <li><a href='http://lolhuman.herokuapp.com/docs'>@lolhuman</li>
                 </ul>
 EOF;
 

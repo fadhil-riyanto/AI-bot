@@ -17,6 +17,6 @@ if (isset($_GET['theme'])) {
     }
 } else {
     render_json(array(
-        'error' => 'theme ga ditemukan'
+        'error' => 'parameter tidak lengkap, dibutuhkan theme'
     ));
 }

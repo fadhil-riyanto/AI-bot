@@ -116,4 +116,8 @@ if (isset($_GET['type'])) {
         );
         render_json($arr);
     }
+} else {
+    render_json(array(
+        'error' => 'parameter tidak lengkap, type yang berisi sfw atau nsfw'
+    ));
 }

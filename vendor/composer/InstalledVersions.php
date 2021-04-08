@@ -29,7 +29,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => 'fd937643db4eff592772a7539f507d474df80077',
+    'reference' => '1d4fef8b5ee8f2bded01b2965b1e7c0f26d1ca43',
     'name' => '__root__',
   ),
   'versions' => 
@@ -41,7 +41,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => 'fd937643db4eff592772a7539f507d474df80077',
+      'reference' => '1d4fef8b5ee8f2bded01b2965b1e7c0f26d1ca43',
     ),
     'ammarfaizi2/brainly' => 
     array (
@@ -51,6 +51,33 @@ private static $installed = array (
       array (
       ),
       'reference' => '9a5e59a51bf6a5d60419b739d8acc3c40ea79d9b',
+    ),
+    'athlon1600/php-curl-client' => 
+    array (
+      'pretty_version' => 'v1.1.3',
+      'version' => '1.1.3.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '2c9a7ac0aea487fcdfc57333dfba6cb684fb64fc',
+    ),
+    'athlon1600/php-curl-file-downloader' => 
+    array (
+      'pretty_version' => 'v1.0.2',
+      'version' => '1.0.2.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '66391a0b89e2ed8b42ed6341e111f180697e0c5f',
+    ),
+    'athlon1600/youtube-downloader' => 
+    array (
+      'pretty_version' => 'v3.0.0',
+      'version' => '3.0.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'bf0eb5381460de1f7818a6abe799b2423a5b4c26',
     ),
     'buchin/badwords' => 
     array (

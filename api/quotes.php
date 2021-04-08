@@ -18,4 +18,8 @@ if (isset($_GET['kata'])) {
             'error' => 'internal sistem'
         ));
     }
+} else {
+    render_json(array(
+        'error' => 'parameter tidak lengkap, dibutuhkan kata'
+    ));
 }

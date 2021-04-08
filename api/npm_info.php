@@ -8,4 +8,8 @@ if (isset($_GET['query'])) {
     $output = curl_exec($ch);
     curl_close($ch);
     render_json(json_decode($output));
+} else {
+    render_json(array(
+        'error' => 'parameter tidak lengkap, dibutuhkan query'
+    ));
 }
