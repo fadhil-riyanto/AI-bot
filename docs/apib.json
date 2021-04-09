@@ -850,6 +850,12 @@
                 "metode": "GET",
                 "param": "apikey, anime",
                 "linkapi": "kusonime.php"
+            },
+            {
+                "namaapi": "Alay",
+                "metode": "GET",
+                "param": "apikey, text",
+                "linkapi": "alay.php"
             }
         ]
     }

@@ -41,7 +41,7 @@ if (isset($_GET['text'])) {
         't' => '7',
     ];
 
-    $text = 'kamu kenapa sih?';
+    $text = $_GET['text'];
 
     function alay_generator($text, $level_alay)
     {
@@ -61,9 +61,9 @@ if (isset($_GET['text'])) {
     render_json(array(
         "result" => $alay
     ));
-}else{
+} else {
     render_json(array(
-        "error" => "arameter text tidak ditemukan"
+        "error" => "parameter text tidak ditemukan"
     ));
 }
 
