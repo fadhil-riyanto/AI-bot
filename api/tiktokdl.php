@@ -4,13 +4,14 @@ require __DIR__ . '/middleware.php';
 if (isset($_GET['url'])) {
     require __DIR__ . '/../include/simple_html_dom.php';
     $client = new \GuzzleHttp\Client();
-    echo "test";
+
     $response = $client->request('POST', 'https://snaptik.app/action-2021.php?lang=EN', [
         'form_params' => [
             'url' => $_GET['url']
         ]
     ]);
     $htmls =  $response->getBody();
+    echo "test";
     //dapatkan button link
     $html = new simple_html_dom();
     $html->load($htmls);
