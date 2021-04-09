@@ -708,6 +708,89 @@
         ]
     },
     {
+        "apiname": "islami",
+        "tabel": [
+            {
+                "namaapi": "bacaan salat ~ alfatihah",
+                "metode": "GET",
+                "param": "apikey",
+                "linkapi": "islami/bacaan_shalat/al_fatihah"
+            },
+            {
+                "namaapi": "bacaan salat ~ diantara sujud",
+                "metode": "GET",
+                "param": "apikey",
+                "linkapi": "islami/bacaan_shalat/diantara_sujud"
+            },
+            {
+                "namaapi": "bacaan salat ~ iftitah",
+                "metode": "GET",
+                "param": "apikey",
+                "linkapi": "islami/bacaan_shalat/iftitah"
+            },
+            {
+                "namaapi": "bacaan salat ~ ruku",
+                "metode": "GET",
+                "param": "apikey",
+                "linkapi": "islami/bacaan_shalat/ruku"
+            },
+            {
+                "namaapi": "bacaan salat ~ salam",
+                "metode": "GET",
+                "param": "apikey",
+                "linkapi": "islami/bacaan_shalat/salam"
+            },
+            {
+                "namaapi": "bacaan salat ~ sujud",
+                "metode": "GET",
+                "param": "apikey",
+                "linkapi": "islami/bacaan_shalat/sujud"
+            },
+            {
+                "namaapi": "bacaan salat ~ tasyahud_akhir",
+                "metode": "GET",
+                "param": "apikey",
+                "linkapi": "islami/bacaan_shalat/tasyahud_akhir"
+            },
+            {
+                "namaapi": "bacaan salat ~ tasyahud_awal",
+                "metode": "GET",
+                "param": "apikey",
+                "linkapi": "islami/bacaan_shalat/tasyahud_awal"
+            },
+            {
+                "namaapi": "asmaulhusna",
+                "metode": "GET",
+                "param": "apikey",
+                "linkapi": "islami/asmaulhusna"
+            },
+            {
+                "namaapi": "ayat kursi",
+                "metode": "GET",
+                "param": "apikey",
+                "linkapi": "islami/ayat_kursi"
+            },
+            {
+                "namaapi": "doa harian",
+                "metode": "GET",
+                "param": "apikey, query",
+                "linkapi": "islami/doa_harian"
+            },
+            {
+                "namaapi": "kisah nabi",
+                "metode": "GET",
+                "param": "apikey, query",
+                "linkapi": "islami/kisah_nabi"
+            },
+            {
+                "namaapi": "niat shalat",
+                "metode": "GET",
+                "param": "apikey, query",
+                "linkapi": "islami/niat_shalat"
+            }
+        ]
+    },
+    {
         "apiname": "other",
         "tabel": [
             {
@@ -717,10 +800,16 @@
                 "linkapi": "shortlink.php"
             },
             {
-                "namaapi": "short link",
+                "namaapi": "meme",
                 "metode": "GET",
-                "param": "apikey, query",
-                "linkapi": "shortlink.php"
+                "param": "apikey",
+                "linkapi": "meme.php"
+            },
+            {
+                "namaapi": "kusonime",
+                "metode": "GET",
+                "param": "apikey, anime",
+                "linkapi": "kusonime.php"
             }
         ]
     }

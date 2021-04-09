@@ -1,6 +1,14 @@
 <?php
 error_reporting(0);
-$envsystem_base = 'https://fadhilapisss.herokuapp.com/api/';
+function SERVER_ALAMAT_addr_indez_apis()
+{
+    $protocol = ((!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') ||
+        $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
+    $domainName = $_SERVER['HTTP_HOST'];
+    return $protocol . $domainName;
+}
+
+$envsystem_base = SERVER_ALAMAT_addr_indez_apis() . '/api/';
 
 //dev
 $htmltitle = 'Fadhil Riyanto';

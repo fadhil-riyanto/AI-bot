@@ -24,6 +24,10 @@
         "get_load": "random_waifu"
     },
     {
+        "group": "Islami",
+        "get_load": "islami"
+    },
+    {
         "group": "other",
         "get_load": "other"
     }

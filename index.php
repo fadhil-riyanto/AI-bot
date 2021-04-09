@@ -1,10 +1,18 @@
 <?php
+function SERVER_ALAMAT_addr_indez()
+{
+    $protocol = ((!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') ||
+        $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
+    $domainName = $_SERVER['HTTP_HOST'];
+    return $protocol . $domainName;
+}
+
 $websitelink = 'https://www.developers.eu.org/';
 $imagelink = 'assets/doc/img/home.png';
 $history = json_decode(file_get_contents('webdata.json'), true);
 $ghlink = 'https://github.com/fadhil-riyanto';
 $email = 'hi@fadhilriyanto.eu.org';
-$apilink = 'https://fadhilapisss.herokuapp.com/docs';
+$apilink = SERVER_ALAMAT_addr_indez() . '/docs';
 ?>
 
 <!DOCTYPE html>
