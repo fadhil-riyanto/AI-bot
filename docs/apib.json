@@ -791,6 +791,23 @@
         ]
     },
     {
+        "apiname": "downloader",
+        "tabel": [
+            {
+                "namaapi": "Facebook video low",
+                "metode": "GET",
+                "param": "apikey, url",
+                "linkapi": "facebook_download/low"
+            },
+            {
+                "namaapi": "Facebook video high",
+                "metode": "GET",
+                "param": "apikey, url",
+                "linkapi": "facebook_download/high"
+            }
+        ]
+    },
+    {
         "apiname": "other",
         "tabel": [
             {

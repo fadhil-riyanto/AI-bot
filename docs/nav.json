@@ -28,6 +28,10 @@
         "get_load": "islami"
     },
     {
+        "group": "Downloader",
+        "get_load": "downloader"
+    },
+    {
         "group": "other",
         "get_load": "other"
     }
