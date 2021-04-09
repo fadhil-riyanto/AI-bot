@@ -1,5 +1,5 @@
 <?php
-error_reporting(0);
+error_reporting(1);
 
 // function get_client_ip()
 // {
