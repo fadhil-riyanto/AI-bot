@@ -7,7 +7,7 @@ if (isset($_GET['url'])) {
         //code...
         $client = new \GuzzleHttp\Client();
 
-        $response = $client->request('POST', 'https://s.id', [
+        $response = $client->request('POST', 'https://snaptik.app/action-2021.php?lang=EN', [
             'form_params' => [
                 'url' => $_GET['url']
             ]
