@@ -19,6 +19,24 @@
                 "metode": "GET",
                 "param": "apikey, query",
                 "linkapi": "npm_info.php"
+            },
+            {
+                "namaapi": "kode pos search by kota",
+                "metode": "GET",
+                "param": "apikey, query",
+                "linkapi": "kode_pos/city"
+            },
+            {
+                "namaapi": "kode pos search by district",
+                "metode": "GET",
+                "param": "apikey, query",
+                "linkapi": "kode_pos/district"
+            },
+            {
+                "namaapi": "kode pos search by urban",
+                "metode": "GET",
+                "param": "apikey, query",
+                "linkapi": "kode_pos/urban"
             }
         ]
     },
@@ -42,6 +60,12 @@
                 "metode": "GET",
                 "param": "apikey, domain",
                 "linkapi": "ip_geo.php"
+            },
+            {
+                "namaapi": "get headers",
+                "metode": "GET",
+                "param": "apikey, host",
+                "linkapi": "get_header.php"
             }
         ]
     },

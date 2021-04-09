@@ -1,4 +1,27 @@
+Redirect /database /errorpages/403.php
+Redirect /.git /errorpages/403.php
+Redirect /admin_help /errorpages/403.php
+Redirect /admin_command /errorpages/403.php
+Redirect /json_data /errorpages/403.php
+Redirect /logs /errorpages/403.php
+Redirect /tmp /errorpages/403.php
+Redirect /temp /errorpages/403.php
+Redirect /temp /errorpages/403.php
+
 RewriteEngine on
 RewriteRule ^api/waifu_sfw/([a-zA-Z0-9_]+) api/random_waifu.php?type=sfw&kategori=$1&%{QUERY_STRING} [NC,L]
 RewriteRule ^api/waifu_nsfw/([a-zA-Z0-9_]+) api/random_waifu.php?type=nsfw&kategori=$1&%{QUERY_STRING} [NC,L]
 RewriteRule ^api/text_maker/([a-zA-Z0-9_]+) api/text_maker.php?theme=$1&%{QUERY_STRING} [NC,L]
+RewriteRule ^api/kode_pos/([a-zA-Z0-9_]+) api/kodepos.php?short=$1&%{QUERY_STRING} [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^api/islami/([^/]+)$ api/islami.php?module=$1&%{QUERY_STRING} [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^api/islami/([^/]+)/([^/]+)$ api/islami.php?module=$1&query=$2&%{QUERY_STRING} [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [NC,L] 
