@@ -13,7 +13,8 @@ if (isset($_GET['url'])) {
             ]
         ]);
         $htmls =  $response->getBody();
-        echo "test";
+        echo $htmls;
+        die();
         //dapatkan button link
         $html = new simple_html_dom();
         $html->load($htmls);
