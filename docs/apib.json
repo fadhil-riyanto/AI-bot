@@ -804,6 +804,12 @@
                 "metode": "GET",
                 "param": "apikey, url",
                 "linkapi": "facebook_download/high"
+            },
+            {
+                "namaapi": "Tiktok download",
+                "metode": "GET",
+                "param": "apikey, url",
+                "linkapi": "tiktokdl"
             }
         ]
     },

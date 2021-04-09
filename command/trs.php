@@ -12,7 +12,7 @@ if (!isset($textByreply)) {
     $content = array('chat_id' => $chat_id, 'text' => $reply,   'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
     $telegram->sendMessage($content);
 } elseif (isset($adanParse[1]) and $textByreply) {
-    $translateByReply = file_get_contents('https://api-translate.azharimm.tk/translate?engine=google&text=' . urlencode($textByreply) . '&to=' .  $adanParse[1]);
+    $translateByReply = file_get_contents('https://amm-api-translate.herokuapp.com/translate?engine=google&text=' . urlencode($textByreply) . '&to=' .  $adanParse[1]);
     $transhasil = json_decode($translateByReply);
     $reply = $transhasil->data->result;
     $content = array('chat_id' => $chat_id, 'text' => $reply,   'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
