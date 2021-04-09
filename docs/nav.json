@@ -32,6 +32,10 @@
         "get_load": "downloader"
     },
     {
+        "group": "Information",
+        "get_load": "information"
+    },
+    {
         "group": "other",
         "get_load": "other"
     }

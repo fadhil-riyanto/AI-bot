@@ -814,6 +814,23 @@
         ]
     },
     {
+        "apiname": "information",
+        "tabel": [
+            {
+                "namaapi": "Info Gempa",
+                "metode": "GET",
+                "param": "apikey",
+                "linkapi": "gempa"
+            },
+            {
+                "namaapi": "KBBI",
+                "metode": "GET",
+                "param": "apikey, text",
+                "linkapi": "kbbi"
+            }
+        ]
+    },
+    {
         "apiname": "other",
         "tabel": [
             {
