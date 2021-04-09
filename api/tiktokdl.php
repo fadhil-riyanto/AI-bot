@@ -2,7 +2,6 @@
 require __DIR__ . '/middleware.php';
 
 if (isset($_GET['url'])) {
-    require __DIR__ . '/../vendor/autoload.php';
     require __DIR__ . '/../include/simple_html_dom.php';
     $client = new \GuzzleHttp\Client();
     echo "test";
