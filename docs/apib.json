@@ -37,6 +37,18 @@
                 "metode": "GET",
                 "param": "apikey, query",
                 "linkapi": "kode_pos/urban"
+            },
+            {
+                "namaapi": "Info Gempa",
+                "metode": "GET",
+                "param": "apikey",
+                "linkapi": "gempa"
+            },
+            {
+                "namaapi": "KBBI",
+                "metode": "GET",
+                "param": "apikey, text",
+                "linkapi": "kbbi"
             }
         ]
     },
@@ -810,23 +822,6 @@
                 "metode": "GET",
                 "param": "apikey, url",
                 "linkapi": "tiktokdl"
-            }
-        ]
-    },
-    {
-        "apiname": "information",
-        "tabel": [
-            {
-                "namaapi": "Info Gempa",
-                "metode": "GET",
-                "param": "apikey",
-                "linkapi": "gempa"
-            },
-            {
-                "namaapi": "KBBI",
-                "metode": "GET",
-                "param": "apikey, text",
-                "linkapi": "kbbi"
             }
         ]
     },

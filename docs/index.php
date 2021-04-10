@@ -1,5 +1,8 @@
 <?php
 require __DIR__ . '/env.php';
+if (!isset($_COOKIE["auth_fadhil_login"])) {
+  header("location:no_grant.php");
+}
 ?>
 
 <!DOCTYPE html>
@@ -71,15 +74,16 @@ require __DIR__ . '/env.php';
             <li class="nav-item dropdown no-arrow mx-1">
 
             </li>
+
             <li class="nav-item dropdown no-arrow mx-1">
 
 
             </li>
             <div class="topbar-divider d-none d-sm-block"></div>
             <li class="nav-item dropdown no-arrow">
-              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <img class="img-profile rounded-circle" src="img/boy.png" style="max-width: 60px">
-                <span class="ml-2 d-none d-lg-inline text-white small"><?= $profilenames ?></span>
+              <a class="nav-link" href="delete_auth.php" id="userDropdown" role="button">
+                logout
+
               </a>
               <?php
               if ($profilemode == true) {
