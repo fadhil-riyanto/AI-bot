@@ -2,6 +2,7 @@
 require __DIR__ . '/env.php';
 if (!isset($_COOKIE["auth_fadhil_login"])) {
   header("location:no_grant.php");
+  exit();
 }
 ?>
 

@@ -1,5 +1,9 @@
 <?php
 require __DIR__ . '/env.php';
+if (!isset($_COOKIE["auth_fadhil_login"])) {
+  header("location:no_grant.php");
+  exit();
+}
 if (isset($_GET['data'])) {
   $apinameeede = $_GET['data'];
   $tbl = json_decode(file_get_contents('apib.json'));
