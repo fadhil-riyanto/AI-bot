@@ -3,6 +3,20 @@ require __DIR__ . '/env.php';
 if (!isset($_COOKIE["auth_fadhil_login"])) {
   header("location:no_grant.php");
   exit();
+} else {
+  $apiskeys = $_COOKIE["auth_fadhil_login"];
+  $apicheck = json_decode(file_get_contents(__DIR__ . '/../json_data/api.json'));
+  foreach ($apicheck as $keys) {
+    if (hash('sha512', $keys->key) == $apiskeys) {
+      $apikey_check = true;
+      $namanya = $keys->key;
+    }
+  }
+  if ($apikey_check == true) {
+  } else {
+    header("location:no_grant.php");
+    exit();
+  }
 }
 if (isset($_GET['data'])) {
   $apinameeede = $_GET['data'];

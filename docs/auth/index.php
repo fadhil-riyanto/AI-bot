@@ -5,11 +5,11 @@ if (isset($_POST['key'])) {
 	foreach ($apicheck as $keys) {
 		if ($keys->key == $me) {
 			$apikey_check = true;
-			$namanya = $keys->key;
+			$keyss = $keys->key;
 		}
 	}
 	if (@$apikey_check == true) {
-		setcookie('auth_fadhil_login', hash('sha512', $namanya), time() + 3600, '/');
+		setcookie('auth_fadhil_login', hash('sha512', $keyss), time() + 3600, '/');
 		header("location: /docs/");
 		exit();
 	} else {
