@@ -76,6 +76,17 @@ if (isset($modules)) {
                 );
             }
         }
+        if (count($ab) == 0) {
+            foreach ($a->data as $aa) {
+                $abC[] = $aa->title;
+                
+            }
+            render_json(array(
+                "error" => true,
+                "tersedia_doa" => implode(PHP_EOL, $abC)
+            ));
+            exit();
+        }
         render_json(array(
             "doa" => $ab
         ));

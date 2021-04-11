@@ -6,49 +6,79 @@
                 "namaapi": "berita",
                 "metode": "GET",
                 "param": "apikey",
-                "linkapi": "berita.php"
+                "linkapi": "berita.php",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             },
             {
                 "namaapi": "Brainly",
                 "metode": "GET",
                 "param": "apikey, query",
-                "linkapi": "brainly.php"
+                "linkapi": "brainly.php",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "query": "siapa pembuat pesawat"
+                }
             },
             {
                 "namaapi": "NPM info",
                 "metode": "GET",
                 "param": "apikey, query",
-                "linkapi": "npm_info.php"
+                "linkapi": "npm_info.php",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "query": "sss"
+                }
             },
             {
                 "namaapi": "kode pos search by kota",
                 "metode": "GET",
                 "param": "apikey, query",
-                "linkapi": "kode_pos/city"
+                "linkapi": "kode_pos/city",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "query": "semarang"
+                }
             },
             {
                 "namaapi": "kode pos search by district",
                 "metode": "GET",
                 "param": "apikey, query",
-                "linkapi": "kode_pos/district"
+                "linkapi": "kode_pos/district",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "query": "tembalang"
+                }
             },
             {
                 "namaapi": "kode pos search by urban",
                 "metode": "GET",
                 "param": "apikey, query",
-                "linkapi": "kode_pos/urban"
+                "linkapi": "kode_pos/urban",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "query": "mangunharjo"
+                }
             },
             {
                 "namaapi": "Info Gempa",
                 "metode": "GET",
                 "param": "apikey",
-                "linkapi": "gempa"
+                "linkapi": "gempa",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             },
             {
                 "namaapi": "KBBI",
                 "metode": "GET",
                 "param": "apikey, text",
-                "linkapi": "kbbi"
+                "linkapi": "kbbi",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "text": "minum"
+                }
             }
         ]
     },
@@ -59,25 +89,42 @@
                 "namaapi": "DNS lookup",
                 "metode": "GET",
                 "param": "apikey, query, method",
-                "linkapi": "dns.php"
+                "linkapi": "dns.php",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "query": "google.com",
+                    "method": "aaaa"
+                }
             },
             {
                 "namaapi": "Whois lookup",
                 "metode": "GET",
                 "param": "apikey, domain",
-                "linkapi": "whois.php"
+                "linkapi": "whois.php",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "domain": "google.com"
+                }
             },
             {
                 "namaapi": "IP/Domain geo",
                 "metode": "GET",
                 "param": "apikey, domain",
-                "linkapi": "ip_geo.php"
+                "linkapi": "ip_geo.php",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "domain": "google.com"
+                }
             },
             {
                 "namaapi": "get headers",
                 "metode": "GET",
                 "param": "apikey, host",
-                "linkapi": "get_header.php"
+                "linkapi": "get_header.php",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "host": "http://google.com"
+                }
             }
         ]
     },
@@ -88,349 +135,581 @@
                 "namaapi": "Generate quotes",
                 "metode": "GET",
                 "param": "apikey, kata",
-                "linkapi": "quotes.php"
+                "linkapi": "quotes.php",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kata": "fadhil"
+                }
             },
             {
                 "namaapi": "shadow",
                 "metode": "GET",
                 "param": "apikey, kata1",
-                "linkapi": "text_maker/shadow"
+                "linkapi": "text_maker/shadow",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kata1": "fadhil"
+                }
             },
             {
                 "namaapi": "flower_cup",
                 "metode": "GET",
                 "param": "apikey, kata1",
-                "linkapi": "text_maker/flower_cup"
+                "linkapi": "text_maker/flower_cup",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kata1": "fadhil"
+                }
             },
             {
                 "namaapi": "romantic_messages",
                 "metode": "GET",
                 "param": "apikey, kata1",
-                "linkapi": "text_maker/romantic_messages"
+                "linkapi": "text_maker/romantic_messages",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kata1": "fadhil"
+                }
             },
             {
                 "namaapi": "burn_paper",
                 "metode": "GET",
                 "param": "apikey, kata1",
-                "linkapi": "text_maker/burn_paper"
+                "linkapi": "text_maker/burn_paper",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kata1": "fadhil"
+                }
             },
             {
                 "namaapi": "funny_cup",
                 "metode": "GET",
                 "param": "apikey, kata1",
-                "linkapi": "text_maker/funny_cup"
+                "linkapi": "text_maker/funny_cup",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kata1": "fadhil"
+                }
             },
             {
                 "namaapi": "hand_love",
                 "metode": "GET",
                 "param": "apikey, kata1",
-                "linkapi": "text_maker/hand_love"
+                "linkapi": "text_maker/hand_love",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kata1": "fadhil"
+                }
             },
             {
                 "namaapi": "grass",
                 "metode": "GET",
                 "param": "apikey, kata1",
-                "linkapi": "text_maker/grass"
+                "linkapi": "text_maker/grass",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kata1": "fadhil"
+                }
             },
             {
                 "namaapi": "red_heart",
                 "metode": "GET",
                 "param": "apikey, kata1",
-                "linkapi": "text_maker/red_heart"
+                "linkapi": "text_maker/red_heart",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kata1": "fadhil"
+                }
             },
             {
                 "namaapi": "coffe",
                 "metode": "GET",
                 "param": "apikey, kata1",
-                "linkapi": "text_maker/coffe"
+                "linkapi": "text_maker/coffe",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kata1": "fadhil"
+                }
             },
             {
                 "namaapi": "wood_heart",
                 "metode": "GET",
                 "param": "apikey, kata1",
-                "linkapi": "text_maker/wood_heart"
+                "linkapi": "text_maker/wood_heart",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kata1": "fadhil"
+                }
             },
             {
                 "namaapi": "wooden_board",
                 "metode": "GET",
                 "param": "apikey, kata1",
-                "linkapi": "text_maker/wooden_board"
+                "linkapi": "text_maker/wooden_board",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kata1": "fadhil"
+                }
             },
             {
                 "namaapi": "3d_summer",
                 "metode": "GET",
                 "param": "apikey, kata1",
-                "linkapi": "text_maker/3d_summer"
+                "linkapi": "text_maker/3d_summer",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kata1": "fadhil"
+                }
             },
             {
                 "namaapi": "wolf_metal",
                 "metode": "GET",
                 "param": "apikey, kata1",
-                "linkapi": "text_maker/wolf_metal"
+                "linkapi": "text_maker/wolf_metal",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kata1": "fadhil"
+                }
             },
             {
                 "namaapi": "nature_3d",
                 "metode": "GET",
                 "param": "apikey, kata1",
-                "linkapi": "text_maker/nature_3d"
+                "linkapi": "text_maker/nature_3d",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kata1": "fadhil"
+                }
             },
             {
                 "namaapi": "underwater",
                 "metode": "GET",
                 "param": "apikey, kata1",
-                "linkapi": "text_maker/underwater"
+                "linkapi": "text_maker/underwater",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kata1": "fadhil"
+                }
             },
             {
                 "namaapi": "golden_rose",
                 "metode": "GET",
                 "param": "apikey, kata1",
-                "linkapi": "text_maker/golden_rose"
+                "linkapi": "text_maker/golden_rose",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kata1": "fadhil"
+                }
             },
             {
                 "namaapi": "summer_nature",
                 "metode": "GET",
                 "param": "apikey, kata1",
-                "linkapi": "text_maker/summer_nature"
+                "linkapi": "text_maker/summer_nature",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kata1": "fadhil"
+                }
             },
             {
                 "namaapi": "leaf",
                 "metode": "GET",
                 "param": "apikey, kata1",
-                "linkapi": "text_maker/leaf"
+                "linkapi": "text_maker/leaf",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kata1": "fadhil"
+                }
             },
             {
                 "namaapi": "fall_leaves",
                 "metode": "GET",
                 "param": "apikey, kata1",
-                "linkapi": "text_maker/fall_leaves"
+                "linkapi": "text_maker/fall_leaves",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kata1": "fadhil"
+                }
             },
             {
                 "namaapi": "neon",
                 "metode": "GET",
                 "param": "apikey, kata1",
-                "linkapi": "text_maker/neon"
+                "linkapi": "text_maker/neon",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kata1": "fadhil"
+                }
             },
             {
                 "namaapi": "rainbow",
                 "metode": "GET",
                 "param": "apikey, kata1",
-                "linkapi": "text_maker/rainbow"
+                "linkapi": "text_maker/rainbow",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kata1": "fadhil"
+                }
             },
             {
                 "namaapi": "army_camouflage_fabric",
                 "metode": "GET",
                 "param": "apikey, kata1",
-                "linkapi": "text_maker/army_camouflage_fabric"
+                "linkapi": "text_maker/army_camouflage_fabric",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kata1": "fadhil"
+                }
             },
             {
                 "namaapi": "3d_glowing",
                 "metode": "GET",
                 "param": "apikey, kata1",
-                "linkapi": "text_maker/3d_glowing"
+                "linkapi": "text_maker/3d_glowing",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kata1": "fadhil"
+                }
             },
             {
                 "namaapi": "vintage",
                 "metode": "GET",
                 "param": "apikey, kata1",
-                "linkapi": "text_maker/vintage"
+                "linkapi": "text_maker/vintage",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kata1": "fadhil"
+                }
             },
             {
                 "namaapi": "candy_text",
                 "metode": "GET",
                 "param": "apikey, kata1",
-                "linkapi": "text_maker/candy_text"
+                "linkapi": "text_maker/candy_text",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kata1": "fadhil"
+                }
             },
             {
                 "namaapi": "white_cube",
                 "metode": "GET",
                 "param": "apikey, kata1",
-                "linkapi": "text_maker/white_cube"
+                "linkapi": "text_maker/white_cube",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kata1": "fadhil"
+                }
             },
             {
                 "namaapi": "green_leaves",
                 "metode": "GET",
                 "param": "apikey, kata1",
-                "linkapi": "text_maker/green_leaves"
+                "linkapi": "text_maker/green_leaves",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kata1": "fadhil"
+                }
             },
             {
                 "namaapi": "avatar_gradient",
                 "metode": "GET",
                 "param": "apikey, kata1",
-                "linkapi": "text_maker/avatar_gradient"
+                "linkapi": "text_maker/avatar_gradient",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kata1": "fadhil"
+                }
             },
             {
                 "namaapi": "glow_rainbow",
                 "metode": "GET",
                 "param": "apikey, kata1",
-                "linkapi": "text_maker/glow_rainbow"
+                "linkapi": "text_maker/glow_rainbow",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kata1": "fadhil"
+                }
             },
             {
                 "namaapi": "stars",
                 "metode": "GET",
                 "param": "apikey, kata1",
-                "linkapi": "text_maker/stars"
+                "linkapi": "text_maker/stars",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kata1": "fadhil"
+                }
             },
             {
                 "namaapi": "fur",
                 "metode": "GET",
                 "param": "apikey, kata1",
-                "linkapi": "text_maker/fur"
+                "linkapi": "text_maker/fur",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kata1": "fadhil"
+                }
             },
             {
                 "namaapi": "flaming",
                 "metode": "GET",
                 "param": "apikey, kata1",
-                "linkapi": "text_maker/flaming"
+                "linkapi": "text_maker/flaming",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kata1": "fadhil"
+                }
             },
             {
                 "namaapi": "chrome",
                 "metode": "GET",
                 "param": "apikey, kata1",
-                "linkapi": "text_maker/chrome"
+                "linkapi": "text_maker/chrome",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kata1": "fadhil"
+                }
             },
             {
                 "namaapi": "embroidery",
                 "metode": "GET",
                 "param": "apikey, kata1",
-                "linkapi": "text_maker/embroidery"
+                "linkapi": "text_maker/embroidery",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kata1": "fadhil"
+                }
             },
             {
                 "namaapi": "3d_rainbow_background",
                 "metode": "GET",
                 "param": "apikey, kata1",
-                "linkapi": "text_maker/3d_rainbow_background"
+                "linkapi": "text_maker/3d_rainbow_background",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kata1": "fadhil"
+                }
             },
             {
                 "namaapi": "metalic",
                 "metode": "GET",
                 "param": "apikey, kata1",
-                "linkapi": "text_maker/metalic"
+                "linkapi": "text_maker/metalic",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kata1": "fadhil"
+                }
             },
             {
                 "namaapi": "striking",
                 "metode": "GET",
                 "param": "apikey, kata1",
-                "linkapi": "text_maker/striking"
+                "linkapi": "text_maker/striking",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kata1": "fadhil"
+                }
             },
             {
                 "namaapi": "watermelon",
                 "metode": "GET",
                 "param": "apikey, kata1",
-                "linkapi": "text_maker/watermelon"
+                "linkapi": "text_maker/watermelon",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kata1": "fadhil"
+                }
             },
             {
                 "namaapi": "web_matrix",
                 "metode": "GET",
                 "param": "apikey, kata1",
-                "linkapi": "text_maker/web_matrix"
+                "linkapi": "text_maker/web_matrix",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kata1": "fadhil"
+                }
             },
             {
                 "namaapi": "multi_material",
                 "metode": "GET",
                 "param": "apikey, kata1",
-                "linkapi": "text_maker/multi_material"
+                "linkapi": "text_maker/multi_material",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kata1": "fadhil"
+                }
             },
             {
                 "namaapi": "butter_fly",
                 "metode": "GET",
                 "param": "apikey, kata1",
-                "linkapi": "text_maker/butter_fly"
+                "linkapi": "text_maker/butter_fly",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kata1": "fadhil"
+                }
             },
             {
                 "namaapi": "wooden_3d",
                 "metode": "GET",
                 "param": "apikey, kata1",
-                "linkapi": "text_maker/wooden_3d"
+                "linkapi": "text_maker/wooden_3d",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kata1": "fadhil"
+                }
             },
             {
                 "namaapi": "modern_metal",
                 "metode": "GET",
                 "param": "apikey, kata1",
-                "linkapi": "text_maker/modern_metal"
+                "linkapi": "text_maker/modern_metal",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kata1": "fadhil"
+                }
             },
             {
                 "namaapi": "harry_poter",
                 "metode": "GET",
                 "param": "apikey, kata1",
-                "linkapi": "text_maker/harry_poter"
+                "linkapi": "text_maker/harry_poter",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kata1": "fadhil"
+                }
             },
             {
                 "namaapi": "3bit",
                 "metode": "GET",
                 "param": "apikey, kata1",
-                "linkapi": "text_maker/3bit"
+                "linkapi": "text_maker/3bit",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kata1": "fadhil"
+                }
             },
             {
                 "namaapi": "coffe_cup",
                 "metode": "GET",
                 "param": "apikey, kata1",
-                "linkapi": "text_maker/coffe_cup"
+                "linkapi": "text_maker/coffe_cup",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kata1": "fadhil"
+                }
             },
             {
                 "namaapi": "luxury_royal",
                 "metode": "GET",
                 "param": "apikey, kata1",
-                "linkapi": "text_maker/luxury_royal"
+                "linkapi": "text_maker/luxury_royal",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kata1": "fadhil"
+                }
             },
             {
                 "namaapi": "scary",
                 "metode": "GET",
                 "param": "apikey, kata1",
-                "linkapi": "text_maker/scary"
+                "linkapi": "text_maker/scary",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kata1": "fadhil"
+                }
             },
             {
                 "namaapi": "woodblock",
                 "metode": "GET",
                 "param": "apikey, kata1",
-                "linkapi": "text_maker/woodblock"
+                "linkapi": "text_maker/woodblock",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kata1": "fadhil"
+                }
             },
             {
                 "namaapi": "smoke",
                 "metode": "GET",
                 "param": "apikey, kata1",
-                "linkapi": "text_maker/smoke"
+                "linkapi": "text_maker/smoke",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kata1": "fadhil"
+                }
             },
             {
                 "namaapi": "sweet_candy",
                 "metode": "GET",
                 "param": "apikey, kata1",
-                "linkapi": "text_maker/sweet_candy"
+                "linkapi": "text_maker/sweet_candy",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kata1": "fadhil"
+                }
             },
             {
                 "namaapi": "silk",
                 "metode": "GET",
                 "param": "apikey, kata1",
-                "linkapi": "text_maker/silk"
+                "linkapi": "text_maker/silk",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kata1": "fadhil"
+                }
             },
             {
                 "namaapi": "royal",
                 "metode": "GET",
                 "param": "apikey, kata1",
-                "linkapi": "text_maker/royal"
+                "linkapi": "text_maker/royal",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kata1": "fadhil"
+                }
             },
             {
                 "namaapi": "orchids_flower",
                 "metode": "GET",
                 "param": "apikey, kata1",
-                "linkapi": "text_maker/orchids_flower"
+                "linkapi": "text_maker/orchids_flower",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kata1": "fadhil"
+                }
             },
             {
                 "namaapi": "flower",
                 "metode": "GET",
                 "param": "apikey, kata1",
-                "linkapi": "text_maker/flower"
+                "linkapi": "text_maker/flower",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kata1": "fadhil"
+                }
             },
             {
                 "namaapi": "party_neon",
                 "metode": "GET",
                 "param": "apikey, kata1",
-                "linkapi": "text_maker/party_neon"
+                "linkapi": "text_maker/party_neon",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kata1": "fadhil"
+                }
             },
             {
                 "namaapi": "dark_metal",
                 "metode": "GET",
                 "param": "apikey, kata1",
-                "linkapi": "text_maker/dark_metal"
+                "linkapi": "text_maker/dark_metal",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kata1": "fadhil"
+                }
             }
         ]
     },
@@ -441,31 +720,46 @@
                 "namaapi": "bucin",
                 "metode": "GET",
                 "param": "apikey",
-                "linkapi": "random_bucin.php"
+                "linkapi": "random_bucin.php",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             },
             {
                 "namaapi": "fakta unik",
                 "metode": "GET",
                 "param": "apikey",
-                "linkapi": "random_faktaunik.php"
+                "linkapi": "random_faktaunik.php",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             },
             {
                 "namaapi": "Kata bijak",
                 "metode": "GET",
                 "param": "apikey",
-                "linkapi": "random_kata_bijak.php"
+                "linkapi": "random_kata_bijak.php",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             },
             {
                 "namaapi": "pantun",
                 "metode": "GET",
                 "param": "apikey",
-                "linkapi": "random_pantun.php"
+                "linkapi": "random_pantun.php",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             },
             {
                 "namaapi": "quotes",
                 "metode": "GET",
                 "param": "apikey",
-                "linkapi": "random_quotes.php"
+                "linkapi": "random_quotes.php",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             }
         ]
     },
@@ -476,37 +770,55 @@
                 "namaapi": "wallpaper",
                 "metode": "GET",
                 "param": "apikey",
-                "linkapi": "random_wallpaper_unsplash.php"
+                "linkapi": "random_wallpaper_unsplash.php",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             },
             {
                 "namaapi": "cyber",
                 "metode": "GET",
                 "param": "apikey",
-                "linkapi": "wallpaper_cyber.php"
+                "linkapi": "wallpaper_cyber.php",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             },
             {
                 "namaapi": "game",
                 "metode": "GET",
                 "param": "apikey",
-                "linkapi": "wallpaper_game.php"
+                "linkapi": "wallpaper_game.php",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             },
             {
                 "namaapi": "islami",
                 "metode": "GET",
                 "param": "apikey",
-                "linkapi": "wallpaper_islami.php"
+                "linkapi": "wallpaper_islami.php",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             },
             {
                 "namaapi": "programming",
                 "metode": "GET",
                 "param": "apikey",
-                "linkapi": "wallpaper_programming.php"
+                "linkapi": "wallpaper_programming.php",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             },
             {
                 "namaapi": "tech",
                 "metode": "GET",
                 "param": "apikey",
-                "linkapi": "wallpaper_tech.php"
+                "linkapi": "wallpaper_tech.php",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             }
         ]
     },
@@ -517,205 +829,307 @@
                 "namaapi": "waifu",
                 "metode": "GET",
                 "param": "apikey",
-                "linkapi": "waifu_sfw/waifu"
+                "linkapi": "waifu_sfw/waifu",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             },
             {
                 "namaapi": "neko",
                 "metode": "GET",
                 "param": "apikey",
-                "linkapi": "waifu_sfw/neko"
+                "linkapi": "waifu_sfw/neko",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             },
             {
                 "namaapi": "shinobu",
                 "metode": "GET",
                 "param": "apikey",
-                "linkapi": "waifu_sfw/shinobu"
+                "linkapi": "waifu_sfw/shinobu",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             },
             {
                 "namaapi": "megumin",
                 "metode": "GET",
                 "param": "apikey",
-                "linkapi": "waifu_sfw/megumin"
+                "linkapi": "waifu_sfw/megumin",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             },
             {
                 "namaapi": "cuddle",
                 "metode": "GET",
                 "param": "apikey",
-                "linkapi": "waifu_sfw/cuddle"
+                "linkapi": "waifu_sfw/cuddle",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             },
             {
                 "namaapi": "cry",
                 "metode": "GET",
                 "param": "apikey",
-                "linkapi": "waifu_sfw/cry"
+                "linkapi": "waifu_sfw/cry",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             },
             {
                 "namaapi": "hug",
                 "metode": "GET",
                 "param": "apikey",
-                "linkapi": "waifu_sfw/hug"
+                "linkapi": "waifu_sfw/hug",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             },
             {
                 "namaapi": "awoo",
                 "metode": "GET",
                 "param": "apikey",
-                "linkapi": "waifu_sfw/awoo"
+                "linkapi": "waifu_sfw/awoo",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             },
             {
                 "namaapi": "kiss",
                 "metode": "GET",
                 "param": "apikey",
-                "linkapi": "waifu_sfw/kiss"
+                "linkapi": "waifu_sfw/kiss",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             },
             {
                 "namaapi": "lick",
                 "metode": "GET",
                 "param": "apikey",
-                "linkapi": "waifu_sfw/lick"
+                "linkapi": "waifu_sfw/lick",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             },
             {
                 "namaapi": "pat",
                 "metode": "GET",
                 "param": "apikey",
-                "linkapi": "waifu_sfw/pat"
+                "linkapi": "waifu_sfw/pat",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             },
             {
                 "namaapi": "smug",
                 "metode": "GET",
                 "param": "apikey",
-                "linkapi": "waifu_sfw/smug"
+                "linkapi": "waifu_sfw/smug",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             },
             {
                 "namaapi": "bonk",
                 "metode": "GET",
                 "param": "apikey",
-                "linkapi": "waifu_sfw/bonk"
+                "linkapi": "waifu_sfw/bonk",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             },
             {
                 "namaapi": "yeet",
                 "metode": "GET",
                 "param": "apikey",
-                "linkapi": "waifu_sfw/yeet"
+                "linkapi": "waifu_sfw/yeet",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             },
             {
                 "namaapi": "blush",
                 "metode": "GET",
                 "param": "apikey",
-                "linkapi": "waifu_sfw/blush"
+                "linkapi": "waifu_sfw/blush",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             },
             {
                 "namaapi": "smile",
                 "metode": "GET",
                 "param": "apikey",
-                "linkapi": "waifu_sfw/smile"
+                "linkapi": "waifu_sfw/smile",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             },
             {
                 "namaapi": "wave",
                 "metode": "GET",
                 "param": "apikey",
-                "linkapi": "waifu_sfw/wave"
+                "linkapi": "waifu_sfw/wave",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             },
             {
                 "namaapi": "highfive",
                 "metode": "GET",
                 "param": "apikey",
-                "linkapi": "waifu_sfw/highfive"
+                "linkapi": "waifu_sfw/highfive",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             },
             {
                 "namaapi": "handhold",
                 "metode": "GET",
                 "param": "apikey",
-                "linkapi": "waifu_sfw/handhold"
+                "linkapi": "waifu_sfw/handhold",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             },
             {
                 "namaapi": "nom",
                 "metode": "GET",
                 "param": "apikey",
-                "linkapi": "waifu_sfw/nom"
+                "linkapi": "waifu_sfw/nom",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             },
             {
                 "namaapi": "bite",
                 "metode": "GET",
                 "param": "apikey",
-                "linkapi": "waifu_sfw/bite"
+                "linkapi": "waifu_sfw/bite",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             },
             {
                 "namaapi": "glomp",
                 "metode": "GET",
                 "param": "apikey",
-                "linkapi": "waifu_sfw/glomp"
+                "linkapi": "waifu_sfw/glomp",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             },
             {
                 "namaapi": "kill",
                 "metode": "GET",
                 "param": "apikey",
-                "linkapi": "waifu_sfw/kill"
+                "linkapi": "waifu_sfw/kill",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             },
             {
                 "namaapi": "slap",
                 "metode": "GET",
                 "param": "apikey",
-                "linkapi": "waifu_sfw/slap"
+                "linkapi": "waifu_sfw/slap",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             },
             {
                 "namaapi": "happy",
                 "metode": "GET",
                 "param": "apikey",
-                "linkapi": "waifu_sfw/happy"
+                "linkapi": "waifu_sfw/happy",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             },
             {
                 "namaapi": "wink",
                 "metode": "GET",
                 "param": "apikey",
-                "linkapi": "waifu_sfw/wink"
+                "linkapi": "waifu_sfw/wink",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             },
             {
                 "namaapi": "poke",
                 "metode": "GET",
                 "param": "apikey",
-                "linkapi": "waifu_sfw/poke"
+                "linkapi": "waifu_sfw/poke",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             },
             {
                 "namaapi": "dance",
                 "metode": "GET",
                 "param": "apikey",
-                "linkapi": "waifu_sfw/dance"
+                "linkapi": "waifu_sfw/dance",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             },
             {
                 "namaapi": "cringe",
                 "metode": "GET",
                 "param": "apikey",
-                "linkapi": "waifu_sfw/cringe"
+                "linkapi": "waifu_sfw/cringe",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             },
             {
                 "namaapi": "blush",
                 "metode": "GET",
                 "param": "apikey",
-                "linkapi": "waifu_sfw/blush"
+                "linkapi": "waifu_sfw/blush",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             },
             {
                 "namaapi": "[NSFW] waifu",
                 "metode": "GET",
                 "param": "apikey",
-                "linkapi": "waifu_nsfw/waifu"
+                "linkapi": "waifu_nsfw/waifu",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             },
             {
                 "namaapi": "[NSFW] neko",
                 "metode": "GET",
                 "param": "apikey",
-                "linkapi": "waifu_nsfw/neko"
+                "linkapi": "waifu_nsfw/neko",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             },
             {
                 "namaapi": "[NSFW] trap",
                 "metode": "GET",
                 "param": "apikey",
-                "linkapi": "waifu_nsfw/trap"
+                "linkapi": "waifu_nsfw/trap",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             },
             {
                 "namaapi": "[NSFW] blowjob",
                 "metode": "GET",
                 "param": "apikey",
-                "linkapi": "waifu_nsfw/blowjob"
+                "linkapi": "waifu_nsfw/blowjob",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             }
         ]
     },
@@ -726,79 +1140,120 @@
                 "namaapi": "bacaan salat ~ alfatihah",
                 "metode": "GET",
                 "param": "apikey",
-                "linkapi": "islami/bacaan_shalat/al_fatihah"
+                "linkapi": "islami/bacaan_shalat/al_fatihah",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             },
             {
                 "namaapi": "bacaan salat ~ diantara sujud",
                 "metode": "GET",
                 "param": "apikey",
-                "linkapi": "islami/bacaan_shalat/diantara_sujud"
+                "linkapi": "islami/bacaan_shalat/diantara_sujud",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             },
             {
                 "namaapi": "bacaan salat ~ iftitah",
                 "metode": "GET",
                 "param": "apikey",
-                "linkapi": "islami/bacaan_shalat/iftitah"
+                "linkapi": "islami/bacaan_shalat/iftitah",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             },
             {
                 "namaapi": "bacaan salat ~ ruku",
                 "metode": "GET",
                 "param": "apikey",
-                "linkapi": "islami/bacaan_shalat/ruku"
+                "linkapi": "islami/bacaan_shalat/ruku",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             },
             {
                 "namaapi": "bacaan salat ~ salam",
                 "metode": "GET",
                 "param": "apikey",
-                "linkapi": "islami/bacaan_shalat/salam"
+                "linkapi": "islami/bacaan_shalat/salam",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             },
             {
                 "namaapi": "bacaan salat ~ sujud",
                 "metode": "GET",
                 "param": "apikey",
-                "linkapi": "islami/bacaan_shalat/sujud"
+                "linkapi": "islami/bacaan_shalat/sujud",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             },
             {
                 "namaapi": "bacaan salat ~ tasyahud_akhir",
                 "metode": "GET",
                 "param": "apikey",
-                "linkapi": "islami/bacaan_shalat/tasyahud_akhir"
+                "linkapi": "islami/bacaan_shalat/tasyahud_akhir",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             },
             {
                 "namaapi": "bacaan salat ~ tasyahud_awal",
                 "metode": "GET",
                 "param": "apikey",
-                "linkapi": "islami/bacaan_shalat/tasyahud_awal"
+                "linkapi": "islami/bacaan_shalat/tasyahud_awal",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             },
             {
                 "namaapi": "asmaulhusna",
                 "metode": "GET",
                 "param": "apikey",
-                "linkapi": "islami/asmaulhusna"
+                "linkapi": "islami/asmaulhusna",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             },
             {
                 "namaapi": "ayat kursi",
                 "metode": "GET",
                 "param": "apikey",
-                "linkapi": "islami/ayat_kursi"
+                "linkapi": "islami/ayat_kursi",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             },
             {
                 "namaapi": "doa harian",
                 "metode": "GET",
                 "param": "apikey, query",
-                "linkapi": "islami/doa_harian"
+                "linkapi": "islami/doa_harian",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "query": "Doa Sebelum Makan"
+                }
             },
             {
                 "namaapi": "kisah nabi",
                 "metode": "GET",
                 "param": "apikey, query",
-                "linkapi": "islami/kisah_nabi"
+                "linkapi": "islami/kisah_nabi",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "query": "isa"
+                }
             },
             {
                 "namaapi": "niat shalat",
                 "metode": "GET",
                 "param": "apikey, query",
-                "linkapi": "islami/niat_shalat"
+                "linkapi": "islami/niat_shalat",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             }
         ]
     },
@@ -809,16 +1264,24 @@
                 "namaapi": "Facebook video low",
                 "metode": "GET",
                 "param": "apikey, url",
-                "linkapi": "facebook_download/low"
+                "linkapi": "facebook_download/low",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "url": "https://web.facebook.com/TheMoveChannel/videos/1467900783381729"
+                }
             },
             {
                 "namaapi": "Facebook video high",
                 "metode": "GET",
                 "param": "apikey, url",
-                "linkapi": "facebook_download/high"
+                "linkapi": "facebook_download/high",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "url": "https://web.facebook.com/TheMoveChannel/videos/1467900783381729"
+                }
             },
             {
-                "namaapi": "Tiktok download",
+                "namaapi": "Tiktok download (Error)",
                 "metode": "GET",
                 "param": "apikey, url",
                 "linkapi": "tiktokdl"
@@ -832,25 +1295,40 @@
                 "namaapi": "short link",
                 "metode": "GET",
                 "param": "apikey, query",
-                "linkapi": "shortlink.php"
+                "linkapi": "shortlink.php",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "query": "https://tableplus.com/blog/2018/11/error-1040-too-many-connection-increase-max-connections-mysql.html#:~:text=By%20default%2C%20it's%20set%20to,user%20with%20SUPER%20privilege%20only."
+                }
             },
             {
                 "namaapi": "meme",
                 "metode": "GET",
                 "param": "apikey",
-                "linkapi": "meme.php"
+                "linkapi": "meme.php",
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             },
             {
                 "namaapi": "kusonime",
                 "metode": "GET",
                 "param": "apikey, anime",
-                "linkapi": "kusonime.php"
+                "linkapi": "kusonime.php",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "anime": "dr stone"
+                }
             },
             {
                 "namaapi": "Alay",
                 "metode": "GET",
                 "param": "apikey, text",
-                "linkapi": "alay.php"
+                "linkapi": "alay.php",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "text": "test"
+                }
             }
         ]
     }

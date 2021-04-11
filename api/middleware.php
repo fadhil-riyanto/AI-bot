@@ -1,6 +1,8 @@
 <?php
 error_reporting(0);
 
+
+
 // function get_client_ip()
 // {
 //     $ipaddress = '';
@@ -23,12 +25,20 @@ error_reporting(0);
 // $getip = get_client_ip();
 if (isset($_GET['apikey'])) {
     $me = $_GET['apikey'];
-    $apicheck = json_decode(file_get_contents(__DIR__ . '/../json_data/api.json'));
-    foreach ($apicheck as $keys) {
-        if ($keys->key == $me) {
-            $apikey_check = true;
+    require __DIR__ . '/../include/api_oauthsystem.php';
+    $getjsondbmysql = auth_api_getdata();
+    if ($getjsondbmysql == 'error_conn') {
+    } elseif ($getjsondbmysql == 'error_db') {
+    } else {
+        $apicheck = json_decode($getjsondbmysql);
+        foreach ($apicheck as $keys) {
+            if ($keys->key == $me) {
+                $apikey_check = true;
+            }
         }
     }
+
+
     if (@$apikey_check == true) {
     } else {
         render_json(array(
@@ -47,9 +57,8 @@ function render_json($array)
 {
     header('Content-Type: application/json', true, 200);
     $rend = array(
-        "by" => "fadhil_riyanto",
         "telegram" => "@fadhil_riyanto",
-        "pesan" => "Jangan flood request, hargai pembuatnya, dan tetap dirumah",
+        "pesan" => "Jangan flood request, bikin banjir disini. tetap jaga kesehatan dan tetap dirumah",
         "data" => $array
     );
     echo json_encode($rend, JSON_PRETTY_PRINT);

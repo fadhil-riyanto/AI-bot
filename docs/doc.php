@@ -1,23 +1,34 @@
 <?php
 require __DIR__ . '/env.php';
 if (!isset($_COOKIE["auth_fadhil_login"])) {
-  header("location:no_grant.php");
+  header("location:auth/");
   exit();
 } else {
   $apiskeys = $_COOKIE["auth_fadhil_login"];
-  $apicheck = json_decode(file_get_contents(__DIR__ . '/../json_data/api.json'));
-  foreach ($apicheck as $keys) {
-    if (hash('sha512', $keys->key) == $apiskeys) {
-      $apikey_check = true;
-      $namanya = $keys->key;
+  require __DIR__ . '/../include/api_oauthsystem.php';
+  $getjsondbmysql = auth_api_getdata();
+  if ($getjsondbmysql == 'error_conn') {
+    $errordb = true;
+  } elseif ($getjsondbmysql == 'error_db') {
+    $errordb = true;
+  } else {
+    $apicheck = json_decode($getjsondbmysql);
+    foreach ($apicheck as $keys) {
+      if (hash('sha512', $keys->key) == $apiskeys) {
+        $apikey_check = true;
+        $keyapis = $keys->key;
+        $nameapis = $keys->name;
+      }
     }
   }
+
   if ($apikey_check == true) {
   } else {
-    header("location:no_grant.php");
+    header("location:auth/");
     exit();
   }
 }
+
 if (isset($_GET['data'])) {
   $apinameeede = $_GET['data'];
   $tbl = json_decode(file_get_contents('apib.json'));
@@ -171,11 +182,13 @@ if (isset($_GET['data'])) {
                       <?php
                       foreach ($res as $tbls) {
                         foreach ($tbls as $tblss) {
+                          $buildquery = http_build_query($tblss->query_param);
+                          $queryyy = str_replace('API_KEY', $keyapis, $buildquery);
                           echo '<tr>
                         <td>' . $tblss->namaapi . '</a></td>
                         <td>' . $tblss->metode . '</td>
                         <td>' . $tblss->param . '</td>
-                        <td><a href="' . $envsystem_base . $tblss->linkapi . '" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">try</a></td>
+                        <td><a href="' . $envsystem_base . $tblss->linkapi  . '?' . $queryyy . '" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">try</a></td>
                       </tr>';
                         }
                       }
