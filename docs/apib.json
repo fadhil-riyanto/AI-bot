@@ -1281,6 +1281,16 @@
                 }
             },
             {
+                "namaapi": "Youtube downloader",
+                "metode": "GET",
+                "param": "apikey, url",
+                "linkapi": "ytdl.php",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "url": "http://www.youtube.com/watch?v=yJg-Y5byMMw"
+                }
+            },
+            {
                 "namaapi": "Tiktok download (Error)",
                 "metode": "GET",
                 "param": "apikey, url",
