@@ -20,9 +20,7 @@ $githublinkdev = 'https://github.com/fadhil-riyanto/AI-bot';
 $selamatdatang = 'Selamat datang!!!';
 $titleindex = 'Fadhil Rest Api';
 $body = <<<EOF
-kenalin, namaku fadhil, asal dari semarang. api ini free dengan apikey.<br>
-utk dapet apikeynya kamu bisa kontak saya.<br>
-
+kenalin, namaku fadhil, asal dari semarang. api ini free dengan apikey. utk dapet apikeynya kamu bisa kontak saya.<br>
 Mohon jangan membuat flood server dan membuat banjir yang berlebihan.<br><br>
 Jika kamu suka api ini, boleh dong follow akun github saya. <br>
 <br>

@@ -2,6 +2,8 @@
 require __DIR__ . '/../vendor/autoload.php';
 require __DIR__ . '/../pengaturan/env.php';
 
+
+
 function auth_api_getdata()
 {
     if (filemtime(__DIR__ . '/../include/db_cach.txt') < time() - 1 * 60) {

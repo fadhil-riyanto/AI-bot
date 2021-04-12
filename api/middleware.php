@@ -42,7 +42,8 @@ if (isset($_GET['apikey'])) {
     if (@$apikey_check == true) {
     } else {
         render_json(array(
-            'error' => 'HTTP 403, Apikey salah. butuh apikey? minta sama @fadhil_riyanto di telegram'
+            'error' => 'HTTP 403, apikey yang anda masukkan salah',
+            'msg' => 'butuh apikey? minta sama @fadhil_riyanto di telegram'
         ));
         exit();
     }

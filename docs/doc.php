@@ -1,8 +1,9 @@
 <?php
 require __DIR__ . '/env.php';
 if (!isset($_COOKIE["auth_fadhil_login"])) {
-  header("location:auth/");
-  exit();
+  // header("location:auth/");
+  // exit();
+  $isLogin = false;
 } else {
   $apiskeys = $_COOKIE["auth_fadhil_login"];
   require __DIR__ . '/../include/api_oauthsystem.php';
@@ -23,9 +24,9 @@ if (!isset($_COOKIE["auth_fadhil_login"])) {
   }
 
   if ($apikey_check == true) {
+    $isLogin = true;
   } else {
-    header("location:auth/");
-    exit();
+    $isLogin = false;
   }
 }
 
@@ -126,10 +127,19 @@ if (isset($_GET['data'])) {
             </li>
             <div class="topbar-divider d-none d-sm-block"></div>
             <li class="nav-item dropdown no-arrow">
-              <a class="nav-link" href="delete_auth.php" id="userDropdown" role="button">
+              <?php
+              if ($isLogin == true) {
+                echo '<a class="nav-link" href="delete_auth.php" id="userDropdown" role="button">
                 logout
 
-              </a>
+              </a>';
+              } else {
+                echo '<a class="nav-link" href="auth/" id="userDropdown" role="button">
+                Login
+
+              </a>';
+              }
+              ?>
               <?php
               if ($profilemode == true) {
                 echo '<div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
@@ -183,7 +193,12 @@ if (isset($_GET['data'])) {
                       foreach ($res as $tbls) {
                         foreach ($tbls as $tblss) {
                           $buildquery = http_build_query($tblss->query_param);
-                          $queryyy = str_replace('API_KEY', $keyapis, $buildquery);
+                          if ($isLogin == false) {
+                            $queryyy = str_replace('API_KEY', 'API_KEY_ANDA', $buildquery);
+                          } else {
+                            $queryyy = str_replace('API_KEY', $keyapis, $buildquery);
+                          }
+
                           echo '<tr>
                         <td>' . $tblss->namaapi . '</a></td>
                         <td>' . $tblss->metode . '</td>

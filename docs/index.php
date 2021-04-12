@@ -1,8 +1,7 @@
 <?php
 require __DIR__ . '/env.php';
 if (!isset($_COOKIE["auth_fadhil_login"])) {
-  header("location:auth/");
-  exit();
+  $isLogin = false;
 } else {
   $apiskeys = $_COOKIE["auth_fadhil_login"];
   require __DIR__ . '/../include/api_oauthsystem.php';
@@ -23,9 +22,11 @@ if (!isset($_COOKIE["auth_fadhil_login"])) {
   }
 
   if ($apikey_check == true) {
+    $isLogin = true;
   } else {
-    header("location:auth/");
-    exit();
+    // header("location:auth/");
+    // exit();
+    $isLogin = false;
   }
 }
 ?>
@@ -106,10 +107,19 @@ if (!isset($_COOKIE["auth_fadhil_login"])) {
             </li>
             <div class="topbar-divider d-none d-sm-block"></div>
             <li class="nav-item dropdown no-arrow">
-              <a class="nav-link" href="delete_auth.php" id="userDropdown" role="button">
+              <?php
+              if ($isLogin == true) {
+                echo '<a class="nav-link" href="delete_auth.php" id="userDropdown" role="button">
                 logout
 
-              </a>
+              </a>';
+              } else {
+                echo '<a class="nav-link" href="auth/" id="userDropdown" role="button">
+                Login
+
+              </a>';
+              }
+              ?>
               <?php
               if ($profilemode == true) {
                 echo '<div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
@@ -152,7 +162,7 @@ if (!isset($_COOKIE["auth_fadhil_login"])) {
 
 
           <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-12">
               <div class="card mb-4">
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                   <h6 class="m-0 font-weight-bold text-primary"><?= $titleindex ?></h6>
