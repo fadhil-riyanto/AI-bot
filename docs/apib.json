@@ -1302,10 +1302,14 @@
                 }
             },
             {
-                "namaapi": "Tiktok download (Error)",
+                "namaapi": "Tiktok download",
                 "metode": "GET",
                 "param": "apikey, url",
-                "linkapi": "tiktokdl"
+                "linkapi": "tiktokdl",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "url": "https://vt.tiktok.com/ZSJMEXbmW"
+                }
             }
         ]
     },
