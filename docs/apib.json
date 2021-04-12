@@ -79,17 +79,6 @@
                     "apikey": "API_KEY",
                     "text": "minum"
                 }
-            },
-            {
-                "namaapi": "Hadits",
-                "metode": "GET",
-                "param": "apikey, kitab, nomor",
-                "linkapi": "hadits.php",
-                "query_param": {
-                    "apikey": "API_KEY",
-                    "kitab": "malik",
-                    "nomor": "5"
-                }
             }
         ]
     },
@@ -1264,6 +1253,17 @@
                 "linkapi": "islami/niat_shalat",
                 "query_param": {
                     "apikey": "API_KEY"
+                }
+            },
+            {
+                "namaapi": "Hadits",
+                "metode": "GET",
+                "param": "apikey, kitab, nomor",
+                "linkapi": "hadits.php",
+                "query_param": {
+                    "apikey": "API_KEY",
+                    "kitab": "malik",
+                    "nomor": "5"
                 }
             }
         ]
