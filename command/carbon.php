@@ -24,8 +24,15 @@ if ($adanParse[1] == null) {
     $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
     $editmsg = $telegram->sendMessage($content);
 
-    $data = array("backgroundColor" => "rgba(144, 19, 254, 100)", "code" => urlencode(htmlspecialchars_decode($udahDiparse)), "theme" => "dracula");
+    $data = array(
+        "backgroundColor" => "rgba(144, 19, 254, 100)",
+        "code" => urlencode(htmlspecialchars_decode($udahDiparse)),
+        "theme" => "dracula"
+    );
     $data_string = json_encode($data);
+
+
+
     $ch = curl_init('https://carbonnowsh.herokuapp.com');
     curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
     curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);
