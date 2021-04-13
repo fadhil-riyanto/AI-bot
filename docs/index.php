@@ -29,6 +29,32 @@ if (!isset($_COOKIE["auth_fadhil_login"])) {
     $isLogin = false;
   }
 }
+
+function get_client_ipaddr()
+{
+  $ipaddress = '';
+  if (isset($_SERVER['HTTP_CLIENT_IP']))
+    $ipaddress = $_SERVER['HTTP_CLIENT_IP'];
+  else if (isset($_SERVER['HTTP_X_FORWARDED_FOR']))
+    $ipaddress = $_SERVER['HTTP_X_FORWARDED_FOR'];
+  else if (isset($_SERVER['HTTP_X_FORWARDED']))
+    $ipaddress = $_SERVER['HTTP_X_FORWARDED'];
+  else if (isset($_SERVER['HTTP_FORWARDED_FOR']))
+    $ipaddress = $_SERVER['HTTP_FORWARDED_FOR'];
+  else if (isset($_SERVER['HTTP_FORWARDED']))
+    $ipaddress = $_SERVER['HTTP_FORWARDED'];
+  else if (isset($_SERVER['REMOTE_ADDR']))
+    $ipaddress = $_SERVER['REMOTE_ADDR'];
+  else
+    $ipaddress = 'UNKNOWN';
+  return $ipaddress;
+}
+
+function convertnem($size)
+{
+  $unit = array('b', 'kb', 'mb', 'gb', 'tb', 'pb');
+  return @round($size / pow(1024, ($i = floor(log($size, 1024)))), 2) . ' ' . $unit[$i];
+}
 ?>
 
 <!DOCTYPE html>
@@ -158,22 +184,106 @@ if (!isset($_COOKIE["auth_fadhil_login"])) {
             Selamat datang
             <?= $nameapiss ?>
           </div>
+
+
+
+
           <!-- Attention -->
-
-
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="card mb-4">
-                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-primary"><?= $titleindex ?></h6>
-                </div>
-                <div class="card-body">
-                  <?= $body ?>
-                </div>
-
-              </div>
+          <?php
+          if ($isLogin == true) {
+            echo '<div class="row mb-3">
+  <div class="col-xl-3 col-md-6 mb-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <div class="row align-items-center">
+          <div class="col mr-2">
+            <div class="text-xs font-weight-bold text-uppercase mb-1">Jam</div>
+            <div class="h5 mb-0 font-weight-bold text-gray-800">
+            
+            <body onLoad="initClock()">
+            <div id="timedate">
+              <a id="d">1</a>
+              <a id="mon">January</a>
+              <a id="y">0</a><br />
+              <a id="h">12</a> :
+              <a id="m">00</a>:
+              <a id="s">00</a>:
+              <a id="mi">000</a>
             </div>
+
+            </div>
+
           </div>
+          <div class="col-auto">
+            <i class="fas fa-calendar fa-2x text-primary"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Earnings (Annual) Card Example -->
+  <div class="col-xl-3 col-md-6 mb-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <div class="row align-items-center">
+          <div class="col mr-2">
+            <div class="text-xs font-weight-bold text-uppercase mb-1">IP</div>
+            <div class="h5 mb-0 font-weight-bold text-gray-800">
+            
+            ' . get_client_ipaddr() . '
+
+            </div>
+
+          </div>
+          <div class="col-auto">
+            <i class="fas fa-calendar fa-2x text-primary"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- New User Card Example -->
+  <div class="col-xl-3 col-md-6 mb-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <div class="row align-items-center">
+          <div class="col mr-2">
+            <div class="text-xs font-weight-bold text-uppercase mb-1">Ram</div>
+            <div class="h5 mb-0 font-weight-bold text-gray-800">
+            
+            ' . convertnem(memory_get_usage(true)) . '
+
+            </div>
+
+          </div>
+          <div class="col-auto">
+            <i class="fas fa-calendar fa-2x text-primary"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Pending Requests Card Example -->
+  
+</div>';
+          } else {
+            echo '<div class="row">
+<div class="col-lg-12">
+  <div class="card mb-4">
+    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+      <h6 class="m-0 font-weight-bold text-primary">' . $titleindex . '</h6>
+    </div>
+    <div class="card-body">
+      ' . $body . '
+    </div>
+
+  </div>
+</div>
+</div>';
+          }
+
+          ?>
+
           <!--Row-->
 
           <!-- Modal Logout -->
@@ -200,6 +310,7 @@ if (!isset($_COOKIE["auth_fadhil_login"])) {
         </div>
         <!---Container Fluid-->
       </div>
+
       <!-- Footer -->
       <footer class="sticky-footer bg-white">
         <div class="container my-auto">
@@ -220,6 +331,37 @@ if (!isset($_COOKIE["auth_fadhil_login"])) {
   <a class="scroll-to-top rounded" href="#page-top">
     <i class="fas fa-angle-up"></i>
   </a>
+  <script>
+    // START CLOCK SCRIPT
+
+    Number.prototype.pad = function(n) {
+      for (var r = this.toString(); r.length < n; r = 0 + r);
+      return r;
+    };
+
+    function updateClock() {
+      var now = new Date();
+      var milli = now.getMilliseconds(),
+        sec = now.getSeconds(),
+        min = now.getMinutes(),
+        hou = now.getHours(),
+        mo = now.getMonth(),
+        dy = now.getDate(),
+        yr = now.getFullYear();
+      var months = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "Nopember", "Desember"];
+      var tags = ["mon", "d", "y", "h", "m", "s", "mi"],
+        corr = [months[mo], dy, yr, hou.pad(2), min.pad(2), sec.pad(2), milli];
+      for (var i = 0; i < tags.length; i++)
+        document.getElementById(tags[i]).firstChild.nodeValue = corr[i];
+    }
+
+    function initClock() {
+      updateClock();
+      window.setInterval("updateClock()", 1);
+    }
+
+    // END CLOCK SCRIPT
+  </script>
 
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
