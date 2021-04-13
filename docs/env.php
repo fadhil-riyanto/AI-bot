@@ -1,5 +1,5 @@
 <?php
-error_reporting(0);
+error_reporting(1);
 function SERVER_ALAMAT_addr_indez_apis()
 {
     $protocol = ((!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') ||

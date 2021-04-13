@@ -1,7 +1,13 @@
-<?php
-require __DIR__ . '/env.php';
 
-if($_POST['update'])
+<?php
+
+$key = implode('-',str_split(substr(strtolower(hash('sha256',microtime() . rand(1000, 9999))),0,30),6));
+
+/*
+require __DIR__ . '/env.php';
+require __DIR__ . '/../pengaturan/env.php';
+require __DIR__ . '/../vendor/autoload.php';
+
 if (!isset($_COOKIE["auth_fadhil_login"])) {
     $isLogin = false;
 } else {
@@ -24,6 +30,28 @@ if (!isset($_COOKIE["auth_fadhil_login"])) {
     }
 
     if ($apikey_check == true) {
+        if (isset($_POST['update_kredensial'])) {
+
+            $updatekredensial_nama = $_POST['nama'];
+            $updatekredensial_username_telegram = $_POST['username_telegram'];
+            $updatekredensial_password = $_POST['password'];
+
+            $db = new mysqli(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
+            $db->query("UPDATE `b8rkwqqp7tbpt89flosy`.`api_data` 
+        SET `key`='" . $keyapis . "' 
+        WHERE  `key`='" . $keyapis . "' AND 
+        `nama`='admin' AND 
+        `username_telegram`='John' AND 
+        `password`='Doeeeeeeeeeeeeeee' LIMIT 1");
+        }
+
+        // $db->query("UPDATE `api_data` 
+        // SET `key`='c643b8-799f1b-cdd505-5471b5-01c0da' 
+        // WHERE  `key`='c643b8-799f1b-cdd505-5471b5-01c0da' AND 
+        // `nama`='" . $updatekredensial_nama . "' AND 
+        // `username_telegram`='" . $updatekredensial_username_telegram . "' AND 
+        // `password`='" . $updatekredensial_password . "' LIMIT 1");
+        // }
         $isLogin = true;
     } else {
         // header("location:auth/");
@@ -160,7 +188,7 @@ if (!isset($_COOKIE["auth_fadhil_login"])) {
                                     <h6 class="m-0 font-weight-bold text-primary">Informasi kamu</h6>
                                 </div>
                                 <div class="card-body">
-                                    <form action='' method='post'>
+                                    <form action='' method='POST'>
                                         <div class="form-group">
                                             <label for="textinput">Nama kamu</label>
                                             <input type="text" name='nama' class="form-control" id="textinput" aria-describedby="emailHelp" placeholder="Masukkan nama (Opsional)">
@@ -223,4 +251,4 @@ if (!isset($_COOKIE["auth_fadhil_login"])) {
             <script src="js/demo/chart-area-demo.js"></script>
 </body>
 
-</html>
+</html>/*
