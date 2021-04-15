@@ -1,0 +1,1417 @@
+============[Date]============
+[ 2021-04-14 22:05:17  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804485636
+ref.message.message_id= 46561
+ref.message.from.id= 1349919799
+ref.message.from.is_bot= false
+ref.message.from.first_name= Baee
+ref.message.from.last_name= Ro Na
+ref.message.from.username= Oh_Yoon_Hee
+ref.message.from.language_code= id
+ref.message.chat.id= -1001310420564
+ref.message.chat.title= GAS Testing Grup
+ref.message.chat.username= GasTestingGroup
+ref.message.chat.type= supergroup
+ref.message.date= 1618405729
+ref.message.reply_to_message.message_id= 46560
+ref.message.reply_to_message.from.id= 1349919799
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Baee
+ref.message.reply_to_message.from.last_name= Ro Na
+ref.message.reply_to_message.from.username= Oh_Yoon_Hee
+ref.message.reply_to_message.from.language_code= id
+ref.message.reply_to_message.chat.id= -1001310420564
+ref.message.reply_to_message.chat.title= GAS Testing Grup
+ref.message.reply_to_message.chat.username= GasTestingGroup
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1618405570
+ref.message.reply_to_message.sticker.width= 512
+ref.message.reply_to_message.sticker.height= 341
+ref.message.reply_to_message.sticker.emoji= 😭
+ref.message.reply_to_message.sticker.set_name= a1349919799_by_PidicatBot
+ref.message.reply_to_message.sticker.is_animated= false
+ref.message.reply_to_message.sticker.thumb.file_id= AAMCBQADHQJOG25UAAK14GB26MMDViPPhGJUXbrsyrOvlufNAALJAQACArugVttTPWlwGZRZQ41Gb3QAAwEAB20AA4UOAAIfBA
+ref.message.reply_to_message.sticker.thumb.file_unique_id= AQADQ41Gb3QAA4UOAAI
+ref.message.reply_to_message.sticker.thumb.file_size= 4902
+ref.message.reply_to_message.sticker.thumb.width= 320
+ref.message.reply_to_message.sticker.thumb.height= 213
+ref.message.reply_to_message.sticker.file_id= CAACAgUAAx0CThtuVAACteBgdujDA1Yjz4RiVF267Mqzr5bnzQACyQEAAgK7oFbbUz1pcBmUWR8E
+ref.message.reply_to_message.sticker.file_unique_id= AgADyQEAAgK7oFY
+ref.message.reply_to_message.sticker.file_size= 7502
+ref.message.text= /nodejs
+var pile_id = ctx.reply_to_message.sticker.file_id
+global.sticker_sad = (ctx, msgid)=>{
+var data = {
+reply_to_message_id : false
+}
+if(msgid) data.reply_to_message_id = ctx.message.reply_to_message.message_id
+ctx.replyWithSticker(pile_id, data)
+return ctx.deleteMessage()
+}
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 7
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 46561
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(814): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-04-14 22:05:23  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804485637
+ref.message.message_id= 46563
+ref.message.from.id= 1349919799
+ref.message.from.is_bot= false
+ref.message.from.first_name= Baee
+ref.message.from.last_name= Ro Na
+ref.message.from.username= Oh_Yoon_Hee
+ref.message.from.language_code= id
+ref.message.chat.id= -1001310420564
+ref.message.chat.title= GAS Testing Grup
+ref.message.chat.username= GasTestingGroup
+ref.message.chat.type= supergroup
+ref.message.date= 1618405778
+ref.message.reply_to_message.message_id= 46560
+ref.message.reply_to_message.from.id= 1349919799
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Baee
+ref.message.reply_to_message.from.last_name= Ro Na
+ref.message.reply_to_message.from.username= Oh_Yoon_Hee
+ref.message.reply_to_message.from.language_code= id
+ref.message.reply_to_message.chat.id= -1001310420564
+ref.message.reply_to_message.chat.title= GAS Testing Grup
+ref.message.reply_to_message.chat.username= GasTestingGroup
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1618405570
+ref.message.reply_to_message.sticker.width= 512
+ref.message.reply_to_message.sticker.height= 341
+ref.message.reply_to_message.sticker.emoji= 😭
+ref.message.reply_to_message.sticker.set_name= a1349919799_by_PidicatBot
+ref.message.reply_to_message.sticker.is_animated= false
+ref.message.reply_to_message.sticker.thumb.file_id= AAMCBQADHQJOG25UAAK14GB26MMDViPPhGJUXbrsyrOvlufNAALJAQACArugVttTPWlwGZRZQ41Gb3QAAwEAB20AA4UOAAIfBA
+ref.message.reply_to_message.sticker.thumb.file_unique_id= AQADQ41Gb3QAA4UOAAI
+ref.message.reply_to_message.sticker.thumb.file_size= 4902
+ref.message.reply_to_message.sticker.thumb.width= 320
+ref.message.reply_to_message.sticker.thumb.height= 213
+ref.message.reply_to_message.sticker.file_id= CAACAgUAAx0CThtuVAACteBgdujDA1Yjz4RiVF267Mqzr5bnzQACyQEAAgK7oFbbUz1pcBmUWR8E
+ref.message.reply_to_message.sticker.file_unique_id= AgADyQEAAgK7oFY
+ref.message.reply_to_message.sticker.file_size= 7502
+ref.message.text= /nodejs
+var pile_id = msg.reply_to_message.sticker.file_id
+global.sticker_sad = (ctx, msgid)=>{
+var data = {
+reply_to_message_id : false
+}
+if(msgid) data.reply_to_message_id = msg.reply_to_message.message_id
+ctx.replyWithSticker(pile_id, data)
+return ctx.deleteMessage()
+}
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 7
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 46563
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(814): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-04-14 22:05:27  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804485638
+ref.message.message_id= 46564
+ref.message.from.id= 1349919799
+ref.message.from.is_bot= false
+ref.message.from.first_name= Baee
+ref.message.from.last_name= Ro Na
+ref.message.from.username= Oh_Yoon_Hee
+ref.message.from.language_code= id
+ref.message.chat.id= -1001310420564
+ref.message.chat.title= GAS Testing Grup
+ref.message.chat.username= GasTestingGroup
+ref.message.chat.type= supergroup
+ref.message.date= 1618405791
+ref.message.text= /nodejs
+sticker_sad(ctx)
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 7
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 46564
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(814): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-04-14 22:05:34  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804485640
+ref.message.message_id= 46567
+ref.message.from.id= 1349919799
+ref.message.from.is_bot= false
+ref.message.from.first_name= Baee
+ref.message.from.last_name= Ro Na
+ref.message.from.username= Oh_Yoon_Hee
+ref.message.from.language_code= id
+ref.message.chat.id= -1001310420564
+ref.message.chat.title= GAS Testing Grup
+ref.message.chat.username= GasTestingGroup
+ref.message.chat.type= supergroup
+ref.message.date= 1618406057
+ref.message.reply_to_message.message_id= 46565
+ref.message.reply_to_message.from.id= 1651244392
+ref.message.reply_to_message.from.is_bot= true
+ref.message.reply_to_message.from.first_name= Tembak Aku🔫
+ref.message.reply_to_message.from.username= TembakSajaBot
+ref.message.reply_to_message.chat.id= -1001310420564
+ref.message.reply_to_message.chat.title= GAS Testing Grup
+ref.message.reply_to_message.chat.username= GasTestingGroup
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1618405792
+ref.message.reply_to_message.sticker.width= 512
+ref.message.reply_to_message.sticker.height= 341
+ref.message.reply_to_message.sticker.emoji= 😭
+ref.message.reply_to_message.sticker.set_name= a1349919799_by_PidicatBot
+ref.message.reply_to_message.sticker.is_animated= false
+ref.message.reply_to_message.sticker.thumb.file_id= AAMCBQADHQJOG25UAAK15WB26qn4g6goJLWcoXE_0TeNk79wAALJAQACArugVttTPWlwGZRZQ41Gb3QAAwEAB20AA4UOAAIfBA
+ref.message.reply_to_message.sticker.thumb.file_unique_id= AQADQ41Gb3QAA4UOAAI
+ref.message.reply_to_message.sticker.thumb.file_size= 4902
+ref.message.reply_to_message.sticker.thumb.width= 320
+ref.message.reply_to_message.sticker.thumb.height= 213
+ref.message.reply_to_message.sticker.file_id= CAACAgUAAx0CThtuVAACteVgduqp-IOoKCS1nKFxP9E3jZO_cAACyQEAAgK7oFbbUz1pcBmUWR8E
+ref.message.reply_to_message.sticker.file_unique_id= AgADyQEAAgK7oFY
+ref.message.reply_to_message.sticker.file_size= 7502
+ref.message.text= /nodejs
+var pile_id = msg.reply_to_message.sticker.file_id
+global.sticker_sad = (ctx, msgid)=>{
+var data = {
+reply_to_message_id : false
+}
+if(msgid) data.reply_to_message_id = ctx.update.message.reply_to_message.message_id
+ctx.replyWithSticker(pile_id, data)
+return ctx.deleteMessage()
+}
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 7
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 46567
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(814): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-04-14 22:05:37  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804485682
+ref.message.message_id= 91743
+ref.message.from.id= 1195226552
+ref.message.from.is_bot= false
+ref.message.from.first_name= Raffi
+ref.message.from.last_name= Fadlika
+ref.message.from.username= mrfadlika
+ref.message.from.language_code= id
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= Script Iseng ©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1618406613
+ref.message.text= /sosmed
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 7
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 91743
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(814): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-04-14 22:05:40  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804485641
+ref.message.message_id= 46568
+ref.message.from.id= 1349919799
+ref.message.from.is_bot= false
+ref.message.from.first_name= Baee
+ref.message.from.last_name= Ro Na
+ref.message.from.username= Oh_Yoon_Hee
+ref.message.from.language_code= id
+ref.message.chat.id= -1001310420564
+ref.message.chat.title= GAS Testing Grup
+ref.message.chat.username= GasTestingGroup
+ref.message.chat.type= supergroup
+ref.message.date= 1618406072
+ref.message.reply_to_message.message_id= 46565
+ref.message.reply_to_message.from.id= 1651244392
+ref.message.reply_to_message.from.is_bot= true
+ref.message.reply_to_message.from.first_name= Tembak Aku🔫
+ref.message.reply_to_message.from.username= TembakSajaBot
+ref.message.reply_to_message.chat.id= -1001310420564
+ref.message.reply_to_message.chat.title= GAS Testing Grup
+ref.message.reply_to_message.chat.username= GasTestingGroup
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1618405792
+ref.message.reply_to_message.sticker.width= 512
+ref.message.reply_to_message.sticker.height= 341
+ref.message.reply_to_message.sticker.emoji= 😭
+ref.message.reply_to_message.sticker.set_name= a1349919799_by_PidicatBot
+ref.message.reply_to_message.sticker.is_animated= false
+ref.message.reply_to_message.sticker.thumb.file_id= AAMCBQADHQJOG25UAAK15WB26qn4g6goJLWcoXE_0TeNk79wAALJAQACArugVttTPWlwGZRZQ41Gb3QAAwEAB20AA4UOAAIfBA
+ref.message.reply_to_message.sticker.thumb.file_unique_id= AQADQ41Gb3QAA4UOAAI
+ref.message.reply_to_message.sticker.thumb.file_size= 4902
+ref.message.reply_to_message.sticker.thumb.width= 320
+ref.message.reply_to_message.sticker.thumb.height= 213
+ref.message.reply_to_message.sticker.file_id= CAACAgUAAx0CThtuVAACteVgduqp-IOoKCS1nKFxP9E3jZO_cAACyQEAAgK7oFbbUz1pcBmUWR8E
+ref.message.reply_to_message.sticker.file_unique_id= AgADyQEAAgK7oFY
+ref.message.reply_to_message.sticker.file_size= 7502
+ref.message.text= /nodejs
+sticker_sad(ctx, true)
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 7
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 46568
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(814): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-04-14 22:05:41  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804485685
+ref.message.message_id= 91745
+ref.message.from.id= 1195226552
+ref.message.from.is_bot= false
+ref.message.from.first_name= Raffi
+ref.message.from.last_name= Fadlika
+ref.message.from.username= mrfadlika
+ref.message.from.language_code= id
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= Script Iseng ©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1618406633
+ref.message.text= /igstalk verenanggelin
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 8
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 91745
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(814): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-04-14 22:05:45  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804485686
+ref.message.message_id= 91746
+ref.message.from.id= 1195226552
+ref.message.from.is_bot= false
+ref.message.from.first_name= Raffi
+ref.message.from.last_name= Fadlika
+ref.message.from.username= mrfadlika
+ref.message.from.language_code= id
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= Script Iseng ©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1618406638
+ref.message.text= /igstalk
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 8
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 91746
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(814): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-04-14 22:05:45  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804485642
+ref.message.message_id= 46572
+ref.message.from.id= 1349919799
+ref.message.from.is_bot= false
+ref.message.from.first_name= Baee
+ref.message.from.last_name= Ro Na
+ref.message.from.username= Oh_Yoon_Hee
+ref.message.from.language_code= id
+ref.message.chat.id= -1001310420564
+ref.message.chat.title= GAS Testing Grup
+ref.message.chat.username= GasTestingGroup
+ref.message.chat.type= supergroup
+ref.message.date= 1618406228
+ref.message.reply_to_message.message_id= 46571
+ref.message.reply_to_message.from.id= 1527022893
+ref.message.reply_to_message.from.is_bot= true
+ref.message.reply_to_message.from.first_name= Bot Official WMO #StayAtHome
+ref.message.reply_to_message.from.username= WMOOfficialBot
+ref.message.reply_to_message.chat.id= -1001310420564
+ref.message.reply_to_message.chat.title= GAS Testing Grup
+ref.message.reply_to_message.chat.username= GasTestingGroup
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1618406210
+ref.message.reply_to_message.sticker.width= 512
+ref.message.reply_to_message.sticker.height= 341
+ref.message.reply_to_message.sticker.emoji= 😭
+ref.message.reply_to_message.sticker.set_name= a1349919799_by_PidicatBot
+ref.message.reply_to_message.sticker.is_animated= false
+ref.message.reply_to_message.sticker.thumb.file_id= AAMCBQADHQJOG25UAAK162B261RTnVTrJLTcLUjLA3TJsgRXAALJAQACArugVttTPWlwGZRZQ41Gb3QAAwEAB20AA4UOAAIfBA
+ref.message.reply_to_message.sticker.thumb.file_unique_id= AQADQ41Gb3QAA4UOAAI
+ref.message.reply_to_message.sticker.thumb.file_size= 4902
+ref.message.reply_to_message.sticker.thumb.width= 320
+ref.message.reply_to_message.sticker.thumb.height= 213
+ref.message.reply_to_message.sticker.file_id= CAACAgUAAx0CThtuVAACtetgdutUU51U6yS03C1IywN0ybIEVwACyQEAAgK7oFbbUz1pcBmUWR8E
+ref.message.reply_to_message.sticker.file_unique_id= AgADyQEAAgK7oFY
+ref.message.reply_to_message.sticker.file_size= 7502
+ref.message.text= /nodejs
+sticker_sad(ctx, true)
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 7
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 46572
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(814): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-04-14 22:05:48  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804485689
+ref.message.message_id= 91747
+ref.message.from.id= 1195226552
+ref.message.from.is_bot= false
+ref.message.from.first_name= Raffi
+ref.message.from.last_name= Fadlika
+ref.message.from.username= mrfadlika
+ref.message.from.language_code= id
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= Script Iseng ©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1618406650
+ref.message.text= /igstalk hekotin
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 8
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 91747
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(814): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-04-14 22:05:55  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804485645
+ref.message.message_id= 46576
+ref.message.from.id= 1349919799
+ref.message.from.is_bot= false
+ref.message.from.first_name= Baee
+ref.message.from.last_name= Ro Na
+ref.message.from.username= Oh_Yoon_Hee
+ref.message.from.language_code= id
+ref.message.chat.id= -1001310420564
+ref.message.chat.title= GAS Testing Grup
+ref.message.chat.username= GasTestingGroup
+ref.message.chat.type= supergroup
+ref.message.date= 1618406243
+ref.message.reply_to_message.message_id= 46573
+ref.message.reply_to_message.from.id= 1184720056
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Aisyah
+ref.message.reply_to_message.from.username= Htthh8
+ref.message.reply_to_message.from.language_code= id
+ref.message.reply_to_message.chat.id= -1001310420564
+ref.message.reply_to_message.chat.title= GAS Testing Grup
+ref.message.reply_to_message.chat.username= GasTestingGroup
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1618406228
+ref.message.reply_to_message.sticker.width= 494
+ref.message.reply_to_message.sticker.height= 512
+ref.message.reply_to_message.sticker.emoji= ➖
+ref.message.reply_to_message.sticker.set_name= a1184720056_by_Htthh8_1
+ref.message.reply_to_message.sticker.is_animated= false
+ref.message.reply_to_message.sticker.thumb.file_id= AAMCBQADHQJOG25UAAK17WB261Tw2rupi3aIe-Q5TBCzZbx8AAJ-AgAC5rGAV62Emx1KpSX4ponRa3QAAwEAB20AA2hDAAIfBA
+ref.message.reply_to_message.sticker.thumb.file_unique_id= AQADponRa3QAA2hDAAI
+ref.message.reply_to_message.sticker.thumb.file_size= 12934
+ref.message.reply_to_message.sticker.thumb.width= 309
+ref.message.reply_to_message.sticker.thumb.height= 320
+ref.message.reply_to_message.sticker.file_id= CAACAgUAAx0CThtuVAACte1gdutU8Nq7qYt2iHvkOUwQs2W8fAACfgIAAuaxgFethJsdSqUl-B8E
+ref.message.reply_to_message.sticker.file_unique_id= AgADfgIAAuaxgFc
+ref.message.reply_to_message.sticker.file_size= 23414
+ref.message.text= /nodejs
+sticker_sad(ctx, true)
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 7
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 46576
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(814): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-04-14 22:06:08  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804485695
+ref.message.message_id= 91755
+ref.message.from.id= 1397251966
+ref.message.from.is_bot= false
+ref.message.from.first_name= hai
+ref.message.from.username= takedowndmca
+ref.message.from.language_code= id
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= Script Iseng ©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1618406692
+ref.message.text= /igstalk makassar_iinfo
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 8
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 91755
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(814): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-04-14 22:06:15  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804485697
+ref.message.message_id= 91758
+ref.message.from.id= 466284462
+ref.message.from.is_bot= false
+ref.message.from.first_name= Ahmad
+ref.message.from.last_name= Dzaky
+ref.message.from.username= AdZkYy
+ref.message.from.language_code= id
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= Script Iseng ©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1618406703
+ref.message.text= /igp nganu
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 4
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 91758
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(814): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-04-14 22:06:29  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804485701
+ref.message.message_id= 91765
+ref.message.from.id= 1349919799
+ref.message.from.is_bot= false
+ref.message.from.first_name= Baee
+ref.message.from.last_name= Ro Na
+ref.message.from.username= Oh_Yoon_Hee
+ref.message.from.language_code= id
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= Script Iseng ©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1618406738
+ref.message.text= /insta_p nganu
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 8
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 91765
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(814): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-04-14 22:06:52  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804485709
+ref.message.message_id= 91775
+ref.message.from.id= 1397251966
+ref.message.from.is_bot= false
+ref.message.from.first_name= hai
+ref.message.from.username= takedowndmca
+ref.message.from.language_code= id
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= Script Iseng ©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1618406779
+ref.message.text= /igp makassar_iinfo
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 4
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 91775
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(814): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-04-14 22:07:02  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804485743
+ref.message.message_id= 46603
+ref.message.from.id= 1184720056
+ref.message.from.is_bot= false
+ref.message.from.first_name= Aisyah
+ref.message.from.username= Htthh8
+ref.message.from.language_code= id
+ref.message.chat.id= -1001310420564
+ref.message.chat.title= GAS Testing Grup
+ref.message.chat.username= GasTestingGroup
+ref.message.chat.type= supergroup
+ref.message.date= 1618407059
+ref.message.text= /help@WMOOfficialBot
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 20
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 46603
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(814): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-04-14 22:07:10  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804485714
+ref.message.message_id= 91786
+ref.message.from.id= 1184720056
+ref.message.from.is_bot= false
+ref.message.from.first_name= Aisyah
+ref.message.from.username= Htthh8
+ref.message.from.language_code= id
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= Script Iseng ©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1618406824
+ref.message.reply_to_message.message_id= 91781
+ref.message.reply_to_message.from.id= 1349919799
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Baee
+ref.message.reply_to_message.from.last_name= Ro Na
+ref.message.reply_to_message.from.username= Oh_Yoon_Hee
+ref.message.reply_to_message.from.language_code= id
+ref.message.reply_to_message.chat.id= -1001209274058
+ref.message.reply_to_message.chat.title= Script Iseng ©
+ref.message.reply_to_message.chat.username= scriptiseng
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1618406798
+ref.message.reply_to_message.sticker.width= 512
+ref.message.reply_to_message.sticker.height= 405
+ref.message.reply_to_message.sticker.emoji= 🤣
+ref.message.reply_to_message.sticker.set_name= a617311643_by_aji_zxcv_1
+ref.message.reply_to_message.sticker.is_animated= false
+ref.message.reply_to_message.sticker.thumb.file_id= AAMCBQADHQJIFA7KAAEBZoVgdu2OJQZOoc8-807qTDOskc2BNgACBAADm23LJChj-eDIFaiNvMX5MgAEAQAHbQADRkoAAh8E
+ref.message.reply_to_message.sticker.thumb.file_unique_id= AQADvMX5MgAERkoAAg
+ref.message.reply_to_message.sticker.thumb.file_size= 14850
+ref.message.reply_to_message.sticker.thumb.width= 320
+ref.message.reply_to_message.sticker.thumb.height= 253
+ref.message.reply_to_message.sticker.file_id= CAACAgUAAx0CSBQOygABAWaFYHbtjiUGTqHPPvNO6kwzrJHNgTYAAgQAA5ttyyQoY_ngyBWojR8E
+ref.message.reply_to_message.sticker.file_unique_id= AgADBAADm23LJA
+ref.message.reply_to_message.sticker.file_size= 27456
+ref.message.text= /toimg
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 91786
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(814): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-04-14 22:07:12  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804485753
+ref.message.message_id= 46608
+ref.message.from.id= 1184720056
+ref.message.from.is_bot= false
+ref.message.from.first_name= Aisyah
+ref.message.from.username= Htthh8
+ref.message.from.language_code= id
+ref.message.chat.id= -1001310420564
+ref.message.chat.title= GAS Testing Grup
+ref.message.chat.username= GasTestingGroup
+ref.message.chat.type= supergroup
+ref.message.date= 1618407377
+ref.message.text= /send -1001310420564 test
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 46608
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(814): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-04-14 22:07:15  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804485756
+ref.message.message_id= 46610
+ref.message.from.id= 1184720056
+ref.message.from.is_bot= false
+ref.message.from.first_name= Aisyah
+ref.message.from.username= Htthh8
+ref.message.from.language_code= id
+ref.message.chat.id= -1001310420564
+ref.message.chat.title= GAS Testing Grup
+ref.message.chat.username= GasTestingGroup
+ref.message.chat.type= supergroup
+ref.message.date= 1618407480
+ref.message.text= /tr en 🥺
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 3
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 46610
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(814): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-04-14 22:07:23  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804485758
+ref.message.message_id= 46613
+ref.message.from.id= 1184720056
+ref.message.from.is_bot= false
+ref.message.from.first_name= Aisyah
+ref.message.from.username= Htthh8
+ref.message.from.language_code= id
+ref.message.chat.id= -1001310420564
+ref.message.chat.title= GAS Testing Grup
+ref.message.chat.username= GasTestingGroup
+ref.message.chat.type= supergroup
+ref.message.date= 1618407492
+ref.message.text= /tr en contoh
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 3
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 46613
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(814): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-04-14 22:07:28  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804485759
+ref.message.message_id= 46615
+ref.message.from.id= 1184720056
+ref.message.from.is_bot= false
+ref.message.from.first_name= Aisyah
+ref.message.from.username= Htthh8
+ref.message.from.language_code= id
+ref.message.chat.id= -1001310420564
+ref.message.chat.title= GAS Testing Grup
+ref.message.chat.username= GasTestingGroup
+ref.message.chat.type= supergroup
+ref.message.date= 1618407501
+ref.message.reply_to_message.message_id= 46614
+ref.message.reply_to_message.from.id= 1516651914
+ref.message.reply_to_message.from.is_bot= true
+ref.message.reply_to_message.from.first_name= Pidicat Bot
+ref.message.reply_to_message.from.username= PidicatBot
+ref.message.reply_to_message.chat.id= -1001310420564
+ref.message.reply_to_message.chat.title= GAS Testing Grup
+ref.message.reply_to_message.chat.username= GasTestingGroup
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1618407493
+ref.message.reply_to_message.text= Give me the text to translate!
+ref.message.text= /tr en
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 3
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 46615
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(814): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-04-14 22:08:33  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804485740
+ref.message.message_id= 91820
+ref.message.from.id= 1349919799
+ref.message.from.is_bot= false
+ref.message.from.first_name= Baee
+ref.message.from.last_name= Ro Na
+ref.message.from.username= Oh_Yoon_Hee
+ref.message.from.language_code= id
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= Script Iseng ©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1618407010
+ref.message.reply_to_message.message_id= 91816
+ref.message.reply_to_message.from.id= 1393342467
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= ƒα∂нιℓ
+ref.message.reply_to_message.from.last_name= яιуαηтσ
+ref.message.reply_to_message.from.username= fadhil_riyanto
+ref.message.reply_to_message.from.language_code= ms
+ref.message.reply_to_message.chat.id= -1001209274058
+ref.message.reply_to_message.chat.title= Script Iseng ©
+ref.message.reply_to_message.chat.username= scriptiseng
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1618406983
+ref.message.reply_to_message.text= yo karepmu sih. tapi kan apik e publik ae.... ben enak. yen ono wong seng pengen ngegunakke nggarek ngetik ae
+ref.message.text= /tr id
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 3
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 91820
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(814): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-04-14 22:08:51  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804485746
+ref.message.message_id= 91827
+ref.message.from.id= 1349919799
+ref.message.from.is_bot= false
+ref.message.from.first_name= Baee
+ref.message.from.last_name= Ro Na
+ref.message.from.username= Oh_Yoon_Hee
+ref.message.from.language_code= id
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= Script Iseng ©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1618407152
+ref.message.text= /hilang Tidur....
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 7
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 91827
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(814): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-04-14 22:08:57  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804485748
+ref.message.message_id= 91830
+ref.message.from.id= 1184720056
+ref.message.from.is_bot= false
+ref.message.from.first_name= Aisyah
+ref.message.from.username= Htthh8
+ref.message.from.language_code= id
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= Script Iseng ©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1618407202
+ref.message.text= /hilang masih mengerjakan tts
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 7
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 91830
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(814): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-04-14 22:09:24  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804485773
+ref.message.message_id= 91839
+ref.message.from.id= 1195226552
+ref.message.from.is_bot= false
+ref.message.from.first_name= Raffi
+ref.message.from.last_name= Fadlika
+ref.message.from.username= mrfadlika
+ref.message.from.language_code= id
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= Script Iseng ©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1618411836
+ref.message.reply_to_message.message_id= 91837
+ref.message.reply_to_message.from.id= 466284462
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Ahmad
+ref.message.reply_to_message.from.last_name= Dzaky
+ref.message.reply_to_message.from.username= AdZkYy
+ref.message.reply_to_message.from.language_code= id
+ref.message.reply_to_message.chat.id= -1001209274058
+ref.message.reply_to_message.chat.title= Script Iseng ©
+ref.message.reply_to_message.chat.username= scriptiseng
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1618411810
+ref.message.reply_to_message.photo.0.file_id= AgACAgUAAx0CSBQOygABAWa9YHcBIvIQrZESM19moPU94CmnCaEAAmutMRsW5rlXNf1Sds2P_ab-k8ZzdAADAQADAgADeAADyNAAAh8E
+ref.message.reply_to_message.photo.0.file_unique_id= AQAD_pPGc3QAA8jQAAI
+ref.message.reply_to_message.photo.0.file_size= 16584
+ref.message.reply_to_message.photo.0.width= 480
+ref.message.reply_to_message.photo.0.height= 468
+ref.message.reply_to_message.photo.1.file_id= AgACAgUAAx0CSBQOygABAWa9YHcBIvIQrZESM19moPU94CmnCaEAAmutMRsW5rlXNf1Sds2P_ab-k8ZzdAADAQADAgADbQADx9AAAh8E
+ref.message.reply_to_message.photo.1.file_unique_id= AQAD_pPGc3QAA8fQAAI
+ref.message.reply_to_message.photo.1.file_size= 17483
+ref.message.reply_to_message.photo.1.width= 320
+ref.message.reply_to_message.photo.1.height= 312
+ref.message.text= /tosticker
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 10
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 91839
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(814): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-04-14 22:09:48  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804485780
+ref.message.message_id= 91848
+ref.message.from.id= 466284462
+ref.message.from.is_bot= false
+ref.message.from.first_name= Ahmad
+ref.message.from.last_name= Dzaky
+ref.message.from.username= AdZkYy
+ref.message.from.language_code= id
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= Script Iseng ©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1618412144
+ref.message.text= /exehz z.reply(10000*12)
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 91848
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(814): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-04-14 22:20:15  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Unsupported start tag "dir" at byte offset 125
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804485844
+ref.message.message_id= 91925
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001209274058
+ref.message.chat.title= Script Iseng ©
+ref.message.chat.username= scriptiseng
+ref.message.chat.type= supergroup
+ref.message.date= 1618413613
+ref.message.text= /sudo shell dir
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text=  Volume in drive C is System Windows
+ Volume Serial Number is 647B-86AB
+
+ Directory of C:\bot telegram
+
+13/04/2021  22:00    <DIR>          .
+13/04/2021  22:00    <DIR>          ..
+05/04/2021  22:41                35 .gitignore
+12/04/2021  10:35             1.483 .htaccess
+07/04/2021  09:39    <DIR>          admin_command
+07/04/2021  09:39    <DIR>          admin_help
+27/01/2021  11:28            15.733 ai_robot.php
+07/04/2021  09:39    <DIR>          anime_command
+14/04/2021  04:24    <DIR>          api
+06/04/2021  22:38             6.137 apiary.blueprint
+03/02/2021  08:29             5.365 APIs.php
+03/02/2021  08:31             1.085 APIs2.php
+07/04/2021  09:39    <DIR>          assets
+19/01/2021  09:39                30 bad_word.php
+07/04/2021  09:40    <DIR>          bin
+07/04/2021  09:40    <DIR>          brainly
+19/02/2021  08:50                62 buglist.txt
+28/02/2021  19:40               363 chapcha.php
+16/12/2020  13:46             5.891 cli.php
+07/04/2021  09:40    <DIR>          command
+14/04/2021  09:39               885 composer.json
+14/04/2021  09:39            95.752 composer.lock
+18/01/2021  12:12               808 config.php
+18/01/2021  12:02                 0 config.php.example
+28/03/2021  19:52            33.164 count.php
+07/04/2021  09:40    <DIR>          database
+07/04/2021  09:40    <DIR>          doc
+13/04/2021  21:58    <DIR>          docs
+19/01/2021  08:30               199 ekstrak.php
+09/04/2021  09:53    <DIR>          errorpages
+28/02/2021  18:29           159.656 georgia.ttf
+28/01/2021  07:54             1.701 goblok.php
+07/04/2021  09:40    <DIR>          group_command
+07/04/2021  09:40    <DIR>          hash_command
+27/03/2021  14:56    <DIR>          home
+08/04/2021  12:00            42.061 hook.php
+07/04/2021  09:40    <DIR>          imageprocessing
+10/04/2021  22:15    <DIR>          include
+13/04/2021  22:15             8.436 index.php
+11/12/2020  19:07             3.324 index_local.php
+14/04/2021  04:24    <DIR>          json_data
+07/04/2021  09:40    <DIR>          langs
+14/04/2021  22:05    <DIR>          logs
+08/12/2020  19:05         8.549.888 loophole.exe
+07/04/2021  09:40    <DIR>          madeline
+02/04/2021  15:32                41 madeline.phar.version
+02/04/2021  19:23             5.152 MadelineProto.log
+13/04/2021  22:00             3.336 mint.html
+08/03/2021  08:25               464 msgid_calc_php.json
+15/07/2017  23:01        16.351.744 ngrok.exe
+28/02/2021  17:25             3.090 out.jpg
+06/04/2021  12:55             4.015 pandurangpatil.apib
+25/02/2021  19:05             5.104 parser.php
+13/04/2021  22:06    <DIR>          pengaturan
+07/04/2021  09:40    <DIR>          pensiun
+07/04/2021  09:40    <DIR>          photooxy_command
+07/04/2021  09:40    <DIR>          public
+07/04/2021  21:49                 0 qr_generator.php
+18/02/2021  14:14           297.129 result.jpg
+20/02/2021  22:12               407 slash.php
+14/04/2021  11:49    <DIR>          test
+12/02/2021  20:24               134 test.php
+07/04/2021  09:40    <DIR>          tmp
+20/01/2021  13:57               271 user_client.json
+14/04/2021  09:39    <DIR>          vendor
+06/04/2021  21:57               979 webdata.json
+              36 File(s)     25.603.924 bytes
+              30 Dir(s)  28.349.800.448 bytes free
+
+ref.reply_to_message_id= 91925
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\sudo.php(74): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(665): require('C:\\bot telegram...')
+#5 {main}
+

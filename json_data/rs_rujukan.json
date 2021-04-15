@@ -1,0 +1,932 @@
+{
+    "result": {
+        "status": "200",
+        "creator": "videfikri",
+        "data": [
+            {
+                "rumah_sakit": "RS UMUM DAERAH  DR. ZAINOEL ABIDIN",
+                "region": "KOTA BANDA ACEH, ACEH",
+                "provinsi": "Aceh",
+                "address": "JL. TGK DAUD BEUREUEH, NO. 108 B. ACEH",
+                "phone": "(0651) 34565"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH CUT MEUTIA KAB. ACEH UTARA",
+                "region": "KOTA LHOKSEUMAWE, ACEH",
+                "provinsi": "Aceh",
+                "address": "JL. BANDA ACEH-MEDAN KM.6 BUKET RATA LHOKSEUMAWE",
+                "phone": "(0645) 46334"
+            },
+            {
+                "rumah_sakit": "RSUP SANGLAH",
+                "region": "KOTA DENPASAR, BALI",
+                "provinsi": "Bali",
+                "address": "JL. DIPONEGORO DENPASAR BALI",
+                "phone": "(0361) 227912"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH KAB. BULELENG",
+                "region": "BULELENG, BALI",
+                "provinsi": "Bali",
+                "address": "JL. NGURAH RAI 30 SINGARAJA",
+                "phone": "(0362) 22046"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH SANJIWANI GIANYAR",
+                "region": "GIANYAR, BALI",
+                "provinsi": "Bali",
+                "address": "JL. CIUNG WENARA NO.2 GIANYAR",
+                "phone": "(0361) 943049"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH TABANAN",
+                "region": "TABANAN, BALI",
+                "provinsi": "Bali",
+                "address": "JL. PAHLAWAN NO. 14 TABANAN",
+                "phone": "(0361) 811027"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH KABUPATEN TANGERANG",
+                "region": "TANGERANG, BANTEN",
+                "provinsi": "Banten",
+                "address": "JL. A YANI NO. 9 TANGERANG, KOTA TANGERANG",
+                "phone": "(021) 5523507 \/ (021)  5512948 \/ (021) 5513709"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH DR. DRAJAT PRAWIRANEGARA",
+                "region": "TANGERANG, BANTEN",
+                "provinsi": "Banten",
+                "address": "JL. TGK DAUD BEUREUEH, NO. 108 B. ACEH",
+                "phone": null
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH DR. M. YUNUS BENGKULU",
+                "region": "KOTA BENGKULU, BENGKULU",
+                "provinsi": "Bengkulu",
+                "address": "JL. BHAYANGKARA, SIDOMULYO, KEC. GADING CEMP., KOTA BENGKULU, BENGKULU 38211",
+                "phone": "(0736) 52004"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH ARGA MAKMUR",
+                "region": "BENGKULU UTARA, BENGKULU",
+                "provinsi": "Bengkulu",
+                "address": "JL. SITI KHODIJAH NO.8, KALI, ARMA JAYA, KABUPATEN BENGKULU UTARA, BENGKULU 38611",
+                "phone": "(0737) 521118"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH HASANUDDIN DAMRAH MANNA",
+                "region": "BENGKULU SELATAN, BENGKULU",
+                "provinsi": "Bengkulu",
+                "address": "JL. RAYA PADANG PANJANG, PAGAR DEWA, KOTA MANNA, KABUPATEN BENGKULU SELATAN, BENGKULU 38515",
+                "phone": "0853-8163-7684"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH PANEMBAHAN SENOPATI",
+                "region": "BANTUL, DAERAH ISTIMEWA YOGYAKARTA",
+                "provinsi": "DI Yogyakarta",
+                "address": "JL DR. WAHIDIN SUDIRO HUSODO BANTUL",
+                "phone": "(0274) 367381"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH WATES",
+                "region": "KULON PROGO, DAERAH ISTIMEWA YOGYAKARTA",
+                "provinsi": "DI Yogyakarta",
+                "address": "JL TENTARA PELAJAR KM.1 NO.5 WATES KULON PROGO",
+                "phone": "(0274) 773169"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH KOTA YOGYAKARTA",
+                "region": "KOTA YOGYAKARTA, DAERAH ISTIMEWA YOGYAKARTA",
+                "provinsi": "DI Yogyakarta",
+                "address": "JL. KI AGENG PEMANAHAN NO.1, SOROSUTAN, KEC. UMBULHARJO, KOTA YOGYAKARTA, DAERAH ISTIMEWA YOGYAKARTA 55162",
+                "phone": "(0274) 371195"
+            },
+            {
+                "rumah_sakit": "RSUP DR. SARDJITO",
+                "region": "SLEMAN, DAERAH ISTIMEWA YOGYAKARTA",
+                "provinsi": "DI Yogyakarta",
+                "address": "JL KESEHATAN NO.1 SEKIP YOGYAKARTA",
+                "phone": "(0274) 631190"
+            },
+            {
+                "rumah_sakit": "RS UMUM AL DR MINTOHARJO",
+                "region": "JAKARTA PUSAT, DKI JAKARTA",
+                "provinsi": "DKI Jakarta",
+                "address": "JL. BENDUNGAN HILIR 17 JAKPUS",
+                "phone": "(021) 5703081"
+            },
+            {
+                "rumah_sakit": "RS UMUM PAD GATOT SOEBROTO",
+                "region": "JAKARTA PUSAT, DKI JAKARTA",
+                "provinsi": "DKI Jakarta",
+                "address": "JL. DR. ABDUL  RAHMAN SALEH NO. 24  JAKARTA PUSAT",
+                "phone": "(021) 3441008"
+            },
+            {
+                "rumah_sakit": "RS UMUM BHAYANGKARA TK. I R.SAID SUKANTO",
+                "region": "JAKARTA TIMUR, DKI JAKARTA",
+                "provinsi": "DKI Jakarta",
+                "address": "JL. RAYA BOGOR KRAMAT JATI,JAKARTA TIMUR",
+                "phone": "(021) 8093288"
+            },
+            {
+                "rumah_sakit": "RSUP PERSAHABATAN",
+                "region": "JAKARTA TIMUR, DKI JAKARTA",
+                "provinsi": "DKI Jakarta",
+                "address": "JL. PERSAHABATAN RAYA NO. 1,JAKTIM",
+                "phone": "(021) 4891708"
+            },
+            {
+                "rumah_sakit": "RS PENYAKIT INFEKSI PROF. DR. SULIANTI SAROSO",
+                "region": "JAKARTA UTARA, DKI JAKARTA",
+                "provinsi": "DKI Jakarta",
+                "address": "JL. BARU SUNTER PERMAI RAYA JAKARTA UTARA",
+                "phone": "(021) 6506559"
+            },
+            {
+                "rumah_sakit": "RSUP FATMAWATI",
+                "region": "JAKARTA SELATAN, DKI JAKARTA",
+                "provinsi": "DKI Jakarta",
+                "address": "JL. RS FATMAWATI CILANDAK,JAKSEL",
+                "phone": "(021) 7501524"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH PASAR MINGGU",
+                "region": "JAKARTA SELATAN, DKI JAKARTA",
+                "provinsi": "DKI Jakarta",
+                "address": "JL. TB. SIMATUPANG NO. 1 KELURAHAN RAGUNAN, KECAMATAN PASAR MINGGU - JAKARTA SELATAN",
+                "phone": "(021) 29059999"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH CENGKARENG",
+                "region": "JAKARTA BARAT, DKI JAKARTA",
+                "provinsi": "DKI Jakarta",
+                "address": "JL.KAMAL RAYA BUMI CENGKARENG INDAH CENGKARENG TIMUR",
+                "phone": null
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH PROF DR. H. ALOEI SABOE",
+                "region": "GORONTALO, GORONTALO",
+                "provinsi": "Gorontalo",
+                "address": "JL. PROFESOR DR. H. ALOEI SABOE, WONGKADITI, KOTA UTARA, KOTA GORONTALO, GORONTALO 96115",
+                "phone": "0435 821924"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH RADEN MATTAHER JAMBI",
+                "region": "MUARO JAMBI, JAMBI",
+                "provinsi": "Jambi",
+                "address": "JL. LETJEN SUPRAPTO NO.31, TELANAIPURA, KEC. TELANAIPURA, KOTA JAMBI, JAMBI 36361",
+                "phone": "(0741) 61692"
+            },
+            {
+                "rumah_sakit": "RS PARU DR. H. A. ROTINSULU",
+                "region": "BANDUNG, JAWA BARAT",
+                "provinsi": "Jawa Barat",
+                "address": "JL. BUKIT JARIAN NO. 40 BANDUNG",
+                "phone": null
+            },
+            {
+                "rumah_sakit": "RS UMUM PUSAT DR. HASAN SADIKIN",
+                "region": "BANDUNG, JAWA BARAT",
+                "provinsi": "Jawa Barat",
+                "address": "JL. PASTEUR NO. 38 BANDUNG",
+                "phone": null
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH DR. SLAMET GARUT",
+                "region": "GARUT, JAWA BARAT",
+                "provinsi": "Jawa Barat",
+                "address": "JL. RUMAH SAKIT NO.12 GARUT",
+                "phone": "(0262) 232720"
+            },
+            {
+                "rumah_sakit": "RS UMUM TK II DUSTIRA",
+                "region": "KOTA CIMAHI, JAWA BARAT",
+                "provinsi": "Jawa Barat",
+                "address": "JL. DR. DUSTIRA NO.1 KEL. BAROS KEC. CIMAHI TENGAH",
+                "phone": "(022) 6652207"
+            },
+            {
+                "rumah_sakit": "RS PARU DR. M. GOENAWAN PARTOWIDIGDO",
+                "region": "BOGOR, JAWA BARAT",
+                "provinsi": "Jawa Barat",
+                "address": "JL. RAYA PUNCAK KM.83, PO BOX 28 CISARUA BOGOR 16750",
+                "phone": "0251-8253630"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH  R SYAMSUDIN SH",
+                "region": "SUKABUMI, JAWA BARAT",
+                "provinsi": "Jawa Barat",
+                "address": "JL. RUMAH SAKIT NO. 1 KOTA SUKABUMI",
+                "phone": null
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH GUNUNG JATI",
+                "region": "CIREBON, JAWA BARAT",
+                "provinsi": "Jawa Barat",
+                "address": "JL. KESAMBI NO.56 CIREBON - 45134",
+                "phone": null
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH KAB. INDRAMAYU",
+                "region": "INDRAMAYU, JAWA BARAT",
+                "provinsi": "Jawa Barat",
+                "address": "JL. MURAH NARA NO. 7 SINDANG INDRAMAYU",
+                "phone": "(0234) 272655"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH K.R.M.T WONGSONEGORO",
+                "region": "SEMARANG, JAWA TENGAH",
+                "provinsi": "Jawa Tengah",
+                "address": "JL. FATMAWATI RAYA NO.1",
+                "phone": "(024) 6711500"
+            },
+            {
+                "rumah_sakit": "RS UMUM PUSAT DR. KARIADI",
+                "region": "SEMARANG, JAWA TENGAH",
+                "provinsi": "Jawa Tengah",
+                "address": "JL. DR. SOETOMO NO.16,SEMARANG",
+                "phone": null
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH KARDINAH",
+                "region": "TEGAL, JAWA TENGAH",
+                "provinsi": "Jawa Tengah",
+                "address": "JALAN AIP JL. KS. TUBUN NO.2, KEJAMBON, KEC. TEGAL TIM., KOTA TEGAL, JAWA TENGAH 52124",
+                "phone": "(0283) 350477"
+            },
+            {
+                "rumah_sakit": "RS UMUM PUSAT DR. SOERADJI TIRTONEGORO",
+                "region": "KLATEN, JAWA TENGAH",
+                "provinsi": "Jawa Tengah",
+                "address": "JL. KRT. SURAJI TIRTONEGORO NO.1, KLATEN",
+                "phone": null
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH DR. LOEKMONO HADI",
+                "region": "KUDUS, JAWA TENGAH",
+                "provinsi": "Jawa Tengah",
+                "address": "JL. DR. LUKMONOHADI NO.19,KUDUS",
+                "phone": null
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH DR. SOESELO SLAWI KABUPATEN TEGAL",
+                "region": "TEGAL, JAWA TENGAH",
+                "provinsi": "Jawa Tengah",
+                "address": "JL. DR. SOETOMO NO.63, SLAWI KULON, KEC. SLAWI, TEGAL, JAWA TENGAH 52419",
+                "phone": "(0283) 491016"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH KRATON KAB. PEKALONGAN",
+                "region": "PEKALONGAN, JAWA TENGAH",
+                "provinsi": "Jawa Tengah",
+                "address": "JL. DR SUTOMO NO. 42 BATANG",
+                "phone": null
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH  DR. H. SOEWONDO KENDAL",
+                "region": "KENDAL, JAWA TENGAH",
+                "provinsi": "Jawa Tengah",
+                "address": "JL. LAUT NO. 21, KENDAL",
+                "phone": null
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH DR. MOEWARDI SURAKARTA",
+                "region": "KOTA SURAKARTA, JAWA TENGAH",
+                "provinsi": "Jawa Tengah",
+                "address": "JL. KOL SUTARTO 132,SURAKARTA",
+                "phone": null
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH TIDAR",
+                "region": "MAGELANG, JAWA TENGAH",
+                "provinsi": "Jawa Tengah",
+                "address": "JL. TIDAR NO.30 A, KOTA MAGELANG",
+                "phone": null
+            },
+            {
+                "rumah_sakit": "RSUD BANYUMAS",
+                "region": "BANYUMAS, JAWA TENGAH",
+                "provinsi": "Jawa Tengah",
+                "address": "JL. RUMAH SAKIT NO.1 BANYUMAS",
+                "phone": null
+            },
+            {
+                "rumah_sakit": "RS PARU DR. ARIO WIRAWAN",
+                "region": "KOTA SALATIGA, JAWA TENGAH",
+                "provinsi": "Jawa Tengah",
+                "address": "JL. HASANUDIN NO.806,SALATIGA",
+                "phone": null
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH PROF DR. MARGONO SOEKARJO PURWOKER",
+                "region": "BANYUMAS, JAWA TENGAH",
+                "provinsi": "Jawa Tengah",
+                "address": "JL. DR GUMBREG NO. 1 PURWOKERTO",
+                "phone": null
+            },
+            {
+                "rumah_sakit": "RS UNIVERSITAS AIRLANGGA",
+                "region": "KOTA SURABAYA, JAWA TIMUR",
+                "provinsi": "Jawa Timur",
+                "address": "KAMPUS C UNIVERSITAS AIRLANGGA, MULYOREJO, SURABAYA",
+                "phone": "0813-3235-5540"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH DR. SOETOMO",
+                "region": "KOTA SURABAYA, JAWA TIMUR",
+                "provinsi": "Jawa Timur",
+                "address": "JL. MAYJEND. PROF. DR. MOESTOPO NO. 6 - 8 SURABAYA, JAWA TIMUR",
+                "phone": "(031) 5501078"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH DR. SOEDONO MADIUN",
+                "region": "KOTA MADIUN, JAWA TIMUR",
+                "provinsi": "Jawa Timur",
+                "address": "JL. DR. SOETOMO 59, MADIUN",
+                "phone": "(0351) 454657"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH DR. SAIFUL ANWAR",
+                "region": "MALANG, JAWA TIMUR",
+                "provinsi": "Jawa Timur",
+                "address": "JL. JAKSA AGUNG SUPRAPTO NO.2 MALANG",
+                "phone": "(0341) 362101"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH DR. R. KOESMA TUBAN",
+                "region": "TUBAN, JAWA TIMUR",
+                "provinsi": "Jawa Timur",
+                "address": "JL. DR. WAHIDIN SUDIRO HUSODO NO. 800",
+                "phone": "(0356) 321010"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH DR. ISKAK TULUNGAGUNG",
+                "region": "TULUNGAGUNG, JAWA TIMUR",
+                "provinsi": "Jawa Timur",
+                "address": "JL. DR. WAHIDIN SUDIRO HUSODO TULUNGAGUNG",
+                "phone": "(0355) 322609"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH SIDOARJO",
+                "region": "SIDOARJO, JAWA TIMUR",
+                "provinsi": "Jawa Timur",
+                "address": "JALAN MOJOPAHIT NO. 667 SIDOARJO",
+                "phone": "(031) 8961649"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH BLAMBANGAN",
+                "region": "BANYUWANGI, JAWA TIMUR",
+                "provinsi": "Jawa Timur",
+                "address": "JL. LETKOL ISTIQLAH NO. 49 BANYUWANGI",
+                "phone": "(0333) 421118"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH DR. SOEBANDI",
+                "region": "JEMBER, JAWA TIMUR",
+                "provinsi": "Jawa Timur",
+                "address": "JL. DR. SOEBANDI NO.124, JEMBER",
+                "phone": "(0331) 487441"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH KABUPATEN KEDIRI",
+                "region": "KEDIRI, JAWA TIMUR",
+                "provinsi": "Jawa Timur",
+                "address": "JL. PAHLAWAN KUSUMA BANGSA NO. 1 PARE",
+                "phone": "(0354) 391718"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH DR. R. SOSODORO DJATIKOESOEMO",
+                "region": "BOJONEGORO, JAWA TIMUR",
+                "provinsi": "Jawa Timur",
+                "address": "JL. VETERAN NO 36, BOJONEGORO",
+                "phone": "(0353) 3412133"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH DR. SOEDARSO PONTIANAK",
+                "region": "KOTA PONTIANAK, KALIMANTAN BARAT",
+                "provinsi": "Kalimantan Barat",
+                "address": "JL. DR. SOEDARSO NO.1 PONTIANAK",
+                "phone": "(0561) 737701"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH ADE MUHAMMAD DJOEN SINTANG",
+                "region": "SINTANG, KALIMANTAN BARAT",
+                "provinsi": "Kalimantan Barat",
+                "address": "JL. PATIMURA DAN JL.YC OEVANG OERAY SINTANG",
+                "phone": "(0565) 21002"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH DR. AGOESDJAM KETAPANG",
+                "region": "KETAPANG, KALIMANTAN BARAT",
+                "provinsi": "Kalimantan Barat",
+                "address": "JL. PANJAITAN NO.51 KETAPANG",
+                "phone": "(0534) 3037239"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH DR. ABDUL AZIZ SINGKAWANG",
+                "region": "KOTA SINGKAWANG, KALIMANTAN BARAT",
+                "provinsi": "Kalimantan Barat",
+                "address": "JL. DR SOETOMO NO. 28, SINGKAWANG",
+                "phone": null
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH ULIN BANJARMASIN",
+                "region": "KOTA BANJARMASIN, KALIMANTAN SELATAN",
+                "provinsi": "Kalimantan Selatan",
+                "address": "JL. JEN A YANI NO.43, BANJARMASIN KALIMANTAN SELATAN",
+                "phone": "(0511) 3252180"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH H. BOEJASIN PELAIHARI",
+                "region": "TANAH LAUT, KALIMANTAN SELATAN",
+                "provinsi": "Kalimantan Selatan",
+                "address": "JL. HADJI BOEJASIN NO.68 KAB. TANAH LAUT",
+                "phone": "(0512) 21083"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH DR DORIS SYLVANUS PALANGKA RAYA",
+                "region": "MURUNG RAYA, KALIMANTAN TENGAH",
+                "provinsi": "Kalimantan Tengah",
+                "address": "JL. TAMBUN BUNGAI NO.4 PALANGKARAYA",
+                "phone": "(0536) 3224695"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH SULTAN IMANUDDIN",
+                "region": "KOTAWARINGIN BARAT, KALIMANTAN TENGAH",
+                "provinsi": "Kalimantan Tengah",
+                "address": "JL. SUTAN SYAHRIR NO 17 PANGKALAN BUN",
+                "phone": "(0532) 21404"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH DR MURJANI SAMPIT",
+                "region": "BARITO TIMUR, KALIMANTAN TENGAH",
+                "provinsi": "Kalimantan Tengah",
+                "address": "JL. H M ARSYAD NO. 65 SAMPIT",
+                "phone": "(0531) 21010"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH ABDUL WAHAB SJAHRANIE",
+                "region": "KOTA SAMARINDA, KALIMANTAN TIMUR",
+                "provinsi": "Kalimantan Timur",
+                "address": "JL. PALANG MERAH NO.1, SIDODADI, KEC. SAMARINDA ULU, KOTA SAMARINDA, KALIMANTAN TIMUR 75123",
+                "phone": "(0541) 738118"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH TAMAN HUSADA",
+                "region": "KOTA BONTANG, KALIMANTAN TIMUR",
+                "provinsi": "Kalimantan Timur",
+                "address": "JL. LETJEN S. PARMAN NO.1, BELIMBING, BONTANG BAR., KOTA BONTANG, KALIMANTAN TIMUR 75331",
+                "phone": "(0548) 23000"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH DR. KANUJOSO DJATIWIBOWO",
+                "region": "KOTA BALIKPAPAN, KALIMANTAN TIMUR",
+                "provinsi": "Kalimantan Timur",
+                "address": "JL. M.T. HARYONO RING ROAD BALIKPAPAN NO.656",
+                "phone": "(0542) 873901"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH AJI MUHAMMAD PARIKESIT",
+                "region": "KUTAI KARTANEGARA, KALIMANTAN TIMUR",
+                "provinsi": "Kalimantan Timur",
+                "address": "JL. RATU AGUNG NO. 1 TENGGARONG SEBERANG",
+                "phone": "(0541) 661015"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH PANGLIMA SEBAYA",
+                "region": "PASER, KALIMANTAN TIMUR",
+                "provinsi": "Kalimantan Timur",
+                "address": "JL. KUSUMA BANGSA KM.5 TANAH GROGOT",
+                "phone": "0852-4743-3000"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH TANJUNG SELOR",
+                "region": "BULUNGAN, KALIMANTAN UTARA",
+                "provinsi": "Kalimantan Utara",
+                "address": "JL CENDRAWASIH KEL TANJUNG SELOR HILIR, KEC TANJUNG SELOR KAB BULUNGAN",
+                "phone": "(0552) 21118"
+            },
+            {
+                "rumah_sakit": "RS UMUM KOTA TARAKAN",
+                "region": "KOTA TARAKAN, KALIMANTAN UTARA",
+                "provinsi": "Kalimantan Utara",
+                "address": "JL. AKI BABU RT 01 KELURAHAN KARANG HARAPAN KECAMATAN TARAKAN BARAT KOTA TARAKAN PROVINSI KALIMANTAN",
+                "phone": "(0551) 21166"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH DEPATI HAMZAH",
+                "region": "KOTA PANGKALPINANG, KEPULAUAN BANGKA BELITUNG",
+                "provinsi": "Kep. Bangka Belitung",
+                "address": "JL. SOEKARNO HATTA, BUKITBESAR, KEC. GIRIMAYA, KOTA PANGKAL PINANG, KEPULAUAN BANGKA BELITUNG 33684",
+                "phone": "(0717) 438660"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH DR. H. MARSIDI JUDONO",
+                "region": "BELITUNG, KEPULAUAN BANGKA BELITUNG",
+                "provinsi": "Kep. Bangka Belitung",
+                "address": "JL. JEND. SUDIRMAN KM.5,5, AIK RAYAK, TJ. PANDAN, KABUPATEN BELITUNG, KEPULAUAN BANGKA BELITUNG 33411",
+                "phone": "(0719) 22190"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH PROVINSI KEPULAUAN RIAU TANJUNGPINA",
+                "region": "KOTA TANJUNGPINANG, KEPULAUAN RIAU",
+                "provinsi": "Kep. Riau",
+                "address": "JL. W.R SUPRATMAN NO. 100 KM. 8 TANJUNGPINANG KEPULAUAN RIAU",
+                "phone": null
+            },
+            {
+                "rumah_sakit": "RS BADAN PENGUSAHAAN BATAM",
+                "region": "KOTA BATAM, KEPULAUAN RIAU",
+                "provinsi": "Kep. Riau",
+                "address": "JL. DR. CIPTO MANGUNKUSUMO NO.1,  SEKUPANG,BATAM",
+                "phone": "(0778) 322121"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH EMBUNG FATIMAH KOTA BATAM",
+                "region": "KOTA BATAM, KEPULAUAN RIAU",
+                "provinsi": "Kep. Riau",
+                "address": "JL. LETJEND SUPRAPTO NO.1-9, BUKIT TEMPAYAN, KEC. BATU AJI, KOTA BATAM, KEPULAUAN RIAU 29425",
+                "phone": "(0778) 364446"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH MUHAMMAD SANI KABUPATEN KARIMUN",
+                "region": "KARIMUN, KEPULAUAN RIAU",
+                "provinsi": "Kep. Riau",
+                "address": "JALAN POROS NO.1, HARJOSARI, TEBING, KABUPATEN KARIMUN, KEPULAUAN RIAU 29663",
+                "phone": "(0777) 327808"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH DR H ABDUL MOELOEK",
+                "region": "KOTA BANDAR LAMPUNG, LAMPUNG",
+                "provinsi": "Lampung",
+                "address": "JL. DR. RIVAI NO.6, PENENGAHAN, KEC. TJ. KARANG PUSAT, KOTA BANDAR LAMPUNG, LAMPUNG 35112",
+                "phone": "(0721) 703312"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH AHMAD YANI METRO",
+                "region": "KOTA METRO, LAMPUNG",
+                "provinsi": "Lampung",
+                "address": "JL.JEND. A.YANI NO.13 KOTA METRO",
+                "phone": null
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH MAY JEN HM RYACUDU",
+                "region": "LAMPUNG UTARA, LAMPUNG",
+                "provinsi": "Lampung",
+                "address": "JL. JEND. SUDIRMAN NO.2, KOTA GAPURA, KOTABUMI, KABUPATEN LAMPUNG UTARA, LAMPUNG 34511",
+                "phone": "(0724) 22095"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH DR. H. BOB BAZAR, SKM",
+                "region": "LAMPUNG SELATAN, LAMPUNG",
+                "provinsi": "Lampung",
+                "address": "JL. LETTU ROHANI NO.14 B, KEDATON, KEC. KALIANDA, KABUPATEN LAMPUNG SELATAN, LAMPUNG 35551",
+                "phone": "(0727) 322159"
+            },
+            {
+                "rumah_sakit": "RS UMUM PUSAT DR. J. LEIMENA",
+                "region": "KOTA AMBON, MALUKU",
+                "provinsi": "Maluku",
+                "address": "JALAN R. SUPRAPTO NO.123, RUMAH TIGA, TLK. AMBON, KOTA AMBON, MALUKU",
+                "phone": null
+            },
+            {
+                "rumah_sakit": "RS UMUM DR. M. HAULUSSY AMBON",
+                "region": "KOTA AMBON, MALUKU",
+                "provinsi": "Maluku",
+                "address": "JL. DR. KAYADOE, BENTENG, NUSANIWE, KEL BENTENG, NUSANIWE, KOTA AMBON, MALUKU",
+                "phone": "(0911) 344871"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH DR. P. P. MAGRETTI SAUMLAKI",
+                "region": "MALUKU TENGGARA BARAT, MALUKU",
+                "provinsi": "Maluku",
+                "address": "JL. MR. LATUHARHARI - SAUMLAKI",
+                "phone": null
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH DR. H. CHASAN BOESOIRIE TERNATE",
+                "region": "KOTA TERNATE, MALUKU UTARA",
+                "provinsi": "Maluku Utara",
+                "address": "JL. CEMPAKA, TANAH TINGGI BAR., TERNATE SEL., KOTA TERNATE, MALUKU UTARA",
+                "phone": "(0921) 3121281"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH NTB",
+                "region": "KOTA MATARAM, NUSA TENGGARA BARAT",
+                "provinsi": "Nusa Tenggara Barat",
+                "address": "JL. PRABU RANGKASARI DASAN CERMEN",
+                "phone": "(0370) 7502424"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH DR. R. SOEDJONO SELONG",
+                "region": "LOMBOK TIMUR, NUSA TENGGARA BARAT",
+                "provinsi": "Nusa Tenggara Barat",
+                "address": "JL. PROF M. YAMIN, SH. NO. 55 SELONG",
+                "phone": "0376 21415"
+            },
+            {
+                "rumah_sakit": "RS UMUM BIMA",
+                "region": "BIMA, NUSA TENGGARA BARAT",
+                "provinsi": "Nusa Tenggara Barat",
+                "address": "JL. LANGSAT NO. 1 RABA KOTA BIMA",
+                "phone": "(0374-43142)"
+            },
+            {
+                "rumah_sakit": "RS H. L. MANAMBAI ABDULKADIR",
+                "region": "SUMBAWA, NUSA TENGGARA BARAT",
+                "provinsi": "Nusa Tenggara Barat",
+                "address": "JL. LINTAS SUMBAWA-BIMA KM 5, SEKETENG, KEC. SUMBAWA, KABUPATEN SUMBAWA, NUSA TENGGARA BAR. 84316",
+                "phone": "(0371) 2628078"
+            },
+            {
+                "rumah_sakit": "RS UMUM PROF DR WZ JOHANES",
+                "region": "KUPANG, NUSA TENGGARA TIMUR",
+                "provinsi": "Nusa Tenggara Timur",
+                "address": "JL. DR MOCH HATTA NO. 19 KUPANG",
+                "phone": "(0380) 820331"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH DR TC HILLERS MAUMERE",
+                "region": "SIKKA, NUSA TENGGARA TIMUR",
+                "provinsi": "Nusa Tenggara Timur",
+                "address": "JL WAIRKLAU, NO. 1, 86113, KOTA BARU, ALOK TIM., KABUPATEN SIKKA, NUSA TENGGARA TIM.",
+                "phone": "0812-6115-3944 \/ 0380 - 21617"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH KOMODO",
+                "region": "MANGGARAI BARAT, NUSA TENGGARA TIMUR",
+                "provinsi": "Nusa Tenggara Timur",
+                "address": "DESA GOLO BILAS, KECAMATAN KOMODO, KABUPATEN MANGGARAI BARAT, NTT",
+                "phone": "0813-3705-5250"
+            },
+            {
+                "rumah_sakit": "RS UMUM JAYAPURA",
+                "region": "JAYAPURA, PAPUA",
+                "provinsi": "Papua",
+                "address": "JL. KESEHATAN NO.1, DOK II, BAYANGKARA, JAYAPURA UTARA, KOTA JAYAPURA, PAPUA",
+                "phone": "(0967) 533616 EXT. 533781"
+            },
+            {
+                "rumah_sakit": "RS UMUM MERAUKE",
+                "region": "MERAUKE, PAPUA",
+                "provinsi": "Papua",
+                "address": "JL. SOEKARJO WIRYOPRANOTO NO.1, MARO, KEC. MERAUKE, KABUPATEN MERAUKE, PAPUA 99613",
+                "phone": "(0971) 321124 EXT. 321125"
+            },
+            {
+                "rumah_sakit": "RS UMUM NABIRE",
+                "region": "NABIRE, PAPUA",
+                "provinsi": "Papua",
+                "address": "JL. R.E. MARTADINATA, SIRIWINI, KEC. NABIRE, KABUPATEN NABIRE, PAPUA 98816",
+                "phone": "(0984) 21845"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH MANOKWARI",
+                "region": "MANOKWARI, PAPUA BARAT",
+                "provinsi": "Papua Barat",
+                "address": "JL. SILIWANGI NO.1, MANOKWARI BAR., KABUPATEN MANOKWARI, PAPUA BAR. 98312",
+                "phone": "(0986) 215133"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH KABUPATEN SORONG",
+                "region": "SORONG, PAPUA BARAT",
+                "provinsi": "Papua Barat",
+                "address": "JL. KESEHATAN NO. 36 SORONG",
+                "phone": "(0951) 321850"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH  ARIFIN ACHMAD",
+                "region": "KOTA PEKANBARU, RIAU",
+                "provinsi": "Riau",
+                "address": "JL. DIPONEGORO NO.2, SUMAHILANG, KEC. PEKANBARU KOTA, KOTA PEKANBARU, RIAU 28156",
+                "phone": "(0761) 21618"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH  KOTA DUMAI",
+                "region": "KOTA DUMAI, RIAU",
+                "provinsi": "Riau",
+                "address": "JL. TJ. JATI NO.4, BULUH KASAP, DUMAI TIM., KOTA DUMAI, RIAU 28812",
+                "phone": "(0765) 440992"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH  PURI HUSADA TEMBILAHAN",
+                "region": "INDRAGIRI HILIR, RIAU",
+                "provinsi": "Riau",
+                "address": "JL. VETERAN NO.52, TEMBILAHAN HILIR, TEMBILAHAN, KABUPATEN INDRAGIRI HILIR, RIAU 29281",
+                "phone": "(0768) 22118"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH PROVINSI SULAWESI BARAT",
+                "region": "MAMUJU, SULAWESI BARAT",
+                "provinsi": "Sulawesi Barat",
+                "address": "JL. RE MARTADINATA, SIMBORO, KEC. SIMBORO DAN KEPULAUAN, KABUPATEN MAMUJU, SULAWESI BARAT 91512",
+                "phone": "(0426) 2703260"
+            },
+            {
+                "rumah_sakit": "RSUP DR. WAHIDIN SUDIROHUSODO",
+                "region": "KOTA MAKASSAR, SULAWESI SELATAN",
+                "provinsi": "Sulawesi Selatan",
+                "address": "JL. PERINTIS KEMERDEKAAN KM.11 MAKASAR",
+                "phone": "(0411) 584677"
+            },
+            {
+                "rumah_sakit": "RS DR. TADJUDDIN CHALID, MPH",
+                "region": "KOTA MAKASSAR, SULAWESI SELATAN",
+                "provinsi": "Sulawesi Selatan",
+                "address": "JL. PACCERAKKANG NO.67 \/ PAJJAIANG DAYA MAKASSAR",
+                "phone": "(0411) 513795"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH LABUANG BAJI",
+                "region": "KOTA MAKASSAR, SULAWESI SELATAN",
+                "provinsi": "Sulawesi Selatan",
+                "address": "JL. DR. RATULANGI NO.81 MAKASSAR",
+                "phone": "(0411) 873482"
+            },
+            {
+                "rumah_sakit": "RS TK.II PELAMONIA",
+                "region": "KOTA MAKASSAR, SULAWESI SELATAN",
+                "provinsi": "Sulawesi Selatan",
+                "address": "JL. JEND SUDIRMAN NO.27,MAKASSAR",
+                "phone": "0811-1782-399"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH LAKIPADADA",
+                "region": "TANA TORAJA, SULAWESI SELATAN",
+                "provinsi": "Sulawesi Selatan",
+                "address": "JL. PONGTIKU MANDETEK TANA TORAJA",
+                "phone": "(0423) 22264"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH KABUPATEN SINJAI",
+                "region": "SINJAI, SULAWESI SELATAN",
+                "provinsi": "Sulawesi Selatan",
+                "address": "JL. JEND SUDIRMAN NO. 47 SINJAI, SULAWESI SELATAN",
+                "phone": "(0482) 21132"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH ANDI MAKKASAU PAREPARE",
+                "region": "KOTA PARE PARE, SULAWESI SELATAN",
+                "provinsi": "Sulawesi Selatan",
+                "address": "JL. NURUSSAMAWATI NO.9 KOTA PAREPARE",
+                "phone": "(0401) 27643"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH UNDATA PALU",
+                "region": "KOTA PALU, SULAWESI TENGAH",
+                "provinsi": "Sulawesi Tengah",
+                "address": "JALAN TRANS SULAWESI TONDO, TALISE, MANTIKULORE, KOTA PALU, SULAWESI TENGAH 94119",
+                "phone": "(0451) 4908020"
+            },
+            {
+                "rumah_sakit": "RS UMUM ANUTAPURA PALU",
+                "region": "KOTA PALU, SULAWESI TENGAH",
+                "provinsi": "Sulawesi Tengah",
+                "address": "JL. KANGKUNG NO. 1 PALU",
+                "phone": "(0451) 460570"
+            },
+            {
+                "rumah_sakit": "RS UMUM  MOKOPIDO TOLI-TOLI",
+                "region": "TOLITOLI, SULAWESI TENGAH",
+                "provinsi": "Sulawesi Tengah",
+                "address": "JL. LANONI NO.37 KEL BARU KEC BAOLAN KAB TOLI-TOLI, SULTENG",
+                "phone": "(0453) 21301"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH KOLONEDALE",
+                "region": "MOROWALI UTARA, SULAWESI TENGAH",
+                "provinsi": "Sulawesi Tengah",
+                "address": "JL. W MONGINSIDI 2 KOLONEDALE",
+                "phone": "(0465) 21010"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH KABUPATEN BANGGAI",
+                "region": "BANGGAI, SULAWESI TENGAH",
+                "provinsi": "Sulawesi Tengah",
+                "address": "JL. IMAM BONJOL KM 3 NO. 14 LUWUK",
+                "phone": "(0461) 21820"
+            },
+            {
+                "rumah_sakit": "RS BAHTERAMAS PROVINSI SULTRA",
+                "region": "KOTA KENDARI, SULAWESI TENGGARA",
+                "provinsi": "Sulawesi Tenggara",
+                "address": "JL. KAPTEN PIERE TENDEAN NO 50 KEC BARUGA",
+                "phone": "(0401) 3195611"
+            },
+            {
+                "rumah_sakit": "RSUP PROF. DR. R. D. KANDOU",
+                "region": "KOTA MANADO, SULAWESI UTARA",
+                "provinsi": "Sulawesi Utara",
+                "address": "JL. RAYA TANAWANGKO NO.56, MANADO",
+                "phone": "(0431) 8383058"
+            },
+            {
+                "rumah_sakit": "RS UMUM DR.SAM RATULANGI",
+                "region": "MINAHASA, SULAWESI UTARA",
+                "provinsi": "Sulawesi Utara",
+                "address": "JL. R. SUPRAPTO NO.123, LUAAN, TONDANO TIM., KABUPATEN MINAHASA, SULAWESI UTARA",
+                "phone": "(0431) 321171"
+            },
+            {
+                "rumah_sakit": "RSU RATATOTOK - BUYAT",
+                "region": "MINAHASA TENGGARA, SULAWESI UTARA",
+                "provinsi": "Sulawesi Utara",
+                "address": "JL. J.W. LASUT RATATOTOK II KECAMATAN RATATOTOK",
+                "phone": null
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH KOTA KOTAMOBAGU",
+                "region": "KOTA KOTAMOBAGU, SULAWESI UTARA",
+                "provinsi": "Sulawesi Utara",
+                "address": "KELURAHAN POBUNDAYAN KECAMATAN KOTAMOBAGU SELATAN",
+                "phone": null
+            },
+            {
+                "rumah_sakit": "RSUP DR. M. DJAMIL",
+                "region": "KOTA PADANG, SUMATERA BARAT",
+                "provinsi": "Sumatera Barat",
+                "address": "JL. PERINTIS KEMERDEKAAN PADANG",
+                "phone": null
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH DR. ACHMAD MOCHTAR",
+                "region": "KOTA BUKITTINGGI, SUMATERA BARAT",
+                "provinsi": "Sumatera Barat",
+                "address": "JL. DR. ABDUL RIVAI NO.1, BUKIT APIT PUHUN, KEC. GUGUK PANJANG, KOTA BUKITTINGGI, SUMATERA BARAT 26122",
+                "phone": "(0752) 21720"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH SITI FATIMAH PROVINSI SUMATERA SELATAN",
+                "region": "KOTA PALEMBANG, SUMATERA SELATAN",
+                "provinsi": "Sumatera Selatan",
+                "address": "JL. KOL. H. BURLIAN KM 6",
+                "phone": "(0711) 5718883"
+            },
+            {
+                "rumah_sakit": "RS UMUM PUSAT DR. MOHAMMAD HOESIN PALEMBANG",
+                "region": "KOTA PALEMBANG, SUMATERA SELATAN",
+                "provinsi": "Sumatera Selatan",
+                "address": "JL. JEND. SUDIRMAN NO.KM.3,5, SEKIP JAYA, KEC. KEMUNING, KOTA PALEMBANG, SUMATERA SELATAN 30126",
+                "phone": "(0711) 354088"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH LAHAT",
+                "region": "LAHAT, SUMATERA SELATAN",
+                "provinsi": "Sumatera Selatan",
+                "address": "JL. LETJEND HARUN SOHAR NO.28",
+                "phone": null
+            },
+            {
+                "rumah_sakit": "RS DR. RIVAI ABDULLAH",
+                "region": "BANYUASIN, SUMATERA SELATAN",
+                "provinsi": "Sumatera Selatan",
+                "address": "JL. SUNGAI KUNDUR KELURAHAN MARIANA KEC. BANYUASIN I",
+                "phone": null
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH KAYUAGUNG",
+                "region": "OGAN KOMERING ILIR, SUMATERA SELATAN",
+                "provinsi": "Sumatera Selatan",
+                "address": "JL. LINTAS TIMUR LAMPUNG - PALEMBANG, JUA JUA, KEC. KAYU AGUNG, KABUPATEN OGAN KOMERING ILIR, SUMATERA SELATAN 30867",
+                "phone": "(0712) 323889"
+            },
+            {
+                "rumah_sakit": "RSUP H. ADAM MALIK",
+                "region": "KOTA MEDAN, SUMATERA UTARA",
+                "provinsi": "Sumatera Utara",
+                "address": "JL. BUNGA LAU NO.17, KEMENANGAN TANI, KEC. MEDAN TUNTUNGAN, KOTA MEDAN, SUMATERA UTARA 20136",
+                "phone": null
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH DR. DJASAMEN SARAGIH",
+                "region": "KOTA PEMATANGSIANTAR, SUMATERA UTARA",
+                "provinsi": "Sumatera Utara",
+                "address": "JL SUTOMO NO. 230, PEMATANGSIANTAR",
+                "phone": "(0622) 22959"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH KABANJAHE",
+                "region": "KARO, SUMATERA UTARA",
+                "provinsi": "Sumatera Utara",
+                "address": "JL KAPTEN SELAMAT KETAREN NO. 08 KABANJAHE",
+                "phone": "0628-20012"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH PADANG SIDEMPUAN",
+                "region": "KOTA PADANG SIDIMPUAN, SUMATERA UTARA",
+                "provinsi": "Sumatera Utara",
+                "address": "JL DR. F.L. TOBING NO. 10,PADANGSIDIMPUAN",
+                "phone": "(0634) 21251"
+            },
+            {
+                "rumah_sakit": "RS UMUM DAERAH TARUTUNG",
+                "region": "TAPANULI UTARA, SUMATERA UTARA",
+                "provinsi": "Sumatera Utara",
+                "address": "JL AGUS SALIM NO. 1 TARUTUNG",
+                "phone": "0633 - 21303"
+            }
+        ]
+    }
+}
