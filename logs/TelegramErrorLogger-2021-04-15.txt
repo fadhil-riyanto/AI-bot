@@ -3864,3 +3864,43 @@ ref.disable_web_page_preview= true
 #3 C:\bot telegram\hook.php(814): Telegram->sendMessage(Array)
 #4 {main}
 
+============[Date]============
+[ 2021-04-15 09:07:55  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804486325
+ref.message.message_id= 46671
+ref.message.from.id= 1184720056
+ref.message.from.is_bot= false
+ref.message.from.first_name= Aisyah
+ref.message.from.username= Aisyah763
+ref.message.from.language_code= id
+ref.message.chat.id= -1001310420564
+ref.message.chat.title= GAS Testing Grup
+ref.message.chat.username= GasTestingGroup
+ref.message.chat.type= supergroup
+ref.message.date= 1618452465
+ref.message.text= /start@Hazmi101Bot
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 18
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= false
+ref.reply_to_message_id= 46671
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(814): Telegram->sendMessage(Array)
+#4 {main}
+
