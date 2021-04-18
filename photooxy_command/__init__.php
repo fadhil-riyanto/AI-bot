@@ -279,15 +279,27 @@ if ($nemu_tema == true) {
 
         // $urlss = photo_oxy_class($ngab);
         // $cekimage = themeddatas_verify()
-        $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, "https://textmakes.anonymoususer18.repl.co/index_text_maker.php?theme=" . $datas_url . "&kata1=" . $udahDiparse);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-        $output = curl_exec($ch);
-        curl_close($ch);
-        $getjson = json_decode($output);
+        $getpanjang = strlen($udahDiparse);
+        if ($getpanjang < 3) {
+            $reply = "maaf, anda harus memasukkan lebih dari 3 karakter di parameter nya.";
+            $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+            $telegram->sendMessage($content);
+        } elseif ($getpanjang > 40) {
+            $reply = "maaf, maksimal huruf hanya 40 karakter saja.";
+            $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+            $telegram->sendMessage($content);
+        } else {
+            $ch = curl_init();
+            curl_setopt($ch, CURLOPT_URL, "https://textmakes.anonymoususer18.repl.co/index_text_maker.php?theme=" . $datas_url . "&kata1=" . $udahDiparse);
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+            $output = curl_exec($ch);
+            curl_close($ch);
+            $getjson = json_decode($output);
 
-        $konten = array('chat_id' => $chat_id, 'photo' => $getjson->data->image, 'caption' => 'Hai ' . $username . ', Gambar berhasil dibuat!', 'reply_to_message_id' => $message_id,);
-        $telegram->sendPhoto($konten);
+            $konten = array('chat_id' => $chat_id, 'photo' => $getjson->data->image, 'caption' => 'Hai ' . $username . ', Gambar berhasil dibuat!', 'reply_to_message_id' => $message_id,);
+            $telegram->sendPhoto($konten);
+        }
+
         exit;
     }
 } else {
