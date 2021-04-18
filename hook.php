@@ -68,20 +68,19 @@ try {
 
 
 	//debug mode
-	// if (detect_grup() == null) {
-	// 	if ($userID != $userid_pemilik) {
-	// 		$reply = "Maaf, bot ini sedang dalam pengembangan lebih lanjut oleh " . PUMBUAT_BOT . PHP_EOL .
-	// 			"Coba lagi nanti";
-	// 		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-	// 		$telegram->sendMessage($content);
-	// 		exit;
-	// 	}
-	// } else {
-	// 	if ($userID != $userid_pemilik) {
-
-	// 		exit;
-	// 	}
-	// }
+	if (detect_grup() == null) {
+		if ($userID != $userid_pemilik) {
+			$reply = "Maaf, bot ini sedang dalam pengembangan lebih lanjut oleh " . PUMBUAT_BOT . PHP_EOL .
+				"Coba lagi nanti";
+			$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+			$telegram->sendMessage($content);
+			exit;
+		}
+	} else {
+		if ($userID != $userid_pemilik) {
+			die();
+		}
+	}
 
 
 	$hilangAzan = str_replace('/azan ', '', $text, $hit);
@@ -121,37 +120,6 @@ try {
 	} else { //ini user aneh, username gaada.....
 		$username = '<a href="tg://user?id=' . $userID . '">' . $namaPertama . ' ' . $namaTerakhir . '</a>';
 	}
-
-
-	$data_stiker = $telegram->getData();
-	$stiker_hapus = $data_stiker['message']['sticker']['file_unique_id'];
-	$stiker_hapus2 = $data_stiker['message']['sticker']['thumb']['file_id']['file_unique_id'];
-	if (isset($stiker_hapus2)) {
-		if (
-			$stiker_hapus2 == 'AgADWAEAAmrOKEY' || $stiker_hapus2 == 'AQADGYcvc3QAA3xJAAI'
-		) {
-			$arr = array('chat_id' => $chat_id, 'message_id' => $message_id);
-			$telegram->deleteMessage($arr);
-		}
-	}
-
-	if (isset($stiker_hapus)) {
-		if (
-			$stiker_hapus == 'AgADCQADm23LJA' || $stiker_hapus == 'AgADZQEAAoGHIEY' || $stiker_hapus == 'AgADAwEAAt84IUY'
-			||  $stiker_hapus == 'AgADZQEAAoGHIEY' || $stiker_hapus == 'AgADZQEAAoGHIEY' || $stiker_hapus == 'AgADKwIAAlzJMFc'
-		) {
-			$arr = array('chat_id' => $chat_id, 'message_id' => $message_id);
-			$telegram->deleteMessage($arr);
-		}
-	} else {
-	}
-	if ($text == ':v' || $text == ';v' || $text == ':v.') {
-		$arr = array('chat_id' => $chat_id, 'message_id' => $message_id);
-		$telegram->deleteMessage($arr);
-	}
-
-
-
 
 	$result = $telegram->getData();
 	$getreplyianid = $result['message']['reply_to_message']['from']['id'];
@@ -231,9 +199,12 @@ try {
 	// }
 
 
-	$db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
-	$db->where("chat_id", $chat_id);
-	$getDataafku = $db->get("filters_word_data");
+	// $db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
+	// $db->where("chat_id", $chat_id);
+	// $getDataafku = $db->get("filters_word_data");
+	require __DIR__ . '/include/hook_handle_cache.php';
+	$get_data_cachenya = hooh_db_handle_filter();
+	$getDataafku = json_decode($get_data_cachenya, true);
 	// $tojson_banlist = json_encode($getDataafku);
 	// $reply = $tojson_banlist;
 	// $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
@@ -381,7 +352,7 @@ try {
 				$nama_gc == -1001209274058 || $nama_gc == -1001410961692 ||
 				$nama_gc == -458987087 || $nama_gc == -1001433395819 ||
 				$nama_gc == -1001310420564 || $nama_gc == -1001182246595 ||
-				$nama_gc == -1001422713507 || $nama_gc == -467148565 || 
+				$nama_gc == -1001422713507 || $nama_gc == -467148565 ||
 				$nama_gc == -579960847
 
 			) {
@@ -457,7 +428,22 @@ try {
 			$anggota = file_put_contents($file, $jsonfile);
 		}
 	}
+	$dteeksi = preg_match('/@fadhil_riyanto_bot/', $text);
+	if ($dteeksi == true && $deteksiApakahGrup == true) {
+		$alasan = array(
+			"hai, apa apa mention aku...", "kamu kenapa mention aku?", "butuh bantuan kak?", "iya ada apa?",
+			"kamu mention aku yak?", "iyah ada apa kk?", "kenapa kk kok mention aku?", "iyah kaka"
+		);
+		$reply = $alasan[random_int(0, count($alasan))];
+		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+		$telegram->sendMessage($content);
+	}
 
+	// if (){
+	// 	$reply = 'sintak error, alasan ' . PHP_EOL . PHP_EOL . $e;
+	//     $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+	//     $telegram->sendMessage($content);
+	// 	}
 	// if ($deteksiApakahGrup == true) {
 	// } elseif ($deteksiApakahGrup == null) {
 	// 	$dumppesan = 'dari : ' . $username . PHP_EOL .
