@@ -29,7 +29,7 @@ try {
 	echo 'Ini server 1 bot telegram' . PHP_EOL . '<hr>';
 
 
-
+	$db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
 
 	// Ouput text to user based on test
 	if (_is_curl_installed()) {
@@ -144,7 +144,7 @@ try {
 
 	if (isset($getreplyianid)) {
 
-		$db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
+
 		$db->where("userid", $getreplyianid);
 		$user = $db->getOne("afk_user_data");
 		if ($user['userid'] == null) {
@@ -172,7 +172,7 @@ try {
 			}
 		}
 		foreach ($username_Yang_didapaktkanAFK as $uafkdata) {
-			$db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
+			
 			$db->where("username", $uafkdata);
 			$getDataafku = $db->getOne("afk_user_data");
 			if ($getDataafku['username'] != null) {
@@ -225,8 +225,6 @@ try {
 	}
 
 	if ($deteksi_filter == true) {
-
-		$db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
 		$db->where("gid", $chat_id);
 		$user = $db->getOne("grup_data");
 
@@ -476,7 +474,6 @@ try {
 		if (detect_grup() == true) {
 		} else {
 			//track user
-			$db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
 			$db->where("userid", $userID);
 			$user = $db->getOne("members");
 			if ($user['userid'] == null) {
