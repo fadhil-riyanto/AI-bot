@@ -107,6 +107,9 @@ if ($getStringFromSpasi[0] == 'debug' || $getStringFromSpasi[0] == 'debugmode') 
     if (isset($replymessageid)) {
         $content = array('chat_id' => $chat_id, 'message_id' => $replymessageid);
         $telegram->deleteMessage($content);
+        //hapus pesan sendiri
+        $content = array('chat_id' => $chat_id, 'message_id' => $message_id);
+        $telegram->deleteMessage($content);
     } else {
     }
 } elseif ($getStringFromSpasi[0] == 'fadhil' || $getStringFromSpasi[0] == 'fadhil') {
