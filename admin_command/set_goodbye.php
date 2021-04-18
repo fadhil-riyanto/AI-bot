@@ -13,7 +13,7 @@ if ($azanHilangcommand == null) {
     $user = $db->getOne("grup_data");
     if ($user['gid'] == null) {
         $data = array(
-            'out_text' => $udahDiparse
+            'leaveuser_text' => $udahDiparse
         );
         $id = $db->insert('grup_data', $data);
         if ($id) {
@@ -32,7 +32,7 @@ if ($azanHilangcommand == null) {
         }
     } else {
         $data = array(
-            'out_text' => $udahDiparse
+            'leaveuser_text' => $udahDiparse
             // active = !active;
         );
         $db->where('gid', $chat_id);
