@@ -171,7 +171,7 @@ try {
 			}
 		}
 		foreach ($username_Yang_didapaktkanAFK as $uafkdata) {
-			
+
 			$db->where("username", $uafkdata);
 			$getDataafku = $db->getOne("afk_user_data");
 			if ($getDataafku['username'] != null) {
@@ -507,7 +507,13 @@ try {
 	} elseif ('/pantun' == $adanParse[0] || '/pantun' . USERNAME_BOT . '' == $adanParse[0]) {
 		require __DIR__ . '/command/pantun.php';
 		exit;
-	} elseif ('/carbon' == $adanParse[0] || '/carbon' . USERNAME_BOT . '' == $adanParse[0]) {
+	} elseif (
+		'/carbon' == $adanParse[0] || '/carbon' . USERNAME_BOT . '' == $adanParse[0] ||
+		'/cr' == $adanParse[0] || '/cr' . USERNAME_BOT . '' == $adanParse[0] ||
+		'/crb' == $adanParse[0] || '/crb' . USERNAME_BOT . '' == $adanParse[0] ||
+		'/carbonate' == $adanParse[0] || '/carbonate' . USERNAME_BOT . '' == $adanParse[0] ||
+		'/cb' == $adanParse[0] || '/cb' . USERNAME_BOT . '' == $adanParse[0]
+	) {
 		require __DIR__ . '/command/carbon.php';
 		exit;
 	} elseif ('/tf' == $adanParse[0] || '/tf' . USERNAME_BOT . '' == $adanParse[0]) {
