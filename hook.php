@@ -425,16 +425,21 @@ try {
 			$anggota = file_put_contents($file, $jsonfile);
 		}
 	}
-	$dteeksi = preg_match('/@fadhil_riyanto_bot/', $text);
-	if ($dteeksi == true && $deteksiApakahGrup == true) {
-		$alasan = array(
-			"hai, apa apa mention aku...", "kamu kenapa mention aku?", "butuh bantuan kak?", "iya ada apa?",
-			"kamu mention aku yak?", "iyah ada apa kk?", "kenapa kk kok mention aku?", "iyah kaka"
-		);
-		$reply = $alasan[random_int(0, count($alasan))];
-		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-		$telegram->sendMessage($content);
+	$detectcmmm = preg_match("/\/[a-zA-Z0-9-_]+@fadhil+/", $hm);
+	if ($detectcmmm == true) {
+	} else {
+		$dteeksi = preg_match('/@fadhil_riyanto_bot/', $text);
+		if ($dteeksi == true && $deteksiApakahGrup == true) {
+			$alasan = array(
+				"hai, apa apa mention aku...", "kamu kenapa mention aku?", "butuh bantuan kak?", "iya ada apa?",
+				"kamu mention aku yak?", "iyah ada apa kk?", "kenapa kk kok mention aku?", "iyah kaka"
+			);
+			$reply = $alasan[random_int(0, count($alasan))];
+			$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+			$telegram->sendMessage($content);
+		}
 	}
+
 
 	// if (){
 	// 	$reply = 'sintak error, alasan ' . PHP_EOL . PHP_EOL . $e;
