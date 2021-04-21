@@ -67,19 +67,19 @@ try {
 
 
 	//debug mode
-	// if (detect_grup() == null) {
-	// 	if ($userID != $userid_pemilik) {
-	// 		$reply = "Maaf, bot ini sedang dalam pengembangan lebih lanjut oleh " . PUMBUAT_BOT . PHP_EOL .
-	// 			"Coba lagi nanti";
-	// 		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-	// 		$telegram->sendMessage($content);
-	// 		exit;
-	// 	}
-	// } else {
-	// 	if ($userID != $userid_pemilik) {
-	// 		die();
-	// 	}
-	// }
+	if (detect_grup() == null) {
+		if ($userID != $userid_pemilik) {
+			$reply = "Maaf, bot ini sedang dalam pengembangan lebih lanjut oleh " . PUMBUAT_BOT . PHP_EOL .
+				"Coba lagi nanti";
+			$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+			$telegram->sendMessage($content);
+			exit;
+		}
+	} else {
+		if ($userID != $userid_pemilik) {
+			die();
+		}
+	}
 
 
 	$hilangAzan = str_replace('/azan ', '', $text, $hit);
@@ -142,25 +142,37 @@ try {
 
 
 	if (isset($getreplyianid)) {
-
-
-		$db->where("userid", $getreplyianid);
-		$user = $db->getOne("afk_user_data");
-		if ($user['userid'] == null) {
-		} else {
-			if ($getreplyianid == $userID) {
-				if (substr($text_plain_nokarakter, 0, 1) == '/') {
+		$userafk = $db->get("afk_user_data");
+		foreach ($userafk as $afuuser) {
+			if ($getreplyianid == $afuuser['userid']) {
+				if ($getreplyianid == $userID) {
+					if (substr($text_plain_nokarakter, 0, 1) == '/') {
+					} else {
+						exit;
+					}
 				} else {
-					exit;
 				}
-			} else {
-				$reply = "Maaf ," . $afkforstname . ' ' . $afklastname . ' sedang AFK sejak ' . $user['time_afk'] . PHP_EOL .
-					'Alasan : ' . $user['alasan'];
+				$reply = "Maaf ," . $afkforstname . ' ' . $afklastname . ' sedang AFK sejak ' . $afuuser['time_afk'] . PHP_EOL .
+					'Alasan : ' . $afuuser['alasan'];
 				$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
 				$telegram->sendMessage($content);
-				// exit;
 			}
 		}
+
+		// $db->where("userid", $getreplyianid);
+		// $user = $db->getOne("afk_user_data");
+		// if ($user['userid'] == null) {
+		// } else {
+		// 	if ($getreplyianid == $userID) {
+		// 		if (substr($text_plain_nokarakter, 0, 1) == '/') {
+		// 		} else {
+		// 			exit;
+		// 		}
+		// 	} else {
+		// 		
+		// 		// exit;
+		// 	}
+		// }
 	}
 
 
@@ -170,16 +182,24 @@ try {
 				$username_Yang_didapaktkanAFK[] = substr($text_plain_nokarakter, $getEntity['offset'] + 1, $getEntity['length']);
 			}
 		}
+		$userafkmention = $db->get("afk_user_data");
 		foreach ($username_Yang_didapaktkanAFK as $uafkdata) {
-
-			$db->where("username", $uafkdata);
-			$getDataafku = $db->getOne("afk_user_data");
-			if ($getDataafku['username'] != null) {
-				$reply = "Maaf ," . $getDataafku['username'] . ' sedang AFK sejak ' . $getDataafku['time_afk'] . PHP_EOL .
-					'Alasan : ' . $getDataafku['alasan'];
-				$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-				$telegram->sendMessage($content);
+			foreach ($userafkmention as $datamention) {
+				if ($datamention['username'] == $uafkdata) {
+					$reply = "deteksi";
+					$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+					$telegram->sendMessage($content);
+				}
 			}
+
+			// $db->where("username", $uafkdata);
+			// $getDataafku = $db->getOne("afk_user_data");
+			// if ($getDataafku['username'] != null) {
+			// 	$reply = "Maaf ," . $getDataafku['username'] . ' sedang AFK sejak ' . $getDataafku['time_afk'] . PHP_EOL .
+			// 		'Alasan : ' . $getDataafku['alasan'];
+			// 	$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+			// 	$telegram->sendMessage($content);
+			// }
 		}
 	}
 
