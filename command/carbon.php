@@ -2,7 +2,16 @@
 //$hapusTulis = 
 $udahDiparse = str_replace($adanParse_plain[0] . ' ', '', $text_plain);
 if ($adanParse[1] == null) {
-    $reply = 'Hai ' . $username . PHP_EOL . 'Maaf, Pattern kosong, gunakan format' . PHP_EOL . PHP_EOL . '<pre>/tulis {your text}</pre>';
+    $reply = 'Hai ' . $username . PHP_EOL . 'Maaf, Pattern kosong, gunakan format' . PHP_EOL . PHP_EOL . '<pre>/carbon chain_p = TYPE_FIELDS (t);
+    while (chain_p)
+  {
+    data_type = concat (data_type, gen_decl (chain_p, 0, ansi),
+                NULL);
+    chain_p = TREE_CHAIN (chain_p);
+    data_type = concat (data_type, "; ", NULL);
+  }
+    data_type = concat ("{ ", data_type, "}", NULL);
+  }</pre>';
     $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
     $telegram->sendMessage($content);
     exit;
@@ -23,16 +32,12 @@ if ($adanParse[1] == null) {
     $reply = 'Tunggu sebentar, kami sedang meng-generate image (sync)';
     $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
     $editmsg = $telegram->sendMessage($content);
-
     $data = array(
         "backgroundColor" => "rgba(144, 19, 254, 100)",
         "code" => urlencode(htmlspecialchars_decode($udahDiparse)),
         "theme" => "dracula"
     );
     $data_string = json_encode($data);
-
-
-
     $ch = curl_init('https://carbonnowsh.herokuapp.com');
     curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
     curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);
@@ -48,13 +53,11 @@ if ($adanParse[1] == null) {
     file_put_contents($output, $result);
     $bot_url    = "https://api.telegram.org/bot" . TG_HTTP_API . "/";
     $url        = $bot_url . "sendDocument?chat_id=" . $chat_id;
-
     $post_fields = array(
         'chat_id'   => $chat_id,
         'reply_to_message_id' => $message_id,
         'document'     => new CURLFile(realpath('tmp/' . $randomstrings . '.png'))
     );
-
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_HTTPHEADER, array(
         "Content-Type:multipart/form-data"

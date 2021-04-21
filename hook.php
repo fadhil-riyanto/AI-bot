@@ -28,7 +28,6 @@ try {
 	$id_bot_sendiri = ID_BOT;
 	echo 'Ini server 1 bot telegram' . PHP_EOL . '<hr>';
 
-
 	$db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
 
 	// Ouput text to user based on test
