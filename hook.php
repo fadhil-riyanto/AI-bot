@@ -425,7 +425,7 @@ try {
 			$anggota = file_put_contents($file, $jsonfile);
 		}
 	}
-	$detectcmmm = preg_match("/\/[a-zA-Z0-9-_]+@fadhil_riyanto_bot+/", $hm);
+	$detectcmmm = preg_match("/\/[a-zA-Z0-9-_]+@fadhil_riyanto_bot+/", $text);
 	if ($detectcmmm == true) {
 	} else {
 		$dteeksi = preg_match('/@fadhil_riyanto_bot/', $text);
