@@ -221,75 +221,75 @@ try {
 	// $db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
 	// $db->where("chat_id", $chat_id);
 	// $getDataafku = $db->get("filters_word_data");
-	if ($apakahuserchattingviaGRUP == true) {
-		require __DIR__ . '/include/hook_handle_cache.php';
-		$get_data_cachenya = hooh_db_handle_filter();
-		$getDataafku = json_decode($get_data_cachenya, true);
-		// $tojson_banlist = json_encode($getDataafku);
-		// $reply = $tojson_banlist;
-		// $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-		// $telegram->sendMessage($content);
-		// echo $tojson_banlist;
+	//if ($apakahuserchattingviaGRUP == true) {
+	require __DIR__ . '/include/hook_handle_cache.php';
+	$get_data_cachenya = hooh_db_handle_filter();
+	$getDataafku = json_decode($get_data_cachenya, true);
+	// $tojson_banlist = json_encode($getDataafku);
+	// $reply = $tojson_banlist;
+	// $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+	// $telegram->sendMessage($content);
+	// echo $tojson_banlist;
 
-		foreach ($getDataafku as $katablock) {
+	foreach ($getDataafku as $katablock) {
 
-			$a = explode(' ', $text_plain_nokarakter);
-			foreach ($a as $aa) {
-				if (strtolower($aa) == strtolower($katablock['word'])) {
-					if (substr($text_plain_nokarakter, 0, 1) == '/') {
-					} else {
-						$deteksi_filter = true;
-					}
-				}
-			}
-		}
-
-		if ($deteksi_filter == true) {
-			$db->where("gid", $chat_id);
-			$user = $db->getOne("grup_data");
-
-			if ($user['act_filters_detect'] == true) {
-				if ($user['filters_hukuman'] == 'delete') {
-					$arr = array('chat_id' => $chat_id, 'message_id' => $message_id);
-					$telegram->deleteMessage($arr);
-				} elseif ($user['filters_hukuman'] == 'mute') {
-					$arr = array('chat_id' => $chat_id, 'user_id' => $userID, 'permissions' => '{"can_send_messages": false}', 'until_date' => time() + 300);
-					$telegram->restrictChatMember($arr);
-				} elseif ($user['filters_hukuman'] == 'ban') {
-					$param_promote = array(
-						'chat_id' => $chat_id,
-						'user_id' => $promote_uid
-					);
-
-					$telegram->kickChatMember($param_promote);
-
-					$param_promote = array(
-						'chat_id' => $chat_id,
-						'user_id' => $promote_uid
-					);
-					$telegram->unbanChatMember($param_promote);
-				}
-
-				if ($user['act_filters_detect'] == true) {
-
-					if ($user['filters_hukuman'] == 'delete') {
-						$reply = 'maaf, ' . $username . ' dihukum ' . 'hapus pesan karna mengirim kata kata yang diblockir.';
-						$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-						$telegram->sendMessage($content);
-					} elseif ($user['filters_hukuman'] == 'mute') {
-						$reply = 'maaf, ' . $username . ' dihukum ' . ' mute 5 menit karna mengirim kata kata yang diblockir.';
-						$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-						$telegram->sendMessage($content);
-					} elseif ($user['filters_hukuman'] == 'ban') {
-						$reply = 'maaf, ' . $username . ' dihukum ' . ' banned karna mengirim kata kata yang diblockir.';
-						$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-						$telegram->sendMessage($content);
-					}
+		$a = explode(' ', $text_plain_nokarakter);
+		foreach ($a as $aa) {
+			if (strtolower($aa) == strtolower($katablock['word'])) {
+				if (substr($text_plain_nokarakter, 0, 1) == '/') {
 				} else {
+					$deteksi_filter = true;
 				}
 			}
 		}
 	}
+
+	if ($deteksi_filter == true) {
+		$db->where("gid", $chat_id);
+		$user = $db->getOne("grup_data");
+
+		if ($user['act_filters_detect'] == true) {
+			if ($user['filters_hukuman'] == 'delete') {
+				$arr = array('chat_id' => $chat_id, 'message_id' => $message_id);
+				$telegram->deleteMessage($arr);
+			} elseif ($user['filters_hukuman'] == 'mute') {
+				$arr = array('chat_id' => $chat_id, 'user_id' => $userID, 'permissions' => '{"can_send_messages": false}', 'until_date' => time() + 300);
+				$telegram->restrictChatMember($arr);
+			} elseif ($user['filters_hukuman'] == 'ban') {
+				$param_promote = array(
+					'chat_id' => $chat_id,
+					'user_id' => $promote_uid
+				);
+
+				$telegram->kickChatMember($param_promote);
+
+				$param_promote = array(
+					'chat_id' => $chat_id,
+					'user_id' => $promote_uid
+				);
+				$telegram->unbanChatMember($param_promote);
+			}
+
+			if ($user['act_filters_detect'] == true) {
+
+				if ($user['filters_hukuman'] == 'delete') {
+					$reply = 'maaf, ' . $username . ' dihukum ' . 'hapus pesan karna mengirim kata kata yang diblockir.';
+					$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+					$telegram->sendMessage($content);
+				} elseif ($user['filters_hukuman'] == 'mute') {
+					$reply = 'maaf, ' . $username . ' dihukum ' . ' mute 5 menit karna mengirim kata kata yang diblockir.';
+					$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+					$telegram->sendMessage($content);
+				} elseif ($user['filters_hukuman'] == 'ban') {
+					$reply = 'maaf, ' . $username . ' dihukum ' . ' banned karna mengirim kata kata yang diblockir.';
+					$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+					$telegram->sendMessage($content);
+				}
+			} else {
+			}
+		}
+	}
+	//}
 
 
 
