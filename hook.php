@@ -139,6 +139,15 @@ try {
 	// $reply = "1";
 	// $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
 	// $telegram->sendMessage($content);
+	require __DIR__ . '/include/user_fetch_mysql.php';
+	$getlang = json_decode(db_members_cached(), true);
+	foreach ($getlang as $langsss) {
+		if ($langsss['userid'] == $userID) {
+			$bahasa_pilihan = $langsss['bahasa'];
+		}
+	}
+	//bahasa
+	require __DIR__ . '/langs/bahasa.php';
 
 
 	if (isset($getreplyianid)) {
@@ -186,7 +195,8 @@ try {
 		foreach ($username_Yang_didapaktkanAFK as $uafkdata) {
 			foreach ($userafkmention as $datamention) {
 				if ($datamention['username'] == $uafkdata) {
-					$reply = "deteksi";
+					$reply = "Maaf ," . $datamention['username'] . ' sedang AFK sejak ' . $datamention['time_afk'] . PHP_EOL .
+						'Alasan : ' . $datamention['alasan'];
 					$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
 					$telegram->sendMessage($content);
 				}
@@ -500,6 +510,7 @@ try {
 
 		if (detect_grup() == true) {
 		} else {
+
 			//track user
 			$db->where("userid", $userID);
 			$user = $db->getOne("members");
@@ -514,8 +525,6 @@ try {
 				$id = $db->insert('members', $data);
 			} else {
 			}
-
-
 			if (isset($adanParse[1])) {
 				$explodeparse_pastebin = explode('_', $adanParse[1]);
 				if ($adanParse[1] == 'help_admin') {
@@ -530,6 +539,16 @@ try {
 				}
 			}
 			require __DIR__ . '/command/start.php';
+
+			if (detect_grup() == true) {
+			} elseif (detect_grup() == null) {
+				$db->where("userid", $userID);
+				$user = $db->getOne("members");
+				if ($user['bahasa'] == null) {
+					require __DIR__ . '/command/setlang.php';
+				} else {
+				}
+			}
 		}
 		exit;
 	} elseif ('/pantun' == $adanParse[0] || '/pantun' . USERNAME_BOT . '' == $adanParse[0]) {
@@ -552,6 +571,13 @@ try {
 		exit;
 	} elseif ('/resi' == $adanParse[0] || '/resi' . USERNAME_BOT . '' == $adanParse[0]) {
 		require __DIR__ . '/command/resi.php';
+		exit;
+	} elseif ('/setlang' == $adanParse[0] || '/setlang' . USERNAME_BOT . '' == $adanParse[0]) {
+		if (detect_grup() == true) {
+		} elseif (detect_grup() == null) {
+			require __DIR__ . '/command/setlang.php';
+		}
+
 		exit;
 	} elseif ('/calc_i' == $adanParse[0] || '/calc_i' . USERNAME_BOT . '' == $adanParse[0]) {
 		require __DIR__ . '/apps/calculator/calc_i.php';

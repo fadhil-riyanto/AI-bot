@@ -27,7 +27,7 @@ if ($azanHilangcommand == null) {
     $content = array('chat_id' => $chat_id, 'text' => $reply, 'parse_mode' => 'html', 'reply_to_message_id' => $message_id, 'disable_web_page_preview' => true);
     $telegram->sendMessage($content);
     if ($konformasi['ok'] == false) {
-        $reply = 'ups, tidak ditemukan';
+        $reply = bahasa('modul_adminlist_admin_tidak_ditemukan');
         $content = array('chat_id' => $chat_id, 'text' => $reply, 'parse_mode' => 'html', 'reply_to_message_id' => $message_id, 'disable_web_page_preview' => true);
         $konformasi = $telegram->sendMessage($content);
     } else {
