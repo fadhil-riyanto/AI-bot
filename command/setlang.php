@@ -8,11 +8,11 @@ if (isset($adanParse[1])) {
     if ($db->update('members', $data)) {
         if ($adanParse[2] == "id_id") {
             $jawabquery = $telegram->getData();
-            $alswecl = array('callback_query_id' => $jawabquery['callback_query']['id'], 'text' => 'Bahasa diubah ke Indonesia', 'show_alert' => true);
+            $alswecl = array('callback_query_id' => $jawabquery['callback_query']['id'], 'text' => 'Bahasa diubah ke Indonesia' . PHP_EOL . 'silahkan tunggu 30.', 'show_alert' => true);
             $telegram->answerCallbackQuery($alswecl);
         } elseif ($adanParse[2] == "en_en") {
             $jawabquery = $telegram->getData();
-            $alswecl = array('callback_query_id' => $jawabquery['callback_query']['id'], 'text' => 'Language changed to English', 'show_alert' => true);
+            $alswecl = array('callback_query_id' => $jawabquery['callback_query']['id'], 'text' => 'Language changed to English' . PHP_EOL . 'please wait 30 seconds.', 'show_alert' => true);
             $telegram->answerCallbackQuery($alswecl);
         }
         die();
