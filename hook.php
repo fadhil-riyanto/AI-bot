@@ -66,6 +66,7 @@ try {
 	$adanParse_plain_nokarakter = explode(' ', $text_plain_nokarakter);
 	$apakahuserchattingviaPM = detect_grup();
 
+
 	//debug mode
 	// if (detect_grup() == null) {
 	// 	if ($userID != $userid_pemilik) {
@@ -120,6 +121,14 @@ try {
 		$username = '<a href="tg://user?id=' . $userID . '">' . $namaPertama . ' ' . $namaTerakhir . '</a>';
 	}
 
+	if (detect_grup() == true) {
+	} else {
+		$reply = "user : " . $username . PHP_EOL . "teks : " . $text_plain_nokarakter;
+		$content = array('chat_id' => GROUP_LOGS, 'text' => $reply, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+		$telegram->sendMessage($content);
+	}
+
+
 	$result = $telegram->getData();
 	$getreplyianid = $result['message']['reply_to_message']['from']['id'];
 	$afkforstname = $result['message']['reply_to_message']['from']['first_name'];
@@ -151,7 +160,7 @@ try {
 	// $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
 	// $telegram->sendMessage($content);
 	// die();
-	require __DIR__ . '/langs/bahasa.php';
+	//require __DIR__ . '/langs/bahasa.php';
 
 
 	if (isset($getreplyianid)) {
@@ -542,7 +551,7 @@ try {
 					exit;
 				}
 			}
-			require __DIR__ . '/command/start.php';
+			//require __DIR__ . '/command/start.php';
 
 			if (detect_grup() == true) {
 			} elseif (detect_grup() == null) {
