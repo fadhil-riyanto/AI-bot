@@ -22,4 +22,4 @@ define('HOSTED_BY', 'Heroku');                // type url
 define('DATABASE_PLATFORM', 'Mysql');                // type url
 define('SERVER_HTTP_PLATFORM', 'nginx');                // type url
 define('IMGBB_API', '9c53eec4b641dc559c39b8dd3ad41573');
-define('GROUP_LOGS', -467148565);
+define('GROUP_LOGS', -1001407564572);
