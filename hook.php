@@ -147,6 +147,10 @@ try {
 		}
 	}
 	//bahasa
+	// $reply = $bahasa_pilihan;
+	// $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+	// $telegram->sendMessage($content);
+	// die();
 	require __DIR__ . '/langs/bahasa.php';
 
 
@@ -573,10 +577,11 @@ try {
 		require __DIR__ . '/command/resi.php';
 		exit;
 	} elseif ('/setlang' == $adanParse[0] || '/setlang' . USERNAME_BOT . '' == $adanParse[0]) {
-		if (detect_grup() == true) {
-		} elseif (detect_grup() == null) {
-			require __DIR__ . '/command/setlang.php';
-		}
+		// if (detect_grup() == true) {
+		// } elseif (detect_grup() == null) {
+
+		// }
+		require __DIR__ . '/command/setlang.php';
 
 		exit;
 	} elseif ('/calc_i' == $adanParse[0] || '/calc_i' . USERNAME_BOT . '' == $adanParse[0]) {
