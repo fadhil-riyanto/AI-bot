@@ -6,18 +6,9 @@ try {
 
 	require __DIR__ . '/pengaturan/env.php';
 	require __DIR__ . '/include/hook_function_core.php';
-	// PENJELASAN SINGKAT
-
-	// DB_HOST digunakan untuk login ke database, begitu juga username dan password_get_info
-	// TG HTTP API digunakan untuk identifikasi API, bisa didapat di @botfather
-	// USERid digunakan untuk identifikasi
-	// Cutlly digunakan untuk fitur /SHORT
-	// Time zone digunakan untuk fitur tanggal dan waktu
-
-	// =============== BARIS SELANJUT NYA TIDAK USAH DIUBAH. KARENA KEMUNGKINAN KAMU TIDAL PAHAM ============
-
 	require_once __DIR__ . '/vendor/autoload.php';
 	require_once __DIR__ . '/ai_robot.php';
+	require __DIR__ . '/include/blacklisted_user.php';
 
 	ini_set('max_execution_time', MAX_EXECUTE_SCRIPT);
 	error_reporting(1);
@@ -88,22 +79,14 @@ try {
 		$hilangAzan = str_replace('/azan' . USERNAME_BOT . ' ', '', $text);
 	}
 
-	if ('/ping_detail' == $adanParse[0] || '/ping_detail' . USERNAME_BOT . '' == $adanParse[0]) {
-		require __DIR__ . '/command/ping_detail.php';
-		exit;
-	}
-	if ('/ping' == $adanParse[0] || '/ping' . USERNAME_BOT . '' == $adanParse[0]) {
-		require __DIR__ . '/command/ping.php';
-		exit;
-	}
+
 
 	function whitelist_check($userID)
 	{
-		$file = __DIR__ . "/json_data/whitelist_userid.json";
-		$anggota = file_get_contents($file);
-		$data = json_decode($anggota, true);
+		$GETDATA_blacklist = blacklist_user();
+		$data = json_decode($GETDATA_blacklist, true);
 		foreach ($data as $d) {
-			if ($d['userid'] == $userID) {
+			if ($d['id'] == $userID) {
 				return true;
 			}
 		}
@@ -581,6 +564,12 @@ try {
 		exit;
 	} elseif ('/ts' == $adanParse[0] || '/ts' . USERNAME_BOT . '' == $adanParse[0]) {
 		require __DIR__ . '/command/ts.php';
+		exit;
+	} elseif ('/ping_detail' == $adanParse[0] || '/ping_detail' . USERNAME_BOT . '' == $adanParse[0]) {
+		require __DIR__ . '/command/ping_detail.php';
+		exit;
+	} elseif ('/ping' == $adanParse[0] || '/ping' . USERNAME_BOT . '' == $adanParse[0]) {
+		require __DIR__ . '/command/ping.php';
 		exit;
 	} elseif ('/resi' == $adanParse[0] || '/resi' . USERNAME_BOT . '' == $adanParse[0]) {
 		require __DIR__ . '/command/resi.php';
