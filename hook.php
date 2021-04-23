@@ -534,17 +534,17 @@ try {
 					exit;
 				}
 			}
-			//require __DIR__ . '/command/start.php';
+			require __DIR__ . '/command/start.php';
 
-			if (detect_grup() == true) {
-			} elseif (detect_grup() == null) {
-				$db->where("userid", $userID);
-				$user = $db->getOne("members");
-				if ($user['bahasa'] == null) {
-					require __DIR__ . '/command/setlang.php';
-				} else {
-				}
-			}
+			// if (detect_grup() == true) {
+			// } elseif (detect_grup() == null) {
+			// 	$db->where("userid", $userID);
+			// 	$user = $db->getOne("members");
+			// 	if ($user['bahasa'] == null) {
+			// 		require __DIR__ . '/command/setlang.php';
+			// 	} else {
+			// 	}
+			// }
 		}
 		exit;
 	} elseif ('/pantun' == $adanParse[0] || '/pantun' . USERNAME_BOT . '' == $adanParse[0]) {
