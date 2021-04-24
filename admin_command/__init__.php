@@ -9,42 +9,42 @@ function deteksi_grup()
     }
 }
 if (deteksi_grup() == true) {
-    // function apakah_bot_ini_admin()
-    // {
-    //     global $chat_id;
-    //     $anggota = file_get_contents(__DIR__ . '/../json_data/group_command/adminlist.json');
-    //     $data = json_decode($anggota, true);
-    //     foreach ($data as $d) {
-    //         if ($d['gid'] == $chat_id) {
-    //             foreach ($d['admin'] as $admins) {
-    //                 if ($admins == ID_BOT) {
-    //                     return true;
-    //                 }
-    //             }
-    //         }
+
+    //cek apakah bot ini admin!
+    // $checkadmin_get_jsonnya = json_decode(file_get_contents(__DIR__ . '/../json_data/group_command/adminlist.json'), true);
+    // foreach ($checkadmin_get_jsonnya as $check_json) {
+    //     if ($d['gid'] == $chat_id) {
+    //         $arrs_kembalian_json = $d['admin'];
     //     }
     // }
-    // $cekadmin = apakah_bot_ini_admin();
-    // if ($cekadmin != true) {
-    //     $reply = 'maaf, saya bukan admin disini';
-    //     $content1 = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-    //     $telegram->sendMessage($content1);
-    //     exit;
-    // }
 
-    // $db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
-    // $db->where("gid", $chat_id);
-    // $user = $db->getOne("grup_data");
-    // if ($user == null) {
-    //     $reply = 'maaf, database untuk penyimpanan data konfigurasi grup ini belum dibuat. mohon jalankan command /init untuk membuat nya';
-    //     $content1 = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-    //     $telegram->sendMessage($content1);
-    //     exit;
-    // }
+    // $reply = '[DEBUG_FADHIL_BOT_FRAMEWORK] return 1, bot is admin';
+    // $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+    // $telegram->sendMessage($content);
+    $daftarcommandadmin = [
+        '/pin', '/unpin',
+        '/set_welcome', '/test_welcome', '/set_chapcha_mode',
+        '/set_goodbye', '/set_welcome_mode', '/set_goodbye_mode',
+        '/set_rules', '/promote', '/demote', '/clear_rules',
+        '/admin_mode', '/unpinall', '/mute', '/set_admin_title',
+        '/unmute', '/ban', '/sban', '/kick',
+        '/skick', '/unban', '/init', '/addword',
+        '/delword', '/filter_action_mode',
+        '/filter_action', '/filter_notify'
+    ];
+    $explode_key_admin = explode("@", $adanParse_lowercase[0]);
+    foreach ($daftarcommandadmin as $daftarcommandadmin_s) {
+        if ($daftarcommandadmin_s == $explode_key_admin[0]) {
+            $command_ditemukan_admin = true;
+        }
+    }
+    $getlistjsonadmin = __DIR__ . '/../json_data/group_command/adminlist.json';
 
+
+
+    //die();
 
     $delaycached = 20;
-    $getlistjsonadmin = __DIR__ . '/../json_data/group_command/adminlist.json';
     function getUseridFromeditmessageinit($chat_id)
     {
         global $grupid;
@@ -138,21 +138,33 @@ if (deteksi_grup() == true) {
         $gid =  $chat_id;
         $admins =  $id_admin;
     }
+    $apakah_bot_ini_admin = json_decode(file_get_contents($getlistjsonadmin));
+    foreach ($apakah_bot_ini_admin as $ngecekadmin_adminfor) {
+        if ($ngecekadmin_adminfor->gid == $chat_id) {
+            $listadmin_arrays = $ngecekadmin_adminfor->admin;
+        }
+    }
+    foreach ($listadmin_arrays as $apakah_admin) {
+        if ($apakah_admin == ID_BOT) {
+            $bot_adalah_admin = true;
+        }
+    }
+    if ($command_ditemukan_admin == true) {
+        if ($bot_adalah_admin != true) {
+            $reply = 'maaf, saya tidak bisa melakukan aksi yang anda perintahkan karna saya bukan admin grup ini.';
+            $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+            $telegram->sendMessage($content);
+        } else {
+        }
+    }
 } else {
     if (
-        $adanParse[0] == '/pin' || $adanParse[0] == '/unpin' ||
-        $adanParse[0] == '/set_welcome' || $adanParse[0] == '/test_welcome' || $adanParse[0] == '/set_chapcha_mode' ||
-        $adanParse[0] == '/set_goodbye' || $adanParse[0] == '/set_welcome_mode' || $adanParse[0] == '/set_goodbye_mode' ||
-        $adanParse[0] == '/set_rules' || $adanParse[0] == '/promote' || $adanParse[0] == '/demote' || $adanParse[0] == '/clear_rules' ||
-        $adanParse[0] == '/admin_mode' || $adanParse[0] == '/unpinall' || $adanParse[0] == '/mute' || $adanParse[0] == '/set_admin_title' ||
-        $adanParse[0] == '/unmute' || $adanParse[0] == '/ban' || $adanParse[0] == '/sban' || $adanParse[0] == '/kick' ||
-        $adanParse[0] == '/skick' || $adanParse[0] == '/unban' || $adanParse[0] == '/init' || $adanParse[0] == '/addword' ||
-        $adanParse[0] == '/delword' || $adanParse[0] == '/filter_action_mode' ||
-        $adanParse[0] == '/filter_action' || $adanParse[0] == '/filter_notify'
+        $command_ditemukan_admin == true
     ) {
         $reply = 'Maaf, command ini hanya berlaku di grup saja';
         $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
         $telegram->sendMessage($content);
+        exit;
     }
     exit;
 }
@@ -239,20 +251,7 @@ if ($kamu_admin == true) {
     }
 } elseif ($kamu_admin == false) {
     if (
-        $adanParse[0] == '/pin' || $adanParse[0] == '/unpin' ||
-        $adanParse[0] == '/set_welcome' || $adanParse[0] == '/test_welcome' ||
-        $adanParse[0] == '/set_chapcha_mode' || $adanParse[0] == '/set_goodbye' ||
-        $adanParse[0] == '/set_welcome_mode' || $adanParse[0] == '/set_goodbye_mode' ||
-        $adanParse[0] == '/set_rules' || $adanParse[0] == '/promote' ||
-        $adanParse[0] == '/demote' || $adanParse[0] == '/clear_rules' ||
-        $adanParse[0] == '/admin_mode' || $adanParse[0] == '/unpinall' ||
-        $adanParse[0] == '/mute' || $adanParse[0] == '/set_admin_title' ||
-        $adanParse[0] == '/unmute' || $adanParse[0] == '/ban' ||
-        $adanParse[0] == '/sban' || $adanParse[0] == '/ban' || $adanParse[0] == '/sban' ||
-        $adanParse[0] == '/kick' || $adanParse[0] == '/skick' ||
-        $adanParse[0] == '/unban' || $adanParse[0] == '/init' || $adanParse[0] == '/addword' ||
-        $adanParse[0] == '/delword' || $adanParse[0] == '/filter_action_mode' ||
-        $adanParse[0] == '/filter_action' || $adanParse[0] == '/filter_notify'
+        $command_ditemukan_admin == true
 
     ) {
         $reply = 'ups, kamu bukan admin';

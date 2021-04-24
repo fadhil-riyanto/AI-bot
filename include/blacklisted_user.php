@@ -1,6 +1,5 @@
 <?php
 require __DIR__ . '/../vendor/autoload.php';
-require __DIR__ . '/../pengaturan/env.php';
 
 function blacklist_user()
 {

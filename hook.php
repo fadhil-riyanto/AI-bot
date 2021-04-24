@@ -72,6 +72,7 @@ try {
 	} else {
 		if ($userID == $userid_pemilik || $userID == 1223173857) {
 		} else {
+			die();
 		}
 	}
 
@@ -826,6 +827,8 @@ try {
 		$text === 'update corona bagaimana?' || $text === 'corona gimana?' || $text === 'status corona' || $text === 'info covid' || $text === 'info covid 19' || $text === 'info covid19' ||
 		//slang teks disini
 		$text === 'corona bgmn?' || $text === 'corona bgmn' || $text === 'status corona' || $text === 'statiska corona' || $text === 'info covid' ||
+		$text === 'kopet bgmn?' || $text === 'kopet bgmn' || $text === 'inpo kopet gimana?' || $text === 'info kopet' || $text === 'info kopid' ||
+		$text === 'info corona gimana woi?' || $text === 'info corona gimana woy' || $text === 'info corona gimana woi' || $text === 'info corona gimana woyy' || $text === 'info kopid' ||
 		$text === 'info covid 19' || $text === 'info covid19' || $text == '/corona' . USERNAME_BOT . ''
 	) {
 		require __DIR__ . '/command/corona.php';

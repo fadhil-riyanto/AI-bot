@@ -127,4 +127,15 @@ if ($getStringFromSpasi[0] == 'debug' || $getStringFromSpasi[0] == 'debugmode') 
         $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'disable_web_page_preview' => true);
         $telegram->sendMessage($content);
     }
+} elseif ($getStringFromSpasi[0] == 'unban' || $getStringFromSpasi[0] == 'unblock') {
+    $db->where('id', $getStringFromSpasi[1]);
+    if ($db->delete('blacklist_user')) {
+        $reply = 'done';
+        $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'disable_web_page_preview' => true);
+        $telegram->sendMessage($content);
+    } else {
+        $reply = 'error';
+        $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'disable_web_page_preview' => true);
+        $telegram->sendMessage($content);
+    }
 }
