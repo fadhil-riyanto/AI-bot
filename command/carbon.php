@@ -38,7 +38,7 @@ if ($adanParse[1] == null) {
         "theme" => "dracula"
     );
     $data_string = json_encode($data);
-    $ch = curl_init('https://carbonnowsh.herokuapp.com');
+    $ch = curl_init('https://carbon-me.herokuapp.com');
     curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
     curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -51,6 +51,7 @@ if ($adanParse[1] == null) {
     $randomstrings = generateRandomString_files(40);
     $output = __DIR__ . '/../tmp/' . $randomstrings . '.png';
     file_put_contents($output, $result);
+
     $bot_url    = "https://api.telegram.org/bot" . TG_HTTP_API . "/";
     $url        = $bot_url . "sendDocument?chat_id=" . $chat_id;
     $post_fields = array(

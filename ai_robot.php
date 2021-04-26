@@ -151,7 +151,7 @@ function kata_kata_jorok($text)
 		'Totong', 'Kolop', 'Pukimak', 'Bodat', 'Heang', 'Jancuk', 'Burit', 'Titit', 'Nenen', 'Bejat', 'Silit', 'Sempak', 'Fucking',
 		'Asshole', 'Bitch', 'Penis', 'Vagina', 'Klitoris', 'Kelentit', 'Borjong', 'Dancuk', 'Pantek', 'Taek', 'Itil', 'Teho', 'Bejat',
 		'Pantat', 'Bagudung', 'Babami', 'Kanciang', 'Bungul', 'Idiot', 'Kimak', 'Henceut', 'Kacuk', 'Blowjob', 'Pussy',
-		'Dick', 'Damn', '3some', '4some', '17 tahun', '17tahun', '*damn', '*dyke', '*fuck*', '*shit*', '@$$', 'adult', 'ahole',
+		'Dick', 'Damn', '3some', '4some', 'analplay', '17 tahun', '17tahun', '*damn', '*dyke', '*fuck*', '*shit*', '@$$', 'adult', 'ahole',
 		'akka', 'amcik', 'anal', 'anal-play', 'analingus', 'analplay', 'androsodomy', 'andskota', 'anilingus', 'anjing', 'anjrit',
 		'anus', 'arschloch', 'arse', 'arse*', 'arsehole', 'ash0le', 'ash0les', 'asholes', 'ass', 'ass', 'ass monkey',
 		'ass-playauto-eroticism', 'asses', 'assface', 'assh0le', 'assh0lez', 'asshole', 'asshole', 'assholes', 'assholz',
