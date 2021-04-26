@@ -242,7 +242,7 @@ try {
 
 	foreach ($getDataafku as $katablock) {
 
-		$a = explode(' ', $text_plain_nokarakter);
+		$a = explode(' ', cleanStrings_dari_utf8($text_plain_nokarakter));
 		foreach ($a as $aa) {
 			if (strtolower($aa) == strtolower($katablock['word'])) {
 				if (substr($text_plain_nokarakter, 0, 1) == '/') {
