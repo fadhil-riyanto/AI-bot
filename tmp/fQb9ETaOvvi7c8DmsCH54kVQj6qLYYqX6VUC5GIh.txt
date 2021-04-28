@@ -1,0 +1,6 @@
+ParseError: syntax error, unexpected variable "$dataColumns", expecting ")" in C:\bot telegram\vendor\thingengineer\mysqli-database-class\MysqliDb.php:1838
+Stack trace:
+#0 C:\bot telegram\vendor\composer\autoload_real.php(61): composerRequire37458c04d77e08a184290ff46a23e733('71ecd0286a4e74f...', 'C:\\bot telegram...')
+#1 C:\bot telegram\vendor\autoload.php(7): ComposerAutoloaderInit37458c04d77e08a184290ff46a23e733::getLoader()
+#2 C:\bot telegram\hook.php(9): require_once('C:\\bot telegram...')
+#3 {main}
