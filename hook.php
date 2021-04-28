@@ -192,23 +192,23 @@ try {
 		}
 		$userafkmention = $db->get("afk_user_data");
 		foreach ($username_Yang_didapaktkanAFK as $uafkdata) {
-			foreach ($userafkmention as $datamention) {
-				if ($datamention['username'] == $uafkdata) {
-					$reply = "Maaf ," . $datamention['username'] . ' sedang AFK sejak ' . $datamention['time_afk'] . PHP_EOL .
-						'Alasan : ' . $datamention['alasan'];
-					$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-					$telegram->sendMessage($content);
-				}
-			}
-
-			// $db->where("username", $uafkdata);
-			// $getDataafku = $db->getOne("afk_user_data");
-			// if ($getDataafku['username'] != null) {
-			// 	$reply = "Maaf ," . $getDataafku['username'] . ' sedang AFK sejak ' . $getDataafku['time_afk'] . PHP_EOL .
-			// 		'Alasan : ' . $getDataafku['alasan'];
-			// 	$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-			// 	$telegram->sendMessage($content);
+			// foreach ($userafkmention as $datamention) {
+			// 	if ($datamention['username'] == $uafkdata) {
+			// 		$reply = "Maaf ," . $datamention['username'] . ' sedang AFK sejak ' . $datamention['time_afk'] . PHP_EOL .
+			// 			'Alasan : ' . $datamention['alasan'];
+			// 		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+			// 		$telegram->sendMessage($content);
+			// 	}
 			// }
+
+			$db->where("username", $uafkdata);
+			$getDataafku = $db->getOne("afk_user_data");
+			if ($getDataafku['username'] != null) {
+				$reply = "Maaf ," . $getDataafku['username'] . ' sedang AFK sejak ' . $getDataafku['time_afk'] . PHP_EOL .
+					'Alasan : ' . $getDataafku['alasan'];
+				$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+				$telegram->sendMessage($content);
+			}
 		}
 	}
 
