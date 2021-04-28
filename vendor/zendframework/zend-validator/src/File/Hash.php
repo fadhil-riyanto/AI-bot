@@ -11,15 +11,12 @@ namespace Zend\Validator\File;
 
 use Zend\Validator\AbstractValidator;
 use Zend\Validator\Exception;
-use Zend\Validator\File\FileInformationTrait;
 
 /**
  * Validator for the hash of given files
  */
 class Hash extends AbstractValidator
 {
-    use FileInformationTrait;
-
     /**
      * @const string Error constants
      */
@@ -54,7 +51,7 @@ class Hash extends AbstractValidator
     public function __construct($options = null)
     {
         if (is_scalar($options) ||
-            (is_array($options) && ! array_key_exists('hash', $options))) {
+            (is_array($options) && !array_key_exists('hash', $options))) {
             $options = ['hash' => $options];
         }
 
@@ -79,7 +76,7 @@ class Hash extends AbstractValidator
      * Sets the hash for one or multiple files
      *
      * @param  string|array $options
-     * @return self Provides a fluent interface
+     * @return Hash Provides a fluent interface
      */
     public function setHash($options)
     {
@@ -93,36 +90,30 @@ class Hash extends AbstractValidator
      * Adds the hash for one or multiple files
      *
      * @param  string|array $options
+     * @return Hash Provides a fluent interface
      * @throws Exception\InvalidArgumentException
-     * @return self Provides a fluent interface
      */
     public function addHash($options)
     {
         if (is_string($options)) {
             $options = [$options];
-        } elseif (! is_array($options)) {
+        } elseif (!is_array($options)) {
             throw new Exception\InvalidArgumentException("False parameter given");
         }
 
         $known = hash_algos();
-        if (! isset($options['algorithm'])) {
+        if (!isset($options['algorithm'])) {
             $algorithm = $this->options['algorithm'];
         } else {
             $algorithm = $options['algorithm'];
             unset($options['algorithm']);
         }
 
-        if (! in_array($algorithm, $known)) {
+        if (!in_array($algorithm, $known)) {
             throw new Exception\InvalidArgumentException("Unknown algorithm '{$algorithm}'");
         }
 
         foreach ($options as $value) {
-            if (! is_string($value)) {
-                throw new Exception\InvalidArgumentException(sprintf(
-                    'Hash must be a string, %s received',
-                    is_object($value) ? get_class($value) : gettype($value)
-                ));
-            }
             $this->options['hash'][$value] = $algorithm;
         }
 
@@ -138,27 +129,43 @@ class Hash extends AbstractValidator
      */
     public function isValid($value, $file = null)
     {
-        $fileInfo = $this->getFileInfo($value, $file);
-
-        $this->setValue($fileInfo['filename']);
+        if (is_string($value) && is_array($file)) {
+            // Legacy Zend\Transfer API support
+            $filename = $file['name'];
+            $file     = $file['tmp_name'];
+        } elseif (is_array($value)) {
+            if (!isset($value['tmp_name']) || !isset($value['name'])) {
+                throw new Exception\InvalidArgumentException(
+                    'Value array must be in $_FILES format'
+                );
+            }
+            $file     = $value['tmp_name'];
+            $filename = $value['name'];
+        } else {
+            $file     = $value;
+            $filename = basename($file);
+        }
+        $this->setValue($filename);
 
         // Is file readable ?
-        if (empty($fileInfo['file']) || false === is_readable($fileInfo['file'])) {
+        if (empty($file) || false === stream_resolve_include_path($file)) {
             $this->error(self::NOT_FOUND);
             return false;
         }
 
-        $algos = array_unique(array_values($this->getHash()));
+        $algos  = array_unique(array_values($this->getHash()));
+        $hashes = array_unique(array_keys($this->getHash()));
         foreach ($algos as $algorithm) {
-            $filehash = hash_file($algorithm, $fileInfo['file']);
-
+            $filehash = hash_file($algorithm, $file);
             if ($filehash === false) {
                 $this->error(self::NOT_DETECTED);
                 return false;
             }
 
-            if (isset($this->getHash()[$filehash]) && $this->getHash()[$filehash] === $algorithm) {
-                return true;
+            foreach ($hashes as $hash) {
+                if ($filehash === $hash) {
+                    return true;
+                }
             }
         }
 

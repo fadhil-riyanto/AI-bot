@@ -9,7 +9,6 @@
 
 namespace Zend\Validator\File;
 
-use Zend\Validator\File\FileInformationTrait;
 use Zend\Validator\Exception;
 
 /**
@@ -17,8 +16,6 @@ use Zend\Validator\Exception;
  */
 class ExcludeExtension extends Extension
 {
-    use FileInformationTrait;
-
     /**
      * @const string Error constants
      */
@@ -43,30 +40,38 @@ class ExcludeExtension extends Extension
      */
     public function isValid($value, $file = null)
     {
-        $fileInfo = $this->getFileInfo($value, $file);
+        if (is_string($value) && is_array($file)) {
+            // Legacy Zend\Transfer API support
+            $filename = $file['name'];
+            $file     = $file['tmp_name'];
+        } elseif (is_array($value)) {
+            if (!isset($value['tmp_name']) || !isset($value['name'])) {
+                throw new Exception\InvalidArgumentException(
+                    'Value array must be in $_FILES format'
+                );
+            }
+            $file     = $value['tmp_name'];
+            $filename = $value['name'];
+        } else {
+            $file     = $value;
+            $filename = basename($file);
+        }
+        $this->setValue($filename);
 
         // Is file readable ?
-        if (! $this->getAllowNonExistentFile()
-            && (empty($fileInfo['file']) || false === is_readable($fileInfo['file']))
-        ) {
-            if (preg_match('/nofile\.mo$/', $fileInfo['file'])) {
-            }
+        if (empty($file) || false === stream_resolve_include_path($file)) {
             $this->error(self::NOT_FOUND);
             return false;
         }
 
-        $this->setValue($fileInfo['filename']);
-
-        $extension  = substr($fileInfo['filename'], strrpos($fileInfo['filename'], '.') + 1);
+        $extension  = substr($filename, strrpos($filename, '.') + 1);
         $extensions = $this->getExtension();
 
-        if ($this->getCase() && (! in_array($extension, $extensions))) {
+        if ($this->getCase() && (!in_array($extension, $extensions))) {
             return true;
-        } elseif (! $this->getCase()) {
+        } elseif (!$this->getCase()) {
             foreach ($extensions as $ext) {
                 if (strtolower($ext) == strtolower($extension)) {
-                    if (preg_match('/nofile\.mo$/', $fileInfo['file'])) {
-                    }
                     $this->error(self::FALSE_EXTENSION);
                     return false;
                 }

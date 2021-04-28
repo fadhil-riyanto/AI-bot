@@ -1292,7 +1292,7 @@
                 }
             },
             {
-                "namaapi": "Youtube downloader",
+                "namaapi": "Youtube downloader (deprecated)",
                 "metode": "GET",
                 "param": "apikey, url",
                 "linkapi": "ytdl.php",

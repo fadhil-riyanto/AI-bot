@@ -84,11 +84,8 @@ class ComposerStaticInit37458c04d77e08a184290ff46a23e733
             'Zend\\Validator\\' => 15,
             'Zend\\Uri\\' => 9,
             'Zend\\Stdlib\\' => 12,
+            'Zend\\Hydrator\\' => 14,
             'Zend\\Escaper\\' => 13,
-        ),
-        'Y' => 
-        array (
-            'YouTube\\' => 8,
         ),
         'T' => 
         array (
@@ -104,7 +101,6 @@ class ComposerStaticInit37458c04d77e08a184290ff46a23e733
             'Psr\\SimpleCache\\' => 16,
             'Psr\\Http\\Message\\' => 17,
             'Psr\\Http\\Client\\' => 16,
-            'Psr\\Container\\' => 14,
             'PhpOffice\\PhpSpreadsheet\\' => 25,
             'Pecee\\' => 6,
         ),
@@ -115,7 +111,6 @@ class ComposerStaticInit37458c04d77e08a184290ff46a23e733
         ),
         'I' => 
         array (
-            'Interop\\Container\\' => 18,
             'Identicon\\' => 10,
         ),
         'H' => 
@@ -131,8 +126,6 @@ class ComposerStaticInit37458c04d77e08a184290ff46a23e733
         ),
         'C' => 
         array (
-            'Curl\\' => 5,
-            'CurlDownloader\\' => 15,
             'Complex\\' => 8,
         ),
         'B' => 
@@ -159,13 +152,13 @@ class ComposerStaticInit37458c04d77e08a184290ff46a23e733
         array (
             0 => __DIR__ . '/..' . '/zendframework/zend-stdlib/src',
         ),
+        'Zend\\Hydrator\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/zendframework/zend-hydrator/src',
+        ),
         'Zend\\Escaper\\' => 
         array (
             0 => __DIR__ . '/..' . '/zendframework/zend-escaper/src',
-        ),
-        'YouTube\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/athlon1600/youtube-downloader/src',
         ),
         'Treinetic\\ImageArtist\\' => 
         array (
@@ -192,10 +185,6 @@ class ComposerStaticInit37458c04d77e08a184290ff46a23e733
         array (
             0 => __DIR__ . '/..' . '/psr/http-client/src',
         ),
-        'Psr\\Container\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/psr/container/src',
-        ),
         'PhpOffice\\PhpSpreadsheet\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpoffice/phpspreadsheet/src/PhpSpreadsheet',
@@ -211,10 +200,6 @@ class ComposerStaticInit37458c04d77e08a184290ff46a23e733
         'Matrix\\' => 
         array (
             0 => __DIR__ . '/..' . '/markbaker/matrix/classes/src',
-        ),
-        'Interop\\Container\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/container-interop/container-interop/src/Interop/Container',
         ),
         'Identicon\\' => 
         array (
@@ -239,14 +224,6 @@ class ComposerStaticInit37458c04d77e08a184290ff46a23e733
         'Gregwar\\' => 
         array (
             0 => __DIR__ . '/..' . '/gregwar/captcha/src/Gregwar',
-        ),
-        'Curl\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/athlon1600/php-curl-client/src',
-        ),
-        'CurlDownloader\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/athlon1600/php-curl-file-downloader/src',
         ),
         'Complex\\' => 
         array (

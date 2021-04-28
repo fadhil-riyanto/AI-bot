@@ -20,6 +20,6 @@
         "treinetic/imageartist": "^1.0",
         "yzalis/identicon": "^2.0",
         "ext-exif": "*",
-        "athlon1600/youtube-downloader": "^3.0"
+        "php": "^8.0.0"
     }
 }

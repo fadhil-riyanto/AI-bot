@@ -29,7 +29,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '7690485414c7059a4955a309c9667e1a62de1b7d',
+    'reference' => '9363597b5ae78b101bde921e022164edd74ed15b',
     'name' => '__root__',
   ),
   'versions' => 
@@ -41,7 +41,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '7690485414c7059a4955a309c9667e1a62de1b7d',
+      'reference' => '9363597b5ae78b101bde921e022164edd74ed15b',
     ),
     'ammarfaizi2/brainly' => 
     array (
@@ -51,33 +51,6 @@ private static $installed = array (
       array (
       ),
       'reference' => '9a5e59a51bf6a5d60419b739d8acc3c40ea79d9b',
-    ),
-    'athlon1600/php-curl-client' => 
-    array (
-      'pretty_version' => 'v1.1.3',
-      'version' => '1.1.3.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '2c9a7ac0aea487fcdfc57333dfba6cb684fb64fc',
-    ),
-    'athlon1600/php-curl-file-downloader' => 
-    array (
-      'pretty_version' => 'v1.0.2',
-      'version' => '1.0.2.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '66391a0b89e2ed8b42ed6341e111f180697e0c5f',
-    ),
-    'athlon1600/youtube-downloader' => 
-    array (
-      'pretty_version' => 'v3.0.0',
-      'version' => '3.0.0.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => 'bf0eb5381460de1f7818a6abe799b2423a5b4c26',
     ),
     'buchin/badwords' => 
     array (
@@ -97,15 +70,6 @@ private static $installed = array (
       array (
       ),
       'reference' => '21b6f4bf4ef1927158b3e29bd0c2d99c6681c750',
-    ),
-    'container-interop/container-interop' => 
-    array (
-      'pretty_version' => '1.2.0',
-      'version' => '1.2.0.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '79cbf1341c22ec75643d841642dd5d6acd83bdb8',
     ),
     'eleirbag89/telegrambotphp' => 
     array (
@@ -257,15 +221,6 @@ private static $installed = array (
       array (
       ),
       'reference' => 'c55269cb06911575a126dc225a05c0e4626e5fb4',
-    ),
-    'psr/container' => 
-    array (
-      'pretty_version' => '1.1.1',
-      'version' => '1.1.1.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '8622567409010282b7aeebe4bb841fe98b58dcaf',
     ),
     'psr/http-client' => 
     array (
@@ -434,39 +389,48 @@ private static $installed = array (
     ),
     'zendframework/zend-escaper' => 
     array (
-      'pretty_version' => '2.6.1',
-      'version' => '2.6.1.0',
+      'pretty_version' => '2.5.2',
+      'version' => '2.5.2.0',
       'aliases' => 
       array (
       ),
-      'reference' => '3801caa21b0ca6aca57fa1c42b08d35c395ebd5f',
+      'reference' => '2dcd14b61a72d8b8e27d579c6344e12c26141d4e',
+    ),
+    'zendframework/zend-hydrator' => 
+    array (
+      'pretty_version' => '1.0.0',
+      'version' => '1.0.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'f3ed8b833355140350bbed98d8a7b8b66875903f',
     ),
     'zendframework/zend-stdlib' => 
     array (
-      'pretty_version' => '3.2.1',
-      'version' => '3.2.1.0',
+      'pretty_version' => '2.7.4',
+      'version' => '2.7.4.0',
       'aliases' => 
       array (
       ),
-      'reference' => '66536006722aff9e62d1b331025089b7ec71c065',
+      'reference' => 'cae029346a33663b998507f94962eb27de060683',
     ),
     'zendframework/zend-uri' => 
     array (
-      'pretty_version' => '2.7.1',
-      'version' => '2.7.1.0',
+      'pretty_version' => '2.5.1',
+      'version' => '2.5.1.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'bfc4a5b9a309711e968d7c72afae4ac50c650083',
+      'reference' => 'fe6c7f4c8d9037fe551898a538a2b6d39483f572',
     ),
     'zendframework/zend-validator' => 
     array (
-      'pretty_version' => '2.13.0',
-      'version' => '2.13.0.0',
+      'pretty_version' => '2.5.3',
+      'version' => '2.5.3.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'b54acef1f407741c5347f2a97f899ab21f2229ef',
+      'reference' => '53e567a58c8952a03da0b8edf0f075303a5ac5d1',
     ),
   ),
 );

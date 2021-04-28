@@ -12,15 +12,12 @@ namespace Zend\Validator\File;
 use Zend\Stdlib\ErrorHandler;
 use Zend\Validator\AbstractValidator;
 use Zend\Validator\Exception;
-use Zend\Validator\File\FileInformationTrait;
 
 /**
  * Validator for the maximum size of a file up to a max of 2GB
  */
 class Size extends AbstractValidator
 {
-    use FileInformationTrait;
-
     /**
      * @const string Error constants
      */
@@ -85,7 +82,7 @@ class Size extends AbstractValidator
             $argv = func_get_args();
             array_shift($argv);
             $options['max'] = array_shift($argv);
-            if (! empty($argv)) {
+            if (!empty($argv)) {
                 $options['useByteString'] = array_shift($argv);
             }
         }
@@ -124,7 +121,7 @@ class Size extends AbstractValidator
     public function getMin($raw = false)
     {
         $min = $this->options['min'];
-        if (! $raw && $this->getByteString()) {
+        if (!$raw && $this->getByteString()) {
             $min = $this->toByteString($min);
         }
 
@@ -139,8 +136,8 @@ class Size extends AbstractValidator
      * For example: 2000, 2MB, 0.2GB
      *
      * @param  int|string $min The minimum file size
+     * @return Size Provides a fluent interface
      * @throws Exception\InvalidArgumentException When min is greater than max
-     * @return self Provides a fluent interface
      */
     public function setMin($min)
     {
@@ -169,7 +166,7 @@ class Size extends AbstractValidator
     public function getMax($raw = false)
     {
         $max = $this->options['max'];
-        if (! $raw && $this->getByteString()) {
+        if (!$raw && $this->getByteString()) {
             $max = $this->toByteString($max);
         }
 
@@ -184,8 +181,8 @@ class Size extends AbstractValidator
      * For example: 2000, 2MB, 0.2GB
      *
      * @param  int|string $max The maximum file size
+     * @return Size Provides a fluent interface
      * @throws Exception\InvalidArgumentException When max is smaller than min
-     * @return self Provides a fluent interface
      */
     public function setMax($max)
     {
@@ -219,7 +216,7 @@ class Size extends AbstractValidator
      * Set current size
      *
      * @param  int $size
-     * @return self
+     * @return Size
      */
     protected function setSize($size)
     {
@@ -237,19 +234,33 @@ class Size extends AbstractValidator
      */
     public function isValid($value, $file = null)
     {
-        $fileInfo = $this->getFileInfo($value, $file);
-
-        $this->setValue($fileInfo['filename']);
+        if (is_string($value) && is_array($file)) {
+            // Legacy Zend\Transfer API support
+            $filename = $file['name'];
+            $file     = $file['tmp_name'];
+        } elseif (is_array($value)) {
+            if (!isset($value['tmp_name']) || !isset($value['name'])) {
+                throw new Exception\InvalidArgumentException(
+                    'Value array must be in $_FILES format'
+                );
+            }
+            $file     = $value['tmp_name'];
+            $filename = $value['name'];
+        } else {
+            $file     = $value;
+            $filename = basename($file);
+        }
+        $this->setValue($filename);
 
         // Is file readable ?
-        if (empty($fileInfo['file']) || false === is_readable($fileInfo['file'])) {
+        if (empty($file) || false === stream_resolve_include_path($file)) {
             $this->error(self::NOT_FOUND);
             return false;
         }
 
         // limited to 4GB files
         ErrorHandler::start();
-        $size = sprintf("%u", filesize($fileInfo['file']));
+        $size = sprintf("%u", filesize($file));
         ErrorHandler::stop();
         $this->size = $size;
 
@@ -259,10 +270,10 @@ class Size extends AbstractValidator
         if (($min !== null) && ($size < $min)) {
             if ($this->getByteString()) {
                 $this->options['min'] = $this->toByteString($min);
-                $this->size           = $this->toByteString($size);
+                $this->size          = $this->toByteString($size);
                 $this->error(self::TOO_SMALL);
                 $this->options['min'] = $min;
-                $this->size           = $size;
+                $this->size          = $size;
             } else {
                 $this->error(self::TOO_SMALL);
             }
@@ -272,16 +283,16 @@ class Size extends AbstractValidator
         if (($max !== null) && ($max < $size)) {
             if ($this->getByteString()) {
                 $this->options['max'] = $this->toByteString($max);
-                $this->size           = $this->toByteString($size);
+                $this->size          = $this->toByteString($size);
                 $this->error(self::TOO_BIG);
                 $this->options['max'] = $max;
-                $this->size           = $size;
+                $this->size          = $size;
             } else {
                 $this->error(self::TOO_BIG);
             }
         }
 
-        if ($this->getMessages()) {
+        if (count($this->getMessages()) > 0) {
             return false;
         }
 
@@ -297,7 +308,7 @@ class Size extends AbstractValidator
     protected function toByteString($size)
     {
         $sizes = ['B', 'kB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'];
-        for ($i = 0; $size >= 1024 && $i < 9; $i++) {
+        for ($i=0; $size >= 1024 && $i < 9; $i++) {
             $size /= 1024;
         }
 
@@ -319,8 +330,8 @@ class Size extends AbstractValidator
         $type  = trim(substr($size, -2, 1));
 
         $value = substr($size, 0, -1);
-        if (! is_numeric($value)) {
-            $value = trim(substr($value, 0, -1));
+        if (!is_numeric($value)) {
+            $value = substr($value, 0, -1);
         }
 
         switch (strtoupper($type)) {

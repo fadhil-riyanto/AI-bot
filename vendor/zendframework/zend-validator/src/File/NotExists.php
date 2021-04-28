@@ -10,15 +10,12 @@
 namespace Zend\Validator\File;
 
 use Zend\Validator\Exception;
-use Zend\Validator\File\FileInformationTrait;
 
 /**
  * Validator which checks if the destination file does not exist
  */
 class NotExists extends Exists
 {
-    use FileInformationTrait;
-
     /**
      * @const string Error constants
      */
@@ -40,33 +37,49 @@ class NotExists extends Exists
      */
     public function isValid($value, $file = null)
     {
-        $fileInfo = $this->getFileInfo($value, $file, false, true);
-
-        $this->setValue($fileInfo['filename']);
+        if (is_string($value) && is_array($file)) {
+            // Legacy Zend\Transfer API support
+            $filename = $file['name'];
+            $file     = $file['tmp_name'];
+            $this->setValue($filename);
+        } elseif (is_array($value)) {
+            if (!isset($value['tmp_name']) || !isset($value['name'])) {
+                throw new Exception\InvalidArgumentException(
+                    'Value array must be in $_FILES format'
+                );
+            }
+            $file     = $value['tmp_name'];
+            $filename = basename($file);
+            $this->setValue($value['name']);
+        } else {
+            $file     = $value;
+            $filename = basename($file);
+            $this->setValue($filename);
+        }
 
         $check = false;
         $directories = $this->getDirectory(true);
-        if (! isset($directories)) {
+        if (!isset($directories)) {
             $check = true;
-            if (file_exists($fileInfo['file'])) {
+            if (file_exists($file)) {
                 $this->error(self::DOES_EXIST);
                 return false;
             }
         } else {
             foreach ($directories as $directory) {
-                if (! isset($directory) || '' === $directory) {
+                if (!isset($directory) || '' === $directory) {
                     continue;
                 }
 
                 $check = true;
-                if (file_exists($directory . DIRECTORY_SEPARATOR . $fileInfo['basename'])) {
+                if (file_exists($directory . DIRECTORY_SEPARATOR . $filename)) {
                     $this->error(self::DOES_EXIST);
                     return false;
                 }
             }
         }
 
-        if (! $check) {
+        if (!$check) {
             $this->error(self::DOES_EXIST);
             return false;
         }
