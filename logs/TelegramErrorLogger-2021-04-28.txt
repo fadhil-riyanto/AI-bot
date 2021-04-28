@@ -217,3 +217,956 @@ ref.disable_web_page_preview= true
 #3 C:\bot telegram\hook.php(69): Telegram->sendMessage(Array)
 #4 {main}
 
+============[Date]============
+[ 2021-04-28 10:56:56  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: bot was blocked by the user
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804510859
+ref.message.message_id= 30227
+ref.message.from.id= 1095543469
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fikri
+ref.message.from.username= FikriAhmd
+ref.message.from.language_code= en
+ref.message.chat.id= 1095543469
+ref.message.chat.first_name= Fikri
+ref.message.chat.username= FikriAhmd
+ref.message.chat.type= private
+ref.message.date= 1619581858
+ref.message.reply_to_message.message_id= 30226
+ref.message.reply_to_message.from.id= 1095543469
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Fikri
+ref.message.reply_to_message.from.username= FikriAhmd
+ref.message.reply_to_message.from.language_code= en
+ref.message.reply_to_message.chat.id= 1095543469
+ref.message.reply_to_message.chat.first_name= Fikri
+ref.message.reply_to_message.chat.username= FikriAhmd
+ref.message.reply_to_message.chat.type= private
+ref.message.reply_to_message.date= 1619581853
+ref.message.reply_to_message.photo.0.file_id= AgACAgUAAxkBAAJ2EmCI253Jwq5963pjIHWSx0VjNpdVAAJlrDEbcctIVNlzqkQ7y7sgC_HnbnQAAwEAAwIAA20AA_8pBAABHwQ
+ref.message.reply_to_message.photo.0.file_unique_id= AQADC_HnbnQAA_8pBAAB
+ref.message.reply_to_message.photo.0.file_size= 16781
+ref.message.reply_to_message.photo.0.width= 180
+ref.message.reply_to_message.photo.0.height= 320
+ref.message.reply_to_message.photo.1.file_id= AgACAgUAAxkBAAJ2EmCI253Jwq5963pjIHWSx0VjNpdVAAJlrDEbcctIVNlzqkQ7y7sgC_HnbnQAAwEAAwIAA3gABCoEAAEfBA
+ref.message.reply_to_message.photo.1.file_unique_id= AQADC_HnbnQABCoEAAE
+ref.message.reply_to_message.photo.1.file_size= 61209
+ref.message.reply_to_message.photo.1.width= 450
+ref.message.reply_to_message.photo.1.height= 800
+ref.message.reply_to_message.photo.2.file_id= AgACAgUAAxkBAAJ2EmCI253Jwq5963pjIHWSx0VjNpdVAAJlrDEbcctIVNlzqkQ7y7sgC_HnbnQAAwEAAwIAA3kAA_4pBAABHwQ
+ref.message.reply_to_message.photo.2.file_unique_id= AQADC_HnbnQAA_4pBAAB
+ref.message.reply_to_message.photo.2.file_size= 82958
+ref.message.reply_to_message.photo.2.width= 720
+ref.message.reply_to_message.photo.2.height= 1280
+ref.message.text= /ts
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 3
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Maaf, bot ini sedang dalam pengembangan lebih lanjut oleh @fadhil_riyanto
+Coba lagi nanti
+ref.reply_to_message_id= 30227
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(69): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-04-28 10:56:58  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: bot was blocked by the user
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804510868
+ref.message.message_id= 30228
+ref.message.from.id= 1095543469
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fikri
+ref.message.from.username= FikriAhmd
+ref.message.from.language_code= en
+ref.message.chat.id= 1095543469
+ref.message.chat.first_name= Fikri
+ref.message.chat.username= FikriAhmd
+ref.message.chat.type= private
+ref.message.date= 1619581881
+ref.message.reply_to_message.message_id= 30226
+ref.message.reply_to_message.from.id= 1095543469
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Fikri
+ref.message.reply_to_message.from.username= FikriAhmd
+ref.message.reply_to_message.from.language_code= en
+ref.message.reply_to_message.chat.id= 1095543469
+ref.message.reply_to_message.chat.first_name= Fikri
+ref.message.reply_to_message.chat.username= FikriAhmd
+ref.message.reply_to_message.chat.type= private
+ref.message.reply_to_message.date= 1619581853
+ref.message.reply_to_message.photo.0.file_id= AgACAgUAAxkBAAJ2EmCI253Jwq5963pjIHWSx0VjNpdVAAJlrDEbcctIVNlzqkQ7y7sgC_HnbnQAAwEAAwIAA20AA_8pBAABHwQ
+ref.message.reply_to_message.photo.0.file_unique_id= AQADC_HnbnQAA_8pBAAB
+ref.message.reply_to_message.photo.0.file_size= 16781
+ref.message.reply_to_message.photo.0.width= 180
+ref.message.reply_to_message.photo.0.height= 320
+ref.message.reply_to_message.photo.1.file_id= AgACAgUAAxkBAAJ2EmCI253Jwq5963pjIHWSx0VjNpdVAAJlrDEbcctIVNlzqkQ7y7sgC_HnbnQAAwEAAwIAA3gABCoEAAEfBA
+ref.message.reply_to_message.photo.1.file_unique_id= AQADC_HnbnQABCoEAAE
+ref.message.reply_to_message.photo.1.file_size= 61209
+ref.message.reply_to_message.photo.1.width= 450
+ref.message.reply_to_message.photo.1.height= 800
+ref.message.reply_to_message.photo.2.file_id= AgACAgUAAxkBAAJ2EmCI253Jwq5963pjIHWSx0VjNpdVAAJlrDEbcctIVNlzqkQ7y7sgC_HnbnQAAwEAAwIAA3kAA_4pBAABHwQ
+ref.message.reply_to_message.photo.2.file_unique_id= AQADC_HnbnQAA_4pBAAB
+ref.message.reply_to_message.photo.2.file_size= 82958
+ref.message.reply_to_message.photo.2.width= 720
+ref.message.reply_to_message.photo.2.height= 1280
+ref.message.text= /tf
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 3
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Maaf, bot ini sedang dalam pengembangan lebih lanjut oleh @fadhil_riyanto
+Coba lagi nanti
+ref.reply_to_message_id= 30228
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(69): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-04-28 10:57:00  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: bot was blocked by the user
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804510871
+ref.message.message_id= 30229
+ref.message.from.id= 1095543469
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fikri
+ref.message.from.username= FikriAhmd
+ref.message.from.language_code= en
+ref.message.chat.id= 1095543469
+ref.message.chat.first_name= Fikri
+ref.message.chat.username= FikriAhmd
+ref.message.chat.type= private
+ref.message.date= 1619581904
+ref.message.sticker.width= 512
+ref.message.sticker.height= 512
+ref.message.sticker.emoji= 👍
+ref.message.sticker.set_name= KuburaN
+ref.message.sticker.is_animated= false
+ref.message.sticker.thumb.file_id= AAMCBQADGQEAAnYVYIjb0CG4icOyGjU08BcvWQqbV8AAAp0AA1SWzxTZGnrMxzDjql4-0zIABAEAB20AA9owAAIfBA
+ref.message.sticker.thumb.file_unique_id= AQADXj7TMgAE2jAAAg
+ref.message.sticker.thumb.file_size= 3022
+ref.message.sticker.thumb.width= 128
+ref.message.sticker.thumb.height= 128
+ref.message.sticker.file_id= CAACAgUAAxkBAAJ2FWCI29AhuInDsho1NPAXL1kKm1fAAAKdAANUls8U2Rp6zMcw46ofBA
+ref.message.sticker.file_unique_id= AgADnQADVJbPFA
+ref.message.sticker.file_size= 45840
+
+
+[ref]
+ref.text= Maaf, bot ini sedang dalam pengembangan lebih lanjut oleh @fadhil_riyanto
+Coba lagi nanti
+ref.reply_to_message_id= 30229
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(69): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-04-28 10:57:05  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: bot was blocked by the user
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804510872
+ref.message.message_id= 30230
+ref.message.from.id= 1095543469
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fikri
+ref.message.from.username= FikriAhmd
+ref.message.from.language_code= en
+ref.message.chat.id= 1095543469
+ref.message.chat.first_name= Fikri
+ref.message.chat.username= FikriAhmd
+ref.message.chat.type= private
+ref.message.date= 1619581911
+ref.message.reply_to_message.message_id= 30229
+ref.message.reply_to_message.from.id= 1095543469
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Fikri
+ref.message.reply_to_message.from.username= FikriAhmd
+ref.message.reply_to_message.from.language_code= en
+ref.message.reply_to_message.chat.id= 1095543469
+ref.message.reply_to_message.chat.first_name= Fikri
+ref.message.reply_to_message.chat.username= FikriAhmd
+ref.message.reply_to_message.chat.type= private
+ref.message.reply_to_message.date= 1619581904
+ref.message.reply_to_message.sticker.width= 512
+ref.message.reply_to_message.sticker.height= 512
+ref.message.reply_to_message.sticker.emoji= 👍
+ref.message.reply_to_message.sticker.set_name= KuburaN
+ref.message.reply_to_message.sticker.is_animated= false
+ref.message.reply_to_message.sticker.thumb.file_id= AAMCBQADGQEAAnYVYIjb0CG4icOyGjU08BcvWQqbV8AAAp0AA1SWzxTZGnrMxzDjql4-0zIABAEAB20AA9owAAIfBA
+ref.message.reply_to_message.sticker.thumb.file_unique_id= AQADXj7TMgAE2jAAAg
+ref.message.reply_to_message.sticker.thumb.file_size= 3022
+ref.message.reply_to_message.sticker.thumb.width= 128
+ref.message.reply_to_message.sticker.thumb.height= 128
+ref.message.reply_to_message.sticker.file_id= CAACAgUAAxkBAAJ2FWCI29AhuInDsho1NPAXL1kKm1fAAAKdAANUls8U2Rp6zMcw46ofBA
+ref.message.reply_to_message.sticker.file_unique_id= AgADnQADVJbPFA
+ref.message.reply_to_message.sticker.file_size= 45840
+ref.message.text= /tf
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 3
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Maaf, bot ini sedang dalam pengembangan lebih lanjut oleh @fadhil_riyanto
+Coba lagi nanti
+ref.reply_to_message_id= 30230
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(69): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-04-28 10:57:09  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: bot was blocked by the user
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804510875
+ref.message.message_id= 30231
+ref.message.from.id= 1095543469
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fikri
+ref.message.from.username= FikriAhmd
+ref.message.from.language_code= en
+ref.message.chat.id= 1095543469
+ref.message.chat.first_name= Fikri
+ref.message.chat.username= FikriAhmd
+ref.message.chat.type= private
+ref.message.date= 1619581928
+ref.message.text= /short
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Maaf, bot ini sedang dalam pengembangan lebih lanjut oleh @fadhil_riyanto
+Coba lagi nanti
+ref.reply_to_message_id= 30231
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(69): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-04-28 10:57:11  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: bot was blocked by the user
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804510878
+ref.message.message_id= 30232
+ref.message.from.id= 1095543469
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fikri
+ref.message.from.username= FikriAhmd
+ref.message.from.language_code= en
+ref.message.chat.id= 1095543469
+ref.message.chat.first_name= Fikri
+ref.message.chat.username= FikriAhmd
+ref.message.chat.type= private
+ref.message.date= 1619581939
+ref.message.text= /resi
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Maaf, bot ini sedang dalam pengembangan lebih lanjut oleh @fadhil_riyanto
+Coba lagi nanti
+ref.reply_to_message_id= 30232
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(69): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-04-28 10:57:12  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: bot was blocked by the user
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804510881
+ref.message.message_id= 30233
+ref.message.from.id= 1095543469
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fikri
+ref.message.from.username= FikriAhmd
+ref.message.from.language_code= en
+ref.message.chat.id= 1095543469
+ref.message.chat.first_name= Fikri
+ref.message.chat.username= FikriAhmd
+ref.message.chat.type= private
+ref.message.date= 1619581960
+ref.message.text= /upload
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 7
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Maaf, bot ini sedang dalam pengembangan lebih lanjut oleh @fadhil_riyanto
+Coba lagi nanti
+ref.reply_to_message_id= 30233
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(69): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-04-28 10:57:14  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: bot was blocked by the user
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804510884
+ref.message.message_id= 30234
+ref.message.from.id= 1095543469
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fikri
+ref.message.from.username= FikriAhmd
+ref.message.from.language_code= en
+ref.message.chat.id= 1095543469
+ref.message.chat.first_name= Fikri
+ref.message.chat.username= FikriAhmd
+ref.message.chat.type= private
+ref.message.date= 1619581967
+ref.message.reply_to_message.message_id= 30226
+ref.message.reply_to_message.from.id= 1095543469
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Fikri
+ref.message.reply_to_message.from.username= FikriAhmd
+ref.message.reply_to_message.from.language_code= en
+ref.message.reply_to_message.chat.id= 1095543469
+ref.message.reply_to_message.chat.first_name= Fikri
+ref.message.reply_to_message.chat.username= FikriAhmd
+ref.message.reply_to_message.chat.type= private
+ref.message.reply_to_message.date= 1619581853
+ref.message.reply_to_message.photo.0.file_id= AgACAgUAAxkBAAJ2EmCI253Jwq5963pjIHWSx0VjNpdVAAJlrDEbcctIVNlzqkQ7y7sgC_HnbnQAAwEAAwIAA20AA_8pBAABHwQ
+ref.message.reply_to_message.photo.0.file_unique_id= AQADC_HnbnQAA_8pBAAB
+ref.message.reply_to_message.photo.0.file_size= 16781
+ref.message.reply_to_message.photo.0.width= 180
+ref.message.reply_to_message.photo.0.height= 320
+ref.message.reply_to_message.photo.1.file_id= AgACAgUAAxkBAAJ2EmCI253Jwq5963pjIHWSx0VjNpdVAAJlrDEbcctIVNlzqkQ7y7sgC_HnbnQAAwEAAwIAA3gABCoEAAEfBA
+ref.message.reply_to_message.photo.1.file_unique_id= AQADC_HnbnQABCoEAAE
+ref.message.reply_to_message.photo.1.file_size= 61209
+ref.message.reply_to_message.photo.1.width= 450
+ref.message.reply_to_message.photo.1.height= 800
+ref.message.reply_to_message.photo.2.file_id= AgACAgUAAxkBAAJ2EmCI253Jwq5963pjIHWSx0VjNpdVAAJlrDEbcctIVNlzqkQ7y7sgC_HnbnQAAwEAAwIAA3kAA_4pBAABHwQ
+ref.message.reply_to_message.photo.2.file_unique_id= AQADC_HnbnQAA_4pBAAB
+ref.message.reply_to_message.photo.2.file_size= 82958
+ref.message.reply_to_message.photo.2.width= 720
+ref.message.reply_to_message.photo.2.height= 1280
+ref.message.text= /upload
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 7
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Maaf, bot ini sedang dalam pengembangan lebih lanjut oleh @fadhil_riyanto
+Coba lagi nanti
+ref.reply_to_message_id= 30234
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(69): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-04-28 10:57:16  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: bot was blocked by the user
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804510886
+ref.message.message_id= 30235
+ref.message.from.id= 1095543469
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fikri
+ref.message.from.username= FikriAhmd
+ref.message.from.language_code= en
+ref.message.chat.id= 1095543469
+ref.message.chat.first_name= Fikri
+ref.message.chat.username= FikriAhmd
+ref.message.chat.type= private
+ref.message.date= 1619581975
+ref.message.text= /help
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Maaf, bot ini sedang dalam pengembangan lebih lanjut oleh @fadhil_riyanto
+Coba lagi nanti
+ref.reply_to_message_id= 30235
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(69): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-04-28 11:01:44  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804510912
+ref.message.message_id= 56094
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001182246595
+ref.message.chat.title= [c]oretan Script
+ref.message.chat.username= cScript
+ref.message.chat.type= supergroup
+ref.message.date= 1619582496
+ref.message.text= /sudo eval send(crypt("test", "rl"));
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 
+ref.reply_to_message_id= 56094
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\sudo.php(86): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(715): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-04-28 11:12:02  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804510956
+ref.message.message_id= 56096
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001182246595
+ref.message.chat.title= [c]oretan Script
+ref.message.chat.username= cScript
+ref.message.chat.type= supergroup
+ref.message.date= 1619583115
+ref.message.text= /sudo eval $randomID = substr(
+        uniqid(
+            sha1(
+                crypt(
+                    md5(
+                        rand(
+                            min(rand(), rand()),
+                            max(rand(), rand())
+                        )
+                    ),
+                    "rl"
+                )
+            )
+        ),
+        0,
+        20
+    );
+
+send($randomID);
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 
+ref.reply_to_message_id= 56096
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\sudo.php(86): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(715): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-04-28 11:12:19  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804510957
+ref.my_chat_member.chat.id= 1095543469
+ref.my_chat_member.chat.first_name= Fikri
+ref.my_chat_member.chat.username= FikriAhmd
+ref.my_chat_member.chat.type= private
+ref.my_chat_member.from.id= 1095543469
+ref.my_chat_member.from.is_bot= false
+ref.my_chat_member.from.first_name= Fikri
+ref.my_chat_member.from.username= FikriAhmd
+ref.my_chat_member.from.language_code= en
+ref.my_chat_member.date= 1619583139
+ref.my_chat_member.old_chat_member.user.id= 1489990155
+ref.my_chat_member.old_chat_member.user.is_bot= true
+ref.my_chat_member.old_chat_member.user.first_name= ƒα∂нιℓ яιуαηтσ
+ref.my_chat_member.old_chat_member.user.username= Fadhil_riyanto_bot
+ref.my_chat_member.old_chat_member.status= kicked
+ref.my_chat_member.old_chat_member.until_date= 0
+ref.my_chat_member.new_chat_member.user.id= 1489990155
+ref.my_chat_member.new_chat_member.user.is_bot= true
+ref.my_chat_member.new_chat_member.user.first_name= ƒα∂нιℓ яιуαηтσ
+ref.my_chat_member.new_chat_member.user.username= Fadhil_riyanto_bot
+ref.my_chat_member.new_chat_member.status= member
+
+
+[ref]
+ref.chat_id= 
+ref.text= Maaf, bot ini sedang dalam pengembangan lebih lanjut oleh @fadhil_riyanto
+Coba lagi nanti
+ref.reply_to_message_id= 
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(69): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-04-28 11:12:30  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804510959
+ref.message.message_id= 56098
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001182246595
+ref.message.chat.title= [c]oretan Script
+ref.message.chat.username= cScript
+ref.message.chat.type= supergroup
+ref.message.date= 1619583144
+ref.message.text= /sudo eval $randomID = substr(
+        uniqid(
+            sha1(
+                crypt(
+                    md5(
+                        rand(
+                            min(rand(), rand()),
+                            max(rand(), rand())
+                        )
+                    ),
+                    "rl"
+                )
+            )
+        ),
+        0,
+        200
+    );
+
+send($randomID);
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 
+ref.reply_to_message_id= 56098
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\sudo.php(86): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(715): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-04-28 11:12:42  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804510961
+ref.my_chat_member.chat.id= 1095543469
+ref.my_chat_member.chat.first_name= Fikri
+ref.my_chat_member.chat.username= FikriAhmd
+ref.my_chat_member.chat.type= private
+ref.my_chat_member.from.id= 1095543469
+ref.my_chat_member.from.is_bot= false
+ref.my_chat_member.from.first_name= Fikri
+ref.my_chat_member.from.username= FikriAhmd
+ref.my_chat_member.from.language_code= en
+ref.my_chat_member.date= 1619583161
+ref.my_chat_member.old_chat_member.user.id= 1489990155
+ref.my_chat_member.old_chat_member.user.is_bot= true
+ref.my_chat_member.old_chat_member.user.first_name= ƒα∂нιℓ яιуαηтσ
+ref.my_chat_member.old_chat_member.user.username= Fadhil_riyanto_bot
+ref.my_chat_member.old_chat_member.status= member
+ref.my_chat_member.new_chat_member.user.id= 1489990155
+ref.my_chat_member.new_chat_member.user.is_bot= true
+ref.my_chat_member.new_chat_member.user.first_name= ƒα∂нιℓ яιуαηтσ
+ref.my_chat_member.new_chat_member.user.username= Fadhil_riyanto_bot
+ref.my_chat_member.new_chat_member.status= kicked
+ref.my_chat_member.new_chat_member.until_date= 0
+
+
+[ref]
+ref.chat_id= 
+ref.text= Maaf, bot ini sedang dalam pengembangan lebih lanjut oleh @fadhil_riyanto
+Coba lagi nanti
+ref.reply_to_message_id= 
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(69): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-04-28 11:28:48  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804510970
+ref.message.message_id= 56107
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001182246595
+ref.message.chat.title= [c]oretan Script
+ref.message.chat.username= cScript
+ref.message.chat.type= supergroup
+ref.message.date= 1619584120
+ref.message.text= /sudo eval $labs = "abcdefghij";
+$a = str_starts_with($labs, "abc");
+send($a ? "ok" : "gagal");
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 
+ref.reply_to_message_id= 56107
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\sudo.php(86): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(715): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-04-28 11:29:10  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804510971
+ref.message.message_id= 56109
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001182246595
+ref.message.chat.title= [c]oretan Script
+ref.message.chat.username= cScript
+ref.message.chat.type= supergroup
+ref.message.date= 1619584144
+ref.message.text= /sudo eval $labs = "acsdefghij";
+$a = str_starts_with($labs, "abc");
+send($a ? "ok" : "gagal");
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 
+ref.reply_to_message_id= 56109
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\sudo.php(86): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(715): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-04-28 11:32:37  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804510976
+ref.message.message_id= 56116
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001182246595
+ref.message.chat.title= [c]oretan Script
+ref.message.chat.username= cScript
+ref.message.chat.type= supergroup
+ref.message.date= 1619584351
+ref.message.text= /sudo eval $a = null;
+$a?->send("ok");
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 
+ref.reply_to_message_id= 56116
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\sudo.php(86): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(715): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-04-28 11:34:28  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804510978
+ref.message.message_id= 56118
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001182246595
+ref.message.chat.title= [c]oretan Script
+ref.message.chat.username= cScript
+ref.message.chat.type= supergroup
+ref.message.date= 1619584461
+ref.message.text= /sudo eval send(0 == 'ok' ? "sip" : "hadeh");
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 
+ref.reply_to_message_id= 56118
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\sudo.php(86): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(715): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-04-28 12:23:40  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804511027
+ref.message.message_id= 56143
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001182246595
+ref.message.chat.title= [c]oretan Script
+ref.message.chat.username= cScript
+ref.message.chat.type= supergroup
+ref.message.date= 1619587396
+ref.message.text= /sudo eval send(opcache_get_status()['jit']['enabled'] ? "nyala" : "mati");
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 
+ref.reply_to_message_id= 56143
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\sudo.php(86): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(715): require('C:\\bot telegram...')
+#5 {main}
+

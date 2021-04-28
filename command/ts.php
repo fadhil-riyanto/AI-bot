@@ -11,7 +11,7 @@ function randomnamaandcek($length)
     $required_length = $length;
     $limit_one = rand();
     $limit_two = rand();
-    $randomID = @substr(uniqid(sha1(crypt(md5(rand(min($limit_one, $limit_two), max($limit_one, $limit_two)))))), 0, $required_length);
+    $randomID = @substr(uniqid(sha1(crypt(md5(rand(min($limit_one, $limit_two), max($limit_one, $limit_two))), "rl"))), 0, $required_length);
     return $randomID;
 }
 
