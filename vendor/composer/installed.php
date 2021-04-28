@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '7da6f00fc98957dd97da4a705f936c9dc9a5719b',
+    'reference' => '7690485414c7059a4955a309c9667e1a62de1b7d',
     'name' => '__root__',
   ),
   'versions' => 
@@ -18,7 +18,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '7da6f00fc98957dd97da4a705f936c9dc9a5719b',
+      'reference' => '7690485414c7059a4955a309c9667e1a62de1b7d',
     ),
     'ammarfaizi2/brainly' => 
     array (
@@ -68,12 +68,12 @@
     ),
     'claviska/simpleimage' => 
     array (
-      'pretty_version' => '3.6.0',
-      'version' => '3.6.0.0',
+      'pretty_version' => '3.6.3',
+      'version' => '3.6.3.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'd4652ab80aa87d3f5bb6daa857ca6d57c1b421a1',
+      'reference' => '21b6f4bf4ef1927158b3e29bd0c2d99c6681c750',
     ),
     'container-interop/container-interop' => 
     array (
@@ -131,12 +131,12 @@
     ),
     'guzzlehttp/psr7' => 
     array (
-      'pretty_version' => '1.8.1',
-      'version' => '1.8.1.0',
+      'pretty_version' => '1.8.2',
+      'version' => '1.8.2.0',
       'aliases' => 
       array (
       ),
-      'reference' => '35ea11d335fd638b5882ff1725228b3d35496ab1',
+      'reference' => 'dc960a912984efb74d0a90222870c72c87f10c91',
     ),
     'http-interop/http-factory-guzzle' => 
     array (
@@ -210,12 +210,12 @@
     ),
     'pecee/simple-router' => 
     array (
-      'pretty_version' => '4.3.2.1',
-      'version' => '4.3.2.1',
+      'pretty_version' => '4.3.2.2',
+      'version' => '4.3.2.2',
       'aliases' => 
       array (
       ),
-      'reference' => '2a573f27fe4c6874f0e3902280e4fb0f28d409f7',
+      'reference' => 'c6d0ff3c0ec6ab46338a0bf650c43a53d8584d76',
     ),
     'phplucidframe/console-table' => 
     array (
@@ -312,12 +312,12 @@
     ),
     'rmccue/requests' => 
     array (
-      'pretty_version' => 'v1.7.0',
-      'version' => '1.7.0.0',
+      'pretty_version' => 'v1.8.0',
+      'version' => '1.8.0.0',
       'aliases' => 
       array (
       ),
-      'reference' => '87932f52ffad70504d93f04f15690cf16a089546',
+      'reference' => 'afbe4790e4def03581c4a0963a1e8aa01f6030f1',
     ),
     'sastrawi/sastrawi' => 
     array (
