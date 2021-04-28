@@ -27,6 +27,7 @@ if ($adanParse[1] == null) {
         }
         return $randomString;
     }
+    //$meledak = explode()
 
 
     $reply = 'Tunggu sebentar, kami sedang meng-generate image (sync)';

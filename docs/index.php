@@ -69,9 +69,9 @@ function convertnem($size)
   <meta name="author" content="">
   <link href="img/logo/logo.png" rel="icon">
   <title><?= $htmltitle; ?></title>
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-  <link href="css/ruang-admin.min.css" rel="stylesheet">
+  <link href="<?= $_SERVER['REQUEST_URI'] ?>/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="<?= $_SERVER['REQUEST_URI'] ?>/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="<?= $_SERVER['REQUEST_URI'] ?>/css/ruang-admin.min.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
@@ -264,6 +264,26 @@ function convertnem($size)
       </div>
     </div>
   </div>
+  <div class="col-xl-3 col-md-6 mb-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <div class="row align-items-center">
+          <div class="col mr-2">
+            <div class="text-xs font-weight-bold text-uppercase mb-1">PHP version</div>
+            <div class="h5 mb-0 font-weight-bold text-gray-800">
+            
+            ' . phpversion() . '
+
+            </div>
+
+          </div>
+          <div class="col-auto">
+            <i class="fas fa-calendar fa-2x text-primary"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- Pending Requests Card Example -->
   
 </div>';
@@ -364,12 +384,12 @@ function convertnem($size)
     // END CLOCK SCRIPT
   </script>
 
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-  <script src="js/ruang-admin.min.js"></script>
-  <script src="vendor/chart.js/Chart.min.js"></script>
-  <script src="js/demo/chart-area-demo.js"></script>
+  <script src="<?= $_SERVER['REQUEST_URI'] ?>/vendor/jquery/jquery.min.js"></script>
+  <script src="<?= $_SERVER['REQUEST_URI'] ?>/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="<?= $_SERVER['REQUEST_URI'] ?>/vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="<?= $_SERVER['REQUEST_URI'] ?>/js/ruang-admin.min.js"></script>
+  <script src="<?= $_SERVER['REQUEST_URI'] ?>/vendor/chart.js/Chart.min.js"></script>
+  <script src="<?= $_SERVER['REQUEST_URI'] ?>/js/demo/chart-area-demo.js"></script>
 </body>
 
 </html>
