@@ -29,3 +29,5 @@ function photo($link)
     $telegram->sendPhoto($konten);
 }
 $tg_data = $telegram->getData();
+
+echo "ok";

@@ -1,0 +1,330 @@
+============[Date]============
+[ 2021-04-28 06:56:14  UTC ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: bot was blocked by the user
+=========[Sent Data]==========
+[ref]
+ref.text= [BROADCAST_ADMIN] maaf menggangu, kalau boleh berkenan bisa isi form ini, 
+
+https://docs.google.com/forms/d/e/1FAIpQLSfFhNKgp7GzT8yd3aZAFSje8kkFoHYrhdqz8eAP0WGMVDjhfg/viewform?usp=sf_link
+
+tetap semangat yak menjalani puasa, makasii 😊
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\test\broadcast.php(16): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-04-28 06:56:20  UTC ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: bot was blocked by the user
+=========[Sent Data]==========
+[ref]
+ref.text= [BROADCAST_ADMIN] maaf menggangu, kalau boleh berkenan bisa isi form ini, 
+
+https://docs.google.com/forms/d/e/1FAIpQLSfFhNKgp7GzT8yd3aZAFSje8kkFoHYrhdqz8eAP0WGMVDjhfg/viewform?usp=sf_link
+
+tetap semangat yak menjalani puasa, makasii 😊
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\test\broadcast.php(16): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-04-28 06:56:23  UTC ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: user is deactivated
+=========[Sent Data]==========
+[ref]
+ref.text= [BROADCAST_ADMIN] maaf menggangu, kalau boleh berkenan bisa isi form ini, 
+
+https://docs.google.com/forms/d/e/1FAIpQLSfFhNKgp7GzT8yd3aZAFSje8kkFoHYrhdqz8eAP0WGMVDjhfg/viewform?usp=sf_link
+
+tetap semangat yak menjalani puasa, makasii 😊
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\test\broadcast.php(16): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-04-28 06:56:25  UTC ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: bot was blocked by the user
+=========[Sent Data]==========
+[ref]
+ref.text= [BROADCAST_ADMIN] maaf menggangu, kalau boleh berkenan bisa isi form ini, 
+
+https://docs.google.com/forms/d/e/1FAIpQLSfFhNKgp7GzT8yd3aZAFSje8kkFoHYrhdqz8eAP0WGMVDjhfg/viewform?usp=sf_link
+
+tetap semangat yak menjalani puasa, makasii 😊
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\test\broadcast.php(16): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-04-28 06:56:29  UTC ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: bot was blocked by the user
+=========[Sent Data]==========
+[ref]
+ref.text= [BROADCAST_ADMIN] maaf menggangu, kalau boleh berkenan bisa isi form ini, 
+
+https://docs.google.com/forms/d/e/1FAIpQLSfFhNKgp7GzT8yd3aZAFSje8kkFoHYrhdqz8eAP0WGMVDjhfg/viewform?usp=sf_link
+
+tetap semangat yak menjalani puasa, makasii 😊
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\test\broadcast.php(16): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-04-28 06:56:37  UTC ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: user is deactivated
+=========[Sent Data]==========
+[ref]
+ref.text= [BROADCAST_ADMIN] maaf menggangu, kalau boleh berkenan bisa isi form ini, 
+
+https://docs.google.com/forms/d/e/1FAIpQLSfFhNKgp7GzT8yd3aZAFSje8kkFoHYrhdqz8eAP0WGMVDjhfg/viewform?usp=sf_link
+
+tetap semangat yak menjalani puasa, makasii 😊
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\test\broadcast.php(16): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-04-28 06:56:40  UTC ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: bot was blocked by the user
+=========[Sent Data]==========
+[ref]
+ref.text= [BROADCAST_ADMIN] maaf menggangu, kalau boleh berkenan bisa isi form ini, 
+
+https://docs.google.com/forms/d/e/1FAIpQLSfFhNKgp7GzT8yd3aZAFSje8kkFoHYrhdqz8eAP0WGMVDjhfg/viewform?usp=sf_link
+
+tetap semangat yak menjalani puasa, makasii 😊
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\test\broadcast.php(16): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-04-28 06:56:41  UTC ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: bot was blocked by the user
+=========[Sent Data]==========
+[ref]
+ref.text= [BROADCAST_ADMIN] maaf menggangu, kalau boleh berkenan bisa isi form ini, 
+
+https://docs.google.com/forms/d/e/1FAIpQLSfFhNKgp7GzT8yd3aZAFSje8kkFoHYrhdqz8eAP0WGMVDjhfg/viewform?usp=sf_link
+
+tetap semangat yak menjalani puasa, makasii 😊
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\test\broadcast.php(16): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-04-28 06:56:44  UTC ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: bot was blocked by the user
+=========[Sent Data]==========
+[ref]
+ref.text= [BROADCAST_ADMIN] maaf menggangu, kalau boleh berkenan bisa isi form ini, 
+
+https://docs.google.com/forms/d/e/1FAIpQLSfFhNKgp7GzT8yd3aZAFSje8kkFoHYrhdqz8eAP0WGMVDjhfg/viewform?usp=sf_link
+
+tetap semangat yak menjalani puasa, makasii 😊
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\test\broadcast.php(16): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-04-28 06:56:47  UTC ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: bot was blocked by the user
+=========[Sent Data]==========
+[ref]
+ref.text= [BROADCAST_ADMIN] maaf menggangu, kalau boleh berkenan bisa isi form ini, 
+
+https://docs.google.com/forms/d/e/1FAIpQLSfFhNKgp7GzT8yd3aZAFSje8kkFoHYrhdqz8eAP0WGMVDjhfg/viewform?usp=sf_link
+
+tetap semangat yak menjalani puasa, makasii 😊
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\test\broadcast.php(16): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-04-28 06:57:00  UTC ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: bot was blocked by the user
+=========[Sent Data]==========
+[ref]
+ref.text= [BROADCAST_ADMIN] maaf menggangu, kalau boleh berkenan bisa isi form ini, 
+
+https://docs.google.com/forms/d/e/1FAIpQLSfFhNKgp7GzT8yd3aZAFSje8kkFoHYrhdqz8eAP0WGMVDjhfg/viewform?usp=sf_link
+
+tetap semangat yak menjalani puasa, makasii 😊
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\test\broadcast.php(16): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-04-28 06:57:03  UTC ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: bot was blocked by the user
+=========[Sent Data]==========
+[ref]
+ref.text= [BROADCAST_ADMIN] maaf menggangu, kalau boleh berkenan bisa isi form ini, 
+
+https://docs.google.com/forms/d/e/1FAIpQLSfFhNKgp7GzT8yd3aZAFSje8kkFoHYrhdqz8eAP0WGMVDjhfg/viewform?usp=sf_link
+
+tetap semangat yak menjalani puasa, makasii 😊
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\test\broadcast.php(16): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-04-28 06:57:12  UTC ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: bot was blocked by the user
+=========[Sent Data]==========
+[ref]
+ref.text= [BROADCAST_ADMIN] maaf menggangu, kalau boleh berkenan bisa isi form ini, 
+
+https://docs.google.com/forms/d/e/1FAIpQLSfFhNKgp7GzT8yd3aZAFSje8kkFoHYrhdqz8eAP0WGMVDjhfg/viewform?usp=sf_link
+
+tetap semangat yak menjalani puasa, makasii 😊
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\test\broadcast.php(16): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-04-28 06:57:18  UTC ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: bot was blocked by the user
+=========[Sent Data]==========
+[ref]
+ref.text= [BROADCAST_ADMIN] maaf menggangu, kalau boleh berkenan bisa isi form ini, 
+
+https://docs.google.com/forms/d/e/1FAIpQLSfFhNKgp7GzT8yd3aZAFSje8kkFoHYrhdqz8eAP0WGMVDjhfg/viewform?usp=sf_link
+
+tetap semangat yak menjalani puasa, makasii 😊
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\test\broadcast.php(16): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-04-28 06:57:19  UTC ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: bot was blocked by the user
+=========[Sent Data]==========
+[ref]
+ref.text= [BROADCAST_ADMIN] maaf menggangu, kalau boleh berkenan bisa isi form ini, 
+
+https://docs.google.com/forms/d/e/1FAIpQLSfFhNKgp7GzT8yd3aZAFSje8kkFoHYrhdqz8eAP0WGMVDjhfg/viewform?usp=sf_link
+
+tetap semangat yak menjalani puasa, makasii 😊
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\test\broadcast.php(16): Telegram->sendMessage(Array)
+#4 {main}
+

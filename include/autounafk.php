@@ -46,7 +46,6 @@ if (deteksi_grupP() == true) {
         $jsonfile = json_encode($data, JSON_PRETTY_PRINT);
         $anggota = file_put_contents($file, $jsonfile);
 
-        $db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
         $db->where('userid', $userID);
         $user = $db->getOne("afk_user_data");
 

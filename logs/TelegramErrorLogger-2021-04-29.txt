@@ -1,0 +1,677 @@
+============[Date]============
+[ 2021-04-29 08:43:46  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message can't be deleted
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804512638
+ref.message.message_id= 120415
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001498192621
+ref.message.chat.title= Indonesia Bicara
+ref.message.chat.username= indonesiabicara
+ref.message.chat.type= supergroup
+ref.message.date= 1619660623
+ref.message.reply_to_message.message_id= 120356
+ref.message.reply_to_message.from.id= 1489990155
+ref.message.reply_to_message.from.is_bot= true
+ref.message.reply_to_message.from.first_name= ƒα∂нιℓ яιуαηтσ
+ref.message.reply_to_message.from.username= Fadhil_riyanto_bot
+ref.message.reply_to_message.chat.id= -1001498192621
+ref.message.reply_to_message.chat.title= Indonesia Bicara
+ref.message.reply_to_message.chat.username= indonesiabicara
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1619594746
+ref.message.reply_to_message.text= {
+    "update_id": 804511346,
+    "message": {
+        "message_id": 120355,
+        "from": {
+            "id": 1393342467,
+            "is_bot": false,
+            "first_name": "\u0192\u03b1\u2202\u043d\u03b9\u2113",
+            "last_name": "\u044f\u03b9\u0443\u03b1\u03b7\u0442\u03c3",
+            "username": "fadhil_riyanto",
+            "language_code": "ms"
+        },
+        "chat": {
+            "id": -1001498192621,
+            "title": "Indonesia Bicara",
+            "username": "indonesiabicara",
+            "type": "supergroup"
+        },
+        "date": 1619594745,
+        "text": "\/sudo json",
+        "entities": [
+            {
+                "offset": 0,
+                "length": 5,
+                "type": "bot_command"
+            }
+        ]
+    }
+}
+ref.message.reply_to_message.entities.0.offset= 604
+ref.message.reply_to_message.entities.0.length= 5
+ref.message.reply_to_message.entities.0.type= bot_command
+ref.message.text= /sudo del
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.message_id= 120415
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(556): Telegram->endpoint('deleteMessage', Array)
+#3 C:\bot telegram\command\sudo.php(113): Telegram->deleteMessage(Array)
+#4 C:\bot telegram\hook.php(715): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-04-29 08:47:15  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message can't be deleted
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804512651
+ref.message.message_id= 120429
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001498192621
+ref.message.chat.title= Indonesia Bicara
+ref.message.chat.username= indonesiabicara
+ref.message.chat.type= supergroup
+ref.message.date= 1619660830
+ref.message.reply_to_message.message_id= 120427
+ref.message.reply_to_message.from.id= 1489990155
+ref.message.reply_to_message.from.is_bot= true
+ref.message.reply_to_message.from.first_name= ƒα∂нιℓ яιуαηтσ
+ref.message.reply_to_message.from.username= Fadhil_riyanto_bot
+ref.message.reply_to_message.chat.id= -1001498192621
+ref.message.reply_to_message.chat.title= Indonesia Bicara
+ref.message.reply_to_message.chat.username= indonesiabicara
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1619660800
+ref.message.reply_to_message.text= Warning: require(C:\tmp/../vendor/autoload.php): Failed to open stream: No such file or directory in C:\tmp\evals.php on line 2
+
+Fatal error: Uncaught Error: Failed opening required 'C:\tmp/../vendor/autoload.php' (include_path='.;C:/Server/etc/php/pear') in C:\tmp\evals.php:2
+Stack trace:
+#0 {main}
+  thrown in C:\tmp\evals.php on line 2
+ref.message.text= /sudo del
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.message_id= 120429
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(556): Telegram->endpoint('deleteMessage', Array)
+#3 C:\bot telegram\command\sudo.php(113): Telegram->deleteMessage(Array)
+#4 C:\bot telegram\hook.php(715): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-04-29 08:49:10  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804512653
+ref.message.message_id= 120432
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001498192621
+ref.message.chat.title= Indonesia Bicara
+ref.message.chat.username= indonesiabicara
+ref.message.chat.type= supergroup
+ref.message.date= 1619660947
+ref.message.text= /sudo eval send($chat_id);
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 
+ref.reply_to_message_id= 120432
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\sudo.php(86): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(715): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-04-29 08:49:50  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804512656
+ref.my_chat_member.chat.id= -1001498192621
+ref.my_chat_member.chat.title= Indonesia Bicara
+ref.my_chat_member.chat.username= indonesiabicara
+ref.my_chat_member.chat.type= supergroup
+ref.my_chat_member.from.id= 1489990155
+ref.my_chat_member.from.is_bot= true
+ref.my_chat_member.from.first_name= ƒα∂нιℓ яιуαηтσ
+ref.my_chat_member.from.username= Fadhil_riyanto_bot
+ref.my_chat_member.date= 1619660990
+ref.my_chat_member.old_chat_member.user.id= 1489990155
+ref.my_chat_member.old_chat_member.user.is_bot= true
+ref.my_chat_member.old_chat_member.user.first_name= ƒα∂нιℓ яιуαηтσ
+ref.my_chat_member.old_chat_member.user.username= Fadhil_riyanto_bot
+ref.my_chat_member.old_chat_member.status= member
+ref.my_chat_member.new_chat_member.user.id= 1489990155
+ref.my_chat_member.new_chat_member.user.is_bot= true
+ref.my_chat_member.new_chat_member.user.first_name= ƒα∂нιℓ яιуαηтσ
+ref.my_chat_member.new_chat_member.user.username= Fadhil_riyanto_bot
+ref.my_chat_member.new_chat_member.status= left
+
+
+[ref]
+ref.chat_id= 
+ref.text= Maaf, bot ini sedang dalam perbaikan kode dan pengembangan sistem lebih lanjut oleh @fadhil_riyanto
+Coba lagi nanti
+ref.reply_to_message_id= 
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(69): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-04-29 09:21:39  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804512779
+ref.message.message_id= 572
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001407564572
+ref.message.chat.title= Fadhil Riyanto Logs
+ref.message.chat.type= supergroup
+ref.message.date= 1619662896
+ref.message.text= /sudo eval echo"tess";
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 
+ref.reply_to_message_id= 572
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\command\sudo.php(84): Telegram->sendMessage(Array)
+#4 C:\bot_telegram\hook.php(714): require('C:\\bot_telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-04-29 09:35:09  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: replied message not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804512809
+ref.message.message_id= 64746
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001310420564
+ref.message.chat.title= GAS Testing Grup
+ref.message.chat.username= GasTestingGroup
+ref.message.chat.type= supergroup
+ref.message.date= 1619663702
+ref.message.reply_to_message.message_id= 64743
+ref.message.reply_to_message.from.id= 1184720056
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= 【Cia Evelyn Alexandra】 ʟᴏʀᴅ
+ref.message.reply_to_message.from.username= Aisyah763
+ref.message.reply_to_message.from.language_code= id
+ref.message.reply_to_message.chat.id= -1001310420564
+ref.message.reply_to_message.chat.title= GAS Testing Grup
+ref.message.reply_to_message.chat.username= GasTestingGroup
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1619663580
+ref.message.reply_to_message.forward_from_chat.id= -1001495286872
+ref.message.reply_to_message.forward_from_chat.title= Memepi indah (Meme Indo)
+ref.message.reply_to_message.forward_from_chat.username= grupmemeglucu
+ref.message.reply_to_message.forward_from_chat.type= channel
+ref.message.reply_to_message.forward_from_message_id= 1309
+ref.message.reply_to_message.forward_date= 1618204706
+ref.message.reply_to_message.photo.0.file_id= AgACAgUAAx0CThtuVAAC_OdgihrcS7E6fccAAUefSypiQMRCJs0AAjGsMRtxAAGhV_-IHJj1jFx_N1OmbnQAAwEAAwIAA20AA_3FAwABHwQ
+ref.message.reply_to_message.photo.0.file_unique_id= AQADN1OmbnQAA_3FAwAB
+ref.message.reply_to_message.photo.0.file_size= 19272
+ref.message.reply_to_message.photo.0.width= 256
+ref.message.reply_to_message.photo.0.height= 320
+ref.message.reply_to_message.photo.1.file_id= AgACAgUAAx0CThtuVAAC_OdgihrcS7E6fccAAUefSypiQMRCJs0AAjGsMRtxAAGhV_-IHJj1jFx_N1OmbnQAAwEAAwIAA3gAA_7FAwABHwQ
+ref.message.reply_to_message.photo.1.file_unique_id= AQADN1OmbnQAA_7FAwAB
+ref.message.reply_to_message.photo.1.file_size= 74866
+ref.message.reply_to_message.photo.1.width= 640
+ref.message.reply_to_message.photo.1.height= 800
+ref.message.reply_to_message.photo.2.file_id= AgACAgUAAx0CThtuVAAC_OdgihrcS7E6fccAAUefSypiQMRCJs0AAjGsMRtxAAGhV_-IHJj1jFx_N1OmbnQAAwEAAwIAA3kABMYDAAEfBA
+ref.message.reply_to_message.photo.2.file_unique_id= AQADN1OmbnQABMYDAAE
+ref.message.reply_to_message.photo.2.file_size= 113137
+ref.message.reply_to_message.photo.2.width= 1024
+ref.message.reply_to_message.photo.2.height= 1280
+ref.message.reply_to_message.caption= ;v
+ref.message.text= :v termasuk tanda merendahkan (bagi aku)
+
+
+[ref]
+ref.text= maaf,  @fadhil_riyanto dihukum hapus pesan karna mengirim kata kata yang diblockir.
+ref.reply_to_message_id= 64746
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\hook.php(287): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-04-29 10:47:06  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.text= Maaf, bot ini sedang dalam perbaikan kode dan pengembangan sistem lebih lanjut oleh @fadhil_riyanto
+Coba lagi nanti
+ref.reply_to_message_id= 
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\hook.php(69): Telegram->sendMessage(Array)
+#4 C:\bot_telegram\command\evals_fadhil.php(3): require('C:\\bot_telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-04-29 10:47:07  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Unsupported start tag "hr" at byte offset 26
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804512941
+ref.message.message_id= 587
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001407564572
+ref.message.chat.title= Fadhil Riyanto Logs
+ref.message.chat.type= supergroup
+ref.message.date= 1619668020
+ref.message.text= /sudo eval $koneksi = mysqli_connect(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
+$q = mysqli_query($koneksi, 'SELECT * FROM members');
+$k = mysqli_affected_rows($koneksi);
+echo  $k;
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Ini server 1 bot telegram
+<hr>Bagus, cURL sudah <span style="color:blue">TERPASANG</span> diserver ini
+<br>Memory usage : 530584
+ref.reply_to_message_id= 587
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\command\sudo.php(84): Telegram->sendMessage(Array)
+#4 C:\bot_telegram\hook.php(714): require('C:\\bot_telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-04-29 10:47:18  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.text= Maaf, bot ini sedang dalam perbaikan kode dan pengembangan sistem lebih lanjut oleh @fadhil_riyanto
+Coba lagi nanti
+ref.reply_to_message_id= 
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\hook.php(69): Telegram->sendMessage(Array)
+#4 C:\bot_telegram\command\evals_fadhil.php(3): require('C:\\bot_telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-04-29 10:47:19  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Unsupported start tag "hr" at byte offset 26
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804512942
+ref.message.message_id= 588
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001407564572
+ref.message.chat.title= Fadhil Riyanto Logs
+ref.message.chat.type= supergroup
+ref.message.date= 1619668035
+ref.message.text= /sudo eval $koneksi = mysqli_connect(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
+$q = mysqli_query($koneksi, 'SELECT * FROM members');
+$k = mysqli_affected_rows($koneksi);
+echo  $k;
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Ini server 1 bot telegram
+<hr>Bagus, cURL sudah <span style="color:blue">TERPASANG</span> diserver ini
+<br>Memory usage : 530584
+ref.reply_to_message_id= 588
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\command\sudo.php(84): Telegram->sendMessage(Array)
+#4 C:\bot_telegram\hook.php(714): require('C:\\bot_telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-04-29 10:49:26  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.text= Maaf, bot ini sedang dalam perbaikan kode dan pengembangan sistem lebih lanjut oleh @fadhil_riyanto
+Coba lagi nanti
+ref.reply_to_message_id= 
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\hook.php(69): Telegram->sendMessage(Array)
+#4 C:\bot_telegram\command\evals_fadhil.php(3): require('C:\\bot_telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-04-29 10:49:27  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Unsupported start tag "hr" at byte offset 26
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804512949
+ref.message.message_id= 589
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001407564572
+ref.message.chat.title= Fadhil Riyanto Logs
+ref.message.chat.type= supergroup
+ref.message.date= 1619668160
+ref.message.text= /sudo eval echo "ok";
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Ini server 1 bot telegram
+<hr>Bagus, cURL sudah <span style="color:blue">TERPASANG</span> diserver ini
+<br>Memory usage : 529200
+ref.reply_to_message_id= 589
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\command\sudo.php(84): Telegram->sendMessage(Array)
+#4 C:\bot_telegram\hook.php(714): require('C:\\bot_telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-04-29 10:50:02  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.text= Maaf, bot ini sedang dalam perbaikan kode dan pengembangan sistem lebih lanjut oleh @fadhil_riyanto
+Coba lagi nanti
+ref.reply_to_message_id= 
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\hook.php(69): Telegram->sendMessage(Array)
+#4 C:\bot_telegram\command\evals_fadhil.php(3): require('C:\\bot_telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-04-29 10:50:03  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Unsupported start tag "hr" at byte offset 26
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804512950
+ref.message.message_id= 590
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001407564572
+ref.message.chat.title= Fadhil Riyanto Logs
+ref.message.chat.type= supergroup
+ref.message.date= 1619668196
+ref.message.text= /sudo eval echo "ok";
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Ini server 1 bot telegram
+<hr>Bagus, cURL sudah <span style="color:blue">TERPASANG</span> diserver ini
+<br>Memory usage : 529200
+ref.reply_to_message_id= 590
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\command\sudo.php(84): Telegram->sendMessage(Array)
+#4 C:\bot_telegram\hook.php(714): require('C:\\bot_telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-04-29 10:50:15  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.chat_id= 
+ref.text= Maaf, bot ini sedang dalam perbaikan kode dan pengembangan sistem lebih lanjut oleh @fadhil_riyanto
+Coba lagi nanti
+ref.reply_to_message_id= 
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\hook.php(69): Telegram->sendMessage(Array)
+#4 C:\bot_telegram\command\evals_fadhil.php(3): require('C:\\bot_telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-04-29 10:50:16  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Unsupported start tag "hr" at byte offset 26
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804512952
+ref.message.message_id= 591
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001407564572
+ref.message.chat.title= Fadhil Riyanto Logs
+ref.message.chat.type= supergroup
+ref.message.date= 1619668211
+ref.message.text= /sudo eval echo "ok";
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Ini server 1 bot telegram
+<hr>Bagus, cURL sudah <span style="color:blue">TERPASANG</span> diserver ini
+<br>Memory usage : 529200
+ref.reply_to_message_id= 591
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\command\sudo.php(84): Telegram->sendMessage(Array)
+#4 C:\bot_telegram\hook.php(714): require('C:\\bot_telegram...')
+#5 {main}
+
