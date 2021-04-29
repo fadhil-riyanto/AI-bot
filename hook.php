@@ -64,7 +64,7 @@ try {
 	// 	if ($userID == $userid_pemilik || $userID == 1223173857) {
 	// 	} else {
 	// 		$reply = "Maaf, bot ini sedang dalam perbaikan kode dan pengembangan sistem lebih lanjut oleh " . PUMBUAT_BOT . PHP_EOL .
-	// 			"Coba lagi nanti";
+	// 			"Coba lagush heorkui nanti";
 	// 		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
 	// 		$telegram->sendMessage($content);
 	// 		exit;
