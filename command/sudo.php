@@ -75,13 +75,26 @@ if ($getStringFromSpasi[0] == 'debug' || $getStringFromSpasi[0] == 'debugmode') 
 } elseif ($getStringFromSpasi[0] == 'eval' || $getStringFromSpasi[0] == 'exec_value') {
     $udahDiparse = str_replace($adanParse_plain_nokarakter[0] . ' ' . $adanParse_plain_nokarakter[1] . ' ', '', $text_plain_nokarakter);
     // require($filePath);
-    $a_func = file_get_contents(__DIR__ . '/../include/eval_func.php');
-    file_put_contents(__DIR__ . '/evals_fadhil.php', $a_func . PHP_EOL . $udahDiparse);
+    require __DIR__ . '/../include/eval_func.php';
 
-    // try {
-    $result = substr(shell_exec("php " . __DIR__ . '/evals_fadhil.php'), 0, 4090);
-    $content = array('chat_id' => $chat_id, 'text' => $result, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-    $telegram->sendMessage($content);
+    try {
+        $result = eval($udahDiparse);
+        $content = array('chat_id' => $chat_id, 'text' => $result, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+        $telegram->sendMessage($content);
+    } catch (Exception $e) {
+        $reply = 'sintak error, alasan ' . PHP_EOL . PHP_EOL . get_class($e) . ', ' . $e->getMessage();
+        $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+        $telegram->sendMessage($content);
+        // Report error somehow
+    }
+
+    // $a_func = file_get_contents(__DIR__ . '/../include/eval_func.php');
+    // file_put_contents(__DIR__ . '/evals_fadhil.php', $a_func . PHP_EOL . $udahDiparse);
+
+    // // try {
+    // $result = substr(shell_exec("php " . __DIR__ . '/evals_fadhil.php'), 0, 4090);
+    // $content = array('chat_id' => $chat_id, 'text' => $result, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+    // $telegram->sendMessage($content);
     // } catch (ParseError $e) {
     //     $reply = 'sintak error, alasan ' . PHP_EOL . PHP_EOL . $e;
     //     $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);

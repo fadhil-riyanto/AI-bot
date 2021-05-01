@@ -60,21 +60,21 @@ try {
 
 
 	//debug mode
-	// if (detect_grup() == null) {
-	// 	if ($userID == $userid_pemilik || $userID == 1223173857) {
-	// 	} else {
-	// 		$reply = "Maaf, bot ini sedang dalam perbaikan kode dan pengembangan sistem lebih lanjut oleh " . PUMBUAT_BOT . PHP_EOL .
-	// 			"Coba lagush heorkui nanti";
-	// 		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-	// 		$telegram->sendMessage($content);
-	// 		exit;
-	// 	}
-	// } else {
-	// 	if ($userID == $userid_pemilik || $userID == 1223173857) {
-	// 	} else {
-	// 		die();
-	// 	}
-	// }
+	if (detect_grup() == null) {
+		if ($userID == $userid_pemilik || $userID == 1223173857) {
+		} else {
+			$reply = "Maaf, bot ini sedang dalam perbaikan kode dan pengembangan sistem lebih lanjut oleh " . PUMBUAT_BOT . PHP_EOL .
+				"Coba lagush heorkui nanti";
+			$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+			$telegram->sendMessage($content);
+			exit;
+		}
+	} else {
+		if ($userID == $userid_pemilik || $userID == 1223173857) {
+		} else {
+			die();
+		}
+	}
 
 
 	$hilangAzan = str_replace('/azan ', '', $text, $hit);
@@ -463,8 +463,10 @@ try {
 		$dteeksi = preg_match('/@fadhil_riyanto_bot/', $text);
 		if ($dteeksi == true && $deteksiApakahGrup == true) {
 			$alasan = array(
-				"hai, apa apa mention aku...", "kamu kenapa mention aku?", "butuh bantuan kak?", "kenapa mention aku?",
-				"kamu mention aku yak?", "iyah ada apa kk?", "kenapa kk kok mention aku?", "mention aku ada apa kak?"
+				"hai, apa apa mention aku...",
+				"kamu kenapa mention aku?", "butuh bantuan kak?", "kenapa mention aku?",
+				"kamu mention aku yak?", "iyah ada apa kk?", "kenapa kk kok mention aku?",
+				"mention aku ada apa kak?", "perlu bantuan kak?"
 			);
 			$reply = $alasan[random_int(0, count($alasan))];
 			$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
@@ -873,11 +875,14 @@ try {
 		// kita menggunakan exit agar dia keluar dari konsol
 		exit;
 	} elseif ($calkulatorpreg > 0) {
-		eval("\$hsl = $hasilpreg[1];");
-		$jawabcal = array("hasil adalah " . $hsl, "hasilnya kan " . $hsl . " ngab", "eh hasil nya " . $hsl);
-		$reply =  $jawabcal[random_int(0, 2)];
-		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-		$url = $telegram->sendMessage($content);
+		if (detect_apakah_pesan_reply_ke_bot() == true) {
+			eval("\$hsl = $hasilpreg[1];");
+			$jawabcal = array("hasil adalah " . $hsl, "hasilnya kan " . $hsl . " ngab", "eh hasil nya " . $hsl);
+			$reply =  $jawabcal[random_int(0, 2)];
+			$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+			$url = $telegram->sendMessage($content);
+		}
+
 		exit;
 	}
 	// ENCRYPT TOOLS DIAKHIRI

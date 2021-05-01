@@ -1,7 +1,7 @@
 {
-    "update_id": 804490519,
+    "update_id": 804518376,
     "message": {
-        "message_id": 29251,
+        "message_id": 60527,
         "from": {
             "id": 1393342467,
             "is_bot": false,
@@ -11,73 +11,37 @@
             "language_code": "ms"
         },
         "chat": {
-            "id": 1393342467,
-            "first_name": "\u0192\u03b1\u2202\u043d\u03b9\u2113",
-            "last_name": "\u044f\u03b9\u0443\u03b1\u03b7\u0442\u03c3",
-            "username": "fadhil_riyanto",
-            "type": "private"
+            "id": -1001182246595,
+            "title": "[c]oretan Script",
+            "username": "cScript",
+            "type": "supergroup"
         },
-        "date": 1618729835,
+        "date": 1619878658,
         "reply_to_message": {
-            "message_id": 29250,
+            "message_id": 60526,
             "from": {
-                "id": 1489990155,
-                "is_bot": true,
-                "first_name": "Fadhil Riyanto Bot",
-                "username": "Fadhil_riyanto_bot"
-            },
-            "chat": {
                 "id": 1393342467,
+                "is_bot": false,
                 "first_name": "\u0192\u03b1\u2202\u043d\u03b9\u2113",
                 "last_name": "\u044f\u03b9\u0443\u03b1\u03b7\u0442\u03c3",
                 "username": "fadhil_riyanto",
-                "type": "private"
+                "language_code": "ms"
             },
-            "date": 1618729715,
-            "edit_date": 1618729831,
-            "text": "- \/bucin: kata kata motivasi buat bucin...wkwk\n- \/fakta: ayo belajar dengan menggali fakta\n- \/kalimat_quotes: agar pantang menyerah\n- \/kata_bijak: kata kata bijak\n- \/pantun: pantun? bot ini bisa kok\n- \/wallpaper: cocok buat kamu yg lagi cari wallpaper",
+            "chat": {
+                "id": -1001182246595,
+                "title": "[c]oretan Script",
+                "username": "cScript",
+                "type": "supergroup"
+            },
+            "date": 1619878654,
+            "text": "test @hanifdwypoetra tes",
             "entities": [
                 {
-                    "offset": 2,
-                    "length": 6,
-                    "type": "bot_command"
-                },
-                {
-                    "offset": 49,
-                    "length": 6,
-                    "type": "bot_command"
-                },
-                {
-                    "offset": 93,
+                    "offset": 5,
                     "length": 15,
-                    "type": "bot_command"
-                },
-                {
-                    "offset": 134,
-                    "length": 11,
-                    "type": "bot_command"
-                },
-                {
-                    "offset": 165,
-                    "length": 7,
-                    "type": "bot_command"
-                },
-                {
-                    "offset": 201,
-                    "length": 10,
-                    "type": "bot_command"
+                    "type": "mention"
                 }
-            ],
-            "reply_markup": {
-                "inline_keyboard": [
-                    [
-                        {
-                            "text": "kembali",
-                            "callback_data": "\/help_i@fadhil_riyanto_bot"
-                        }
-                    ]
-                ]
-            }
+            ]
         },
         "text": "\/sudo json",
         "entities": [
