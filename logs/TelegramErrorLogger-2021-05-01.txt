@@ -190,3 +190,239 @@ ref.disable_web_page_preview= true
 #4 C:\bot telegram\hook.php(716): require('C:\\bot telegram...')
 #5 {main}
 
+============[Date]============
+[ 2021-05-01 14:36:11  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804518431
+ref.message.message_id= 60595
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001182246595
+ref.message.chat.title= [c]oretan Script
+ref.message.chat.username= cScript
+ref.message.chat.type= supergroup
+ref.message.date= 1619879668
+ref.message.text= /sudo eval send(json_encode(dns_get_record("google.com", DNS_AAAA), JSON_PRETTY_PRINT), "@cScript");
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+ref.message.entities.1.offset= 44
+ref.message.entities.1.length= 10
+ref.message.entities.1.type= url
+ref.message.entities.2.offset= 89
+ref.message.entities.2.length= 8
+ref.message.entities.2.type= mention
+
+
+[ref]
+ref.text= 
+ref.reply_to_message_id= 60595
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\sudo.php(83): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(716): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-05-01 14:36:28  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804518445
+ref.message.message_id= 60604
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001182246595
+ref.message.chat.title= [c]oretan Script
+ref.message.chat.username= cScript
+ref.message.chat.type= supergroup
+ref.message.date= 1619879769
+ref.message.text= /sudo eval send(json_encode(dns_get_record("google.com", DNS_AAAA), JSON_PRETTY_PRINT), "@cScript");
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+ref.message.entities.1.offset= 44
+ref.message.entities.1.length= 10
+ref.message.entities.1.type= url
+ref.message.entities.2.offset= 89
+ref.message.entities.2.length= 8
+ref.message.entities.2.type= mention
+
+
+[ref]
+ref.text= 
+ref.reply_to_message_id= 60604
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\command\sudo.php(83): Telegram->sendMessage(Array)
+#4 C:\bot telegram\hook.php(716): require('C:\\bot telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-05-01 14:38:58  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804518451
+ref.my_chat_member.chat.id= -1001182246595
+ref.my_chat_member.chat.title= [c]oretan Script
+ref.my_chat_member.chat.username= cScript
+ref.my_chat_member.chat.type= supergroup
+ref.my_chat_member.from.id= 1393342467
+ref.my_chat_member.from.is_bot= false
+ref.my_chat_member.from.first_name= ƒα∂нιℓ
+ref.my_chat_member.from.last_name= яιуαηтσ
+ref.my_chat_member.from.username= fadhil_riyanto
+ref.my_chat_member.from.language_code= ms
+ref.my_chat_member.date= 1619879937
+ref.my_chat_member.old_chat_member.user.id= 1489990155
+ref.my_chat_member.old_chat_member.user.is_bot= true
+ref.my_chat_member.old_chat_member.user.first_name= ƒα∂нιℓ яιуαηтσ
+ref.my_chat_member.old_chat_member.user.username= Fadhil_riyanto_bot
+ref.my_chat_member.old_chat_member.status= administrator
+ref.my_chat_member.old_chat_member.can_be_edited= false
+ref.my_chat_member.old_chat_member.can_manage_chat= true
+ref.my_chat_member.old_chat_member.can_change_info= false
+ref.my_chat_member.old_chat_member.can_delete_messages= true
+ref.my_chat_member.old_chat_member.can_invite_users= true
+ref.my_chat_member.old_chat_member.can_restrict_members= true
+ref.my_chat_member.old_chat_member.can_pin_messages= true
+ref.my_chat_member.old_chat_member.can_promote_members= true
+ref.my_chat_member.old_chat_member.can_manage_voice_chats= true
+ref.my_chat_member.old_chat_member.custom_title= App::run();
+ref.my_chat_member.old_chat_member.is_anonymous= false
+ref.my_chat_member.new_chat_member.user.id= 1489990155
+ref.my_chat_member.new_chat_member.user.is_bot= true
+ref.my_chat_member.new_chat_member.user.first_name= ƒα∂нιℓ яιуαηтσ
+ref.my_chat_member.new_chat_member.user.username= Fadhil_riyanto_bot
+ref.my_chat_member.new_chat_member.status= administrator
+ref.my_chat_member.new_chat_member.can_be_edited= false
+ref.my_chat_member.new_chat_member.can_manage_chat= true
+ref.my_chat_member.new_chat_member.can_change_info= false
+ref.my_chat_member.new_chat_member.can_delete_messages= true
+ref.my_chat_member.new_chat_member.can_invite_users= true
+ref.my_chat_member.new_chat_member.can_restrict_members= true
+ref.my_chat_member.new_chat_member.can_pin_messages= true
+ref.my_chat_member.new_chat_member.can_promote_members= true
+ref.my_chat_member.new_chat_member.can_manage_voice_chats= true
+ref.my_chat_member.new_chat_member.custom_title= $app::run();
+ref.my_chat_member.new_chat_member.is_anonymous= false
+
+
+[ref]
+ref.chat_id= 
+ref.text= Maaf, bot ini sedang dalam perbaikan kode dan pengembangan sistem lebih lanjut oleh @fadhil_riyanto
+Coba lagush heorkui nanti
+ref.reply_to_message_id= 
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(69): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-05-01 14:39:27  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804518455
+ref.my_chat_member.chat.id= -1001182246595
+ref.my_chat_member.chat.title= [c]oretan Script
+ref.my_chat_member.chat.username= cScript
+ref.my_chat_member.chat.type= supergroup
+ref.my_chat_member.from.id= 1393342467
+ref.my_chat_member.from.is_bot= false
+ref.my_chat_member.from.first_name= ƒα∂нιℓ
+ref.my_chat_member.from.last_name= яιуαηтσ
+ref.my_chat_member.from.username= fadhil_riyanto
+ref.my_chat_member.from.language_code= ms
+ref.my_chat_member.date= 1619879966
+ref.my_chat_member.old_chat_member.user.id= 1489990155
+ref.my_chat_member.old_chat_member.user.is_bot= true
+ref.my_chat_member.old_chat_member.user.first_name= ƒα∂нιℓ яιуαηтσ
+ref.my_chat_member.old_chat_member.user.username= Fadhil_riyanto_bot
+ref.my_chat_member.old_chat_member.status= administrator
+ref.my_chat_member.old_chat_member.can_be_edited= false
+ref.my_chat_member.old_chat_member.can_manage_chat= true
+ref.my_chat_member.old_chat_member.can_change_info= false
+ref.my_chat_member.old_chat_member.can_delete_messages= true
+ref.my_chat_member.old_chat_member.can_invite_users= true
+ref.my_chat_member.old_chat_member.can_restrict_members= true
+ref.my_chat_member.old_chat_member.can_pin_messages= true
+ref.my_chat_member.old_chat_member.can_promote_members= true
+ref.my_chat_member.old_chat_member.can_manage_voice_chats= true
+ref.my_chat_member.old_chat_member.custom_title= $app::run();
+ref.my_chat_member.old_chat_member.is_anonymous= false
+ref.my_chat_member.new_chat_member.user.id= 1489990155
+ref.my_chat_member.new_chat_member.user.is_bot= true
+ref.my_chat_member.new_chat_member.user.first_name= ƒα∂нιℓ яιуαηтσ
+ref.my_chat_member.new_chat_member.user.username= Fadhil_riyanto_bot
+ref.my_chat_member.new_chat_member.status= administrator
+ref.my_chat_member.new_chat_member.can_be_edited= false
+ref.my_chat_member.new_chat_member.can_manage_chat= true
+ref.my_chat_member.new_chat_member.can_change_info= false
+ref.my_chat_member.new_chat_member.can_delete_messages= true
+ref.my_chat_member.new_chat_member.can_invite_users= true
+ref.my_chat_member.new_chat_member.can_restrict_members= true
+ref.my_chat_member.new_chat_member.can_pin_messages= true
+ref.my_chat_member.new_chat_member.can_promote_members= true
+ref.my_chat_member.new_chat_member.can_manage_voice_chats= true
+ref.my_chat_member.new_chat_member.custom_title= $app->run();
+ref.my_chat_member.new_chat_member.is_anonymous= false
+
+
+[ref]
+ref.chat_id= 
+ref.text= Maaf, bot ini sedang dalam perbaikan kode dan pengembangan sistem lebih lanjut oleh @fadhil_riyanto
+Coba lagush heorkui nanti
+ref.reply_to_message_id= 
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot telegram\hook.php(69): Telegram->sendMessage(Array)
+#4 {main}
+

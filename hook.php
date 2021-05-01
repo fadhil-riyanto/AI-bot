@@ -60,21 +60,21 @@ try {
 
 
 	//debug mode
-	if (detect_grup() == null) {
-		if ($userID == $userid_pemilik || $userID == 1223173857) {
-		} else {
-			$reply = "Maaf, bot ini sedang dalam perbaikan kode dan pengembangan sistem lebih lanjut oleh " . PUMBUAT_BOT . PHP_EOL .
-				"Coba lagush heorkui nanti";
-			$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-			$telegram->sendMessage($content);
-			exit;
-		}
-	} else {
-		if ($userID == $userid_pemilik || $userID == 1223173857) {
-		} else {
-			die();
-		}
-	}
+	// if (detect_grup() == null) {
+	// 	if ($userID == $userid_pemilik || $userID == 1223173857) {
+	// 	} else {
+	// 		$reply = "Maaf, bot ini sedang dalam perbaikan kode dan pengembangan sistem lebih lanjut oleh " . PUMBUAT_BOT . PHP_EOL .
+	// 			"Coba lagush heorkui nanti";
+	// 		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+	// 		$telegram->sendMessage($content);
+	// 		exit;
+	// 	}
+	// } else {
+	// 	if ($userID == $userid_pemilik || $userID == 1223173857) {
+	// 	} else {
+	// 		die();
+	// 	}
+	// }
 
 
 	$hilangAzan = str_replace('/azan ', '', $text, $hit);
@@ -720,9 +720,6 @@ try {
 		exit;
 	} elseif ('/rules' == $adanParse[0] || '/rules' . USERNAME_BOT . '' == $adanParse[0]) {
 		require __DIR__ . '/command/rules.php';
-		exit;
-	} elseif ('/ch_serv' == $adanParse[0] || '/ch_serv' . USERNAME_BOT . '' == $adanParse[0]) {
-		require __DIR__ . '/command/ch_serv.php';
 		exit;
 	} elseif ('/ip_geo' == $adanParse[0] || '/ip_geo' . USERNAME_BOT . '' == $adanParse[0]) {
 		require __DIR__ . '/command/ip_geo.php';

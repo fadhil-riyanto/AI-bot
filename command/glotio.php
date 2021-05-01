@@ -97,10 +97,10 @@ if ($animecek == true) {
 
         $json_response = curl_exec($curl);
         $responglo = json_decode($json_response);
-        $outputs = str_replace('/home/glot/', '/usr/fadhil_project/', $responglo->stdout);
+        $outputs = $responglo->stdout;
         $reply = 'output : ' . htmlspecialchars($outputs) . PHP_EOL .
-            str_replace('/home/glot/', '/usr/fadhil_project/', $responglo->error) . PHP_EOL .
-            str_replace('/home/glot/', '/usr/fadhil_project/', $responglo->stderr);
+            $responglo->error . PHP_EOL .
+            $responglo->stderr;
         $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
         $telegram->sendMessage($content);
         exit;

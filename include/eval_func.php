@@ -7,6 +7,13 @@ function send($data, $chat_id)
 {
     global $telegram;
     $content = array('chat_id' => $chat_id, 'text' => '<pre>' . htmlspecialchars(substr($data, 0, 4090)) . '</pre>', 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+    $rets = $telegram->sendMessage($content);
+    return $rets;
+}
+function dump_arr($data, $chat_id)
+{
+    global $telegram;
+    $content = array('chat_id' => $chat_id, 'text' => '<pre>' . substr(json_encode($data, JSON_PRETTY_PRINT), 0, 4090) . '</pre>', 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
     $telegram->sendMessage($content);
 }
 function tg_animate($data, $jumlah, $chat_id)
