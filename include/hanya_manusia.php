@@ -2,20 +2,22 @@
 
 function is_manusia($word)
 {
-    if (is_numeric($word) === true) {
-        return true;
-    }
-
-    $word = hyphenizes($word);
-    if (strlen($word) > 110) {
-        return true;
-    }
     //deteksi link
     $linkk = preg_match('/((http|https|ftp|ftps)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3})([\s.,;\?\!]|$)/', $word);
     if ($linkk === true) {
         return true;
     }
-    //deteksi command
+    //deteksi mentions
+    $mentionss = preg_match('/(?<=^|\s)@([^@\s]+)/', $word);
+    if ($mentionss === true) {
+        return true;
+    }
+    if (is_numeric($word) === true) {
+        return true;
+    }
+    if (strlen($word) > 110) {
+        return true;
+    }
     $a = substr($word, 0, 1);
     if ($a == '/' || $a == '.' || $a == '!' || $a == '{' || $a == '}' || $a == '[' || $a == ']') {
         return true;
@@ -24,7 +26,6 @@ function is_manusia($word)
     if ($deteclink == true) {
         return true;
     }
-
     //languange programming
     $kata = array(
         //javascript
@@ -66,6 +67,7 @@ function is_manusia($word)
             return true;
         }
     }
+    $word = hyphenizes($word);
     return $word;
 }
 //var_dump(is_manusia(''));

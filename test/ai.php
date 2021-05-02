@@ -5,7 +5,7 @@ $kon = @mysqli_connect(
     'Xsvy2C4BGmuDCqI3fSoa',
     'b8rkwqqp7tbpt89flosy'
 );
-$q = mysqli_query($kon, "SELECT * FROM `data_ai` WHERE `data_res_ai` LIKE _utf8 '' ");
+$q = mysqli_query($kon, "SELECT * FROM `data_ai` WHERE `data_res_ai` LIKE _utf8 'hmhm' ");
 $tes_jumlah_row = @mysqli_affected_rows($kon);
 $dataAI = mysqli_fetch_assoc($q);
 foreach ($q as $data_res_ai_val) {
@@ -30,7 +30,7 @@ foreach ($q as $data_res_ai_val) {
         } else {
             echo "jAWABAN API : " . $c . PHP_EOL;
             //mysqli_query($kon, "UPDATE `b8rkwqqp7tbpt89flosy`.`data_ai` SET `data_res_ai`='" . $c . "' WHERE  `data_key_ai`='" . $hhh . "' AND `data_res_ai`='hmhm' LIMIT 1");
-            mysqli_query($kon, "UPDATE `data_ai` SET `data_res_ai`='$c' WHERE  `data_key_ai`='$hhh' AND `data_res_ai`='' LIMIT 1");
+            mysqli_query($kon, "UPDATE `data_ai` SET `data_res_ai`='$c' WHERE  `data_key_ai`='$hhh' AND `data_res_ai`='hmhm' LIMIT 1");
             $tes_jumlah_roWSS = @mysqli_affected_rows($kon);
             echo "AFFECTED : " . $tes_jumlah_roWSS . PHP_EOL;
         }
