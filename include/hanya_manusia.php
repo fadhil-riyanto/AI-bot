@@ -45,7 +45,7 @@ function is_manusia($word)
         "switch", "template", "this", "throw", "true",
         "try", "typedef", "tyepeid", "typename", "union",
         "unsigned", "using", "virtual", "void", "volatile",
-        "wchar_t",
+        "wchar_t", "Reguler", "Exppresot",
 
         //python
         "true", "def", "if", "raise",
