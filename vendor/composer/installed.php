@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '9363597b5ae78b101bde921e022164edd74ed15b',
+    'reference' => '39dbbf683ea734e74cbc3383e1a7bbfdceee2130',
     'name' => '__root__',
   ),
   'versions' => 
@@ -18,7 +18,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '9363597b5ae78b101bde921e022164edd74ed15b',
+      'reference' => '39dbbf683ea734e74cbc3383e1a7bbfdceee2130',
     ),
     'ammarfaizi2/brainly' => 
     array (
@@ -174,12 +174,12 @@
     ),
     'pecee/simple-router' => 
     array (
-      'pretty_version' => '4.3.2.2',
-      'version' => '4.3.2.2',
+      'pretty_version' => '4.3.2.3',
+      'version' => '4.3.2.3',
       'aliases' => 
       array (
       ),
-      'reference' => 'c6d0ff3c0ec6ab46338a0bf650c43a53d8584d76',
+      'reference' => '569b3a876094080a3b54e919d6f80cdc4ce12d65',
     ),
     'phplucidframe/console-table' => 
     array (

@@ -1041,17 +1041,17 @@
         },
         {
             "name": "pecee/simple-router",
-            "version": "4.3.2.2",
-            "version_normalized": "4.3.2.2",
+            "version": "4.3.2.3",
+            "version_normalized": "4.3.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/skipperbent/simple-php-router.git",
-                "reference": "c6d0ff3c0ec6ab46338a0bf650c43a53d8584d76"
+                "reference": "569b3a876094080a3b54e919d6f80cdc4ce12d65"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/skipperbent/simple-php-router/zipball/c6d0ff3c0ec6ab46338a0bf650c43a53d8584d76",
-                "reference": "c6d0ff3c0ec6ab46338a0bf650c43a53d8584d76",
+                "url": "https://api.github.com/repos/skipperbent/simple-php-router/zipball/569b3a876094080a3b54e919d6f80cdc4ce12d65",
+                "reference": "569b3a876094080a3b54e919d6f80cdc4ce12d65",
                 "shasum": ""
             },
             "require": {
@@ -1062,7 +1062,7 @@
                 "mockery/mockery": "^1",
                 "phpunit/phpunit": "^7"
             },
-            "time": "2021-04-28T01:41:47+00:00",
+            "time": "2021-04-28T08:05:34+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {

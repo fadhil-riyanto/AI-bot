@@ -882,6 +882,21 @@ try {
 
 		exit;
 	}
+	require __DIR__ . '/include/hanya_manusia.php';
+
+	if (is_manusia(strtolower($text_plain_nokarakter)) === true) {
+	} else {
+		$datass = is_manusia(strtolower($text_plain_nokarakter));
+		$db->where("data_key_ai", $datass);
+		$user = $db->getOne("data_ai");
+		if ($user['data_key_ai'] == null) {
+			$data = array(
+				"data_key_ai" => $datass,
+				"data_res_ai" => "hmhm"
+			);
+			$id = $db->insert('data_ai', $data);
+		}
+	}
 	// ENCRYPT TOOLS DIAKHIRI
 	// LICENSE BY FADHIL
 	// PAHAM?
