@@ -2,7 +2,9 @@
 
 function is_manusia($word)
 {
-
+    if (is_numeric($word) === true) {
+        return true;
+    }
 
     $word = hyphenizes($word);
     if (strlen($word) > 110) {
