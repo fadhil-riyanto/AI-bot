@@ -949,7 +949,7 @@ try {
 		if ($db_error_koneksi == true) {
 			$reply = 'Maaf, saat ini kamu tidak bisa membalas pesan kamu dikarnakan database sedang error. Jadi kami hanya bisa menerima command saja untuk sementara waktu ini. Kamu bisa melaporkan ke ' . PUMBUAT_BOT . ' selaku pembuatnya';
 			$option = array(
-				array($telegram->buildInlineKeyBoardButton("👥 Support Group", $url = 'https://t.me/tgdev_php_group'))
+				array($telegram->buildInlineKeyBoardButton("👥 Support Group", $url = SUPPORT_GROUP))
 			);
 			$keyb = $telegram->buildInlineKeyBoard($option);
 
@@ -1051,6 +1051,51 @@ try {
 	// 	unset($$vars[$i]);
 	// }
 	// unset($vars, $i);
+} catch (Exception  $e) {
+	function randomlogsee($length = 10)
+	{
+		$characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+		$charactersLength = strlen($characters);
+		$randomString = '';
+		for ($i = 0; $i < $length; $i++) {
+			$randomString .= $characters[rand(0, $charactersLength - 1)];
+		}
+		return $randomString;
+	}
+
+	$randomstrings = randomlogsee(40);
+	$output = __DIR__ . '/tmp/' . $randomstrings . '.txt';
+	file_put_contents($output, $e);
+
+	$bot_url    = "https://api.telegram.org/bot" . TG_HTTP_API . "/";
+	$url        = $bot_url . "sendDocument?chat_id=" . GROUP_LOGS;
+
+
+	$content = array('chat_id' => $chat_id);
+
+	$invitlink = $telegram->getChat($content);
+
+	$capt = '😇 WARNING ERROR 😇' . PHP_EOL .
+		'==============' . PHP_EOL .
+		'Penjalan bot : ' . $username . PHP_EOL .
+		'Lokasi : ' . $invitlink['result']['invite_link'] . PHP_EOL . PHP_EOL .
+		'Stdin : ' . $text_plain_nokarakter;
+	$post_fields = array(
+		'caption' => $capt,
+		'chat_id'   => GROUP_LOGS,
+		'document'     => new CURLFile(realpath('tmp/' . $randomstrings . '.txt'))
+	);
+
+	$ch = curl_init();
+	curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+		"Content-Type:multipart/form-data"
+	));
+	curl_setopt($ch, CURLOPT_URL, $url);
+	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+	curl_setopt($ch, CURLOPT_POSTFIELDS, $post_fields);
+	$output = curl_exec($ch);
+	unlink($output);
+	// Report error somehow
 } catch (ParseError $e) {
 	function randomlogs($length = 10)
 	{

@@ -14,9 +14,13 @@ if ($azanHilangcommand == null) {
     $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
     $telegram->sendMessage($content);
 } else {
-    $db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
-    $db->where("chat_id", $chat_id);
-    $getDataafku = $db->get("filters_word_data");
+    // $db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
+    // $db->where("chat_id", $chat_id);
+    // $getDataafku = $db->get("filters_word_data");
+    $getDataafku = $db->run(
+        "SELECT * FROM filters_word_data WHERE chat_id = ?",
+        $chat_id
+    );
 
     foreach ($getDataafku as $katablock) {
         if (strtolower($udahDiparse) == strtolower($katablock['word'])) {
@@ -25,18 +29,25 @@ if ($azanHilangcommand == null) {
         }
     }
     if ($kataada == true) {
-        $db->where('uniq_id', $iduniq);
-        if ($db->delete('filters_word_data')) {
+        // $db->where('uniq_id', $iduniq);
+        $deleteverify = $db->delete('filters_word_data', [
+            'uniq_id' => $iduniq
+        ]);
+        if ($deleteverify) {
             $reply = "kata telah dihapus";
             $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
             $telegram->sendMessage($content);
         } else {
-            $reply = "ups ada kesalahan internal. Reason : " . $db->getLastError();
-            $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+            $reply = EXCEPTION_SYSTEM_ERROR_MESSAGE;
+            $option = array(
+                array($telegram->buildInlineKeyBoardButton("👥 Support Group", $url = SUPPORT_GROUP))
+            );
+            $keyb = $telegram->buildInlineKeyBoard($option);
+            $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_markup' => $keyb,  'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
             $telegram->sendMessage($content);
         }
     } else {
-        $reply = "maaf, kata itu tidak dapat dihapus karna ia tidak ditemukan di database";
+        $reply = "maaf, kata tidak ditemukan di database";
         $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
         $telegram->sendMessage($content);
         //delete

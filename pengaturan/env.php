@@ -33,3 +33,4 @@ define('DATABASE_PLATFORM', 'Mysql');                // type url
 define('SERVER_HTTP_PLATFORM', 'nginx');                // type url
 define('IMGBB_API', '9c53eec4b641dc559c39b8dd3ad41573');
 define('GROUP_LOGS', -1001407564572);
+define('EXCEPTION_SYSTEM_ERROR_MESSAGE', 'ups..., ada kesalahan sistem');

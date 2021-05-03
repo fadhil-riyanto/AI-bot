@@ -1,0 +1,10 @@
+PDOException: SQLSTATE[42703]: Undefined column: 7 ERROR:  column "chat_id" does not exist
+LINE 1: SELECT * FROM pastebin WHERE chat_id = $1
+                                     ^ in C:\bot_telegram\vendor\paragonie\easydb\src\EasyDB.php:1005
+Stack trace:
+#0 C:\bot_telegram\vendor\paragonie\easydb\src\EasyDB.php(1005): PDOStatement->execute(Array)
+#1 C:\bot_telegram\vendor\paragonie\easydb\src\EasyDB.php(948): ParagonIE\EasyDB\EasyDB->safeQuery('SELECT * FROM p...', Array, 2, false, true)
+#2 C:\bot_telegram\admin_command\addword.php(22): ParagonIE\EasyDB\EasyDB->run('SELECT * FROM p...', -1001182246595)
+#3 C:\bot_telegram\admin_command\__init__.php(243): require('C:\\bot_telegram...')
+#4 C:\bot_telegram\hook.php(905): require('C:\\bot_telegram...')
+#5 {main}

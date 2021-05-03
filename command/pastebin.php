@@ -41,24 +41,46 @@ if ($azanHilangcommand == null) {
     }
     pastelink:
     $paste_id = generateRandomString(10);
-    $db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
-    $db->where("paste_id", $paste_id);
-    $user = $db->getOne("pastebin");
+    // $db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
+    // $db->where("paste_id", $paste_id);
+    // $user = $db->getOne("pastebin");
+
+    if ($db_error_koneksi === true) {
+        $reply = EXCEPTION_SYSTEM_ERROR_MESSAGE;
+        $option = array(
+            array($telegram->buildInlineKeyBoardButton("👥 Support Group", $url = SUPPORT_GROUP))
+        );
+        $keyb = $telegram->buildInlineKeyBoard($option);
+        $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_markup' => $keyb,  'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+        $telegram->sendMessage($content);
+        throw new Exception("DB pastebin error");
+        die();
+    }
+
     if ($user['data'] == null) {
-        $db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
-        $data = array(
+        //$db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
+        // $data = array(
+        //     "userid" => $userID,
+        //     "paste_id" =>  $paste_id,
+        //     "data" => $udahDiparse
+        // );
+        // $id = $db->insert('pastebin', $data);
+        $id = $db->insert('pastebin', [
             "userid" => $userID,
             "paste_id" =>  $paste_id,
             "data" => $udahDiparse
-        );
-        $id = $db->insert('pastebin', $data);
+        ]);
         if ($id) {
             $reply = "yay, link pastebin telegram kamu https://t.me/" . USERNAME_BOT_NON_AT . '?start=ps_' . $paste_id;
             $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
             $telegram->sendMessage($content);
         } else {
-            $reply = "ups ada kesalahan internal saat menginsert data. Reason : " . $db->getLastError();
-            $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+            $reply = EXCEPTION_SYSTEM_ERROR_MESSAGE;
+            $option = array(
+                array($telegram->buildInlineKeyBoardButton("👥 Support Group", $url = SUPPORT_GROUP))
+            );
+            $keyb = $telegram->buildInlineKeyBoard($option);
+            $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_markup' => $keyb,  'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
             $telegram->sendMessage($content);
         }
     } else {

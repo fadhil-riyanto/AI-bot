@@ -1,0 +1,4 @@
+Exception: DB pastebin error in C:\bot_telegram\command\pastebin.php:59
+Stack trace:
+#0 C:\bot_telegram\hook.php(661): require()
+#1 {main}

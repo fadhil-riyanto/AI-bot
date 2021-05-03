@@ -1,0 +1,90 @@
+============[Date]============
+[ 2021-05-03 11:08:42  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804521064
+ref.message.message_id= 1027
+ref.message.from.id= 1223173857
+ref.message.from.is_bot= false
+ref.message.from.first_name= Fadhil riyanto
+ref.message.from.last_name= (Mirror)
+ref.message.from.username= fadhilriyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001407564572
+ref.message.chat.title= Fadhil Riyanto Logs
+ref.message.chat.type= supergroup
+ref.message.date= 1620014913
+ref.message.reply_to_message.message_id= 1025
+ref.message.reply_to_message.from.id= 1489990155
+ref.message.reply_to_message.from.is_bot= true
+ref.message.reply_to_message.from.first_name= ƒα∂нιℓ яιуαηтσ
+ref.message.reply_to_message.from.username= Fadhil_riyanto_bot
+ref.message.reply_to_message.chat.id= -1001407564572
+ref.message.reply_to_message.chat.title= Fadhil Riyanto Logs
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1620014533
+ref.message.reply_to_message.text= null
+ref.message.text= lagi ngapain?
+
+
+[ref]
+ref.text= 
+
+ref.reply_to_message_id= 1027
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\hook.php(953): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-05-03 13:59:25  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804521329
+ref.message.message_id= 63830
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001182246595
+ref.message.chat.title= [c]oretan Script
+ref.message.chat.username= cScript
+ref.message.chat.type= supergroup
+ref.message.date= 1620025158
+ref.message.text= /sudo eval send($chat_id, $chat_id);
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 
+ref.reply_to_message_id= 63830
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\command\sudo.php(83): Telegram->sendMessage(Array)
+#4 C:\bot_telegram\hook.php(756): require('C:\\bot_telegram...')
+#5 {main}
+

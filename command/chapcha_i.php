@@ -65,9 +65,14 @@ if ($verifikasichapcha == true) {
                     $restik = array('chat_id' => $chat_id, 'user_id' => $userID, 'permissions' => $permissionchat);
                     $telegram->restrictChatMember($restik);
 
-                    $db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
-                    $db->where("gid", $chat_id);
-                    $user = $db->getOne("grup_data");
+                    // $db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
+                    // $db->where("gid", $chat_id);
+                    // $user = $db->getOne("grup_data");
+                    $user = $db->row(
+                        "SELECT * FROM grup_data WHERE gid = ?",
+                        $chat_id
+                    );
+
                     if ($user['welcome_text'] == null) {
                         $reply = 'Halo, apa kabar mu?';
                         $content = array('chat_id' => $chat_id, 'text' => $reply, 'parse_mode' => 'html', 'disable_web_page_preview' => true);

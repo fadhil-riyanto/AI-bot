@@ -1,6 +1,6 @@
 <?php
 for ($a = 1; $a < 100; $a++) {
-    $nodes[] = "https://api.simsimi.net/v1/?text=kamu%20kenapa?&lang=id";
+    $nodes[] = "https://simsumi.herokuapp.com/api?text=hai&lang=id";
 }
 $node_count = count($nodes);
 
@@ -20,14 +20,8 @@ do {
 
 //echo "results: ";
 for ($i = 0; $i < $node_count; $i++) {
-    $file = "vcc.json";
-    $anggota = file_get_contents($file);
-    $data = json_decode($anggota, true);
 
-    $results = json_decode(curl_multi_getcontent($curl_arr[$i]));
-    $file = "vcc.json";
-    $data[] = $results;
-    $jsonfile = json_encode($data, JSON_PRETTY_PRINT);
-    $anggota = file_put_contents($file, $jsonfile);
+    $results = curl_multi_getcontent($curl_arr[$i]);
+    echo $results;
 }
 // echo 'done';

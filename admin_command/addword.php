@@ -14,9 +14,14 @@ if ($azanHilangcommand == null) {
     $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
     $telegram->sendMessage($content);
 } else {
-    $db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
-    $db->where("chat_id", $chat_id);
-    $getDataafku = $db->get("filters_word_data");
+    // $db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
+    // $db->where("chat_id", $chat_id);
+    // $getDataafku = $db->get("filters_word_data");
+
+    $getDataafku = $db->run(
+        "SELECT * FROM filters_word_data WHERE chat_id = ?",
+        $chat_id
+    );
 
     foreach ($getDataafku as $katablock) {
         if (strtolower($udahDiparse) == strtolower($katablock['word'])) {
@@ -37,26 +42,39 @@ if ($azanHilangcommand == null) {
             $required_length = 40;
             $limit_one = rand();
             $limit_two = rand();
-            $randomID = @substr(uniqid(sha1(crypt(md5(rand(min($limit_one, $limit_two), max($limit_one, $limit_two)))))), 0, $required_length);
+            $randomID = @substr(uniqid(sha1(crypt(md5(rand(min($limit_one, $limit_two), max($limit_one, $limit_two))), 'rl'))), 0, $required_length);
 
-            $db->where("uniq_id", $randomID);
-            $user = $db->getOne("filters_word_data");
+            // $db->where("uniq_id", $randomID);
+            // $user = $db->getOne("filters_word_data");
+            $user = $db->row(
+                "SELECT * FROM filters_word_data WHERE uniq_id = ?",
+                $randomID
+            );
             if ($user['uniq_id'] == null) {
-                $data = array(
+                // $data = array(
+                //     "chat_id" => $chat_id,
+                //     "word" =>  $udahDiparse,
+                //     "uniq_id" => $randomID
+                // );
+
+                // $id = $db->insert('filters_word_data', $data);
+                $id = $db->insert('filters_word_data', [
                     "chat_id" => $chat_id,
                     "word" =>  $udahDiparse,
                     "uniq_id" => $randomID
-                );
-
-                $id = $db->insert('filters_word_data', $data);
+                ]);
 
                 if ($id) {
                     $reply = "kata berhasil ditambahkan ke database!";
                     $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
                     $telegram->sendMessage($content);
                 } else {
-                    $reply = "ups ada kesalahan internal. Reason : " . $db->getLastError();
-                    $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+                    $reply = EXCEPTION_SYSTEM_ERROR_MESSAGE;
+                    $option = array(
+                        array($telegram->buildInlineKeyBoardButton("👥 Support Group", $url = SUPPORT_GROUP))
+                    );
+                    $keyb = $telegram->buildInlineKeyBoard($option);
+                    $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_markup' => $keyb,  'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
                     $telegram->sendMessage($content);
                 }
             } else {
