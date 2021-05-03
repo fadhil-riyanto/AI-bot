@@ -1,9 +1,19 @@
 <?php
-define('BOT_VERSION', 'v10.0.2-alpha'); //informasi versi bot
+//mysql deprecated :(
 define('DB_HOST', 'b8rkwqqp7tbpt89flosy-mysql.services.clever-cloud.com');                                            //WAJIB
 define('DB_USERNAME', 'uqirurwvstycdqcb');                    //WAJIB
 define('DB_PASSWORD', 'Xsvy2C4BGmuDCqI3fSoa');        //WAJIB
 define('DB_NAME', 'b8rkwqqp7tbpt89flosy');                        //WAJIB
+
+//yay, saya menggunakan postgre :)
+define('PG_DB_HOST', 'bz6kvcrmvdqhbl8rhdzj-postgresql.services.clever-cloud.com');                                            //WAJIB
+define('PG_DB_USERNAME', 'uep7e5jn8kn1g9iqlbwo');                    //WAJIB
+define('PG_DB_PASSWORD', 'uFIInGMDqRGDRuksrhb1');        //WAJIB
+define('PG_DB_PORT', 5432);        //WAJIB (DEFAULT HTTP 5432)
+define('PG_DB_NAME', 'bz6kvcrmvdqhbl8rhdzj');                        //WAJIB
+
+//UTILS
+define('BOT_VERSION', 'v10.0.2-alpha'); //informasi versi bot
 define('TG_HTTP_API', '1489990155:AAEUjetEoXH731jog87hrb5IlqOvh8WjyJ8');    //WAJIB
 define('USER_ID_TG_ME', '1393342467');                                        //WAJIB
 define('CUTLLY_API', 'fa1d93ba90dedd2ceb7d01e9bade271653373');                //WAJIB

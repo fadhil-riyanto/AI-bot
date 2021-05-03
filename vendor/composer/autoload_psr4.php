@@ -20,6 +20,8 @@ return array(
     'Psr\\Http\\Client\\' => array($vendorDir . '/psr/http-client/src'),
     'PhpOffice\\PhpSpreadsheet\\' => array($vendorDir . '/phpoffice/phpspreadsheet/src/PhpSpreadsheet'),
     'Pecee\\' => array($vendorDir . '/pecee/simple-router/src/Pecee'),
+    'ParagonIE\\EasyDB\\' => array($vendorDir . '/paragonie/easydb/src'),
+    'ParagonIE\\Corner\\' => array($vendorDir . '/paragonie/corner/src'),
     'MyCLabs\\Enum\\' => array($vendorDir . '/myclabs/php-enum/src'),
     'Matrix\\' => array($vendorDir . '/markbaker/matrix/classes/src'),
     'Identicon\\' => array($vendorDir . '/yzalis/identicon/src/Identicon'),

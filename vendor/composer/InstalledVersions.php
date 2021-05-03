@@ -29,7 +29,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '39dbbf683ea734e74cbc3383e1a7bbfdceee2130',
+    'reference' => 'c892a09696c2ba400656aca6cec0522332f07d6a',
     'name' => '__root__',
   ),
   'versions' => 
@@ -41,7 +41,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '39dbbf683ea734e74cbc3383e1a7bbfdceee2130',
+      'reference' => 'c892a09696c2ba400656aca6cec0522332f07d6a',
     ),
     'ammarfaizi2/brainly' => 
     array (
@@ -194,6 +194,24 @@ private static $installed = array (
       array (
       ),
       'reference' => '46cf3d8498b095bd33727b13fd5707263af99421',
+    ),
+    'paragonie/corner' => 
+    array (
+      'pretty_version' => 'v2.0.1',
+      'version' => '2.0.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'f222adc1da32547e20a3c5007f4a711b0cf633d0',
+    ),
+    'paragonie/easydb' => 
+    array (
+      'pretty_version' => 'v2.11.0',
+      'version' => '2.11.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '38cfac4bbd96960628ca3237ed98f3f344ffdd7b',
     ),
     'pecee/simple-router' => 
     array (

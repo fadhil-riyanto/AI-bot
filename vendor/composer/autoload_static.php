@@ -103,6 +103,8 @@ class ComposerStaticInit37458c04d77e08a184290ff46a23e733
             'Psr\\Http\\Client\\' => 16,
             'PhpOffice\\PhpSpreadsheet\\' => 25,
             'Pecee\\' => 6,
+            'ParagonIE\\EasyDB\\' => 17,
+            'ParagonIE\\Corner\\' => 17,
         ),
         'M' => 
         array (
@@ -192,6 +194,14 @@ class ComposerStaticInit37458c04d77e08a184290ff46a23e733
         'Pecee\\' => 
         array (
             0 => __DIR__ . '/..' . '/pecee/simple-router/src/Pecee',
+        ),
+        'ParagonIE\\EasyDB\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/paragonie/easydb/src',
+        ),
+        'ParagonIE\\Corner\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/paragonie/corner/src',
         ),
         'MyCLabs\\Enum\\' => 
         array (
