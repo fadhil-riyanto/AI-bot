@@ -23,7 +23,7 @@ if (deteksi_grup() == true) {
     // $telegram->sendMessage($content);
     $daftarcommandadmin = [
         '/pin', '/unpin',
-        '/set_welcome', '/test_welcome', '/set_chapcha_mode',
+        '/set_welcome', '/test_welcome', '/set_captcha_mode',
         '/set_goodbye', '/set_welcome_mode', '/set_goodbye_mode',
         '/set_rules', '/promote', '/demote', '/clear_rules',
         '/admin_mode', '/unpinall', '/mute', '/set_admin_title',
@@ -199,8 +199,8 @@ if ($kamu_admin == true) {
         require 'set_welcome.php';
     } elseif ($adanParseadmin[0] == '/test_welcome') {
         require 'test_welcome.php';
-    } elseif ($adanParseadmin[0] == '/set_chapcha_mode') {
-        require 'set_chapcha_mode.php';
+    } elseif ($adanParseadmin[0] == '/set_captcha_mode') {
+        require 'set_captcha_mode.php';
     } elseif ($adanParseadmin[0] == '/set_goodbye') {
         require 'set_goodbye.php';
     } elseif ($adanParseadmin[0] == '/set_welcome_mode') {

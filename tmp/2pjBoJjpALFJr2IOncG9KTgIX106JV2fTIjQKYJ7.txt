@@ -1,0 +1,8 @@
+Exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ', 0' at line 1 query: UPDATE grup_data SET `filters_hukuman` = ? LIMIT 0, 0 in C:\bot_telegram\vendor\thingengineer\mysqli-database-class\MysqliDb.php:2005
+Stack trace:
+#0 C:\bot_telegram\vendor\thingengineer\mysqli-database-class\MysqliDb.php(1593): MysqliDb->_prepareQuery()
+#1 C:\bot_telegram\vendor\thingengineer\mysqli-database-class\MysqliDb.php(912): MysqliDb->_buildQuery(Array, Array)
+#2 C:\bot_telegram\admin_command\filter_action.php(11): MysqliDb->update('grup_data', Array, Array)
+#3 C:\bot_telegram\admin_command\__init__.php(249): require('C:\\bot_telegram...')
+#4 C:\bot_telegram\hook.php(905): require('C:\\bot_telegram...')
+#5 {main}

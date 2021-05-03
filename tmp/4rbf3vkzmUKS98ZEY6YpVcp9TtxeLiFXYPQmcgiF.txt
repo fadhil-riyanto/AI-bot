@@ -1,0 +1,10 @@
+PDOException: SQLSTATE[42703]: Undefined column: 7 ERROR:  column "chapcha" of relation "grup_data" does not exist
+LINE 1: ... "welcome_text", "leaveuser_text", "rules_group", "chapcha",...
+                                                             ^ in C:\bot_telegram\vendor\paragonie\easydb\src\EasyDB.php:1005
+Stack trace:
+#0 C:\bot_telegram\vendor\paragonie\easydb\src\EasyDB.php(1005): PDOStatement->execute(Array)
+#1 C:\bot_telegram\vendor\paragonie\easydb\src\EasyDB.php(529): ParagonIE\EasyDB\EasyDB->safeQuery('INSERT INTO "gr...', Array, 4, true)
+#2 C:\bot_telegram\admin_command\init.php(23): ParagonIE\EasyDB\EasyDB->insert('grup_data', Array)
+#3 C:\bot_telegram\admin_command\__init__.php(241): require('C:\\bot_telegram...')
+#4 C:\bot_telegram\hook.php(905): require('C:\\bot_telegram...')
+#5 {main}

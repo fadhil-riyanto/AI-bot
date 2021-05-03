@@ -8,46 +8,45 @@ if ($azanHilangcommand == null) {
     $telegram->sendMessage($content);
 } else {
     //$q = mysqli_query($koneksi, "SELECT * FROM `grup_data` WHERE `gid` LIKE '$udahDiparse' ");
-    $db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
-    $db->where("gid", $chat_id);
-    $user = $db->getOne("grup_data");
-    if ($user['gid'] == null) {
-        $data = array(
+    // $db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
+    // $db->where("gid", $chat_id);
+    // $user = $db->getOne("grup_data");
+    $user = $db->row(
+        "SELECT * FROM grup_data WHERE gid = ?",
+        $chat_id
+    );
+    if ($user['rules_group'] == null) {
+        // $data = array(
+        //     'rules_group' => $udahDiparse
+        // );
+        // $id = $db->insert('grup_data', $data);
+        $id = $db->update('grup_data', [
             'rules_group' => $udahDiparse
-        );
-        $id = $db->insert('grup_data', $data);
+        ], [
+            'gid' => $chat_id
+        ]);
         if ($id) {
             $reply = 'aturan grup telah disimpan';
             $content = array('chat_id' => $chat_id, 'text' => $reply, 'parse_mode' => 'html', 'reply_to_message_id' => $message_id, 'disable_web_page_preview' => true);
             $telegram->sendMessage($content);
         } else {
-            $reply = 'Hai ' . $username . PHP_EOL . PHP_EOL . 'Silahkan copy error dibawah ini dan kirim ke  <a href="' . SUPPORT_GROUP . '">👥 Support Group</a>' . PHP_EOL . PHP_EOL .
-                $db->getLastError();
-            $option = array(
-                array($telegram->buildInlineKeyBoardButton("👥 Support Group", $url = SUPPORT_GROUP))
-            );
-            $keyb = $telegram->buildInlineKeyBoard($option);
-            $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_markup' => $keyb,  'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+            $reply = 'update error';
+            $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
             $telegram->sendMessage($content);
         }
     } else {
-        $data = array(
+        $id = $db->update('grup_data', [
             'rules_group' => $udahDiparse
-            // active = !active;
-        );
-        $db->where('gid', $chat_id);
-        if ($db->update('grup_data', $data)) {
+        ], [
+            'gid' => $chat_id
+        ]);
+        if ($id) {
             $reply = 'peraturan grup telah diubah';
             $content = array('chat_id' => $chat_id, 'text' => $reply, 'parse_mode' => 'html', 'reply_to_message_id' => $message_id, 'disable_web_page_preview' => true);
             $telegram->sendMessage($content);
         } else {
-            $reply = 'Hai ' . $username . PHP_EOL . PHP_EOL . 'Silahkan copy error dibawah ini dan kirim ke  <a href="' . SUPPORT_GROUP . '">👥 Support Group</a>' . PHP_EOL . PHP_EOL .
-                $db->getLastError();
-            $option = array(
-                array($telegram->buildInlineKeyBoardButton("👥 Support Group", $url = SUPPORT_GROUP))
-            );
-            $keyb = $telegram->buildInlineKeyBoard($option);
-            $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_markup' => $keyb,  'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+            $reply = 'update error';
+            $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
             $telegram->sendMessage($content);
         }
     }
