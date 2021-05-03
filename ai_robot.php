@@ -4,7 +4,7 @@ function robot_artificial_intelegence($teks)
 {
 	require_once __DIR__ . '/vendor/autoload.php';
 
-	global $koneksi;
+	global $db, $telegram, $chat_id, $message_id;
 	// define('DB_HOST', 'freedb.tech');											//WAJIB
 	// define('DB_USERNAME', 'freedbtech_ai_bot_fadhil_riyanto');					//WAJIB
 	// define('DB_PASSWORD', '789b697698hyufijbbiub*&^BO&it87tbn7to&^7896');		//WAJIB
@@ -38,17 +38,26 @@ function robot_artificial_intelegence($teks)
 	$teksTerfilter = hyphenize($stemmer_hasil);
 
 
-	$q = mysqli_query($koneksi, "SELECT * FROM `data_ai` WHERE `data_key_ai` SOUNDS LIKE _utf8 '$teksTerfilter' ");
-	$tes_jumlah_row = @mysqli_affected_rows($koneksi);
-	$dataAI = mysqli_fetch_assoc($q);
-	
+	// $q = mysqli_query($koneksi, "SELECT * FROM `data_ai` WHERE `data_key_ai` SOUNDS LIKE _utf8 '$teksTerfilter' ");
+	// $tes_jumlah_row = @mysqli_affected_rows($koneksi);
+	// $dataAI = mysqli_fetch_assoc($q);
+
+	$dataAI = $db->row(
+		"SELECT * FROM data_ai 
+				WHERE 
+					data_key_ai LIKE '%$teksTerfilter%'"
+	);
+
+	// $content = array('chat_id' => $chat_id, 'text' => json_encode($dataAI, JSON_PRETTY_PRINT), 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+	// $telegram->sendMessage($content);
+
 	// Jika ternyata ada kata kata jorok 
 	if ($teksTerfilter_kata_jorok == true) {
 		$arrayres = array('respon' => @hyphenize($dataAI['data_res_ai']), 'normalisasi_tulisan' => @$teksTerfilter, 'bad_word' => @$teksTerfilter_kata_jorok, 'stemmer' => $stemmer_hasil, 'affected' => $tes_jumlah_row);
 		return json_encode($arrayres);
-	} elseif ($tes_jumlah_row > 0) {
+	} elseif ($dataAI['data_res_ai'] !== null) {
 		// Jika ternyata kata ada di database (ditemukan)
-		$arrayres = array('respon' => @hyphenize($dataAI['data_res_ai']), 'normalisasi_tulisan' => @$teksTerfilter, 'bad_word' => @$teksTerfilter_kata_jorok, 'stemmer' => $stemmer_hasil, 'affected' => $tes_jumlah_row);
+		$arrayres = array('respon' => @hyphenize($dataAI['data_res_ai']), 'normalisasi_tulisan' => @$teksTerfilter, 'bad_word' => @$teksTerfilter_kata_jorok, 'stemmer' => $stemmer_hasil, 'affected' => "resp_ai_not_null");
 		return json_encode($arrayres);
 	} else {
 		//kalau ngga nemu alternatif pakai API
@@ -63,14 +72,22 @@ function robot_artificial_intelegence($teks)
 			$sim_decode = json_decode($data_simsimi);
 			$data_filetr_sim = hyphenize($sim_decode->msg);
 			// lalu dimasukkan ke sql, buat koleksi
-
-			mysqli_query($koneksi, "INSERT INTO `data_ai` (`data_key_ai`, `data_res_ai`) VALUES ('$teksTerfilter', '$data_filetr_sim')");
+			$db->insert('data_ai', [
+				'data_key_ai' => $teksTerfilter,
+				'data_res_ai' => $data_filetr_sim
+			]);
+			//mysqli_query($koneksi, "INSERT INTO `data_ai` (`data_key_ai`, `data_res_ai`) VALUES ('$teksTerfilter', '$data_filetr_sim')");
 			$arrayres = array('respon' => @$data_filetr_sim, 'normalisasi_tulisan' => @$teksTerfilter, 'bad_word' => @$teksTerfilter_kata_jorok, 'stemmer' => $stemmer_hasil, 'affected' => 'simsimi');
 			return json_encode($arrayres);
 			exit;
 		} else {
 			//kalau ternyata belum kena limit, maka langsung aja insert
-			mysqli_query($koneksi, "INSERT INTO `data_ai` (`data_key_ai`, `data_res_ai`) VALUES ('$teksTerfilter', '$data_filetr_sim')");
+			//mysqli_query($koneksi, "INSERT INTO `data_ai` (`data_key_ai`, `data_res_ai`) VALUES ('$teksTerfilter', '$data_filetr_sim')");
+			$db->insert('data_ai', [
+				'data_key_ai' => $teksTerfilter,
+				'data_res_ai' => $data_filetr_sim
+			]);
+
 			$arrayres = array('respon' => @$data_filetr_sim, 'normalisasi_tulisan' => @$teksTerfilter, 'bad_word' => @$teksTerfilter_kata_jorok, 'stemmer' => $stemmer_hasil, 'affected' => 'simsimi');
 			return json_encode($arrayres);
 			exit;
