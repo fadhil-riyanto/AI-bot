@@ -19,7 +19,10 @@ try {
 	$id_bot_sendiri = ID_BOT;
 	echo 'Ini server 1 bot telegram' . PHP_EOL . '<hr>';
 
-	$db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
+	//mysql deprecated
+	// $db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
+
+
 
 	// Ouput text to user based on test
 	if (_is_curl_installed()) {
@@ -60,21 +63,33 @@ try {
 
 
 	//debug mode
-	// if (detect_grup() == null) {
-	// 	if ($userID == $userid_pemilik || $userID == 1223173857) {
-	// 	} else {
-	// 		$reply = "Maaf, bot ini sedang dalam perbaikan kode dan pengembangan sistem lebih lanjut oleh " . PUMBUAT_BOT . PHP_EOL .
-	// 			"Coba lagush heorkui nanti";
-	// 		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-	// 		$telegram->sendMessage($content);
-	// 		exit;
-	// 	}
-	// } else {
-	// 	if ($userID == $userid_pemilik || $userID == 1223173857) {
-	// 	} else {
-	// 		die();
-	// 	}
-	// }
+	if (detect_grup() == null) {
+		if ($userID == $userid_pemilik || $userID == 1223173857) {
+		} else {
+			$reply = "Maaf, bot ini sedang dalam proses migrating database mysql ke postgresql oleh " . PUMBUAT_BOT . PHP_EOL .
+				"Coba lagi nanti";
+			$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+			$telegram->sendMessage($content);
+			exit;
+		}
+	} else {
+		if ($userID == $userid_pemilik || $userID == 1223173857) {
+		} else {
+			die();
+		}
+	}
+
+	try {
+		//code...
+		$db = \ParagonIE\EasyDB\Factory::fromArray([
+			'pgsql:host=' . PG_DB_HOST . ';dbname=' . PG_DB_NAME,
+			PG_DB_USERNAME,
+			PG_DB_PASSWORD
+		]);
+	} catch (Exception $e) {
+		$db_error_koneksi = true;
+	}
+
 
 
 	$hilangAzan = str_replace('/azan ', '', $text, $hit);
@@ -150,22 +165,26 @@ try {
 
 
 	if (isset($getreplyianid)) {
-		$userafk = $db->get("afk_user_data");
-		foreach ($userafk as $afuuser) {
-			if ($getreplyianid == $afuuser['userid']) {
-				if ($getreplyianid == $userID) {
-					if (substr($text_plain_nokarakter, 0, 1) == '/') {
+		if ($db_error_koneksi) {
+		} else {
+			$userafk = $db->run("SELECT * FROM afk_user_data");
+			foreach ($userafk as $afuuser) {
+				if ($getreplyianid == $afuuser['userid']) {
+					if ($getreplyianid == $userID) {
+						if (substr($text_plain_nokarakter, 0, 1) == '/') {
+						} else {
+							exit;
+						}
 					} else {
-						exit;
 					}
-				} else {
+					$reply = "Maaf ," . $afkforstname . ' ' . $afklastname . ' sedang AFK sejak ' . $afuuser['time_afk'] . PHP_EOL .
+						'Alasan : ' . $afuuser['alasan'];
+					$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+					$telegram->sendMessage($content);
 				}
-				$reply = "Maaf ," . $afkforstname . ' ' . $afklastname . ' sedang AFK sejak ' . $afuuser['time_afk'] . PHP_EOL .
-					'Alasan : ' . $afuuser['alasan'];
-				$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-				$telegram->sendMessage($content);
 			}
 		}
+
 
 		// $db->where("userid", $getreplyianid);
 		// $user = $db->getOne("afk_user_data");
@@ -190,7 +209,7 @@ try {
 				$username_Yang_didapaktkanAFK[] = substr($text_plain_nokarakter, $getEntity['offset'] + 1, $getEntity['length']);
 			}
 		}
-		$userafkmention = $db->get("afk_user_data");
+		//$userafkmention = $db->get("afk_user_data");
 		foreach ($username_Yang_didapaktkanAFK as $uafkdata) {
 			// foreach ($userafkmention as $datamention) {
 			// 	if ($datamention['username'] == $uafkdata) {
@@ -200,9 +219,15 @@ try {
 			// 		$telegram->sendMessage($content);
 			// 	}
 			// }
+			$getDataafku = $db->row(
+				"SELECT * FROM afk_user_data WHERE username = ?",
+				$uafkdata
+			);
+			// $content = array('chat_id' => $chat_id, 'text' => json_encode($getDataafku, JSON_PRETTY_PRINT), 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+			// $telegram->sendMessage($content);
 
-			$db->where("username", $uafkdata);
-			$getDataafku = $db->getOne("afk_user_data");
+			// $db->where("username", $uafkdata);
+			// $getDataafku = $db->getOne("afk_user_data");
 			if ($getDataafku['username'] != null) {
 				$reply = "Maaf ," . $getDataafku['username'] . ' sedang AFK sejak ' . $getDataafku['time_afk'] . PHP_EOL .
 					'Alasan : ' . $getDataafku['alasan'];
@@ -513,18 +538,33 @@ try {
 		} else {
 
 			//track user
-			$db->where("userid", $userID);
-			$user = $db->getOne("members");
-			if ($user['userid'] == null) {
-				//insert
-				$data = array(
-					"userid" => $userID,
-					"username" =>  $usernameBelumdiparse,
-					"first_name" => $namaPertama,
-					"lastname" => $namaTerakhir
+			// $db->where("userid", $userID);
+			// $user = $db->getOne("members");
+
+			if ($db_error_koneksi != true) {
+				$user = $db->row(
+					"SELECT * FROM members WHERE userid = ?",
+					$userID
 				);
-				$id = $db->insert('members', $data);
-			} else {
+				if ($user['userid'] == null) {
+					//insert
+					// $data = array(
+					// 	"userid" => $userID,
+					// 	"username" =>  $usernameBelumdiparse,
+					// 	"first_name" => $namaPertama,
+					// 	"lastname" => $namaTerakhir
+					// );
+					// $id = $db->insert('members', $data);
+
+					//postgresql
+					$db->insert('members', [
+						"userid" => $userID,
+						"username" =>  $usernameBelumdiparse,
+						"first_name" => $namaPertama,
+						"lastname" => $namaTerakhir
+					]);
+				} else {
+				}
 			}
 			if (isset($adanParse[1])) {
 				$explodeparse_pastebin = explode('_', $adanParse[1]);
@@ -887,14 +927,15 @@ try {
 	if (is_manusia(strtolower($text_plain_nokarakter)) === true) {
 	} else {
 		$datass = is_manusia(strtolower($text_plain_nokarakter));
-		$db->where("data_key_ai", $datass);
-		$user = $db->getOne("data_ai");
+		$user = $db->row(
+			"SELECT * FROM data_ai WHERE data_key_ai = ?",
+			$datass
+		);
 		if ($user['data_key_ai'] == null) {
-			$data = array(
+			$db->insert('data_ai', [
 				"data_key_ai" => $datass,
 				"data_res_ai" => "hmhm"
-			);
-			$id = $db->insert('data_ai', $data);
+			]);
 		}
 	}
 	// ENCRYPT TOOLS DIAKHIRI
@@ -905,47 +946,9 @@ try {
 
 	$detectReply = detect_apakah_pesan_reply_ke_bot();
 	if ($detectReply == true) {
-		$koneksi = @mysqli_connect(
-			DB_HOST,
-			DB_USERNAME,
-			DB_PASSWORD,
-			DB_NAME
-		);
-
-		$ai_chatting = robot_artificial_intelegence($text);
-		$ai_chatting_decode = json_decode($ai_chatting);
-		if ($ai_chatting_decode->bad_word == true) {
-			$reply = 'Aku ogah jawab ah, ada kata kata yg tidak sopan soalnya';
-			$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-			$telegram->sendMessage($content);
-			mysqli_close($koneksi);
-			exit;
-		}
-
-		if ($koneksi == 1) {
-			if ($ai_chatting_decode->affected > 0) {
-				$reply = $ai_chatting_decode->respon . PHP_EOL;
-				$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-				$telegram->sendMessage($content);
-				mysqli_close($koneksi);
-				exit;
-				//}
-			} elseif ($ai_chatting_decode->affected === 'simsimi') {
-
-				$reply = $ai_chatting_decode->respon . PHP_EOL;
-				//mysqli_query($koneksi, "INSERT INTO `data_ai` (`data_key_ai`, `data_res_ai`) VALUES ('$teksTerfilter', 'hmhm')");
-				$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-				$telegram->sendMessage($content);
-			}
-		} elseif ($koneksi == 0) {
+		if ($db_error_koneksi == true) {
 			$reply = 'Maaf, saat ini kamu tidak bisa membalas pesan kamu dikarnakan database sedang error. Jadi kami hanya bisa menerima command saja untuk sementara waktu ini. Kamu bisa melaporkan ke ' . PUMBUAT_BOT . ' selaku pembuatnya';
 			$option = array(
-				//First row
-				// array($telegram->buildInlineKeyBoardButton("Button 1", $url = "http://link1.com"), $telegram->buildInlineKeyBoardButton("Button 2", $url = "http://link2.com")),
-				// //Second row 
-				// array($telegram->buildInlineKeyBoardButton("Button 3", $url = "http://link3.com"), $telegram->buildInlineKeyBoardButton("Button 4", $url = "http://link4.com"), $telegram->buildInlineKeyBoardButton("Button 5", $url = "http://link5.com")),
-				// //Third row
-
 				array($telegram->buildInlineKeyBoardButton("👥 Support Group", $url = 'https://t.me/tgdev_php_group'))
 			);
 			$keyb = $telegram->buildInlineKeyBoard($option);
@@ -953,8 +956,40 @@ try {
 
 			$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_markup' => $keyb,  'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
 			$telegram->sendMessage($content);
+		} elseif ($db_error_koneksi != true) {
+			$ai_chatting = robot_artificial_intelegence($text);
+
+			$ai_chatting_decode = json_decode($ai_chatting);
+			if ($ai_chatting_decode->bad_word == true) {
+				$reply = 'Aku ogah jawab ah, ada kata kata yg tidak sopan soalnya';
+				$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+				$telegram->sendMessage($content);
+				//mysqli_close($koneksi);
+				exit;
+			}
+
+			if ($db_error_koneksi == false) {
+				if ($ai_chatting_decode->affected == "resp_ai_not_null") {
+					$reply = $ai_chatting_decode->respon . PHP_EOL;
+					$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+					$telegram->sendMessage($content);
+					//mysqli_close($koneksi);
+					exit;
+					//}
+				} elseif ($ai_chatting_decode->affected === 'simsimi') {
+
+					$reply = $ai_chatting_decode->respon . PHP_EOL;
+					//mysqli_query($koneksi, "INSERT INTO `data_ai` (`data_key_ai`, `data_res_ai`) VALUES ('$teksTerfilter', 'hmhm')");
+					$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+					$telegram->sendMessage($content);
+				}
+			}
 		}
-		mysqli_close($koneksi);
+
+
+
+
+		//mysqli_close($koneksi);
 	} else {
 	}
 	// TELEGRAM KELAS
