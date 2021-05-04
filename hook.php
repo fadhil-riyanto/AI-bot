@@ -90,9 +90,6 @@ try {
 		$alasan_db_error = $e;
 		$db_error_koneksi = true;
 	}
-
-
-
 	$hilangAzan = str_replace('/azan ', '', $text, $hit);
 	if ($hit == 0) {
 		$hilangAzan = str_replace('/azan' . USERNAME_BOT . ' ', '', $text);

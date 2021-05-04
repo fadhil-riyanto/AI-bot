@@ -14,6 +14,17 @@ if (isset($memberanyar)) {
     if ($usernameBelumdiparse == ID_BOT) {
         exit;
     }
+    function generateRandomStringgg($length = 20)
+    {
+        $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        $charactersLength = strlen($characters);
+        $randomString = '';
+        for ($i = 0; $i < $length; $i++) {
+            $randomString .= $characters[rand(0, $charactersLength - 1)];
+        }
+        return $randomString;
+    }
+    $randommmmmmmmm = generateRandomStringgg();
     // $db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
     // $db->where("gid", $chat_id);
     // $user = $db->getOne("grup_data");
@@ -31,7 +42,7 @@ if (isset($memberanyar)) {
             $phraseBuilder = new PhraseBuilder(4, '0123456789');
             $builder = new CaptchaBuilder(null, $phraseBuilder);
             $builder->build($width = 300, $height = 80, $font = null);
-            $builder->save(__DIR__ . '/../tmp/out.jpg');
+            $builder->save(__DIR__ . '/../tmp/' . $randommmmmmmmm . '.jpg');
 
             function random_angka_digit($digits)
             {
@@ -106,7 +117,7 @@ if (isset($memberanyar)) {
                 'reply_to_message_id' => $message_id,
                 'reply_markup' => $keyb,
                 'caption' => "Klik angka yang sama dengan gambar, anda memiliki kesempatan 3 kali!",
-                'photo'     => new CURLFile(realpath('tmp/out.jpg'))
+                'photo'     => new CURLFile(realpath('tmp/' . $randommmmmmmmm . '.jpg'))
             );
 
             $ch = curl_init();
