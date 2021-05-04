@@ -46,9 +46,12 @@ if (deteksi_grupP() == true) {
         $jsonfile = json_encode($data, JSON_PRETTY_PRINT);
         $anggota = file_put_contents($file, $jsonfile);
 
-        $db->where('userid', $userID);
-        $user = $db->getOne("afk_user_data");
+        // $db->where('userid', $userID);
+        // $user = $db->getOne("afk_user_data");
 
-        $db->delete('afk_user_data');
+        // $db->delete('afk_user_data');
+        $db->delete('afk_user_data', [
+            'userid' => $userID
+        ]);
     }
 }

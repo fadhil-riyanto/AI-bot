@@ -14,11 +14,15 @@ if (isset($memberanyar)) {
     if ($usernameBelumdiparse == ID_BOT) {
         exit;
     }
-    $db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
-    $db->where("gid", $chat_id);
-    $user = $db->getOne("grup_data");
+    // $db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
+    // $db->where("gid", $chat_id);
+    // $user = $db->getOne("grup_data");
+    $user = $db->row(
+        "SELECT * FROM grup_data WHERE gid = ?",
+        $chat_id
+    );
     if ($user['set_welcome_mode'] == 'true') {
-        if ($user['chapcha'] == 'true') {
+        if ($user['captcha'] == 'true') {
 
             $permissionchat = '{"can_send_messages": false}';
             $restik = array('chat_id' => $chat_id, 'user_id' => $userID, 'permissions' => $permissionchat, 'until_date' => time() + 20);
@@ -165,7 +169,7 @@ if (isset($memberanyar)) {
                 $jsonfile = json_encode($data, JSON_PRETTY_PRINT);
                 $anggota = file_put_contents($file, $jsonfile);
             }
-        } elseif ($user['chapcha'] == 'false') {
+        } elseif ($user['captcha'] == 'false') {
             if ($user['welcome_text'] == null) {
                 $reply = 'Halo, apa kabar mu?';
                 $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);

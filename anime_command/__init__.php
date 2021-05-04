@@ -65,7 +65,7 @@ if ($animecek == true) {
     // $content = array('chat_id' => $chat_id, 'photo' => $imganimedec->url, 'reply_to_message_id' => $message_id, 'disable_web_page_preview' => true);
     // $telegram->sendPhoto($content);
 
-    $reply = 'maaf, puasa command ini dimatikan. hehe';
+    $reply = 'maaf, bulan ramadhan, command khusus anime dimatikan';
     $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
     $editmsg = $telegram->sendMessage($content);
     exit;
