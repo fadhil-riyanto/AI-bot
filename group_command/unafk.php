@@ -5,15 +5,19 @@ if ($gc_command_verify == null) {
     $telegram->sendMessage($content);
     exit;
 }
-$db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
-$db->where('userid', $userID);
-$user = $db->getOne("afk_user_data");
+$user = $db->row(
+    "SELECT * FROM afk_user_data WHERE userid = ?",
+    $userID
+);
 if ($user['userid'] == null) {
     $reply = "ups, kamu kan tidak afk...";
     $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
     $telegram->sendMessage($content);
 } else {
-    if ($db->delete('afk_user_data')) {
+    $us = $db->delete('afk_user_data', [
+        'userid' => $userID
+    ]);
+    if ($us) {
 
         $reply = "anda sudah tidak afk!";
         $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
