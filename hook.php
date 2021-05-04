@@ -277,8 +277,12 @@ try {
 	}
 
 	if ($deteksi_filter == true) {
-		$db->where("gid", $chat_id);
-		$user = $db->getOne("grup_data");
+		// $db->where("gid", $chat_id);
+		// $user = $db->getOne("grup_data");
+		$user = $db->row(
+			"SELECT * FROM grup_data WHERE gid = ?",
+			$chat_id
+		);
 
 		if ($user['act_filters_detect'] == true) {
 			if ($user['filters_hukuman'] == 'delete') {
