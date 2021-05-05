@@ -1,0 +1,3 @@
+ParseError: syntax error, unexpected token "exit" in C:\bot_telegram\anime_command\__init__.php:71
+Stack trace:
+#0 {main}
