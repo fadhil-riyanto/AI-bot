@@ -2,10 +2,10 @@
 
 define('DB_TYPE', 'mysql');
 //database kredensial
-define('DB_HOST', 'bmzsphvimaeet2yigbcf-mysql.services.clever-cloud.com');                                            //WAJIB
-define('DB_USERNAME', 'uzlhmrkdia2xqrlg');                    //WAJIB
-define('DB_PASSWORD', '1DAWuTDJVX4VWCrkEl3s');        //WAJIB
-define('DB_NAME', 'bmzsphvimaeet2yigbcf');                        //WAJIB
+define('DB_HOST', 'bnschltscvfa0pnfgfry-mysql.services.clever-cloud.com');                                            //WAJIB
+define('DB_USERNAME', 'uzime0etwcl0n6iv');                    //WAJIB
+define('DB_PASSWORD', 'tw9OvwYtLj18qB5bTc5O');        //WAJIB
+define('DB_NAME', 'bnschltscvfa0pnfgfry');                        //WAJIB
 
 //UTILS
 define('BOT_VERSION', 'v10.0.2-alpha'); //informasi versi bot
