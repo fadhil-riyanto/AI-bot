@@ -136,7 +136,7 @@ function convertnem($size)
             <li class="nav-item dropdown no-arrow">
               <?php
               if ($isLogin == true) {
-                echo '<a class="nav-link" href="/delete_auth.php" id="userDropdown" role="button">
+                echo '<a class="nav-link" href="delete_auth.php" id="userDropdown" role="button">
                 logout
 
               </a>';
