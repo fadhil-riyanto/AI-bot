@@ -24,9 +24,9 @@ if (isset($memberanyar)) {
         //     'user_id'=>$memberanyarid
         // );
         // $telegram->kickChatMember();
-        // $permissionchat = '{"can_send_messages": false}';
-        // $restik = array('chat_id' => $chat_id, 'user_id' => $memberanyarid, 'permissions' => $permissionchat, 'until_date' => time() + 20);
-        // $telegram->restrictChatMember($restik);
+        $permissionchat = '{"can_send_messages": false}';
+        $restik = array('chat_id' => $chat_id, 'user_id' => $memberanyarid, 'permissions' => $permissionchat, 'until_date' => time() + 20);
+        $telegram->restrictChatMember($restik);
 
         $reply = 'Terdeteksi spam id #' . $memberanyarid . PHP_EOL .
             'Aksi : mute selamanya' . PHP_EOL . PHP_EOL .
