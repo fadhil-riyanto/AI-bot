@@ -1,0 +1,3 @@
+ParseError: syntax error, unexpected end of file in C:\bot_telegram\include\hook_function_core.php:179
+Stack trace:
+#0 {main}

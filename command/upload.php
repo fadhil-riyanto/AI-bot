@@ -57,7 +57,7 @@ if ($usernameBelumdiparse != null) { //Jika user ada usernamenya
 
 $post_fields = array(
     'key'   => IMGBB_API,
-    'name' => $imgname,
+    'name' => 'by-fadhil-riyanto-bot',
     'image'     => new CURLFile(realpath('tmp/pict_uploader.png'))
 );
 

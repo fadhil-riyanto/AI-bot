@@ -11,6 +11,30 @@ $memberanyarkedua = $result['message']['new_chat_member']['last_name'];
 $memberanyarid = $result['message']['new_chat_member']['id'];
 //$memberanyar = true;
 if (isset($memberanyar)) {
+    //combot anti spam
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, "https://api.cas.chat/check?user_id=" . $memberanyarid);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    $output = curl_exec($ch);
+    curl_close($ch);
+    $cas_output = json_decode($output, true);
+    if ($cas_output['ok'] == true) {
+        // $details = array(
+        //     'chat_id'=>$chat_id,
+        //     'user_id'=>$memberanyarid
+        // );
+        // $telegram->kickChatMember();
+        // $permissionchat = '{"can_send_messages": false}';
+        // $restik = array('chat_id' => $chat_id, 'user_id' => $memberanyarid, 'permissions' => $permissionchat, 'until_date' => time() + 20);
+        // $telegram->restrictChatMember($restik);
+
+        $reply = 'Terdeteksi spam id #' . $memberanyarid . PHP_EOL .
+            'Aksi : mute selamanya' . PHP_EOL . PHP_EOL .
+            'alasan : ' . $cas_output['result']['messages'][0];
+        $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+        $telegram->sendMessage($content);
+    }
+
     if ($usernameBelumdiparse == ID_BOT) {
         exit;
     }
