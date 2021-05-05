@@ -63,33 +63,23 @@ try {
 
 
 	//debug mode
-	// if (detect_grup() == null) {
-	// 	if ($userID == $userid_pemilik || $userID == 1223173857) {
-	// 	} else {
-	// 		$reply = "Maaf, bot ini sedang dalam proses migrating database mysql ke postgresql oleh " . PUMBUAT_BOT . PHP_EOL .
-	// 			"Coba lagi nanti";
-	// 		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-	// 		$telegram->sendMessage($content);
-	// 		exit;
-	// 	}
-	// } else {
-	// 	if ($userID == $userid_pemilik || $userID == 1223173857) {
-	// 	} else {
-	// 		die();
-	// 	}
-	// }
-
-	try {
-		//code...
-		$db = \ParagonIE\EasyDB\Factory::fromArray([
-			'pgsql:host=' . PG_DB_HOST . ';dbname=' . PG_DB_NAME,
-			PG_DB_USERNAME,
-			PG_DB_PASSWORD
-		]);
-	} catch (Exception $e) {
-		$alasan_db_error = $e;
-		$db_error_koneksi = true;
+	if (detect_grup() == null) {
+		if ($userID == $userid_pemilik || $userID == 1223173857) {
+		} else {
+			$reply = "Maaf, bot ini sedang dalam proses perombakan kode SQL query dari prosedural ke PDO dan perbaikan bug di PHP 8.0.3 NTS " . PUMBUAT_BOT . PHP_EOL .
+				"Coba lagi nanti";
+			$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+			$telegram->sendMessage($content);
+			exit;
+		}
+	} else {
+		if ($userID == $userid_pemilik || $userID == 1223173857) {
+		} else {
+			die();
+		}
 	}
+
+	require __DIR__ . '/include/conn_db.php';
 	$hilangAzan = str_replace('/azan ', '', $text, $hit);
 	if ($hit == 0) {
 		$hilangAzan = str_replace('/azan' . USERNAME_BOT . ' ', '', $text);

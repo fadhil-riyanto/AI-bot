@@ -1,0 +1,49 @@
+============[Date]============
+[ 2021-05-05 11:48:24  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804523483
+ref.my_chat_member.chat.id= 388685359
+ref.my_chat_member.chat.first_name= Intro
+ref.my_chat_member.chat.last_name= Vert
+ref.my_chat_member.chat.username= mine_jas290
+ref.my_chat_member.chat.type= private
+ref.my_chat_member.from.id= 388685359
+ref.my_chat_member.from.is_bot= false
+ref.my_chat_member.from.first_name= Intro
+ref.my_chat_member.from.last_name= Vert
+ref.my_chat_member.from.username= mine_jas290
+ref.my_chat_member.date= 1620190104
+ref.my_chat_member.old_chat_member.user.id= 1489990155
+ref.my_chat_member.old_chat_member.user.is_bot= true
+ref.my_chat_member.old_chat_member.user.first_name= ƒα∂нιℓ яιуαηтσ
+ref.my_chat_member.old_chat_member.user.username= Fadhil_riyanto_bot
+ref.my_chat_member.old_chat_member.status= member
+ref.my_chat_member.new_chat_member.user.id= 1489990155
+ref.my_chat_member.new_chat_member.user.is_bot= true
+ref.my_chat_member.new_chat_member.user.first_name= ƒα∂нιℓ яιуαηтσ
+ref.my_chat_member.new_chat_member.user.username= Fadhil_riyanto_bot
+ref.my_chat_member.new_chat_member.status= kicked
+ref.my_chat_member.new_chat_member.until_date= 0
+
+
+[ref]
+ref.chat_id= 
+ref.text= Maaf, bot ini sedang dalam proses perombakan kode SQL query dari prosedural ke PDO dan perbaikan bug di PHP 8.0.3 NTS @fadhil_riyanto
+Coba lagi nanti
+ref.reply_to_message_id= 
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\hook.php(72): Telegram->sendMessage(Array)
+#4 {main}
+
