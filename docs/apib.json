@@ -7,7 +7,9 @@
                 "metode": "GET",
                 "param": "apikey",
                 "linkapi": "berita.php",
-                "query_param": {}
+                "query_param": {
+                    "apikey": "API_KEY"
+                }
             },
             {
                 "namaapi": "Brainly",
