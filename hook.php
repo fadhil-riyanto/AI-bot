@@ -4,8 +4,6 @@ $debugwaktu_awal = microtime(true);
 require __DIR__ . '/pengaturan/env.php';
 require __DIR__ . '/include/hook_function_core.php';
 require_once __DIR__ . '/vendor/autoload.php';
-require_once __DIR__ . '/ai_robot.php';
-require __DIR__ . '/include/blacklisted_user.php';
 
 ini_set('max_execution_time', MAX_EXECUTE_SCRIPT);
 error_reporting(1);
@@ -84,6 +82,8 @@ try {
 	if ($hit == 0) {
 		$hilangAzan = str_replace('/azan' . USERNAME_BOT . ' ', '', $text);
 	}
+	require_once __DIR__ . '/ai_robot.php';
+	require __DIR__ . '/include/blacklisted_user.php';
 
 
 
