@@ -69,9 +69,9 @@ function convertnem($size)
   <meta name="author" content="">
   <link href="img/logo/logo.png" rel="icon">
   <title><?= $htmltitle; ?></title>
-  <link href="docs/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="docs/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-  <link href="docs/css/ruang-admin.min.css" rel="stylesheet">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="css/ruang-admin.min.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
@@ -384,12 +384,12 @@ function convertnem($size)
     // END CLOCK SCRIPT
   </script>
 
-  <script src="docs/vendor/jquery/jquery.min.js"></script>
-  <script src="docs/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="docs/vendor/jquery-easing/jquery.easing.min.js"></script>
-  <script src="docs/js/ruang-admin.min.js"></script>
-  <script src="docs/vendor/chart.js/Chart.min.js"></script>
-  <script src="docs/js/demo/chart-area-demo.js"></script>
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="js/ruang-admin.min.js"></script>
+  <script src="vendor/chart.js/Chart.min.js"></script>
+  <script src="js/demo/chart-area-demo.js"></script>
 </body>
 
 </html>
