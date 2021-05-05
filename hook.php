@@ -1,64 +1,65 @@
 <?php
+$debugwaktu_awal = microtime(true);
+
+require __DIR__ . '/pengaturan/env.php';
+require __DIR__ . '/include/hook_function_core.php';
+require_once __DIR__ . '/vendor/autoload.php';
+require_once __DIR__ . '/ai_robot.php';
+require __DIR__ . '/include/blacklisted_user.php';
+
+ini_set('max_execution_time', MAX_EXECUTE_SCRIPT);
+error_reporting(1);
+
+$userid_pemilik = USER_ID_TG_ME;
+$telegramAPIs   = TG_HTTP_API;
+$api_key_cuttly = CUTLLY_API;
+$id_bot_sendiri = ID_BOT;
+echo 'Ini server 1 bot telegram' . PHP_EOL . '<hr>';
+
+//mysql deprecated
+// $db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
+
+
+
+// Ouput text to user based on test
+if (_is_curl_installed()) {
+	echo "Bagus, cURL sudah <span style=\"color:blue\">TERPASANG</span> diserver ini" . PHP_EOL;
+} else {
+	echo "cURL belum <span style=\"color:red\">TERPASANG</span> diserver ini" . PHP_EOL;
+}
+echo '<br>Memory usage : ' . memory_get_usage();
+
+//include('Telegram.php');
+$host_server   = SERVER_ALAMAT_addr();
+//$host_server   = 'http://server-data.000webhostapp.com';
+
+date_default_timezone_set(TIME_ZONE);
+$telegram = new Telegram($telegramAPIs);
+
+
+
+
+//use http!!!!
+//akhir wajib diisi
+$text_mentah = json_decode(file_get_contents('php://input'), true);
+$text = htmlspecialchars(strtolower($telegram->Text()));
+$text_plain = htmlspecialchars($telegram->Text());
+$text_plain_nokarakter = $telegram->Text();
+$chat_id = $telegram->ChatID();
+$userID = $telegram->UserID();
+$message_id = $telegram->MessageID();
+$usernameBelumdiparse = $telegram->Username();
+$namaPertama = $telegram->FirstName();
+$namaTerakhir = $telegram->LastName();
+
+$adanParse = explode(' ', $text);
+$adanParse_lowercase = explode(' ', strtolower($text_plain_nokarakter));
+$adanParse_plain = explode(' ', $text_plain);
+$adanParse_plain_nokarakter = explode(' ', $text_plain_nokarakter);
+$apakahuserchattingviaPM = detect_grup();
 try {
 
-	$debugwaktu_awal = microtime(true);
 
-	require __DIR__ . '/pengaturan/env.php';
-	require __DIR__ . '/include/hook_function_core.php';
-	require_once __DIR__ . '/vendor/autoload.php';
-	require_once __DIR__ . '/ai_robot.php';
-	require __DIR__ . '/include/blacklisted_user.php';
-
-	ini_set('max_execution_time', MAX_EXECUTE_SCRIPT);
-	error_reporting(1);
-
-	$userid_pemilik = USER_ID_TG_ME;
-	$telegramAPIs   = TG_HTTP_API;
-	$api_key_cuttly = CUTLLY_API;
-	$id_bot_sendiri = ID_BOT;
-	echo 'Ini server 1 bot telegram' . PHP_EOL . '<hr>';
-
-	//mysql deprecated
-	// $db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
-
-
-
-	// Ouput text to user based on test
-	if (_is_curl_installed()) {
-		echo "Bagus, cURL sudah <span style=\"color:blue\">TERPASANG</span> diserver ini" . PHP_EOL;
-	} else {
-		echo "cURL belum <span style=\"color:red\">TERPASANG</span> diserver ini" . PHP_EOL;
-	}
-	echo '<br>Memory usage : ' . memory_get_usage();
-
-	//include('Telegram.php');
-	$host_server   = SERVER_ALAMAT_addr();
-	//$host_server   = 'http://server-data.000webhostapp.com';
-
-	date_default_timezone_set(TIME_ZONE);
-	$telegram = new Telegram($telegramAPIs);
-
-
-
-
-	//use http!!!!
-	//akhir wajib diisi
-	$text_mentah = json_decode(file_get_contents('php://input'), true);
-	$text = htmlspecialchars(strtolower($telegram->Text()));
-	$text_plain = htmlspecialchars($telegram->Text());
-	$text_plain_nokarakter = $telegram->Text();
-	$chat_id = $telegram->ChatID();
-	$userID = $telegram->UserID();
-	$message_id = $telegram->MessageID();
-	$usernameBelumdiparse = $telegram->Username();
-	$namaPertama = $telegram->FirstName();
-	$namaTerakhir = $telegram->LastName();
-
-	$adanParse = explode(' ', $text);
-	$adanParse_lowercase = explode(' ', strtolower($text_plain_nokarakter));
-	$adanParse_plain = explode(' ', $text_plain);
-	$adanParse_plain_nokarakter = explode(' ', $text_plain_nokarakter);
-	$apakahuserchattingviaPM = detect_grup();
 
 
 	//debug mode
