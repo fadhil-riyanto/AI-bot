@@ -1,0 +1,3 @@
+ParseError: syntax error, unexpected token "}" in C:\bot_telegram\command\my_note.php:24
+Stack trace:
+#0 {main}

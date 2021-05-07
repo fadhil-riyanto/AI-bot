@@ -1,60 +1,24 @@
-theme yang disupport di photooxy
-short command : /photooxy untuk melihat semua theme yang ada
+ini adalah list tool tool yang bot ini miliki
 
-/shadow
-/flower_cup
-/romantic_messages
-/burn_paper
-/funny_cup
-/hand_love
-/grass
-/red_heart
-/coffe
-/wood_heart
-/wooden_board
-/3d_summer
-/wolf_metal
-/nature_3d
-/underwater
-/golden_rose
-/summer_nature
-/leaf
-/fall_leaves
-/neon
-/rainbow
-/army_camouflage_fabric
-/3d_glowing
-/vintage
-/candy_text
-/white_cube
-/green_leaves
-/avatar_gradient
-/glow_rainbow
-/stars
-/fur
-/flaming
-/chrome
-/embroidery
-/3d_rainbow_background
-/metalic
-/striking
-/watermelon
-/web_matrix
-/multi_material
-/butter_fly
-/wooden_3d
-/modern_metal
-/harry_poter
-/3bit
-/coffe_cup
-/luxury_royal
-/scary
-/woodblock
-/smoke
-/sweet_candy
-/silk
-/royal
-/orchids_flower
-/flower
-/party_neon
-/dark_metal
+- /wiki: dapatkan isi wikipedia
+- /azan: cek jadwal azan.
+- /tanggal: lupa tanggal? tenang...
+- /tr: ini bisa untuk translate
+- /tulis: digunakan untuk menulis buku
+- /waktu: cek jam yuk
+- /berita: agar update yuk baca berita
+- /brainly: cari jawaban di brainly
+- /capture: untuk screenshot halaman web
+- /corona: info corona terkini
+- /corona_provinsi: info corona di tiap tiap provinsi
+- /cuaca: cek cuaca
+- /gempa: cek gempa
+- /q: buat quotes kamu jadi gambar!
+- /quran:  kitab quran sekarang ada di telegram (aliases /qs)
+- /short: pendekkan link biar rapi
+- /xlsx_to_json: convert xlsx excel ke format json
+- /resi: cek resi
+- /upload: reply gambarmu untuk diupload ke web
+- /ts: convert image ke stiker
+- /tf: convert stiker ke image
+- /reverse: reply dengan gambar untuk mencari data di google, bing

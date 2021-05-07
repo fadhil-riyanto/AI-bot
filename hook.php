@@ -62,7 +62,7 @@ try {
 	// if (detect_grup() == null) {
 	// 	if ($userID == $userid_pemilik || $userID == 1223173857) {
 	// 	} else {
-	// 		$reply = "Maaf, bot ini sedang dalam proses pemerbaikan fitur. " . PUMBUAT_BOT . PHP_EOL .
+	// 		$reply = "Whopps, bot ini sedang dalam proses developing oleh " . PUMBUAT_BOT . PHP_EOL .
 	// 			"Coba lagi nanti";
 	// 		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
 	// 		$telegram->sendMessage($content);
@@ -602,6 +602,12 @@ try {
 		exit;
 	} elseif ('/note' == $adanParse[0] || '/note' . USERNAME_BOT . '' == $adanParse[0]) {
 		require __DIR__ . '/command/note.php';
+		exit;
+	} elseif ('/get_note' == $adanParse[0] || '/get_note' . USERNAME_BOT . '' == $adanParse[0]) {
+		require __DIR__ . '/command/get_note.php';
+		exit;
+	} elseif ('/my_note' == $adanParse[0] || '/my_note' . USERNAME_BOT . '' == $adanParse[0]) {
+		require __DIR__ . '/command/my_note.php';
 		exit;
 	} elseif ('/ts' == $adanParse[0] || '/ts' . USERNAME_BOT . '' == $adanParse[0]) {
 		require __DIR__ . '/command/ts.php';

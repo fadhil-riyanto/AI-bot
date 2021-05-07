@@ -25,9 +25,8 @@ function downloadUrlToFile($url, $outFileName)
 }
 
 $result = $telegram->getData();
-$fileid = $result['message']['reply_to_message']['document']['file_id'];
-if (isset($fileid)) {
-} else {
+$fileids = $result['message']['reply_to_message']['photo'];
+if (isset($fileids)) {
     $getResolutionfileid = end($result['message']['reply_to_message']['photo']);
     $fileid = $getResolutionfileid['file_id'];
 }
@@ -78,9 +77,6 @@ $option = array(
     array(
         $telegram->buildInlineKeyBoardButton("google", $url = "https://www.google.com/searchbyimage?image_url=" . $imageurlresult),
         $telegram->buildInlineKeyBoardButton("Bing", $url = "https://www.bing.com/images/search?q=imgurl:" . $imageurlresult . "&view=detailv2&selectedindex=0&mode=ImageViewer&iss=sbi")
-    ),
-    array(
-        $telegram->buildInlineKeyBoardButton("yandek", $url = "https://www.yandex.com/images/search?text=" . $imageurlresult . "&img_url=" . $imageurlresult . "&rpt=imageview")
     )
 );
 $keyb = $telegram->buildInlineKeyBoard($option);

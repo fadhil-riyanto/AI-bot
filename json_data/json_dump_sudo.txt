@@ -1,7 +1,7 @@
 {
-    "update_id": 804523484,
+    "update_id": 804528494,
     "message": {
-        "message_id": 66432,
+        "message_id": 70364,
         "from": {
             "id": 1393342467,
             "is_bot": false,
@@ -11,53 +11,45 @@
             "language_code": "ms"
         },
         "chat": {
-            "id": -1001182246595,
-            "title": "[c]oretan Script",
-            "username": "cScript",
+            "id": -1001310420564,
+            "title": "GAS Testing Grup",
+            "username": "GasTestingGroup",
             "type": "supergroup"
         },
-        "date": 1620190205,
+        "date": 1620403089,
         "reply_to_message": {
-            "message_id": 66430,
+            "message_id": 70363,
             "from": {
-                "id": 724677596,
+                "id": 1393342467,
                 "is_bot": false,
-                "first_name": "\u0188",
-                "last_name": "Script",
-                "username": "ScriptGoogle",
-                "language_code": "en"
+                "first_name": "\u0192\u03b1\u2202\u043d\u03b9\u2113",
+                "last_name": "\u044f\u03b9\u0443\u03b1\u03b7\u0442\u03c3",
+                "username": "fadhil_riyanto",
+                "language_code": "ms"
             },
             "chat": {
-                "id": -1001182246595,
-                "title": "[c]oretan Script",
-                "username": "cScript",
+                "id": -1001310420564,
+                "title": "GAS Testing Grup",
+                "username": "GasTestingGroup",
                 "type": "supergroup"
             },
-            "date": 1620189857,
-            "text": "\ud83d\udc64 245103220\n\ud83d\udc66\ud83c\udffb Igor\n\ud83d\udc6a Vasilevich\n\ud83c\udf10 @PScript\n\ud83d\udd51 Updated at 05\/05\/2021",
-            "entities": [
+            "date": 1620403042,
+            "photo": [
                 {
-                    "offset": 3,
-                    "length": 9,
-                    "type": "code"
+                    "file_id": "AgACAgUAAx0CThtuVAABARLbYJVjYpkndRTqbPfzCzjyoEddMucAAlGsMRuiC7BUYFGDjsqqIGBDg0xzdAADAQADAgADbQADJ4UBAAEfBA",
+                    "file_unique_id": "AQADQ4NMc3QAAyeFAQAB",
+                    "file_size": 8928,
+                    "width": 320,
+                    "height": 320
                 },
                 {
-                    "offset": 40,
-                    "length": 8,
-                    "type": "mention"
-                },
-                {
-                    "offset": 52,
-                    "length": 21,
-                    "type": "italic"
+                    "file_id": "AgACAgUAAx0CThtuVAABARLbYJVjYpkndRTqbPfzCzjyoEddMucAAlGsMRuiC7BUYFGDjsqqIGBDg0xzdAADAQADAgADeAADKYUBAAEfBA",
+                    "file_unique_id": "AQADQ4NMc3QAAymFAQAB",
+                    "file_size": 14969,
+                    "width": 640,
+                    "height": 640
                 }
-            ],
-            "via_bot": {
-                "id": 189165596,
-                "is_bot": true,
-                "first_name": "Inline Info Username",
-                "username": "usinfobot"
-            }
+            ]
         },
         "text": "\/sudo json",
         "entities": [

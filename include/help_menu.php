@@ -40,7 +40,7 @@ $option = array(
     ),
     array(
         $telegram->buildInlineKeyBoardButton("filters", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot filters'),
-        // $telegram->buildInlineKeyBoardButton("Admins", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot admins'),
+        $telegram->buildInlineKeyBoardButton("Note", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot note'),
         // $telegram->buildInlineKeyBoardButton("Grettings", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot grettings'),
         //$telegram->buildInlineKeyBoardButton("Mute", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot mute'),
         //$telegram->buildInlineKeyBoardButton("Report", $url = "", $callback_data = '/callback_q@fadhil_riyanto_bot report')
