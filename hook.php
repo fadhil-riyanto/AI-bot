@@ -1,5 +1,5 @@
 <?php
-
+//die();
 $debugwaktu_awal = microtime(true);
 
 require __DIR__ . '/pengaturan/env.php';
@@ -59,21 +59,21 @@ $apakahuserchattingviaPM = detect_grup();
 try {
 
 	//debug mode
-	// if (detect_grup() == null) {
-	// 	if ($userID == $userid_pemilik || $userID == 1223173857) {
-	// 	} else {
-	// 		$reply = "Whopps, bot ini sedang dalam proses developing oleh " . PUMBUAT_BOT . PHP_EOL .
-	// 			"Coba lagi nanti";
-	// 		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-	// 		$telegram->sendMessage($content);
-	// 		exit;
-	// 	}
-	// } else {
-	// 	if ($userID == $userid_pemilik || $userID == 1223173857) {
-	// 	} else {
-	// 		die();
-	// 	}
-	// }
+	if (detect_grup() == null) {
+		if ($userID == $userid_pemilik || $userID == 1223173857) {
+		} else {
+			$reply = "Whopps, bot ini sedang dalam proses developing oleh " . PUMBUAT_BOT . PHP_EOL .
+				"Coba lagi nanti";
+			$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+			$telegram->sendMessage($content);
+			exit;
+		}
+	} else {
+		if ($userID == $userid_pemilik || $userID == 1223173857) {
+		} else {
+			die();
+		}
+	}
 
 	require __DIR__ . '/include/conn_db.php';
 	$hilangAzan = str_replace('/azan ', '', $text, $hit);
@@ -608,6 +608,12 @@ try {
 		exit;
 	} elseif ('/my_note' == $adanParse[0] || '/my_note' . USERNAME_BOT . '' == $adanParse[0]) {
 		require __DIR__ . '/command/my_note.php';
+		exit;
+	} elseif ('/del_note' == $adanParse[0] || '/del_note' . USERNAME_BOT . '' == $adanParse[0]) {
+		require __DIR__ . '/command/del_note.php';
+		exit;
+	} elseif ('/clear_note' == $adanParse[0] || '/clear_note' . USERNAME_BOT . '' == $adanParse[0]) {
+		require __DIR__ . '/command/clear_note.php';
 		exit;
 	} elseif ('/ts' == $adanParse[0] || '/ts' . USERNAME_BOT . '' == $adanParse[0]) {
 		require __DIR__ . '/command/ts.php';

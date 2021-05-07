@@ -7,28 +7,17 @@ if ($azanHilangcommand == null) {
     $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
     $telegram->sendMessage($content);
 } else {
-    $getDataafku = $db->row(
-        "SELECT * FROM note WHERE userid = ? AND notename = ?",
+    $getDataafku = $db->run(
+        "DELETE FROM note WHERE userid = ? AND notename = ?",
         $userID,
         $udahDiparse
     );
-    // $reply = json_encode($getDataafku);
-    // $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-    // $telegram->sendMessage($content);
-    // die();
-
-    // foreach ($getDataafku as $noteName) {
-    //     if (strtolower($adanParse_plain_nokarakter[1]) == strtolower($noteName['notename'])) {
-    //         $kataada = true;
-    //     }
-    // }
     if ($getDataafku == null) {
-        $reply = "maaf, note name yang anda cari tidak ditemukan, cek nama dan besar kecil huruf";
+        $reply = "note dihapus";
         $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
         $telegram->sendMessage($content);
     } else {
-        $reply = "<u>Note : " . $getDataafku['notename'] . "</u>" . PHP_EOL  . PHP_EOL  .
-            $getDataafku['notevalue'];
+        $reply = "maaf, ada error di sistem kami";
         $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
         $telegram->sendMessage($content);
     }
