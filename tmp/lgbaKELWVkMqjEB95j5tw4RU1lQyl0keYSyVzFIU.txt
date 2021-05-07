@@ -1,0 +1,7 @@
+PDOException: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away in C:\bot_telegram\vendor\paragonie\easydb\src\EasyDB.php:985
+Stack trace:
+#0 C:\bot_telegram\vendor\paragonie\easydb\src\EasyDB.php(985): PDO->query('SELECT * FROM f...')
+#1 C:\bot_telegram\vendor\paragonie\easydb\src\EasyDB.php(948): ParagonIE\EasyDB\EasyDB->safeQuery('SELECT * FROM f...', Array, 2, false, true)
+#2 C:\bot_telegram\include\hook_handle_cache.php(12): ParagonIE\EasyDB\EasyDB->run('SELECT * FROM f...')
+#3 C:\bot_telegram\hook.php(248): hooh_db_handle_filter()
+#4 {main}

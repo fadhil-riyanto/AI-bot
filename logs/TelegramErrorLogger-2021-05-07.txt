@@ -1,0 +1,439 @@
+============[Date]============
+[ 2021-05-07 09:47:59  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		429
+description:		Too Many Requests: retry after 19
+parameters:		Array
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804526843
+ref.message.message_id= 70491
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001182246595
+ref.message.chat.title= [c]oretan Script
+ref.message.chat.username= cScript
+ref.message.chat.type= supergroup
+ref.message.date= 1620355633
+ref.message.text= /note
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.message_id= 70492
+ref.text= time : 07-05-2021 09:47:58
+ref.reply_to_message_id= 70491
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(192): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot_telegram\command\note.php(22): Telegram->editMessageText(Array)
+#4 C:\bot_telegram\hook.php(606): require('C:\\bot_telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-05-07 09:48:02  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		429
+description:		Too Many Requests: retry after 16
+parameters:		Array
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804526843
+ref.message.message_id= 70491
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001182246595
+ref.message.chat.title= [c]oretan Script
+ref.message.chat.username= cScript
+ref.message.chat.type= supergroup
+ref.message.date= 1620355633
+ref.message.text= /note
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.message_id= 70492
+ref.text= time : 07-05-2021 09:48:00
+ref.reply_to_message_id= 70491
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(192): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot_telegram\command\note.php(22): Telegram->editMessageText(Array)
+#4 C:\bot_telegram\hook.php(606): require('C:\\bot_telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-05-07 09:48:05  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		429
+description:		Too Many Requests: retry after 14
+parameters:		Array
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804526843
+ref.message.message_id= 70491
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001182246595
+ref.message.chat.title= [c]oretan Script
+ref.message.chat.username= cScript
+ref.message.chat.type= supergroup
+ref.message.date= 1620355633
+ref.message.text= /note
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.message_id= 70492
+ref.text= time : 07-05-2021 09:48:03
+ref.reply_to_message_id= 70491
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(192): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot_telegram\command\note.php(22): Telegram->editMessageText(Array)
+#4 C:\bot_telegram\hook.php(606): require('C:\\bot_telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-05-07 09:48:07  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		429
+description:		Too Many Requests: retry after 12
+parameters:		Array
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804526843
+ref.message.message_id= 70491
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001182246595
+ref.message.chat.title= [c]oretan Script
+ref.message.chat.username= cScript
+ref.message.chat.type= supergroup
+ref.message.date= 1620355633
+ref.message.text= /note
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.message_id= 70492
+ref.text= time : 07-05-2021 09:48:06
+ref.reply_to_message_id= 70491
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(192): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot_telegram\command\note.php(22): Telegram->editMessageText(Array)
+#4 C:\bot_telegram\hook.php(606): require('C:\\bot_telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-05-07 09:48:08  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		429
+description:		Too Many Requests: retry after 10
+parameters:		Array
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804526843
+ref.message.message_id= 70491
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001182246595
+ref.message.chat.title= [c]oretan Script
+ref.message.chat.username= cScript
+ref.message.chat.type= supergroup
+ref.message.date= 1620355633
+ref.message.text= /note
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.message_id= 70492
+ref.text= time : 07-05-2021 09:48:08
+ref.reply_to_message_id= 70491
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(192): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot_telegram\command\note.php(22): Telegram->editMessageText(Array)
+#4 C:\bot_telegram\hook.php(606): require('C:\\bot_telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-05-07 09:50:52  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: replied message not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804526843
+ref.message.message_id= 70491
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001182246595
+ref.message.chat.title= [c]oretan Script
+ref.message.chat.username= cScript
+ref.message.chat.type= supergroup
+ref.message.date= 1620355633
+ref.message.text= /note
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= time : 07-05-2021 09:50:51
+ref.reply_to_message_id= 70491
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\command\note.php(17): Telegram->sendMessage(Array)
+#4 C:\bot_telegram\hook.php(606): require('C:\\bot_telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-05-07 09:50:53  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804526843
+ref.message.message_id= 70491
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001182246595
+ref.message.chat.title= [c]oretan Script
+ref.message.chat.username= cScript
+ref.message.chat.type= supergroup
+ref.message.date= 1620355633
+ref.message.text= /note
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.message_id= 
+ref.text= time : 07-05-2021 09:50:52
+ref.reply_to_message_id= 70491
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(192): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot_telegram\command\note.php(22): Telegram->editMessageText(Array)
+#4 C:\bot_telegram\hook.php(606): require('C:\\bot_telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-05-07 09:50:59  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804526843
+ref.message.message_id= 70491
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001182246595
+ref.message.chat.title= [c]oretan Script
+ref.message.chat.username= cScript
+ref.message.chat.type= supergroup
+ref.message.date= 1620355633
+ref.message.text= /note
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.message_id= 
+ref.text= time : 07-05-2021 09:50:58
+ref.reply_to_message_id= 70491
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(192): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot_telegram\command\note.php(22): Telegram->editMessageText(Array)
+#4 C:\bot_telegram\hook.php(606): require('C:\\bot_telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-05-07 09:51:04  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804526843
+ref.message.message_id= 70491
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001182246595
+ref.message.chat.title= [c]oretan Script
+ref.message.chat.username= cScript
+ref.message.chat.type= supergroup
+ref.message.date= 1620355633
+ref.message.text= /note
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.message_id= 
+ref.text= time : 07-05-2021 09:51:04
+ref.reply_to_message_id= 70491
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(192): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot_telegram\command\note.php(22): Telegram->editMessageText(Array)
+#4 C:\bot_telegram\hook.php(606): require('C:\\bot_telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-05-07 10:20:32  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat_id is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804527038
+ref.my_chat_member.chat.id= 915089246
+ref.my_chat_member.chat.first_name= ＭＵＫ
+ref.my_chat_member.chat.username= iyainajadahya
+ref.my_chat_member.chat.type= private
+ref.my_chat_member.from.id= 915089246
+ref.my_chat_member.from.is_bot= false
+ref.my_chat_member.from.first_name= ＭＵＫ
+ref.my_chat_member.from.username= iyainajadahya
+ref.my_chat_member.from.language_code= en
+ref.my_chat_member.date= 1620357631
+ref.my_chat_member.old_chat_member.user.id= 1489990155
+ref.my_chat_member.old_chat_member.user.is_bot= true
+ref.my_chat_member.old_chat_member.user.first_name= ƒα∂нιℓ яιуαηтσ
+ref.my_chat_member.old_chat_member.user.username= Fadhil_riyanto_bot
+ref.my_chat_member.old_chat_member.status= member
+ref.my_chat_member.new_chat_member.user.id= 1489990155
+ref.my_chat_member.new_chat_member.user.is_bot= true
+ref.my_chat_member.new_chat_member.user.first_name= ƒα∂нιℓ яιуαηтσ
+ref.my_chat_member.new_chat_member.user.username= Fadhil_riyanto_bot
+ref.my_chat_member.new_chat_member.status= kicked
+ref.my_chat_member.new_chat_member.until_date= 0
+
+
+[ref]
+ref.chat_id= 
+ref.text= Maaf, bot ini sedang dalam proses pemerbaikan fitur. @fadhil_riyanto
+Coba lagi nanti
+ref.reply_to_message_id= 
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\hook.php(70): Telegram->sendMessage(Array)
+#4 {main}
+

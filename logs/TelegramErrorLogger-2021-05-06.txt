@@ -1,0 +1,287 @@
+============[Date]============
+[ 2021-05-06 12:41:54  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: not enough rights to manage pinned messages in the chat
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804524868
+ref.message.message_id= 67998
+ref.message.from.id= 1349919799
+ref.message.from.is_bot= false
+ref.message.from.first_name= Bae
+ref.message.from.last_name= Ro Na #KUTIL
+ref.message.from.username= Oh_Yoon_Hee
+ref.message.from.language_code= id
+ref.message.chat.id= -1001182246595
+ref.message.chat.title= [c]oretan Script
+ref.message.chat.username= cScript
+ref.message.chat.type= supergroup
+ref.message.date= 1620279709
+ref.message.reply_to_message.message_id= 67993
+ref.message.reply_to_message.from.id= 1349919799
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Bae
+ref.message.reply_to_message.from.last_name= Ro Na #KUTIL
+ref.message.reply_to_message.from.username= Oh_Yoon_Hee
+ref.message.reply_to_message.from.language_code= id
+ref.message.reply_to_message.chat.id= -1001182246595
+ref.message.reply_to_message.chat.title= [c]oretan Script
+ref.message.reply_to_message.chat.username= cScript
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1620279623
+ref.message.reply_to_message.text= Debug
+ref.message.text= /unpin
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.message_id= 67993
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(528): Telegram->endpoint('unpinChatMessag...', Array)
+#3 C:\bot_telegram\admin_command\unpin.php(7): Telegram->unpinChatMessage(Array)
+#4 C:\bot_telegram\admin_command\__init__.php(197): require('C:\\bot_telegram...')
+#5 C:\bot_telegram\hook.php(897): require('C:\\bot_telegram...')
+#6 {main}
+
+============[Date]============
+[ 2021-05-06 12:41:57  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: not enough rights to manage pinned messages in the chat
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804524869
+ref.message.message_id= 68000
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001182246595
+ref.message.chat.title= [c]oretan Script
+ref.message.chat.username= cScript
+ref.message.chat.type= supergroup
+ref.message.date= 1620279715
+ref.message.reply_to_message.message_id= 67993
+ref.message.reply_to_message.from.id= 1349919799
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Bae
+ref.message.reply_to_message.from.last_name= Ro Na #KUTIL
+ref.message.reply_to_message.from.username= Oh_Yoon_Hee
+ref.message.reply_to_message.from.language_code= id
+ref.message.reply_to_message.chat.id= -1001182246595
+ref.message.reply_to_message.chat.title= [c]oretan Script
+ref.message.reply_to_message.chat.username= cScript
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1620279623
+ref.message.reply_to_message.text= Debug
+ref.message.text= /pin debug nonadmin
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 4
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.message_id= 67993
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(524): Telegram->endpoint('pinChatMessage', Array)
+#3 C:\bot_telegram\admin_command\pin.php(7): Telegram->pinChatMessage(Array)
+#4 C:\bot_telegram\admin_command\__init__.php(195): require('C:\\bot_telegram...')
+#5 C:\bot_telegram\hook.php(897): require('C:\\bot_telegram...')
+#6 {main}
+
+============[Date]============
+[ 2021-05-06 12:47:05  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+curl_error_code:		6
+curl_error:		Could not resolve host: api.telegram.org
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804524876
+ref.message.message_id= 68015
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001182246595
+ref.message.chat.title= [c]oretan Script
+ref.message.chat.username= cScript
+ref.message.chat.type= supergroup
+ref.message.date= 1620280011
+ref.message.reply_to_message.message_id= 68011
+ref.message.reply_to_message.from.id= 724677596
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= ƈ
+ref.message.reply_to_message.from.last_name= Script
+ref.message.reply_to_message.from.username= ScriptGoogle
+ref.message.reply_to_message.from.language_code= en
+ref.message.reply_to_message.chat.id= -1001182246595
+ref.message.reply_to_message.chat.title= [c]oretan Script
+ref.message.reply_to_message.chat.username= cScript
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1620279759
+ref.message.reply_to_message.sticker.width= 512
+ref.message.reply_to_message.sticker.height= 512
+ref.message.reply_to_message.sticker.emoji= 🤐
+ref.message.reply_to_message.sticker.set_name= GreenLezard
+ref.message.reply_to_message.sticker.is_animated= true
+ref.message.reply_to_message.sticker.thumb.file_id= AAMCAgADHQJGd6bDAAEBCatgk4HP3dfbtiaey5U-na0orWzwowACzQAD9wLIDxCD-C_rPlmDvrTSkS4AAwEAB20AA-FjAAIfBA
+ref.message.reply_to_message.sticker.thumb.file_unique_id= AQADvrTSkS4AA-FjAAI
+ref.message.reply_to_message.sticker.thumb.file_size= 5422
+ref.message.reply_to_message.sticker.thumb.width= 128
+ref.message.reply_to_message.sticker.thumb.height= 128
+ref.message.reply_to_message.sticker.file_id= CAACAgIAAx0CRnemwwABAQmrYJOBz93X27YmnsuVPp2tKK1s8KMAAs0AA_cCyA8Qg_gv6z5Zgx8E
+ref.message.reply_to_message.sticker.file_unique_id= AgADzQAD9wLIDw
+ref.message.reply_to_message.sticker.file_size= 19597
+ref.message.text= /pin tes
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 4
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(168): Telegram->endpoint('getChatAdminist...', Array)
+#3 C:\bot_telegram\admin_command\__init__.php(97): Telegram->getChatAdministrators(Array)
+#4 C:\bot_telegram\hook.php(897): require('C:\\bot_telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-05-06 12:53:36  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: not enough rights to manage pinned messages in the chat
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804524887
+ref.message.message_id= 68028
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001182246595
+ref.message.chat.title= [c]oretan Script
+ref.message.chat.username= cScript
+ref.message.chat.type= supergroup
+ref.message.date= 1620280413
+ref.message.reply_to_message.message_id= 68011
+ref.message.reply_to_message.from.id= 724677596
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= ƈ
+ref.message.reply_to_message.from.last_name= Script
+ref.message.reply_to_message.from.username= ScriptGoogle
+ref.message.reply_to_message.from.language_code= en
+ref.message.reply_to_message.chat.id= -1001182246595
+ref.message.reply_to_message.chat.title= [c]oretan Script
+ref.message.reply_to_message.chat.username= cScript
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1620279759
+ref.message.reply_to_message.sticker.width= 512
+ref.message.reply_to_message.sticker.height= 512
+ref.message.reply_to_message.sticker.emoji= 🤐
+ref.message.reply_to_message.sticker.set_name= GreenLezard
+ref.message.reply_to_message.sticker.is_animated= true
+ref.message.reply_to_message.sticker.thumb.file_id= AAMCAgADHQJGd6bDAAEBCatgk4HP3dfbtiaey5U-na0orWzwowACzQAD9wLIDxCD-C_rPlmDvrTSkS4AAwEAB20AA-FjAAIfBA
+ref.message.reply_to_message.sticker.thumb.file_unique_id= AQADvrTSkS4AA-FjAAI
+ref.message.reply_to_message.sticker.thumb.file_size= 5422
+ref.message.reply_to_message.sticker.thumb.width= 128
+ref.message.reply_to_message.sticker.thumb.height= 128
+ref.message.reply_to_message.sticker.file_id= CAACAgIAAx0CRnemwwABAQmrYJOBz93X27YmnsuVPp2tKK1s8KMAAs0AA_cCyA8Qg_gv6z5Zgx8E
+ref.message.reply_to_message.sticker.file_unique_id= AgADzQAD9wLIDw
+ref.message.reply_to_message.sticker.file_size= 19597
+ref.message.text= /unpin tes
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.message_id= 68011
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(528): Telegram->endpoint('unpinChatMessag...', Array)
+#3 C:\bot_telegram\admin_command\unpin.php(7): Telegram->unpinChatMessage(Array)
+#4 C:\bot_telegram\admin_command\__init__.php(197): require('C:\\bot_telegram...')
+#5 C:\bot_telegram\hook.php(897): require('C:\\bot_telegram...')
+#6 {main}
+
+============[Date]============
+[ 2021-05-06 12:59:03  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: not enough rights to restrict/unrestrict chat member
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804524901
+ref.message.message_id= 68041
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001182246595
+ref.message.chat.title= [c]oretan Script
+ref.message.chat.username= cScript
+ref.message.chat.type= supergroup
+ref.message.date= 1620280738
+ref.message.reply_to_message.message_id= 68040
+ref.message.reply_to_message.from.id= 1223173857
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= Fadhil riyanto
+ref.message.reply_to_message.from.last_name= (Mirror)
+ref.message.reply_to_message.from.username= fadhilriyanto
+ref.message.reply_to_message.from.language_code= ms
+ref.message.reply_to_message.chat.id= -1001182246595
+ref.message.reply_to_message.chat.title= [c]oretan Script
+ref.message.reply_to_message.chat.username= cScript
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1620280658
+ref.message.reply_to_message.text= p
+ref.message.text= /skick
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.user_id= 1223173857
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(152): Telegram->endpoint('kickChatMember', Array)
+#3 C:\bot_telegram\admin_command\skick.php(17): Telegram->kickChatMember(Array)
+#4 C:\bot_telegram\admin_command\__init__.php(237): require('C:\\bot_telegram...')
+#5 C:\bot_telegram\hook.php(897): require('C:\\bot_telegram...')
+#6 {main}
+

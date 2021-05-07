@@ -14,11 +14,16 @@ if (isset($promote_uid)) {
         'chat_id' => $chat_id,
         'user_id' => $promote_uid
     );
-    $telegram->kickChatMember($param_promote);
+    $returntg = $telegram->kickChatMember($param_promote);
+    if ($returntg['ok'] == false) {
+        $reply = "🚫 maaf, saya tidak cukup hak untuk mengeluarkan  dan membatasi anggota obrolan";
+        $content = array('chat_id' => $chat_id, 'text' => $reply, 'parse_mode' => 'html', 'reply_to_message_id' => $message_id, 'disable_web_page_preview' => true);
+        $telegram->sendMessage($content);
+    }
     //debug
 
     //silent mode, tanpa mereply di korban
-    // $reply = $unamepromote . ', dikick!!.';
+    // $reply = json_encode($returntg, JSON_PRETTY_PRINT);
     // $content = array('chat_id' => $chat_id, 'text' => $reply, 'parse_mode' => 'html', 'reply_to_message_id' => $message_id, 'disable_web_page_preview' => true);
     // $telegram->sendMessage($content);
     //unban lagi
