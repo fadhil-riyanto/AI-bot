@@ -22,10 +22,15 @@ if ($azanHilangcommand == null) {
         $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
         $telegram->sendMessage($content);
     } else {
-        $db->insert('note', [
+        $inp = $db->insert('note', [
             'userid' => $userID,
             'notename' => $adanParse_plain_nokarakter[1],
             'notevalue' => $udahDiparse
         ]);
+        if ($inp) {
+            $reply = "yay, note disimpan";
+            $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+            $telegram->sendMessage($content);
+        }
     }
 }
