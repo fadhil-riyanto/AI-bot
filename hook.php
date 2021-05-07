@@ -1,5 +1,5 @@
 <?php
-die();
+
 $debugwaktu_awal = microtime(true);
 
 require __DIR__ . '/pengaturan/env.php';
