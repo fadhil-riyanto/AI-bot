@@ -57,7 +57,6 @@ $adanParse_plain = explode(' ', $text_plain);
 $adanParse_plain_nokarakter = explode(' ', $text_plain_nokarakter);
 $apakahuserchattingviaPM = detect_grup();
 try {
-
 	//debug mode
 	// if (detect_grup() == null) {
 	// 	if ($userID == $userid_pemilik || $userID == 1223173857) {
@@ -550,8 +549,8 @@ try {
 					$db->insert('members', [
 						"userid" => $userID,
 						"username" =>  $usernameBelumdiparse,
-						"first_name" => $namaPertama,
-						"lastname" => $namaTerakhir
+						"first_name" => base64_encode($namaPertama),
+						"lastname" => base64_encode($namaTerakhir)
 					]);
 				} else {
 				}
