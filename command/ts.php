@@ -33,10 +33,16 @@ function downloadUrlToFile($url, $outFileName)
     }
 }
 
+// $result = $telegram->getData();
+// $fileid = $result['message']['reply_to_message']['document']['file_id'];
+// if (isset($fileid)) {
+// } else {
+//     $getResolutionfileid = end($result['message']['reply_to_message']['photo']);
+//     $fileid = $getResolutionfileid['file_id'];
+// }
 $result = $telegram->getData();
-$fileid = $result['message']['reply_to_message']['document']['file_id'];
-if (isset($fileid)) {
-} else {
+$fileids = $result['message']['reply_to_message']['photo'];
+if (isset($fileids)) {
     $getResolutionfileid = end($result['message']['reply_to_message']['photo']);
     $fileid = $getResolutionfileid['file_id'];
 }
