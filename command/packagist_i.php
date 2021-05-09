@@ -4,9 +4,9 @@
 // die();
 $datas = explode(' ', $text_plain_nokarakter);
 
-$reply = "https://packagist.org/search.json?q=" . urlencode(base64_decode($datas[3])) . "&page=" . $datas[2];
-$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-$telegram->sendMessage($content);
+// $reply = "https://packagist.org/search.json?q=" . urlencode(base64_decode($datas[3])) . "&page=" . $datas[2];
+// $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+// $telegram->sendMessage($content);
 
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, "https://packagist.org/search.json?q=" . urlencode(base64_decode($datas[3])) . "&page=" . $datas[2]);
