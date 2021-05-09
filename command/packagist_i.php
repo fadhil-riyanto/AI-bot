@@ -32,7 +32,7 @@ foreach ($packagist_keluar['results'] as $packagist_hasil) {
 $reply = implode(PHP_EOL . PHP_EOL, $datapackagist);
 $option = array(
     array(
-        $telegram->buildInlineKeyBoardButton("➡️", $url = "", $callback_data = "/packagist_i " . $datas[1] . " " . $datas[2] + 1 . " " . base64_encode($datas[3]))
+        $telegram->buildInlineKeyBoardButton("➡️", $url = "", $callback_data = "/packagist_i " . $datas[1] . " " . $datas[2] + 1 . " " . $datas[3])
     )
 );
 $keyb = $telegram->buildInlineKeyBoard($option);
