@@ -58,7 +58,7 @@ $adanParse_plain_nokarakter = explode(' ', $text_plain_nokarakter);
 $apakahuserchattingviaPM = detect_grup();
 try {
 	//debug mode
-	if (detect_grup() == null) {
+	/*if (detect_grup() == null) {
 		if ($userID == $userid_pemilik || $userID == 1223173857) {
 		} else {
 			$reply = "Whopps, bot ini sedang dalam proses developing oleh " . PUMBUAT_BOT . PHP_EOL .
@@ -73,6 +73,7 @@ try {
 			die();
 		}
 	}
+	*/
 
 	require __DIR__ . '/include/conn_db.php';
 	$hilangAzan = str_replace('/azan ', '', $text, $hit);
