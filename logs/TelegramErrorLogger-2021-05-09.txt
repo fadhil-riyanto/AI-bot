@@ -1,0 +1,3153 @@
+============[Date]============
+[ 2021-05-09 08:51:33  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: replied message not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804531801
+ref.message.message_id= 72871
+ref.message.from.id= 1671976424
+ref.message.from.is_bot= false
+ref.message.from.first_name= ᠌᠌᠌᠌
+ref.message.from.username= safeusername
+ref.message.chat.id= -1001182246595
+ref.message.chat.title= [c]oretan Script
+ref.message.chat.username= cScript
+ref.message.chat.type= supergroup
+ref.message.date= 1620517315
+ref.message.reply_to_message.message_id= 72870
+ref.message.reply_to_message.from.id= 1393342467
+ref.message.reply_to_message.from.is_bot= false
+ref.message.reply_to_message.from.first_name= ƒα∂нιℓ
+ref.message.reply_to_message.from.last_name= яιуαηтσ
+ref.message.reply_to_message.from.username= fadhil_riyanto
+ref.message.reply_to_message.from.language_code= id
+ref.message.reply_to_message.chat.id= -1001182246595
+ref.message.reply_to_message.chat.title= [c]oretan Script
+ref.message.reply_to_message.chat.username= cScript
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1620517315
+ref.message.reply_to_message.text= Fix, kamu membuka bug baru. Makasi yah...
+
+Bugnya yaitu null val update 
+
+Ntar aku fix lagi
+ref.message.text= I am AFK
+
+AFK Since : 56m 53s
+Reason : Istirahat
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 38
+ref.message.entities.0.type= bold
+ref.message.entities.1.offset= 39
+ref.message.entities.1.length= 9
+ref.message.entities.1.type= code
+
+
+[ref]
+ref.text= Maaf ,ƒα∂нιℓ яιуαηтσ sedang AFK sejak 23:09:07
+Alasan : hehe
+ref.reply_to_message_id= 72871
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\hook.php(168): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-05-09 10:02:33  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message must be non-empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804532047
+ref.message.message_id= 73092
+ref.message.from.id= 1671976424
+ref.message.from.is_bot= false
+ref.message.from.first_name= ᠌᠌᠌᠌
+ref.message.from.username= safeusername
+ref.message.chat.id= -1001182246595
+ref.message.chat.title= [c]oretan Script
+ref.message.chat.username= cScript
+ref.message.chat.type= supergroup
+ref.message.date= 1620529334
+ref.message.reply_to_message.message_id= 73086
+ref.message.reply_to_message.from.id= 1489990155
+ref.message.reply_to_message.from.is_bot= true
+ref.message.reply_to_message.from.first_name= ƒα∂нιℓ яιуαηтσ
+ref.message.reply_to_message.from.username= Fadhil_riyanto_bot
+ref.message.reply_to_message.chat.id= -1001182246595
+ref.message.reply_to_message.chat.title= [c]oretan Script
+ref.message.reply_to_message.chat.username= cScript
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1620529322
+ref.message.reply_to_message.text= Maaf ,᠌᠌᠌᠌  sedang AFK sejak 23:28:11
+Alasan : pengguna ini afk tanpa memberi alasan
+ref.message.text= Ini punya siapa
+
+
+[ref]
+ref.text= 
+
+ref.reply_to_message_id= 73092
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\hook.php(994): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-05-09 10:32:02  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message is too long
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804532496
+ref.message.message_id= 4428
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001407564572
+ref.message.chat.title= Fadhil Riyanto Logs
+ref.message.chat.type= supergroup
+ref.message.date= 1620531117
+ref.message.reply_to_message.message_id= 4388
+ref.message.reply_to_message.from.id= 1756596751
+ref.message.reply_to_message.from.is_bot= true
+ref.message.reply_to_message.from.first_name= Spinner Warrior
+ref.message.reply_to_message.from.username= spinwarriorbot
+ref.message.reply_to_message.chat.id= -1001407564572
+ref.message.reply_to_message.chat.title= Fadhil Riyanto Logs
+ref.message.reply_to_message.chat.type= supergroup
+ref.message.reply_to_message.date= 1620472090
+ref.message.reply_to_message.text= Main Menu
+ref.message.text= /composer
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 9
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= {"results":[{"name":"guzzlehttp\/guzzle","description":"Guzzle is a PHP HTTP client library","url":"https:\/\/packagist.org\/packages\/guzzlehttp\/guzzle","repository":"https:\/\/github.com\/guzzle\/guzzle","downloads":269970566,"favers":21453},{"name":"guzzlehttp\/psr7","description":"PSR-7 message implementation that also provides common utility methods","url":"https:\/\/packagist.org\/packages\/guzzlehttp\/psr7","repository":"https:\/\/github.com\/guzzle\/psr7","downloads":264971447,"favers":7107},{"name":"guzzlehttp\/promises","description":"Guzzle promises library","url":"https:\/\/packagist.org\/packages\/guzzlehttp\/promises","repository":"https:\/\/github.com\/guzzle\/promises","downloads":247207513,"favers":6762},{"name":"php-http\/guzzle6-adapter","description":"Guzzle 6 HTTP Adapter","url":"https:\/\/packagist.org\/packages\/php-http\/guzzle6-adapter","repository":"https:\/\/github.com\/php-http\/guzzle6-adapter","downloads":39412498,"favers":1315},{"name":"http-interop\/http-factory-guzzle","description":"An HTTP Factory using Guzzle PSR7","url":"https:\/\/packagist.org\/packages\/http-interop\/http-factory-guzzle","repository":"https:\/\/github.com\/http-interop\/http-factory-guzzle","downloads":17491852,"favers":343},{"name":"guzzlehttp\/streams","description":"Provides a simple abstraction over streams of data","url":"https:\/\/packagist.org\/packages\/guzzlehttp\/streams","repository":"https:\/\/github.com\/guzzle\/streams","downloads":56561157,"favers":555,"abandoned":""},{"name":"guzzlehttp\/ringphp","description":"Provides a simple API and specification that abstracts away the details of HTTP into a single PHP function.","url":"https:\/\/packagist.org\/packages\/guzzlehttp\/ringphp","repository":"https:\/\/github.com\/guzzle\/RingPHP","downloads":53140991,"favers":765,"abandoned":""},{"name":"kevinrob\/guzzle-cache-middleware","description":"A HTTP\/1.1 Cache for Guzzle 6. It\u0027s a simple Middleware to be added in the HandlerStack. (RFC 7234)","url":"https:\/\/packagist.org\/packages\/kevinrob\/guzzle-cache-middleware","repository":"https:\/\/github.com\/Kevinrob\/guzzle-cache-middleware","downloads":2858962,"favers":331},{"name":"eightpoints\/guzzle-bundle","description":"Integrates Guzzle 6.x, a PHP HTTP Client, into Symfony 2\/3\/4. Comes with easy and powerful configuration options and optional plugins.","url":"https:\/\/packagist.org\/packages\/eightpoints\/guzzle-bundle","repository":"https:\/\/github.com\/8p\/EightPointsGuzzleBundle","downloads":4304525,"favers":422},{"name":"guzzle\/guzzle","description":"PHP HTTP client. This library is deprecated in favor of https:\/\/packagist.org\/packages\/guzzlehttp\/guzzle","url":"https:\/\/packagist.org\/packages\/guzzle\/guzzle","repository":"https:\/\/github.com\/guzzle\/guzzle3","downloads":55348682,"favers":224,"abandoned":"guzzlehttp\/guzzle"},{"name":"kitetail\/zttp","description":"A developer-experience focused HTTP client, optimized for most common use cases.","url":"https:\/\/packagist.org\/packages\/kitetail\/zttp","repository":"https:\/\/github.com\/kitetail\/zttp","downloads":737504,"favers":1695},{"name":"intercom\/intercom-php","description":"Intercom API client built on top of HTTPlug","url":"https:\/\/packagist.org\/packages\/intercom\/intercom-php","repository":"https:\/\/github.com\/intercom\/intercom-php","downloads":5637425,"favers":273},{"name":"kamermans\/guzzle-oauth2-subscriber","description":"OAuth 2.0 client for Guzzle 4, 5 and 6+","url":"https:\/\/packagist.org\/packages\/kamermans\/guzzle-oauth2-subscriber","repository":"https:\/\/github.com\/kamermans\/guzzle-oauth2-subscriber","downloads":715708,"favers":86},{"name":"graham-campbell\/guzzle-factory","description":"Provides A Simple Guzzle Factory With Good Defaults","url":"https:\/\/packagist.org\/packages\/graham-campbell\/guzzle-factory","repository":"https:\/\/github.com\/GrahamCampbell\/Guzzle-Factory","downloads":793569,"favers":85},{"name":"ezimuel\/guzzlestreams","description":"Fork of guzzle\/streams (abandoned) to be used with elasticsearch-php","url":"https:\/\/packagist.org\/packages\/ezimuel\/guzzlestreams","repository":"https:\/\/github.com\/ezimuel\/guzzlestreams","downloads":5906142,"favers":40}],"total":1231,"next":"https:\/\/packagist.org\/search.json?q=guzzle\u0026page=2"}
+ref.reply_to_message_id= 4428
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\command\packagist.php(9): Telegram->sendMessage(Array)
+#4 C:\bot_telegram\hook.php(633): require('C:\\bot_telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-05-09 13:08:12  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804532874
+ref.callback_query.id= 5984360331946067667
+ref.callback_query.from.id= 1393342467
+ref.callback_query.from.is_bot= false
+ref.callback_query.from.first_name= ƒα∂нιℓ
+ref.callback_query.from.last_name= яιуαηтσ
+ref.callback_query.from.username= fadhil_riyanto
+ref.callback_query.from.language_code= ms
+ref.callback_query.message.message_id= 4478
+ref.callback_query.message.from.id= 1489990155
+ref.callback_query.message.from.is_bot= true
+ref.callback_query.message.from.first_name= ƒα∂нιℓ яιуαηтσ
+ref.callback_query.message.from.username= Fadhil_riyanto_bot
+ref.callback_query.message.chat.id= -1001407564572
+ref.callback_query.message.chat.title= Fadhil Riyanto Logs
+ref.callback_query.message.chat.type= supergroup
+ref.callback_query.message.date= 1620540467
+ref.callback_query.message.reply_to_message.message_id= 4477
+ref.callback_query.message.reply_to_message.from.id= 1393342467
+ref.callback_query.message.reply_to_message.from.is_bot= false
+ref.callback_query.message.reply_to_message.from.first_name= ƒα∂нιℓ
+ref.callback_query.message.reply_to_message.from.last_name= яιуαηтσ
+ref.callback_query.message.reply_to_message.from.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.from.language_code= ms
+ref.callback_query.message.reply_to_message.chat.id= -1001407564572
+ref.callback_query.message.reply_to_message.chat.title= Fadhil Riyanto Logs
+ref.callback_query.message.reply_to_message.chat.type= supergroup
+ref.callback_query.message.reply_to_message.date= 1620540463
+ref.callback_query.message.reply_to_message.text= /composer monolog
+ref.callback_query.message.reply_to_message.entities.0.offset= 0
+ref.callback_query.message.reply_to_message.entities.0.length= 9
+ref.callback_query.message.reply_to_message.entities.0.type= bot_command
+ref.callback_query.message.text= 1. nama : monolog/monolog
+deksripsi : Sends your logs to files, sockets, inboxes, databases and various web services
+url : https://packagist.org/packages/monolog/monolog
+repo : https://github.com/Seldaek/monolog
+downloads : 292215200
+favers : 19350
+
+2. nama : symfony/monolog-bundle
+deksripsi : Symfony MonologBundle
+url : https://packagist.org/packages/symfony/monolog-bundle
+repo : https://github.com/symfony/monolog-bundle
+downloads : 78484380
+favers : 2393
+
+3. nama : symfony/monolog-bridge
+deksripsi : Provides integration for Monolog with various Symfony components
+url : https://packagist.org/packages/symfony/monolog-bridge
+repo : https://github.com/symfony/monolog-bridge
+downloads : 31972935
+favers : 2104
+
+4. nama : maxbanton/cwh
+deksripsi : AWS CloudWatch Handler for Monolog library
+url : https://packagist.org/packages/maxbanton/cwh
+repo : https://github.com/maxbanton/cwh
+downloads : 2716052
+favers : 298
+
+5. nama : easycorp/easy-log-handler
+deksripsi : A handler for Monolog that optimizes log messages to be processed by humans instead of software. Improve your productivity with logs that are easy to understand.
+url : https://packagist.org/packages/easycorp/easy-log-handler
+repo : https://github.com/EasyCorp/easy-log-handler
+downloads : 7075109
+favers : 2084
+
+6. nama : theorchard/monolog-cascade
+deksripsi : Monolog extension to configure multiple loggers in the blink of an eye and access them from anywhere
+url : https://packagist.org/packages/theorchard/monolog-cascade
+repo : https://github.com/theorchard/monolog-cascade
+downloads : 966831
+favers : 140
+
+7. nama : bramus/monolog-colored-line-formatter
+deksripsi : Colored Line Formatter for Monolog
+url : https://packagist.org/packages/bramus/monolog-colored-line-formatter
+repo : https://github.com/bramus/monolog-colored-line-formatter
+downloads : 1984799
+favers : 109
+
+8. nama : wazaari/monolog-mysql
+deksripsi : A handler for Monolog that sends messages to MySQL
+url : https://packagist.org/packages/wazaari/monolog-mysql
+repo : https://github.com/waza-ari/monolog-mysql
+downloads : 342440
+favers : 134
+
+9. nama : flynsarmy/slim-monolog
+deksripsi : Monolog logging support Slim Framework
+url : https://packagist.org/packages/flynsarmy/slim-monolog
+repo : https://github.com/Flynsarmy/Slim-Monolog
+downloads : 313131
+favers : 115
+
+10. nama : tylercd100/lern
+deksripsi : LERN (Laravel Exception Recorder and Notifier) is a Laravel 5 package that will record exceptions into a database and will notify you via Email, Pushover or Slack.
+url : https://packagist.org/packages/tylercd100/lern
+repo : https://github.com/tylercd100/lern
+downloads : 121624
+favers : 435
+
+11. nama : inpsyde/wonolog
+deksripsi : Monolog-based logging package for WordPress.
+url : https://packagist.org/packages/inpsyde/wonolog
+repo : https://github.com/inpsyde/Wonolog
+downloads : 220136
+favers : 141
+
+12. nama : amphp/log
+deksripsi : Non-blocking logging for PHP based on Amp and Monolog.
+url : https://packagist.org/packages/amphp/log
+repo : https://github.com/amphp/log
+downloads : 319192
+favers : 19
+
+13. nama : rahimi/monolog-telegram
+deksripsi : A handler for Monolog that sends messages to Telegram Channels
+url : https://packagist.org/packages/rahimi/monolog-telegram
+repo : https://github.com/moeinrahimi/monolog-telegram
+downloads : 48461
+favers : 69
+
+14. nama : nikolaposa/monolog-factory
+deksripsi : Configuration-based Monolog factory
+url : https://packagist.org/packages/nikolaposa/monolog-factory
+repo : https://github.com/nikolaposa/monolog-factory
+downloads : 45118
+favers : 23
+
+15. nama : neeckeloo/monolog-module
+deksripsi : Monolog integration into Laminas
+url : https://packagist.org/packages/neeckeloo/monolog-module
+repo : https://github.com/neeckeloo/monolog-module
+downloads : 84298
+favers : 9
+ref.callback_query.message.entities.0.offset= 123
+ref.callback_query.message.entities.0.length= 46
+ref.callback_query.message.entities.0.type= url
+ref.callback_query.message.entities.1.offset= 177
+ref.callback_query.message.entities.1.length= 34
+ref.callback_query.message.entities.1.type= url
+ref.callback_query.message.entities.2.offset= 224
+ref.callback_query.message.entities.2.length= 9
+ref.callback_query.message.entities.2.type= phone_number
+ref.callback_query.message.entities.3.offset= 323
+ref.callback_query.message.entities.3.length= 53
+ref.callback_query.message.entities.3.type= url
+ref.callback_query.message.entities.4.offset= 384
+ref.callback_query.message.entities.4.length= 41
+ref.callback_query.message.entities.4.type= url
+ref.callback_query.message.entities.5.offset= 578
+ref.callback_query.message.entities.5.length= 53
+ref.callback_query.message.entities.5.type= url
+ref.callback_query.message.entities.6.offset= 639
+ref.callback_query.message.entities.6.length= 41
+ref.callback_query.message.entities.6.type= url
+ref.callback_query.message.entities.7.offset= 802
+ref.callback_query.message.entities.7.length= 44
+ref.callback_query.message.entities.7.type= url
+ref.callback_query.message.entities.8.offset= 854
+ref.callback_query.message.entities.8.length= 32
+ref.callback_query.message.entities.8.type= url
+ref.callback_query.message.entities.9.offset= 1137
+ref.callback_query.message.entities.9.length= 56
+ref.callback_query.message.entities.9.type= url
+ref.callback_query.message.entities.10.offset= 1201
+ref.callback_query.message.entities.10.length= 44
+ref.callback_query.message.entities.10.type= url
+ref.callback_query.message.entities.11.offset= 1437
+ref.callback_query.message.entities.11.length= 57
+ref.callback_query.message.entities.11.type= url
+ref.callback_query.message.entities.12.offset= 1502
+ref.callback_query.message.entities.12.length= 45
+ref.callback_query.message.entities.12.type= url
+ref.callback_query.message.entities.13.offset= 1682
+ref.callback_query.message.entities.13.length= 68
+ref.callback_query.message.entities.13.type= url
+ref.callback_query.message.entities.14.offset= 1758
+ref.callback_query.message.entities.14.length= 56
+ref.callback_query.message.entities.14.type= url
+ref.callback_query.message.entities.15.offset= 1950
+ref.callback_query.message.entities.15.length= 52
+ref.callback_query.message.entities.15.type= url
+ref.callback_query.message.entities.16.offset= 2010
+ref.callback_query.message.entities.16.length= 41
+ref.callback_query.message.entities.16.type= url
+ref.callback_query.message.entities.17.offset= 2175
+ref.callback_query.message.entities.17.length= 53
+ref.callback_query.message.entities.17.type= url
+ref.callback_query.message.entities.18.offset= 2236
+ref.callback_query.message.entities.18.length= 41
+ref.callback_query.message.entities.18.type= url
+ref.callback_query.message.entities.19.offset= 2520
+ref.callback_query.message.entities.19.length= 46
+ref.callback_query.message.entities.19.type= url
+ref.callback_query.message.entities.20.offset= 2574
+ref.callback_query.message.entities.20.length= 34
+ref.callback_query.message.entities.20.type= url
+ref.callback_query.message.entities.21.offset= 2732
+ref.callback_query.message.entities.21.length= 46
+ref.callback_query.message.entities.21.type= url
+ref.callback_query.message.entities.22.offset= 2786
+ref.callback_query.message.entities.22.length= 34
+ref.callback_query.message.entities.22.type= url
+ref.callback_query.message.entities.23.offset= 2948
+ref.callback_query.message.entities.23.length= 40
+ref.callback_query.message.entities.23.type= url
+ref.callback_query.message.entities.24.offset= 2996
+ref.callback_query.message.entities.24.length= 28
+ref.callback_query.message.entities.24.type= url
+ref.callback_query.message.entities.25.offset= 3173
+ref.callback_query.message.entities.25.length= 54
+ref.callback_query.message.entities.25.type= url
+ref.callback_query.message.entities.26.offset= 3235
+ref.callback_query.message.entities.26.length= 47
+ref.callback_query.message.entities.26.type= url
+ref.callback_query.message.entities.27.offset= 3406
+ref.callback_query.message.entities.27.length= 57
+ref.callback_query.message.entities.27.type= url
+ref.callback_query.message.entities.28.offset= 3471
+ref.callback_query.message.entities.28.length= 45
+ref.callback_query.message.entities.28.type= url
+ref.callback_query.message.entities.29.offset= 3635
+ref.callback_query.message.entities.29.length= 55
+ref.callback_query.message.entities.29.type= url
+ref.callback_query.message.entities.30.offset= 3698
+ref.callback_query.message.entities.30.length= 43
+ref.callback_query.message.entities.30.type= url
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.text= ➡️
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.callback_data= /packagist_i 1393342467 2 bW9ub2xvZw==
+ref.callback_query.chat_instance= -642654228408535566
+ref.callback_query.data= /packagist_i 1393342467 2 bW9ub2xvZw==
+
+
+[ref]
+ref.text= 1. nama : mero/yii2-monolog
+deksripsi : The Monolog integration for the Yii framework.
+url : https://packagist.org/packages/mero/yii2-monolog
+repo : https://github.com/merorafael/yii2-monolog
+downloads : 85389
+favers : 37
+
+2. nama : markhilton/monolog-mysql
+deksripsi : Laravel 8 MySQL driver for Monolog
+url : https://packagist.org/packages/markhilton/monolog-mysql
+repo : https://github.com/markhilton/monolog-mysql
+downloads : 59999
+favers : 38
+
+3. nama : logentries/logentries-monolog-handler
+deksripsi : A handler for Monolog that sends messages to Logentries.com.
+url : https://packagist.org/packages/logentries/logentries-monolog-handler
+repo : https://github.com/logentries/logentries-monolog-handler
+downloads : 466132
+favers : 45
+
+4. nama : kdyby/monolog
+deksripsi : Integration of Monolog into Nette Framework
+url : https://packagist.org/packages/kdyby/monolog
+repo : https://github.com/Kdyby/Monolog
+downloads : 507036
+favers : 33
+
+5. nama : enlitepro/enlite-monolog
+deksripsi : Monolog integration to Zend Framework v2 and v3
+url : https://packagist.org/packages/enlitepro/enlite-monolog
+repo : https://github.com/enlitepro/enlite-monolog
+downloads : 351868
+favers : 18
+
+6. nama : contributte/monolog
+deksripsi : Monolog integration into Nette Framework
+url : https://packagist.org/packages/contributte/monolog
+repo : https://github.com/contributte/monolog
+downloads : 158292
+favers : 18
+
+7. nama : bitrix-expert/monolog-adapter
+deksripsi : Monolog adapter for Bitrix CMS
+url : https://packagist.org/packages/bitrix-expert/monolog-adapter
+repo : https://github.com/bitrix-expert/monolog-adapter
+downloads : 31536
+favers : 56
+
+8. nama : pulse00/monolog-parser
+deksripsi : A parser for monolog log entries
+url : https://packagist.org/packages/pulse00/monolog-parser
+repo : https://github.com/pulse00/monolog-parser
+downloads : 247503
+favers : 44
+
+9. nama : nvanheuverzwijn/monolog-logdna
+deksripsi : Logdna handler for Monolog
+url : https://packagist.org/packages/nvanheuverzwijn/monolog-logdna
+repo : https://github.com/nvanheuverzwijn/monolog-logdna
+downloads : 72745
+favers : 18
+
+10. nama : newrelic/monolog-enricher
+deksripsi : Monolog components to enable New Relic Logs
+url : https://packagist.org/packages/newrelic/monolog-enricher
+repo : https://github.com/newrelic/newrelic-monolog-logenricher-php
+downloads : 292851
+favers : 8
+
+11. nama : mangoweb/monolog-tracy-handler
+deksripsi : Integrates Tracy into Monolog, supports uploading Tracy bluescreens to AWS S3
+url : https://packagist.org/packages/mangoweb/monolog-tracy-handler
+repo : https://github.com/mangoweb-backend/monolog-tracy-handler
+downloads : 54879
+favers : 14
+
+12. nama : hikaeme/monolog-ltsv-formatter
+deksripsi : LTSV Formatter for Monolog
+url : https://packagist.org/packages/hikaeme/monolog-ltsv-formatter
+repo : https://github.com/fjyuu/monolog-ltsv-formatter
+downloads : 176657
+favers : 9
+
+13. nama : ddtraceweb/monolog-parser
+deksripsi : A parser for monolog log entries
+url : https://packagist.org/packages/ddtraceweb/monolog-parser
+repo : https://github.com/ddtraceweb/monolog-parser
+downloads : 181547
+favers : 29
+
+14. nama : dakatsuka/monolog-fluent-handler
+deksripsi : Fluentd Handler for Monolog
+url : https://packagist.org/packages/dakatsuka/monolog-fluent-handler
+repo : https://github.com/dakatsuka/MonologFluentHandler
+downloads : 220560
+favers : 12
+
+15. nama : cmdisp/monolog-microsoft-teams
+deksripsi : Monolog Handler for sending messages to Microsoft Teams using the Incoming Webhook connector
+url : https://packagist.org/packages/cmdisp/monolog-microsoft-teams
+repo : https://github.com/cmdisp/monolog-microsoft-teams
+downloads : 131088
+favers : 33
+ref.message_id= 
+ref.reply_markup= {"inline_keyboard":[[{"text":"\u27a1\ufe0f","callback_data":"\/packagist_i@fadhil_riyanto_bot||||1393342467||||3"}]]}
+ref.reply_to_message_id= 4478
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(192): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot_telegram\command\packagist_i.php(41): Telegram->editMessageText(Array)
+#4 C:\bot_telegram\hook.php(636): require('C:\\bot_telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-05-09 13:08:53  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804532875
+ref.callback_query.id= 5984360330746922105
+ref.callback_query.from.id= 1393342467
+ref.callback_query.from.is_bot= false
+ref.callback_query.from.first_name= ƒα∂нιℓ
+ref.callback_query.from.last_name= яιуαηтσ
+ref.callback_query.from.username= fadhil_riyanto
+ref.callback_query.from.language_code= ms
+ref.callback_query.message.message_id= 4478
+ref.callback_query.message.from.id= 1489990155
+ref.callback_query.message.from.is_bot= true
+ref.callback_query.message.from.first_name= ƒα∂нιℓ яιуαηтσ
+ref.callback_query.message.from.username= Fadhil_riyanto_bot
+ref.callback_query.message.chat.id= -1001407564572
+ref.callback_query.message.chat.title= Fadhil Riyanto Logs
+ref.callback_query.message.chat.type= supergroup
+ref.callback_query.message.date= 1620540467
+ref.callback_query.message.reply_to_message.message_id= 4477
+ref.callback_query.message.reply_to_message.from.id= 1393342467
+ref.callback_query.message.reply_to_message.from.is_bot= false
+ref.callback_query.message.reply_to_message.from.first_name= ƒα∂нιℓ
+ref.callback_query.message.reply_to_message.from.last_name= яιуαηтσ
+ref.callback_query.message.reply_to_message.from.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.from.language_code= ms
+ref.callback_query.message.reply_to_message.chat.id= -1001407564572
+ref.callback_query.message.reply_to_message.chat.title= Fadhil Riyanto Logs
+ref.callback_query.message.reply_to_message.chat.type= supergroup
+ref.callback_query.message.reply_to_message.date= 1620540463
+ref.callback_query.message.reply_to_message.text= /composer monolog
+ref.callback_query.message.reply_to_message.entities.0.offset= 0
+ref.callback_query.message.reply_to_message.entities.0.length= 9
+ref.callback_query.message.reply_to_message.entities.0.type= bot_command
+ref.callback_query.message.text= 1. nama : monolog/monolog
+deksripsi : Sends your logs to files, sockets, inboxes, databases and various web services
+url : https://packagist.org/packages/monolog/monolog
+repo : https://github.com/Seldaek/monolog
+downloads : 292215200
+favers : 19350
+
+2. nama : symfony/monolog-bundle
+deksripsi : Symfony MonologBundle
+url : https://packagist.org/packages/symfony/monolog-bundle
+repo : https://github.com/symfony/monolog-bundle
+downloads : 78484380
+favers : 2393
+
+3. nama : symfony/monolog-bridge
+deksripsi : Provides integration for Monolog with various Symfony components
+url : https://packagist.org/packages/symfony/monolog-bridge
+repo : https://github.com/symfony/monolog-bridge
+downloads : 31972935
+favers : 2104
+
+4. nama : maxbanton/cwh
+deksripsi : AWS CloudWatch Handler for Monolog library
+url : https://packagist.org/packages/maxbanton/cwh
+repo : https://github.com/maxbanton/cwh
+downloads : 2716052
+favers : 298
+
+5. nama : easycorp/easy-log-handler
+deksripsi : A handler for Monolog that optimizes log messages to be processed by humans instead of software. Improve your productivity with logs that are easy to understand.
+url : https://packagist.org/packages/easycorp/easy-log-handler
+repo : https://github.com/EasyCorp/easy-log-handler
+downloads : 7075109
+favers : 2084
+
+6. nama : theorchard/monolog-cascade
+deksripsi : Monolog extension to configure multiple loggers in the blink of an eye and access them from anywhere
+url : https://packagist.org/packages/theorchard/monolog-cascade
+repo : https://github.com/theorchard/monolog-cascade
+downloads : 966831
+favers : 140
+
+7. nama : bramus/monolog-colored-line-formatter
+deksripsi : Colored Line Formatter for Monolog
+url : https://packagist.org/packages/bramus/monolog-colored-line-formatter
+repo : https://github.com/bramus/monolog-colored-line-formatter
+downloads : 1984799
+favers : 109
+
+8. nama : wazaari/monolog-mysql
+deksripsi : A handler for Monolog that sends messages to MySQL
+url : https://packagist.org/packages/wazaari/monolog-mysql
+repo : https://github.com/waza-ari/monolog-mysql
+downloads : 342440
+favers : 134
+
+9. nama : flynsarmy/slim-monolog
+deksripsi : Monolog logging support Slim Framework
+url : https://packagist.org/packages/flynsarmy/slim-monolog
+repo : https://github.com/Flynsarmy/Slim-Monolog
+downloads : 313131
+favers : 115
+
+10. nama : tylercd100/lern
+deksripsi : LERN (Laravel Exception Recorder and Notifier) is a Laravel 5 package that will record exceptions into a database and will notify you via Email, Pushover or Slack.
+url : https://packagist.org/packages/tylercd100/lern
+repo : https://github.com/tylercd100/lern
+downloads : 121624
+favers : 435
+
+11. nama : inpsyde/wonolog
+deksripsi : Monolog-based logging package for WordPress.
+url : https://packagist.org/packages/inpsyde/wonolog
+repo : https://github.com/inpsyde/Wonolog
+downloads : 220136
+favers : 141
+
+12. nama : amphp/log
+deksripsi : Non-blocking logging for PHP based on Amp and Monolog.
+url : https://packagist.org/packages/amphp/log
+repo : https://github.com/amphp/log
+downloads : 319192
+favers : 19
+
+13. nama : rahimi/monolog-telegram
+deksripsi : A handler for Monolog that sends messages to Telegram Channels
+url : https://packagist.org/packages/rahimi/monolog-telegram
+repo : https://github.com/moeinrahimi/monolog-telegram
+downloads : 48461
+favers : 69
+
+14. nama : nikolaposa/monolog-factory
+deksripsi : Configuration-based Monolog factory
+url : https://packagist.org/packages/nikolaposa/monolog-factory
+repo : https://github.com/nikolaposa/monolog-factory
+downloads : 45118
+favers : 23
+
+15. nama : neeckeloo/monolog-module
+deksripsi : Monolog integration into Laminas
+url : https://packagist.org/packages/neeckeloo/monolog-module
+repo : https://github.com/neeckeloo/monolog-module
+downloads : 84298
+favers : 9
+ref.callback_query.message.entities.0.offset= 123
+ref.callback_query.message.entities.0.length= 46
+ref.callback_query.message.entities.0.type= url
+ref.callback_query.message.entities.1.offset= 177
+ref.callback_query.message.entities.1.length= 34
+ref.callback_query.message.entities.1.type= url
+ref.callback_query.message.entities.2.offset= 224
+ref.callback_query.message.entities.2.length= 9
+ref.callback_query.message.entities.2.type= phone_number
+ref.callback_query.message.entities.3.offset= 323
+ref.callback_query.message.entities.3.length= 53
+ref.callback_query.message.entities.3.type= url
+ref.callback_query.message.entities.4.offset= 384
+ref.callback_query.message.entities.4.length= 41
+ref.callback_query.message.entities.4.type= url
+ref.callback_query.message.entities.5.offset= 578
+ref.callback_query.message.entities.5.length= 53
+ref.callback_query.message.entities.5.type= url
+ref.callback_query.message.entities.6.offset= 639
+ref.callback_query.message.entities.6.length= 41
+ref.callback_query.message.entities.6.type= url
+ref.callback_query.message.entities.7.offset= 802
+ref.callback_query.message.entities.7.length= 44
+ref.callback_query.message.entities.7.type= url
+ref.callback_query.message.entities.8.offset= 854
+ref.callback_query.message.entities.8.length= 32
+ref.callback_query.message.entities.8.type= url
+ref.callback_query.message.entities.9.offset= 1137
+ref.callback_query.message.entities.9.length= 56
+ref.callback_query.message.entities.9.type= url
+ref.callback_query.message.entities.10.offset= 1201
+ref.callback_query.message.entities.10.length= 44
+ref.callback_query.message.entities.10.type= url
+ref.callback_query.message.entities.11.offset= 1437
+ref.callback_query.message.entities.11.length= 57
+ref.callback_query.message.entities.11.type= url
+ref.callback_query.message.entities.12.offset= 1502
+ref.callback_query.message.entities.12.length= 45
+ref.callback_query.message.entities.12.type= url
+ref.callback_query.message.entities.13.offset= 1682
+ref.callback_query.message.entities.13.length= 68
+ref.callback_query.message.entities.13.type= url
+ref.callback_query.message.entities.14.offset= 1758
+ref.callback_query.message.entities.14.length= 56
+ref.callback_query.message.entities.14.type= url
+ref.callback_query.message.entities.15.offset= 1950
+ref.callback_query.message.entities.15.length= 52
+ref.callback_query.message.entities.15.type= url
+ref.callback_query.message.entities.16.offset= 2010
+ref.callback_query.message.entities.16.length= 41
+ref.callback_query.message.entities.16.type= url
+ref.callback_query.message.entities.17.offset= 2175
+ref.callback_query.message.entities.17.length= 53
+ref.callback_query.message.entities.17.type= url
+ref.callback_query.message.entities.18.offset= 2236
+ref.callback_query.message.entities.18.length= 41
+ref.callback_query.message.entities.18.type= url
+ref.callback_query.message.entities.19.offset= 2520
+ref.callback_query.message.entities.19.length= 46
+ref.callback_query.message.entities.19.type= url
+ref.callback_query.message.entities.20.offset= 2574
+ref.callback_query.message.entities.20.length= 34
+ref.callback_query.message.entities.20.type= url
+ref.callback_query.message.entities.21.offset= 2732
+ref.callback_query.message.entities.21.length= 46
+ref.callback_query.message.entities.21.type= url
+ref.callback_query.message.entities.22.offset= 2786
+ref.callback_query.message.entities.22.length= 34
+ref.callback_query.message.entities.22.type= url
+ref.callback_query.message.entities.23.offset= 2948
+ref.callback_query.message.entities.23.length= 40
+ref.callback_query.message.entities.23.type= url
+ref.callback_query.message.entities.24.offset= 2996
+ref.callback_query.message.entities.24.length= 28
+ref.callback_query.message.entities.24.type= url
+ref.callback_query.message.entities.25.offset= 3173
+ref.callback_query.message.entities.25.length= 54
+ref.callback_query.message.entities.25.type= url
+ref.callback_query.message.entities.26.offset= 3235
+ref.callback_query.message.entities.26.length= 47
+ref.callback_query.message.entities.26.type= url
+ref.callback_query.message.entities.27.offset= 3406
+ref.callback_query.message.entities.27.length= 57
+ref.callback_query.message.entities.27.type= url
+ref.callback_query.message.entities.28.offset= 3471
+ref.callback_query.message.entities.28.length= 45
+ref.callback_query.message.entities.28.type= url
+ref.callback_query.message.entities.29.offset= 3635
+ref.callback_query.message.entities.29.length= 55
+ref.callback_query.message.entities.29.type= url
+ref.callback_query.message.entities.30.offset= 3698
+ref.callback_query.message.entities.30.length= 43
+ref.callback_query.message.entities.30.type= url
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.text= ➡️
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.callback_data= /packagist_i 1393342467 2 bW9ub2xvZw==
+ref.callback_query.chat_instance= -642654228408535566
+ref.callback_query.data= /packagist_i 1393342467 2 bW9ub2xvZw==
+
+
+[ref]
+ref.text= 1. nama : mero/yii2-monolog
+deksripsi : The Monolog integration for the Yii framework.
+url : https://packagist.org/packages/mero/yii2-monolog
+repo : https://github.com/merorafael/yii2-monolog
+downloads : 85389
+favers : 37
+
+2. nama : markhilton/monolog-mysql
+deksripsi : Laravel 8 MySQL driver for Monolog
+url : https://packagist.org/packages/markhilton/monolog-mysql
+repo : https://github.com/markhilton/monolog-mysql
+downloads : 59999
+favers : 38
+
+3. nama : logentries/logentries-monolog-handler
+deksripsi : A handler for Monolog that sends messages to Logentries.com.
+url : https://packagist.org/packages/logentries/logentries-monolog-handler
+repo : https://github.com/logentries/logentries-monolog-handler
+downloads : 466132
+favers : 45
+
+4. nama : kdyby/monolog
+deksripsi : Integration of Monolog into Nette Framework
+url : https://packagist.org/packages/kdyby/monolog
+repo : https://github.com/Kdyby/Monolog
+downloads : 507036
+favers : 33
+
+5. nama : enlitepro/enlite-monolog
+deksripsi : Monolog integration to Zend Framework v2 and v3
+url : https://packagist.org/packages/enlitepro/enlite-monolog
+repo : https://github.com/enlitepro/enlite-monolog
+downloads : 351868
+favers : 18
+
+6. nama : contributte/monolog
+deksripsi : Monolog integration into Nette Framework
+url : https://packagist.org/packages/contributte/monolog
+repo : https://github.com/contributte/monolog
+downloads : 158292
+favers : 18
+
+7. nama : bitrix-expert/monolog-adapter
+deksripsi : Monolog adapter for Bitrix CMS
+url : https://packagist.org/packages/bitrix-expert/monolog-adapter
+repo : https://github.com/bitrix-expert/monolog-adapter
+downloads : 31536
+favers : 56
+
+8. nama : pulse00/monolog-parser
+deksripsi : A parser for monolog log entries
+url : https://packagist.org/packages/pulse00/monolog-parser
+repo : https://github.com/pulse00/monolog-parser
+downloads : 247503
+favers : 44
+
+9. nama : nvanheuverzwijn/monolog-logdna
+deksripsi : Logdna handler for Monolog
+url : https://packagist.org/packages/nvanheuverzwijn/monolog-logdna
+repo : https://github.com/nvanheuverzwijn/monolog-logdna
+downloads : 72745
+favers : 18
+
+10. nama : newrelic/monolog-enricher
+deksripsi : Monolog components to enable New Relic Logs
+url : https://packagist.org/packages/newrelic/monolog-enricher
+repo : https://github.com/newrelic/newrelic-monolog-logenricher-php
+downloads : 292851
+favers : 8
+
+11. nama : mangoweb/monolog-tracy-handler
+deksripsi : Integrates Tracy into Monolog, supports uploading Tracy bluescreens to AWS S3
+url : https://packagist.org/packages/mangoweb/monolog-tracy-handler
+repo : https://github.com/mangoweb-backend/monolog-tracy-handler
+downloads : 54879
+favers : 14
+
+12. nama : hikaeme/monolog-ltsv-formatter
+deksripsi : LTSV Formatter for Monolog
+url : https://packagist.org/packages/hikaeme/monolog-ltsv-formatter
+repo : https://github.com/fjyuu/monolog-ltsv-formatter
+downloads : 176657
+favers : 9
+
+13. nama : ddtraceweb/monolog-parser
+deksripsi : A parser for monolog log entries
+url : https://packagist.org/packages/ddtraceweb/monolog-parser
+repo : https://github.com/ddtraceweb/monolog-parser
+downloads : 181547
+favers : 29
+
+14. nama : dakatsuka/monolog-fluent-handler
+deksripsi : Fluentd Handler for Monolog
+url : https://packagist.org/packages/dakatsuka/monolog-fluent-handler
+repo : https://github.com/dakatsuka/MonologFluentHandler
+downloads : 220560
+favers : 12
+
+15. nama : cmdisp/monolog-microsoft-teams
+deksripsi : Monolog Handler for sending messages to Microsoft Teams using the Incoming Webhook connector
+url : https://packagist.org/packages/cmdisp/monolog-microsoft-teams
+repo : https://github.com/cmdisp/monolog-microsoft-teams
+downloads : 131088
+favers : 33
+ref.message_id= 
+ref.reply_markup= {"inline_keyboard":[[{"text":"\u27a1\ufe0f","callback_data":"\/packagist_i@fadhil_riyanto_bot||||1393342467||||3"}]]}
+ref.reply_to_message_id= 4478
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(192): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot_telegram\command\packagist_i.php(44): Telegram->editMessageText(Array)
+#4 C:\bot_telegram\hook.php(636): require('C:\\bot_telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-05-09 13:10:33  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804532877
+ref.callback_query.id= 5984360328863136906
+ref.callback_query.from.id= 1393342467
+ref.callback_query.from.is_bot= false
+ref.callback_query.from.first_name= ƒα∂нιℓ
+ref.callback_query.from.last_name= яιуαηтσ
+ref.callback_query.from.username= fadhil_riyanto
+ref.callback_query.from.language_code= ms
+ref.callback_query.message.message_id= 4478
+ref.callback_query.message.from.id= 1489990155
+ref.callback_query.message.from.is_bot= true
+ref.callback_query.message.from.first_name= ƒα∂нιℓ яιуαηтσ
+ref.callback_query.message.from.username= Fadhil_riyanto_bot
+ref.callback_query.message.chat.id= -1001407564572
+ref.callback_query.message.chat.title= Fadhil Riyanto Logs
+ref.callback_query.message.chat.type= supergroup
+ref.callback_query.message.date= 1620540467
+ref.callback_query.message.reply_to_message.message_id= 4477
+ref.callback_query.message.reply_to_message.from.id= 1393342467
+ref.callback_query.message.reply_to_message.from.is_bot= false
+ref.callback_query.message.reply_to_message.from.first_name= ƒα∂нιℓ
+ref.callback_query.message.reply_to_message.from.last_name= яιуαηтσ
+ref.callback_query.message.reply_to_message.from.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.from.language_code= ms
+ref.callback_query.message.reply_to_message.chat.id= -1001407564572
+ref.callback_query.message.reply_to_message.chat.title= Fadhil Riyanto Logs
+ref.callback_query.message.reply_to_message.chat.type= supergroup
+ref.callback_query.message.reply_to_message.date= 1620540463
+ref.callback_query.message.reply_to_message.text= /composer monolog
+ref.callback_query.message.reply_to_message.entities.0.offset= 0
+ref.callback_query.message.reply_to_message.entities.0.length= 9
+ref.callback_query.message.reply_to_message.entities.0.type= bot_command
+ref.callback_query.message.text= 1. nama : monolog/monolog
+deksripsi : Sends your logs to files, sockets, inboxes, databases and various web services
+url : https://packagist.org/packages/monolog/monolog
+repo : https://github.com/Seldaek/monolog
+downloads : 292215200
+favers : 19350
+
+2. nama : symfony/monolog-bundle
+deksripsi : Symfony MonologBundle
+url : https://packagist.org/packages/symfony/monolog-bundle
+repo : https://github.com/symfony/monolog-bundle
+downloads : 78484380
+favers : 2393
+
+3. nama : symfony/monolog-bridge
+deksripsi : Provides integration for Monolog with various Symfony components
+url : https://packagist.org/packages/symfony/monolog-bridge
+repo : https://github.com/symfony/monolog-bridge
+downloads : 31972935
+favers : 2104
+
+4. nama : maxbanton/cwh
+deksripsi : AWS CloudWatch Handler for Monolog library
+url : https://packagist.org/packages/maxbanton/cwh
+repo : https://github.com/maxbanton/cwh
+downloads : 2716052
+favers : 298
+
+5. nama : easycorp/easy-log-handler
+deksripsi : A handler for Monolog that optimizes log messages to be processed by humans instead of software. Improve your productivity with logs that are easy to understand.
+url : https://packagist.org/packages/easycorp/easy-log-handler
+repo : https://github.com/EasyCorp/easy-log-handler
+downloads : 7075109
+favers : 2084
+
+6. nama : theorchard/monolog-cascade
+deksripsi : Monolog extension to configure multiple loggers in the blink of an eye and access them from anywhere
+url : https://packagist.org/packages/theorchard/monolog-cascade
+repo : https://github.com/theorchard/monolog-cascade
+downloads : 966831
+favers : 140
+
+7. nama : bramus/monolog-colored-line-formatter
+deksripsi : Colored Line Formatter for Monolog
+url : https://packagist.org/packages/bramus/monolog-colored-line-formatter
+repo : https://github.com/bramus/monolog-colored-line-formatter
+downloads : 1984799
+favers : 109
+
+8. nama : wazaari/monolog-mysql
+deksripsi : A handler for Monolog that sends messages to MySQL
+url : https://packagist.org/packages/wazaari/monolog-mysql
+repo : https://github.com/waza-ari/monolog-mysql
+downloads : 342440
+favers : 134
+
+9. nama : flynsarmy/slim-monolog
+deksripsi : Monolog logging support Slim Framework
+url : https://packagist.org/packages/flynsarmy/slim-monolog
+repo : https://github.com/Flynsarmy/Slim-Monolog
+downloads : 313131
+favers : 115
+
+10. nama : tylercd100/lern
+deksripsi : LERN (Laravel Exception Recorder and Notifier) is a Laravel 5 package that will record exceptions into a database and will notify you via Email, Pushover or Slack.
+url : https://packagist.org/packages/tylercd100/lern
+repo : https://github.com/tylercd100/lern
+downloads : 121624
+favers : 435
+
+11. nama : inpsyde/wonolog
+deksripsi : Monolog-based logging package for WordPress.
+url : https://packagist.org/packages/inpsyde/wonolog
+repo : https://github.com/inpsyde/Wonolog
+downloads : 220136
+favers : 141
+
+12. nama : amphp/log
+deksripsi : Non-blocking logging for PHP based on Amp and Monolog.
+url : https://packagist.org/packages/amphp/log
+repo : https://github.com/amphp/log
+downloads : 319192
+favers : 19
+
+13. nama : rahimi/monolog-telegram
+deksripsi : A handler for Monolog that sends messages to Telegram Channels
+url : https://packagist.org/packages/rahimi/monolog-telegram
+repo : https://github.com/moeinrahimi/monolog-telegram
+downloads : 48461
+favers : 69
+
+14. nama : nikolaposa/monolog-factory
+deksripsi : Configuration-based Monolog factory
+url : https://packagist.org/packages/nikolaposa/monolog-factory
+repo : https://github.com/nikolaposa/monolog-factory
+downloads : 45118
+favers : 23
+
+15. nama : neeckeloo/monolog-module
+deksripsi : Monolog integration into Laminas
+url : https://packagist.org/packages/neeckeloo/monolog-module
+repo : https://github.com/neeckeloo/monolog-module
+downloads : 84298
+favers : 9
+ref.callback_query.message.entities.0.offset= 123
+ref.callback_query.message.entities.0.length= 46
+ref.callback_query.message.entities.0.type= url
+ref.callback_query.message.entities.1.offset= 177
+ref.callback_query.message.entities.1.length= 34
+ref.callback_query.message.entities.1.type= url
+ref.callback_query.message.entities.2.offset= 224
+ref.callback_query.message.entities.2.length= 9
+ref.callback_query.message.entities.2.type= phone_number
+ref.callback_query.message.entities.3.offset= 323
+ref.callback_query.message.entities.3.length= 53
+ref.callback_query.message.entities.3.type= url
+ref.callback_query.message.entities.4.offset= 384
+ref.callback_query.message.entities.4.length= 41
+ref.callback_query.message.entities.4.type= url
+ref.callback_query.message.entities.5.offset= 578
+ref.callback_query.message.entities.5.length= 53
+ref.callback_query.message.entities.5.type= url
+ref.callback_query.message.entities.6.offset= 639
+ref.callback_query.message.entities.6.length= 41
+ref.callback_query.message.entities.6.type= url
+ref.callback_query.message.entities.7.offset= 802
+ref.callback_query.message.entities.7.length= 44
+ref.callback_query.message.entities.7.type= url
+ref.callback_query.message.entities.8.offset= 854
+ref.callback_query.message.entities.8.length= 32
+ref.callback_query.message.entities.8.type= url
+ref.callback_query.message.entities.9.offset= 1137
+ref.callback_query.message.entities.9.length= 56
+ref.callback_query.message.entities.9.type= url
+ref.callback_query.message.entities.10.offset= 1201
+ref.callback_query.message.entities.10.length= 44
+ref.callback_query.message.entities.10.type= url
+ref.callback_query.message.entities.11.offset= 1437
+ref.callback_query.message.entities.11.length= 57
+ref.callback_query.message.entities.11.type= url
+ref.callback_query.message.entities.12.offset= 1502
+ref.callback_query.message.entities.12.length= 45
+ref.callback_query.message.entities.12.type= url
+ref.callback_query.message.entities.13.offset= 1682
+ref.callback_query.message.entities.13.length= 68
+ref.callback_query.message.entities.13.type= url
+ref.callback_query.message.entities.14.offset= 1758
+ref.callback_query.message.entities.14.length= 56
+ref.callback_query.message.entities.14.type= url
+ref.callback_query.message.entities.15.offset= 1950
+ref.callback_query.message.entities.15.length= 52
+ref.callback_query.message.entities.15.type= url
+ref.callback_query.message.entities.16.offset= 2010
+ref.callback_query.message.entities.16.length= 41
+ref.callback_query.message.entities.16.type= url
+ref.callback_query.message.entities.17.offset= 2175
+ref.callback_query.message.entities.17.length= 53
+ref.callback_query.message.entities.17.type= url
+ref.callback_query.message.entities.18.offset= 2236
+ref.callback_query.message.entities.18.length= 41
+ref.callback_query.message.entities.18.type= url
+ref.callback_query.message.entities.19.offset= 2520
+ref.callback_query.message.entities.19.length= 46
+ref.callback_query.message.entities.19.type= url
+ref.callback_query.message.entities.20.offset= 2574
+ref.callback_query.message.entities.20.length= 34
+ref.callback_query.message.entities.20.type= url
+ref.callback_query.message.entities.21.offset= 2732
+ref.callback_query.message.entities.21.length= 46
+ref.callback_query.message.entities.21.type= url
+ref.callback_query.message.entities.22.offset= 2786
+ref.callback_query.message.entities.22.length= 34
+ref.callback_query.message.entities.22.type= url
+ref.callback_query.message.entities.23.offset= 2948
+ref.callback_query.message.entities.23.length= 40
+ref.callback_query.message.entities.23.type= url
+ref.callback_query.message.entities.24.offset= 2996
+ref.callback_query.message.entities.24.length= 28
+ref.callback_query.message.entities.24.type= url
+ref.callback_query.message.entities.25.offset= 3173
+ref.callback_query.message.entities.25.length= 54
+ref.callback_query.message.entities.25.type= url
+ref.callback_query.message.entities.26.offset= 3235
+ref.callback_query.message.entities.26.length= 47
+ref.callback_query.message.entities.26.type= url
+ref.callback_query.message.entities.27.offset= 3406
+ref.callback_query.message.entities.27.length= 57
+ref.callback_query.message.entities.27.type= url
+ref.callback_query.message.entities.28.offset= 3471
+ref.callback_query.message.entities.28.length= 45
+ref.callback_query.message.entities.28.type= url
+ref.callback_query.message.entities.29.offset= 3635
+ref.callback_query.message.entities.29.length= 55
+ref.callback_query.message.entities.29.type= url
+ref.callback_query.message.entities.30.offset= 3698
+ref.callback_query.message.entities.30.length= 43
+ref.callback_query.message.entities.30.type= url
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.text= ➡️
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.callback_data= /packagist_i 1393342467 2 bW9ub2xvZw==
+ref.callback_query.chat_instance= -642654228408535566
+ref.callback_query.data= /packagist_i 1393342467 2 bW9ub2xvZw==
+
+
+[ref]
+ref.text= 1. nama : mero/yii2-monolog
+deksripsi : The Monolog integration for the Yii framework.
+url : https://packagist.org/packages/mero/yii2-monolog
+repo : https://github.com/merorafael/yii2-monolog
+downloads : 85389
+favers : 37
+
+2. nama : markhilton/monolog-mysql
+deksripsi : Laravel 8 MySQL driver for Monolog
+url : https://packagist.org/packages/markhilton/monolog-mysql
+repo : https://github.com/markhilton/monolog-mysql
+downloads : 59999
+favers : 38
+
+3. nama : logentries/logentries-monolog-handler
+deksripsi : A handler for Monolog that sends messages to Logentries.com.
+url : https://packagist.org/packages/logentries/logentries-monolog-handler
+repo : https://github.com/logentries/logentries-monolog-handler
+downloads : 466132
+favers : 45
+
+4. nama : kdyby/monolog
+deksripsi : Integration of Monolog into Nette Framework
+url : https://packagist.org/packages/kdyby/monolog
+repo : https://github.com/Kdyby/Monolog
+downloads : 507036
+favers : 33
+
+5. nama : enlitepro/enlite-monolog
+deksripsi : Monolog integration to Zend Framework v2 and v3
+url : https://packagist.org/packages/enlitepro/enlite-monolog
+repo : https://github.com/enlitepro/enlite-monolog
+downloads : 351868
+favers : 18
+
+6. nama : contributte/monolog
+deksripsi : Monolog integration into Nette Framework
+url : https://packagist.org/packages/contributte/monolog
+repo : https://github.com/contributte/monolog
+downloads : 158292
+favers : 18
+
+7. nama : bitrix-expert/monolog-adapter
+deksripsi : Monolog adapter for Bitrix CMS
+url : https://packagist.org/packages/bitrix-expert/monolog-adapter
+repo : https://github.com/bitrix-expert/monolog-adapter
+downloads : 31536
+favers : 56
+
+8. nama : pulse00/monolog-parser
+deksripsi : A parser for monolog log entries
+url : https://packagist.org/packages/pulse00/monolog-parser
+repo : https://github.com/pulse00/monolog-parser
+downloads : 247503
+favers : 44
+
+9. nama : nvanheuverzwijn/monolog-logdna
+deksripsi : Logdna handler for Monolog
+url : https://packagist.org/packages/nvanheuverzwijn/monolog-logdna
+repo : https://github.com/nvanheuverzwijn/monolog-logdna
+downloads : 72745
+favers : 18
+
+10. nama : newrelic/monolog-enricher
+deksripsi : Monolog components to enable New Relic Logs
+url : https://packagist.org/packages/newrelic/monolog-enricher
+repo : https://github.com/newrelic/newrelic-monolog-logenricher-php
+downloads : 292851
+favers : 8
+
+11. nama : mangoweb/monolog-tracy-handler
+deksripsi : Integrates Tracy into Monolog, supports uploading Tracy bluescreens to AWS S3
+url : https://packagist.org/packages/mangoweb/monolog-tracy-handler
+repo : https://github.com/mangoweb-backend/monolog-tracy-handler
+downloads : 54879
+favers : 14
+
+12. nama : hikaeme/monolog-ltsv-formatter
+deksripsi : LTSV Formatter for Monolog
+url : https://packagist.org/packages/hikaeme/monolog-ltsv-formatter
+repo : https://github.com/fjyuu/monolog-ltsv-formatter
+downloads : 176657
+favers : 9
+
+13. nama : ddtraceweb/monolog-parser
+deksripsi : A parser for monolog log entries
+url : https://packagist.org/packages/ddtraceweb/monolog-parser
+repo : https://github.com/ddtraceweb/monolog-parser
+downloads : 181547
+favers : 29
+
+14. nama : dakatsuka/monolog-fluent-handler
+deksripsi : Fluentd Handler for Monolog
+url : https://packagist.org/packages/dakatsuka/monolog-fluent-handler
+repo : https://github.com/dakatsuka/MonologFluentHandler
+downloads : 220560
+favers : 12
+
+15. nama : cmdisp/monolog-microsoft-teams
+deksripsi : Monolog Handler for sending messages to Microsoft Teams using the Incoming Webhook connector
+url : https://packagist.org/packages/cmdisp/monolog-microsoft-teams
+repo : https://github.com/cmdisp/monolog-microsoft-teams
+downloads : 131088
+favers : 33
+ref.message_id= 
+ref.reply_markup= {"inline_keyboard":[[{"text":"\u27a1\ufe0f","callback_data":"\/packagist_i 1393342467 2 "}]]}
+ref.reply_to_message_id= 4478
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(192): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot_telegram\command\packagist_i.php(44): Telegram->editMessageText(Array)
+#4 C:\bot_telegram\hook.php(636): require('C:\\bot_telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-05-09 13:11:20  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804532881
+ref.callback_query.id= 5984360329755476746
+ref.callback_query.from.id= 1393342467
+ref.callback_query.from.is_bot= false
+ref.callback_query.from.first_name= ƒα∂нιℓ
+ref.callback_query.from.last_name= яιуαηтσ
+ref.callback_query.from.username= fadhil_riyanto
+ref.callback_query.from.language_code= ms
+ref.callback_query.message.message_id= 4484
+ref.callback_query.message.from.id= 1489990155
+ref.callback_query.message.from.is_bot= true
+ref.callback_query.message.from.first_name= ƒα∂нιℓ яιуαηтσ
+ref.callback_query.message.from.username= Fadhil_riyanto_bot
+ref.callback_query.message.chat.id= -1001407564572
+ref.callback_query.message.chat.title= Fadhil Riyanto Logs
+ref.callback_query.message.chat.type= supergroup
+ref.callback_query.message.date= 1620540660
+ref.callback_query.message.reply_to_message.message_id= 4483
+ref.callback_query.message.reply_to_message.from.id= 1393342467
+ref.callback_query.message.reply_to_message.from.is_bot= false
+ref.callback_query.message.reply_to_message.from.first_name= ƒα∂нιℓ
+ref.callback_query.message.reply_to_message.from.last_name= яιуαηтσ
+ref.callback_query.message.reply_to_message.from.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.from.language_code= ms
+ref.callback_query.message.reply_to_message.chat.id= -1001407564572
+ref.callback_query.message.reply_to_message.chat.title= Fadhil Riyanto Logs
+ref.callback_query.message.reply_to_message.chat.type= supergroup
+ref.callback_query.message.reply_to_message.date= 1620540656
+ref.callback_query.message.reply_to_message.text= /composer guzzle
+ref.callback_query.message.reply_to_message.entities.0.offset= 0
+ref.callback_query.message.reply_to_message.entities.0.length= 9
+ref.callback_query.message.reply_to_message.entities.0.type= bot_command
+ref.callback_query.message.text= 1. nama : guzzlehttp/guzzle
+deksripsi : Guzzle is a PHP HTTP client library
+url : https://packagist.org/packages/guzzlehttp/guzzle
+repo : https://github.com/guzzle/guzzle
+downloads : 270081188
+favers : 21453
+
+2. nama : guzzlehttp/psr7
+deksripsi : PSR-7 message implementation that also provides common utility methods
+url : https://packagist.org/packages/guzzlehttp/psr7
+repo : https://github.com/guzzle/psr7
+downloads : 265092767
+favers : 7107
+
+3. nama : guzzlehttp/promises
+deksripsi : Guzzle promises library
+url : https://packagist.org/packages/guzzlehttp/promises
+repo : https://github.com/guzzle/promises
+downloads : 247317616
+favers : 6762
+
+4. nama : php-http/guzzle6-adapter
+deksripsi : Guzzle 6 HTTP Adapter
+url : https://packagist.org/packages/php-http/guzzle6-adapter
+repo : https://github.com/php-http/guzzle6-adapter
+downloads : 39421971
+favers : 1315
+
+5. nama : http-interop/http-factory-guzzle
+deksripsi : An HTTP Factory using Guzzle PSR7
+url : https://packagist.org/packages/http-interop/http-factory-guzzle
+repo : https://github.com/http-interop/http-factory-guzzle
+downloads : 17503345
+favers : 343
+
+6. nama : guzzlehttp/streams
+deksripsi : Provides a simple abstraction over streams of data
+url : https://packagist.org/packages/guzzlehttp/streams
+repo : https://github.com/guzzle/streams
+downloads : 56568047
+favers : 555
+
+7. nama : guzzlehttp/ringphp
+deksripsi : Provides a simple API and specification that abstracts away the details of HTTP into a single PHP function.
+url : https://packagist.org/packages/guzzlehttp/ringphp
+repo : https://github.com/guzzle/RingPHP
+downloads : 53147805
+favers : 765
+
+8. nama : kevinrob/guzzle-cache-middleware
+deksripsi : A HTTP/1.1 Cache for Guzzle 6. It's a simple Middleware to be added in the HandlerStack. (RFC 7234)
+url : https://packagist.org/packages/kevinrob/guzzle-cache-middleware
+repo : https://github.com/Kevinrob/guzzle-cache-middleware
+downloads : 2859734
+favers : 331
+
+9. nama : eightpoints/guzzle-bundle
+deksripsi : Integrates Guzzle 6.x, a PHP HTTP Client, into Symfony 2/3/4. Comes with easy and powerful configuration options and optional plugins.
+url : https://packagist.org/packages/eightpoints/guzzle-bundle
+repo : https://github.com/8p/EightPointsGuzzleBundle
+downloads : 4305178
+favers : 422
+
+10. nama : guzzle/guzzle
+deksripsi : PHP HTTP client. This library is deprecated in favor of https://packagist.org/packages/guzzlehttp/guzzle
+url : https://packagist.org/packages/guzzle/guzzle
+repo : https://github.com/guzzle/guzzle3
+downloads : 55351762
+favers : 224
+
+11. nama : kitetail/zttp
+deksripsi : A developer-experience focused HTTP client, optimized for most common use cases.
+url : https://packagist.org/packages/kitetail/zttp
+repo : https://github.com/kitetail/zttp
+downloads : 737556
+favers : 1695
+
+12. nama : intercom/intercom-php
+deksripsi : Intercom API client built on top of HTTPlug
+url : https://packagist.org/packages/intercom/intercom-php
+repo : https://github.com/intercom/intercom-php
+downloads : 5638187
+favers : 273
+
+13. nama : kamermans/guzzle-oauth2-subscriber
+deksripsi : OAuth 2.0 client for Guzzle 4, 5 and 6+
+url : https://packagist.org/packages/kamermans/guzzle-oauth2-subscriber
+repo : https://github.com/kamermans/guzzle-oauth2-subscriber
+downloads : 716126
+favers : 86
+
+14. nama : graham-campbell/guzzle-factory
+deksripsi : Provides A Simple Guzzle Factory With Good Defaults
+url : https://packagist.org/packages/graham-campbell/guzzle-factory
+repo : https://github.com/GrahamCampbell/Guzzle-Factory
+downloads : 794023
+favers : 85
+
+15. nama : ezimuel/guzzlestreams
+deksripsi : Fork of guzzle/streams (abandoned) to be used with elasticsearch-php
+url : https://packagist.org/packages/ezimuel/guzzlestreams
+repo : https://github.com/ezimuel/guzzlestreams
+downloads : 5912811
+favers : 40
+ref.callback_query.message.entities.0.offset= 82
+ref.callback_query.message.entities.0.length= 48
+ref.callback_query.message.entities.0.type= url
+ref.callback_query.message.entities.1.offset= 138
+ref.callback_query.message.entities.1.length= 32
+ref.callback_query.message.entities.1.type= url
+ref.callback_query.message.entities.2.offset= 183
+ref.callback_query.message.entities.2.length= 9
+ref.callback_query.message.entities.2.type= phone_number
+ref.callback_query.message.entities.3.offset= 324
+ref.callback_query.message.entities.3.length= 46
+ref.callback_query.message.entities.3.type= url
+ref.callback_query.message.entities.4.offset= 378
+ref.callback_query.message.entities.4.length= 30
+ref.callback_query.message.entities.4.type= url
+ref.callback_query.message.entities.5.offset= 421
+ref.callback_query.message.entities.5.length= 9
+ref.callback_query.message.entities.5.type= phone_number
+ref.callback_query.message.entities.6.offset= 518
+ref.callback_query.message.entities.6.length= 50
+ref.callback_query.message.entities.6.type= url
+ref.callback_query.message.entities.7.offset= 576
+ref.callback_query.message.entities.7.length= 34
+ref.callback_query.message.entities.7.type= url
+ref.callback_query.message.entities.8.offset= 623
+ref.callback_query.message.entities.8.length= 9
+ref.callback_query.message.entities.8.type= phone_number
+ref.callback_query.message.entities.9.offset= 723
+ref.callback_query.message.entities.9.length= 55
+ref.callback_query.message.entities.9.type= url
+ref.callback_query.message.entities.10.offset= 786
+ref.callback_query.message.entities.10.length= 43
+ref.callback_query.message.entities.10.type= url
+ref.callback_query.message.entities.11.offset= 961
+ref.callback_query.message.entities.11.length= 63
+ref.callback_query.message.entities.11.type= url
+ref.callback_query.message.entities.12.offset= 1032
+ref.callback_query.message.entities.12.length= 51
+ref.callback_query.message.entities.12.type= url
+ref.callback_query.message.entities.13.offset= 1217
+ref.callback_query.message.entities.13.length= 49
+ref.callback_query.message.entities.13.type= url
+ref.callback_query.message.entities.14.offset= 1274
+ref.callback_query.message.entities.14.length= 33
+ref.callback_query.message.entities.14.type= url
+ref.callback_query.message.entities.15.offset= 1498
+ref.callback_query.message.entities.15.length= 49
+ref.callback_query.message.entities.15.type= url
+ref.callback_query.message.entities.16.offset= 1555
+ref.callback_query.message.entities.16.length= 33
+ref.callback_query.message.entities.16.type= url
+ref.callback_query.message.entities.17.offset= 1785
+ref.callback_query.message.entities.17.length= 63
+ref.callback_query.message.entities.17.type= url
+ref.callback_query.message.entities.18.offset= 1856
+ref.callback_query.message.entities.18.length= 51
+ref.callback_query.message.entities.18.type= url
+ref.callback_query.message.entities.19.offset= 2131
+ref.callback_query.message.entities.19.length= 56
+ref.callback_query.message.entities.19.type= url
+ref.callback_query.message.entities.20.offset= 2195
+ref.callback_query.message.entities.20.length= 45
+ref.callback_query.message.entities.20.type= url
+ref.callback_query.message.entities.21.offset= 2368
+ref.callback_query.message.entities.21.length= 48
+ref.callback_query.message.entities.21.type= url
+ref.callback_query.message.entities.22.offset= 2423
+ref.callback_query.message.entities.22.length= 44
+ref.callback_query.message.entities.22.type= url
+ref.callback_query.message.entities.23.offset= 2475
+ref.callback_query.message.entities.23.length= 33
+ref.callback_query.message.entities.23.type= url
+ref.callback_query.message.entities.24.offset= 2668
+ref.callback_query.message.entities.24.length= 44
+ref.callback_query.message.entities.24.type= url
+ref.callback_query.message.entities.25.offset= 2720
+ref.callback_query.message.entities.25.length= 32
+ref.callback_query.message.entities.25.type= url
+ref.callback_query.message.entities.26.offset= 2882
+ref.callback_query.message.entities.26.length= 52
+ref.callback_query.message.entities.26.type= url
+ref.callback_query.message.entities.27.offset= 2942
+ref.callback_query.message.entities.27.length= 40
+ref.callback_query.message.entities.27.type= url
+ref.callback_query.message.entities.28.offset= 3121
+ref.callback_query.message.entities.28.length= 65
+ref.callback_query.message.entities.28.type= url
+ref.callback_query.message.entities.29.offset= 3194
+ref.callback_query.message.entities.29.length= 53
+ref.callback_query.message.entities.29.type= url
+ref.callback_query.message.entities.30.offset= 3392
+ref.callback_query.message.entities.30.length= 61
+ref.callback_query.message.entities.30.type= url
+ref.callback_query.message.entities.31.offset= 3461
+ref.callback_query.message.entities.31.length= 48
+ref.callback_query.message.entities.31.type= url
+ref.callback_query.message.entities.32.offset= 3662
+ref.callback_query.message.entities.32.length= 52
+ref.callback_query.message.entities.32.type= url
+ref.callback_query.message.entities.33.offset= 3722
+ref.callback_query.message.entities.33.length= 40
+ref.callback_query.message.entities.33.type= url
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.text= ➡️
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.callback_data= /packagist_i 1393342467 2 Z3V6emxl
+ref.callback_query.chat_instance= -642654228408535566
+ref.callback_query.data= /packagist_i 1393342467 2 Z3V6emxl
+
+
+[ref]
+ref.text= 1. nama : caseyamcl/guzzle_retry_middleware
+deksripsi : Guzzle v6+ retry middleware that handles 429/503 status codes and connection timeouts
+url : https://packagist.org/packages/caseyamcl/guzzle_retry_middleware
+repo : https://github.com/caseyamcl/guzzle_retry_middleware
+downloads : 670190
+favers : 97
+
+2. nama : guzzlehttp/guzzle-services
+deksripsi : Provides an implementation of the Guzzle Command library that uses Guzzle service descriptions to describe web services, serialize requests, and parse responses into easy to use model structures.
+url : https://packagist.org/packages/guzzlehttp/guzzle-services
+repo : https://github.com/guzzle/guzzle-services
+downloads : 3348121
+favers : 229
+
+3. nama : csa/guzzle-bundle
+deksripsi : A bundle integrating GuzzleHttp >= 4.0
+url : https://packagist.org/packages/csa/guzzle-bundle
+repo : https://github.com/csarrazi/CsaGuzzleBundle
+downloads : 3317658
+favers : 255
+
+4. nama : maclof/kubernetes-client
+deksripsi : A simple yet elegant client for accessing and controlling a Kubernetes cluster.
+url : https://packagist.org/packages/maclof/kubernetes-client
+repo : https://github.com/maclof/kubernetes-client
+downloads : 307150
+favers : 203
+
+5. nama : guzzlehttp/oauth-subscriber
+deksripsi : Guzzle OAuth 1.0 subscriber
+url : https://packagist.org/packages/guzzlehttp/oauth-subscriber
+repo : https://github.com/guzzle/oauth-subscriber
+downloads : 3632890
+favers : 203
+
+6. nama : ackintosh/ganesha
+deksripsi : PHP implementation of Circuit Breaker pattern
+url : https://packagist.org/packages/ackintosh/ganesha
+repo : https://github.com/ackintosh/ganesha
+downloads : 174720
+favers : 401
+
+7. nama : guzzlehttp/command
+deksripsi : Provides the foundation for building command-based web service clients
+url : https://packagist.org/packages/guzzlehttp/command
+repo : https://github.com/guzzle/command
+downloads : 3414457
+favers : 99
+
+8. nama : namshi/cuzzle
+deksripsi : Get the cURL shell command from a Guzzle request
+url : https://packagist.org/packages/namshi/cuzzle
+repo : https://github.com/namshi/cuzzle
+downloads : 1354310
+favers : 250
+
+9. nama : ezimuel/ringphp
+deksripsi : Fork of guzzle/RingPHP (abandoned) to be used with elasticsearch-php
+url : https://packagist.org/packages/ezimuel/ringphp
+repo : https://github.com/ezimuel/ringphp
+downloads : 5912473
+favers : 40
+
+10. nama : rtheunissen/guzzle-log-middleware
+deksripsi : Guzzle middleware to log requests and responses
+url : https://packagist.org/packages/rtheunissen/guzzle-log-middleware
+repo : https://github.com/rtheunissen/guzzle-log-middleware
+downloads : 1042871
+favers : 68
+
+11. nama : php-http/guzzle7-adapter
+deksripsi : Guzzle 7 HTTP Adapter
+url : https://packagist.org/packages/php-http/guzzle7-adapter
+repo : https://github.com/php-http/guzzle7-adapter
+downloads : 488478
+favers : 12
+
+12. nama : meng-tian/async-soap-guzzle
+deksripsi : An asynchronous SOAP client build on top of Guzzle.
+url : https://packagist.org/packages/meng-tian/async-soap-guzzle
+repo : https://github.com/meng-tian/async-soap-guzzle
+downloads : 769040
+favers : 85
+
+13. nama : kozz/laravel-guzzle-provider
+deksripsi : Guzzle 5/6 Service Provider for Laravel
+url : https://packagist.org/packages/kozz/laravel-guzzle-provider
+repo : https://github.com/urakozz/laravel-guzzle
+downloads : 327861
+favers : 63
+
+14. nama : graze/guzzle-jsonrpc
+deksripsi : JSON-RPC 2.0 client for Guzzle
+url : https://packagist.org/packages/graze/guzzle-jsonrpc
+repo : https://github.com/graze/guzzle-jsonrpc
+downloads : 567782
+favers : 92
+
+15. nama : gmponos/guzzle_logger
+deksripsi : A Guzzle middleware to log request and responses automatically
+url : https://packagist.org/packages/gmponos/guzzle_logger
+repo : https://github.com/gmponos/guzzle-log-middleware
+downloads : 138915
+favers : 49
+ref.message_id= 
+ref.reply_markup= {"inline_keyboard":[[{"text":"\u27a1\ufe0f","callback_data":"\/packagist_i 1393342467 2 "}]]}
+ref.reply_to_message_id= 4484
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(192): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot_telegram\command\packagist_i.php(44): Telegram->editMessageText(Array)
+#4 C:\bot_telegram\hook.php(636): require('C:\\bot_telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-05-09 13:12:01  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804532883
+ref.callback_query.id= 5984360329979638252
+ref.callback_query.from.id= 1393342467
+ref.callback_query.from.is_bot= false
+ref.callback_query.from.first_name= ƒα∂нιℓ
+ref.callback_query.from.last_name= яιуαηтσ
+ref.callback_query.from.username= fadhil_riyanto
+ref.callback_query.from.language_code= ms
+ref.callback_query.message.message_id= 4484
+ref.callback_query.message.from.id= 1489990155
+ref.callback_query.message.from.is_bot= true
+ref.callback_query.message.from.first_name= ƒα∂нιℓ яιуαηтσ
+ref.callback_query.message.from.username= Fadhil_riyanto_bot
+ref.callback_query.message.chat.id= -1001407564572
+ref.callback_query.message.chat.title= Fadhil Riyanto Logs
+ref.callback_query.message.chat.type= supergroup
+ref.callback_query.message.date= 1620540660
+ref.callback_query.message.reply_to_message.message_id= 4483
+ref.callback_query.message.reply_to_message.from.id= 1393342467
+ref.callback_query.message.reply_to_message.from.is_bot= false
+ref.callback_query.message.reply_to_message.from.first_name= ƒα∂нιℓ
+ref.callback_query.message.reply_to_message.from.last_name= яιуαηтσ
+ref.callback_query.message.reply_to_message.from.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.from.language_code= ms
+ref.callback_query.message.reply_to_message.chat.id= -1001407564572
+ref.callback_query.message.reply_to_message.chat.title= Fadhil Riyanto Logs
+ref.callback_query.message.reply_to_message.chat.type= supergroup
+ref.callback_query.message.reply_to_message.date= 1620540656
+ref.callback_query.message.reply_to_message.text= /composer guzzle
+ref.callback_query.message.reply_to_message.entities.0.offset= 0
+ref.callback_query.message.reply_to_message.entities.0.length= 9
+ref.callback_query.message.reply_to_message.entities.0.type= bot_command
+ref.callback_query.message.text= 1. nama : guzzlehttp/guzzle
+deksripsi : Guzzle is a PHP HTTP client library
+url : https://packagist.org/packages/guzzlehttp/guzzle
+repo : https://github.com/guzzle/guzzle
+downloads : 270081188
+favers : 21453
+
+2. nama : guzzlehttp/psr7
+deksripsi : PSR-7 message implementation that also provides common utility methods
+url : https://packagist.org/packages/guzzlehttp/psr7
+repo : https://github.com/guzzle/psr7
+downloads : 265092767
+favers : 7107
+
+3. nama : guzzlehttp/promises
+deksripsi : Guzzle promises library
+url : https://packagist.org/packages/guzzlehttp/promises
+repo : https://github.com/guzzle/promises
+downloads : 247317616
+favers : 6762
+
+4. nama : php-http/guzzle6-adapter
+deksripsi : Guzzle 6 HTTP Adapter
+url : https://packagist.org/packages/php-http/guzzle6-adapter
+repo : https://github.com/php-http/guzzle6-adapter
+downloads : 39421971
+favers : 1315
+
+5. nama : http-interop/http-factory-guzzle
+deksripsi : An HTTP Factory using Guzzle PSR7
+url : https://packagist.org/packages/http-interop/http-factory-guzzle
+repo : https://github.com/http-interop/http-factory-guzzle
+downloads : 17503345
+favers : 343
+
+6. nama : guzzlehttp/streams
+deksripsi : Provides a simple abstraction over streams of data
+url : https://packagist.org/packages/guzzlehttp/streams
+repo : https://github.com/guzzle/streams
+downloads : 56568047
+favers : 555
+
+7. nama : guzzlehttp/ringphp
+deksripsi : Provides a simple API and specification that abstracts away the details of HTTP into a single PHP function.
+url : https://packagist.org/packages/guzzlehttp/ringphp
+repo : https://github.com/guzzle/RingPHP
+downloads : 53147805
+favers : 765
+
+8. nama : kevinrob/guzzle-cache-middleware
+deksripsi : A HTTP/1.1 Cache for Guzzle 6. It's a simple Middleware to be added in the HandlerStack. (RFC 7234)
+url : https://packagist.org/packages/kevinrob/guzzle-cache-middleware
+repo : https://github.com/Kevinrob/guzzle-cache-middleware
+downloads : 2859734
+favers : 331
+
+9. nama : eightpoints/guzzle-bundle
+deksripsi : Integrates Guzzle 6.x, a PHP HTTP Client, into Symfony 2/3/4. Comes with easy and powerful configuration options and optional plugins.
+url : https://packagist.org/packages/eightpoints/guzzle-bundle
+repo : https://github.com/8p/EightPointsGuzzleBundle
+downloads : 4305178
+favers : 422
+
+10. nama : guzzle/guzzle
+deksripsi : PHP HTTP client. This library is deprecated in favor of https://packagist.org/packages/guzzlehttp/guzzle
+url : https://packagist.org/packages/guzzle/guzzle
+repo : https://github.com/guzzle/guzzle3
+downloads : 55351762
+favers : 224
+
+11. nama : kitetail/zttp
+deksripsi : A developer-experience focused HTTP client, optimized for most common use cases.
+url : https://packagist.org/packages/kitetail/zttp
+repo : https://github.com/kitetail/zttp
+downloads : 737556
+favers : 1695
+
+12. nama : intercom/intercom-php
+deksripsi : Intercom API client built on top of HTTPlug
+url : https://packagist.org/packages/intercom/intercom-php
+repo : https://github.com/intercom/intercom-php
+downloads : 5638187
+favers : 273
+
+13. nama : kamermans/guzzle-oauth2-subscriber
+deksripsi : OAuth 2.0 client for Guzzle 4, 5 and 6+
+url : https://packagist.org/packages/kamermans/guzzle-oauth2-subscriber
+repo : https://github.com/kamermans/guzzle-oauth2-subscriber
+downloads : 716126
+favers : 86
+
+14. nama : graham-campbell/guzzle-factory
+deksripsi : Provides A Simple Guzzle Factory With Good Defaults
+url : https://packagist.org/packages/graham-campbell/guzzle-factory
+repo : https://github.com/GrahamCampbell/Guzzle-Factory
+downloads : 794023
+favers : 85
+
+15. nama : ezimuel/guzzlestreams
+deksripsi : Fork of guzzle/streams (abandoned) to be used with elasticsearch-php
+url : https://packagist.org/packages/ezimuel/guzzlestreams
+repo : https://github.com/ezimuel/guzzlestreams
+downloads : 5912811
+favers : 40
+ref.callback_query.message.entities.0.offset= 82
+ref.callback_query.message.entities.0.length= 48
+ref.callback_query.message.entities.0.type= url
+ref.callback_query.message.entities.1.offset= 138
+ref.callback_query.message.entities.1.length= 32
+ref.callback_query.message.entities.1.type= url
+ref.callback_query.message.entities.2.offset= 183
+ref.callback_query.message.entities.2.length= 9
+ref.callback_query.message.entities.2.type= phone_number
+ref.callback_query.message.entities.3.offset= 324
+ref.callback_query.message.entities.3.length= 46
+ref.callback_query.message.entities.3.type= url
+ref.callback_query.message.entities.4.offset= 378
+ref.callback_query.message.entities.4.length= 30
+ref.callback_query.message.entities.4.type= url
+ref.callback_query.message.entities.5.offset= 421
+ref.callback_query.message.entities.5.length= 9
+ref.callback_query.message.entities.5.type= phone_number
+ref.callback_query.message.entities.6.offset= 518
+ref.callback_query.message.entities.6.length= 50
+ref.callback_query.message.entities.6.type= url
+ref.callback_query.message.entities.7.offset= 576
+ref.callback_query.message.entities.7.length= 34
+ref.callback_query.message.entities.7.type= url
+ref.callback_query.message.entities.8.offset= 623
+ref.callback_query.message.entities.8.length= 9
+ref.callback_query.message.entities.8.type= phone_number
+ref.callback_query.message.entities.9.offset= 723
+ref.callback_query.message.entities.9.length= 55
+ref.callback_query.message.entities.9.type= url
+ref.callback_query.message.entities.10.offset= 786
+ref.callback_query.message.entities.10.length= 43
+ref.callback_query.message.entities.10.type= url
+ref.callback_query.message.entities.11.offset= 961
+ref.callback_query.message.entities.11.length= 63
+ref.callback_query.message.entities.11.type= url
+ref.callback_query.message.entities.12.offset= 1032
+ref.callback_query.message.entities.12.length= 51
+ref.callback_query.message.entities.12.type= url
+ref.callback_query.message.entities.13.offset= 1217
+ref.callback_query.message.entities.13.length= 49
+ref.callback_query.message.entities.13.type= url
+ref.callback_query.message.entities.14.offset= 1274
+ref.callback_query.message.entities.14.length= 33
+ref.callback_query.message.entities.14.type= url
+ref.callback_query.message.entities.15.offset= 1498
+ref.callback_query.message.entities.15.length= 49
+ref.callback_query.message.entities.15.type= url
+ref.callback_query.message.entities.16.offset= 1555
+ref.callback_query.message.entities.16.length= 33
+ref.callback_query.message.entities.16.type= url
+ref.callback_query.message.entities.17.offset= 1785
+ref.callback_query.message.entities.17.length= 63
+ref.callback_query.message.entities.17.type= url
+ref.callback_query.message.entities.18.offset= 1856
+ref.callback_query.message.entities.18.length= 51
+ref.callback_query.message.entities.18.type= url
+ref.callback_query.message.entities.19.offset= 2131
+ref.callback_query.message.entities.19.length= 56
+ref.callback_query.message.entities.19.type= url
+ref.callback_query.message.entities.20.offset= 2195
+ref.callback_query.message.entities.20.length= 45
+ref.callback_query.message.entities.20.type= url
+ref.callback_query.message.entities.21.offset= 2368
+ref.callback_query.message.entities.21.length= 48
+ref.callback_query.message.entities.21.type= url
+ref.callback_query.message.entities.22.offset= 2423
+ref.callback_query.message.entities.22.length= 44
+ref.callback_query.message.entities.22.type= url
+ref.callback_query.message.entities.23.offset= 2475
+ref.callback_query.message.entities.23.length= 33
+ref.callback_query.message.entities.23.type= url
+ref.callback_query.message.entities.24.offset= 2668
+ref.callback_query.message.entities.24.length= 44
+ref.callback_query.message.entities.24.type= url
+ref.callback_query.message.entities.25.offset= 2720
+ref.callback_query.message.entities.25.length= 32
+ref.callback_query.message.entities.25.type= url
+ref.callback_query.message.entities.26.offset= 2882
+ref.callback_query.message.entities.26.length= 52
+ref.callback_query.message.entities.26.type= url
+ref.callback_query.message.entities.27.offset= 2942
+ref.callback_query.message.entities.27.length= 40
+ref.callback_query.message.entities.27.type= url
+ref.callback_query.message.entities.28.offset= 3121
+ref.callback_query.message.entities.28.length= 65
+ref.callback_query.message.entities.28.type= url
+ref.callback_query.message.entities.29.offset= 3194
+ref.callback_query.message.entities.29.length= 53
+ref.callback_query.message.entities.29.type= url
+ref.callback_query.message.entities.30.offset= 3392
+ref.callback_query.message.entities.30.length= 61
+ref.callback_query.message.entities.30.type= url
+ref.callback_query.message.entities.31.offset= 3461
+ref.callback_query.message.entities.31.length= 48
+ref.callback_query.message.entities.31.type= url
+ref.callback_query.message.entities.32.offset= 3662
+ref.callback_query.message.entities.32.length= 52
+ref.callback_query.message.entities.32.type= url
+ref.callback_query.message.entities.33.offset= 3722
+ref.callback_query.message.entities.33.length= 40
+ref.callback_query.message.entities.33.type= url
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.text= ➡️
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.callback_data= /packagist_i 1393342467 2 Z3V6emxl
+ref.callback_query.chat_instance= -642654228408535566
+ref.callback_query.data= /packagist_i 1393342467 2 Z3V6emxl
+
+
+[ref]
+ref.text= 1. nama : caseyamcl/guzzle_retry_middleware
+deksripsi : Guzzle v6+ retry middleware that handles 429/503 status codes and connection timeouts
+url : https://packagist.org/packages/caseyamcl/guzzle_retry_middleware
+repo : https://github.com/caseyamcl/guzzle_retry_middleware
+downloads : 670190
+favers : 97
+
+2. nama : guzzlehttp/guzzle-services
+deksripsi : Provides an implementation of the Guzzle Command library that uses Guzzle service descriptions to describe web services, serialize requests, and parse responses into easy to use model structures.
+url : https://packagist.org/packages/guzzlehttp/guzzle-services
+repo : https://github.com/guzzle/guzzle-services
+downloads : 3348121
+favers : 229
+
+3. nama : csa/guzzle-bundle
+deksripsi : A bundle integrating GuzzleHttp >= 4.0
+url : https://packagist.org/packages/csa/guzzle-bundle
+repo : https://github.com/csarrazi/CsaGuzzleBundle
+downloads : 3317658
+favers : 255
+
+4. nama : maclof/kubernetes-client
+deksripsi : A simple yet elegant client for accessing and controlling a Kubernetes cluster.
+url : https://packagist.org/packages/maclof/kubernetes-client
+repo : https://github.com/maclof/kubernetes-client
+downloads : 307150
+favers : 203
+
+5. nama : guzzlehttp/oauth-subscriber
+deksripsi : Guzzle OAuth 1.0 subscriber
+url : https://packagist.org/packages/guzzlehttp/oauth-subscriber
+repo : https://github.com/guzzle/oauth-subscriber
+downloads : 3632890
+favers : 203
+
+6. nama : ackintosh/ganesha
+deksripsi : PHP implementation of Circuit Breaker pattern
+url : https://packagist.org/packages/ackintosh/ganesha
+repo : https://github.com/ackintosh/ganesha
+downloads : 174720
+favers : 401
+
+7. nama : guzzlehttp/command
+deksripsi : Provides the foundation for building command-based web service clients
+url : https://packagist.org/packages/guzzlehttp/command
+repo : https://github.com/guzzle/command
+downloads : 3414457
+favers : 99
+
+8. nama : namshi/cuzzle
+deksripsi : Get the cURL shell command from a Guzzle request
+url : https://packagist.org/packages/namshi/cuzzle
+repo : https://github.com/namshi/cuzzle
+downloads : 1354310
+favers : 250
+
+9. nama : ezimuel/ringphp
+deksripsi : Fork of guzzle/RingPHP (abandoned) to be used with elasticsearch-php
+url : https://packagist.org/packages/ezimuel/ringphp
+repo : https://github.com/ezimuel/ringphp
+downloads : 5912473
+favers : 40
+
+10. nama : rtheunissen/guzzle-log-middleware
+deksripsi : Guzzle middleware to log requests and responses
+url : https://packagist.org/packages/rtheunissen/guzzle-log-middleware
+repo : https://github.com/rtheunissen/guzzle-log-middleware
+downloads : 1042871
+favers : 68
+
+11. nama : php-http/guzzle7-adapter
+deksripsi : Guzzle 7 HTTP Adapter
+url : https://packagist.org/packages/php-http/guzzle7-adapter
+repo : https://github.com/php-http/guzzle7-adapter
+downloads : 488478
+favers : 12
+
+12. nama : meng-tian/async-soap-guzzle
+deksripsi : An asynchronous SOAP client build on top of Guzzle.
+url : https://packagist.org/packages/meng-tian/async-soap-guzzle
+repo : https://github.com/meng-tian/async-soap-guzzle
+downloads : 769040
+favers : 85
+
+13. nama : kozz/laravel-guzzle-provider
+deksripsi : Guzzle 5/6 Service Provider for Laravel
+url : https://packagist.org/packages/kozz/laravel-guzzle-provider
+repo : https://github.com/urakozz/laravel-guzzle
+downloads : 327861
+favers : 63
+
+14. nama : graze/guzzle-jsonrpc
+deksripsi : JSON-RPC 2.0 client for Guzzle
+url : https://packagist.org/packages/graze/guzzle-jsonrpc
+repo : https://github.com/graze/guzzle-jsonrpc
+downloads : 567782
+favers : 92
+
+15. nama : gmponos/guzzle_logger
+deksripsi : A Guzzle middleware to log request and responses automatically
+url : https://packagist.org/packages/gmponos/guzzle_logger
+repo : https://github.com/gmponos/guzzle-log-middleware
+downloads : 138915
+favers : 49
+ref.message_id= 
+ref.reply_to_message_id= 4484
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(192): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot_telegram\command\packagist_i.php(44): Telegram->editMessageText(Array)
+#4 C:\bot_telegram\hook.php(636): require('C:\\bot_telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-05-09 13:13:36  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804532885
+ref.callback_query.id= 5984360330036092151
+ref.callback_query.from.id= 1393342467
+ref.callback_query.from.is_bot= false
+ref.callback_query.from.first_name= ƒα∂нιℓ
+ref.callback_query.from.last_name= яιуαηтσ
+ref.callback_query.from.username= fadhil_riyanto
+ref.callback_query.from.language_code= ms
+ref.callback_query.message.message_id= 4484
+ref.callback_query.message.from.id= 1489990155
+ref.callback_query.message.from.is_bot= true
+ref.callback_query.message.from.first_name= ƒα∂нιℓ яιуαηтσ
+ref.callback_query.message.from.username= Fadhil_riyanto_bot
+ref.callback_query.message.chat.id= -1001407564572
+ref.callback_query.message.chat.title= Fadhil Riyanto Logs
+ref.callback_query.message.chat.type= supergroup
+ref.callback_query.message.date= 1620540660
+ref.callback_query.message.reply_to_message.message_id= 4483
+ref.callback_query.message.reply_to_message.from.id= 1393342467
+ref.callback_query.message.reply_to_message.from.is_bot= false
+ref.callback_query.message.reply_to_message.from.first_name= ƒα∂нιℓ
+ref.callback_query.message.reply_to_message.from.last_name= яιуαηтσ
+ref.callback_query.message.reply_to_message.from.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.from.language_code= ms
+ref.callback_query.message.reply_to_message.chat.id= -1001407564572
+ref.callback_query.message.reply_to_message.chat.title= Fadhil Riyanto Logs
+ref.callback_query.message.reply_to_message.chat.type= supergroup
+ref.callback_query.message.reply_to_message.date= 1620540656
+ref.callback_query.message.reply_to_message.text= /composer guzzle
+ref.callback_query.message.reply_to_message.entities.0.offset= 0
+ref.callback_query.message.reply_to_message.entities.0.length= 9
+ref.callback_query.message.reply_to_message.entities.0.type= bot_command
+ref.callback_query.message.text= 1. nama : guzzlehttp/guzzle
+deksripsi : Guzzle is a PHP HTTP client library
+url : https://packagist.org/packages/guzzlehttp/guzzle
+repo : https://github.com/guzzle/guzzle
+downloads : 270081188
+favers : 21453
+
+2. nama : guzzlehttp/psr7
+deksripsi : PSR-7 message implementation that also provides common utility methods
+url : https://packagist.org/packages/guzzlehttp/psr7
+repo : https://github.com/guzzle/psr7
+downloads : 265092767
+favers : 7107
+
+3. nama : guzzlehttp/promises
+deksripsi : Guzzle promises library
+url : https://packagist.org/packages/guzzlehttp/promises
+repo : https://github.com/guzzle/promises
+downloads : 247317616
+favers : 6762
+
+4. nama : php-http/guzzle6-adapter
+deksripsi : Guzzle 6 HTTP Adapter
+url : https://packagist.org/packages/php-http/guzzle6-adapter
+repo : https://github.com/php-http/guzzle6-adapter
+downloads : 39421971
+favers : 1315
+
+5. nama : http-interop/http-factory-guzzle
+deksripsi : An HTTP Factory using Guzzle PSR7
+url : https://packagist.org/packages/http-interop/http-factory-guzzle
+repo : https://github.com/http-interop/http-factory-guzzle
+downloads : 17503345
+favers : 343
+
+6. nama : guzzlehttp/streams
+deksripsi : Provides a simple abstraction over streams of data
+url : https://packagist.org/packages/guzzlehttp/streams
+repo : https://github.com/guzzle/streams
+downloads : 56568047
+favers : 555
+
+7. nama : guzzlehttp/ringphp
+deksripsi : Provides a simple API and specification that abstracts away the details of HTTP into a single PHP function.
+url : https://packagist.org/packages/guzzlehttp/ringphp
+repo : https://github.com/guzzle/RingPHP
+downloads : 53147805
+favers : 765
+
+8. nama : kevinrob/guzzle-cache-middleware
+deksripsi : A HTTP/1.1 Cache for Guzzle 6. It's a simple Middleware to be added in the HandlerStack. (RFC 7234)
+url : https://packagist.org/packages/kevinrob/guzzle-cache-middleware
+repo : https://github.com/Kevinrob/guzzle-cache-middleware
+downloads : 2859734
+favers : 331
+
+9. nama : eightpoints/guzzle-bundle
+deksripsi : Integrates Guzzle 6.x, a PHP HTTP Client, into Symfony 2/3/4. Comes with easy and powerful configuration options and optional plugins.
+url : https://packagist.org/packages/eightpoints/guzzle-bundle
+repo : https://github.com/8p/EightPointsGuzzleBundle
+downloads : 4305178
+favers : 422
+
+10. nama : guzzle/guzzle
+deksripsi : PHP HTTP client. This library is deprecated in favor of https://packagist.org/packages/guzzlehttp/guzzle
+url : https://packagist.org/packages/guzzle/guzzle
+repo : https://github.com/guzzle/guzzle3
+downloads : 55351762
+favers : 224
+
+11. nama : kitetail/zttp
+deksripsi : A developer-experience focused HTTP client, optimized for most common use cases.
+url : https://packagist.org/packages/kitetail/zttp
+repo : https://github.com/kitetail/zttp
+downloads : 737556
+favers : 1695
+
+12. nama : intercom/intercom-php
+deksripsi : Intercom API client built on top of HTTPlug
+url : https://packagist.org/packages/intercom/intercom-php
+repo : https://github.com/intercom/intercom-php
+downloads : 5638187
+favers : 273
+
+13. nama : kamermans/guzzle-oauth2-subscriber
+deksripsi : OAuth 2.0 client for Guzzle 4, 5 and 6+
+url : https://packagist.org/packages/kamermans/guzzle-oauth2-subscriber
+repo : https://github.com/kamermans/guzzle-oauth2-subscriber
+downloads : 716126
+favers : 86
+
+14. nama : graham-campbell/guzzle-factory
+deksripsi : Provides A Simple Guzzle Factory With Good Defaults
+url : https://packagist.org/packages/graham-campbell/guzzle-factory
+repo : https://github.com/GrahamCampbell/Guzzle-Factory
+downloads : 794023
+favers : 85
+
+15. nama : ezimuel/guzzlestreams
+deksripsi : Fork of guzzle/streams (abandoned) to be used with elasticsearch-php
+url : https://packagist.org/packages/ezimuel/guzzlestreams
+repo : https://github.com/ezimuel/guzzlestreams
+downloads : 5912811
+favers : 40
+ref.callback_query.message.entities.0.offset= 82
+ref.callback_query.message.entities.0.length= 48
+ref.callback_query.message.entities.0.type= url
+ref.callback_query.message.entities.1.offset= 138
+ref.callback_query.message.entities.1.length= 32
+ref.callback_query.message.entities.1.type= url
+ref.callback_query.message.entities.2.offset= 183
+ref.callback_query.message.entities.2.length= 9
+ref.callback_query.message.entities.2.type= phone_number
+ref.callback_query.message.entities.3.offset= 324
+ref.callback_query.message.entities.3.length= 46
+ref.callback_query.message.entities.3.type= url
+ref.callback_query.message.entities.4.offset= 378
+ref.callback_query.message.entities.4.length= 30
+ref.callback_query.message.entities.4.type= url
+ref.callback_query.message.entities.5.offset= 421
+ref.callback_query.message.entities.5.length= 9
+ref.callback_query.message.entities.5.type= phone_number
+ref.callback_query.message.entities.6.offset= 518
+ref.callback_query.message.entities.6.length= 50
+ref.callback_query.message.entities.6.type= url
+ref.callback_query.message.entities.7.offset= 576
+ref.callback_query.message.entities.7.length= 34
+ref.callback_query.message.entities.7.type= url
+ref.callback_query.message.entities.8.offset= 623
+ref.callback_query.message.entities.8.length= 9
+ref.callback_query.message.entities.8.type= phone_number
+ref.callback_query.message.entities.9.offset= 723
+ref.callback_query.message.entities.9.length= 55
+ref.callback_query.message.entities.9.type= url
+ref.callback_query.message.entities.10.offset= 786
+ref.callback_query.message.entities.10.length= 43
+ref.callback_query.message.entities.10.type= url
+ref.callback_query.message.entities.11.offset= 961
+ref.callback_query.message.entities.11.length= 63
+ref.callback_query.message.entities.11.type= url
+ref.callback_query.message.entities.12.offset= 1032
+ref.callback_query.message.entities.12.length= 51
+ref.callback_query.message.entities.12.type= url
+ref.callback_query.message.entities.13.offset= 1217
+ref.callback_query.message.entities.13.length= 49
+ref.callback_query.message.entities.13.type= url
+ref.callback_query.message.entities.14.offset= 1274
+ref.callback_query.message.entities.14.length= 33
+ref.callback_query.message.entities.14.type= url
+ref.callback_query.message.entities.15.offset= 1498
+ref.callback_query.message.entities.15.length= 49
+ref.callback_query.message.entities.15.type= url
+ref.callback_query.message.entities.16.offset= 1555
+ref.callback_query.message.entities.16.length= 33
+ref.callback_query.message.entities.16.type= url
+ref.callback_query.message.entities.17.offset= 1785
+ref.callback_query.message.entities.17.length= 63
+ref.callback_query.message.entities.17.type= url
+ref.callback_query.message.entities.18.offset= 1856
+ref.callback_query.message.entities.18.length= 51
+ref.callback_query.message.entities.18.type= url
+ref.callback_query.message.entities.19.offset= 2131
+ref.callback_query.message.entities.19.length= 56
+ref.callback_query.message.entities.19.type= url
+ref.callback_query.message.entities.20.offset= 2195
+ref.callback_query.message.entities.20.length= 45
+ref.callback_query.message.entities.20.type= url
+ref.callback_query.message.entities.21.offset= 2368
+ref.callback_query.message.entities.21.length= 48
+ref.callback_query.message.entities.21.type= url
+ref.callback_query.message.entities.22.offset= 2423
+ref.callback_query.message.entities.22.length= 44
+ref.callback_query.message.entities.22.type= url
+ref.callback_query.message.entities.23.offset= 2475
+ref.callback_query.message.entities.23.length= 33
+ref.callback_query.message.entities.23.type= url
+ref.callback_query.message.entities.24.offset= 2668
+ref.callback_query.message.entities.24.length= 44
+ref.callback_query.message.entities.24.type= url
+ref.callback_query.message.entities.25.offset= 2720
+ref.callback_query.message.entities.25.length= 32
+ref.callback_query.message.entities.25.type= url
+ref.callback_query.message.entities.26.offset= 2882
+ref.callback_query.message.entities.26.length= 52
+ref.callback_query.message.entities.26.type= url
+ref.callback_query.message.entities.27.offset= 2942
+ref.callback_query.message.entities.27.length= 40
+ref.callback_query.message.entities.27.type= url
+ref.callback_query.message.entities.28.offset= 3121
+ref.callback_query.message.entities.28.length= 65
+ref.callback_query.message.entities.28.type= url
+ref.callback_query.message.entities.29.offset= 3194
+ref.callback_query.message.entities.29.length= 53
+ref.callback_query.message.entities.29.type= url
+ref.callback_query.message.entities.30.offset= 3392
+ref.callback_query.message.entities.30.length= 61
+ref.callback_query.message.entities.30.type= url
+ref.callback_query.message.entities.31.offset= 3461
+ref.callback_query.message.entities.31.length= 48
+ref.callback_query.message.entities.31.type= url
+ref.callback_query.message.entities.32.offset= 3662
+ref.callback_query.message.entities.32.length= 52
+ref.callback_query.message.entities.32.type= url
+ref.callback_query.message.entities.33.offset= 3722
+ref.callback_query.message.entities.33.length= 40
+ref.callback_query.message.entities.33.type= url
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.text= ➡️
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.callback_data= /packagist_i 1393342467 2 Z3V6emxl
+ref.callback_query.chat_instance= -642654228408535566
+ref.callback_query.data= /packagist_i 1393342467 2 Z3V6emxl
+
+
+[ref]
+ref.text= 1. nama : caseyamcl/guzzle_retry_middleware
+deksripsi : Guzzle v6+ retry middleware that handles 429/503 status codes and connection timeouts
+url : https://packagist.org/packages/caseyamcl/guzzle_retry_middleware
+repo : https://github.com/caseyamcl/guzzle_retry_middleware
+downloads : 670190
+favers : 97
+
+2. nama : guzzlehttp/guzzle-services
+deksripsi : Provides an implementation of the Guzzle Command library that uses Guzzle service descriptions to describe web services, serialize requests, and parse responses into easy to use model structures.
+url : https://packagist.org/packages/guzzlehttp/guzzle-services
+repo : https://github.com/guzzle/guzzle-services
+downloads : 3348121
+favers : 229
+
+3. nama : csa/guzzle-bundle
+deksripsi : A bundle integrating GuzzleHttp >= 4.0
+url : https://packagist.org/packages/csa/guzzle-bundle
+repo : https://github.com/csarrazi/CsaGuzzleBundle
+downloads : 3317658
+favers : 255
+
+4. nama : maclof/kubernetes-client
+deksripsi : A simple yet elegant client for accessing and controlling a Kubernetes cluster.
+url : https://packagist.org/packages/maclof/kubernetes-client
+repo : https://github.com/maclof/kubernetes-client
+downloads : 307150
+favers : 203
+
+5. nama : guzzlehttp/oauth-subscriber
+deksripsi : Guzzle OAuth 1.0 subscriber
+url : https://packagist.org/packages/guzzlehttp/oauth-subscriber
+repo : https://github.com/guzzle/oauth-subscriber
+downloads : 3632890
+favers : 203
+
+6. nama : ackintosh/ganesha
+deksripsi : PHP implementation of Circuit Breaker pattern
+url : https://packagist.org/packages/ackintosh/ganesha
+repo : https://github.com/ackintosh/ganesha
+downloads : 174720
+favers : 401
+
+7. nama : guzzlehttp/command
+deksripsi : Provides the foundation for building command-based web service clients
+url : https://packagist.org/packages/guzzlehttp/command
+repo : https://github.com/guzzle/command
+downloads : 3414457
+favers : 99
+
+8. nama : namshi/cuzzle
+deksripsi : Get the cURL shell command from a Guzzle request
+url : https://packagist.org/packages/namshi/cuzzle
+repo : https://github.com/namshi/cuzzle
+downloads : 1354310
+favers : 250
+
+9. nama : ezimuel/ringphp
+deksripsi : Fork of guzzle/RingPHP (abandoned) to be used with elasticsearch-php
+url : https://packagist.org/packages/ezimuel/ringphp
+repo : https://github.com/ezimuel/ringphp
+downloads : 5912473
+favers : 40
+
+10. nama : rtheunissen/guzzle-log-middleware
+deksripsi : Guzzle middleware to log requests and responses
+url : https://packagist.org/packages/rtheunissen/guzzle-log-middleware
+repo : https://github.com/rtheunissen/guzzle-log-middleware
+downloads : 1042871
+favers : 68
+
+11. nama : php-http/guzzle7-adapter
+deksripsi : Guzzle 7 HTTP Adapter
+url : https://packagist.org/packages/php-http/guzzle7-adapter
+repo : https://github.com/php-http/guzzle7-adapter
+downloads : 488478
+favers : 12
+
+12. nama : meng-tian/async-soap-guzzle
+deksripsi : An asynchronous SOAP client build on top of Guzzle.
+url : https://packagist.org/packages/meng-tian/async-soap-guzzle
+repo : https://github.com/meng-tian/async-soap-guzzle
+downloads : 769040
+favers : 85
+
+13. nama : kozz/laravel-guzzle-provider
+deksripsi : Guzzle 5/6 Service Provider for Laravel
+url : https://packagist.org/packages/kozz/laravel-guzzle-provider
+repo : https://github.com/urakozz/laravel-guzzle
+downloads : 327861
+favers : 63
+
+14. nama : graze/guzzle-jsonrpc
+deksripsi : JSON-RPC 2.0 client for Guzzle
+url : https://packagist.org/packages/graze/guzzle-jsonrpc
+repo : https://github.com/graze/guzzle-jsonrpc
+downloads : 567782
+favers : 92
+
+15. nama : gmponos/guzzle_logger
+deksripsi : A Guzzle middleware to log request and responses automatically
+url : https://packagist.org/packages/gmponos/guzzle_logger
+repo : https://github.com/gmponos/guzzle-log-middleware
+downloads : 138915
+favers : 49
+ref.message_id= 
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(192): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot_telegram\command\packagist_i.php(44): Telegram->editMessageText(Array)
+#4 C:\bot_telegram\hook.php(636): require('C:\\bot_telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-05-09 13:13:52  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804532886
+ref.callback_query.id= 5984360330562265133
+ref.callback_query.from.id= 1393342467
+ref.callback_query.from.is_bot= false
+ref.callback_query.from.first_name= ƒα∂нιℓ
+ref.callback_query.from.last_name= яιуαηтσ
+ref.callback_query.from.username= fadhil_riyanto
+ref.callback_query.from.language_code= ms
+ref.callback_query.message.message_id= 4484
+ref.callback_query.message.from.id= 1489990155
+ref.callback_query.message.from.is_bot= true
+ref.callback_query.message.from.first_name= ƒα∂нιℓ яιуαηтσ
+ref.callback_query.message.from.username= Fadhil_riyanto_bot
+ref.callback_query.message.chat.id= -1001407564572
+ref.callback_query.message.chat.title= Fadhil Riyanto Logs
+ref.callback_query.message.chat.type= supergroup
+ref.callback_query.message.date= 1620540660
+ref.callback_query.message.reply_to_message.message_id= 4483
+ref.callback_query.message.reply_to_message.from.id= 1393342467
+ref.callback_query.message.reply_to_message.from.is_bot= false
+ref.callback_query.message.reply_to_message.from.first_name= ƒα∂нιℓ
+ref.callback_query.message.reply_to_message.from.last_name= яιуαηтσ
+ref.callback_query.message.reply_to_message.from.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.from.language_code= ms
+ref.callback_query.message.reply_to_message.chat.id= -1001407564572
+ref.callback_query.message.reply_to_message.chat.title= Fadhil Riyanto Logs
+ref.callback_query.message.reply_to_message.chat.type= supergroup
+ref.callback_query.message.reply_to_message.date= 1620540656
+ref.callback_query.message.reply_to_message.text= /composer guzzle
+ref.callback_query.message.reply_to_message.entities.0.offset= 0
+ref.callback_query.message.reply_to_message.entities.0.length= 9
+ref.callback_query.message.reply_to_message.entities.0.type= bot_command
+ref.callback_query.message.text= 1. nama : guzzlehttp/guzzle
+deksripsi : Guzzle is a PHP HTTP client library
+url : https://packagist.org/packages/guzzlehttp/guzzle
+repo : https://github.com/guzzle/guzzle
+downloads : 270081188
+favers : 21453
+
+2. nama : guzzlehttp/psr7
+deksripsi : PSR-7 message implementation that also provides common utility methods
+url : https://packagist.org/packages/guzzlehttp/psr7
+repo : https://github.com/guzzle/psr7
+downloads : 265092767
+favers : 7107
+
+3. nama : guzzlehttp/promises
+deksripsi : Guzzle promises library
+url : https://packagist.org/packages/guzzlehttp/promises
+repo : https://github.com/guzzle/promises
+downloads : 247317616
+favers : 6762
+
+4. nama : php-http/guzzle6-adapter
+deksripsi : Guzzle 6 HTTP Adapter
+url : https://packagist.org/packages/php-http/guzzle6-adapter
+repo : https://github.com/php-http/guzzle6-adapter
+downloads : 39421971
+favers : 1315
+
+5. nama : http-interop/http-factory-guzzle
+deksripsi : An HTTP Factory using Guzzle PSR7
+url : https://packagist.org/packages/http-interop/http-factory-guzzle
+repo : https://github.com/http-interop/http-factory-guzzle
+downloads : 17503345
+favers : 343
+
+6. nama : guzzlehttp/streams
+deksripsi : Provides a simple abstraction over streams of data
+url : https://packagist.org/packages/guzzlehttp/streams
+repo : https://github.com/guzzle/streams
+downloads : 56568047
+favers : 555
+
+7. nama : guzzlehttp/ringphp
+deksripsi : Provides a simple API and specification that abstracts away the details of HTTP into a single PHP function.
+url : https://packagist.org/packages/guzzlehttp/ringphp
+repo : https://github.com/guzzle/RingPHP
+downloads : 53147805
+favers : 765
+
+8. nama : kevinrob/guzzle-cache-middleware
+deksripsi : A HTTP/1.1 Cache for Guzzle 6. It's a simple Middleware to be added in the HandlerStack. (RFC 7234)
+url : https://packagist.org/packages/kevinrob/guzzle-cache-middleware
+repo : https://github.com/Kevinrob/guzzle-cache-middleware
+downloads : 2859734
+favers : 331
+
+9. nama : eightpoints/guzzle-bundle
+deksripsi : Integrates Guzzle 6.x, a PHP HTTP Client, into Symfony 2/3/4. Comes with easy and powerful configuration options and optional plugins.
+url : https://packagist.org/packages/eightpoints/guzzle-bundle
+repo : https://github.com/8p/EightPointsGuzzleBundle
+downloads : 4305178
+favers : 422
+
+10. nama : guzzle/guzzle
+deksripsi : PHP HTTP client. This library is deprecated in favor of https://packagist.org/packages/guzzlehttp/guzzle
+url : https://packagist.org/packages/guzzle/guzzle
+repo : https://github.com/guzzle/guzzle3
+downloads : 55351762
+favers : 224
+
+11. nama : kitetail/zttp
+deksripsi : A developer-experience focused HTTP client, optimized for most common use cases.
+url : https://packagist.org/packages/kitetail/zttp
+repo : https://github.com/kitetail/zttp
+downloads : 737556
+favers : 1695
+
+12. nama : intercom/intercom-php
+deksripsi : Intercom API client built on top of HTTPlug
+url : https://packagist.org/packages/intercom/intercom-php
+repo : https://github.com/intercom/intercom-php
+downloads : 5638187
+favers : 273
+
+13. nama : kamermans/guzzle-oauth2-subscriber
+deksripsi : OAuth 2.0 client for Guzzle 4, 5 and 6+
+url : https://packagist.org/packages/kamermans/guzzle-oauth2-subscriber
+repo : https://github.com/kamermans/guzzle-oauth2-subscriber
+downloads : 716126
+favers : 86
+
+14. nama : graham-campbell/guzzle-factory
+deksripsi : Provides A Simple Guzzle Factory With Good Defaults
+url : https://packagist.org/packages/graham-campbell/guzzle-factory
+repo : https://github.com/GrahamCampbell/Guzzle-Factory
+downloads : 794023
+favers : 85
+
+15. nama : ezimuel/guzzlestreams
+deksripsi : Fork of guzzle/streams (abandoned) to be used with elasticsearch-php
+url : https://packagist.org/packages/ezimuel/guzzlestreams
+repo : https://github.com/ezimuel/guzzlestreams
+downloads : 5912811
+favers : 40
+ref.callback_query.message.entities.0.offset= 82
+ref.callback_query.message.entities.0.length= 48
+ref.callback_query.message.entities.0.type= url
+ref.callback_query.message.entities.1.offset= 138
+ref.callback_query.message.entities.1.length= 32
+ref.callback_query.message.entities.1.type= url
+ref.callback_query.message.entities.2.offset= 183
+ref.callback_query.message.entities.2.length= 9
+ref.callback_query.message.entities.2.type= phone_number
+ref.callback_query.message.entities.3.offset= 324
+ref.callback_query.message.entities.3.length= 46
+ref.callback_query.message.entities.3.type= url
+ref.callback_query.message.entities.4.offset= 378
+ref.callback_query.message.entities.4.length= 30
+ref.callback_query.message.entities.4.type= url
+ref.callback_query.message.entities.5.offset= 421
+ref.callback_query.message.entities.5.length= 9
+ref.callback_query.message.entities.5.type= phone_number
+ref.callback_query.message.entities.6.offset= 518
+ref.callback_query.message.entities.6.length= 50
+ref.callback_query.message.entities.6.type= url
+ref.callback_query.message.entities.7.offset= 576
+ref.callback_query.message.entities.7.length= 34
+ref.callback_query.message.entities.7.type= url
+ref.callback_query.message.entities.8.offset= 623
+ref.callback_query.message.entities.8.length= 9
+ref.callback_query.message.entities.8.type= phone_number
+ref.callback_query.message.entities.9.offset= 723
+ref.callback_query.message.entities.9.length= 55
+ref.callback_query.message.entities.9.type= url
+ref.callback_query.message.entities.10.offset= 786
+ref.callback_query.message.entities.10.length= 43
+ref.callback_query.message.entities.10.type= url
+ref.callback_query.message.entities.11.offset= 961
+ref.callback_query.message.entities.11.length= 63
+ref.callback_query.message.entities.11.type= url
+ref.callback_query.message.entities.12.offset= 1032
+ref.callback_query.message.entities.12.length= 51
+ref.callback_query.message.entities.12.type= url
+ref.callback_query.message.entities.13.offset= 1217
+ref.callback_query.message.entities.13.length= 49
+ref.callback_query.message.entities.13.type= url
+ref.callback_query.message.entities.14.offset= 1274
+ref.callback_query.message.entities.14.length= 33
+ref.callback_query.message.entities.14.type= url
+ref.callback_query.message.entities.15.offset= 1498
+ref.callback_query.message.entities.15.length= 49
+ref.callback_query.message.entities.15.type= url
+ref.callback_query.message.entities.16.offset= 1555
+ref.callback_query.message.entities.16.length= 33
+ref.callback_query.message.entities.16.type= url
+ref.callback_query.message.entities.17.offset= 1785
+ref.callback_query.message.entities.17.length= 63
+ref.callback_query.message.entities.17.type= url
+ref.callback_query.message.entities.18.offset= 1856
+ref.callback_query.message.entities.18.length= 51
+ref.callback_query.message.entities.18.type= url
+ref.callback_query.message.entities.19.offset= 2131
+ref.callback_query.message.entities.19.length= 56
+ref.callback_query.message.entities.19.type= url
+ref.callback_query.message.entities.20.offset= 2195
+ref.callback_query.message.entities.20.length= 45
+ref.callback_query.message.entities.20.type= url
+ref.callback_query.message.entities.21.offset= 2368
+ref.callback_query.message.entities.21.length= 48
+ref.callback_query.message.entities.21.type= url
+ref.callback_query.message.entities.22.offset= 2423
+ref.callback_query.message.entities.22.length= 44
+ref.callback_query.message.entities.22.type= url
+ref.callback_query.message.entities.23.offset= 2475
+ref.callback_query.message.entities.23.length= 33
+ref.callback_query.message.entities.23.type= url
+ref.callback_query.message.entities.24.offset= 2668
+ref.callback_query.message.entities.24.length= 44
+ref.callback_query.message.entities.24.type= url
+ref.callback_query.message.entities.25.offset= 2720
+ref.callback_query.message.entities.25.length= 32
+ref.callback_query.message.entities.25.type= url
+ref.callback_query.message.entities.26.offset= 2882
+ref.callback_query.message.entities.26.length= 52
+ref.callback_query.message.entities.26.type= url
+ref.callback_query.message.entities.27.offset= 2942
+ref.callback_query.message.entities.27.length= 40
+ref.callback_query.message.entities.27.type= url
+ref.callback_query.message.entities.28.offset= 3121
+ref.callback_query.message.entities.28.length= 65
+ref.callback_query.message.entities.28.type= url
+ref.callback_query.message.entities.29.offset= 3194
+ref.callback_query.message.entities.29.length= 53
+ref.callback_query.message.entities.29.type= url
+ref.callback_query.message.entities.30.offset= 3392
+ref.callback_query.message.entities.30.length= 61
+ref.callback_query.message.entities.30.type= url
+ref.callback_query.message.entities.31.offset= 3461
+ref.callback_query.message.entities.31.length= 48
+ref.callback_query.message.entities.31.type= url
+ref.callback_query.message.entities.32.offset= 3662
+ref.callback_query.message.entities.32.length= 52
+ref.callback_query.message.entities.32.type= url
+ref.callback_query.message.entities.33.offset= 3722
+ref.callback_query.message.entities.33.length= 40
+ref.callback_query.message.entities.33.type= url
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.text= ➡️
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.callback_data= /packagist_i 1393342467 2 Z3V6emxl
+ref.callback_query.chat_instance= -642654228408535566
+ref.callback_query.data= /packagist_i 1393342467 2 Z3V6emxl
+
+
+[ref]
+ref.text= 1. nama : caseyamcl/guzzle_retry_middleware
+deksripsi : Guzzle v6+ retry middleware that handles 429/503 status codes and connection timeouts
+url : https://packagist.org/packages/caseyamcl/guzzle_retry_middleware
+repo : https://github.com/caseyamcl/guzzle_retry_middleware
+downloads : 670190
+favers : 97
+
+2. nama : guzzlehttp/guzzle-services
+deksripsi : Provides an implementation of the Guzzle Command library that uses Guzzle service descriptions to describe web services, serialize requests, and parse responses into easy to use model structures.
+url : https://packagist.org/packages/guzzlehttp/guzzle-services
+repo : https://github.com/guzzle/guzzle-services
+downloads : 3348121
+favers : 229
+
+3. nama : csa/guzzle-bundle
+deksripsi : A bundle integrating GuzzleHttp >= 4.0
+url : https://packagist.org/packages/csa/guzzle-bundle
+repo : https://github.com/csarrazi/CsaGuzzleBundle
+downloads : 3317658
+favers : 255
+
+4. nama : maclof/kubernetes-client
+deksripsi : A simple yet elegant client for accessing and controlling a Kubernetes cluster.
+url : https://packagist.org/packages/maclof/kubernetes-client
+repo : https://github.com/maclof/kubernetes-client
+downloads : 307150
+favers : 203
+
+5. nama : guzzlehttp/oauth-subscriber
+deksripsi : Guzzle OAuth 1.0 subscriber
+url : https://packagist.org/packages/guzzlehttp/oauth-subscriber
+repo : https://github.com/guzzle/oauth-subscriber
+downloads : 3632890
+favers : 203
+
+6. nama : ackintosh/ganesha
+deksripsi : PHP implementation of Circuit Breaker pattern
+url : https://packagist.org/packages/ackintosh/ganesha
+repo : https://github.com/ackintosh/ganesha
+downloads : 174720
+favers : 401
+
+7. nama : guzzlehttp/command
+deksripsi : Provides the foundation for building command-based web service clients
+url : https://packagist.org/packages/guzzlehttp/command
+repo : https://github.com/guzzle/command
+downloads : 3414457
+favers : 99
+
+8. nama : namshi/cuzzle
+deksripsi : Get the cURL shell command from a Guzzle request
+url : https://packagist.org/packages/namshi/cuzzle
+repo : https://github.com/namshi/cuzzle
+downloads : 1354310
+favers : 250
+
+9. nama : ezimuel/ringphp
+deksripsi : Fork of guzzle/RingPHP (abandoned) to be used with elasticsearch-php
+url : https://packagist.org/packages/ezimuel/ringphp
+repo : https://github.com/ezimuel/ringphp
+downloads : 5912473
+favers : 40
+
+10. nama : rtheunissen/guzzle-log-middleware
+deksripsi : Guzzle middleware to log requests and responses
+url : https://packagist.org/packages/rtheunissen/guzzle-log-middleware
+repo : https://github.com/rtheunissen/guzzle-log-middleware
+downloads : 1042871
+favers : 68
+
+11. nama : php-http/guzzle7-adapter
+deksripsi : Guzzle 7 HTTP Adapter
+url : https://packagist.org/packages/php-http/guzzle7-adapter
+repo : https://github.com/php-http/guzzle7-adapter
+downloads : 488478
+favers : 12
+
+12. nama : meng-tian/async-soap-guzzle
+deksripsi : An asynchronous SOAP client build on top of Guzzle.
+url : https://packagist.org/packages/meng-tian/async-soap-guzzle
+repo : https://github.com/meng-tian/async-soap-guzzle
+downloads : 769040
+favers : 85
+
+13. nama : kozz/laravel-guzzle-provider
+deksripsi : Guzzle 5/6 Service Provider for Laravel
+url : https://packagist.org/packages/kozz/laravel-guzzle-provider
+repo : https://github.com/urakozz/laravel-guzzle
+downloads : 327861
+favers : 63
+
+14. nama : graze/guzzle-jsonrpc
+deksripsi : JSON-RPC 2.0 client for Guzzle
+url : https://packagist.org/packages/graze/guzzle-jsonrpc
+repo : https://github.com/graze/guzzle-jsonrpc
+downloads : 567782
+favers : 92
+
+15. nama : gmponos/guzzle_logger
+deksripsi : A Guzzle middleware to log request and responses automatically
+url : https://packagist.org/packages/gmponos/guzzle_logger
+repo : https://github.com/gmponos/guzzle-log-middleware
+downloads : 138915
+favers : 49
+ref.message_id= 
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(192): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot_telegram\command\packagist_i.php(44): Telegram->editMessageText(Array)
+#4 C:\bot_telegram\hook.php(636): require('C:\\bot_telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-05-09 13:17:15  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804532890
+ref.callback_query.id= 5984360331199760100
+ref.callback_query.from.id= 1393342467
+ref.callback_query.from.is_bot= false
+ref.callback_query.from.first_name= ƒα∂нιℓ
+ref.callback_query.from.last_name= яιуαηтσ
+ref.callback_query.from.username= fadhil_riyanto
+ref.callback_query.from.language_code= ms
+ref.callback_query.message.message_id= 4494
+ref.callback_query.message.from.id= 1489990155
+ref.callback_query.message.from.is_bot= true
+ref.callback_query.message.from.first_name= ƒα∂нιℓ яιуαηтσ
+ref.callback_query.message.from.username= Fadhil_riyanto_bot
+ref.callback_query.message.chat.id= -1001407564572
+ref.callback_query.message.chat.title= Fadhil Riyanto Logs
+ref.callback_query.message.chat.type= supergroup
+ref.callback_query.message.date= 1620540973
+ref.callback_query.message.reply_to_message.message_id= 4493
+ref.callback_query.message.reply_to_message.from.id= 1393342467
+ref.callback_query.message.reply_to_message.from.is_bot= false
+ref.callback_query.message.reply_to_message.from.first_name= ƒα∂нιℓ
+ref.callback_query.message.reply_to_message.from.last_name= яιуαηтσ
+ref.callback_query.message.reply_to_message.from.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.from.language_code= ms
+ref.callback_query.message.reply_to_message.chat.id= -1001407564572
+ref.callback_query.message.reply_to_message.chat.title= Fadhil Riyanto Logs
+ref.callback_query.message.reply_to_message.chat.type= supergroup
+ref.callback_query.message.reply_to_message.date= 1620540969
+ref.callback_query.message.reply_to_message.text= /composer guzzle
+ref.callback_query.message.reply_to_message.entities.0.offset= 0
+ref.callback_query.message.reply_to_message.entities.0.length= 9
+ref.callback_query.message.reply_to_message.entities.0.type= bot_command
+ref.callback_query.message.text= 1. nama : guzzlehttp/guzzle
+deksripsi : Guzzle is a PHP HTTP client library
+url : https://packagist.org/packages/guzzlehttp/guzzle
+repo : https://github.com/guzzle/guzzle
+downloads : 270081188
+favers : 21453
+
+2. nama : guzzlehttp/psr7
+deksripsi : PSR-7 message implementation that also provides common utility methods
+url : https://packagist.org/packages/guzzlehttp/psr7
+repo : https://github.com/guzzle/psr7
+downloads : 265092767
+favers : 7107
+
+3. nama : guzzlehttp/promises
+deksripsi : Guzzle promises library
+url : https://packagist.org/packages/guzzlehttp/promises
+repo : https://github.com/guzzle/promises
+downloads : 247317616
+favers : 6762
+
+4. nama : php-http/guzzle6-adapter
+deksripsi : Guzzle 6 HTTP Adapter
+url : https://packagist.org/packages/php-http/guzzle6-adapter
+repo : https://github.com/php-http/guzzle6-adapter
+downloads : 39421971
+favers : 1315
+
+5. nama : http-interop/http-factory-guzzle
+deksripsi : An HTTP Factory using Guzzle PSR7
+url : https://packagist.org/packages/http-interop/http-factory-guzzle
+repo : https://github.com/http-interop/http-factory-guzzle
+downloads : 17503345
+favers : 343
+
+6. nama : guzzlehttp/streams
+deksripsi : Provides a simple abstraction over streams of data
+url : https://packagist.org/packages/guzzlehttp/streams
+repo : https://github.com/guzzle/streams
+downloads : 56568047
+favers : 555
+
+7. nama : guzzlehttp/ringphp
+deksripsi : Provides a simple API and specification that abstracts away the details of HTTP into a single PHP function.
+url : https://packagist.org/packages/guzzlehttp/ringphp
+repo : https://github.com/guzzle/RingPHP
+downloads : 53147805
+favers : 765
+
+8. nama : kevinrob/guzzle-cache-middleware
+deksripsi : A HTTP/1.1 Cache for Guzzle 6. It's a simple Middleware to be added in the HandlerStack. (RFC 7234)
+url : https://packagist.org/packages/kevinrob/guzzle-cache-middleware
+repo : https://github.com/Kevinrob/guzzle-cache-middleware
+downloads : 2859734
+favers : 331
+
+9. nama : eightpoints/guzzle-bundle
+deksripsi : Integrates Guzzle 6.x, a PHP HTTP Client, into Symfony 2/3/4. Comes with easy and powerful configuration options and optional plugins.
+url : https://packagist.org/packages/eightpoints/guzzle-bundle
+repo : https://github.com/8p/EightPointsGuzzleBundle
+downloads : 4305178
+favers : 422
+
+10. nama : guzzle/guzzle
+deksripsi : PHP HTTP client. This library is deprecated in favor of https://packagist.org/packages/guzzlehttp/guzzle
+url : https://packagist.org/packages/guzzle/guzzle
+repo : https://github.com/guzzle/guzzle3
+downloads : 55351762
+favers : 224
+
+11. nama : kitetail/zttp
+deksripsi : A developer-experience focused HTTP client, optimized for most common use cases.
+url : https://packagist.org/packages/kitetail/zttp
+repo : https://github.com/kitetail/zttp
+downloads : 737556
+favers : 1695
+
+12. nama : intercom/intercom-php
+deksripsi : Intercom API client built on top of HTTPlug
+url : https://packagist.org/packages/intercom/intercom-php
+repo : https://github.com/intercom/intercom-php
+downloads : 5638187
+favers : 273
+
+13. nama : kamermans/guzzle-oauth2-subscriber
+deksripsi : OAuth 2.0 client for Guzzle 4, 5 and 6+
+url : https://packagist.org/packages/kamermans/guzzle-oauth2-subscriber
+repo : https://github.com/kamermans/guzzle-oauth2-subscriber
+downloads : 716126
+favers : 86
+
+14. nama : graham-campbell/guzzle-factory
+deksripsi : Provides A Simple Guzzle Factory With Good Defaults
+url : https://packagist.org/packages/graham-campbell/guzzle-factory
+repo : https://github.com/GrahamCampbell/Guzzle-Factory
+downloads : 794023
+favers : 85
+
+15. nama : ezimuel/guzzlestreams
+deksripsi : Fork of guzzle/streams (abandoned) to be used with elasticsearch-php
+url : https://packagist.org/packages/ezimuel/guzzlestreams
+repo : https://github.com/ezimuel/guzzlestreams
+downloads : 5912811
+favers : 40
+ref.callback_query.message.entities.0.offset= 82
+ref.callback_query.message.entities.0.length= 48
+ref.callback_query.message.entities.0.type= url
+ref.callback_query.message.entities.1.offset= 138
+ref.callback_query.message.entities.1.length= 32
+ref.callback_query.message.entities.1.type= url
+ref.callback_query.message.entities.2.offset= 183
+ref.callback_query.message.entities.2.length= 9
+ref.callback_query.message.entities.2.type= phone_number
+ref.callback_query.message.entities.3.offset= 324
+ref.callback_query.message.entities.3.length= 46
+ref.callback_query.message.entities.3.type= url
+ref.callback_query.message.entities.4.offset= 378
+ref.callback_query.message.entities.4.length= 30
+ref.callback_query.message.entities.4.type= url
+ref.callback_query.message.entities.5.offset= 421
+ref.callback_query.message.entities.5.length= 9
+ref.callback_query.message.entities.5.type= phone_number
+ref.callback_query.message.entities.6.offset= 518
+ref.callback_query.message.entities.6.length= 50
+ref.callback_query.message.entities.6.type= url
+ref.callback_query.message.entities.7.offset= 576
+ref.callback_query.message.entities.7.length= 34
+ref.callback_query.message.entities.7.type= url
+ref.callback_query.message.entities.8.offset= 623
+ref.callback_query.message.entities.8.length= 9
+ref.callback_query.message.entities.8.type= phone_number
+ref.callback_query.message.entities.9.offset= 723
+ref.callback_query.message.entities.9.length= 55
+ref.callback_query.message.entities.9.type= url
+ref.callback_query.message.entities.10.offset= 786
+ref.callback_query.message.entities.10.length= 43
+ref.callback_query.message.entities.10.type= url
+ref.callback_query.message.entities.11.offset= 961
+ref.callback_query.message.entities.11.length= 63
+ref.callback_query.message.entities.11.type= url
+ref.callback_query.message.entities.12.offset= 1032
+ref.callback_query.message.entities.12.length= 51
+ref.callback_query.message.entities.12.type= url
+ref.callback_query.message.entities.13.offset= 1217
+ref.callback_query.message.entities.13.length= 49
+ref.callback_query.message.entities.13.type= url
+ref.callback_query.message.entities.14.offset= 1274
+ref.callback_query.message.entities.14.length= 33
+ref.callback_query.message.entities.14.type= url
+ref.callback_query.message.entities.15.offset= 1498
+ref.callback_query.message.entities.15.length= 49
+ref.callback_query.message.entities.15.type= url
+ref.callback_query.message.entities.16.offset= 1555
+ref.callback_query.message.entities.16.length= 33
+ref.callback_query.message.entities.16.type= url
+ref.callback_query.message.entities.17.offset= 1785
+ref.callback_query.message.entities.17.length= 63
+ref.callback_query.message.entities.17.type= url
+ref.callback_query.message.entities.18.offset= 1856
+ref.callback_query.message.entities.18.length= 51
+ref.callback_query.message.entities.18.type= url
+ref.callback_query.message.entities.19.offset= 2131
+ref.callback_query.message.entities.19.length= 56
+ref.callback_query.message.entities.19.type= url
+ref.callback_query.message.entities.20.offset= 2195
+ref.callback_query.message.entities.20.length= 45
+ref.callback_query.message.entities.20.type= url
+ref.callback_query.message.entities.21.offset= 2368
+ref.callback_query.message.entities.21.length= 48
+ref.callback_query.message.entities.21.type= url
+ref.callback_query.message.entities.22.offset= 2423
+ref.callback_query.message.entities.22.length= 44
+ref.callback_query.message.entities.22.type= url
+ref.callback_query.message.entities.23.offset= 2475
+ref.callback_query.message.entities.23.length= 33
+ref.callback_query.message.entities.23.type= url
+ref.callback_query.message.entities.24.offset= 2668
+ref.callback_query.message.entities.24.length= 44
+ref.callback_query.message.entities.24.type= url
+ref.callback_query.message.entities.25.offset= 2720
+ref.callback_query.message.entities.25.length= 32
+ref.callback_query.message.entities.25.type= url
+ref.callback_query.message.entities.26.offset= 2882
+ref.callback_query.message.entities.26.length= 52
+ref.callback_query.message.entities.26.type= url
+ref.callback_query.message.entities.27.offset= 2942
+ref.callback_query.message.entities.27.length= 40
+ref.callback_query.message.entities.27.type= url
+ref.callback_query.message.entities.28.offset= 3121
+ref.callback_query.message.entities.28.length= 65
+ref.callback_query.message.entities.28.type= url
+ref.callback_query.message.entities.29.offset= 3194
+ref.callback_query.message.entities.29.length= 53
+ref.callback_query.message.entities.29.type= url
+ref.callback_query.message.entities.30.offset= 3392
+ref.callback_query.message.entities.30.length= 61
+ref.callback_query.message.entities.30.type= url
+ref.callback_query.message.entities.31.offset= 3461
+ref.callback_query.message.entities.31.length= 48
+ref.callback_query.message.entities.31.type= url
+ref.callback_query.message.entities.32.offset= 3662
+ref.callback_query.message.entities.32.length= 52
+ref.callback_query.message.entities.32.type= url
+ref.callback_query.message.entities.33.offset= 3722
+ref.callback_query.message.entities.33.length= 40
+ref.callback_query.message.entities.33.type= url
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.text= ➡️
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.callback_data= /packagist_i 1393342467 2 Z3V6emxl
+ref.callback_query.chat_instance= -642654228408535566
+ref.callback_query.data= /packagist_i 1393342467 2 Z3V6emxl
+
+
+[ref]
+ref.text= 1. nama : caseyamcl/guzzle_retry_middleware
+deksripsi : Guzzle v6+ retry middleware that handles 429/503 status codes and connection timeouts
+url : https://packagist.org/packages/caseyamcl/guzzle_retry_middleware
+repo : https://github.com/caseyamcl/guzzle_retry_middleware
+downloads : 670190
+favers : 97
+
+2. nama : guzzlehttp/guzzle-services
+deksripsi : Provides an implementation of the Guzzle Command library that uses Guzzle service descriptions to describe web services, serialize requests, and parse responses into easy to use model structures.
+url : https://packagist.org/packages/guzzlehttp/guzzle-services
+repo : https://github.com/guzzle/guzzle-services
+downloads : 3348121
+favers : 229
+
+3. nama : csa/guzzle-bundle
+deksripsi : A bundle integrating GuzzleHttp >= 4.0
+url : https://packagist.org/packages/csa/guzzle-bundle
+repo : https://github.com/csarrazi/CsaGuzzleBundle
+downloads : 3317658
+favers : 255
+
+4. nama : maclof/kubernetes-client
+deksripsi : A simple yet elegant client for accessing and controlling a Kubernetes cluster.
+url : https://packagist.org/packages/maclof/kubernetes-client
+repo : https://github.com/maclof/kubernetes-client
+downloads : 307150
+favers : 203
+
+5. nama : guzzlehttp/oauth-subscriber
+deksripsi : Guzzle OAuth 1.0 subscriber
+url : https://packagist.org/packages/guzzlehttp/oauth-subscriber
+repo : https://github.com/guzzle/oauth-subscriber
+downloads : 3632890
+favers : 203
+
+6. nama : ackintosh/ganesha
+deksripsi : PHP implementation of Circuit Breaker pattern
+url : https://packagist.org/packages/ackintosh/ganesha
+repo : https://github.com/ackintosh/ganesha
+downloads : 174720
+favers : 401
+
+7. nama : guzzlehttp/command
+deksripsi : Provides the foundation for building command-based web service clients
+url : https://packagist.org/packages/guzzlehttp/command
+repo : https://github.com/guzzle/command
+downloads : 3414457
+favers : 99
+
+8. nama : namshi/cuzzle
+deksripsi : Get the cURL shell command from a Guzzle request
+url : https://packagist.org/packages/namshi/cuzzle
+repo : https://github.com/namshi/cuzzle
+downloads : 1354310
+favers : 250
+
+9. nama : ezimuel/ringphp
+deksripsi : Fork of guzzle/RingPHP (abandoned) to be used with elasticsearch-php
+url : https://packagist.org/packages/ezimuel/ringphp
+repo : https://github.com/ezimuel/ringphp
+downloads : 5912473
+favers : 40
+
+10. nama : rtheunissen/guzzle-log-middleware
+deksripsi : Guzzle middleware to log requests and responses
+url : https://packagist.org/packages/rtheunissen/guzzle-log-middleware
+repo : https://github.com/rtheunissen/guzzle-log-middleware
+downloads : 1042871
+favers : 68
+
+11. nama : php-http/guzzle7-adapter
+deksripsi : Guzzle 7 HTTP Adapter
+url : https://packagist.org/packages/php-http/guzzle7-adapter
+repo : https://github.com/php-http/guzzle7-adapter
+downloads : 488478
+favers : 12
+
+12. nama : meng-tian/async-soap-guzzle
+deksripsi : An asynchronous SOAP client build on top of Guzzle.
+url : https://packagist.org/packages/meng-tian/async-soap-guzzle
+repo : https://github.com/meng-tian/async-soap-guzzle
+downloads : 769040
+favers : 85
+
+13. nama : kozz/laravel-guzzle-provider
+deksripsi : Guzzle 5/6 Service Provider for Laravel
+url : https://packagist.org/packages/kozz/laravel-guzzle-provider
+repo : https://github.com/urakozz/laravel-guzzle
+downloads : 327861
+favers : 63
+
+14. nama : graze/guzzle-jsonrpc
+deksripsi : JSON-RPC 2.0 client for Guzzle
+url : https://packagist.org/packages/graze/guzzle-jsonrpc
+repo : https://github.com/graze/guzzle-jsonrpc
+downloads : 567782
+favers : 92
+
+15. nama : gmponos/guzzle_logger
+deksripsi : A Guzzle middleware to log request and responses automatically
+url : https://packagist.org/packages/gmponos/guzzle_logger
+repo : https://github.com/gmponos/guzzle-log-middleware
+downloads : 138915
+favers : 49
+ref.message_id= 
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(192): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot_telegram\command\packagist_i.php(44): Telegram->editMessageText(Array)
+#4 C:\bot_telegram\hook.php(636): require('C:\\bot_telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-05-09 13:18:18  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804532896
+ref.message.message_id= 30724
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= ƒα∂нιℓ
+ref.message.chat.last_name= яιуαηтσ
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1620541094
+ref.message.text= /start help
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Selamat datang di buku panduan bot ini
+Anda dapat membaca panduan di bawah ini, dengan mengklik sebuah tombol dibawah.
+Anda juga dapat mengajukan pertanyaan apa pun di Support group, harap diperhatikan bahwa Anda hanya dapat bertanya setelah membaca panduan, dan hanya bertanya tentang bot ini!
+
+Perintah umum adalah:
+- /start: Mulai bot
+- /help: Berikan pesan ini
+
+Semua perintah hanya bekerja dengan / (garis miring)
+ref.message_id= 
+ref.reply_markup= {"inline_keyboard":[[{"text":"perkakas","callback_data":"\/callback_q@fadhil_riyanto_bot perkakas"},{"text":"hash","callback_data":"\/callback_q@fadhil_riyanto_bot hash"},{"text":"hiburan","callback_data":"\/callback_q@fadhil_riyanto_bot hiburan"}],[{"text":"dev tools","callback_data":"\/callback_q@fadhil_riyanto_bot dev_tools"},{"text":"anime","callback_data":"\/callback_q@fadhil_riyanto_bot anime"},{"text":"bot ini","callback_data":"\/callback_q@fadhil_riyanto_bot bot_ini"}],[{"text":"Photooxy","callback_data":"\/callback_q@fadhil_riyanto_bot photooxy"},{"text":"Rules","callback_data":"\/callback_q@fadhil_riyanto_bot rules"},{"text":"run code","callback_data":"\/callback_q@fadhil_riyanto_bot run_code"}],[{"text":"Pin","callback_data":"\/callback_q@fadhil_riyanto_bot pin"},{"text":"Mute","callback_data":"\/callback_q@fadhil_riyanto_bot mute"},{"text":"Report","callback_data":"\/callback_q@fadhil_riyanto_bot report"}],[{"text":"Bans","callback_data":"\/callback_q@fadhil_riyanto_bot bans"},{"text":"Admins","callback_data":"\/callback_q@fadhil_riyanto_bot admins"},{"text":"Grettings","callback_data":"\/callback_q@fadhil_riyanto_bot grettings"}],[{"text":"filters","callback_data":"\/callback_q@fadhil_riyanto_bot filters"},{"text":"Note","callback_data":"\/callback_q@fadhil_riyanto_bot note"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(192): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot_telegram\command\help.php(32): Telegram->editMessageText(Array)
+#4 C:\bot_telegram\hook.php(564): require('C:\\bot_telegram...')
+#5 {main}
+

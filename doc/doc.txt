@@ -1,8 +1,25 @@
-Note digunakan untuk menyimpan dan melihat catatan
-ini berguna untuk menyimpan teks kamu
+ini adalah list tool tool yang bot ini miliki
 
-/note {nama} {note kamu}: digunakan untuk mensave note kamu
-/my_note: digunakan untuk melihat isi list note kamu
-/get_note {nama}: digunakan untuk melihat note kamu
-/del_note {nama}: digunakan untuk menghapus note
-/clear_note: hapus semua note (tidak bisa dikembalikan)
+- /wiki: dapatkan isi wikipedia
+- /azan: cek jadwal azan.
+- /tanggal: lupa tanggal? tenang...
+- /tr: ini bisa untuk translate
+- /tulis: digunakan untuk menulis buku
+- /waktu: cek jam yuk
+- /berita: agar update yuk baca berita
+- /brainly: cari jawaban di brainly
+- /capture: untuk screenshot halaman web
+- /corona: info corona terkini
+- /corona_provinsi: info corona di tiap tiap provinsi
+- /cuaca: cek cuaca
+- /gempa: cek gempa
+- /q: buat quotes kamu jadi gambar!
+- /quran:  kitab quran sekarang ada di telegram (aliases /qs)
+- /short: pendekkan link biar rapi
+- /xlsx_to_json: convert xlsx excel ke format json
+- /resi: cek resi
+- /upload: reply gambarmu untuk diupload ke web
+- /ts: convert image ke stiker
+- /tf: convert stiker ke image
+- /reverse: reply dengan gambar untuk mencari data di google, bing
+- /composer {package}: untuk mencari info di composer package

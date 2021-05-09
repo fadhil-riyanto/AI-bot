@@ -1,0 +1,3 @@
+ParseError: syntax error, unexpected variable "$option" in C:\bot_telegram\command\packagist.php:18
+Stack trace:
+#0 {main}

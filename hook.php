@@ -58,21 +58,21 @@ $adanParse_plain_nokarakter = explode(' ', $text_plain_nokarakter);
 $apakahuserchattingviaPM = detect_grup();
 try {
 	//debug mode
-	// if (detect_grup() == null) {
-	// 	if ($userID == $userid_pemilik || $userID == 1223173857) {
-	// 	} else {
-	// 		$reply = "Whopps, bot ini sedang dalam proses developing oleh " . PUMBUAT_BOT . PHP_EOL .
-	// 			"Coba lagi nanti";
-	// 		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-	// 		$telegram->sendMessage($content);
-	// 		exit;
-	// 	}
-	// } else {
-	// 	if ($userID == $userid_pemilik || $userID == 1223173857) {
-	// 	} else {
-	// 		die();
-	// 	}
-	// }
+	if (detect_grup() == null) {
+		if ($userID == $userid_pemilik || $userID == 1223173857) {
+		} else {
+			$reply = "Whopps, bot ini sedang dalam proses developing oleh " . PUMBUAT_BOT . PHP_EOL .
+				"Coba lagi nanti";
+			$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+			$telegram->sendMessage($content);
+			exit;
+		}
+	} else {
+		if ($userID == $userid_pemilik || $userID == 1223173857) {
+		} else {
+			die();
+		}
+	}
 
 	require __DIR__ . '/include/conn_db.php';
 	$hilangAzan = str_replace('/azan ', '', $text, $hit);
@@ -626,12 +626,21 @@ try {
 	} elseif ('/resi' == $adanParse[0] || '/resi' . USERNAME_BOT . '' == $adanParse[0]) {
 		require __DIR__ . '/command/resi.php';
 		exit;
+	} elseif (
+		'/packagist' == $adanParse[0] || '/packagist' . USERNAME_BOT . '' == $adanParse[0] ||
+		'/composer' == $adanParse[0] || '/composer' . USERNAME_BOT . '' == $adanParse[0]
+	) {
+		require __DIR__ . '/command/packagist.php';
+		exit;
+	} elseif ('/packagist_i' == $adanParse[0] || '/packagist_i' . USERNAME_BOT . '' == $adanParse[0]) {
+		require __DIR__ . '/command/packagist_i.php';
+		exit;
 	} elseif ('/setlang' == $adanParse[0] || '/setlang' . USERNAME_BOT . '' == $adanParse[0]) {
 		// if (detect_grup() == true) {
 		// } elseif (detect_grup() == null) {
 
 		// }
-		require __DIR__ . '/command/setlang.php';
+		//require __DIR__ . '/command/setlang.php';
 
 		exit;
 	} elseif ('/calc_i' == $adanParse[0] || '/calc_i' . USERNAME_BOT . '' == $adanParse[0]) {

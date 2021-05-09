@@ -1,10 +1,11 @@
 <?php
 $kon = @mysqli_connect(
-    'b8rkwqqp7tbpt89flosy-mysql.services.clever-cloud.com',
-    'uqirurwvstycdqcb',
-    'Xsvy2C4BGmuDCqI3fSoa',
-    'b8rkwqqp7tbpt89flosy'
+    'bnschltscvfa0pnfgfry-mysql.services.clever-cloud.com',
+    'uzime0etwcl0n6iv',
+    'tw9OvwYtLj18qB5bTc5O',
+    'bnschltscvfa0pnfgfry'
 );
+
 $q = mysqli_query($kon, "SELECT * FROM `data_ai` WHERE `data_res_ai` LIKE _utf8 'hmhm' ");
 $tes_jumlah_row = @mysqli_affected_rows($kon);
 $dataAI = mysqli_fetch_assoc($q);
@@ -24,7 +25,9 @@ foreach ($q as $data_res_ai_val) {
         $response = curl_exec($ch);
         curl_close($ch);
         $simi = json_decode($response);
-        $c = addslashes($simi->success);
+		$replacement = str_replace('simi', 'fadhil', $simi->success);
+		$replacement = str_replace('simi', 'fadhil', $simi->success);
+        $c = mysqli_real_escape_string($kon,$replacement);
         if ($simi->success == 'Aku tidak mengerti apa yang kamu katakan.Tolong ajari aku.') {
             $c = "aku ngga ngerti apa yang kamu omongin... maap yak...";
         } else {

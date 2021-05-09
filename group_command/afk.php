@@ -10,9 +10,6 @@ $result = $telegram->getData();
 $azanHilangcommand = str_replace($adanParse[0], '', $text);
 $udahDiparse = str_replace($adanParse[0] . ' ', '', $text);
 if ($azanHilangcommand == null) {
-    // $db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
-    // $db->where("userid", $userID);
-    // $user = $db->getOne("afk_user_data");
     $user = $db->row(
         "SELECT * FROM afk_user_data WHERE userid = ?",
         $userID
@@ -25,8 +22,6 @@ if ($azanHilangcommand == null) {
         //     "alasan" => 'pengguna ini afk tanpa memberi alasan',
         //     "username" => $usernameBelumdiparse
         // );
-
-
         // $id = $db->insert('afk_user_data', $data);
         $id = $db->insert('afk_user_data', [
             "userid" => $userID,
@@ -53,7 +48,7 @@ if ($azanHilangcommand == null) {
             $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
             $telegram->sendMessage($content);
         } else {
-            $reply = "ups ada kesalahan internal. Reason : " . $db->getLastError();
+            $reply = "ups ada kesalahan internal.";
             $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
             $telegram->sendMessage($content);
         }
@@ -66,15 +61,15 @@ if ($azanHilangcommand == null) {
         //     // active = !active;
         // );
         // $db->where('userid', $userID);
-        $verifupdate = $db->update('afk_user_data', [
+        $verifyupdate = $db->update('afk_user_data', [
             "userid" => $userID,
             "time_afk" =>  date("H:i:s"),
             "alasan" => 'pengguna ini afk tanpa memberi alasan',
             "username" => $usernameBelumdiparse
         ], [
-            'userid', $userID
+            'userid' => $userID
         ]);
-        if ($verifupdate) {
+        if ($verifyupdate) {
 
             $file = __DIR__ . '/../json_data/afkstatus.json';
             $anggota = file_get_contents($file);
@@ -93,15 +88,12 @@ if ($azanHilangcommand == null) {
             $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
             $telegram->sendMessage($content);
         } else {
-            $reply = "ups, ada kesalahan!. Penyebab : " . $db->getLastError();
+            $reply = "ups, ada kesalahan!.";
             $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
             $telegram->sendMessage($content);
         }
     }
 } else {
-    // $db = new MysqliDb(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
-    // $db->where("userid", $userID);
-    // $user = $db->getOne("afk_user_data");
     $user = $db->row(
         "SELECT * FROM afk_user_data WHERE userid = ?",
         $userID
@@ -155,15 +147,15 @@ if ($azanHilangcommand == null) {
         //     // active = !active;
         // );
         // $db->where('userid', $userID);
-        $verifupdate = $db->update('afk_user_data', [
+        $verifyupdate = $db->update('afk_user_data', [
             "userid" => $userID,
             "time_afk" =>  date("H:i:s"),
             "alasan" => $udahDiparse,
             "username" => $usernameBelumdiparse
         ], [
-            'userid', $userID
+            'userid' => $userID
         ]);
-        if ($verifupdate) {
+        if ($verifyupdate) {
 
             $file = __DIR__ . '/../json_data/afkstatus.json';
             $anggota = file_get_contents($file);
