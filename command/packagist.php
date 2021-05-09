@@ -12,6 +12,11 @@ if ($azanHilangcommand == null) {
     $output = curl_exec($ch);
     curl_close($ch);
     $packagist_keluar = json_decode($output, true);
+    if (count($packagist_keluar['results']) === 0) {
+        $reply = "maaf, package tidak ditemukan";
+        $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+        $telegram->sendMessage($content);
+    }
     $urutan_nomor = 1;
     foreach ($packagist_keluar['results'] as $packagist_hasil) {
         $datapackagist[] = $urutan_nomor . ". " . "nama : " . $packagist_hasil['name'] . PHP_EOL .
