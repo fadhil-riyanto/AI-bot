@@ -1,0 +1,18 @@
+GuzzleHttp\Exception\ClientException: Client error: `GET https://api.telegram.org/bot1489990155:AAEUjetEoXH731jog87hrb5IlqOvh8WjyJ8/promoteChatMember?chat_id=-1001182246595&user_id=1223173857&can_change_info=False&can_post_message=True&can_edit_message=True&can_delete_messages=True&can_invite_users=True&can_restrict_members=True&can_pin_messages=True&can_promote_members=False` resulted in a `403 Forbidden` response:
+{"ok":false,"error_code":403,"description":"Forbidden: RIGHT_FORBIDDEN"}
+ in C:\bot_telegram\vendor\guzzlehttp\guzzle\src\Exception\RequestException.php:113
+Stack trace:
+#0 C:\bot_telegram\vendor\guzzlehttp\guzzle\src\Middleware.php(69): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 C:\bot_telegram\vendor\guzzlehttp\promises\src\Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 C:\bot_telegram\vendor\guzzlehttp\promises\src\Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 C:\bot_telegram\vendor\guzzlehttp\promises\src\TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 C:\bot_telegram\vendor\guzzlehttp\promises\src\Promise.php(248): GuzzleHttp\Promise\TaskQueue->run(true)
+#5 C:\bot_telegram\vendor\guzzlehttp\promises\src\Promise.php(224): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 C:\bot_telegram\vendor\guzzlehttp\promises\src\Promise.php(269): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 C:\bot_telegram\vendor\guzzlehttp\promises\src\Promise.php(226): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 C:\bot_telegram\vendor\guzzlehttp\promises\src\Promise.php(62): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 C:\bot_telegram\vendor\guzzlehttp\guzzle\src\Client.php(187): GuzzleHttp\Promise\Promise->wait()
+#10 C:\bot_telegram\admin_command\promote.php(41): GuzzleHttp\Client->request('GET', 'https://api.tel...')
+#11 C:\bot_telegram\admin_command\__init__.php(213): require('C:\\bot_telegram...')
+#12 C:\bot_telegram\hook.php(922): require('C:\\bot_telegram...')
+#13 {main}

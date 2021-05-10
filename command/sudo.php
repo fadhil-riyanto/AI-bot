@@ -87,26 +87,14 @@ if ($getStringFromSpasi[0] == 'debug' || $getStringFromSpasi[0] == 'debugmode') 
         $telegram->sendMessage($content);
         // Report error somehow
     }
+} elseif ($getStringFromSpasi[0] == 'sql' || $getStringFromSpasi[0] == 'use_sql_shell' || $getStringFromSpasi[0] == 'sql_shell') {
+    $udahDiparse = str_replace($adanParse_plain_nokarakter[0] . ' ' . $adanParse_plain_nokarakter[1] . ' ', '', $text_plain_nokarakter);
 
-    // $a_func = file_get_contents(__DIR__ . '/../include/eval_func.php');
-    // file_put_contents(__DIR__ . '/evals_fadhil.php', $a_func . PHP_EOL . $udahDiparse);
-
-    // // try {
-    // $result = substr(shell_exec("php " . __DIR__ . '/evals_fadhil.php'), 0, 4090);
-    // $content = array('chat_id' => $chat_id, 'text' => $result, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-    // $telegram->sendMessage($content);
-    // } catch (ParseError $e) {
-    //     $reply = 'sintak error, alasan ' . PHP_EOL . PHP_EOL . $e;
-    //     $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-    //     $telegram->sendMessage($content);
-    //     // Report error somehow
-    // }
-    // $reply = 'errormes';
-    // $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-    // $telegram->sendMessage($content);
-    // $reply = 'errormes';
-    // $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-    // $telegram->sendMessage($content);
+    //jalankan sql
+    $returned = $db->run($udahDiparse);
+    $reply = json_encode($returned, JSON_PRETTY_PRINT);
+    $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+    $telegram->sendMessage($content);
 } elseif ($getStringFromSpasi[0] == 'json' || $getStringFromSpasi[0] == 'jsondebug') {
     $result = $telegram->getData();
     $getJsonraw = file_get_contents('php://input');

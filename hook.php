@@ -57,6 +57,8 @@ $adanParse_plain = explode(' ', $text_plain);
 $adanParse_plain_nokarakter = explode(' ', $text_plain_nokarakter);
 $apakahuserchattingviaPM = detect_grup();
 try {
+	require __DIR__ . '/include/getChatAdministrators_cached.php';
+	getChatAdministrators_admincache();
 	//debug mode
 	/*if (detect_grup() == null) {
 		if ($userID == $userid_pemilik || $userID == 1223173857) {

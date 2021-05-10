@@ -42,7 +42,7 @@ if (isset($promote_uid)) {
     $client = new \GuzzleHttp\Client();
     $response = $client->request('GET', $req_params);
 
-    $datass = json_decode($response);
+    $datass = $response;
     if ($datass->description == 'Bad Request: not enough rights') {
         $reply = 'ups, saya harus diberi hak untuk menambah dan menghapus admin';
         $content = array('chat_id' => $chat_id, 'text' => $reply, 'parse_mode' => 'html', 'reply_to_message_id' => $message_id, 'disable_web_page_preview' => true);
