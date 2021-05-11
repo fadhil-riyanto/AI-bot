@@ -1,7 +1,7 @@
 {
-    "update_id": 804528494,
+    "update_id": 804536222,
     "message": {
-        "message_id": 70364,
+        "message_id": 78090,
         "from": {
             "id": 1393342467,
             "is_bot": false,
@@ -11,43 +11,40 @@
             "language_code": "ms"
         },
         "chat": {
-            "id": -1001310420564,
-            "title": "GAS Testing Grup",
-            "username": "GasTestingGroup",
+            "id": -1001182246595,
+            "title": "[c]oretan Script",
+            "username": "cScript",
             "type": "supergroup"
         },
-        "date": 1620403089,
+        "date": 1620712266,
         "reply_to_message": {
-            "message_id": 70363,
+            "message_id": 78076,
             "from": {
-                "id": 1393342467,
-                "is_bot": false,
-                "first_name": "\u0192\u03b1\u2202\u043d\u03b9\u2113",
-                "last_name": "\u044f\u03b9\u0443\u03b1\u03b7\u0442\u03c3",
-                "username": "fadhil_riyanto",
-                "language_code": "ms"
+                "id": 1087968824,
+                "is_bot": true,
+                "first_name": "Group",
+                "username": "GroupAnonymousBot"
             },
-            "chat": {
-                "id": -1001310420564,
-                "title": "GAS Testing Grup",
-                "username": "GasTestingGroup",
+            "author_signature": "#KutiL",
+            "sender_chat": {
+                "id": -1001182246595,
+                "title": "[c]oretan Script",
+                "username": "cScript",
                 "type": "supergroup"
             },
-            "date": 1620403042,
-            "photo": [
+            "chat": {
+                "id": -1001182246595,
+                "title": "[c]oretan Script",
+                "username": "cScript",
+                "type": "supergroup"
+            },
+            "date": 1620712246,
+            "text": "\/ping@Hazmi101Bot",
+            "entities": [
                 {
-                    "file_id": "AgACAgUAAx0CThtuVAABARLbYJVjYpkndRTqbPfzCzjyoEddMucAAlGsMRuiC7BUYFGDjsqqIGBDg0xzdAADAQADAgADbQADJ4UBAAEfBA",
-                    "file_unique_id": "AQADQ4NMc3QAAyeFAQAB",
-                    "file_size": 8928,
-                    "width": 320,
-                    "height": 320
-                },
-                {
-                    "file_id": "AgACAgUAAx0CThtuVAABARLbYJVjYpkndRTqbPfzCzjyoEddMucAAlGsMRuiC7BUYFGDjsqqIGBDg0xzdAADAQADAgADeAADKYUBAAEfBA",
-                    "file_unique_id": "AQADQ4NMc3QAAymFAQAB",
-                    "file_size": 14969,
-                    "width": 640,
-                    "height": 640
+                    "offset": 0,
+                    "length": 17,
+                    "type": "bot_command"
                 }
             ]
         },

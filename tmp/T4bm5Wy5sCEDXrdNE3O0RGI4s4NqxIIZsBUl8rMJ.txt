@@ -1,0 +1,6 @@
+PDOException: SQLSTATE[HY000]: General error: 1267 Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8mb4_general_ci,COERCIBLE) for operation '=' in C:\bot_telegram\vendor\paragonie\easydb\src\EasyDB.php:1005
+Stack trace:
+#0 C:\bot_telegram\vendor\paragonie\easydb\src\EasyDB.php(1005): PDOStatement->execute(Array)
+#1 C:\bot_telegram\vendor\paragonie\easydb\src\EasyDB.php(930): ParagonIE\EasyDB\EasyDB->safeQuery('SELECT * FROM a...', Array, 2, false, true)
+#2 C:\bot_telegram\hook.php(211): ParagonIE\EasyDB\EasyDB->row('SELECT * FROM a...', '\xF0\x9F\x8C\x90 @cS')
+#3 {main}

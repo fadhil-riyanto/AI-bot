@@ -1,0 +1,3 @@
+ParseError: syntax error, unexpected variable "$adminnn" in C:\bot_telegram\include\getChatAdministrators_cached.php:16
+Stack trace:
+#0 {main}

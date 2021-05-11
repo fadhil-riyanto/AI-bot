@@ -6,6 +6,7 @@ require __DIR__ . '/pengaturan/env.php';
 require __DIR__ . '/include/hook_function_core.php';
 require_once __DIR__ . '/vendor/autoload.php';
 
+
 ini_set('max_execution_time', MAX_EXECUTE_SCRIPT);
 error_reporting(1);
 
@@ -58,9 +59,8 @@ $adanParse_plain_nokarakter = explode(' ', $text_plain_nokarakter);
 $apakahuserchattingviaPM = detect_grup();
 try {
 	require __DIR__ . '/include/getChatAdministrators_cached.php';
-	getChatAdministrators_admincache();
 	//debug mode
-	/*if (detect_grup() == null) {
+	if (detect_grup() == null) {
 		if ($userID == $userid_pemilik || $userID == 1223173857) {
 		} else {
 			$reply = "Whopps, bot ini sedang dalam proses developing oleh " . PUMBUAT_BOT . PHP_EOL .
@@ -75,7 +75,6 @@ try {
 			die();
 		}
 	}
-	*/
 
 	require __DIR__ . '/include/conn_db.php';
 	$hilangAzan = str_replace('/azan ', '', $text, $hit);
@@ -599,7 +598,13 @@ try {
 	} elseif ('/tf' == $adanParse[0] || '/tf' . USERNAME_BOT . '' == $adanParse[0]) {
 		require __DIR__ . '/command/tf.php';
 		exit;
-	} elseif ('/reverse' == $adanParse[0] || '/reverse' . USERNAME_BOT . '' == $adanParse[0]) {
+	} elseif ('/s_rev' == $adanParse[0] || '/s_rev' . USERNAME_BOT . '' == $adanParse[0]) {
+		require __DIR__ . '/command/sticker_reverse.php';
+		exit;
+	} elseif (
+		'/reverse' == $adanParse[0] || '/reverse' . USERNAME_BOT . '' == $adanParse[0] ||
+		'/i_rev' == $adanParse[0] || '/i_rev' . USERNAME_BOT . '' == $adanParse[0]
+	) {
 		require __DIR__ . '/command/reverse.php';
 		exit;
 	} elseif ('/note' == $adanParse[0] || '/note' . USERNAME_BOT . '' == $adanParse[0]) {

@@ -1,0 +1,3 @@
+ParseError: syntax error, unexpected token ";", expecting ")" in C:\bot_telegram\command\debug.php:21
+Stack trace:
+#0 {main}

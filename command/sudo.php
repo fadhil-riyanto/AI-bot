@@ -93,7 +93,7 @@ if ($getStringFromSpasi[0] == 'debug' || $getStringFromSpasi[0] == 'debugmode') 
     //jalankan sql
     $returned = $db->run($udahDiparse);
     $reply = json_encode($returned, JSON_PRETTY_PRINT);
-    $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+    $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'disable_web_page_preview' => true);
     $telegram->sendMessage($content);
 } elseif ($getStringFromSpasi[0] == 'json' || $getStringFromSpasi[0] == 'jsondebug') {
     $result = $telegram->getData();

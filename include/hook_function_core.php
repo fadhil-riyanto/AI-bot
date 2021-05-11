@@ -195,3 +195,17 @@ function unlinkFile($filename)
 	// default unlink
 	return is_writable($filename) && @unlink($filename);
 }
+
+//fungsi var_to_str 
+//thanks to https://stackoverflow.com/questions/3671455/php-boolean-to-string-with-modification-a-condition
+
+function var_to_str($in)
+{
+	if (is_bool($in)) {
+		if ($in)
+			return "true";
+		else
+			return "false";
+	} else
+		return $in;
+}

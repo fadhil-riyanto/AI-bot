@@ -1,32 +1,24 @@
 <?php
 require __DIR__ . '/../vendor/autoload.php';
-require __DIR__ . '/../pengaturan/env.php';
-require __DIR__ . '/../include/conn_db.php';
 
-
-
-function getChatAdministrators_admincache()
+function dapatkan_admin($chat_id)
 {
-    if (filemtime(__DIR__ . '/../include/getChatAdministrators_admincache.txt') < time() - 1 * 60) {
-        global $chat_id, $telegram;
+    global $telegram;
+    //deteksi apakah file ada
+    $deteksicacheadmin = file_exists(__DIR__ . '/../json_data/admin_cache_json/cache_id_' . $chat_id);
+    if ($deteksicacheadmin === false) {
+        $data = array('chat_id' => $chat_id);
+        $adminnn = $telegram->getChatAdministrators($data);
+        file_put_contents(__DIR__ . '/../json_data/admin_cache_json/cache_id_' . $chat_id, json_encode($adminnn));
+        return $adminnn;
+    }
 
-        $content = array('chat_id' => $chat_id);
-        $result = $telegram->getChatAdministrators($content);
-
-
-        // make the SQL call
-        if ($result) {
-            // store query result in getChatAdministrators_admincache.txt
-            file_put_contents(__DIR__ . '/../include/getChatAdministrators_admincache.txt', serialize(json_encode($result)));
-
-            return json_encode($result);
-        } else {
-            return 'error_fetch_data';
-        }
+    if (filemtime(__DIR__ . '/../json_data/admin_cache_json/cache_id_' . $chat_id) < time() - 1 * 5) {
+        $data = array('chat_id' => $chat_id);
+        $adminnn = $telegram->getChatAdministrators($data);
+        file_put_contents(__DIR__ . '/../json_data/admin_cache_json/cache_id_' . $chat_id, json_encode($adminnn));
+        return $adminnn;
     } else {
-        $data = unserialize(file_get_contents(__DIR__ . '/../include/getChatAdministrators_admincache.txt'));
-        return $data;
+        return json_decode(file_get_contents(__DIR__ . '/../json_data/admin_cache_json/cache_id_' . $chat_id), true);
     }
 }
-
-// echo auth_api_getdata();

@@ -169,12 +169,13 @@ if (deteksi_grup() == true) {
     }
     exit;
 }
-
+$teleee = $telegram->getData();
+$is_anonadmin = $teleee['from']['username'];
 function is_admin_grup($userID)
 {
-    global $admins;
+    global $admins, $is_anonadmin;
     foreach ($admins as $adminss) {
-        if ($adminss == $userID) {
+        if ($adminss == $userID || $is_anonadmin == 'GroupAnonymousBot') {
             return true;
         }
     }

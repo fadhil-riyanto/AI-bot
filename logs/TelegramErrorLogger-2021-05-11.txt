@@ -1,0 +1,672 @@
+============[Date]============
+[ 2021-05-11 11:45:03  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804536053
+ref.message.message_id= 77829
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001182246595
+ref.message.chat.title= [c]oretan Script
+ref.message.chat.username= cScript
+ref.message.chat.type= supergroup
+ref.message.date= 1620708299
+ref.message.text= /debug
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 
+ref.reply_to_message_id= 77829
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\command\debug.php(5): Telegram->sendMessage(Array)
+#4 C:\bot_telegram\hook.php(706): require('C:\\bot_telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-05-11 11:45:46  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804536054
+ref.message.message_id= 77831
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001182246595
+ref.message.chat.title= [c]oretan Script
+ref.message.chat.username= cScript
+ref.message.chat.type= supergroup
+ref.message.date= 1620708343
+ref.message.text= /debug
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 
+ref.reply_to_message_id= 77831
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\command\debug.php(5): Telegram->sendMessage(Array)
+#4 C:\bot_telegram\hook.php(706): require('C:\\bot_telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-05-11 11:45:53  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804536055
+ref.message.message_id= 77833
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001182246595
+ref.message.chat.title= [c]oretan Script
+ref.message.chat.username= cScript
+ref.message.chat.type= supergroup
+ref.message.date= 1620708351
+ref.message.text= /debug
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 
+ref.reply_to_message_id= 77833
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\command\debug.php(5): Telegram->sendMessage(Array)
+#4 C:\bot_telegram\hook.php(706): require('C:\\bot_telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-05-11 11:46:12  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804536056
+ref.message.message_id= 77835
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001182246595
+ref.message.chat.title= [c]oretan Script
+ref.message.chat.username= cScript
+ref.message.chat.type= supergroup
+ref.message.date= 1620708370
+ref.message.text= /debug
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 
+ref.reply_to_message_id= 77835
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\command\debug.php(5): Telegram->sendMessage(Array)
+#4 C:\bot_telegram\hook.php(706): require('C:\\bot_telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-05-11 11:46:40  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804536059
+ref.message.message_id= 77840
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001182246595
+ref.message.chat.title= [c]oretan Script
+ref.message.chat.username= cScript
+ref.message.chat.type= supergroup
+ref.message.date= 1620708397
+ref.message.text= /debug
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 
+ref.reply_to_message_id= 77840
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\command\debug.php(5): Telegram->sendMessage(Array)
+#4 C:\bot_telegram\hook.php(706): require('C:\\bot_telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-05-11 11:49:59  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804536075
+ref.message.message_id= 77864
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001182246595
+ref.message.chat.title= [c]oretan Script
+ref.message.chat.username= cScript
+ref.message.chat.type= supergroup
+ref.message.date= 1620708594
+ref.message.text= /debug
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 
+ref.reply_to_message_id= 77864
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\command\debug.php(6): Telegram->sendMessage(Array)
+#4 C:\bot_telegram\hook.php(706): require('C:\\bot_telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-05-11 11:53:57  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804536090
+ref.message.message_id= 77880
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001182246595
+ref.message.chat.title= [c]oretan Script
+ref.message.chat.username= cScript
+ref.message.chat.type= supergroup
+ref.message.date= 1620708832
+ref.message.text= /debug
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 
+ref.reply_to_message_id= 77880
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\command\debug.php(6): Telegram->sendMessage(Array)
+#4 C:\bot_telegram\hook.php(706): require('C:\\bot_telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-05-11 11:54:37  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804536091
+ref.message.message_id= 73116
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001310420564
+ref.message.chat.title= GAS Testing Grup
+ref.message.chat.username= GasTestingGroup
+ref.message.chat.type= supergroup
+ref.message.date= 1620708871
+ref.message.text= /debug
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 
+ref.reply_to_message_id= 73116
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\command\debug.php(6): Telegram->sendMessage(Array)
+#4 C:\bot_telegram\hook.php(706): require('C:\\bot_telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-05-11 12:03:17  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Unsupported start tag "x:\/code" at byte offset 1567
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804536095
+ref.message.message_id= 77885
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001182246595
+ref.message.chat.title= [c]oretan Script
+ref.message.chat.username= cScript
+ref.message.chat.type= supergroup
+ref.message.date= 1620709393
+ref.message.text= /debug
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= {"ok":true,"result":[{"user":{"id":466284462,"is_bot":false,"first_name":"Ahmad","last_name":"Dzaky","username":"AdZkYy","language_code":"id"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":false,"can_manage_voice_chats":true,"custom_title":"~ seedev","is_anonymous":false},{"user":{"id":800191461,"is_bot":false,"first_name":"Franky","last_name":"Jo","username":"FrankyRJ"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"\u03a3nigma","is_anonymous":false},{"user":{"id":1426501098,"is_bot":false,"first_name":"Dipa"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"pascopas","is_anonymous":false},{"user":{"id":1307847863,"is_bot":false,"first_name":"Adpt","username":"crossxy"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"<x:\/code>","is_anonymous":false},{"user":{"id":445372887,"is_bot":false,"first_name":"Aghisna12","username":"Aghisna12","language_code":"en"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"<x:\/code>","is_anonymous":false},{"user":{"id":1489990155,"is_bot":true,"first_name":"\u0192\u03b1\u2202\u043d\u03b9\u2113 \u044f\u03b9\u0443\u03b1\u03b7\u0442\u03c3","username":"Fadhil_riyanto_bot"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":false,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"\u2063","is_anonymous":false},{"user":{"id":1709770092,"is_bot":false,"first_name":"Dinny","last_name":".."},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"\ud835\udc03","is_anonymous":true},{"user":{"id":1214724816,"is_bot":false,"first_name":"Asyiqqaa","username":"AsyiqqaaID"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":false,"can_manage_voice_chats":true,"custom_title":"indogame","is_anonymous":false},{"user":{"id":1506840180,"is_bot":false,"first_name":"prima","last_name":"yudi","username":"primayudi"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"\u03a3nigma","is_anonymous":false},{"user":{"id":605166480,"is_bot":false,"first_name":"taelha","username":"Taelha","language_code":"id"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"@buahapel","is_anonymous":true},{"user":{"id":1355
+ref.reply_to_message_id= 77885
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\command\debug.php(6): Telegram->sendMessage(Array)
+#4 C:\bot_telegram\hook.php(706): require('C:\\bot_telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-05-11 12:04:35  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Unsupported start tag "x:\/code" at byte offset 1567
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804536096
+ref.message.message_id= 77887
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001182246595
+ref.message.chat.title= [c]oretan Script
+ref.message.chat.username= cScript
+ref.message.chat.type= supergroup
+ref.message.date= 1620709470
+ref.message.text= /debug
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= {"ok":true,"result":[{"user":{"id":466284462,"is_bot":false,"first_name":"Ahmad","last_name":"Dzaky","username":"AdZkYy","language_code":"id"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":false,"can_manage_voice_chats":true,"custom_title":"~ seedev","is_anonymous":false},{"user":{"id":800191461,"is_bot":false,"first_name":"Franky","last_name":"Jo","username":"FrankyRJ"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"\u03a3nigma","is_anonymous":false},{"user":{"id":1426501098,"is_bot":false,"first_name":"Dipa"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"pascopas","is_anonymous":false},{"user":{"id":1307847863,"is_bot":false,"first_name":"Adpt","username":"crossxy"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"<x:\/code>","is_anonymous":false},{"user":{"id":445372887,"is_bot":false,"first_name":"Aghisna12","username":"Aghisna12","language_code":"en"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"<x:\/code>","is_anonymous":false},{"user":{"id":1489990155,"is_bot":true,"first_name":"\u0192\u03b1\u2202\u043d\u03b9\u2113 \u044f\u03b9\u0443\u03b1\u03b7\u0442\u03c3","username":"Fadhil_riyanto_bot"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":false,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"\u2063","is_anonymous":false},{"user":{"id":1709770092,"is_bot":false,"first_name":"Dinny","last_name":".."},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"\ud835\udc03","is_anonymous":true},{"user":{"id":1214724816,"is_bot":false,"first_name":"Asyiqqaa","username":"AsyiqqaaID"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":false,"can_manage_voice_chats":true,"custom_title":"indogame","is_anonymous":false},{"user":{"id":1506840180,"is_bot":false,"first_name":"prima","last_name":"yudi","username":"primayudi"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"\u03a3nigma","is_anonymous":false},{"user":{"id":605166480,"is_bot":false,"first_name":"taelha","username":"Taelha","language_code":"id"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"@buahapel","is_anonymous":true},{"user":{"id":1355
+ref.reply_to_message_id= 77887
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\command\debug.php(6): Telegram->sendMessage(Array)
+#4 C:\bot_telegram\hook.php(706): require('C:\\bot_telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-05-11 12:04:55  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Unsupported start tag "x:\/code" at byte offset 1567
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804536097
+ref.message.message_id= 77889
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001182246595
+ref.message.chat.title= [c]oretan Script
+ref.message.chat.username= cScript
+ref.message.chat.type= supergroup
+ref.message.date= 1620709492
+ref.message.text= /debug
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= {"ok":true,"result":[{"user":{"id":466284462,"is_bot":false,"first_name":"Ahmad","last_name":"Dzaky","username":"AdZkYy","language_code":"id"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":false,"can_manage_voice_chats":true,"custom_title":"~ seedev","is_anonymous":false},{"user":{"id":800191461,"is_bot":false,"first_name":"Franky","last_name":"Jo","username":"FrankyRJ"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"\u03a3nigma","is_anonymous":false},{"user":{"id":1426501098,"is_bot":false,"first_name":"Dipa"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"pascopas","is_anonymous":false},{"user":{"id":1307847863,"is_bot":false,"first_name":"Adpt","username":"crossxy"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"<x:\/code>","is_anonymous":false},{"user":{"id":445372887,"is_bot":false,"first_name":"Aghisna12","username":"Aghisna12","language_code":"en"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"<x:\/code>","is_anonymous":false},{"user":{"id":1489990155,"is_bot":true,"first_name":"\u0192\u03b1\u2202\u043d\u03b9\u2113 \u044f\u03b9\u0443\u03b1\u03b7\u0442\u03c3","username":"Fadhil_riyanto_bot"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":false,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"\u2063","is_anonymous":false},{"user":{"id":1709770092,"is_bot":false,"first_name":"Dinny","last_name":".."},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"\ud835\udc03","is_anonymous":true},{"user":{"id":1214724816,"is_bot":false,"first_name":"Asyiqqaa","username":"AsyiqqaaID"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":false,"can_manage_voice_chats":true,"custom_title":"indogame","is_anonymous":false},{"user":{"id":1506840180,"is_bot":false,"first_name":"prima","last_name":"yudi","username":"primayudi"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"\u03a3nigma","is_anonymous":false},{"user":{"id":605166480,"is_bot":false,"first_name":"taelha","username":"Taelha","language_code":"id"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"@buahapel","is_anonymous":true},{"user":{"id":1355798219,"is_bot":false,"first_name":"Kee","username":"nekoha","language_code":"en"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"<x:\/code>","is_anonymous":false},{"user":{"id":1393342467,"is_bot":false,"first_name":"\u0192\u03b1\u2202\u043d\u03b9\u2113","last_name":"\u044f\u03b9\u0443\u03b1\u03b7\u0442\u03c3","username":"fadhil_riyanto","language_code":"ms"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"<?php","is_anonymous":false},{"user":{"id":1349919799,"is_bot":false,"first_name":"Bae","last_name":"Ro Na #KUTIL","username":"Oh_Yoon_Hee","language_code":"en"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"<x:\/code>","is_anonymous":false},{"user":{"id":1051577909,"is_bot":false,"first_name":"\ud835\udc9c\ud835\udcc6\ud835\udcbe\ud835\udcc1\ud835\udcb6","last_name":"\ud835\udcc0\ud835\udcbd\ud835\udcb6\ud835\udcc1\ud835\udcbe\ud835\udcc8\ud835\udcb6","username":"MPH_SU"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"@GAStestingGroup","is_anonymous":true},{"user":{"id":1195226552,"is_bot":false,"first_name":"Raffi","last_name":"Fadlika","username":"mrfadlika","language_code":"id"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"@scriptiseng","is_anonymous":true},{"user":{"id":604068784,"is_bot":false,"first_name":"Aini","last_name":"\u3164\u3164"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":false,"can_manage_voice_chats":true,"custom_title":"@indogame","is_anonymous":true},{"user":{"id":617426792,"is_bot":false,"first_name":"Yasir Aris M","username":"YasirArisM","language_code":"en"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"@MissKatyRoBot","is_anonymous":true},{"user":{"id":415839164,"is_bot":false,"first_name":"Drehobl","username":"michoud"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":true,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"kuncen","is_anonymous":false},{"user":{"id":349148756,"is_bot":false,"first_name":"\u2063","last_name":"\u01b5","username":"ykcaz"},"status":"creator","custom_title":"\u2063","is_anonymous":true},{"user":{"id":275126700,"is_bot":false,"first_name":"Nurul aini","username":"penjualelite"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"indogame","is_anonymous":true},{"user":{"id":358903951,"is_bot":false,"first_name":"Syarah","username":"SyarahTS"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"S","is_anonymous":true},{"user":{"id":724677596,"is_bot":false,"first_name":"\u0188","last_name":"Script","username":"ScriptGoogle","language_code":"en"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":true,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"wakil kuncen","is_anonymous":false}]}
+ref.reply_to_message_id= 77889
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\command\debug.php(6): Telegram->sendMessage(Array)
+#4 C:\bot_telegram\hook.php(706): require('C:\\bot_telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-05-11 12:05:42  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Unsupported start tag "x:\/code" at byte offset 1567
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804536098
+ref.message.message_id= 77891
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001182246595
+ref.message.chat.title= [c]oretan Script
+ref.message.chat.username= cScript
+ref.message.chat.type= supergroup
+ref.message.date= 1620709538
+ref.message.text= /debug
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= {"ok":true,"result":[{"user":{"id":466284462,"is_bot":false,"first_name":"Ahmad","last_name":"Dzaky","username":"AdZkYy","language_code":"id"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":false,"can_manage_voice_chats":true,"custom_title":"~ seedev","is_anonymous":false},{"user":{"id":800191461,"is_bot":false,"first_name":"Franky","last_name":"Jo","username":"FrankyRJ"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"\u03a3nigma","is_anonymous":false},{"user":{"id":1426501098,"is_bot":false,"first_name":"Dipa"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"pascopas","is_anonymous":false},{"user":{"id":1307847863,"is_bot":false,"first_name":"Adpt","username":"crossxy"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"<x:\/code>","is_anonymous":false},{"user":{"id":445372887,"is_bot":false,"first_name":"Aghisna12","username":"Aghisna12","language_code":"en"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"<x:\/code>","is_anonymous":false},{"user":{"id":1489990155,"is_bot":true,"first_name":"\u0192\u03b1\u2202\u043d\u03b9\u2113 \u044f\u03b9\u0443\u03b1\u03b7\u0442\u03c3","username":"Fadhil_riyanto_bot"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":false,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"\u2063","is_anonymous":false},{"user":{"id":1709770092,"is_bot":false,"first_name":"Dinny","last_name":".."},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"\ud835\udc03","is_anonymous":true},{"user":{"id":1214724816,"is_bot":false,"first_name":"Asyiqqaa","username":"AsyiqqaaID"},"status":"administrator","can_be_edited":fals
+ref.reply_to_message_id= 77891
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\command\debug.php(6): Telegram->sendMessage(Array)
+#4 C:\bot_telegram\hook.php(706): require('C:\\bot_telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-05-11 12:07:10  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Unsupported start tag "x:\/code" at byte offset 1567
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804536099
+ref.message.message_id= 77893
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001182246595
+ref.message.chat.title= [c]oretan Script
+ref.message.chat.username= cScript
+ref.message.chat.type= supergroup
+ref.message.date= 1620709625
+ref.message.text= /debug
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= {"ok":true,"result":[{"user":{"id":466284462,"is_bot":false,"first_name":"Ahmad","last_name":"Dzaky","username":"AdZkYy","language_code":"id"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":false,"can_manage_voice_chats":true,"custom_title":"~ seedev","is_anonymous":false},{"user":{"id":800191461,"is_bot":false,"first_name":"Franky","last_name":"Jo","username":"FrankyRJ"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"\u03a3nigma","is_anonymous":false},{"user":{"id":1426501098,"is_bot":false,"first_name":"Dipa"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"pascopas","is_anonymous":false},{"user":{"id":1307847863,"is_bot":false,"first_name":"Adpt","username":"crossxy"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"<x:\/code>","is_anonymous":false},{"user":{"id":445372887,"is_bot":false,"first_name":"Aghisna12","username":"Aghisna12","language_code":"en"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"<x:\/code>","is_anonymous":false},{"user":{"id":1489990155,"is_bot":true,"first_name":"\u0192\u03b1\u2202\u043d\u03b9\u2113 \u044f\u03b9\u0443\u03b1\u03b7\u0442\u03c3","username":"Fadhil_riyanto_bot"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":false,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"\u2063","is_anonymous":false},{"user":{"id":1709770092,"is_bot":false,"first_name":"Dinny","last_name":".."},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"\ud835\udc03","is_anonymous":true},{"user":{"id":1214724816,"is_bot":false,"first_name":"Asyiqqaa","username":"AsyiqqaaID"},"status":"administrator","can_be_edited":fals
+ref.reply_to_message_id= 77893
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\command\debug.php(6): Telegram->sendMessage(Array)
+#4 C:\bot_telegram\hook.php(706): require('C:\\bot_telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-05-11 12:09:00  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Unsupported start tag "x:\/code" at byte offset 1567
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804536101
+ref.message.message_id= 77895
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001182246595
+ref.message.chat.title= [c]oretan Script
+ref.message.chat.username= cScript
+ref.message.chat.type= supergroup
+ref.message.date= 1620709737
+ref.message.text= /debug
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= {"ok":true,"result":[{"user":{"id":466284462,"is_bot":false,"first_name":"Ahmad","last_name":"Dzaky","username":"AdZkYy","language_code":"id"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":false,"can_manage_voice_chats":true,"custom_title":"~ seedev","is_anonymous":false},{"user":{"id":800191461,"is_bot":false,"first_name":"Franky","last_name":"Jo","username":"FrankyRJ"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"\u03a3nigma","is_anonymous":false},{"user":{"id":1426501098,"is_bot":false,"first_name":"Dipa"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"pascopas","is_anonymous":false},{"user":{"id":1307847863,"is_bot":false,"first_name":"Adpt","username":"crossxy"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"<x:\/code>","is_anonymous":false},{"user":{"id":445372887,"is_bot":false,"first_name":"Aghisna12","username":"Aghisna12","language_code":"en"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"<x:\/code>","is_anonymous":false},{"user":{"id":1489990155,"is_bot":true,"first_name":"\u0192\u03b1\u2202\u043d\u03b9\u2113 \u044f\u03b9\u0443\u03b1\u03b7\u0442\u03c3","username":"Fadhil_riyanto_bot"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":false,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"\u2063","is_anonymous":false},{"user":{"id":1709770092,"is_bot":false,"first_name":"Dinny","last_name":".."},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"\ud835\udc03","is_anonymous":true},{"user":{"id":1214724816,"is_bot":false,"first_name":"Asyiqqaa","username":"AsyiqqaaID"},"status":"administrator","can_be_edited":fals
+ref.reply_to_message_id= 77895
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\command\debug.php(6): Telegram->sendMessage(Array)
+#4 C:\bot_telegram\hook.php(706): require('C:\\bot_telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-05-11 12:09:42  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Unsupported start tag "x:\/code" at byte offset 1567
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804536104
+ref.message.message_id= 77899
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001182246595
+ref.message.chat.title= [c]oretan Script
+ref.message.chat.username= cScript
+ref.message.chat.type= supergroup
+ref.message.date= 1620709778
+ref.message.text= /debug
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= {"ok":true,"result":[{"user":{"id":466284462,"is_bot":false,"first_name":"Ahmad","last_name":"Dzaky","username":"AdZkYy","language_code":"id"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":false,"can_manage_voice_chats":true,"custom_title":"~ seedev","is_anonymous":false},{"user":{"id":800191461,"is_bot":false,"first_name":"Franky","last_name":"Jo","username":"FrankyRJ"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"\u03a3nigma","is_anonymous":false},{"user":{"id":1426501098,"is_bot":false,"first_name":"Dipa"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"pascopas","is_anonymous":false},{"user":{"id":1307847863,"is_bot":false,"first_name":"Adpt","username":"crossxy"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"<x:\/code>","is_anonymous":false},{"user":{"id":445372887,"is_bot":false,"first_name":"Aghisna12","username":"Aghisna12","language_code":"en"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"<x:\/code>","is_anonymous":false},{"user":{"id":1489990155,"is_bot":true,"first_name":"\u0192\u03b1\u2202\u043d\u03b9\u2113 \u044f\u03b9\u0443\u03b1\u03b7\u0442\u03c3","username":"Fadhil_riyanto_bot"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":false,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"\u2063","is_anonymous":false},{"user":{"id":1709770092,"is_bot":false,"first_name":"Dinny","last_name":".."},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"\ud835\udc03","is_anonymous":true},{"user":{"id":1214724816,"is_bot":false,"first_name":"Asyiqqaa","username":"AsyiqqaaID"},"status":"administrator","can_be_edited":fals
+ref.reply_to_message_id= 77899
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\command\debug.php(6): Telegram->sendMessage(Array)
+#4 C:\bot_telegram\hook.php(706): require('C:\\bot_telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-05-11 12:31:39  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: can't parse entities: Unsupported start tag "x:\/code" at byte offset 1567
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804536148
+ref.message.message_id= 77962
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001182246595
+ref.message.chat.title= [c]oretan Script
+ref.message.chat.username= cScript
+ref.message.chat.type= supergroup
+ref.message.date= 1620711094
+ref.message.text= /debug
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 6
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= {"ok":true,"result":[{"user":{"id":466284462,"is_bot":false,"first_name":"Ahmad","last_name":"Dzaky","username":"AdZkYy","language_code":"id"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":false,"can_manage_voice_chats":true,"custom_title":"~ seedev","is_anonymous":false},{"user":{"id":800191461,"is_bot":false,"first_name":"Franky","last_name":"Jo","username":"FrankyRJ"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"\u03a3nigma","is_anonymous":false},{"user":{"id":1426501098,"is_bot":false,"first_name":"Dipa"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"pascopas","is_anonymous":false},{"user":{"id":1307847863,"is_bot":false,"first_name":"Adpt","username":"crossxy"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"<x:\/code>","is_anonymous":false},{"user":{"id":445372887,"is_bot":false,"first_name":"Aghisna12","username":"Aghisna12","language_code":"en"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"<x:\/code>","is_anonymous":false},{"user":{"id":1489990155,"is_bot":true,"first_name":"\u0192\u03b1\u2202\u043d\u03b9\u2113 \u044f\u03b9\u0443\u03b1\u03b7\u0442\u03c3","username":"Fadhil_riyanto_bot"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":false,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"\u2063","is_anonymous":false},{"user":{"id":1709770092,"is_bot":false,"first_name":"Dinny","last_name":".."},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"\ud835\udc03","is_anonymous":true},{"user":{"id":1214724816,"is_bot":false,"first_name":"Asyiqqaa","username":"AsyiqqaaID"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":false,"can_manage_voice_chats":true,"custom_title":"indogame","is_anonymous":false},{"user":{"id":1506840180,"is_bot":false,"first_name":"prima","last_name":"yudi","username":"primayudi"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":true,"can_manage_voice_chats":true,"custom_title":"\u03a3nigma","is_anonymous":false},{"user":{"id":605166480,"is_bot":false,"first_name":"taelha","username":"Taelha","language_code":"id"},"status":"administrator","can_be_edited":false,"can_manage_chat":true,"can_change_info":false,"can_delete_messages":true,"can_invite_users":true,"can_restrict_members":true,"can_pin_messages":true,"can_promote_members":true,"can_m
+ref.reply_to_message_id= 77962
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\command\debug.php(22): Telegram->sendMessage(Array)
+#4 C:\bot_telegram\hook.php(705): require('C:\\bot_telegram...')
+#5 {main}
+

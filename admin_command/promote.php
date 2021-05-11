@@ -10,48 +10,44 @@ $unamepromote = '<a href="tg://user?id=' . $promote_uid . '">' . $fname_depan . 
 $azanHilangcommand = str_replace($adanParse_plain[0], '', $text_plain);
 $udahDiparse = str_replace($adanParse_plain[0] . ' ', '', $text_plain);
 if (isset($promote_uid)) {
-    // $content = array(
-    //     'chat_id' => '-1001410961692',
-    //     'user_id' => 1223173857,
-    //     'can_change_info' => True,
-    //     'can_post_messages' => True,
-    //     'can_edit_messages' => True,
-    //     'can_delete_messages' => True,
-    //     'can_invite_users' => True,
-    //     'can_restrict_members' => True,
-    //     'can_pin_messages' => True,
-    //     'can_promote_members' => True
-    // );
-    // $dbeug = $telegram->promoteChatMember($content);
+    $admins = dapatkan_admin($chat_id);
+    foreach ($admins['result'] as $adminnn) {
+        if ($adminnn['user']['id'] == ID_BOT) {
+            $previelge = array(
+                "is_anonymous" => var_to_str($adminnn['is_anonymous']),
+                "can_change_info" => var_to_str($adminnn['can_change_info']),
+                "can_post_messages" => var_to_str($adminnn['can_post_messages']),
+                "can_edit_messages" => var_to_str($adminnn['can_edit_messages']),
+                "can_delete_messages" => var_to_str($adminnn['can_delete_messages']),
+                "can_invite_users" => var_to_str($adminnn['can_invite_users']),
+                "can_restrict_members" => var_to_str($adminnn['can_restrict_members']),
+                "can_pin_messages" => var_to_str($adminnn['can_pin_messages']),
+                "can_promote_members" => var_to_str($adminnn['can_promote_members']),
+            );
+        }
+    }
+
     $param_promote = array(
         'chat_id' => $chat_id,
         'user_id' => $promote_uid,
-        // 'can_change_info' => 'False',
-        // 'can_post_message' => 'True',
-        // 'can_edit_message' => 'True',
-        // 'can_delete_messages' => 'True',
-        // 'can_invite_users' => 'True',
-        // 'can_restrict_members' => 'True',
-        // 'can_pin_messages' => 'True',
-        // 'can_promote_members' => 'False'
-        "can_be_edited" => "false",
-        "can_manage_chat" => "true",
-        "can_change_info" => "false",
-        "can_delete_messages" => "true",
-        "can_invite_users" => "true",
-        "can_restrict_members" => "false",
-        "can_pin_messages" => "true",
-        "can_promote_members" => "true",
-        "can_manage_voice_chats" => "true",
+        'is_anonymous' => $previelge['is_anonymous'],
+        'can_change_info' => $previelge['can_change_info'],
+        'can_post_messages' => $previelge['can_post_messages'],
+        'can_edit_messages' => $previelge['can_edit_messages'],
+        'can_delete_messages' => $previelge['can_delete_messages'],
+        'can_invite_users' => $previelge['can_invite_users'],
+        'can_restrict_members' => $previelge['can_restrict_members'],
+        'can_pin_messages' => $previelge['can_pin_messages'],
+        'can_promote_members' => $previelge['can_promote_members'],
     );
     $param_jadi = http_build_query($param_promote);
     $req_params = 'https://api.telegram.org/bot' . TG_HTTP_API . '/promoteChatMember?' . $param_jadi;
     $client = new \GuzzleHttp\Client();
     $response = $client->request('GET', $req_params);
 
-    $reply = "debug : " . $response;
-    $content = array('chat_id' => $chat_id, 'text' => $reply, 'parse_mode' => 'html', 'reply_to_message_id' => $message_id, 'disable_web_page_preview' => true);
-    $telegram->sendMessage($content);
+    // $reply = "debug : " . $response;
+    // $content = array('chat_id' => $chat_id, 'text' => $reply, 'parse_mode' => 'html', 'reply_to_message_id' => $message_id, 'disable_web_page_preview' => true);
+    // $telegram->sendMessage($content);
     // die();
     // $datass = json_decode($response);
     $datass = $response;

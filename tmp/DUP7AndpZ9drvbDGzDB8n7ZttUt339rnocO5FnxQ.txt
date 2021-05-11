@@ -1,0 +1,3 @@
+ParseError: syntax error, unexpected variable "$deteksicacheadmin", expecting "," or ";" in C:\bot_telegram\include\getChatAdministrators_cached.php:8
+Stack trace:
+#0 {main}
