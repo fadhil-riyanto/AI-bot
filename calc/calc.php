@@ -1,6 +1,6 @@
 <?php
 require __DIR__ . '/keyboard.php';
-$content = array('chat_id' => $chat_id, 'reply_markup' => $keyb, 'text' => "Kalkulator");
+$content = array('chat_id' => $chat_id, 'reply_markup' => $keyb, 'text' => "Kalkulator", 'reply_to_message_id' => $message_id);
 $calc_result = $telegram->sendMessage($content);
 
 require __DIR__ . '/calc_initdb.php';
