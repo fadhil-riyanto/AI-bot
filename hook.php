@@ -64,7 +64,7 @@ try {
 	// 	if ($userID == $userid_pemilik || $userID == 1223173857) {
 	// 	} else {
 	// 		$reply = "Whopps, bot ini sedang dalam proses developing oleh " . PUMBUAT_BOT . PHP_EOL .
-	// 			"Coba lagi nanti";
+	// 			"Coba lagi nanti :)";
 	// 		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
 	// 		$telegram->sendMessage($content);
 	// 		exit;
@@ -597,6 +597,15 @@ try {
 		exit;
 	} elseif ('/tf' == $adanParse[0] || '/tf' . USERNAME_BOT . '' == $adanParse[0]) {
 		require __DIR__ . '/command/tf.php';
+		exit;
+	}
+	//BIG PROJECT CALC
+
+	elseif ('/calculator' == $adanParse[0] || '/calculator' . USERNAME_BOT . '' == $adanParse[0]) {
+		require __DIR__ . '/calc/calc.php';
+		exit;
+	} elseif ('/calc_fadhilsystem_i' == $adanParse[0] || '/calc_fadhilsystem_i' . USERNAME_BOT . '' == $adanParse[0]) {
+		require __DIR__ . '/calc/calc_fadhilsystem_i.php';
 		exit;
 	} elseif ('/s_rev' == $adanParse[0] || '/s_rev' . USERNAME_BOT . '' == $adanParse[0]) {
 		require __DIR__ . '/command/sticker_reverse.php';

@@ -1,6 +1,6 @@
 <?php
-for ($a = 1; $a < 100; $a++) {
-    $nodes[] = "https://simsumi.herokuapp.com/api?text=hai&lang=id";
+for ($a = 1; $a < 1000000; $a++) {
+    $nodes[] = "http://127.0.0.1/dns";
 }
 $node_count = count($nodes);
 

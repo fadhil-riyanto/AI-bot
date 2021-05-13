@@ -1,0 +1,511 @@
+============[Date]============
+[ 2021-05-13 04:26:10  UTC ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: chat not found
+=========[Sent Data]==========
+[ref]
+ref.text= [BROADCAST_ADMIN]
+
+Saya sebagai developer bot ini.
+ingin mengucapkan selamat hari raya Idul Fitri untuk saudaraku umat muslim dan selamat memperingati Kenaikan Isa Al Masih untuk saudaraku umat kristiani.
+
+Karna saya muslim, maka sepatutnya meminta maaf apabila ada salah, seperti spam /ping di grup, sering ngetag orang ga jelas, sampai send stiker yang mungkin agak ga enak bagi kalian semua.
+semoga pada hari yang fitri ini, semua kesalahan saya bisa dimaafkan
+ref.parse_mode= html
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\test\broadcast.php(18): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-05-13 04:28:27  UTC ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: bot was blocked by the user
+=========[Sent Data]==========
+[ref]
+ref.text= [BROADCAST_ADMIN]
+
+Saya sebagai developer bot ini.
+ingin mengucapkan selamat hari raya Idul Fitri untuk saudaraku umat muslim dan selamat memperingati Kenaikan Isa Al Masih untuk saudaraku umat kristiani.
+
+Karna saya muslim, maka sepatutnya meminta maaf apabila ada salah, seperti spam /ping di grup, sering ngetag orang ga jelas, sampai send stiker yang mungkin agak ga enak bagi kalian semua.
+semoga pada hari raya idul fitri ini, semua kesalahan saya bisa dimaafkan
+
+yen ono lepate njaluk dingapuroni...
+ref.parse_mode= html
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\test\broadcast.php(19): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-05-13 04:28:31  UTC ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: bot was blocked by the user
+=========[Sent Data]==========
+[ref]
+ref.text= [BROADCAST_ADMIN]
+
+Saya sebagai developer bot ini.
+ingin mengucapkan selamat hari raya Idul Fitri untuk saudaraku umat muslim dan selamat memperingati Kenaikan Isa Al Masih untuk saudaraku umat kristiani.
+
+Karna saya muslim, maka sepatutnya meminta maaf apabila ada salah, seperti spam /ping di grup, sering ngetag orang ga jelas, sampai send stiker yang mungkin agak ga enak bagi kalian semua.
+semoga pada hari raya idul fitri ini, semua kesalahan saya bisa dimaafkan
+
+yen ono lepate njaluk dingapuroni...
+ref.parse_mode= html
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\test\broadcast.php(19): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-05-13 04:28:37  UTC ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: bot was blocked by the user
+=========[Sent Data]==========
+[ref]
+ref.text= [BROADCAST_ADMIN]
+
+Saya sebagai developer bot ini.
+ingin mengucapkan selamat hari raya Idul Fitri untuk saudaraku umat muslim dan selamat memperingati Kenaikan Isa Al Masih untuk saudaraku umat kristiani.
+
+Karna saya muslim, maka sepatutnya meminta maaf apabila ada salah, seperti spam /ping di grup, sering ngetag orang ga jelas, sampai send stiker yang mungkin agak ga enak bagi kalian semua.
+semoga pada hari raya idul fitri ini, semua kesalahan saya bisa dimaafkan
+
+yen ono lepate njaluk dingapuroni...
+ref.parse_mode= html
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\test\broadcast.php(19): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-05-13 04:28:38  UTC ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: bot was blocked by the user
+=========[Sent Data]==========
+[ref]
+ref.text= [BROADCAST_ADMIN]
+
+Saya sebagai developer bot ini.
+ingin mengucapkan selamat hari raya Idul Fitri untuk saudaraku umat muslim dan selamat memperingati Kenaikan Isa Al Masih untuk saudaraku umat kristiani.
+
+Karna saya muslim, maka sepatutnya meminta maaf apabila ada salah, seperti spam /ping di grup, sering ngetag orang ga jelas, sampai send stiker yang mungkin agak ga enak bagi kalian semua.
+semoga pada hari raya idul fitri ini, semua kesalahan saya bisa dimaafkan
+
+yen ono lepate njaluk dingapuroni...
+ref.parse_mode= html
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\test\broadcast.php(19): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-05-13 04:28:40  UTC ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: user is deactivated
+=========[Sent Data]==========
+[ref]
+ref.text= [BROADCAST_ADMIN]
+
+Saya sebagai developer bot ini.
+ingin mengucapkan selamat hari raya Idul Fitri untuk saudaraku umat muslim dan selamat memperingati Kenaikan Isa Al Masih untuk saudaraku umat kristiani.
+
+Karna saya muslim, maka sepatutnya meminta maaf apabila ada salah, seperti spam /ping di grup, sering ngetag orang ga jelas, sampai send stiker yang mungkin agak ga enak bagi kalian semua.
+semoga pada hari raya idul fitri ini, semua kesalahan saya bisa dimaafkan
+
+yen ono lepate njaluk dingapuroni...
+ref.parse_mode= html
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\test\broadcast.php(19): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-05-13 04:28:43  UTC ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: bot was blocked by the user
+=========[Sent Data]==========
+[ref]
+ref.text= [BROADCAST_ADMIN]
+
+Saya sebagai developer bot ini.
+ingin mengucapkan selamat hari raya Idul Fitri untuk saudaraku umat muslim dan selamat memperingati Kenaikan Isa Al Masih untuk saudaraku umat kristiani.
+
+Karna saya muslim, maka sepatutnya meminta maaf apabila ada salah, seperti spam /ping di grup, sering ngetag orang ga jelas, sampai send stiker yang mungkin agak ga enak bagi kalian semua.
+semoga pada hari raya idul fitri ini, semua kesalahan saya bisa dimaafkan
+
+yen ono lepate njaluk dingapuroni...
+ref.parse_mode= html
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\test\broadcast.php(19): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-05-13 04:28:46  UTC ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: bot was blocked by the user
+=========[Sent Data]==========
+[ref]
+ref.text= [BROADCAST_ADMIN]
+
+Saya sebagai developer bot ini.
+ingin mengucapkan selamat hari raya Idul Fitri untuk saudaraku umat muslim dan selamat memperingati Kenaikan Isa Al Masih untuk saudaraku umat kristiani.
+
+Karna saya muslim, maka sepatutnya meminta maaf apabila ada salah, seperti spam /ping di grup, sering ngetag orang ga jelas, sampai send stiker yang mungkin agak ga enak bagi kalian semua.
+semoga pada hari raya idul fitri ini, semua kesalahan saya bisa dimaafkan
+
+yen ono lepate njaluk dingapuroni...
+ref.parse_mode= html
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\test\broadcast.php(19): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-05-13 04:28:47  UTC ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: bot was blocked by the user
+=========[Sent Data]==========
+[ref]
+ref.text= [BROADCAST_ADMIN]
+
+Saya sebagai developer bot ini.
+ingin mengucapkan selamat hari raya Idul Fitri untuk saudaraku umat muslim dan selamat memperingati Kenaikan Isa Al Masih untuk saudaraku umat kristiani.
+
+Karna saya muslim, maka sepatutnya meminta maaf apabila ada salah, seperti spam /ping di grup, sering ngetag orang ga jelas, sampai send stiker yang mungkin agak ga enak bagi kalian semua.
+semoga pada hari raya idul fitri ini, semua kesalahan saya bisa dimaafkan
+
+yen ono lepate njaluk dingapuroni...
+ref.parse_mode= html
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\test\broadcast.php(19): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-05-13 04:28:55  UTC ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: user is deactivated
+=========[Sent Data]==========
+[ref]
+ref.text= [BROADCAST_ADMIN]
+
+Saya sebagai developer bot ini.
+ingin mengucapkan selamat hari raya Idul Fitri untuk saudaraku umat muslim dan selamat memperingati Kenaikan Isa Al Masih untuk saudaraku umat kristiani.
+
+Karna saya muslim, maka sepatutnya meminta maaf apabila ada salah, seperti spam /ping di grup, sering ngetag orang ga jelas, sampai send stiker yang mungkin agak ga enak bagi kalian semua.
+semoga pada hari raya idul fitri ini, semua kesalahan saya bisa dimaafkan
+
+yen ono lepate njaluk dingapuroni...
+ref.parse_mode= html
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\test\broadcast.php(19): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-05-13 04:28:57  UTC ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: bot was blocked by the user
+=========[Sent Data]==========
+[ref]
+ref.text= [BROADCAST_ADMIN]
+
+Saya sebagai developer bot ini.
+ingin mengucapkan selamat hari raya Idul Fitri untuk saudaraku umat muslim dan selamat memperingati Kenaikan Isa Al Masih untuk saudaraku umat kristiani.
+
+Karna saya muslim, maka sepatutnya meminta maaf apabila ada salah, seperti spam /ping di grup, sering ngetag orang ga jelas, sampai send stiker yang mungkin agak ga enak bagi kalian semua.
+semoga pada hari raya idul fitri ini, semua kesalahan saya bisa dimaafkan
+
+yen ono lepate njaluk dingapuroni...
+ref.parse_mode= html
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\test\broadcast.php(19): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-05-13 04:28:58  UTC ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: bot was blocked by the user
+=========[Sent Data]==========
+[ref]
+ref.text= [BROADCAST_ADMIN]
+
+Saya sebagai developer bot ini.
+ingin mengucapkan selamat hari raya Idul Fitri untuk saudaraku umat muslim dan selamat memperingati Kenaikan Isa Al Masih untuk saudaraku umat kristiani.
+
+Karna saya muslim, maka sepatutnya meminta maaf apabila ada salah, seperti spam /ping di grup, sering ngetag orang ga jelas, sampai send stiker yang mungkin agak ga enak bagi kalian semua.
+semoga pada hari raya idul fitri ini, semua kesalahan saya bisa dimaafkan
+
+yen ono lepate njaluk dingapuroni...
+ref.parse_mode= html
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\test\broadcast.php(19): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-05-13 04:29:02  UTC ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: bot was blocked by the user
+=========[Sent Data]==========
+[ref]
+ref.text= [BROADCAST_ADMIN]
+
+Saya sebagai developer bot ini.
+ingin mengucapkan selamat hari raya Idul Fitri untuk saudaraku umat muslim dan selamat memperingati Kenaikan Isa Al Masih untuk saudaraku umat kristiani.
+
+Karna saya muslim, maka sepatutnya meminta maaf apabila ada salah, seperti spam /ping di grup, sering ngetag orang ga jelas, sampai send stiker yang mungkin agak ga enak bagi kalian semua.
+semoga pada hari raya idul fitri ini, semua kesalahan saya bisa dimaafkan
+
+yen ono lepate njaluk dingapuroni...
+ref.parse_mode= html
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\test\broadcast.php(19): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-05-13 04:29:05  UTC ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: bot was blocked by the user
+=========[Sent Data]==========
+[ref]
+ref.text= [BROADCAST_ADMIN]
+
+Saya sebagai developer bot ini.
+ingin mengucapkan selamat hari raya Idul Fitri untuk saudaraku umat muslim dan selamat memperingati Kenaikan Isa Al Masih untuk saudaraku umat kristiani.
+
+Karna saya muslim, maka sepatutnya meminta maaf apabila ada salah, seperti spam /ping di grup, sering ngetag orang ga jelas, sampai send stiker yang mungkin agak ga enak bagi kalian semua.
+semoga pada hari raya idul fitri ini, semua kesalahan saya bisa dimaafkan
+
+yen ono lepate njaluk dingapuroni...
+ref.parse_mode= html
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\test\broadcast.php(19): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-05-13 04:29:18  UTC ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: bot was blocked by the user
+=========[Sent Data]==========
+[ref]
+ref.text= [BROADCAST_ADMIN]
+
+Saya sebagai developer bot ini.
+ingin mengucapkan selamat hari raya Idul Fitri untuk saudaraku umat muslim dan selamat memperingati Kenaikan Isa Al Masih untuk saudaraku umat kristiani.
+
+Karna saya muslim, maka sepatutnya meminta maaf apabila ada salah, seperti spam /ping di grup, sering ngetag orang ga jelas, sampai send stiker yang mungkin agak ga enak bagi kalian semua.
+semoga pada hari raya idul fitri ini, semua kesalahan saya bisa dimaafkan
+
+yen ono lepate njaluk dingapuroni...
+ref.parse_mode= html
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\test\broadcast.php(19): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-05-13 04:29:19  UTC ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: user is deactivated
+=========[Sent Data]==========
+[ref]
+ref.text= [BROADCAST_ADMIN]
+
+Saya sebagai developer bot ini.
+ingin mengucapkan selamat hari raya Idul Fitri untuk saudaraku umat muslim dan selamat memperingati Kenaikan Isa Al Masih untuk saudaraku umat kristiani.
+
+Karna saya muslim, maka sepatutnya meminta maaf apabila ada salah, seperti spam /ping di grup, sering ngetag orang ga jelas, sampai send stiker yang mungkin agak ga enak bagi kalian semua.
+semoga pada hari raya idul fitri ini, semua kesalahan saya bisa dimaafkan
+
+yen ono lepate njaluk dingapuroni...
+ref.parse_mode= html
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\test\broadcast.php(19): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-05-13 04:29:21  UTC ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: bot was blocked by the user
+=========[Sent Data]==========
+[ref]
+ref.text= [BROADCAST_ADMIN]
+
+Saya sebagai developer bot ini.
+ingin mengucapkan selamat hari raya Idul Fitri untuk saudaraku umat muslim dan selamat memperingati Kenaikan Isa Al Masih untuk saudaraku umat kristiani.
+
+Karna saya muslim, maka sepatutnya meminta maaf apabila ada salah, seperti spam /ping di grup, sering ngetag orang ga jelas, sampai send stiker yang mungkin agak ga enak bagi kalian semua.
+semoga pada hari raya idul fitri ini, semua kesalahan saya bisa dimaafkan
+
+yen ono lepate njaluk dingapuroni...
+ref.parse_mode= html
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\test\broadcast.php(19): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-05-13 04:29:29  UTC ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: bot was blocked by the user
+=========[Sent Data]==========
+[ref]
+ref.text= [BROADCAST_ADMIN]
+
+Saya sebagai developer bot ini.
+ingin mengucapkan selamat hari raya Idul Fitri untuk saudaraku umat muslim dan selamat memperingati Kenaikan Isa Al Masih untuk saudaraku umat kristiani.
+
+Karna saya muslim, maka sepatutnya meminta maaf apabila ada salah, seperti spam /ping di grup, sering ngetag orang ga jelas, sampai send stiker yang mungkin agak ga enak bagi kalian semua.
+semoga pada hari raya idul fitri ini, semua kesalahan saya bisa dimaafkan
+
+yen ono lepate njaluk dingapuroni...
+ref.parse_mode= html
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\test\broadcast.php(19): Telegram->sendMessage(Array)
+#4 {main}
+
+============[Date]============
+[ 2021-05-13 04:29:37  UTC ] 
+==========[Response]==========
+ok:			False
+error_code:		403
+description:		Forbidden: bot was blocked by the user
+=========[Sent Data]==========
+[ref]
+ref.text= [BROADCAST_ADMIN]
+
+Saya sebagai developer bot ini.
+ingin mengucapkan selamat hari raya Idul Fitri untuk saudaraku umat muslim dan selamat memperingati Kenaikan Isa Al Masih untuk saudaraku umat kristiani.
+
+Karna saya muslim, maka sepatutnya meminta maaf apabila ada salah, seperti spam /ping di grup, sering ngetag orang ga jelas, sampai send stiker yang mungkin agak ga enak bagi kalian semua.
+semoga pada hari raya idul fitri ini, semua kesalahan saya bisa dimaafkan
+
+yen ono lepate njaluk dingapuroni...
+ref.parse_mode= html
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\test\broadcast.php(19): Telegram->sendMessage(Array)
+#4 {main}
+

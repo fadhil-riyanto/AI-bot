@@ -1,7 +1,7 @@
 {
-    "update_id": 804536222,
+    "update_id": 804540169,
     "message": {
-        "message_id": 78090,
+        "message_id": 82440,
         "from": {
             "id": 1393342467,
             "is_bot": false,
@@ -16,21 +16,16 @@
             "username": "cScript",
             "type": "supergroup"
         },
-        "date": 1620712266,
+        "date": 1620917768,
         "reply_to_message": {
-            "message_id": 78076,
+            "message_id": 82439,
             "from": {
-                "id": 1087968824,
-                "is_bot": true,
-                "first_name": "Group",
-                "username": "GroupAnonymousBot"
-            },
-            "author_signature": "#KutiL",
-            "sender_chat": {
-                "id": -1001182246595,
-                "title": "[c]oretan Script",
-                "username": "cScript",
-                "type": "supergroup"
+                "id": 1393342467,
+                "is_bot": false,
+                "first_name": "\u0192\u03b1\u2202\u043d\u03b9\u2113",
+                "last_name": "\u044f\u03b9\u0443\u03b1\u03b7\u0442\u03c3",
+                "username": "fadhil_riyanto",
+                "language_code": "ms"
             },
             "chat": {
                 "id": -1001182246595,
@@ -38,15 +33,33 @@
                 "username": "cScript",
                 "type": "supergroup"
             },
-            "date": 1620712246,
-            "text": "\/ping@Hazmi101Bot",
+            "date": 1620917751,
+            "forward_from_chat": {
+                "id": -1001129703304,
+                "title": "CNBC INDONESIA",
+                "username": "cnbc_indonesia",
+                "type": "channel"
+            },
+            "forward_from_message_id": 80353,
+            "forward_date": 1620917731,
+            "text": "Lockdown Sudah, Vaksinasi Sudah, Lalu Kapan Corona Goodbye?\n\nhttps:\/\/www.cnbcindonesia.com\/news\/20210513201233-4-245417\/lockdown-sudah-vaksinasi-sudah-lalu-kapan-corona-goodbye",
             "entities": [
                 {
-                    "offset": 0,
-                    "length": 17,
-                    "type": "bot_command"
+                    "offset": 61,
+                    "length": 115,
+                    "type": "url"
                 }
-            ]
+            ],
+            "reply_markup": {
+                "inline_keyboard": [
+                    [
+                        {
+                            "text": "Show comments",
+                            "url": "https:\/\/comments.app\/view\/dHZ-cUpu"
+                        }
+                    ]
+                ]
+            }
         },
         "text": "\/sudo json",
         "entities": [

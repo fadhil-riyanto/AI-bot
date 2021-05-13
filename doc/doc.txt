@@ -23,3 +23,4 @@ ini adalah list tool tool yang bot ini miliki
 - /tf: convert stiker ke image
 - /reverse: reply dengan gambar untuk mencari data di google, bing
 - /composer {package}: untuk mencari info di composer package
+- /calculator: hitung kalkulator secara inline keyboard!

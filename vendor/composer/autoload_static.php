@@ -95,6 +95,7 @@ class ComposerStaticInit37458c04d77e08a184290ff46a23e733
         array (
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Component\\Finder\\' => 25,
+            'SleekDB\\' => 8,
         ),
         'P' => 
         array (
@@ -173,6 +174,10 @@ class ComposerStaticInit37458c04d77e08a184290ff46a23e733
         'Symfony\\Component\\Finder\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/finder',
+        ),
+        'SleekDB\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/rakibtg/sleekdb/src',
         ),
         'Psr\\SimpleCache\\' => 
         array (

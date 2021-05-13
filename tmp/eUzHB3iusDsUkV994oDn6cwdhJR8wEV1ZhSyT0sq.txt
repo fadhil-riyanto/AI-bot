@@ -1,0 +1,7 @@
+PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '11001182246595' at line 1 in C:\bot_telegram\vendor\paragonie\easydb\src\EasyDB.php:985
+Stack trace:
+#0 C:\bot_telegram\vendor\paragonie\easydb\src\EasyDB.php(985): PDO->query('SELECT * FROM g...')
+#1 C:\bot_telegram\vendor\paragonie\easydb\src\EasyDB.php(948): ParagonIE\EasyDB\EasyDB->safeQuery('SELECT * FROM g...', Array, 2, false, true)
+#2 C:\bot_telegram\command\sudo.php(94): ParagonIE\EasyDB\EasyDB->run('SELECT * FROM g...')
+#3 C:\bot_telegram\hook.php(780): require('C:\\bot_telegram...')
+#4 {main}

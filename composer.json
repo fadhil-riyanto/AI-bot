@@ -21,6 +21,7 @@
         "yzalis/identicon": "^2.0",
         "ext-exif": "*",
         "php": "^8.0.0",
-        "paragonie/easydb": "^2.11"
+        "paragonie/easydb": "^2.11",
+        "rakibtg/sleekdb": "^2.10"
     }
 }
