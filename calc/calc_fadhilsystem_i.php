@@ -36,6 +36,12 @@ if ($calc_split[2] == '=') {
         );
     } catch (\Throwable $th) {
         $hsl_expected = 'inputan tidak valid';
+        $calc_db_cache->updateById(
+            $deteksiid['_id'],
+            [
+                "stdin_input" => null
+            ]
+        );
         //throw $th;
     }
 
@@ -45,7 +51,7 @@ if ($calc_split[2] == '=') {
         $content = array('chat_id' => $chat_id, 'reply_markup' => $keyb, 'message_id' => $deteksiid['msgid'], 'text' => $hasilbagus, 'reply_to_message_id' => $message_id, 'disable_web_page_preview' => true);
         $editdebug = $telegram->editMessageText($content);
     } else {
-        $hasilbagus = $angka . ' = ' . $hsl;
+        $hasilbagus = str_replace(' ', '', $angka . ' = ' . $hsl);
         $content = array('chat_id' => $chat_id, 'reply_markup' => $keyb, 'message_id' => $deteksiid['msgid'], 'text' => $hasilbagus, 'reply_to_message_id' => $message_id, 'disable_web_page_preview' => true);
         $editdebug = $telegram->editMessageText($content);
     }
