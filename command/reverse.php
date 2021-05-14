@@ -81,7 +81,7 @@ $option = array(
 );
 $keyb = $telegram->buildInlineKeyBoard($option);
 
-$hasilbagus = "Di sini Anda dapat mencari Google, Bing, atau Yandex secara manual. (Yandex disarankan)" . $imageurlresult;
+$hasilbagus = "Di sini Anda dapat mencari Google, Bing. (Google disarankan)" . $imageurlresult;
 $content = array('chat_id' => $chat_id, 'reply_markup' => $keyb, 'message_id' => $editmsg['result']['message_id'], 'text' => $hasilbagus, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => false);
 $telegram->sendMessage($content);
 
