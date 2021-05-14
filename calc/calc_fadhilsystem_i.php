@@ -76,7 +76,7 @@ $calc_db_cache->updateById(
         "stdin_input" => $deteksiid['stdin_input'] . ' ' . $calc_split[2]
     ]
 );
-$hasilbagus = str_replace(' ', '', $deteksiid['stdin_input']) . ' ' . $calc_split[2];
+$hasilbagus = str_replace(' ', '', $deteksiid['stdin_input'] . ' ' . $calc_split[2]);
 $content = array('chat_id' => $chat_id, 'reply_markup' => $keyb, 'message_id' => $deteksiid['msgid'], 'text' => $hasilbagus, 'reply_to_message_id' => $message_id, 'disable_web_page_preview' => true);
 $editdebug = $telegram->editMessageText($content);
 $deteksiid = $calc_db_cache->findOneBy(["userid", "=", (int)$calc_split[1]]);
