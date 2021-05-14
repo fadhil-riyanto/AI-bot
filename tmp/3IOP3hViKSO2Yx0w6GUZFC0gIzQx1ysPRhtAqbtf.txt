@@ -1,0 +1,4 @@
+ParseError: syntax error, unexpected token "," in C:\bot_telegram\calc\keyboard.php:5
+Stack trace:
+#0 C:\bot_telegram\hook.php(605): require()
+#1 {main}

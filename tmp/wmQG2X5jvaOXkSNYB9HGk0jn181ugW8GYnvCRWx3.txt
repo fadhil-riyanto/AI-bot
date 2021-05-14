@@ -1,0 +1,6 @@
+SleekDB\Exceptions\InvalidArgumentException: The id of the document has to be an integer or string in C:\bot_telegram\vendor\rakibtg\sleekdb\src\Store.php:860
+Stack trace:
+#0 C:\bot_telegram\vendor\rakibtg\sleekdb\src\Store.php(470): SleekDB\Store->checkAndStripId(NULL)
+#1 C:\bot_telegram\calc\calc_fadhilsystem_i.php(69): SleekDB\Store->updateById(NULL, Array)
+#2 C:\bot_telegram\hook.php(608): require('C:\\bot_telegram...')
+#3 {main}

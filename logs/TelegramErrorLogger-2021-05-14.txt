@@ -1,0 +1,256 @@
+============[Date]============
+[ 2021-05-14 10:58:06  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804541143
+ref.callback_query.id= 5984360328235305852
+ref.callback_query.from.id= 1393342467
+ref.callback_query.from.is_bot= false
+ref.callback_query.from.first_name= ƒα∂нιℓ
+ref.callback_query.from.last_name= яιуαηтσ
+ref.callback_query.from.username= fadhil_riyanto
+ref.callback_query.from.language_code= ms
+ref.callback_query.message.message_id= 82822
+ref.callback_query.message.from.id= 1489990155
+ref.callback_query.message.from.is_bot= true
+ref.callback_query.message.from.first_name= ƒα∂нιℓ яιуαηтσ
+ref.callback_query.message.from.username= Fadhil_riyanto_bot
+ref.callback_query.message.chat.id= -1001182246595
+ref.callback_query.message.chat.title= [c]oretan Script
+ref.callback_query.message.chat.username= cScript
+ref.callback_query.message.chat.type= supergroup
+ref.callback_query.message.date= 1620964628
+ref.callback_query.message.edit_date= 1620964682
+ref.callback_query.message.reply_to_message.message_id= 82821
+ref.callback_query.message.reply_to_message.from.id= 1393342467
+ref.callback_query.message.reply_to_message.from.is_bot= false
+ref.callback_query.message.reply_to_message.from.first_name= ƒα∂нιℓ
+ref.callback_query.message.reply_to_message.from.last_name= яιуαηтσ
+ref.callback_query.message.reply_to_message.from.username= fadhil_riyanto
+ref.callback_query.message.reply_to_message.from.language_code= ms
+ref.callback_query.message.reply_to_message.chat.id= -1001182246595
+ref.callback_query.message.reply_to_message.chat.title= [c]oretan Script
+ref.callback_query.message.reply_to_message.chat.username= cScript
+ref.callback_query.message.reply_to_message.chat.type= supergroup
+ref.callback_query.message.reply_to_message.date= 1620964624
+ref.callback_query.message.reply_to_message.text= /calculator
+ref.callback_query.message.reply_to_message.entities.0.offset= 0
+ref.callback_query.message.reply_to_message.entities.0.length= 11
+ref.callback_query.message.reply_to_message.entities.0.type= bot_command
+ref.callback_query.message.text= 0
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.text= AC
+ref.callback_query.message.reply_markup.inline_keyboard.0.0.callback_data= /calc_fadhilsystem_i@fadhil_riyanto_bot 1393342467 ac
+ref.callback_query.message.reply_markup.inline_keyboard.1.0.text= 7
+ref.callback_query.message.reply_markup.inline_keyboard.1.0.callback_data= /calc_fadhilsystem_i@fadhil_riyanto_bot 1393342467 7
+ref.callback_query.message.reply_markup.inline_keyboard.1.1.text= 8
+ref.callback_query.message.reply_markup.inline_keyboard.1.1.callback_data= /calc_fadhilsystem_i@fadhil_riyanto_bot 1393342467 8
+ref.callback_query.message.reply_markup.inline_keyboard.1.2.text= 9
+ref.callback_query.message.reply_markup.inline_keyboard.1.2.callback_data= /calc_fadhilsystem_i@fadhil_riyanto_bot 1393342467 9
+ref.callback_query.message.reply_markup.inline_keyboard.1.3.text= /
+ref.callback_query.message.reply_markup.inline_keyboard.1.3.callback_data= /calc_fadhilsystem_i@fadhil_riyanto_bot 1393342467 /
+ref.callback_query.message.reply_markup.inline_keyboard.2.0.text= 4
+ref.callback_query.message.reply_markup.inline_keyboard.2.0.callback_data= /calc_fadhilsystem_i@fadhil_riyanto_bot 1393342467 4
+ref.callback_query.message.reply_markup.inline_keyboard.2.1.text= 5
+ref.callback_query.message.reply_markup.inline_keyboard.2.1.callback_data= /calc_fadhilsystem_i@fadhil_riyanto_bot 1393342467 5
+ref.callback_query.message.reply_markup.inline_keyboard.2.2.text= 6
+ref.callback_query.message.reply_markup.inline_keyboard.2.2.callback_data= /calc_fadhilsystem_i@fadhil_riyanto_bot 1393342467 6
+ref.callback_query.message.reply_markup.inline_keyboard.2.3.text= *
+ref.callback_query.message.reply_markup.inline_keyboard.2.3.callback_data= /calc_fadhilsystem_i@fadhil_riyanto_bot 1393342467 *
+ref.callback_query.message.reply_markup.inline_keyboard.3.0.text= 1
+ref.callback_query.message.reply_markup.inline_keyboard.3.0.callback_data= /calc_fadhilsystem_i@fadhil_riyanto_bot 1393342467 1
+ref.callback_query.message.reply_markup.inline_keyboard.3.1.text= 2
+ref.callback_query.message.reply_markup.inline_keyboard.3.1.callback_data= /calc_fadhilsystem_i@fadhil_riyanto_bot 1393342467 2
+ref.callback_query.message.reply_markup.inline_keyboard.3.2.text= 3
+ref.callback_query.message.reply_markup.inline_keyboard.3.2.callback_data= /calc_fadhilsystem_i@fadhil_riyanto_bot 1393342467 3
+ref.callback_query.message.reply_markup.inline_keyboard.3.3.text= -
+ref.callback_query.message.reply_markup.inline_keyboard.3.3.callback_data= /calc_fadhilsystem_i@fadhil_riyanto_bot 1393342467 -
+ref.callback_query.message.reply_markup.inline_keyboard.4.0.text= 0
+ref.callback_query.message.reply_markup.inline_keyboard.4.0.callback_data= /calc_fadhilsystem_i@fadhil_riyanto_bot 1393342467 0
+ref.callback_query.message.reply_markup.inline_keyboard.4.1.text= =
+ref.callback_query.message.reply_markup.inline_keyboard.4.1.callback_data= /calc_fadhilsystem_i@fadhil_riyanto_bot 1393342467 =
+ref.callback_query.message.reply_markup.inline_keyboard.4.2.text= +
+ref.callback_query.message.reply_markup.inline_keyboard.4.2.callback_data= /calc_fadhilsystem_i@fadhil_riyanto_bot 1393342467 +
+ref.callback_query.chat_instance= -4393655833761079678
+ref.callback_query.data= /calc_fadhilsystem_i@fadhil_riyanto_bot 1393342467 0
+
+
+[ref]
+ref.reply_markup= {"inline_keyboard":[[{"text":"AC","callback_data":"\/calc_fadhilsystem_i@fadhil_riyanto_bot 1393342467 ac"}],[{"text":"7","callback_data":"\/calc_fadhilsystem_i@fadhil_riyanto_bot 1393342467 7"},{"text":"8","callback_data":"\/calc_fadhilsystem_i@fadhil_riyanto_bot 1393342467 8"},{"text":"9","callback_data":"\/calc_fadhilsystem_i@fadhil_riyanto_bot 1393342467 9"},{"text":"\/","callback_data":"\/calc_fadhilsystem_i@fadhil_riyanto_bot 1393342467 \/"}],[{"text":"4","callback_data":"\/calc_fadhilsystem_i@fadhil_riyanto_bot 1393342467 4"},{"text":"5","callback_data":"\/calc_fadhilsystem_i@fadhil_riyanto_bot 1393342467 5"},{"text":"6","callback_data":"\/calc_fadhilsystem_i@fadhil_riyanto_bot 1393342467 6"},{"text":"*","callback_data":"\/calc_fadhilsystem_i@fadhil_riyanto_bot 1393342467 *"}],[{"text":"1","callback_data":"\/calc_fadhilsystem_i@fadhil_riyanto_bot 1393342467 1"},{"text":"2","callback_data":"\/calc_fadhilsystem_i@fadhil_riyanto_bot 1393342467 2"},{"text":"3","callback_data":"\/calc_fadhilsystem_i@fadhil_riyanto_bot 1393342467 3"},{"text":"-","callback_data":"\/calc_fadhilsystem_i@fadhil_riyanto_bot 1393342467 -"}],[{"text":"0","callback_data":"\/calc_fadhilsystem_i@fadhil_riyanto_bot 1393342467 0"},{"text":"=","callback_data":"\/calc_fadhilsystem_i@fadhil_riyanto_bot 1393342467 ="},{"text":"+","callback_data":"\/calc_fadhilsystem_i@fadhil_riyanto_bot 1393342467 +"}]]}
+ref.message_id= 82822
+ref.text=  0
+ref.reply_to_message_id= 82822
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(192): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot_telegram\calc\calc_fadhilsystem_i.php(69): Telegram->editMessageText(Array)
+#4 C:\bot_telegram\hook.php(608): require('C:\\bot_telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-05-14 11:08:57  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: BUTTON_DATA_INVALID
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804541166
+ref.message.message_id= 5086
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001407564572
+ref.message.chat.title= Fadhil Riyanto Logs
+ref.message.chat.type= supergroup
+ref.message.date= 1620965333
+ref.message.text= /calculator@Fadhil_riyanto_bot
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 30
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.reply_markup= {"inline_keyboard":[[{"text":"AC","callback_data":"n2k574l4j5z37494h5h4f4p506s4w5s4l5l4h5i4i4j5h5b4l5b4r5e5p4a44684u5y5j4z3h5o4x5e2p284330374s2r2037443e2e5k5"}],[{"text":"7","callback_data":"n2k574l4j5z37494h5h4f4p506s4w5s4l5l4h5i4i4j5h5b4l5b4r5e5p4a44684u5y5j4z3h5o4x5e2p284330374s2r2037443e284"},{"text":"8","callback_data":"n2k574l4j5z37494h5h4f4p506s4w5s4l5l4h5i4i4j5h5b4l5b4r5e5p4a44684u5y5j4z3h5o4x5e2p284330374s2r2037443e294"},{"text":"9","callback_data":"n2k574l4j5z37494h5h4f4p506s4w5s4l5l4h5i4i4j5h5b4l5b4r5e5p4a44684u5y5j4z3h5o4x5e2p284330374s2r2037443e2a4"},{"text":"\/","callback_data":"n2k574l4j5z37494h5h4f4p506s4w5s4l5l4h5i4i4j5h5b4l5b4r5e5p4a44684u5y5j4z3h5o4x5e2p284330374s2r2037443e204"}],[{"text":"4","callback_data":"n2k574l4j5z37494h5h4f4p506s4w5s4l5l4h5i4i4j5h5b4l5b4r5e5p4a44684u5y5j4z3h5o4x5e2p284330374s2r2037443e254"},{"text":"5","callback_data":"n2k574l4j5z37494h5h4f4p506s4w5s4l5l4h5i4i4j5h5b4l5b4r5e5p4a44684u5y5j4z3h5o4x5e2p284330374s2r2037443e264"},{"text":"6","callback_data":"n2k574l4j5z37494h5h4f4p506s4w5s4l5l4h5i4i4j5h5b4l5b4r5e5p4a44684u5y5j4z3h5o4x5e2p284330374s2r2037443e274"},{"text":"*","callback_data":"n2k574l4j5z37494h5h4f4p506s4w5s4l5l4h5i4i4j5h5b4l5b4r5e5p4a44684u5y5j4z3h5o4x5e2p284330374s2r2037443e2v3"}],[{"text":"1","callback_data":"n2k574l4j5z37494h5h4f4p506s4w5s4l5l4h5i4i4j5h5b4l5b4r5e5p4a44684u5y5j4z3h5o4x5e2p284330374s2r2037443e224"},{"text":"2","callback_data":"n2k574l4j5z37494h5h4f4p506s4w5s4l5l4h5i4i4j5h5b4l5b4r5e5p4a44684u5y5j4z3h5o4x5e2p284330374s2r2037443e234"},{"text":"3","callback_data":"n2k574l4j5z37494h5h4f4p506s4w5s4l5l4h5i4i4j5h5b4l5b4r5e5p4a44684u5y5j4z3h5o4x5e2p284330374s2r2037443e244"},{"text":"-","callback_data":"n2k574l4j5z37494h5h4f4p506s4w5s4l5l4h5i4i4j5h5b4l5b4r5e5p4a44684u5y5j4z3h5o4x5e2p284330374s2r2037443e2y3"}],[{"text":"0","callback_data":"n2k574l4j5z37494h5h4f4p506s4w5s4l5l4h5i4i4j5h5b4l5b4r5e5p4a44684u5y5j4z3h5o4x5e2p284330374s2r2037443e214"},{"text":"=","callback_data":"n2k574l4j5z37494h5h4f4p506s4w5s4l5l4h5i4i4j5h5b4l5b4r5e5p4a44684u5y5j4z3h5o4x5e2p284330374s2r2037443e2e4"},{"text":"+","callback_data":"n2k574l4j5z37494h5h4f4p506s4w5s4l5l4h5i4i4j5h5b4l5b4r5e5p4a44684u5y5j4z3h5o4x5e2p284330374s2r2037443e2w3"}]]}
+ref.text= Kalkulator
+ref.reply_to_message_id= 5086
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\calc\calc.php(4): Telegram->sendMessage(Array)
+#4 C:\bot_telegram\hook.php(605): require('C:\\bot_telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-05-14 11:09:08  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: BUTTON_DATA_INVALID
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804541167
+ref.message.message_id= 5087
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001407564572
+ref.message.chat.title= Fadhil Riyanto Logs
+ref.message.chat.type= supergroup
+ref.message.date= 1620965345
+ref.message.text= /calculator@Fadhil_riyanto_bot
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 30
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.reply_markup= {"inline_keyboard":[[{"text":"AC","callback_data":"n2k574l4j5z37494h5h4f4p506s4w5s4l5l4h5i4i4j5h5b4l5b4r5e5p4a44684u5y5j4z3h5o4x5e2p284330374s2r2037443e2e5k5"}],[{"text":"7","callback_data":"n2k574l4j5z37494h5h4f4p506s4w5s4l5l4h5i4i4j5h5b4l5b4r5e5p4a44684u5y5j4z3h5o4x5e2p284330374s2r2037443e284"},{"text":"8","callback_data":"n2k574l4j5z37494h5h4f4p506s4w5s4l5l4h5i4i4j5h5b4l5b4r5e5p4a44684u5y5j4z3h5o4x5e2p284330374s2r2037443e294"},{"text":"9","callback_data":"n2k574l4j5z37494h5h4f4p506s4w5s4l5l4h5i4i4j5h5b4l5b4r5e5p4a44684u5y5j4z3h5o4x5e2p284330374s2r2037443e2a4"},{"text":"\/","callback_data":"n2k574l4j5z37494h5h4f4p506s4w5s4l5l4h5i4i4j5h5b4l5b4r5e5p4a44684u5y5j4z3h5o4x5e2p284330374s2r2037443e204"}],[{"text":"4","callback_data":"n2k574l4j5z37494h5h4f4p506s4w5s4l5l4h5i4i4j5h5b4l5b4r5e5p4a44684u5y5j4z3h5o4x5e2p284330374s2r2037443e254"},{"text":"5","callback_data":"n2k574l4j5z37494h5h4f4p506s4w5s4l5l4h5i4i4j5h5b4l5b4r5e5p4a44684u5y5j4z3h5o4x5e2p284330374s2r2037443e264"},{"text":"6","callback_data":"n2k574l4j5z37494h5h4f4p506s4w5s4l5l4h5i4i4j5h5b4l5b4r5e5p4a44684u5y5j4z3h5o4x5e2p284330374s2r2037443e274"},{"text":"*","callback_data":"n2k574l4j5z37494h5h4f4p506s4w5s4l5l4h5i4i4j5h5b4l5b4r5e5p4a44684u5y5j4z3h5o4x5e2p284330374s2r2037443e2v3"}],[{"text":"1","callback_data":"n2k574l4j5z37494h5h4f4p506s4w5s4l5l4h5i4i4j5h5b4l5b4r5e5p4a44684u5y5j4z3h5o4x5e2p284330374s2r2037443e224"},{"text":"2","callback_data":"n2k574l4j5z37494h5h4f4p506s4w5s4l5l4h5i4i4j5h5b4l5b4r5e5p4a44684u5y5j4z3h5o4x5e2p284330374s2r2037443e234"},{"text":"3","callback_data":"n2k574l4j5z37494h5h4f4p506s4w5s4l5l4h5i4i4j5h5b4l5b4r5e5p4a44684u5y5j4z3h5o4x5e2p284330374s2r2037443e244"},{"text":"-","callback_data":"n2k574l4j5z37494h5h4f4p506s4w5s4l5l4h5i4i4j5h5b4l5b4r5e5p4a44684u5y5j4z3h5o4x5e2p284330374s2r2037443e2y3"}],[{"text":"0","callback_data":"n2k574l4j5z37494h5h4f4p506s4w5s4l5l4h5i4i4j5h5b4l5b4r5e5p4a44684u5y5j4z3h5o4x5e2p284330374s2r2037443e214"},{"text":"=","callback_data":"n2k574l4j5z37494h5h4f4p506s4w5s4l5l4h5i4i4j5h5b4l5b4r5e5p4a44684u5y5j4z3h5o4x5e2p284330374s2r2037443e2e4"},{"text":"+","callback_data":"n2k574l4j5z37494h5h4f4p506s4w5s4l5l4h5i4i4j5h5b4l5b4r5e5p4a44684u5y5j4z3h5o4x5e2p284330374s2r2037443e2w3"}]]}
+ref.text= Kalkulator
+ref.reply_to_message_id= 5087
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\calc\calc.php(4): Telegram->sendMessage(Array)
+#4 C:\bot_telegram\hook.php(605): require('C:\\bot_telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-05-14 11:09:51  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: BUTTON_DATA_INVALID
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804541168
+ref.message.message_id= 5088
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001407564572
+ref.message.chat.title= Fadhil Riyanto Logs
+ref.message.chat.type= supergroup
+ref.message.date= 1620965387
+ref.message.text= /calculator@Fadhil_riyanto_bot
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 30
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.reply_markup= {"inline_keyboard":[[{"text":"AC","callback_data":"\/calc_fadhilsystem_i@fadhil_riyanto_bot p284330374s2r2037443e2e5k5"}],[{"text":"7","callback_data":"\/calc_fadhilsystem_i@fadhil_riyanto_bot p284330374s2r2037443e284"},{"text":"8","callback_data":"\/calc_fadhilsystem_i@fadhil_riyanto_bot p284330374s2r2037443e294"},{"text":"9","callback_data":"\/calc_fadhilsystem_i@fadhil_riyanto_bot p284330374s2r2037443e2a4"},{"text":"\/","callback_data":"\/calc_fadhilsystem_i@fadhil_riyanto_bot p284330374s2r2037443e204"}],[{"text":"4","callback_data":"\/calc_fadhilsystem_i@fadhil_riyanto_bot p284330374s2r2037443e254"},{"text":"5","callback_data":"\/calc_fadhilsystem_i@fadhil_riyanto_bot p284330374s2r2037443e264"},{"text":"6","callback_data":"\/calc_fadhilsystem_i@fadhil_riyanto_bot p284330374s2r2037443e274"},{"text":"*","callback_data":"\/calc_fadhilsystem_i@fadhil_riyanto_bot p284330374s2r2037443e2v3"}],[{"text":"1","callback_data":"\/calc_fadhilsystem_i@fadhil_riyanto_bot p284330374s2r2037443e224"},{"text":"2","callback_data":"\/calc_fadhilsystem_i@fadhil_riyanto_bot p284330374s2r2037443e234"},{"text":"3","callback_data":"\/calc_fadhilsystem_i@fadhil_riyanto_bot p284330374s2r2037443e244"},{"text":"-","callback_data":"\/calc_fadhilsystem_i@fadhil_riyanto_bot p284330374s2r2037443e2y3"}],[{"text":"0","callback_data":"\/calc_fadhilsystem_i@fadhil_riyanto_bot p284330374s2r2037443e214"},{"text":"=","callback_data":"\/calc_fadhilsystem_i@fadhil_riyanto_bot p284330374s2r2037443e2e4"},{"text":"+","callback_data":"\/calc_fadhilsystem_i@fadhil_riyanto_bot p284330374s2r2037443e2w3"}]]}
+ref.text= Kalkulator
+ref.reply_to_message_id= 5088
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\calc\calc.php(4): Telegram->sendMessage(Array)
+#4 C:\bot_telegram\hook.php(605): require('C:\\bot_telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-05-14 11:11:15  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: BUTTON_DATA_INVALID
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804541171
+ref.message.message_id= 5093
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001407564572
+ref.message.chat.title= Fadhil Riyanto Logs
+ref.message.chat.type= supergroup
+ref.message.date= 1620965471
+ref.message.text= /calculator@Fadhil_riyanto_bot
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 30
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.reply_markup= {"inline_keyboard":[[{"text":"AC","callback_data":"\/calc_fadhilsystem_i@fadhil_riyanto_bot g474231374r2p2z28413p434z5t214z2b403a403 ac"}],[{"text":"7","callback_data":"\/calc_fadhilsystem_i@fadhil_riyanto_bot p284330374s2r2037443 7"},{"text":"8","callback_data":"\/calc_fadhilsystem_i@fadhil_riyanto_bot p284330374s2r2037443 8"},{"text":"9","callback_data":"\/calc_fadhilsystem_i@fadhil_riyanto_bot p284330374s2r2037443 9"},{"text":"\/","callback_data":"\/calc_fadhilsystem_i@fadhil_riyanto_bot p284330374s2r2037443 \/"}],[{"text":"4","callback_data":"\/calc_fadhilsystem_i@fadhil_riyanto_bot p284330374s2r2037443 4"},{"text":"5","callback_data":"\/calc_fadhilsystem_i@fadhil_riyanto_bot p284330374s2r2037443 5"},{"text":"6","callback_data":"\/calc_fadhilsystem_i@fadhil_riyanto_bot p284330374s2r2037443 6"},{"text":"*","callback_data":"\/calc_fadhilsystem_i@fadhil_riyanto_bot p284330374s2r2037443 *"}],[{"text":"1","callback_data":"\/calc_fadhilsystem_i@fadhil_riyanto_bot p284330374s2r2037443 1"},{"text":"2","callback_data":"\/calc_fadhilsystem_i@fadhil_riyanto_bot p284330374s2r2037443 2"},{"text":"3","callback_data":"\/calc_fadhilsystem_i@fadhil_riyanto_bot p284330374s2r2037443 3"},{"text":"-","callback_data":"\/calc_fadhilsystem_i@fadhil_riyanto_bot p284330374s2r2037443 -"}],[{"text":"0","callback_data":"\/calc_fadhilsystem_i@fadhil_riyanto_bot p284330374s2r2037443 0"},{"text":"=","callback_data":"\/calc_fadhilsystem_i@fadhil_riyanto_bot p284330374s2r2037443 ="},{"text":"+","callback_data":"\/calc_fadhilsystem_i@fadhil_riyanto_bot p284330374s2r2037443 +"}]]}
+ref.text= Kalkulator
+ref.reply_to_message_id= 5093
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\calc\calc.php(4): Telegram->sendMessage(Array)
+#4 C:\bot_telegram\hook.php(605): require('C:\\bot_telegram...')
+#5 {main}
+

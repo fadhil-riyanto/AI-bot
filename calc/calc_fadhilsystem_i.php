@@ -6,7 +6,18 @@
 
 require __DIR__ . '/calc_initdb.php';
 $calc_split = explode(' ', strtolower($text_plain_nokarakter));
+if ($calc_split[1] != $userID) {
+    $jawabquery = $telegram->getData();
+    $alswecl = array('callback_query_id' => $jawabquery['callback_query']['id'], 'text' => 'maaf, anda tidak bisa menekan tombol ini', 'show_alert' => true);
+    $telegram->answerCallbackQuery($alswecl);
+    die();
+}
 $deteksiid = $calc_db_cache->findOneBy(["userid", "=", (int)$calc_split[1]]);
+
+$reply = json_encode($deteksiid);
+$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'disable_web_page_preview' => true);
+$telegram->sendMessage($content);
+
 //deteksi sama dengan
 require __DIR__ . '/keyboard.php';
 if ($calc_split[2] == '=') {
@@ -14,16 +25,31 @@ if ($calc_split[2] == '=') {
     $regex = '/([-+]?\d+([-+*\/][-+]?\d+)+)/i';
     preg_match_all($regex, $resultnomor, $matcher);
     $angka = $matcher[0][0];
-    eval("\$hsl = $angka;");
-    $calc_db_cache->updateById(
-        $deteksiid['_id'],
-        [
-            "stdin_input" => $hsl
-        ]
-    );
-    $hasilbagus = $angka . ' = ' . $hsl;
-    $content = array('chat_id' => $chat_id, 'reply_markup' => $keyb, 'message_id' => $deteksiid['msgid'], 'text' => $hasilbagus, 'reply_to_message_id' => $message_id, 'disable_web_page_preview' => true);
-    $editdebug = $telegram->editMessageText($content);
+    try {
+
+        eval("\$hsl = $angka;");
+        $calc_db_cache->updateById(
+            $deteksiid['_id'],
+            [
+                "stdin_input" => $hsl
+            ]
+        );
+    } catch (\Throwable $th) {
+        $hsl_expected = 'inputan tidak valid';
+        //throw $th;
+    }
+
+
+    if (isset($hsl_expected)) {
+        $hasilbagus = $hsl_expected;
+        $content = array('chat_id' => $chat_id, 'reply_markup' => $keyb, 'message_id' => $deteksiid['msgid'], 'text' => $hasilbagus, 'reply_to_message_id' => $message_id, 'disable_web_page_preview' => true);
+        $editdebug = $telegram->editMessageText($content);
+    } else {
+        $hasilbagus = $angka . ' = ' . $hsl;
+        $content = array('chat_id' => $chat_id, 'reply_markup' => $keyb, 'message_id' => $deteksiid['msgid'], 'text' => $hasilbagus, 'reply_to_message_id' => $message_id, 'disable_web_page_preview' => true);
+        $editdebug = $telegram->editMessageText($content);
+    }
+
     die();
 } elseif ($calc_split[2] == 'ac') {
     $hsl = null;
