@@ -14,9 +14,9 @@ if ($calc_split[1] != $userID) {
 }
 $deteksiid = $calc_db_cache->findOneBy(["userid", "=", (int)$calc_split[1]]);
 
-$reply = json_encode($deteksiid);
-$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'disable_web_page_preview' => true);
-$telegram->sendMessage($content);
+// $reply = json_encode($deteksiid);
+// $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'disable_web_page_preview' => true);
+// $telegram->sendMessage($content);
 
 //deteksi sama dengan
 require __DIR__ . '/keyboard.php';
