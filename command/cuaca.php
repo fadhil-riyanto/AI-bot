@@ -13,6 +13,10 @@ if ($azanHilangcommand == null) {
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 	$output_weat = curl_exec($ch);
 	curl_close($ch);
+	$reply = json_encode(json_decode($output_weat), JSON_PRETTY_PRINT);
+	$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+	$telegram->sendMessage($content);
+	die();
 
 	// var_dump($weat);
 	$h_weat = json_decode($output_weat);

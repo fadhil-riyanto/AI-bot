@@ -97,13 +97,12 @@ $imageurlresult = 'https://telegra.ph'  . json_decode($output)[0]->src;
 //form
 $option = array(
     array(
-        $telegram->buildInlineKeyBoardButton("google", $url = "https://www.google.com/searchbyimage?image_url=" . $imageurlresult),
-        $telegram->buildInlineKeyBoardButton("Bing", $url = "https://www.bing.com/images/search?q=imgurl:" . $imageurlresult . "&view=detailv2&selectedindex=0&mode=ImageViewer&iss=sbi")
+        $telegram->buildInlineKeyBoardButton("ke url", $url = $imageurlresult)
     )
 );
 $keyb = $telegram->buildInlineKeyBoard($option);
 
-$reply = 'kamu bisa mencari manual di google atau bing. (google recommended)';
+$reply = 'hasil upload stiker : ' . $imageurlresult;
 $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_markup' => $keyb, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
 $editmsg = $telegram->sendMessage($content);
 

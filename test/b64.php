@@ -19,6 +19,7 @@ function encode($value)
         $ordKey = ord(substr($key, $j, 1));
         $j++;
         $crypttext .= strrev(base_convert(dechex($ordStr + $ordKey), 16, 36));
+        
     }
 
     return $crypttext;

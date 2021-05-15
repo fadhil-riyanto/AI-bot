@@ -1,4 +1,5 @@
 <?php
 $doc = file_get_contents('doc.txt');
+echo "done : " . strlen($doc) . PHP_EOL;
 $explode = str_replace(PHP_EOL, '\\r\\n', $doc);
 file_put_contents('hasil.txt', $explode);

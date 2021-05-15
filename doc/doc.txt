@@ -7,7 +7,7 @@ ini adalah list tool tool yang bot ini miliki
 - /tulis: digunakan untuk menulis buku
 - /waktu: cek jam yuk
 - /berita: agar update yuk baca berita
-- /brainly: cari jawaban di brainly
+- /br: cari jawaban di brainly
 - /capture: untuk screenshot halaman web
 - /corona: info corona terkini
 - /corona_provinsi: info corona di tiap tiap provinsi
@@ -18,9 +18,11 @@ ini adalah list tool tool yang bot ini miliki
 - /short: pendekkan link biar rapi
 - /xlsx_to_json: convert xlsx excel ke format json
 - /resi: cek resi
-- /upload: reply gambarmu untuk diupload ke web
+- /upload: reply gambarmu untuk diupload ke web (aliases /ui)
+- /upload_sticker: reply stickermu untuk diupload ke web (aliases /us)
 - /ts: convert image ke stiker
 - /tf: convert stiker ke image
-- /reverse: reply dengan gambar untuk mencari data di google, bing
+- /reverse: reply dengan gambar untuk mencari data di google, bing (aliases /i_rev)
+- /s_rev: reverse stiker
 - /composer {package}: untuk mencari info di composer package
-- /calculator: hitung kalkulator secara inline keyboard!
+- /calculator: hitung kalkulator secara inline keyboard! (aliases /c)

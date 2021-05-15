@@ -1,0 +1,344 @@
+============[Date]============
+[ 2021-05-15 20:28:43  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804543546
+ref.message.message_id= 84579
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001182246595
+ref.message.chat.title= [c]oretan Script
+ref.message.chat.username= cScript
+ref.message.chat.type= supergroup
+ref.message.date= 1621085319
+ref.message.text= /sudo eval send($chat_id, $chat_id);
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 
+ref.reply_to_message_id= 84579
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\command\sudo.php(83): Telegram->sendMessage(Array)
+#4 C:\bot_telegram\hook.php(789): require('C:\\bot_telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-05-15 20:30:22  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message text is empty
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804543547
+ref.message.message_id= 75029
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= -1001310420564
+ref.message.chat.title= GAS Testing Grup
+ref.message.chat.username= GasTestingGroup
+ref.message.chat.type= supergroup
+ref.message.date= 1621085417
+ref.message.text= /sudo eval send($chat_id, $chat_id);
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= 
+ref.reply_to_message_id= 75029
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(63): Telegram->endpoint('sendMessage', Array)
+#3 C:\bot_telegram\command\sudo.php(83): Telegram->sendMessage(Array)
+#4 C:\bot_telegram\hook.php(789): require('C:\\bot_telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-05-15 20:36:25  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804543556
+ref.message.message_id= 31135
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= ƒα∂нιℓ
+ref.message.chat.last_name= яιуαηтσ
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1621085781
+ref.message.text= /help
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Selamat datang di buku panduan bot ini
+Anda dapat membaca panduan di bawah ini, dengan mengklik sebuah tombol dibawah.
+Anda juga dapat mengajukan pertanyaan apa pun di Support group, harap diperhatikan bahwa Anda hanya dapat bertanya setelah membaca panduan, dan hanya bertanya tentang bot ini!
+
+Perintah umum adalah:
+- /start: Mulai bot
+- /help: Berikan pesan ini
+
+Semua perintah hanya bekerja dengan / (garis miring)
+ref.message_id= 
+ref.reply_markup= {"inline_keyboard":[[{"text":"perkakas","callback_data":"\/callback_q@fadhil_riyanto_bot perkakas"},{"text":"hash","callback_data":"\/callback_q@fadhil_riyanto_bot hash"},{"text":"hiburan","callback_data":"\/callback_q@fadhil_riyanto_bot hiburan"}],[{"text":"dev tools","callback_data":"\/callback_q@fadhil_riyanto_bot dev_tools"},{"text":"anime","callback_data":"\/callback_q@fadhil_riyanto_bot anime"},{"text":"bot ini","callback_data":"\/callback_q@fadhil_riyanto_bot bot_ini"}],[{"text":"Photooxy","callback_data":"\/callback_q@fadhil_riyanto_bot photooxy"},{"text":"Rules","callback_data":"\/callback_q@fadhil_riyanto_bot rules"},{"text":"run code","callback_data":"\/callback_q@fadhil_riyanto_bot run_code"}],[{"text":"Pin","callback_data":"\/callback_q@fadhil_riyanto_bot pin"},{"text":"Mute","callback_data":"\/callback_q@fadhil_riyanto_bot mute"},{"text":"Report","callback_data":"\/callback_q@fadhil_riyanto_bot report"}],[{"text":"Bans","callback_data":"\/callback_q@fadhil_riyanto_bot bans"},{"text":"Admins","callback_data":"\/callback_q@fadhil_riyanto_bot admins"},{"text":"Grettings","callback_data":"\/callback_q@fadhil_riyanto_bot grettings"}],[{"text":"filters","callback_data":"\/callback_q@fadhil_riyanto_bot filters"},{"text":"Note","callback_data":"\/callback_q@fadhil_riyanto_bot note"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(192): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot_telegram\command\help.php(32): Telegram->editMessageText(Array)
+#4 C:\bot_telegram\hook.php(759): require('C:\\bot_telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-05-15 22:41:01  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804543731
+ref.message.message_id= 31137
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= ƒα∂нιℓ
+ref.message.chat.last_name= яιуαηтσ
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1621093256
+ref.message.text= /help
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Selamat datang di buku panduan bot ini
+Anda dapat membaca panduan di bawah ini, dengan mengklik sebuah tombol dibawah.
+Anda juga dapat mengajukan pertanyaan apa pun di Support group, harap diperhatikan bahwa Anda hanya dapat bertanya setelah membaca panduan, dan hanya bertanya tentang bot ini!
+
+Perintah umum adalah:
+- /start: Mulai bot
+- /help: Berikan pesan ini
+
+Semua perintah hanya bekerja dengan / (garis miring)
+ref.message_id= 
+ref.reply_markup= {"inline_keyboard":[[{"text":"perkakas","callback_data":"\/callback_q@fadhil_riyanto_bot perkakas"},{"text":"hash","callback_data":"\/callback_q@fadhil_riyanto_bot hash"},{"text":"hiburan","callback_data":"\/callback_q@fadhil_riyanto_bot hiburan"}],[{"text":"dev tools","callback_data":"\/callback_q@fadhil_riyanto_bot dev_tools"},{"text":"anime","callback_data":"\/callback_q@fadhil_riyanto_bot anime"},{"text":"bot ini","callback_data":"\/callback_q@fadhil_riyanto_bot bot_ini"}],[{"text":"Photooxy","callback_data":"\/callback_q@fadhil_riyanto_bot photooxy"},{"text":"Rules","callback_data":"\/callback_q@fadhil_riyanto_bot rules"},{"text":"run code","callback_data":"\/callback_q@fadhil_riyanto_bot run_code"}],[{"text":"Pin","callback_data":"\/callback_q@fadhil_riyanto_bot pin"},{"text":"Mute","callback_data":"\/callback_q@fadhil_riyanto_bot mute"},{"text":"Report","callback_data":"\/callback_q@fadhil_riyanto_bot report"}],[{"text":"Bans","callback_data":"\/callback_q@fadhil_riyanto_bot bans"},{"text":"Admins","callback_data":"\/callback_q@fadhil_riyanto_bot admins"},{"text":"Grettings","callback_data":"\/callback_q@fadhil_riyanto_bot grettings"}],[{"text":"filters","callback_data":"\/callback_q@fadhil_riyanto_bot filters"},{"text":"Note","callback_data":"\/callback_q@fadhil_riyanto_bot note"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(192): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot_telegram\command\help.php(32): Telegram->editMessageText(Array)
+#4 C:\bot_telegram\hook.php(759): require('C:\\bot_telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-05-15 22:51:05  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804543740
+ref.message.message_id= 31139
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= ƒα∂нιℓ
+ref.message.chat.last_name= яιуαηтσ
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1621093860
+ref.message.text= /help
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Selamat datang di buku panduan bot ini
+Anda dapat membaca panduan di bawah ini, dengan mengklik sebuah tombol dibawah.
+Anda juga dapat mengajukan pertanyaan apa pun di Support group, harap diperhatikan bahwa Anda hanya dapat bertanya setelah membaca panduan, dan hanya bertanya tentang bot ini!
+
+Perintah umum adalah:
+- /start: Mulai bot
+- /help: Berikan pesan ini
+
+Semua perintah hanya bekerja dengan / (garis miring)
+ref.message_id= 
+ref.reply_markup= {"inline_keyboard":[[{"text":"perkakas","callback_data":"\/callback_q@fadhil_riyanto_bot perkakas"},{"text":"hash","callback_data":"\/callback_q@fadhil_riyanto_bot hash"},{"text":"hiburan","callback_data":"\/callback_q@fadhil_riyanto_bot hiburan"}],[{"text":"dev tools","callback_data":"\/callback_q@fadhil_riyanto_bot dev_tools"},{"text":"anime","callback_data":"\/callback_q@fadhil_riyanto_bot anime"},{"text":"bot ini","callback_data":"\/callback_q@fadhil_riyanto_bot bot_ini"}],[{"text":"Photooxy","callback_data":"\/callback_q@fadhil_riyanto_bot photooxy"},{"text":"Rules","callback_data":"\/callback_q@fadhil_riyanto_bot rules"},{"text":"run code","callback_data":"\/callback_q@fadhil_riyanto_bot run_code"}],[{"text":"Pin","callback_data":"\/callback_q@fadhil_riyanto_bot pin"},{"text":"Mute","callback_data":"\/callback_q@fadhil_riyanto_bot mute"},{"text":"Report","callback_data":"\/callback_q@fadhil_riyanto_bot report"}],[{"text":"Bans","callback_data":"\/callback_q@fadhil_riyanto_bot bans"},{"text":"Admins","callback_data":"\/callback_q@fadhil_riyanto_bot admins"},{"text":"Grettings","callback_data":"\/callback_q@fadhil_riyanto_bot grettings"}],[{"text":"filters","callback_data":"\/callback_q@fadhil_riyanto_bot filters"},{"text":"Note","callback_data":"\/callback_q@fadhil_riyanto_bot note"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(192): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot_telegram\command\help.php(32): Telegram->editMessageText(Array)
+#4 C:\bot_telegram\hook.php(771): require('C:\\bot_telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-05-15 22:55:18  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804543750
+ref.message.message_id= 31141
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= ƒα∂нιℓ
+ref.message.chat.last_name= яιуαηтσ
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1621094112
+ref.message.text= /help
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Selamat datang di buku panduan bot ini
+Anda dapat membaca panduan di bawah ini, dengan mengklik sebuah tombol dibawah.
+Anda juga dapat mengajukan pertanyaan apa pun di Support group, harap diperhatikan bahwa Anda hanya dapat bertanya setelah membaca panduan, dan hanya bertanya tentang bot ini!
+
+Perintah umum adalah:
+- /start: Mulai bot
+- /help: Berikan pesan ini
+
+Semua perintah hanya bekerja dengan / (garis miring)
+ref.message_id= 
+ref.reply_markup= {"inline_keyboard":[[{"text":"\ud83d\udee0\ufe0f perkakas","callback_data":"\/callback_q@fadhil_riyanto_bot perkakas"},{"text":"#\ufe0f\u20e3 hash","callback_data":"\/callback_q@fadhil_riyanto_bot hash"},{"text":"\ud83c\udf08 hiburan","callback_data":"\/callback_q@fadhil_riyanto_bot hiburan"}],[{"text":"\ud83d\udc68\u200d\ud83d\udcbb dev tools","callback_data":"\/callback_q@fadhil_riyanto_bot dev_tools"},{"text":"\ud83d\udc81 anime","callback_data":"\/callback_q@fadhil_riyanto_bot anime"},{"text":"\u2139\ufe0f bot ini","callback_data":"\/callback_q@fadhil_riyanto_bot bot_ini"}],[{"text":"\ud83d\uddbc\ufe0f Photooxy","callback_data":"\/callback_q@fadhil_riyanto_bot photooxy"},{"text":"\ud83d\udcdc Rules","callback_data":"\/callback_q@fadhil_riyanto_bot rules"},{"text":"run code","callback_data":"\/callback_q@fadhil_riyanto_bot run_code"}],[{"text":"Pin","callback_data":"\/callback_q@fadhil_riyanto_bot pin"},{"text":"Mute","callback_data":"\/callback_q@fadhil_riyanto_bot mute"},{"text":"Report","callback_data":"\/callback_q@fadhil_riyanto_bot report"}],[{"text":"Bans","callback_data":"\/callback_q@fadhil_riyanto_bot bans"},{"text":"Admins","callback_data":"\/callback_q@fadhil_riyanto_bot admins"},{"text":"Grettings","callback_data":"\/callback_q@fadhil_riyanto_bot grettings"}],[{"text":"filters","callback_data":"\/callback_q@fadhil_riyanto_bot filters"},{"text":"Note","callback_data":"\/callback_q@fadhil_riyanto_bot note"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(192): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot_telegram\command\help.php(32): Telegram->editMessageText(Array)
+#4 C:\bot_telegram\hook.php(771): require('C:\\bot_telegram...')
+#5 {main}
+
+============[Date]============
+[ 2021-05-15 22:58:50  Asia/Jakarta ] 
+==========[Response]==========
+ok:			False
+error_code:		400
+description:		Bad Request: message to edit not found
+=========[Sent Data]==========
+[ref]
+ref.update_id= 804543753
+ref.message.message_id= 31143
+ref.message.from.id= 1393342467
+ref.message.from.is_bot= false
+ref.message.from.first_name= ƒα∂нιℓ
+ref.message.from.last_name= яιуαηтσ
+ref.message.from.username= fadhil_riyanto
+ref.message.from.language_code= ms
+ref.message.chat.id= 1393342467
+ref.message.chat.first_name= ƒα∂нιℓ
+ref.message.chat.last_name= яιуαηтσ
+ref.message.chat.username= fadhil_riyanto
+ref.message.chat.type= private
+ref.message.date= 1621094325
+ref.message.text= /help
+ref.message.entities.0.offset= 0
+ref.message.entities.0.length= 5
+ref.message.entities.0.type= bot_command
+
+
+[ref]
+ref.text= Hai  @fadhil_riyanto, Selamat datang di buku panduan bot ini
+Anda dapat membaca panduan di bawah ini, dengan mengklik sebuah tombol dibawah.
+Anda juga dapat mengajukan pertanyaan apa pun di Support group, harap diperhatikan bahwa Anda hanya dapat bertanya setelah membaca panduan, dan hanya bertanya tentang bot ini!
+
+Perintah umum adalah:
+- /start: Mulai bot
+- /help: Berikan pesan ini
+
+Semua perintah hanya bekerja dengan / (garis miring)
+ref.message_id= 
+ref.reply_markup= {"inline_keyboard":[[{"text":"\ud83d\udee0\ufe0f perkakas","callback_data":"\/callback_q@fadhil_riyanto_bot perkakas"},{"text":"#\ufe0f\u20e3 hash","callback_data":"\/callback_q@fadhil_riyanto_bot hash"},{"text":"\ud83c\udf08 hiburan","callback_data":"\/callback_q@fadhil_riyanto_bot hiburan"}],[{"text":"\ud83d\udc68\u200d\ud83d\udcbb dev tools","callback_data":"\/callback_q@fadhil_riyanto_bot dev_tools"},{"text":"\ud83d\udc81 anime","callback_data":"\/callback_q@fadhil_riyanto_bot anime"},{"text":"\u2139\ufe0f bot ini","callback_data":"\/callback_q@fadhil_riyanto_bot bot_ini"}],[{"text":"\ud83d\uddbc\ufe0f Photooxy","callback_data":"\/callback_q@fadhil_riyanto_bot photooxy"},{"text":"\ud83d\udcdc Rules","callback_data":"\/callback_q@fadhil_riyanto_bot rules"},{"text":"\ud83d\udcbb run code","callback_data":"\/callback_q@fadhil_riyanto_bot run_code"}],[{"text":"\ud83d\udccc Pin","callback_data":"\/callback_q@fadhil_riyanto_bot pin"},{"text":"\ud83d\udd07 Mute","callback_data":"\/callback_q@fadhil_riyanto_bot mute"},{"text":"\ud83d\udcdd Report","callback_data":"\/callback_q@fadhil_riyanto_bot report"}],[{"text":"\ud83d\udeab Bans","callback_data":"\/callback_q@fadhil_riyanto_bot bans"},{"text":"\ud83d\udd11 Admins","callback_data":"\/callback_q@fadhil_riyanto_bot admins"},{"text":"\ud83d\udc4b Grettings","callback_data":"\/callback_q@fadhil_riyanto_bot grettings"}],[{"text":"\u274c filters","callback_data":"\/callback_q@fadhil_riyanto_bot filters"},{"text":"\u270f\ufe0f Note","callback_data":"\/callback_q@fadhil_riyanto_bot note"}]]}
+ref.parse_mode= html
+ref.disable_web_page_preview= true
+
+
+============[Trace]===========
+#0 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(662): TelegramErrorLogger::log(Array, Array)
+#1 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(46): Telegram->sendAPIRequest('https://api.tel...', Array)
+#2 C:\bot_telegram\vendor\eleirbag89\telegrambotphp\Telegram.php(192): Telegram->endpoint('editMessageText', Array)
+#3 C:\bot_telegram\command\help.php(32): Telegram->editMessageText(Array)
+#4 C:\bot_telegram\hook.php(771): require('C:\\bot_telegram...')
+#5 {main}
+

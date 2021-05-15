@@ -25,11 +25,11 @@ function downloadUrlToFile($url, $outFileName)
 }
 
 $result = $telegram->getData();
-$fileid = $result['message']['reply_to_message']['document']['file_id'];
+$fileid = $result['message']['reply_to_message']['photo'];
 if (isset($fileid)) {
-} else {
     $getResolutionfileid = end($result['message']['reply_to_message']['photo']);
     $fileid = $getResolutionfileid['file_id'];
+} else {
 }
 $randomTokenss = substr(sha1(rand()), 0, 80);
 if (isset($fileid)) {

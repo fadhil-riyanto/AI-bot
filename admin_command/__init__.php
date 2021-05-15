@@ -68,13 +68,8 @@ if (deteksi_grup() == true) {
                 $timesekarang = $d['timelapsce'] + $delaycached;
                 $timedelay = $timesekarang - time();
                 if ($timedelay > 0) {
-                    // $reply = 'Maaf, kamu dapat mengirim pesan kembali setelah ' . ($timesekarang - time()) . ' detik';
-                    // $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-                    // $telegram->sendMessage($content);
-
                     $gid =  $d['gid'];
                     $admins =  $d['admin'];
-                    //exit;
                 } elseif ($timedelay < 0) {
                     foreach ($data as $key => $d) {
                         if ($d['gid'] == $grupid) {

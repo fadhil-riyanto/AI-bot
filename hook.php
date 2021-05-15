@@ -63,7 +63,7 @@ try {
 	// if (detect_grup() == null) {
 	// 	if ($userID == $userid_pemilik || $userID == 1223173857) {
 	// 	} else {
-	// 		$reply = "Whopps, bot ini sedang dalam proses developing oleh " . PUMBUAT_BOT . PHP_EOL .
+	// 		$reply = "Whopps, bot ini sedang dalam proses developing oleh pengembang aku, si " . PUMBUAT_BOT . PHP_EOL .
 	// 			"Coba lagi nanti :)";
 	// 		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
 	// 		$telegram->sendMessage($content);
@@ -601,7 +601,10 @@ try {
 	}
 	//BIG PROJECT CALC
 
-	elseif ('/calculator' == $adanParse[0] || '/calculator' . USERNAME_BOT . '' == $adanParse[0]) {
+	elseif (
+		'/calculator' == $adanParse[0] || '/calculator' . USERNAME_BOT . '' == $adanParse[0] ||
+		'/c' == $adanParse[0] || '/c' . USERNAME_BOT . '' == $adanParse[0]
+	) {
 		require __DIR__ . '/calc/calc.php';
 		exit;
 	} elseif ('/calc_fadhilsystem_i' == $adanParse[0] || '/calc_fadhilsystem_i' . USERNAME_BOT . '' == $adanParse[0]) {
@@ -684,8 +687,17 @@ try {
 	} elseif ('/get_header' == $adanParse[0] || '/get_header' . USERNAME_BOT . '' == $adanParse[0]) {
 		require __DIR__ . '/command/get_header.php';
 		exit;
-	} elseif ('/upload' == $adanParse[0] || '/upload' . USERNAME_BOT . '' == $adanParse[0]) {
+	} elseif (
+		'/upload' == $adanParse[0] || '/upload' . USERNAME_BOT . '' == $adanParse[0] ||
+		'/ui' == $adanParse[0] || '/ui' . USERNAME_BOT . '' == $adanParse[0]
+	) {
 		require __DIR__ . '/command/upload.php';
+		exit;
+	} elseif (
+		'/upload_sticker' == $adanParse[0] || '/upload_sticker' . USERNAME_BOT . '' == $adanParse[0] ||
+		'/us' == $adanParse[0] || '/us' . USERNAME_BOT . '' == $adanParse[0]
+	) {
+		require __DIR__ . '/command/upload_sticker.php';
 		exit;
 	} elseif ('/resolve' == $adanParse[0] || '/resolve' . USERNAME_BOT . '' == $adanParse[0]) {
 		require __DIR__ . '/command/resolve.php';
