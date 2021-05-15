@@ -58,7 +58,7 @@ $adanParse_plain = explode(' ', $text_plain);
 $adanParse_plain_nokarakter = explode(' ', $text_plain_nokarakter);
 $apakahuserchattingviaPM = detect_grup();
 try {
-	require __DIR__ . '/include/getChatAdministrators_cached.php';
+	
 	//debug mode
 	// if (detect_grup() == null) {
 	// 	if ($userID == $userid_pemilik || $userID == 1223173857) {
@@ -82,6 +82,7 @@ try {
 		$hilangAzan = str_replace('/azan' . USERNAME_BOT . ' ', '', $text);
 	}
 	require_once __DIR__ . '/ai_robot.php';
+	require __DIR__ . '/include/getChatAdministrators_cached.php';
 	require __DIR__ . '/include/blacklisted_user.php';
 
 
