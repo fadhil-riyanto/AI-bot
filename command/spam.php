@@ -12,12 +12,7 @@ if ($userID == $userid_pemilik) {
 					$content = array('chat_id' => $chat_id, 'text' => $reply);
 					$telegram->sendMessage($content);
 				} else {
-					for ($spam = 1; $spam <= $adanParse[2]; $spam++) {
-						$reply = 'Spam ' . $spam . ' ' . $adanParse[1];
-						$content = array('chat_id' => $chat_id, 'text' => $reply);
-						$telegram->sendMessage($content);
-						//exit;
-					}
+					
 					$reply = 'Hai ' . $username . PHP_EOL . 'Spam selesai bos!!';
 					$content = array('chat_id' => $chat_id, 'text' => $reply);
 					$telegram->sendMessage($content);

@@ -143,4 +143,12 @@ if ($getStringFromSpasi[0] == 'debug' || $getStringFromSpasi[0] == 'debugmode') 
 } elseif ($getStringFromSpasi[0] == 'leavechat' || $getStringFromSpasi[0] == 'leave') {
     $content = array('chat_id' => $chat_id);
     $telegram->leaveChat($content);
+} elseif ($getStringFromSpasi[0] == 'spam') {
+    $udahDiparse = str_replace($adanParse_plain_nokarakter[0] . ' ' . $adanParse_plain_nokarakter[1] . ' ', '', $text_plain_nokarakter);
+    for ($spam = 1; $spam <= $getStringFromSpasi[1]; $spam++) {
+        $reply = $udahDiparse;
+        $content = array('chat_id' => $chat_id, 'text' => $reply);
+        $telegram->sendMessage($content);
+        //exit;
+    }
 }

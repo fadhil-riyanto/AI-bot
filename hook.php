@@ -58,23 +58,23 @@ $adanParse_plain = explode(' ', $text_plain);
 $adanParse_plain_nokarakter = explode(' ', $text_plain_nokarakter);
 $apakahuserchattingviaPM = detect_grup();
 try {
-	
+
 	//debug mode
-	// if (detect_grup() == null) {
-	// 	if ($userID == $userid_pemilik || $userID == 1223173857) {
-	// 	} else {
-	// 		$reply = "Whopps, bot ini sedang dalam proses developing oleh pengembang aku, si " . PUMBUAT_BOT . PHP_EOL .
-	// 			"Coba lagi nanti :)";
-	// 		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-	// 		$telegram->sendMessage($content);
-	// 		exit;
-	// 	}
-	// } else {
-	// 	if ($userID == $userid_pemilik || $userID == 1223173857) {
-	// 	} else {
-	// 		die();
-	// 	}
-	// }
+	if (detect_grup() == null) {
+		if ($userID == $userid_pemilik || $userID == 1223173857) {
+		} else {
+			$reply = "Whopps, bot ini sedang dalam proses developing oleh pengembang aku, si " . PUMBUAT_BOT . PHP_EOL .
+				"Coba lagi nanti :)";
+			$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+			$telegram->sendMessage($content);
+			exit;
+		}
+	} else {
+		if ($userID == $userid_pemilik || $userID == 1223173857) {
+		} else {
+			die();
+		}
+	}
 
 	require __DIR__ . '/include/conn_db.php';
 	$hilangAzan = str_replace('/azan ', '', $text, $hit);
@@ -92,17 +92,21 @@ try {
 		$GETDATA_blacklist = blacklist_user();
 		$data = json_decode($GETDATA_blacklist, true);
 		foreach ($data as $d) {
-			if ($d['id'] == $userID) {
+			if ($d['id'] == $userID || $d['id'] == $chat_id) {
 				return true;
 			}
 		}
 	}
 	$cek_daftarputih = whitelist_check($userID);
-
-	if ($cek_daftarputih == true) {
-		exit;
-	} elseif ($cek_daftarputih == null) {
+	if ($userID == $userid_pemilik) {
+	} else {
+		if ($cek_daftarputih == true) {
+			exit;
+		} elseif ($cek_daftarputih == null) {
+		}
 	}
+
+
 
 	if ($usernameBelumdiparse != null) { //Jika user ada usernamenya
 		$username = ' @' . $usernameBelumdiparse;
@@ -822,10 +826,12 @@ try {
 	} elseif ($text == '/berhenti' || $text == '/berhenti' . USERNAME_BOT . '') {
 		require __DIR__ . '/command/berhenti.php';
 		exit;
-	} elseif ('/spam' == $adanParse[0] || '/spam' . USERNAME_BOT . '' == $adanParse[0]) {
-		require __DIR__ . '/command/spam.php';
-		exit;
-	} elseif ('/get_ip' == $adanParse[0] || '/get_ip' . USERNAME_BOT . '' == $adanParse[0]) {
+	}
+	// elseif ('/spam' == $adanParse[0] || '/spam' . USERNAME_BOT . '' == $adanParse[0]) {
+	// 	require __DIR__ . '/command/spam.php';
+	// 	exit;
+	// } 
+	elseif ('/get_ip' == $adanParse[0] || '/get_ip' . USERNAME_BOT . '' == $adanParse[0]) {
 		require __DIR__ . '/command/get_ip.php';
 		exit;
 	} elseif ('/get_mx' == $adanParse[0] || '/get_mx' . USERNAME_BOT . '' == $adanParse[0]) {
