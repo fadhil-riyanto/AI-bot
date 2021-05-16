@@ -89,6 +89,7 @@ try {
 
 	function whitelist_check($userID)
 	{
+		global $chat_id;
 		$GETDATA_blacklist = blacklist_user();
 		$data = json_decode($GETDATA_blacklist, true);
 		foreach ($data as $d) {
