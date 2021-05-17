@@ -70,8 +70,6 @@ return array(
     '8d37dad4703fab45bfec9dd0bbf3278e' => $vendorDir . '/markbaker/matrix/classes/src/Operations/multiply.php',
     '4888a6f58c08148ebe17682f9ce9b2a8' => $vendorDir . '/markbaker/matrix/classes/src/Operations/divideby.php',
     'eef6fa3879d3efa347cd24d5eb348f85' => $vendorDir . '/markbaker/matrix/classes/src/Operations/divideinto.php',
-    '547f39254e5312c66b30c9b6a7d3570f' => $vendorDir . '/eleirbag89/telegrambotphp/Telegram.php',
-    '221a7c0887f892e44dd08191321d3815' => $vendorDir . '/eleirbag89/telegrambotphp/TelegramErrorLogger.php',
     '71ecd0286a4e74fd8732297fb587023c' => $vendorDir . '/thingengineer/mysqli-database-class/MysqliDb.php',
     'd383f1ec7b1e54a09cb53eb6fcf751e0' => $vendorDir . '/thingengineer/mysqli-database-class/dbObject.php',
 );

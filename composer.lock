@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1bf740cb1b0e43baa4f43d1a44d79b46",
+    "content-hash": "6ef083ecdfe9aee3a77e6e71b59137f5",
     "packages": [
         {
             "name": "ammarfaizi2/brainly",
@@ -136,63 +136,6 @@
                 }
             ],
             "time": "2021-04-20T12:18:18+00:00"
-        },
-        {
-            "name": "eleirbag89/telegrambotphp",
-            "version": "1.3.11",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Eleirbag89/TelegramBotPHP.git",
-                "reference": "d5464bc7356f6031991e636b6b1b2402cbae88ea"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Eleirbag89/TelegramBotPHP/zipball/d5464bc7356f6031991e636b6b1b2402cbae88ea",
-                "reference": "d5464bc7356f6031991e636b6b1b2402cbae88ea",
-                "shasum": ""
-            },
-            "require": {
-                "ext-curl": "*",
-                "ext-json": "*",
-                "php": ">=5.0"
-            },
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "Telegram.php",
-                    "TelegramErrorLogger.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Gabriele Grillo",
-                    "email": "gabry.grillo@alice.it"
-                }
-            ],
-            "description": "A very simple PHP Telegram Bot API",
-            "support": {
-                "issues": "https://github.com/Eleirbag89/TelegramBotPHP/issues",
-                "source": "https://github.com/Eleirbag89/TelegramBotPHP/tree/1.3.11"
-            },
-            "funding": [
-                {
-                    "url": "https://flattr.com/@Eleirbag89",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://paypal.me/eleirbag89",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://liberapay.com/eleirbag89",
-                    "type": "liberapay"
-                }
-            ],
-            "time": "2020-06-24T16:20:03+00:00"
         },
         {
             "name": "ezyang/htmlpurifier",

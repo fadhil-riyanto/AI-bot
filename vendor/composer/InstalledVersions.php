@@ -29,7 +29,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => 'da28ed78b908ef75fee5daf0557ca797b1c47201',
+    'reference' => 'e98fd5c130fce8671fa833fee0b46e62e08d843c',
     'name' => '__root__',
   ),
   'versions' => 
@@ -41,7 +41,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => 'da28ed78b908ef75fee5daf0557ca797b1c47201',
+      'reference' => 'e98fd5c130fce8671fa833fee0b46e62e08d843c',
     ),
     'ammarfaizi2/brainly' => 
     array (
@@ -70,15 +70,6 @@ private static $installed = array (
       array (
       ),
       'reference' => '21b6f4bf4ef1927158b3e29bd0c2d99c6681c750',
-    ),
-    'eleirbag89/telegrambotphp' => 
-    array (
-      'pretty_version' => '1.3.11',
-      'version' => '1.3.11.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => 'd5464bc7356f6031991e636b6b1b2402cbae88ea',
     ),
     'ezyang/htmlpurifier' => 
     array (

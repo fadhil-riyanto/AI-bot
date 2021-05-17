@@ -5,6 +5,7 @@ $debugwaktu_awal = microtime(true);
 require __DIR__ . '/pengaturan/env.php';
 require __DIR__ . '/include/hook_function_core.php';
 require_once __DIR__ . '/vendor/autoload.php';
+require __DIR__ . '/include/Telegram.php';
 
 
 ini_set('max_execution_time', MAX_EXECUTE_SCRIPT);
@@ -60,21 +61,21 @@ $apakahuserchattingviaPM = detect_grup();
 try {
 
 	//debug mode
-	if (detect_grup() == null) {
-		if ($userID == $userid_pemilik || $userID == 1223173857) {
-		} else {
-			$reply = "Whopps, bot ini sedang dalam proses developing oleh pengembang aku, si " . PUMBUAT_BOT . PHP_EOL .
-				"Coba lagi nanti :)";
-			$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
-			$telegram->sendMessage($content);
-			exit;
-		}
-	} else {
-		if ($userID == $userid_pemilik || $userID == 1223173857) {
-		} else {
-			die();
-		}
-	}
+	// if (detect_grup() == null) {
+	// 	if ($userID == $userid_pemilik || $userID == 1223173857) {
+	// 	} else {
+	// 		$reply = "Whopps, bot ini sedang dalam proses developing oleh pengembang aku, si " . PUMBUAT_BOT . PHP_EOL .
+	// 			"Coba lagi nanti :)";
+	// 		$content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+	// 		$telegram->sendMessage($content);
+	// 		exit;
+	// 	}
+	// } else {
+	// 	if ($userID == $userid_pemilik || $userID == 1223173857) {
+	// 	} else {
+	// 		die();
+	// 	}
+	// }
 
 	require __DIR__ . '/include/conn_db.php';
 	$hilangAzan = str_replace('/azan ', '', $text, $hit);
