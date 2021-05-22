@@ -79,11 +79,12 @@ $unamepromote = '<a href="tg://user?id=' . $promote_uid . '">' . $fname_depan . 
 $azanHilangcommand = str_replace($adanParse_plain[0], '', $text_plain);
 $udahDiparse = str_replace($adanParse_plain[0] . ' ', '', $text_plain);
 
+
 // $reply = time_ai($udahDiparse);
 // $content = array('chat_id' => $chat_id, 'text' => $reply, 'parse_mode' => 'html', 'reply_to_message_id' => $message_id, 'disable_web_page_preview' => true);
 // $telegram->sendMessage($content);
 // exit;
-if (isset($promote_uid) && isset($udahDiparse)) {
+if (isset($promote_uid) && $azanHilangcommand != null) {
     $waktu_mute = time_ai($udahDiparse);
     $param_promote = array(
         'chat_id' => $chat_id,
@@ -98,7 +99,7 @@ if (isset($promote_uid) && isset($udahDiparse)) {
     $reply = $unamepromote . ', dimute sampai ' . date('Y-m-d h:i:s', $waktu_mute);
     $content = array('chat_id' => $chat_id, 'text' => $reply, 'parse_mode' => 'html', 'reply_to_message_id' => $message_id, 'disable_web_page_preview' => true);
     $telegram->sendMessage($content);
-} elseif (isset($promote_uid) == true && isset($udahDiparse) == false) {
+} elseif (isset($promote_uid) == true && $azanHilangcommand == null) {
     $param_promote = array(
         'chat_id' => $chat_id,
         'user_id' => $promote_uid,
