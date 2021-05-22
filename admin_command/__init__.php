@@ -217,7 +217,7 @@ if ($kamu_admin == true) {
         require 'unpinall.php';
     } elseif ($adanParseadmin[0] == '/unpinall') {
         require 'unpinall.php';
-    } elseif ($adanParseadmin[0] == '/mute') {
+    } elseif ($adanParseadmin[0] == '/mute' || $adanParseadmin[0] == '/bisu') {
         require 'mute.php';
     } elseif ($adanParseadmin[0] == '/set_admin_title') {
         require 'set_admin_title.php';
