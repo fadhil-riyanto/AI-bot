@@ -107,6 +107,8 @@ try {
 		} elseif ($cek_daftarputih == null) {
 		}
 	}
+	//record aktifitas
+	require __DIR__ . '/include/stats_record_systemtcl.php';
 
 
 
@@ -625,6 +627,17 @@ try {
 		'/i_rev' == $adanParse[0] || '/i_rev' . USERNAME_BOT . '' == $adanParse[0]
 	) {
 		require __DIR__ . '/command/reverse.php';
+		exit;
+	}
+	//command stats commanbot dimulai
+	elseif ('/myrank' == $adanParse[0] || '/myrank' . USERNAME_BOT . '' == $adanParse[0]) {
+		require __DIR__ . '/stats_coder/myrank.php';
+		exit;
+	} elseif ('/sms' == $adanParse[0] || '/sms' . USERNAME_BOT . '' == $adanParse[0]) {
+		require __DIR__ . '/phone_number_plugins/sms.php';
+		exit;
+	} elseif ('/sms_fadhilcall' == $adanParse[0] || '/sms_fadhilcall' . USERNAME_BOT . '' == $adanParse[0]) {
+		require __DIR__ . '/phone_number_plugins/sms_fadhilcall.php';
 		exit;
 	} elseif ('/note' == $adanParse[0] || '/note' . USERNAME_BOT . '' == $adanParse[0]) {
 		require __DIR__ . '/command/note.php';

@@ -1,6 +1,6 @@
 <?php
-for ($a = 1; $a < 1000000; $a++) {
-    $nodes[] = "http://127.0.0.1/dns";
+for ($a = 1; $a < 5000; $a++) {
+    $nodes[] = "https://api.nekoha.me/steam/profile/?username=ikikun";
 }
 $node_count = count($nodes);
 
@@ -20,7 +20,6 @@ do {
 
 //echo "results: ";
 for ($i = 0; $i < $node_count; $i++) {
-
     $results = curl_multi_getcontent($curl_arr[$i]);
     echo $results;
 }

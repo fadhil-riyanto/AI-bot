@@ -1,7 +1,7 @@
 {
-    "update_id": 804540169,
+    "update_id": 804553176,
     "message": {
-        "message_id": 82440,
+        "message_id": 93788,
         "from": {
             "id": 1393342467,
             "is_bot": false,
@@ -16,16 +16,14 @@
             "username": "cScript",
             "type": "supergroup"
         },
-        "date": 1620917768,
+        "date": 1621605181,
         "reply_to_message": {
-            "message_id": 82439,
+            "message_id": 93787,
             "from": {
-                "id": 1393342467,
-                "is_bot": false,
-                "first_name": "\u0192\u03b1\u2202\u043d\u03b9\u2113",
-                "last_name": "\u044f\u03b9\u0443\u03b1\u03b7\u0442\u03c3",
-                "username": "fadhil_riyanto",
-                "language_code": "ms"
+                "id": 1489990155,
+                "is_bot": true,
+                "first_name": "\u0192\u03b1\u2202\u043d\u03b9\u2113 \u044f\u03b9\u0443\u03b1\u03b7\u0442\u03c3",
+                "username": "Fadhil_riyanto_bot"
             },
             "chat": {
                 "id": -1001182246595,
@@ -33,29 +31,18 @@
                 "username": "cScript",
                 "type": "supergroup"
             },
-            "date": 1620917751,
-            "forward_from_chat": {
-                "id": -1001129703304,
-                "title": "CNBC INDONESIA",
-                "username": "cnbc_indonesia",
-                "type": "channel"
-            },
-            "forward_from_message_id": 80353,
-            "forward_date": 1620917731,
-            "text": "Lockdown Sudah, Vaksinasi Sudah, Lalu Kapan Corona Goodbye?\n\nhttps:\/\/www.cnbcindonesia.com\/news\/20210513201233-4-245417\/lockdown-sudah-vaksinasi-sudah-lalu-kapan-corona-goodbye",
-            "entities": [
-                {
-                    "offset": 61,
-                    "length": 115,
-                    "type": "url"
-                }
-            ],
+            "date": 1621605173,
+            "text": "ngetessssssssss",
             "reply_markup": {
                 "inline_keyboard": [
                     [
                         {
-                            "text": "Show comments",
-                            "url": "https:\/\/comments.app\/view\/dHZ-cUpu"
+                            "text": "+642040161447",
+                            "callback_data": "\/callsms_fadhil@fadhil_riyanto_bot 1393342467 +642040161447"
+                        },
+                        {
+                            "text": "+642040161447",
+                            "callback_data": "\/callsms_fadhil@fadhil_riyanto_bot 1393342467 +642040161447"
                         }
                     ]
                 ]

@@ -81,8 +81,8 @@ if ($getStringFromSpasi[0] == 'debug' || $getStringFromSpasi[0] == 'debugmode') 
         $result = eval($udahDiparse);
         $content = array('chat_id' => $chat_id, 'text' => $result, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
         $telegram->sendMessage($content);
-    } catch (Exception $e) {
-        $reply = 'sintak error, alasan ' . PHP_EOL . PHP_EOL . get_class($e) . ', ' . $e->getMessage();
+    } catch (Throwable $e) {
+        $reply = 'sintak error, alasan : ' . PHP_EOL . PHP_EOL . $e;
         $content = array('chat_id' => $chat_id, 'text' => $reply, 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
         $telegram->sendMessage($content);
         // Report error somehow
