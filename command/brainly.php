@@ -14,9 +14,13 @@ if ($azanHilangcommand == null) {
     $telegram->sendMessage($content);
 } else {
     $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, "http://fadhilriyanto.rf.gd/rmf.php?q=" . urlencode($udahDiparse));
+    curl_setopt($ch, CURLOPT_URL, "http://fadhilsss.eu5.org/brainly.php?q=" . urlencode($udahDiparse));
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
     $output = curl_exec($ch);
+    // $reply = substr($output, 0, 1000);
+    // $content = array('chat_id' => $chat_id, 'text' => $reply);
+    // $urlCall = $telegram->sendMessage($content);
+    // die();
     curl_close($ch);
     $result = json_decode($output, TRUE);
     if (count($result) === 0) {
