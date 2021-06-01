@@ -14,7 +14,7 @@ $envsystem_base = SERVER_ALAMAT_addr_indez_apis() . '/api/';
 $htmltitle = 'Fadhil Riyanto';
 $namaapis = 'Fadhil Riyanto';
 $devname = 'Fadhil Riyanto';
-$githublinkdev = 'https://github.com/fadhil-riyanto/AI-bot';
+$githublinkdev = 'https://github.com/fadhil-riyanto';
 
 // INDEX 
 $selamatdatang = 'Selamat datang!!!';
