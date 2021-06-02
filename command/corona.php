@@ -1,6 +1,9 @@
 <?php
 
+$content = array('chat_id' => $chat_id, 'text' => 'info kopet dimatikan, liat mbah google sana', 'reply_to_message_id' => $message_id, 'parse_mode' => 'html', 'disable_web_page_preview' => true);
+$telegram->sendMessage($content);
 
+die();
 require __DIR__ . '/../include/simple_html_dom.php';
 
 $storeddata = __DIR__ . '/../json_data/corona_scrapper_cache.txt';
