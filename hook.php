@@ -61,6 +61,7 @@ $apakahuserchattingviaPM = detect_grup();
 try {
 
 	//debug mode
+	/*
 	if (detect_grup() == null) {
 		if ($userID == $userid_pemilik || $userID == 1223173857) {
 		} else {
@@ -76,6 +77,7 @@ try {
 			die();
 		}
 	}
+	*/
 
 	require __DIR__ . '/include/conn_db.php';
 	$hilangAzan = str_replace('/azan ', '', $text, $hit);
