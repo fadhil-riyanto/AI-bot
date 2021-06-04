@@ -59,9 +59,9 @@ $adanParse_plain = explode(' ', $text_plain);
 $adanParse_plain_nokarakter = explode(' ', $text_plain_nokarakter);
 $apakahuserchattingviaPM = detect_grup();
 try {
-
+	
 	//debug mode
-	/*
+	
 	if (detect_grup() == null) {
 		if ($userID == $userid_pemilik || $userID == 1223173857) {
 		} else {
@@ -77,7 +77,7 @@ try {
 			die();
 		}
 	}
-	*/
+	
 
 	require __DIR__ . '/include/conn_db.php';
 	$hilangAzan = str_replace('/azan ', '', $text, $hit);
@@ -234,8 +234,12 @@ try {
 			}
 		}
 	}
-
-	require __DIR__ . '/include/autounafk.php';
+	//jika inputannya /unadk, makamatikan mode auto unafknya
+	if('/unafk' == $adanParse[0] || '/unafk' . USERNAME_BOT . '' == $adanParse[0]){
+	}else{
+		require __DIR__ . '/include/autounafk.php';
+	}
+	
 
 	//filters word
 

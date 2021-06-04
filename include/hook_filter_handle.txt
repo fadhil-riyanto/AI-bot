@@ -1,1 +1,1 @@
-s:98:"[{"chat_id":"-1001182246595","word":"heran","uniq_id":"ec54a4edb9b23a444b3918878e89c90b0225b7b7"}]";
+s:193:"[{"chat_id":"-1001182246595","word":"helan","uniq_id":"a4192df460f7e0cedcf3657f7d6ed62f60b2e6d1"},{"chat_id":"-1001310420564","word":"\/r","uniq_id":"134c3ec8ef45c4d0ffa741d51225bfdde624dd78"}]";

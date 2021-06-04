@@ -1,7 +1,7 @@
 <?php
 //$hapusTulis = 
 $udahDiparse = str_replace($adanParse_plain[0] . ' ', '', $text_plain);
-$curlImage = file_get_contents('http://salism3.pythonanywhere.com/write/?text=' . urlencode($udahDiparse));
+$curlImage = file_get_contents('https://salism3api.pythonanywhere.com/write/?text=' . urlencode($udahDiparse));
 $parsecJsons = json_decode($curlImage);
 if ($adanParse[1] == null) {
 	$reply = 'Hai ' . $username . PHP_EOL . 'Maaf, Pattern kosong, gunakan format' . PHP_EOL . PHP_EOL . '<pre>/tulis {your text}</pre>';

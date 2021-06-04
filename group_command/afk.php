@@ -7,8 +7,8 @@ if ($gc_command_verify == null) {
 }
 date_default_timezone_set(TIME_ZONE);
 $result = $telegram->getData();
-$azanHilangcommand = str_replace($adanParse[0], '', $text);
-$udahDiparse = str_replace($adanParse[0] . ' ', '', $text);
+$azanHilangcommand = str_replace($adanParse_plain_nokarakter[0], '', $text_plain_nokarakter);
+$udahDiparse = str_replace($adanParse_plain_nokarakter[0] . ' ', '', $text_plain_nokarakter);
 if ($azanHilangcommand == null) {
     $user = $db->row(
         "SELECT * FROM afk_user_data WHERE userid = ?",
